@@ -48,6 +48,7 @@ Types of test
   *
 * Module test
 * unit tests
+  * Avoid using static methods as cannot mock and might be expensive to use (ie long test times, use resources)
 * Static Analysis Tests - testing the code it self not the Behaviour
   * findbugs
   * code style (PMD)

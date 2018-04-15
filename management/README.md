@@ -1,0 +1,27 @@
+# Management
+
+- Agile
+  - Kanban
+  - Scrum
+  - Retro
+  - Scrum
+  - XP/ extreme programming
+  - Standups
+    - team
+    - team leads
+    - special teams
+- Meetings
+- emails
+- calendars
+- jira
+  - stories
+  - releases
+  - comments
+- Wiki/documentation
+- Time bombs
+  - urgent
+  - reminders
+- individual improvement
+  - cpd
+  - skills matrix
+  - code reviews

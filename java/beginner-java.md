@@ -141,6 +141,9 @@ This can be applied to practically any langauge.
     - ```System.out.println(method(1));```
   - print output of variables
     - ```System.out.println(a);```
+  - Intellij shortcuts
+    - ```sout```
+    - ```soutv```
 
 ### Exercises
 
