@@ -1,0 +1,17 @@
+- streams
+  - map
+  - filter
+  - reduce
+  - count
+  - collect
+    - Collectors.toList
+  - distinct
+  - sum
+- functional interfaces
+  - supplier
+  - consumer
+  - function
+- Optional
+  - of
+  - isPresent
+  - using map

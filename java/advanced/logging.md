@@ -1,0 +1,5 @@
+- Logback
+- Types of logs
+  - application
+  - audit
+  - access

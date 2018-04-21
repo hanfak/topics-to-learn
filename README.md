@@ -4,6 +4,8 @@ This is just a list of topics that I have seen throughout my time working in my 
 
 I normally work on backend, and hardly touch any front end stuff.
 
+There is some sense of organisation, but it is not complete and a lot of overlap.
+
 ## Contents
 
 * Language
