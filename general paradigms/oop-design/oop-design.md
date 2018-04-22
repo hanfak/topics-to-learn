@@ -1,0 +1,76 @@
+## OOP Design
+
+Writing a program to do something is the first and easy part, writing it and change it (refactoring it) with good design and knowing the trade offs is different.
+
+The only constant in application is change. That is why the soft is in software. To make change easy/fast/efficient/cheap we need software to be designed with this in mind. Software design helps with making the software more readable/maintainable/extendable with out increasing costs or time for reading/maintaining/extending.
+
+## Use of diagramming and planning
+
+- UML
+  - Sequence diagrams
+    - Big picture - full process of an application
+    - single flow
+- Architectrual diagrams
+  - team apps including 3rd party/ database/ filesystems
+  - full service - all apps that provide all the services
+
+
+## OO features
+
+Using an OO programming language does not mean that you are programming in a OO style. Sometimes you will use a procedural style. Knowing the features and using them will help in taking advantage of the benefits of OO.
+
+- Polymorpshism
+- Encapsulation
+- Abstraction
+- inheritence
+
+## Design Principles
+
+Implementing these design principles to have better code
+
+- Use SOLID principles (See below)
+- high cohesion
+- low coupling
+- separation of concerns
+- YAGNI
+- DRY
+  - Avoid Duplication
+- Tell, dont ask
+- law of demeter
+- dependency injection
+- composition over inheritence
+- code to interface
+- inversion of control
+- Let the compiler pick up on errors
+  - use Generics
+- Anything from effective java
+- Comment on the why, not the why
+- Compose method with other methods
+
+### Links
+
+- https://jelastic.com/blog/10-object-oriented-design-principles-java-programmer-should-know-guest-post/
+- http://javarevisited.blogspot.co.uk/2012/03/10-object-oriented-design-principles.html
+- [Core Design Principles for Software Developers by Venkat Subramaniam](https://www.youtube.com/watch?v=llGgO74uXMI&t=2s)
+
+## SOLID Principles
+
+- SRP - Single Responsibility Principle
+- OCP -  Open Closed PRincple
+- LSP - Liskov Substitution Pricinple
+- ISP - Interface Segregation Principle
+- DIP - Dependency Inversion Principle
+
+### Links and Books
+
+- https://github.com/mikeknep/SOLID
+- http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/
+- https://dev.to/naveen/how-to-write-an-object-oriented-program-that-doesnt-suck
+
+## Others
+
+- Avoid Getter and Setters
+  - Make fields public final, so they cannot be changed (ie immutable)
+  - dont ask for field from its object, ask objec to do the work (delegate it) and then call it
+
+http://www.yegor256.com/2014/09/16/getters-and-setters-are-evil.html

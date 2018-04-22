@@ -1,0 +1,47 @@
+# Patterns
+
+- Patterns used in current work
+  - Archtectrual
+    - domain driven
+    - layered
+    - Repository
+  - General
+    - builder (creating request/response objects with non default primings)
+    - Factory (jdbc reader/writer etc)
+    - Object pool (database connection)
+    - singleton (logger/database connection pool/settings/http clients)
+    - Static factory method (newing up domain objects)
+    - Adapter (test and prod database used in application layer)
+    - decorator
+    - ITerator (jdbc resultset)
+    - Strategy
+
+- Design princples (gang of four)
+  - Behavioral
+    - chain of responsibiliyt
+    - command
+    - ITerator
+    - mediator
+    - observer
+    - Strategy
+    - template
+    - visitor
+  - Creational
+    - Factory
+    - Abstract factory
+    - builder
+    - virtual proxy/ lazy initialization
+    - Object pool
+    - prototype
+    - singleton
+  - Structural
+    - adpater
+    - bridge
+    - composite
+    - decorator
+    - extension objects
+    - facade
+    - flyweight
+    - mvc
+    - proxy
+  - Dev team specific

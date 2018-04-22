@@ -31,6 +31,8 @@ I currently work with Oracle Sql.
   - constraints
   - indexes
   - tablespaces
+  - partitions
+    - by reference
 
 ### PL/SQL
 
@@ -48,6 +50,8 @@ I currently work with Oracle Sql.
 
 - worksheets
 - connecting to databases
+- search through tables
+- ordering in tables
 
 ### CQRS
 
@@ -55,4 +59,6 @@ I currently work with Oracle Sql.
 
 ### Datawhare housing
 
-###
+- creating views
+
+### FlywayDB

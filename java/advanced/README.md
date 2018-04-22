@@ -24,6 +24,8 @@
 
 - serialization
 
+- Java runtime options
+
 - reflection
 
 - memoization
