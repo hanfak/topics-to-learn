@@ -2,7 +2,7 @@
 
 - functional programming
 
-- Files
+- Files, Input/Output
   - NIO
   - NIO2
   - Handling
@@ -16,7 +16,9 @@
 
 - Servlets/Webserver
 
-- Concurrency
+- Concurrency & threads
+
+- ayschronous programming
 
 - Logging
 

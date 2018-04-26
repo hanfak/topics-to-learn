@@ -1,6 +1,6 @@
 # Libraries
 
-Here is a list of common libraries that I have used.
+Here is a list of common libraries that I have interacted with
 
 - Junit
 - Mockito
@@ -19,11 +19,15 @@ Here is a list of common libraries that I have used.
 - FlywayDB
 
 - Log4J
+- slf4j
 - Logback
+- logbook
 
 - Business flows
   - Implementation of railway programming
 - Apache http client
+- Utterly Idle
+- utterly lazy
 - Jetty
 - Wicket
 - Jackson

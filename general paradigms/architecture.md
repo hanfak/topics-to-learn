@@ -27,10 +27,12 @@
 http://blog.borud.no/2013/03/gorging-on-java-frameworks-and.html
 - http://www.catonmat.net/blog/frameworks-dont-make-sense/
 - http://www.sickenger.com/2013/02/11/hibernate-just-stop-it/
+- https://samnewman.io/patterns/architectural/bff/
 
 ## Books and Links
 
 - [Clean Arthitecture - Uncle Bob post](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)
+- Not used as still new, but highly thought of [serverless architecture] (https://martinfowler.com/articles/serverless.html)
 
 ### Books
 

@@ -108,6 +108,11 @@ Types of test
   - outside of test
 - @Note
 
+### AssertJ
+
+- Readbility and intent via fluent api
+- Soft Assertions
+
 ## yatspec
 
 * Captured inputs and outputs
