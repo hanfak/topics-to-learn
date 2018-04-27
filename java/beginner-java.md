@@ -11,7 +11,7 @@ This can be applied to practically any langauge.
   - Can use Eclipse or Netbeans, but Intellij is far better
 - Settings to use JDK
   - Create new project using maven and add java build in pom.xml
-  - See ...
+  - See ...???
 - Running a simple hello world program through Intellij to check it is working
 ```java
   public class Example {
@@ -66,7 +66,10 @@ This can be applied to practically any langauge.
 - equality
   - pointers/reference
   - object equality
-- Data structures
+  -
+### Links
+
+### Data structures
   - Arrays
   - Arayslist/list
   - map/dictionary
@@ -74,10 +77,14 @@ This can be applied to practically any langauge.
   - linked lists
   - queues
 
+#### Links
+
 ### Instructions
   - Expression
-  - Statements, order
+  - Statements
     - ```;```
+  - Order of Statements
+    - procedural thinking
   - Boolean statements (and/or/not)
     - <, >, >=, =< , ==, !=, object.equals(anotherObject)
   - Arithmetic/math operations
@@ -100,6 +107,8 @@ This can be applied to practically any langauge.
   - Recursion
   - Nested loops
 
+#### Links
+
 ### Conditonal/Flow control
   - Changing the flow of instructions
   - ```Switch/Case```
@@ -109,6 +118,8 @@ This can be applied to practically any langauge.
   - ```return```
   - Use of ```{}```
   - Nested if statements
+
+#### Links
 
 ### Functions/methods
   - No parameters ```String method(){...}```
@@ -134,6 +145,8 @@ This can be applied to practically any langauge.
         - ```Integer a = method(1);```
   - variable scope
   - Naming conventions
+
+#### Links
 
 ### Printing to screen/debugging
   - ```System.out.println("Hello, World");```

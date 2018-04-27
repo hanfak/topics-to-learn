@@ -63,6 +63,10 @@ Types of test
 * Performance tests
 *
 
+## Builds
+
+- Run all Tests
+- flickery tests
 ### Black Box Testing
 
 * Component testing

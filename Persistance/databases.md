@@ -38,12 +38,6 @@ I currently work with Oracle Sql.
 
 ### Users, permissions
 
-### Database Migrations
-
-- Flyway DB
-  - Maven
-  - Part of pre install hook job as part of helm deployment
-
 ### Editioning and views
 
 ### Oracle developer GUI
@@ -61,4 +55,6 @@ I currently work with Oracle Sql.
 
 - creating views
 
-### FlywayDB
+### design
+
+- https://martinfowler.com/articles/evodb.html

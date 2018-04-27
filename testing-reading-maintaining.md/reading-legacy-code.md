@@ -8,7 +8,9 @@
 - https://medium.com/humans-create-software/5-tips-to-quickly-understand-a-new-code-base-a578b08f3593
 - https://www.quora.com/How-do-I-learn-to-understand-a-code-written-by-others
 - https://www.quora.com/What-is-the-best-strategy-to-understand-the-code-flow-and-design-of-production-code
-- 
+- https://spin.atomicobject.com/2017/06/01/how-to-read-code/
+- https://www.quora.com/How-can-I-get-faster-better-at-reading-other-people%E2%80%99s-code
+- https://www.quora.com/What-are-some-%E2%80%98good%E2%80%99-open-source-Java-projects
 
 ## Books
 
