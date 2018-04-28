@@ -1,11 +1,13 @@
-# CD - continuous deployment
+# Pipeline
 
-# CI - continuous integration
+## CD - continuous deployment
 
-# continuous delivery
+## CI - continuous integration
+
+## continuous delivery
 
 
-# Gocd
+## Gocd
 - Creating pipelines
 - pipelines that pull from git (master or branch)
 - manual gates
@@ -17,4 +19,4 @@
 - Quality gates
   - check status pages
 
-# Teamcity
+## Teamcity

@@ -11,10 +11,13 @@
 - versioning
 
 
-  ## Links
+## Links
 
-  - https://technology.amis.nl/2016/04/11/continuous-delivery-database/
-  - https://technology.amis.nl/2016/04/15/blog-continuous-delivery-oracle-database-ii/
-  - https://technology.amis.nl/2016/04/22/continuous-delivery-oracle-database-iii/
-  - https://www.wlangiewicz.com/2017/07/03/flyway-database-migrations-best-practices/
+
+- https://flywaydb.org/getstarted/
+- https://flywaydb.org/documentation/
+- https://technology.amis.nl/2016/04/11/continuous-delivery-database/
+- https://technology.amis.nl/2016/04/15/blog-continuous-delivery-oracle-database-ii/
+- https://technology.amis.nl/2016/04/22/continuous-delivery-oracle-database-iii/
+- https://www.wlangiewicz.com/2017/07/03/flyway-database-migrations-best-practices/
 - example http://bisaga.com/blog/tag/flyway/

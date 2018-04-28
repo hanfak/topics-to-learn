@@ -1,4 +1,4 @@
-## Nightwatch
+## Acceptance/GUI testing - Nightwatch
 
 - acceptance tests
 - stubbing apis

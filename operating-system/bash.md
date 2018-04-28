@@ -14,7 +14,7 @@
 - copy ```cp```
 - move ```mv```
   - rename
-- .
+- ```.```
 - cat
   - combining text
   - showingfile
@@ -26,6 +26,8 @@
   - show last n lines
   - '''tail -f <filename>
     - follow end of file, great for following logs as a program is run
+  - ```/<regex search term>``` searching within less
+- https://www.lifewire.com/what-to-know-less-command-4051972
 - echo
 - grep
 - find
@@ -35,11 +37,12 @@
 - starting scripts
 - running processes
 - environment variables
-  - set
-  - print
+  - set ```export <env variable in uppercase>=<value of env variable>```
+  - print ```echo $<name of env  variable>```
+    - This will return nothing if env is not defined
   - Path
 
-- echo
+- ```echo <something``` printing to console
 - piping
 - whoami
 - permissions
@@ -58,18 +61,13 @@
   - kill ports
 - View processes
   - kill processes
+- Ziping and unzipping files
+- Curl
+
 
 ## Permissions
 
 ## makefiles
-
-## scripting
-
-- Curl
-- Looping
-- variables
-- if
-- string interpolation
 
 ## Links
 

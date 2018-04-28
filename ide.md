@@ -36,7 +36,7 @@ Help reduce amount of typing for common code pieces
 
 - Code golf
 
-I also have editor tabs turned off
+I also have editor tabs turned off. This leads me to use shortcuts for navigating between files and classes
 
 ## Setup/preferences
 
@@ -44,13 +44,22 @@ I also have editor tabs turned off
 
 Cool plugins which help with productivity
 
-- rainbow parentheiss
+- rainbow brackets
 - syntax highlighter
+- markdown support
 - ???
 - language specific - docker/yaml/javascript/scala
+
+
 ## Scratch Files
+- version control - github, gitlabs
 
 Great for copying json or xml and then doing some formatting. Plus they dont go away
+
+## Links
+
+- http://hadihariri.com/2014/01/06/intellij-idea-minimal-survival-guide/
+- https://zeroturnaround.com/rebellabs/getting-started-with-intellij-idea-as-an-eclipse-user/
 
 ## Other IDEs
 

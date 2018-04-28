@@ -58,3 +58,8 @@ I currently work with Oracle Sql.
 ### design
 
 - https://martinfowler.com/articles/evodb.html
+- http://databaserefactoring.com/SplitColumns.html
+
+#### Books
+
+- [database refactoring](https://martinfowler.com/books/refactoringDatabases.html)
