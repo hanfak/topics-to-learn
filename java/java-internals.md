@@ -27,6 +27,12 @@
 ## JDK/JRE/JVM
 
 - https://www.journaldev.com/546/difference-jdk-vs-jre-vs-jvm
+- https://self-learning-java-tutorial.blogspot.co.uk/2014/03/difference-between-jre-and-jdk.html
+
+## Just In Time Compiler
+
+- https://self-learning-java-tutorial.blogspot.co.uk/2014/03/jit-compiler.html
+
 
 ## Memory Management
 
@@ -34,3 +40,11 @@
 - http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
 - https://www.journaldev.com/4098/java-heap-space-vs-stack-memory
 - http://www.baeldung.com/java-initialization
+
+### GArbage collection
+
+- https://self-learning-java-tutorial.blogspot.co.uk/2014/07/garbage-collection.html
+
+### Memory leaks
+
+- https://self-learning-java-tutorial.blogspot.co.uk/2014/07/what-is-memory-leak-in-java.html

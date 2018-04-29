@@ -6,13 +6,58 @@ https://maven.apache.org/
 
 Alternatives are Gradle(new) and Ant(old)
 
+## Objectives of maven
+
+- Sets dependencies used in project
+  - Can easily upgrade to new versions
+- Describes how project will be built
+- Provides unified build cycles
+  - Maven have predefined lifecycles
+- Run plugins to acheive goals like unit tests, acceptance tests, jar -ing project with dependencies, create and run docker images etc etc
+
+Maven is just a collection of plugins that are configured in the pom.xml.
+
+## Using IDE to create maven Project
+
+- Prerequisites
+  - need jdk
+  - need IDE
+- Use of IntelliJ
+- create new project -> maven project
+- ????
+
+- check maven is on computer: ```mvn --version```
+
+### Other way - download maven
+
+- link ???
+
 ## pom.xml
 
-- structure
+- Describes the project in this configuration file
+- Project Object Model
+- In XML
+- Can get large but can use aggregation and modules to reduce this
+
+## Archetype
+
+- Is a template
+- define the type of project to be created
+- use ```maven-archetype-quickstart``` for general projects
+-  https://maven.apache.org/guides/introduction/introduction-to-archetypes.html
+
+## Snapshot
+
+- When maven builds a jar/war file it will contain "snapshot" in name.
+- snapshot is the latest code in project.
+- https://maven.apache.org/guides/getting-started/index.html#What_is_a_SNAPSHOT_version
+- https://stackoverflow.com/questions/5901378/what-exactly-is-a-maven-snapshot-and-why-do-we-need-it
+
 
 ## Maven lifecycles
 
-- https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+- Lifecycles are made of phases
+-  https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
 -
 
 ## Dependencies

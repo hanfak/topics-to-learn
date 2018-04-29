@@ -4,6 +4,8 @@
 
 - Keytool
 - JKS
+  - https://self-learning-java-tutorial.blogspot.co.uk/2015/07/extract-private-and-public-key-from.html
+  - https://self-learning-java-tutorial.blogspot.co.uk/2015/07/extract-private-public-key-from-keystore.html
 - Perm
 - cert
 - tls
