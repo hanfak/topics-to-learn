@@ -43,6 +43,27 @@ I have mainly been using Git to version control all software that has been worke
 
 Most of my git usage is done via Intellij. Here are some common uses and tips:
 
+- When a new project has been created, need to set up git. Two ways to do This
+  - command line
+    - In command line, go into folder of project
+    - type `git init`
+  - IntelliJ
+    - Go to menu `VCS > Enable Version Control Integration'
+    - select `Git` from drop down in popup menu
+    - At the top of editor window sign saying `Missing .gitignore file ...` click `Create .gitignore`
+      - In the popup menu, search for the language and tick it and click `Generate`
+    - A popup `Add files to Git` will have all files ticked, this will add them to your commits.
+      - Any files belonging to Intellij, ie `.xml` apart from the pom, and `.idea` folder can be unticked. As these dont need to be part of your project.
+      - Make sure the `.gitignore` file is ticked
+      - After making your chocie click finish.
+    - Add the rest of files.
+      - Go to `9. Version Control` tool window (shortcut alt + 9) then click and drag all the files you want to commit from the `Unversioned Files` into the `Default` section.
+      - These should really only be the `pom.xml` and any files ending with `.java`
+
+- Adding new file
+  - If you create a new file that is meant to be part of the project, then a popup will ask you if you want to `add file to git`. Click `yes` if you want to.
+  - IF you clicked no but really wanted to click yes, or viceversa, just right click on specific file or files, navigate to `git > revert` to remove being considered for a commit. Or if you want to add it navigate to `git > add`
+
 - shortcuts (unix)
   - ctrl + k = commit
   - F7 or alt + left/right = go through changes

@@ -39,6 +39,10 @@ Maven is just a collection of plugins that are configured in the pom.xml.
 - In XML
 - Can get large but can use aggregation and modules to reduce this
 
+### Maven coordinate
+
+This is the combination of GroupID + ArtifactID + Version
+
 ## Archetype
 
 - Is a template
@@ -52,7 +56,6 @@ Maven is just a collection of plugins that are configured in the pom.xml.
 - snapshot is the latest code in project.
 - https://maven.apache.org/guides/getting-started/index.html#What_is_a_SNAPSHOT_version
 - https://stackoverflow.com/questions/5901378/what-exactly-is-a-maven-snapshot-and-why-do-we-need-it
-
 
 ## Maven lifecycles
 
