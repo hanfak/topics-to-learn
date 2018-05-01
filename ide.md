@@ -10,7 +10,7 @@ A great way to practise, is to not use the mouse when developing
 
 Another way to practise is to turn off tabs.
 
-ctrl + shift + a gives a search for all actions best command to know and use often
+`ctrl + shift + a` gives a search for all actions best command to know and use often (NOTE: for mac: `cmd + shift + a`)
 
 - Moving around project files and within file
 - Refactoring
@@ -22,6 +22,8 @@ ctrl + shift + a gives a search for all actions best command to know and use oft
 - Version control
 - Book marking files
 - multi line selection
+
+NOTE: There will be some specific shortcuts and ways of using IntelliJ in different sections of this repo.
 
 ### Live templates
 
