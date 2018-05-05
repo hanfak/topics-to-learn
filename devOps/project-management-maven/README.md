@@ -109,6 +109,11 @@ This is the combination of GroupID + ArtifactID + Version
 - http://www.kyleblaney.com/maven-best-practices/
 - http://books.sonatype.com/mvnref-book/reference/index.html
 
+
+## Links
+
+- https://www.tutorialspoint.com/maven/index.htm
+-
 ## Used plugins
 
 - Fabric8

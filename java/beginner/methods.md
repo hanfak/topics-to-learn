@@ -1,0 +1,35 @@
+### Functions/methods
+- No parameters ```String method(){...}```
+- parameters
+  - varags ie ```Integer method(String... x){...}```
+- Overloading
+  - ```String method(){...}```
+  - ```String method(int a){...}```
+- Instance method
+- Static method
+  - ```static String method() {...}```
+- ```Void```
+- Return type is declared
+  - ```static String method() {... return ....}```
+- Using the above
+  - creating methods
+  - using methods
+    - within class
+    - in different class
+      - ```instance.method(1);```
+    - Defining variable for storing/referencing output of method
+      - ```Integer a = instance.method(1);```
+      - ```Integer a = method(1);```
+- variable scope
+- Naming conventions
+- side effects
+  - Avoid using setters to alter the Instance
+    - new up another instance with changed state instead
+    - make fields private
+  - Called Methods instead of functions as functions cannot have side effects and only effect he arguments passed to it
+  - Links
+    - https://en.wikipedia.org/wiki/Side_effect_(computer_science)
+    - https://stackoverflow.com/questions/1073909/side-effect-whats-this
+- CQRS
+  - method should either query and return something, or do something (ie delegate to another object and its behaviour) and return void
+#### Links
