@@ -9,6 +9,8 @@
 - rollbacks
 - schema_version in database
 - versioning
+- checksums
+  - stops old scripts being edited
 
 
 ## Links

@@ -1,5 +1,16 @@
 # Reading and working with legacy code
 
+When working in a new team or looking at code that has not been touched by the dev before, then being able to navigate, read, add new functionality or refactor needs to be done.
+
+Following tips on how to do this:
+
+- Look for acceptance tests, and debug
+  - Change some stuff in the acceptance test and debug
+- If no tests, find the documentation and requirements and write some.
+  - Do this first before even changing the code
+- Find the main method and follow the code from there
+- Find the endpoints and follow the paths through there
+- Use the domain language from the story and search for it in the code base (source and test)
 
 ## Links
 

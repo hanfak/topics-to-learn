@@ -33,4 +33,5 @@
 - memoization
 
 - encrypting and decrypting
+
 - Bit manipulation

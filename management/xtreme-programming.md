@@ -4,6 +4,28 @@
 
 - PingPong
 
+## TDDs
+
+## User stories
+
+## Iteration planning
+
+## Spiking
+
+
+## Coding standards
+
+## Collective ownerships
+
+- All commits have both pairs name on it
+- Any issue with this code, either one of the pair is responsibile for any issues
+
+## Bugs
+
+- New tests are writing for this
+  - to expose the bug (red)
+  - make sure bug is fixed (green)
+
 
 ## links
 

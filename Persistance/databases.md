@@ -34,7 +34,24 @@ I currently work with Oracle Sql.
   - partitions
     - by reference
 
+#### links
+
+- https://www.oracle-dba-online.com/sql/oracle_sql_tutorial.htm
+- https://www.w3schools.com/sql/
+- https://www.tutorialspoint.com/oracle_sql/index.asp
+-
+
 ### PL/SQL
+
+#### Links
+
+- http://dba.fyicenter.com/faq/oracle/oracle_introduction_pl_sql.html
+- https://www.tutorialspoint.com/plsql/index.htm
+- http://plsql-tutorial.com/
+- http://www.plsqltutorial.com/
+- http://dba.fyicenter.com/faq/oracle/oracle_pl_sql_working_with_procedure.html
+- http://dba.fyicenter.com/faq/oracle/oracle_pl_sql_working_with_database_objects.html
+- http://dba.fyicenter.com/faq/oracle/oracle_pl_sql_working_with_cursors.html
 
 ### Users, permissions
 
@@ -46,6 +63,12 @@ I currently work with Oracle Sql.
 - connecting to databases
 - search through tables
 - ordering in tables
+
+#### Links
+
+- http://www.oracle.com/technetwork/developer-tools/sql-developer/getting-started-155046.html
+- http://www.devshed.com/c/a/oracle/how-to-use-the-oracle-sql-developer-tool/
+- http://www.tutorialized.com/tutorial/Oracle-DBA-FAQ---Introduction-to-Oracle-SQL-Developer/12849
 
 ### CQRS
 
@@ -63,3 +86,7 @@ I currently work with Oracle Sql.
 #### Books
 
 - [database refactoring](https://martinfowler.com/books/refactoringDatabases.html)
+
+## Links
+
+- http://www.tutorialized.com/tutorial/Oracle-DBA-FAQ---Introduction-to-Oracle-SQL-Developer/12849

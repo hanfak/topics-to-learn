@@ -41,7 +41,11 @@ Go to a specific plugin and look at its usages ie for compiler its documentation
 </build>
 ```
 
-We can see it has two goals, and the phase these goals are run in.
+We can see it has two goals, and the phase these goals are run in. The excution 'default-compile' is bound to the 'compile' phase. So when 'mvn compile' is run, it excutes defualt-compile goal ie 'compile'.
+
+If execution does not have a phase set, it will use the default phase that has been set. If not default has been set, then the execution will not be run during the build. If there is a defualt phase set, we can override it by explicitly setting it in the pom ie '<phase>compile</phase>'.
+
+To execute on the command line, `mvn compiler:compile@default-compile`
 
 NOTE: Always run `clean` before any other phase.
 
@@ -89,3 +93,5 @@ To get a list of options for example for compile goal go to its goal (https://ma
 To get the maven coordinates, check the `full name` at the top of the page from the link above, ie `org.apache.maven.plugins:maven-compiler-plugin:3.7.0:compile`, where it is split as so <groupID>:<artifactId>:<version>:<goal>
 
 Can add any of the parameters, like verbose in the xml above.
+
+To configure plugins: http://maven.apache.org/guides/mini/guide-configuring-plugins.html

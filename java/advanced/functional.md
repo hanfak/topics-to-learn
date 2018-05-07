@@ -34,6 +34,16 @@
 
   - https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html
 
+## currying and partial functions
+
+### Links
+
+- https://www.linkedin.com/pulse/functional-programming-applying-currying-java-figueras/
+- https://gist.github.com/timyates/7674005
+- https://adorow.github.io/blog/2017/06/04/currying-in-java
+- https://www.pgrs.net/2015/04/23/partial-function-application-in-java-8/
+- https://medium.com/@andre_videla/excuse-me-sir-there-is-no-curry-in-my-java-2750284c7a1e
+
 ## Links
 
 - https://www.sitepoint.com/java-8-streams-filter-map-reduce/

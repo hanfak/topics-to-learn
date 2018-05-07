@@ -11,7 +11,7 @@
   - Handling loops
   - Where to place
     - use stack trace
-    -
+- debugging through streams
 - Go to breakpoint
 - next step
 - go into

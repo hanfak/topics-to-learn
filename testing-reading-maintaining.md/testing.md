@@ -4,35 +4,41 @@ Testing is baked into everything I do. We write test first and have testers do c
 
 ## Methodologies
 
-* Test Driven Development (TDD)
-  * starting with unit test to drive development
-  * For unit tests
-  * Test behaviour not methods
-  * Process: Red - Green - Refactor
-    * RED - Failing test
-      * ie expected this got something else
-    * GREEN - Pass test
-      * Write production code to make test pass
-    * REFACTOR - Tidy up code
-      * i.e. better designed, better performant
-  * No production code with tests
-  * Have mutation test code coverage (ie [Pi test](http://pitest.org/)) to check all production code is covered by tests
-* Acceptance Test Driven Development (ATDD)
-  * Starting with acceptance test to drive code development
-    * Red - Green - Refactor
-  * Yatspec (java library)
-    * Allows to have readable output for non technical people (ie html and in english)
-    * Can Draw sequence diagrams ( use plantUML) show interactions between different apps
-    * Table tests available
-  * Syntax: Given - When - then
-    * Given: setup dependecies ie databases/3rd party apis
-      * Use of Wiremock to stub 3rd party apis
-      * Use of test database instead of production or a stub
-    * When: Run the application, and interact with it ie make a request to end point
-    * Then: Assertions, assert on output of request, database changes, verify apis called
-      * Use of Junit and matching libraries ie hamcrest/assertj
-  * AKA Behaviour Driven Development (BDD)
-* Testing pyramid
+## Test Driven Development (TDD)
+
+* starting with unit test to drive development
+* For unit tests
+* Test behaviour not methods
+* Process: Red - Green - Refactor
+  * RED - Failing test
+    * ie expected this got something else
+  * GREEN - Pass test
+    * Write production code to make test pass
+  * REFACTOR - Tidy up code
+    * i.e. better designed, better performant
+* No production code with tests
+* Have mutation test code coverage (ie [Pi test](http://pitest.org/)) to check all production code is covered by tests
+
+## Acceptance Test Driven Development (ATDD)
+
+* Starting with acceptance test to drive code development
+  * Red - Green - Refactor
+* Yatspec (java library)
+  * Allows to have readable output for non technical people (ie html and in english)
+  * Can Draw sequence diagrams ( use plantUML) show interactions between different apps
+  * Table tests available
+* Syntax: Given - When - then
+  * Given: setup dependecies ie databases/3rd party apis
+    * Use of Wiremock to stub 3rd party apis
+    * Use of test database instead of production or a stub
+  * When: Run the application, and interact with it ie make a request to end point
+  * Then: Assertions, assert on output of request, database changes, verify apis called
+    * Use of Junit and matching libraries ie hamcrest/assertj
+* AKA Behaviour Driven Development (BDD)
+
+## Testing pyramid
+
+*
 
 ## Types of Tests
 
@@ -67,6 +73,7 @@ Types of test
 
 - Run all Tests
 - flickery tests
+
 ### Black Box Testing
 
 * Component testing
@@ -77,6 +84,8 @@ Types of test
   * Have all dependencies up and running and not using a stub
 * Release testing
 * Testing in different environments in the pipeline
+* Smoke Tests
+  * Run actual workflow, and see if works (something that does not affect other services but does some interal business logic)
 
 ## Stubs
 
