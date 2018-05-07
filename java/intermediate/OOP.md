@@ -14,11 +14,13 @@
 ### Overlaoding
 ### Private constructors
 ### Telescoping
+### Static initialization
 
-## Fields
+## Fields/state
 
 - static final
 - final
+- static variables
 
 ### Accessors
 
@@ -27,11 +29,19 @@
 - protected
 - private
 
-## Methods
+## Methods/behaviour
 
 ### Instance Methods
 
+- Creating
+- Calling
+
 ### Class/Static Methods
+
+- Creating
+- Calling
+
+### Static VS Instance
 
 ### Method variables (local variables)
 
@@ -44,8 +54,33 @@
 ## This
 
 ## Nested Classes
+- member inner Class
+- local inner class
+- annonymous inner Class
+- static nested class
 
 ## Interfaces (new file)
+- methods
+- overide method
+  - annotation
+- inherit from interfaces
+- Reference types
+  - polymorphism
+  - cannot use concrete implementation class which has its own method with this ref type
+- multiple inheritence
+- Default methods
+  - multiple inheritence issue
+
+
 ## Inheritence (new file)
+- abstract class
+  - abstract method
+  - extending
+  - difference with interface
+- super Class
+- sub class
+- super
+- No multiple inheritence
+- use of final
 
 ## Links

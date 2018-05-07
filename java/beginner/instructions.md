@@ -4,7 +4,7 @@
     - ```;```
   - Order of Statements
     - procedural thinking
-  - Boolean statements (and/or/not)
+  - Boolean/relational operators (and/or/not)
     - <, >, >=, =< , ==, !=, object.equals(anotherObject)
   - Arithmetic/math operations
     - simple operators on primitives

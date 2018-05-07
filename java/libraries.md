@@ -32,6 +32,8 @@ Here is a list of common libraries that I have interacted with
 - Wicket
 - Jackson
 - jdom
+- guava
+  - caching 
 - Java
   - ZoneDateTime
   - Util
