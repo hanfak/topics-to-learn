@@ -4,6 +4,10 @@
   - shortcuts
   - looking for yellow warnings
 
+## nested if statements
+
+- https://wpshout.com/unconditionally-refactoring-nested-statements-cleaner-code/
+
 ## Links
 
 - https://refactoring.guru/refactoring

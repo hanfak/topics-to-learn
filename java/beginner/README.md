@@ -26,6 +26,7 @@ This can be applied to practically any langauge.
 ### Exercises
 
 - [Code wars](https://www.codewars.com)
+- https://www.w3resource.com/java-exercises/
 
 ### Links/Books
 

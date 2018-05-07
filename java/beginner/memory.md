@@ -3,7 +3,9 @@
 - Types -
   - Primitive
     - size
-    - types - ```byte/short/int/long/char/boolean/float/double```
+      - https://en.wikibooks.org/wiki/Java_Programming/Primitive_Types
+    - types
+      -  ```byte/short/int/long/char/boolean/float/double```
   - Reference/Objects
 - Variables
   - Types
@@ -11,21 +13,31 @@
     - static/class fields
       - Constants - naming uppercase camel case
     - local variable
+      - declared and used in methods
     - parameters
+      - methods
+      - replaced with arguments when method is called
     - wrappers
       - https://stackoverflow.com/questions/20697868/why-we-need-wrapper-class
-  - Defining/Declarating
+  - Defining/Declaring
     - Types/primitives - char/int/float etc
     - Objects/reference types
       - Common - Char, Integer, Float
-      - libraries - ie String, ArrayList
+      - Classes - ie String, ArrayList
+        - `String aString = "Hello"`
+          - same as `String aNewedUpString = new String("Hello")` but is redundent but correct way as String is not a primitive type
+      - interfaces
+        - Declaring a list of string using the interface rather than the implementation: `List<String> aStringList = new ArrayList<>();`
       - use created
+        - ie `SomeNewType instanceOfNewType = new SomeNewType()`
     - modifers (```public/private/protected/default```)
     - ```final```
   - initialization of variables
     - primitive types with default initiliazation
       - primitives variables needs to declared and set
     - reference types with null as default
+      - ie `SomeNewType instanceOfNewType;` instanceOfNewType will have value of null
+      - ie `SomeNewType instanceOfNewType = new SomeNewType();` will have a reference to the object which is an instance of SomeNewType.
   - default values
     - null for objects
     - for primitive values
@@ -37,8 +49,11 @@
   - Pointers for objects
 - equality
   - pointers/reference
+    - if two objects are different instances of the same class, they will by default not be equal.
+    - If two objects newed separately but with same state should be equal, then need to override the equal() method.
   - object equality
-  -
+
+
 ### Links
 
 - http://www.learnjavaonline.org/en/Variables_and_Types

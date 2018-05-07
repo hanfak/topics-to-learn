@@ -1,13 +1,45 @@
 # Conditonal/Flow control
-  - Changing the flow of instructions
-  - ```Switch/Case```
-  - ```Break```
-  - ```if/else```
-  - ```else if```
-  - ```return```
-  - Use of ```{}```
-  - Nested if statements
-  - ternary
+
+- Changing the flow of instructions
+- ```Switch/Case```
+  - follow through if no `break` at the end of the block
+  - `default`
+    - when all cases have not been matched, it run block in this section
+  - In case statement, they can only be compile time constants of same data type of switch value ie
+    - literals
+    - enum constants
+    - final constant variables which has been initialized
+  - Multiple cases
+```java
+case 'A':
+case 'B':
+case 'C':
+    doSomething();
+    break;
+
+case 'D':
+case 'E':
+    doSomethingElse();
+    break;
+default:
+  doDefaultStuff();
+  break;
+```
+    - Cases, A,B,C will all doSomething() then escape (break out of switch statement)
+    - Cases D,E will all doSomethingElse() then break out.
+- ```Break```
+  - will exit out of the loop/case when hit
+- ```if/else```
+- ```else if```
+- ```return```
+- Use of block ```{}```
+  - Dont need them if only one line statement
+  - good to have
+- Nested if statements
+  - Avoid hard to read
+  - if needing to write a flow chart, needs to be refactored
+- ternary operator
+  - Only for simple cases, can be hard to read
 
 ## Links
 
