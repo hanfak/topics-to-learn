@@ -27,3 +27,7 @@
 - Libraries
 - Code Style
 -
+
+
+## Projects 
+- https://www.lovelycoding.org/2014/04/Java-Project-Ideas-United-State.html

@@ -74,6 +74,11 @@ Types of test
 - Run all Tests
 - flickery tests
 
+
+## Making code more testable
+
+- need to extract out any dependecies, especially those that are being newed up in the class under test (so they can be mocked)
+- 
 ### Black Box Testing
 
 * Component testing
