@@ -9,6 +9,8 @@
     - Collectors.toList
   - distinct
   - sum
+  - infinite streams
+    - https://dzone.com/articles/infinite-streams-in-java-8-and-9
 
 - Method references
 
@@ -17,13 +19,19 @@
   - http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html
 
 
-- functional interfaces
+##  functional interfaces
   - supplier
   - consumer
   - function
   - predicate
   - unary operator
   - binary operator
+
+### Links 
+
+- https://www.javacodegeeks.com/2018/01/functional-interface-java-8-functional-annotation-examples.html
+
+
 
   - https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
   -
@@ -51,3 +59,4 @@
 - https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html
 - http://www.devx.com/Java/functional-features-in-java-8.html
 - https://github.com/winterbe/java8-tutorial
+- https://dzone.com/articles/j%CE%BBv%CE%BB-8-a-comprehensive-look

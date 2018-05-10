@@ -57,6 +57,8 @@ Types of test
   * Avoid using static methods as cannot mock and might be expensive to use (ie long test times, use resources)
 * Static Analysis Tests - testing the code it self not the Behaviour
   * findbugs
+    * https://self-learning-java-tutorial.blogspot.co.uk/2018/03/a-short-tutorial-on-findbugs.html
+    * http://findbugs.sourceforge.net/
   * code style (PMD)
   * code coverage
     * line (Intellj)
@@ -65,6 +67,9 @@ Types of test
   * test apis between internal services used between apps
   * Useful for microservices
 * Learning Tests
+  * http://tomhesl.in/learning-tests/
+  * Use of tests to learn and document open source libraries
+  * Use of test to find out if library should be used
 * Smoke/confidence Tests
 * Performance tests
 *
@@ -78,7 +83,7 @@ Types of test
 ## Making code more testable
 
 - need to extract out any dependecies, especially those that are being newed up in the class under test (so they can be mocked)
-- 
+-
 ### Black Box Testing
 
 * Component testing
@@ -164,6 +169,8 @@ Types of test
 * Wiremock
 * Yatspec
 * AssertJ
+  * https://dzone.com/articles/fluent-assertions-with-assertj
+  * http://joel-costigliola.github.io/assertj/index.html
 * Junit
 * Mockito
 *

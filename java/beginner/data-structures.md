@@ -47,8 +47,9 @@
 - https://en.wikipedia.org/wiki/Array_data_type
 
 ## Arayslist/list
+  - https://dzone.com/articles/the-developers-guide-to-collections-lists
+
+
 ## map/dictionary
-## set
-## others
 
 ## Links

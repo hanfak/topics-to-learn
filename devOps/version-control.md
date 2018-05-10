@@ -33,6 +33,7 @@ I have mainly been using Git to version control all software that has been worke
 
 - [Git Documentation](https://git-scm.com/doc)
 - https://www.tutorialspoint.com/git/index.htm
+- https://examples.javacodegeeks.com/software-development/git/popular-git-commands-examples/
 - Tutorial
   - https://git-scm.com/docs/gittutorial
   - https://www.atlassian.com/git/tutorials

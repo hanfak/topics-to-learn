@@ -2,6 +2,8 @@
 
 
 - https://www.javaworld.com/article/2076075/learn-java/core-java-learn-java-from-the-ground-up.html
+- https://www.javacodegeeks.com/2018/04/jvm-architecture-execution-engine-in-jvm.html
+- https://www.javacodegeeks.com/2018/04/jvm-architecture-overview-of-jvm-and-jvm-architecture.html
 
 
 ## compiler
@@ -15,6 +17,11 @@
 
 - https://www.quora.com/How-does-JVM-works-internally
 - https://www.cubrid.org/blog/understanding-jvm-internals/
+- https://www.javacodegeeks.com/2018/05/jvm-architecture-101-get-to-know-your-virtual-machine.html
+
+### Byte code
+
+- https://examples.javacodegeeks.com/core-java/bytecode-primer-java-class-files/
 
 ### Class Loader
 
@@ -23,6 +30,7 @@
 - https://www.journaldev.com/349/java-classloader
 - https://en.wikipedia.org/wiki/Java_Classloader
 - https://stackoverflow.com/questions/2424604/what-is-a-java-classloader
+- https://www.javacodegeeks.com/2018/04/jvm-architecture-jvm-class-loader-and-runtime-data-areas.html
 
 ## JDK/JRE/JVM
 

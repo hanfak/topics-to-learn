@@ -10,6 +10,7 @@ I currently work with Oracle Sql.
 
 - Queries
   - select
+    - http://www.java67.com/2018/02/why-you-should-not-use-select-in-sql.html
   - joins
   - where
   - alias

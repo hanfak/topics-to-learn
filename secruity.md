@@ -20,6 +20,7 @@
 
 - Encryption
   - base64 encoding
+    - https://self-learning-java-tutorial.blogspot.co.uk/2018/02/convert-certificate-into-base64-encoded.html
 - Decryption
 - asc
 - What to encrypt

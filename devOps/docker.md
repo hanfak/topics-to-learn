@@ -14,6 +14,14 @@
 - remove images
   - https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
 
+
+## Java api
+
+## Deploying
+
+- https://www.javacodegeeks.com/2018/02/docker-java-developers-deploy-docker.html
+
+
 ## Links
 
 - https://docs.docker.com/

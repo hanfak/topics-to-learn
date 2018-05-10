@@ -1,5 +1,10 @@
 # JDBC
 
+## Statements (prepapred, statements)
+
+- http://www.java67.com/2018/03/jdbc-difference-between.html
+
+
 ## Links
 
 - https://self-learning-java-tutorial.blogspot.co.uk/2014/10/jdbc.html

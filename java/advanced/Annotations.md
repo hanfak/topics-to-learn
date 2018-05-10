@@ -1,0 +1,3 @@
+## Links
+
+- https://dzone.com/articles/creating-custom-annotations-in-java
