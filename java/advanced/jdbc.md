@@ -1,9 +1,22 @@
 # JDBC
 
+## Connecting to a database
+
+## Database pooling
+
+
 ## Statements (prepapred, statements)
 
 - http://www.java67.com/2018/03/jdbc-difference-between.html
 
+## Executing statements
+
+## Getting/reading results
+
+### Use of iterator pattern
+### Storing in object
+
+## try with resources to close connections
 
 ## Links
 

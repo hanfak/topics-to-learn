@@ -28,7 +28,10 @@ I have mainly been using Git to version control all software that has been worke
 - merge
 - rebase
 - cherry pick
-
+- mv
+  - When you need to rename a folder and keep the history of all the files inside
+  - `git mv <source> <target>`
+  - need to commit after doing this
 ### Links
 
 - [Git Documentation](https://git-scm.com/doc)

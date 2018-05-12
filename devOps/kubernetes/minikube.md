@@ -1,3 +1,10 @@
+
+
+
+## Setup
+
+## Vitual box
+
 ## Links
 
 - https://kubernetes.io/docs/getting-started-guides/minikube/

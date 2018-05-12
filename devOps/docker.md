@@ -21,6 +21,10 @@
 
 - https://www.javacodegeeks.com/2018/02/docker-java-developers-deploy-docker.html
 
+## images
+
+docker system prune
+docker rmi <image>
 
 ## Links
 

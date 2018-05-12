@@ -30,10 +30,16 @@ http://blog.borud.no/2013/03/gorging-on-java-frameworks-and.html
 - https://samnewman.io/patterns/architectural/bff/
 - https://www.viewfromthecodeface.com/portfolio/clean-code-hexagonal-architecture/
 
+
 ## Books and Links
 
 - [Clean Arthitecture - Uncle Bob post](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)
 - Not used as still new, but highly thought of [serverless architecture] (https://martinfowler.com/articles/serverless.html)
+- https://dzone.com/articles/layered-architecture-is-good
+- https://dzone.com/articles/hexagonal-architecture-is-powerful
+- https://dzone.com/articles/onion-architecture-is-interesting
+- https://dzone.com/articles/package-by-feature-is-demanded
+- https://dzone.com/articles/clean-architecture-is-screamings
 
 ### Books
 
