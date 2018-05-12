@@ -9,6 +9,12 @@
   - https://www.docker.com/what-container
 - Virtual machines
 
+## Pushing image to repository
+
+### Pushing image to docker repo
+
+### Pushing image to some other repository
+
 ## other
 
 - remove images
@@ -23,8 +29,21 @@
 
 ## images
 
-docker system prune
-docker rmi <image>
+- build image
+  - `docker build -t <name of image> /{path to dockerfile}`
+
+- run image
+  - `docker run --name <alias you choose> -d -p 8080:8080 <name of image>`
+    - -p 8080:8080 : This is setting the port to be used in you app and expoing in the docker image. This has to match the port in the dockerfile
+
+
+- Passing arguments
+  - https://forums.docker.com/t/is-it-possible-to-pass-arguments-in-dockerfile/14488/3
+  - https://vsupalov.com/docker-env-vars/
+
+- remove images
+  - `docker system prune`
+  - `docker rmi <image>`
 
 ## Links
 

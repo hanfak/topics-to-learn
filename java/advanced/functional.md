@@ -1,6 +1,6 @@
 # Functional Programming
 
-- streams
+## streams
   - map
   - filter
   - reduce
@@ -12,9 +12,9 @@
   - infinite streams
     - https://dzone.com/articles/infinite-streams-in-java-8-and-9
 
-- Method references
+## Method references
 
-- lambdas
+## lambdas/ Annoynmous functions
 
   - http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html
 
@@ -27,15 +27,16 @@
   - unary operator
   - binary operator
 
-### Links 
+### Links
 
 - https://www.javacodegeeks.com/2018/01/functional-interface-java-8-functional-annotation-examples.html
 
 
 
   - https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
-  -
-- Optional
+
+  
+## Optional
   - of
   - isPresent
   - using map

@@ -194,7 +194,7 @@ NOTE: The phase this is set is not specified, so should be run as pluging goal i
 
 - Add individually:
 
- `jar cvf <name of jar>.jar file1 file2 directory1 directoy2 ...`
+  `jar cvf <name of jar>.jar file1 file2 directory1 directoy2 ...`
 
 - Add all, must be in directory
 
