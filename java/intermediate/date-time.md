@@ -112,6 +112,19 @@ Very similar methods to those in LocalDate
 
 ## Time measurement
 
+A great way of measuring how long a method call takes.
+
+```java
+long startTime = System.currentTimeMillis();
+
+someMethodToMeasure();
+
+long endTime   = System.currentTimeMillis();
+
+long totalTime = endTime - startTime;
+
+```
+
 - http://tutorials.jenkov.com/java-date-time/time-measurement.html
 ## links
 

@@ -113,6 +113,8 @@ Dog dog2 = new Dog(5) // will have age = 5
   ```
 - https://stackoverflow.com/questions/929021/what-are-static-factory-methods
 
+## initialization Block
+
 ### Links
 
 - https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html
