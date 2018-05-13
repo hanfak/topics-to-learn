@@ -211,9 +211,9 @@
       ```java
       Integer elementToRemove = 1;
       List<Integer> integers = Arrays.asList(2, 4, 1, 2, 5, 1);
-
+      int elementIndex = integers.indexOf(elementToRemove);
       List<Integer> listWithfirstOneRemoved = IntStream.range(0, integers.size())
-            .filter(currentIndex -> currentIndex != integers.indexOf(elementToRemove))
+            .filter(currentIndex -> currentIndex != elementIndex)
             .mapToObj(integers::get)
             .collect(Collectors.toList());
       ```

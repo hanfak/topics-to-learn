@@ -7,3 +7,4 @@
 - [FP vs OO](https://blog.cleancoder.com/uncle-bob/2018/04/13/FPvsOO.html)
 - https://dzone.com/articles/when-functional-programming-isnt
 - https://dzone.com/articles/functional-programming-principles-every-imperative
+- https://github.com/hemanth/functional-programming-jargon

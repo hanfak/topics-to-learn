@@ -38,6 +38,8 @@ Here is a list of common libraries that I have interacted with
   - ZoneDateTime
   - Util
   - javax.servlet
+- tuples
+  - https://github.com/javatuples/javatuples
 
 Others I have seen in other teams
 

@@ -30,12 +30,13 @@
 ### Links
 
 - https://www.javacodegeeks.com/2018/01/functional-interface-java-8-functional-annotation-examples.html
+- https://github.com/winterbe/java8-tutorial
 
 
 
   - https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
 
-  
+
 ## Optional
   - of
   - isPresent

@@ -10,23 +10,12 @@ There is some sense of organisation, but it is not complete and a lot of overlap
 
 * Language
   * Java
-    * Beginner
-    * Intermediate
-    * Advanced
-    * Libraries and framework
-    * JVM
   * Scala
-    * Play
 * Frontend
   * Javascript
-  * Refact
   * Html
   * CSS
 * Version Control
-  * Git
-  * Subversion
-  * Gitlabs
-  * Github
 * DevOps
   * Continuous delivery
     * GoCD
@@ -36,18 +25,14 @@ There is some sense of organisation, but it is not complete and a lot of overlap
   * Deployments
   * Environments
   * artifact management
-    * artifactory
   * Properties and property management
   * Monitoring
-    * prometheus
-    * Grafana
 * Support for other users
   * Logs
   * Bug fixes
   * splunk
   * Wiki
   * Status pages
-  * Automating tasks for tester
 * Other
   * Outlook
 * Build and dependency Management
@@ -56,24 +41,11 @@ There is some sense of organisation, but it is not complete and a lot of overlap
 * Testing
   * TDD
   * ATDD
-  * Postman
-  * Stubs
-  * Component
-  * Integration
-  * Release
   * Whitebox
-    * Acceptance
-    * Documentation
-    * Module
-    * Unit
-    * Learning
-    * static analysis
-    * consumer contracts
-    * performance
+  * Blackbox
 * Databases
   * sql
   * pl/sql
-  * Wharehousing
 * Software Design, engineering and arhitecture
   * OOP
   * Funtional
