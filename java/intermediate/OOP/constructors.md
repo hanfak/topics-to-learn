@@ -49,6 +49,11 @@
     }
   }
   ```
+  ## this
+
+  - this.age refers to the object's field, where age is what is pass in to the method via arguments.
+  - `this` on its own refers to the object, thus calling `this.run()` means calling the objects own `run()` method which will use its own instnace fields
+    - we dont need to use `this.run()`, when call another method within an class, which just call `run()`, as it is implicit implied.
 
 ## Overlaoding
 
@@ -69,16 +74,39 @@ class Dog {
 }
 ```
 
-```
-Dog dog1 = new Dog() // will have age = 2
-Dog dog2 = new Dog(5) // will have age = 5
+```java
+Dog dog1 = new Dog(); // will have age = 2
+Dog dog2 = new Dog(5); // will have age = 5
 ```
 
-### this
+-  explicit constructor invocation
+```java
+class Dog {
+  private final Integer age = age;
+  private final String name = name;
 
-- this.age refers to the object's field, where age is what is pass in to the method via arguments.
-- `this` on its own refers to the object, thus calling `this.run()` means calling the objects own `run()` method which will use its own instnace fields
-  - we dont need to use `this.run()`, when call another method within an class, which just call `run()`, as it is implicit implied.
+  public Dog(){
+    this(2, "Rocky");
+  }
+
+  public Dog(Integer age){
+    this(age, "Rocky");
+  }
+
+  public Dog(Integer age, String name){
+    this.age = age;
+    this.namr = name;
+  }
+}
+```
+```java
+Dog dog1 = new Dog(); // will have age = 2, name = Rocky
+Dog dog2 = new Dog(5); // will have age = 5, name= Rocky
+Dog dog4 = new Dog(5, "Bubbles"); // will have age = 5, name= Bubbles
+```
+
+- Using `this` in telescoping constructors (see overloading)
+
 
 ## Private constructors
 

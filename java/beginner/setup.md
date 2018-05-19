@@ -2,7 +2,11 @@
 
 - Installing java/JDK
   - Knowing the difference between JDK, JRE and JVM
+  - `java -version` to verify
 - Setting up the path
+  - Setup JAVA_HOME, `export JAVA_HOME=/<your_JDK_folder>` for mac
+    - for linus `export JAVA_HOME=/usr/local/jdk`
+  - setup java and javac path: `export PATH=$PATH:$JAVA_HOME/bin/`
 - Installing and setting up IDE (Intellij)
   - Can use Eclipse or Netbeans, but Intellij is far better
 - Settings to use JDK

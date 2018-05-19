@@ -1,5 +1,11 @@
 # packages and imports
 
+A way of organising interfaces and classes, to avoid conflicts. Similar to directories. Logically group similar items together. Applying access restriciton to the package.
+
+Package names are in lowercase and cannot start with special character or digit. Can have _ in the name.
+
+Any class in a package can access anything in other classes that is not `private` defined
+
 - static imports
 
 ```java
@@ -41,6 +47,6 @@ String constant = SOME_CONSTANT;
   ```
     - When another import has same Class name and thus conflict
 
-    
+
 - class path
   - libraries/classes that accessible

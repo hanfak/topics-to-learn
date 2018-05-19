@@ -40,6 +40,11 @@ http://blog.borud.no/2013/03/gorging-on-java-frameworks-and.html
 - https://dzone.com/articles/onion-architecture-is-interesting
 - https://dzone.com/articles/package-by-feature-is-demanded
 - https://dzone.com/articles/clean-architecture-is-screamings
+- https://crosp.net/blog/software-architecture/clean-architecture-part-2-the-clean-architecture/
+- https://crosp.net/blog/software-architecture/clean-architecture-part-1-databse-vs-domain/
+- http://blog.cleancoder.com/uncle-bob/2016/01/04/ALittleArchitecture.html
+- https://herbertograca.com/2017/07/03/the-software-architecture-chronicles/
+- https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/
 
 ### Books
 

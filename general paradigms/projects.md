@@ -14,6 +14,15 @@
 
 ## Back end
 
+## web services
+
+## web applications/ web sites
+
+## soap
+
+## Mobile apps
+
+## desktop apps
 
 ## Links
 

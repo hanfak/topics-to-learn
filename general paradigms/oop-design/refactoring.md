@@ -16,6 +16,7 @@
 - https://dev.to/developerscode/the-dichotomy-of-writing-and-reading-object-oriented-code
 - https://www.javacodegeeks.com/2018/04/nine-steps-of-learning-by-refactoring.html
 - https://dzone.com/articles/what-is-refactoring
+- http://www.lagerweij.com/2011/05/28/code-cleaning-a-refactoring-example-in-50-easy-steps/
 
 ## Book
 

@@ -64,6 +64,8 @@ I currently work with Oracle Sql.
 - connecting to databases
 - search through tables
 - ordering in tables
+- Viewing views
+  - Must set edition to see the views
 
 #### Links
 

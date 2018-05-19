@@ -4,6 +4,9 @@
 
 ## CI - continuous integration
 
+- First step on pipeline
+- On git push, the build is run on a build agent, this allows the app to have a source of truth and place to start from to deploy a working app
+
 ## continuous delivery
 
 

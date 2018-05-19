@@ -1,5 +1,7 @@
 # Other Collections
 
+## unmodifiable
+
 ## Queues
 
 - https://dzone.com/articles/the-developers-guide-to-collections-queues
