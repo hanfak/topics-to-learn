@@ -23,8 +23,6 @@
 
 ### Messaging
 
-- ActivMq
-  -
 - jms
   - https://dzone.com/articles/java-message-service-jms
 - Hessian

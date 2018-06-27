@@ -4,11 +4,12 @@
   - map
   - filter
   - reduce
-  - count
+  - Other Reduce
+    - count
+    - distinct
+    - sum
   - collect
     - Collectors.toList
-  - distinct
-  - sum
   - infinite streams
     - https://dzone.com/articles/infinite-streams-in-java-8-and-9
 
@@ -19,7 +20,7 @@
   - http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html
 
 
-##  functional interfaces
+## Functional interfaces
   - supplier
   - consumer
   - function
@@ -32,10 +33,9 @@
 - https://www.javacodegeeks.com/2018/01/functional-interface-java-8-functional-annotation-examples.html
 - https://github.com/winterbe/java8-tutorial
 
-
-
   - https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
 
+## Moving from imperative to functional style
 
 ## Optional
   - of

@@ -38,7 +38,8 @@ Testing is baked into everything I do. We write test first and have testers do c
 
 ## Testing pyramid
 
-*
+* More resource expensive and time consuming tests at the top (few of them). Cover less, but make sure everything fits and works together.
+* More unit tests, less expensive, mocked/stubbed, fast running tests at the bottom. Cover more of the code base.
 
 ## Types of Tests
 

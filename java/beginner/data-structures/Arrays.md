@@ -28,6 +28,21 @@
     - use arraylist
   - Increasing size of arrays
 
+
+## Array VS Linked list
+
+- When to use Linked List over Arrays
+  -  Need constant-time insertions/deletions from the list
+  - Dont konw size of List
+  - Insert items in the middle of the lis
+- When to use arrays of linked list
+  - you need indexed/random access to elements
+  - Size already fixed at initiliaztion
+  - Use less memory
+- ArrayList handle dynamic sizing of array
+
+
+
 ## Links
 
 - https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html

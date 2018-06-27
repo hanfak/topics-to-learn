@@ -4,6 +4,10 @@
   - shortcuts
   - looking for yellow warnings
 
+## aims
+
+- https://stackoverflow.com/questions/498651/goals-of-refactoring
+
 ## nested if statements
 
 - https://wpshout.com/unconditionally-refactoring-nested-statements-cleaner-code/

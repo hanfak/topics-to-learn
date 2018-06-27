@@ -2,9 +2,15 @@
 
 ## unmodifiable
 
+## Linked list
+
 ## Queues
 
 - https://dzone.com/articles/the-developers-guide-to-collections-queues
+
+
+## Stacks
+
 
 ## Sets
 

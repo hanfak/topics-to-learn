@@ -1,5 +1,9 @@
 # Debugging
 
+## Use print statements
+
+- for when app is running in container and cannot debug via IDE
+
 ## Stack trace
 
 - Search for exception message
