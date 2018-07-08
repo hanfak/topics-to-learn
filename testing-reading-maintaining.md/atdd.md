@@ -1,0 +1,2 @@
+- https://reqtest.com/testing-blog/tdd-and-atdd-an-overview-of-the-two-popular-methods-2/
+- https://gaboesquivel.com/blog/2014/differences-between-tdd-atdd-and-bdd/

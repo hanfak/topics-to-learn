@@ -1,0 +1,2 @@
+- https://codurance.com/software-creation/2016/03/03/cohesion-cornerstone-software-design/
+- https://pragprog.com/magazines/2010-12/cohesive-software-design

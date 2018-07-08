@@ -56,6 +56,8 @@ Types of test
 * Module test
 * unit tests
   * Avoid using static methods as cannot mock and might be expensive to use (ie long test times, use resources)
+  * links
+    * Sandi metz https://www.youtube.com/watch?v=URSWYvyc42M
 * Static Analysis Tests - testing the code it self not the Behaviour
   * findbugs
     * https://self-learning-java-tutorial.blogspot.co.uk/2018/03/a-short-tutorial-on-findbugs.html

@@ -53,7 +53,7 @@ Implementing these design principles to have better code
 - http://javarevisited.blogspot.co.uk/2012/03/10-object-oriented-design-principles.html
 - [Core Design Principles for Software Developers by Venkat Subramaniam](https://www.youtube.com/watch?v=llGgO74uXMI&t=2s)
 - https://dzone.com/articles/software-design-principles
-- 
+-
 
 ## SOLID Principles
 
@@ -70,10 +70,8 @@ Implementing these design principles to have better code
 - https://dev.to/naveen/how-to-write-an-object-oriented-program-that-doesnt-suck
 - https://dzone.com/articles/object-oriented-programming-concepts-with-a-system
 
-## Others
+## links 
 
-- Avoid Getter and Setters
-  - Make fields public final, so they cannot be changed (ie immutable)
-  - dont ask for field from its object, ask objec to do the work (delegate it) and then call it
-  - http://www.yegor256.com/2014/09/16/getters-and-setters-are-evil.html
-  - https://dzone.com/articles/getters-and-setters-considered-harmful
+
+
+http://blog.thecodewhisperer.com/permalink/putting-an-age-old-battle-to-rest

@@ -113,7 +113,9 @@ This is the combination of GroupID + ArtifactID + Version
 ## Links
 
 - https://www.tutorialspoint.com/maven/index.htm
+- https://codurance.com/2016/08/19/maven-demystified/
 -
+
 ## Used plugins
 
 - Fabric8

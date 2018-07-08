@@ -25,3 +25,5 @@
   - cpd
   - skills matrix
   - code reviews
+
+- https://blog.ippon.tech/agile-story-development/

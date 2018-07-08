@@ -33,11 +33,16 @@ Communications between different applications/businesses as either the human use
 - Consumer driven contract testing
 - stubbing 3rd party apps for testing
 
+## Push/Pull
+
 - polling/reading
   - making request regularly
   - use of scheduled job ie quartz
 - pushing
   - app pushes stuff to your app regularly
+
+- https://simplicable.com/new/pull-vs-push-technology
+
 - Crawlers
   - form of polling
   - cover feeds/webpage for info

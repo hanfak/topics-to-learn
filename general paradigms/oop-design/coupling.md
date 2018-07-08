@@ -1,0 +1,2 @@
+- https://codurance.com/software-creation/2016/07/25/thoughts-on-coupling-in-software-design/
+- https://martinfowler.com/ieeeSoftware/coupling.pdf

@@ -2,6 +2,11 @@
 
 ## Synchronous Vs Aysnc
 
+## Using completeable futures
+
+- http://www.deadcoderising.com/java8-writing-asynchronous-code-with-completablefuture/
+- https://mjg123.github.io/2017/10/23/Java-Futures-Promises.html
+
 ## Within the app
 
 ## outside the app

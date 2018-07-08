@@ -1,0 +1,7 @@
+- https://medium.com/javascript-scene/the-outrageous-cost-of-skipping-tdd-code-reviews-57887064c412
+- https://nordicapis.com/defining-stateful-vs-stateless-web-services/
+- https://stackoverflow.com/questions/5329618/stateless-vs-stateful-i-could-use-some-concrete-information
+- https://www.quora.com/What-is-the-difference-between-Stateful-and-Stateless-Server
+- https://stackoverflow.com/questions/5539823/what-are-the-benefits-of-a-stateless-web-application
+- https://stackoverflow.com/questions/34651801/how-to-make-stateless-web-applications-especially-with-spring-mvc
+- https://softwareengineering.stackexchange.com/questions/346867/how-to-keep-applications-stateless

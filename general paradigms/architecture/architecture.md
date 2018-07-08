@@ -1,5 +1,18 @@
 # Architecture
 
+Concerned with where to put things.
+
+Now more important to know where dependencies flow.
+
+Happy -> demilaturised zone <-> world yes
+
+Happy <-> world No
+
+Happy = core, use case, interfaces
+demilaturised zone = adapters implement adapters
+world = frameworks/db/entrypoints/libraries/file systems
+
+
 ## Patterns
 
 - Archetectural Patterns

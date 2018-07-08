@@ -1,9 +1,14 @@
 # JMS
 
+Type of queue
+
+Generally asynchronous
+
 - https://www.journaldev.com/9731/introduction-to-jms
 - http://activemq.apache.org/hello-world.html
 - https://examples.javacodegeeks.com/enterprise-java/jms/apache-activemq-hello-world-example/
 - https://www.codenotfound.com/jms-point-to-point-messaging-example-activemq-maven.html
+- https://stackoverflow.com/questions/1035949/real-world-use-of-jms-message-queues
 
 
 Start activemq
