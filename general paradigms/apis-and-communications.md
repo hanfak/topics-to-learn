@@ -11,6 +11,7 @@ Communications between different applications/businesses as either the human use
 
 - JMS
 - Hessian
+  - https://en.wikipedia.org/wiki/Hessian_(Web_service_protocol)
 
 - External source
   - Ftp/sftp
@@ -47,3 +48,13 @@ Communications between different applications/businesses as either the human use
   - form of polling
   - cover feeds/webpage for info
 - Web sockets
+
+## Others
+
+- RPC
+  - https://en.wikipedia.org/wiki/Remote_procedure_call
+  - XML-RPC
+- RMI
+- COBRA
+- DCOM
+  - https://en.wikipedia.org/wiki/Component_Object_Model

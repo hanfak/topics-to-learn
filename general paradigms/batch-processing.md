@@ -1,7 +1,8 @@
 - https://www.toptal.com/spring/spring-batch-tutorial
 - http://www.mkyong.com/tutorials/spring-batch-tutorial/
 - http://www.baeldung.com/introduction-to-spring-batch
-
+- https://vladmihalcea.com/scheduled-jobs-best-practices/
+- https://blog.codecentric.de/en/2014/11/enterprise-java-batch-best-practice-architecture/
 
 database
 

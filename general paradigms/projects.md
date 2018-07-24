@@ -6,6 +6,10 @@
 
 ## Enterprise software
 
+- used by Business
+  - used by other areas of business
+- makes or saves money for the business
+
 ## Consumer software
 
 ## Middleware

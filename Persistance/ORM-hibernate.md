@@ -4,6 +4,9 @@ A pattern that allows the use of a mapper to convert between code (ie java) to d
 
 ## Disadvantages of using orms
 
+- https://blog.oio.de/2016/05/12/orm-vs-sql-when-should-i-use-a-sql-centric-persistence-layer/
+- https://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html
+
 ## Links
 
 - https://en.wikipedia.org/wiki/Object-relational_mapping

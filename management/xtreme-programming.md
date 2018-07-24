@@ -26,6 +26,9 @@
   - to expose the bug (red)
   - make sure bug is fixed (green)
 
+## Practises
+
+https://basusourav.wordpress.com/2015/05/18/12-core-practices-of-xp/
 
 ## links
 

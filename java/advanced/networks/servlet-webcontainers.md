@@ -45,7 +45,7 @@
 - https://stackoverflow.com/questions/23176717/embedded-vs-non-embedded-java-server
 - http://stephencoakley.com/2017/07/06/embedded-vs-external-web-server
 - https://www.beyondjava.net/blog/application-servers-sort-of-dead
-
+- https://www.reddit.com/r/java/comments/36nt73/war_vs_containerless_spring_boot_etc/?utm_source=amp&utm_medium=comment_list
 
 ## Tomcat/catlina
 
