@@ -14,3 +14,5 @@ Here are some rules that I use:
 - https://github.com/twitter/commons/blob/master/src/java/com/twitter/common/styleguide.md
 - https://github.com/raywenderlich/java-style-guide
 - https://gist.github.com/goldbattle/9283399
+
+Look at the chapter on formatting in Clean Code by Robert Martin

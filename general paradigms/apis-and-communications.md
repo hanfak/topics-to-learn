@@ -10,13 +10,13 @@ Communications between different applications/businesses as either the human use
   - GUI/front end
 
 - JMS
+  - JMS OR REST https://stackoverflow.com/questions/9623482/when-to-use-jms-and-when-to-use-rest
 - Hessian
   - https://en.wikipedia.org/wiki/Hessian_(Web_service_protocol)
 
 - External source
   - Ftp/sftp
   - database
-
 
 - desktop gui
   - javafx gui

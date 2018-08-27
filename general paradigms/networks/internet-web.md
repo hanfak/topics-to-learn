@@ -1,5 +1,8 @@
 # Internet & Web
 
+- https://monami555.github.io/2017/03/04/how-internet-works.html
+- https://gist.github.com/alyssaq/6388253
+
 ## HTTP
 
 ## HTTPS
@@ -8,6 +11,7 @@
 
 - https://gurunguns.wordpress.com/2017/10/10/how-does-https-works/
 - https://robertheaton.com/2014/03/27/how-does-https-actually-work/
+- https://gist.github.com/alyssaq/6377540
 
 ## TCP/IP
 
@@ -20,3 +24,9 @@
 - https://dyn.com/blog/dns-why-its-important-how-it-works/
 
 ### etc/hosts file
+
+## OSI
+
+- http://www.javaperspective.com/the-osi-model.html
+- https://stackoverflow.com/questions/42456116/understanding-tcp-ip-layering-through-internet-flow
+- http://www.javaperspective.com/ip-addresses-dns-and-port-numbers.html

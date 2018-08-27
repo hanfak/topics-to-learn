@@ -1,3 +1,5 @@
+- https://blog.containership.io/7-things-that-nobody-told-you-about-load-balancers-that-you-ought-to-know
+
 # Nginix & Proxy servers
 
 - https://nginx.org/en/
