@@ -35,3 +35,7 @@
 ## History
 
 - https://blog.heroku.com/the_next_twenty_years_of_java_where_we_ve_been_and_where_we_re_going
+
+## Benefits
+
+- https://www.kelltontech.com/kellton-tech-blog/why-and-how-java-better-your-enterprise

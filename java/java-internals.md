@@ -18,6 +18,8 @@
 - https://www.quora.com/How-does-JVM-works-internally
 - https://www.cubrid.org/blog/understanding-jvm-internals/
 - https://www.javacodegeeks.com/2018/05/jvm-architecture-101-get-to-know-your-virtual-machine.html
+- https://www.javacodegeeks.com/2018/04/jvm-architecture-overview-of-jvm-and-jvm-architecture.html
+- https://www.javacodegeeks.com/2018/04/jvm-architecture-jvm-class-loader-and-runtime-data-areas.html
 
 ### Byte code
 

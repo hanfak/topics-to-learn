@@ -25,6 +25,9 @@
   - extends
   - super
   - PECS
+    - https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
+    - https://howtodoinjava.com/java/generics/java-generics-what-is-pecs-producer-extends-consumer-super/
+    - 
   - Multiple bounds
 - Wild cards
   - https://stackoverflow.com/questions/18176594/when-to-use-generic-methods-and-when-to-use-wild-card
@@ -40,6 +43,7 @@
 ## Links
 
 - https://docs.oracle.com/javase/tutorial/java/generics/
+- http://thegreyblog.blogspot.com/2011/03/java-generics-tutorial-part-i-basics.html
 - https://www.javacodegeeks.com/2015/09/how-and-when-to-use-generics.html
 - https://zeroturnaround.com/rebellabs/java-generics-cheat-sheet/
 - https://dzone.com/articles/5-things-you-should-know-about-java-generics

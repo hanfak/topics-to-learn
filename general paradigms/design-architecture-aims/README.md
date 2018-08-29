@@ -1,0 +1,77 @@
+Aspects of software that is engineered to have the following, although some will conflict, and thus a trade off is required. These trade offs and choices of what is a priority change and occur during the lifecycle of a system/application:
+
+-  accessibility
+-  affordability
+-  compatibility
+-  customizability
+-  dependability
+-  effectiveness
+-  fault tolerance
+-  integrity
+-  mobility
+-  portability
+-  provability
+-  reproducibility
+-  safety
+-  securability
+-  sustainability
+-  accountability
+-  agility
+-  composability
+-  debugability
+-  deployability
+-  efficiency
+-  fidelity
+-  interoperability
+-  modifiability
+-  precision
+-  recoverability
+-  resilience
+-  scalability
+-  simplicity
+-  tailorability
+-  accuracy
+-  auditability
+-  configurability
+-  degradability
+-  discoverability
+-  usability
+-  flexibility
+-  learnability
+-  modularity
+-  predictability
+-  relevance
+-  responsiveness
+-  seamlessness
+-  stability
+-  testability
+-  adaptability
+-  autonomy
+-  correctness
+-  determinability
+-  distributability
+-  extensibility
+-  inspectability
+-  maintainability
+-  operability process
+-  capabilities
+-  reliability
+-  reusability
+-  self-sustainability
+-  standards compliance
+-  timeliness
+-  administrability
+-  availability
+-  credibility
+-  demonstrability
+-  durability
+-  failure transparency
+-  installability
+-  manageability
+-  orthogonality
+-  producibility
+-  repeatability
+-  robustness
+-  serviceability
+-  survivability
+-  traceability

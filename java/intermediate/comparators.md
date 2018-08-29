@@ -103,3 +103,7 @@
 ## Links
 
 - http://www.baeldung.com/java-comparator-comparable
+- https://www.youtube.com/watch?v=DXPjjVnUvgA
+- https://www.youtube.com/watch?v=oAp4GYprVHM
+- https://dzone.com/articles/sorting-java-arraylist
+- https://www.journaldev.com/780/comparable-and-comparator-in-java-example

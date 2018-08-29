@@ -71,5 +71,6 @@
 
 ## Links
 
-http://www.ee.surrey.ac.uk/Teaching/Unix/
-https://learncodethehardway.org/unix/
+- http://www.ee.surrey.ac.uk/Teaching/Unix/
+- https://learncodethehardway.org/unix/
+- https://github.com/Idnan/bash-guide

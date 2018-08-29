@@ -2,6 +2,7 @@
 
 - what is it?
   - https://www.docker.com/what-docker
+  - https://www.youtube.com/watch?v=-NzfOhSAZpA
 
 ## Containers
 
