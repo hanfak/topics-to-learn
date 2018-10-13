@@ -8,6 +8,11 @@
 
 - https://kukuruku.co/post/do-not-learn-frameworks-learn-the-architecture/
 
+## Libraries
+
+- https://www.oracle.com/corporate/features/library-in-java-best-practices.html
+- https://www.baeldung.com/design-a-user-friendly-java-library
+
 ## framworks disadvantages
 
 - http://tomasp.net/blog/2015/library-frameworks/

@@ -5,8 +5,49 @@
     - size
       - https://en.wikibooks.org/wiki/Java_Programming/Primitive_Types
     - types
-      -  ```byte/short/int/long/char/boolean/float/double```
+      -  ```byte/short/int/long/char/boolean/float/double````
   - Reference/Objects
+  - Casting
+    - Can apply to objects or primitives
+      - The boolean type cannot be cast to/from any other primitive type.
+    - casting floating point primitives (float, double) to whole number primitives, the number is rounded down.
+    - implicit Casting
+      - Going from smaller range to larger range
+      - `byte byteVar = 42; short shortVar = byteVar;`
+      - Implicit casting happens when the source type extends or implements the target type (casting to a superclass or interface).
+        - example
+        ```java
+        String s = "str";
+        Object obj= s;
+        ```
+    - Explicit Casting
+      - Going from larger range to smaller
+      - `double doubleVar = 42.0d; float floatVar = (float) doubleVar;
+      - Explicit casting has to be done when the source type is extended or implemented by the target type (casting to a subtype).
+        - can produce a runtime exception (ClassCastException) when the object being cast is not of the target type (or the target's subtype).
+        - example
+        ```java
+        Object o = "str";
+        String str = (String) o;
+        ```
+    - promotion
+      - example
+      ```java
+      short short1 = 1, short2 = 2;
+      int int1 = 1;
+      char char1 = 1;
+      int1 = short1 + short2; // short is promoted to int.
+      int1 = char1 + short2; // both char and short promoted to int.
+      ```
+    - instanceOf()
+      - will check if object is instance of some class or superclass (abstract/interface)
+      ```java
+      Object obj = Calendar.getInstance();
+      obj instanceof Object;
+      obj instanceof Calendar;
+      obj instanceof Serializable;
+      obj instanceof Date; // false, but IDE will tell you this
+      ```
 - Variables
   - Types
     - non-static/instance fields - naming lowercase snake case
@@ -35,9 +76,25 @@
   - initialization of variables
     - primitive types with default initiliazation
       - primitives variables needs to declared and set
+      - Example
+      ```java
+      int i = 10;
+      ```
+        - Where the value 10 is stored in i
     - reference types with null as default
       - ie `SomeNewType instanceOfNewType;` instanceOfNewType will have value of null
       - ie `SomeNewType instanceOfNewType = new SomeNewType();` will have a reference to the object which is an instance of SomeNewType.
+    - Example
+    ```java
+    Object obj = new Object();
+    ```
+      - Object is a reference type.
+      - obj is the variable in which to store the new reference.
+      - Object() is the call to a constructor of Object.
+      - What happens
+        - Space in memory is allocated for the object.
+        - The constructor Object() is called to initialize that memory space.
+        - The memory address is stored in obj, so that it references the newly created object.
   - default values
     - null for objects
     - for primitive values
@@ -54,6 +111,11 @@
   - object equality
 
 ## boxing and unboxing
+
+## Other
+
+- Dereferencing datatypes
+-
 
 ### Links
 

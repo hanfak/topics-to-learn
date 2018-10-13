@@ -15,6 +15,7 @@
 ## Conditional to polymorphism
 - https://www.youtube.com/watch?v=8uJC9wkA204
 - https://www.youtube.com/watch?v=SuqrAtXnn1U
+- https://stackoverflow.com/questions/48377525/replace-conditional-with-polymorphism
 
 ## replace method with method object
 

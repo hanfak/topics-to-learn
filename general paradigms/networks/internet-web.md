@@ -2,6 +2,8 @@
 
 - https://monami555.github.io/2017/03/04/how-internet-works.html
 - https://gist.github.com/alyssaq/6388253
+- https://github.com/enkidevs/curriculum/wiki/Comp.-Sci.-networking-Course
+- https://blog.codeanalogies.com/2018/04/26/web-servers-explained-by-running-a-microbrewery/
 
 ## HTTP
 

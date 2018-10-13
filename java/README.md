@@ -39,3 +39,8 @@
 ## Benefits
 
 - https://www.kelltontech.com/kellton-tech-blog/why-and-how-java-better-your-enterprise
+
+## Links
+
+- http://ocpj8.javastudyguide.com/ch01.html
+- https://github.com/enkidevs/curriculum/wiki/Java-Topic

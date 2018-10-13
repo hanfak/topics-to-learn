@@ -4,6 +4,9 @@
   - Runtime/unchecked
   - checked
   - errors
+
+https://dzone.com/articles/ignore-exceptions-in-java
+
 - Throwing Exceptions
   - `throw`
   - message

@@ -29,6 +29,15 @@
 
 ## soap
 
+## SaaS
+
+- https://en.wikipedia.org/wiki/Software_as_a_service
+
+
+## PaaS
+
+- https://en.wikipedia.org/wiki/Platform_as_a_service
+
 ## Mobile apps
 
 ## desktop apps

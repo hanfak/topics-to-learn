@@ -93,3 +93,4 @@ I currently work with Oracle Sql.
 ## Links
 
 - http://www.tutorialized.com/tutorial/Oracle-DBA-FAQ---Introduction-to-Oracle-SQL-Developer/12849
+- https://github.com/enkidevs/curriculum/wiki/SQL-Topic

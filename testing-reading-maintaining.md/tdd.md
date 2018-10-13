@@ -15,3 +15,5 @@
 - trip service https://github.com/sandromancuso/trip-service-kata
 
 https://medium.com/javascript-scene/the-outrageous-cost-of-skipping-tdd-code-reviews-57887064c412
+
+- https://medium.freecodecamp.org/test-driven-development-i-hated-it-now-i-cant-live-without-it-4a10b7ce7ed6

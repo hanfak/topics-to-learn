@@ -1,0 +1,2 @@
+- https://medium.com/webbasedevelopment/why-java-is-the-most-preferred-programming-language-for-building-end-to-end-enterprise-solutions-731027246f2a
+- https://www.invensis.net/blog/it/benefits-of-java-over-other-programming-languages/

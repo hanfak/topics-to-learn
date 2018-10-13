@@ -41,7 +41,7 @@ I have mainly been using Git to version control all software that has been worke
   - https://git-scm.com/docs/gittutorial
   - https://www.atlassian.com/git/tutorials
   - https://try.github.io/levels/1/challenges/1
-  -
+  - https://github.com/enkidevs/curriculum/wiki/Git-Topic
 
 ## Git In Intellij
 

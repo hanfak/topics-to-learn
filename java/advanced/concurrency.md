@@ -8,6 +8,7 @@
 - https://dzone.com/articles/basics-of-using-java-future-and-executor-service
 - https://www.callicoder.com/java-executor-service-and-thread-pool-tutorial/
 - https://www.baeldung.com/java-executor-service-tutorial
+- https://dzone.com/articles/guide-to-java-8-concurrency-using-executors
 
 
 ## Synchronized

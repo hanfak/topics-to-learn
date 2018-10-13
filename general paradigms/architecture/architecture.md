@@ -42,6 +42,7 @@ http://blog.borud.no/2013/03/gorging-on-java-frameworks-and.html
 - http://www.sickenger.com/2013/02/11/hibernate-just-stop-it/
 - https://samnewman.io/patterns/architectural/bff/
 - https://www.viewfromthecodeface.com/portfolio/clean-code-hexagonal-architecture/
+- https://www.thoughtworks.com/insights/blog/write-quality-mobile-apps-any-architecture?utm_source=linkedin&utm_medium=social&utm_campaign=technology
 
 
 ## Books and Links
@@ -53,6 +54,7 @@ http://blog.borud.no/2013/03/gorging-on-java-frameworks-and.html
 - https://dzone.com/articles/onion-architecture-is-interesting
 - https://dzone.com/articles/package-by-feature-is-demanded
 - https://dzone.com/articles/clean-architecture-is-screamings
+- https://github.com/donnemartin/system-design-primer
 - https://crosp.net/blog/software-architecture/clean-architecture-part-2-the-clean-architecture/
 - https://crosp.net/blog/software-architecture/clean-architecture-part-1-databse-vs-domain/
 - http://blog.cleancoder.com/uncle-bob/2016/01/04/ALittleArchitecture.html

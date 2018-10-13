@@ -63,6 +63,10 @@
   - kill processes
 - Ziping and unzipping files
 - Curl
+- top
+  - monitoring processes, mem usuage etc
+- du
+  - monitoring disk usuage
 
 
 ## Permissions
@@ -74,3 +78,4 @@
 - http://www.ee.surrey.ac.uk/Teaching/Unix/
 - https://learncodethehardway.org/unix/
 - https://github.com/Idnan/bash-guide
+- https://github.com/enkidevs/curriculum/wiki/Linux-Topic

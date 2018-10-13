@@ -169,6 +169,8 @@ Types of test
 
 ## links
 
+- https://mixandgo.com/learn/feature-tests-vs-integration-tests-vs-unit-tests-in-ruby-and-rails
+
 * Wiremock
 * Yatspec
 * AssertJ

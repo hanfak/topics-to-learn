@@ -1,0 +1,4 @@
+- https://medium.freecodecamp.org/graphql-java-development-stack-in-production-21f402c4c37a
+- https://www.howtographql.com/graphql-java/0-introduction/
+- https://www.baeldung.com/spring-graphql
+- https://github.com/graphql-java/graphql-java-http-example
