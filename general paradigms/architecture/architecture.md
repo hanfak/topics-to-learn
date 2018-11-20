@@ -60,7 +60,7 @@ http://blog.borud.no/2013/03/gorging-on-java-frameworks-and.html
 - http://blog.cleancoder.com/uncle-bob/2016/01/04/ALittleArchitecture.html
 - https://herbertograca.com/2017/07/03/the-software-architecture-chronicles/
 - https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/
-
+- https://geeks.uniplaces.com/putting-clean-architecture-into-practice-20c47d8c76de
 ### Books
 
 - [Clean Architecture - uncle bob]()

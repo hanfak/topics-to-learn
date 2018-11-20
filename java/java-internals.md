@@ -4,6 +4,7 @@
 - https://www.javaworld.com/article/2076075/learn-java/core-java-learn-java-from-the-ground-up.html
 - https://www.javacodegeeks.com/2018/04/jvm-architecture-execution-engine-in-jvm.html
 - https://www.javacodegeeks.com/2018/04/jvm-architecture-overview-of-jvm-and-jvm-architecture.html
+- https://www.youtube.com/watch?v=iDypTyErl78
 
 
 ## compiler

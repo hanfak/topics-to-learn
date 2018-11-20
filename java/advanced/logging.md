@@ -35,3 +35,6 @@
 - Link all logs that relate to one request from beginner to outgoing response
   - use tracey id
   - use id
+
+
+https://dzone.com/articles/java-logs-4-types-of-logs-you-need-to-know

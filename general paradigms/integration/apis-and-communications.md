@@ -4,7 +4,7 @@ Communications between different applications/businesses as either the human use
 
 - Http/webservices
   - REST
-  - soap
+  - SOAP
     - Going to one end point, and the body and/or headers determine how it will be processed
   - https://stackoverflow.com/questions/19884295/soap-vs-rest-differences
   - GUI/front end
@@ -25,7 +25,6 @@ Communications between different applications/businesses as either the human use
   - called with the application
 
 
-
 - Fixed API to communicate with
   - advantages?
   - disadvantages?
@@ -39,14 +38,18 @@ Communications between different applications/businesses as either the human use
 - polling/reading
   - making request regularly
   - use of scheduled job ie quartz
+  - Ask if there is any new stuff to get on a schedule, then gets it
 - pushing
-  - app pushes stuff to your app regularly
+  - app pushes stuff to your app regularly or when new stuff needs to be pushed
 
 - https://simplicable.com/new/pull-vs-push-technology
 
 - Crawlers
   - form of polling
   - cover feeds/webpage for info
+  - get data, and then get data from other links
+
+
 - Web sockets
 
 ## Others
@@ -55,6 +58,7 @@ Communications between different applications/businesses as either the human use
   - https://en.wikipedia.org/wiki/Remote_procedure_call
   - XML-RPC
 - RMI
+- Hessian
 - COBRA
 - DCOM
   - https://en.wikipedia.org/wiki/Component_Object_Model

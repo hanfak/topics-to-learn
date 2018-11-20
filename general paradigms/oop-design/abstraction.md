@@ -1,1 +1,2 @@
 - https://codurance.com/2015/01/27/balanced-abstraction-principle/
+- https://dzone.com/articles/a-reminder-abstraction

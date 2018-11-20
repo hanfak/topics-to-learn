@@ -12,6 +12,8 @@
     - Collectors.toList
   - infinite streams
     - https://dzone.com/articles/infinite-streams-in-java-8-and-9
+  - lambdas that throw exceptions
+    - https://medium.freecodecamp.org/why-you-should-ignore-exceptions-in-java-and-how-to-do-it-correctly-8e95e5775e58
 
 ## Method references
 
@@ -27,6 +29,7 @@
   - predicate
   - unary operator
   - binary operator
+
 
 ### Links
 

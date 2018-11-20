@@ -14,6 +14,11 @@
 - https://gurunguns.wordpress.com/2017/10/10/how-does-https-works/
 - https://robertheaton.com/2014/03/27/how-does-https-actually-work/
 - https://gist.github.com/alyssaq/6377540
+- https://stackoverflow.com/questions/6340918/trust-store-vs-key-store-creating-with-keytool
+- https://www.youtube.com/watch?v=iQsKdtjwtYI
+- https://javarevisited.blogspot.com/2012/09/difference-between-truststore-vs-keyStore-Java-SSL.html
+- https://stackoverflow.com/questions/50401105/how-to-implement-tls-between-microservices
+- https://security.stackexchange.com/questions/124714/how-to-make-secure-communication-between-servers
 
 ## TCP/IP
 

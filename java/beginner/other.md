@@ -11,3 +11,7 @@
 - Numeric Promotion
 - main method
 - command line arguments
+
+## Turn project to maven in intellij
+
+right click on project name, top level folder. Select 'add framework support', select maven.

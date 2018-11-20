@@ -67,6 +67,11 @@
   - monitoring processes, mem usuage etc
 - du
   - monitoring disk usuage
+  - `du -sh *`` summarises disk usages of the files in the current directory we use
+  - `du -sh .[!.]* *` to include hidden files
+- df -h
+  - summarises disk usage of each harddrive
+-
 
 
 ## Permissions
