@@ -2,6 +2,8 @@
 
 Communications between different applications/businesses as either the human user or another application. Some business functionallity might need to be split into several apps so that they can managed properly, worked on separately, hide implementation, designed better but they will have to all communicate with one another to provide a business service. This means that apps needs to talk to each other and there are a few ways of doing this.
 
+https://www.enterpriseintegrationpatterns.com/patterns/messaging/toc.html
+
 - Http/webservices
   - REST
   - SOAP

@@ -31,6 +31,7 @@ I currently work with Oracle Sql.
     - many - many
   - constraints
   - indexes
+    - https://8thlight.com/blog/kyle-annen/2018/10/09/an-introduction-to-database-indexing.html
   - tablespaces
   - partitions
     - by reference

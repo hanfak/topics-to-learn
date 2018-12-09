@@ -104,3 +104,312 @@ Quotes
   - When a design decision is used across multiple modules, coupling them together.
 - Design it twice, taking radically different approaches.
 - If you're not making the design better, you are probably making it worse.
+
+
+## Nature of complexity
+
+- Aim of software design is to minimise Complexity
+- The skill of recognising complexity is essential
+  - Choose good from a range of options
+  - identify problems before investing a lot of time iin them
+- Complexity is anything related to a system that makes it hard to understand or modify
+- Complexity is found from the reader than the writer.
+- Symptons of Complexity
+  - Change amplification
+    - Simple change in system, requires many modifications in many places
+    - Goals is to reduce the amount of code that is affected by each design decision
+  - Cognitive Load
+    - How much a dev need to konw in order to complete a task
+    - high load, more learning, more risk of bugs
+    - Examples : apis with many methods, global variables, inconsistencies, dependencies between Modules
+    - Number lines does not equaly complexity
+  - Unknown unknowns
+    - which part of the system to makes the changes to, or what info does the dev need to complete the task
+    - consequence occurs when bugs are raised
+- Aim: A make the system obvious
+- What causes complexity: Dependencies and obscruity
+  - dependency is when a given part of the system cannont be changed or understood isolation.
+  - Goal: reduce dependencies, make them simple and obvvious
+  - Obscruity occurs when important info is not obvvious
+    - generic variable names
+    - variables names wihtout units
+    - Not obvious that dependencies exist
+    - inconsistencies, ie same variable name used for two different purposes
+    - Occurs from inadequate documentation
+      - Clean design, less need for documentation
+- Complexity is incremental
+- In large systems and as they get bigger complexity increases naturally
+
+
+## Working code is not enough
+
+- Tactical mindset - promtoted by organisations
+  - focus on getting as many features out as possible
+- Strategic mindset - takes time, to get good design and fix problems
+  - focus on long term
+- Tactical programmning
+  - get feature or bug fix, but hard to produce good design
+  - short sighted
+  - leads to complexity
+- Stategic programming
+  - understand working code is not enough
+  - not acceptable to introduc Complexity
+  - Most code in a system is written by extending the codebass, so need to be able to facilitate This
+  - focus on different ways the system will change and how you will facilitate this
+  - good documentation and tests
+  - when design problem is found, fix it
+- How much to invest
+  - Waterfall (design upfront) is not effective
+  - Better to make small investments on a continual basis
+    - leads to longer time to complete
+    - benefits will occur later on
+  - Tactical programming, will be faster at first but slower later on
+- Startups and investments
+  - a lot of pressure on startups to get features out
+  - They become tactical, and hope to hire more engineers as they get more successful
+  - Once code turns to speghetti it becomes harder to work with
+  - quality engineers leads to success
+    - As they care about good design
+  - Bad code base, hard to hire and retain engineers
+  - Example facebook
+
+## Modules should be deep
+
+- Design systems so devs only need faces a small fraction of the overal complexity at any given time.
+- Modular design
+  - Defn: system is decomposed into a collection of modules that are relatively independent.
+  - Examples of modules: classes, subsystems, services
+  - Ideal: all modules completely independent, deve can work on one without knowledge of the others
+  - The complexity of a system is that of the complexity of the worst module
+  - Ideal impossible, as modules must be able to work together and call each others functions/methods
+    - Thus must know about the other modules
+    - thus dependencies will form
+      - if one module changes, other modules dependent on it will need to change
+      - ie arguments in a method chagne, then any other module usin this method will need to change too
+  - Aim: minimise dependencies between modules
+  - A module has a
+    - Interface
+      - has everything that you need to know about a module that you will use ie signatures of methods
+      - What a module does
+    - Implementation
+      - The code that carries out the promise made by the interface
+  - Methods withing a classs that is not oo is a module in itself
+  - Higher levels subsystems or services, have interfaces of different forms
+    - kernal calls or http requests
+  - Best Modules: interfaces are simpler than implementation
+    - simple interfaces -> minimises Complexity
+    - If module changes without changes to interface, other modules will not be affected
+- Whats an inteface
+  - Contains formal
+    - signature, names and types of params and return value, exception throw for the public methods
+    - enforced by language
+  - informal
+    - high level behaviour, what it does ie naming
+    - constraints on usage ie one method should be called before another
+    - Derived by name or comments
+- Abstractions
+  - defn: a simplified view of an entity which omits unimportant details
+    - helpl think and manipulate complex things
+  - Each module provides abstraction by its interface
+  - More unimportant details ommitted the Better
+  - Can wrong
+    - include details that are not unimportant -> abstractions become more complex
+    - omits details that are important -> obscruity,not info to use it correctly
+- Deep modules
+  - Provide powerful functionality with simple interface
+  - eg unix io and garbage collection
+- Shallow modules
+  - complex inteface simple implementation
+  - ie java i/o need many classes, dependencies to work with filestream
+- Interface should be designed to make common case as simple as possible
+- Having lots of options (ie use of lots of classe, decorators) is useful too, a way to disable the default
+
+## Information Hiding
+
+- Create deep modules
+- Info hiding
+  - each module should encapsulate a few pieces of knowledge which represent design decision
+  - Includes algorithm and data structures
+  - Reduces complexity of interface
+  - Makes it easier to evolve system
+    - If algorithm changes, the interface does not need to only impl
+  - Using private modifier is not info hiding but can help
+    - But using getters/setters can still expose private members
+- Information leakage
+  - opposite of hidding
+  - design design is represented in a lot of Modules
+    - creates dependencies between those modules, and changes need to occur in them all
+  - info leaked in interface
+  - different classe know about file Information
+  - Pull info out of affected class into new class, which has a simple interface
+    - otherwise replace backdoor leakage with leakage through interface
+- Temporal Decomposition
+  - structure of system corresponds to the time order in which operations occur
+  - Calling multiplemethods from different classses in specific order
+    - better to put them in one class
+  - In module design, focus on knowledge thats needed to perform task not theorder tasks Occurs
+- Lots of classes can lead to info leakage
+- Info hiding can be imporved by making class larger
+  - All info that is needed to do the job of the interface is in here
+  - Rather than have separate methods for each step (and thus have complex interface)
+- Avoid exposing external data structures
+
+## General purpose modules are deeper
+
+- A module has two purposes
+  - general - address a broad range of problems
+    - Build for future
+    - what about yagni?? features not used as hard to tell the future
+    - Being too general purpose, might not actually solve the problem
+  - special - only a few
+    - YAGNI
+    - what is needed
+    - can always refactor later
+    - For incremental development
+- MAke classes somewhat special purpose
+  - The module implementation should reflect your current needs, your interface should be general
+  - general purpose approach allows for reuse and save time in future
+  - general purpose better for simplicity even if it is used in one place
+- Questions to ask
+  - what is the simplest interface taht will cover my current needs?
+    - can reduce number of methods without reducing overall functionality.
+    - if have to introduce lots of params to reduce no. of methods not changing things
+  - In how many situations will this method be used?
+    - If several methods can be replaced with one
+  - Is api easy to use for my current needs?
+    - STop you from going to far
+    - Having to write a lot more code to make it general is not a good thing
+
+
+## Different layer, different abstraction
+
+- systems are composed of layers
+  - higher layers use lower layers functionalities
+- Each layer provides different abstraction to the layers above and below
+- Red flag: adjacent layers with similar abstraction. Decompositon problem
+- Pass through methods
+  - red flag
+  - defn: has little implementation and invoke another method whose signature is similar/identical to that of the calling method
+    - delegating all implementation to another method
+  - not a clean division of responsibilities between classe
+  - Make classes shallow (bad), increase interface complexity, not increase in functionality
+  - Create dependecies between modules
+  - The interface to a piece of functionality should in the same class that implements the functionality
+  - There is an overlap of responsibilities between two classes
+  - ACtion: Refactor so both clases has distinct responsibilities
+    - expose lower level class directly to the callers of the high level class
+    - Redistribute features between classes
+    - merge classes if cannot be distangled
+- When is interface duplication ok
+  - Same signature methods  is alright if each method has significant different functionality.
+  - Dispatcher (type of pass through but good)
+    - uses arg/s to select on of which of several methods to invoke, then passes most/all of its args to choosen method, which implements specific algorithm
+  - interfaces with multiple implementations
+    - strategy pattern
+- Decorators
+  - Api duplication across layers
+  - Defn: decorator object takes an existing obj and extends its funcitionality
+    - it provides an api similar/identical to the underlying obj
+    - its methods invoke the underlying object methods
+    - decorator adds new methods when wrapping the underlying object
+  - Why?
+    - separate special purpose extensions of a class from a more generic core
+  - Shallow , lots of boiler plate, lots of pass through methods
+  - java i/o
+  - Alternatives
+    - add the functionality to the underlying class
+      - if the functionality is general purpose or logically connected to class or it will be used often from this class
+    - Merge into same class which it will be called if only used in this in class
+    - Merge into exisiting decorator
+    - Does it need to wrap exisiting functionality? Be a stand alone class to inject into another
+- Interface versus implementation
+  - The interface of class should be different to its implementation
+    - internal should be different to external
+    - What it does and how it does it should not be shown to be the Same
+- Pass through variables
+  - variables that passed down through long chain of methods
+  - Add complexity as intermediate methods must be aware of its existence, even if they dont use it.
+  - Make changes hard to do if that variable that is passed is now used differently
+  - ACtion
+    - see if there is shared object between the methods, and just pass that object
+      - but again this will be passed through
+    - store in global variable
+      - issues: cannot store create two independent instances of the same system in the same process, globals will conflict ie in testing
+    - use context object pattern.
+      - stores all of the applications global state
+      - one context object per instance of the system
+      - Issue needed in many places and can end up being a pass through
+      - a reference to the context can be saved in most of systems major objects
+        - When it is needed, the object that needs it upon instantiation it passed it to its constructor
+        - wiring
+      - properties
+
+## Pull complexity downwards
+
+- In module have unavoidable complexity , options:
+  - let users of module deal with it
+  - If complexity is related to functionality of the module -> handle complexity internally within the module
+- Most modules have more users than developers -> developers to suffer for user
+- dev to make life easier for user of module
+  - simple interface over simple implementation
+- Dont give the hard problems to someone else
+- If dont know how to handle it -> throw exception for caller to handle it
+- have config/properties setting to decide what is best for them
+- Amplifies problems
+  - exception thrown ->every caller will deal with it
+  - exports config, SAs will need to implement for each env
+- Config params
+  - moving complexity upwards instead of downwards
+  - tuning the system for their system for requirements or workloads or env
+  - The user might know better than the code what the best policy is
+  - Can avoid dealing with issues and passing the on
+    - imposssible to know these values
+    - or can be determined automatically in codebase
+  - config can end up out of date
+  - Will a user be able to determine a better value than we can determine?
+  - Can provide prop but with default in code
+- TAking it too far
+  - Too far, pulling all functionality down to one class
+  - Only pull down functionality:
+    - if it is closely related to the class's exisiting functionality
+    - if it will result in many simplifications else in module/app
+    - if it will simplify the interface
+
+## Better together or better appart
+
+- Fundamental Question:
+  - given two pieces of functionality, should they be implemented together in the same place, or should tehir implementation be seperated?
+- Applies at all levels of system: func, methods, classes and services
+- Idea: split into small components, the smaller they are, the simpler they are
+  - problem:
+    - More components, harder to keep track of them. More interfaces, every new interface -> increase complexity
+    - More code to manage.
+    - Creates seperation. components will be further apart. Harder to see components and logic at same time, or aware of existence.
+      - If truly independent then seperation is good.
+      - If there is a dependency, then seperation is bad as fliping between components. Not aware of dependecies -> bugs
+    - lead to duplication
+- when to bring pieces together, if cloesly related:
+  - they share information.
+  - they are used together at the same time. Only if bi directional
+    - ie disk block cache uses hash table, but hash table is not only used by it
+  - OVerlap conceptually, there  is a higher level category that includes both components
+  - Hard to understand if both are not together
+- Info is shared
+  - to do implementation of both. put together and reduces duplicaiton
+- Simplify interface
+  - Simplifies interface of module, when combing modules, if original modules only implement part of the solution
+  - Can do things automatically, without user having to do it (ie call one method insted of several in certain order etc)
+    - Can have flags to decide to turn off or switch out default behavour to custom behavour
+- Elimntate duplication
+  - extract method refactor
+    - if replacement code is long, and method have simple signature
+  - Snippet only has to be executed in one place.
+    - ISsues with goto statement
+    - call method, extract method
+- Seperate general purpose and special case code
+  - If module contains code used in several differen places, then it should support general purpose mechanism.
+  - Special purpose code associated with general purpose mechanism should go in a different module, typically one associated with smae purpose.
+  - In general, lower layers tend to be more general purpose and the upper layers more special purpose
+    - Top most layers have featurs totally specific to the application
+    - ie layered architecture, upper layers is core, lower layers is infrastructure and presentation. If used in both, ie usecase, then have interface for lower layers used instead of implementation in dependency.
+- 

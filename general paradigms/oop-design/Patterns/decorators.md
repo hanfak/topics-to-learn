@@ -1,0 +1,1 @@
+- https://www.yegor256.com/2015/02/26/composable-decorators.html
