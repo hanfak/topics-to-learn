@@ -45,21 +45,3 @@
 - https://self-learning-java-tutorial.blogspot.co.uk/2014/03/jit-compiler.html
 
 ## Linker?????
-
-## Memory Management
-IMG_20171111_124451.j
-- https://dzone.com/articles/java-memory-management
-- http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
-- https://www.journaldev.com/4098/java-heap-space-vs-stack-memory
-- http://www.baeldung.com/java-initialization
-
-### GArbage collection
-
-- https://self-learning-java-tutorial.blogspot.co.uk/2014/07/garbage-collection.html
-
-### Memory leaks
-
-- https://self-learning-java-tutorial.blogspot.co.uk/2014/07/what-is-memory-leak-in-java.html
-
-
-https://github.com/makersacademy/java_intro/blob/master/chapter0-What-is-Java/terminology.md

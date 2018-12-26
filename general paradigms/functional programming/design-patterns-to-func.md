@@ -1,0 +1,3 @@
+- https://www.voxxed.com/2016/04/gang-four-patterns-functional-light-part-1/
+- https://medium.com/@ajaysreeram/design-patterns-using-lambdas-in-java-89a6d8d6d004
+-

@@ -1,6 +1,10 @@
 # JMS
 
-Type of queue
+## Why use?
+
+- https://stackify.com/message-queues-12-reasons/
+
+## Type of queue
 
 Generally asynchronous
 

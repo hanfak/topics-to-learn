@@ -24,6 +24,7 @@ Using an OO programming language does not mean that you are programming in a OO 
 - Abstraction
 - inheritence
 
+- https://stackify.com/oops-concepts-in-java/
 ## Design Principles
 
 Implementing these design principles to have better code
@@ -70,7 +71,7 @@ Implementing these design principles to have better code
 - https://dev.to/naveen/how-to-write-an-object-oriented-program-that-doesnt-suck
 - https://dzone.com/articles/object-oriented-programming-concepts-with-a-system
 
-## links 
+## links
 
 
 

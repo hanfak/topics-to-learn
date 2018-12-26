@@ -1,5 +1,14 @@
 # Concurrency and Threads
 
+## Concurrency vs parallelism
+
+- https://www.youtube.com/watch?v=FChZP09Ba4E
+- https://www.youtube.com/watch?v=VLq9DfL4g8w
+- https://learn-gevent-socketio.readthedocs.io/en/latest/general_concepts.html
+- http://tutorials.jenkov.com/java-concurrency/concurrency-vs-parallelism.html
+- https://stackoverflow.com/questions/1050222/what-is-the-difference-between-concurrency-and-parallelism
+- https://docs.oracle.com/cd/E19455-01/806-5257/6je9h032b/index.html
+
 
 ## Executor service
 

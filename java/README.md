@@ -32,6 +32,10 @@
 ## Projects
 - https://www.lovelycoding.org/2014/04/Java-Project-Ideas-United-State.html
 
+
+## Glossary
+
+- https://stackify.com/java-glossary/
 ## History
 
 - https://blog.heroku.com/the_next_twenty_years_of_java_where_we_ve_been_and_where_we_re_going

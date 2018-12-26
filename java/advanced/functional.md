@@ -15,6 +15,10 @@
   - lambdas that throw exceptions
     - https://medium.freecodecamp.org/why-you-should-ignore-exceptions-in-java-and-how-to-do-it-correctly-8e95e5775e58
 
+## Collectors
+
+- http://www.deadcoderising.com/2017-03-07-java-8-creating-a-custom-collector-for-your-stream/
+
 ## Method references
 
 ## lambdas/ Annoynmous functions

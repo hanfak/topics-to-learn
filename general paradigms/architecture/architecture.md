@@ -61,6 +61,8 @@ http://blog.borud.no/2013/03/gorging-on-java-frameworks-and.html
 - https://herbertograca.com/2017/07/03/the-software-architecture-chronicles/
 - https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/
 - https://geeks.uniplaces.com/putting-clean-architecture-into-practice-20c47d8c76de
+- https://java-design-patterns.com/blog/build-maintainable-systems-with-hexagonal-architecture/
+
 ### Books
 
 - [Clean Architecture - uncle bob]()

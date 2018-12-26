@@ -10,3 +10,5 @@
   - The control is lost (not inverted, but lost!). The object is not in charge any more. It can’t be responsible for what’s happening to it.
   - That’s because we don’t want to duplicate the same code over and over again, right? That’s correct, duplication is bad, but tearing an object apart is even worse.
   - Object composition, which is the most important process in object design, is hidden somewhere behind the scenes.... We must see how our objects are composed. We may not care about how they work, but we must see the entire composition process.
+
+- https://blog.softwaremill.com/the-case-against-annotations-4b2fb170ed67

@@ -412,4 +412,49 @@ Quotes
   - In general, lower layers tend to be more general purpose and the upper layers more special purpose
     - Top most layers have featurs totally specific to the application
     - ie layered architecture, upper layers is core, lower layers is infrastructure and presentation. If used in both, ie usecase, then have interface for lower layers used instead of implementation in dependency.
+- Splitting and joining methods
+  - length of method is not a criteria for splitting
+  - splitting creates more interfaces -> increase complexity
+  - Only split if makes it simpler
+  - if blocks of code have complex interaction, keep together
+  - if simple to read then length is not a problem
+  - having to flip between methods is Harder
+  - Each method should do one thing and do it completely
+  - Methods should have clean and simple interface, and should be deep
+  - Refactor by extracting subtask
+    - subtask should be independent of parent
+    - parent should know nothing of how the child works
+    - subtask should be general purpose
+  - Refactor by splitting into two separate methods each visible to the calling method of the original
+    - do when original has a complex interface or does too many thigns
+    - should not need to call both split methods
+  - Join methods if original methods are shallow or simpler interface
+  - Red flag: Conjoined methods
+    - cannot understand one method without understanding the other
+
+## Define Errors out of existence
+
+- exceptions can lead to complexity
+- reduce number of places where exceptions must be handled
+- End up not throughing exceptions by dealing with them
+- Why exceptions add complexity
+  - Def: Exception is any uncommon condition that alter the normal flow of control of a program
+  - fault tolerant systems need to be able to deal with exceptions, without breaking the system
+  - Ways of dealing wiht exceptions
+    - Move forward and deal with work despite the exception
+    - abort the process and report it upwards
+  - exception handling code must restore consistency to the system ie rewinding any partial state changse
+  - One exception can lead to another one, especially during recovery from first exception.
+- Too many exceptions
+  - Being too over defensive and defining too many exceptions is bad
+  - Exceptions increase Complexity
+  - People use exceptions to avoid dealing with difficult design decisions
+    - thus it must be handled by the caller
+  - Exception thrown by a class is part of the interface, thus increase complexity of interface
+  - Reduce number of places where exceptions have to be handled
+- Define errors out of existence
+  - Define api so there are no exceptions to handle
+  - Define the implementation to avoid throwing exception
+- Example
+  - When deleting do it async so that no need to check for other processes that are using it. Rather, mark it for deletion and no other process can use it and wait for the file to be finished if being used, then delete.
 - 
