@@ -43,6 +43,10 @@ I have mainly been using Git to version control all software that has been worke
   - https://try.github.io/levels/1/challenges/1
   - https://github.com/enkidevs/curriculum/wiki/Git-Topic
 
+## Trunk and feature based development
+
+- https://www.javacodegeeks.com/2018/12/improve-proces-trunk-based-development.html
+
 ## Git In Intellij
 
 Most of my git usage is done via Intellij. Here are some common uses and tips:

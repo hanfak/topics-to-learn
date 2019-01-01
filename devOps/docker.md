@@ -3,6 +3,7 @@
 - what is it?
   - https://www.docker.com/what-docker
   - https://www.youtube.com/watch?v=-NzfOhSAZpA
+  - https://www.linkedin.com/pulse/beginner-friendly-intro-containers-vm-docker-preethi-kasireddy/
 
 ## Containers
 
@@ -23,6 +24,10 @@
 
 
 ## Java api
+
+## Dockerfile
+
+## Volumes
 
 ## Deploying
 

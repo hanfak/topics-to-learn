@@ -1,0 +1,2 @@
+- https://martinfowler.com/articles/injection.html
+- https://www.baeldung.com/java-service-locator-pattern

@@ -4,3 +4,4 @@
 
 - https://dzone.com/articles/solid-design-principles-explained-dependency-inver
 - https://dzone.com/articles/solid-principles-dependency-inversion-principle
+- https://stackify.com/dependency-inversion-principle/

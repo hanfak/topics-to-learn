@@ -5,9 +5,14 @@
   - checked
   - errors
 
+## List of Exceptions
+
+- https://stackify.com/top-java-software-errors/
+
+
 https://dzone.com/articles/ignore-exceptions-in-java
 
-- Throwing Exceptions
+## Throwing Exceptions
   - `throw`
   - message
   - type of exception
@@ -16,7 +21,13 @@ https://dzone.com/articles/ignore-exceptions-in-java
     - `throws`
     - defined in superclass of abstract and interface
 
-- try - catch
+## Handle exceptions
+
+- https://stackify.com/best-practices-exceptions-java/
+- https://stackify.com/common-mistakes-handling-java-exception/
+
+
+## try - catch
   - catch exceptions
     - logging exceptions and stack trace that are thrown
   - finally block

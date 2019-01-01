@@ -8,6 +8,7 @@
   - https://www.ssl2buy.com/wiki/what-is-the-difference-between-client-and-server-certificates
   - https://medium.com/@sevcsik/authentication-using-https-client-certificates-3c9d270e8326
   - https://blogs.msdn.microsoft.com/kaushal/2015/05/27/client-certificate-authentication-part-1/
+- Server certificates
 - Keytool
   - view jks
 - JKS

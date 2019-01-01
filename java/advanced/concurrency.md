@@ -27,3 +27,7 @@
 ## deadlock
 
 - https://stackoverflow.com/questions/34512/what-is-a-deadlock
+
+## Interrupted Exception
+
+- https://www.yegor256.com/2015/10/20/interrupted-exception.html

@@ -15,6 +15,7 @@
 
 - http://iteratrlearning.com/java9/2016/09/13/java9-timeouts-completablefutures.html
 - http://www.deadcoderising.com/timeout-support-using-executorservice-and-futures/
+- http://vaughndickson.com/2016/07/05/how-to-timeout-a-thread-in-java-limiting-a-threads-execution-time/
 
 ## Within the app
 
