@@ -3,6 +3,7 @@
 - https://www.programcreek.com/2011/09/what-is-the-difference-between-a-java-library-and-a-framework/
 - https://medium.com/datafire-io/libraries-vs-frameworks-626cdde799a7
 - http://danielemargutti.com/2017/12/13/applications-vs-frameworks-vs-libraries/
+- https://www.tonymarston.net/php-mysql/what-is-a-framework.html
 
 ## Principles
 

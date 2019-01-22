@@ -10,7 +10,8 @@
 - https://mjg123.github.io/2017/10/23/Java-Futures-Promises.html
 - http://www.deadcoderising.com/java8-writing-asynchronous-code-with-completablefuture/
 - http://www.deadcoderising.com/java8-writing-asynchronous-code-with-completablefuture/
-
+- https://youtu.be/ImtZgX1nmr8
+-
 ### Timeout java 8
 
 - http://iteratrlearning.com/java9/2016/09/13/java9-timeouts-completablefutures.html

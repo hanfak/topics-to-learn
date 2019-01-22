@@ -8,3 +8,4 @@
 - https://dzone.com/articles/when-functional-programming-isnt
 - https://dzone.com/articles/functional-programming-principles-every-imperative
 - https://github.com/hemanth/functional-programming-jargon
+- https://codurance.com/2018/08/09/the-functional-style-part-1/

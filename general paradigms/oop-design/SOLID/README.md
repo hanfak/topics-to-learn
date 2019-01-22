@@ -4,3 +4,4 @@
 # Anti
 
 - https://www.yegor256.com/2017/03/28/solid.html
+- https://www.tonymarston.net/php-mysql/not-so-solid-oo-principles.html
