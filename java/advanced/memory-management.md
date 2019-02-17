@@ -19,6 +19,7 @@
 
 - https://self-learning-java-tutorial.blogspot.co.uk/2014/07/what-is-memory-leak-in-java.html
 - https://stackify.com/memory-leaks-java/
+- https://www.baeldung.com/java-memory-leaks
 
 
 https://github.com/makersacademy/java_intro/blob/master/chapter0-What-is-Java/terminology.md

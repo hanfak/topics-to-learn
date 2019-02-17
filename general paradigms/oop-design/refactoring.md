@@ -24,6 +24,7 @@
 ## Links
 
 - https://refactoring.guru/refactoring
+- https://refactoring.com/catalog/
 - https://refactoring.guru/refactoring/catalog
 - https://sourcemaking.com/refactoring
 - https://dev.to/developerscode/the-dichotomy-of-writing-and-reading-object-oriented-code

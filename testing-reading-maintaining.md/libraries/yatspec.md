@@ -1,0 +1,4 @@
+- http://javing.blogspot.com/2015/12/using-pictures-in-your-acceptance-tests.html
+- http://javing.blogspot.com/2015/03/yet-another-blog-article-about.html
+- https://github.com/bodar/yatspec
+- https://codeforfunandmoney.wordpress.com/

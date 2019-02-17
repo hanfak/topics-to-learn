@@ -1,2 +1,6 @@
 - https://codurance.com/software-creation/2016/03/17/code-smells-part-I/
 - https://codurance.com/software-craftsmanship/2016/05/07/code-smells-part-II/
+- https://sourcemaking.com/refactoring/smells
+- https://blog.codinghorror.com/code-smells/
+- http://mikamantyla.eu/BadCodeSmellsTaxonomy.html
+- https://8thlight.com/blog/georgina-mcfadyen/2017/01/19/common-code-smells.html

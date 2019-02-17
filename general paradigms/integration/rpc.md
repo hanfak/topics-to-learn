@@ -1,0 +1,4 @@
+- https://medium.com/@EdgePress/is-grpc-the-future-of-client-server-communication-b112acf9f365
+- https://grpc.io/docs/guides/index.html
+- https://www.quora.com/What-are-the-pros-and-cons-of-REST-versus-RPC
+- https://www.careerride.com/RMI-advantages-and-disadvantages-of-RPC.aspx
