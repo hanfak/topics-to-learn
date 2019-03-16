@@ -32,6 +32,8 @@ I have mainly been using Git to version control all software that has been worke
   - When you need to rename a folder and keep the history of all the files inside
   - `git mv <source> <target>`
   - need to commit after doing this
+- submodule
+  - Have a separate repo inside another repo 
 ### Links
 
 - [Git Documentation](https://git-scm.com/doc)

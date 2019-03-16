@@ -14,6 +14,7 @@
 - splunk
   - queries
 - Passing tracey id from incoming request throughout its entire journey in the app to the outgoing response
+- https://www.dynatrace.com/resources/ebooks/javabook/collecting-performance-data/
 
 ## Status pages
 

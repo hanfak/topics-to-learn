@@ -1,5 +1,9 @@
 # Secruity
 
+## General
+
+- https://www.javaworld.com/article/2075336/secure-your-java-apps-from-end-to-end--part-1.html#tk.rss_howtojava
+
 ## Certificates
 
 - client cert
