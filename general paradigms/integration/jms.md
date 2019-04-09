@@ -1,5 +1,8 @@
 # JMS
 
+- https://www.journaldev.com/9731/jms-tutorial
+- https://dzone.com/articles/asynchronous-messaging-rabbitmq-introduction
+
 ## Why use?
 
 - https://stackify.com/message-queues-12-reasons/

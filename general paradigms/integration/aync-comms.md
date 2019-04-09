@@ -1,0 +1,2 @@
+- https://www.fridayfeedback.com/p/asynchronous-communication/
+- https://dzone.com/articles/microservices-why-asynchronous-communications
