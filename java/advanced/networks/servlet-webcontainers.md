@@ -20,6 +20,7 @@
 - https://stackoverflow.com/questions/7213541/what-is-java-servlet
 - http://www.baeldung.com/intro-to-servlets
 - http://tutorials.jenkov.com/java-servlets/index.html
+- https://examples.javacodegeeks.com/enterprise-java/servlet/how-servlets-work/
 
 ## Jetty
 

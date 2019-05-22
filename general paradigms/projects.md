@@ -17,6 +17,7 @@
 -  is typically owned outright, giving users much more ability to customize it. Enterprises often have in-house developers and programmers tweak or overhaul the software to make it match enterprise needs. It’s also always malleable – if a new enterprise problem comes up, programmers can implement a new solution within the existing software.
 - Enterprise software is meant for large businesses that require software that can scale with the needs of the business. Enterprise software, therefore, needs to be more powerful than the software sold to smaller businesses
 - tailored towards ensuring maximizing performance at low costs.
+- https://www.aoe.com/en/enterprise.html
 
 ### Common features
 
@@ -69,7 +70,7 @@
   - app meets deployment requirements
   - does not break systems when rolled out, can be roll backed
   - properties/config for different environments
-  - database 
+  - database
 
 
 

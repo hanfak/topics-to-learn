@@ -3,6 +3,11 @@
 ## General
 
 - https://www.javaworld.com/article/2075336/secure-your-java-apps-from-end-to-end--part-1.html#tk.rss_howtojava
+- https://portal.securecodewarrior.com/#/learning-resources/
+- https://medium.com/myheritage-engineering/10-tips-to-power-up-your-java-security-f3daa4522530
+- https://www.owasp.org/index.php/Main_Page
+- https://www.youtube.com/watch?v=Gnxk_uf6qTQ
+- https://www.youtube.com/watch?v=zlEdzJccdps&list=WL&index=163&t=0s
 
 ## Certificates
 
@@ -28,6 +33,8 @@
 - Https
   - ssl
   - certificates and keys
+  - https://robertheaton.com/2014/03/27/how-does-https-actually-work/
+  - https://howhttps.works/the-keys/
 - software(???)
 - key pass app to store passwords
 - create random passwords on the fly

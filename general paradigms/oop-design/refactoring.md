@@ -4,6 +4,8 @@
   - shortcuts
   - looking for yellow warnings
 
+  https://martinfowler.com/articles/workflowsOfRefactoring/#final
+
 ## aims
 
 - https://stackoverflow.com/questions/498651/goals-of-refactoring

@@ -27,7 +27,7 @@
   - PECS
     - https://stackoverflow.com/questions/2723397/what-is-pecs-producer-extends-consumer-super
     - https://howtodoinjava.com/java/generics/java-generics-what-is-pecs-producer-extends-consumer-super/
-    - 
+    -
   - Multiple bounds
 - Wild cards
   - https://stackoverflow.com/questions/18176594/when-to-use-generic-methods-and-when-to-use-wild-card
@@ -55,3 +55,4 @@
 - https://www.youtube.com/watch?v=34oiEq9nD0M
 - https://www.youtube.com/watch?v=9tHLV0u87G4
 - https://github.com/RichardWarburton/generics-examples/tree/master/src/main/java
+- https://www.javacodegeeks.com/2019/04/variance-java.html

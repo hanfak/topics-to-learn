@@ -1,0 +1,2 @@
+- https://www.baeldung.com/vault
+- https://learn.hashicorp.com/vault/?track=getting-started#getting-started
