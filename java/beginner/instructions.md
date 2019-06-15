@@ -15,6 +15,10 @@
   - blocks
     - initializer block
 
+## Equals & matches
+
+- https://stackoverflow.com/questions/9700115/difference-between-matches-and-equalsignorecase-or-equals-in-string-class
+
 
 ## Links
 

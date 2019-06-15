@@ -33,7 +33,7 @@ I have mainly been using Git to version control all software that has been worke
   - `git mv <source> <target>`
   - need to commit after doing this
 - submodule
-  - Have a separate repo inside another repo 
+  - Have a separate repo inside another repo
 ### Links
 
 - [Git Documentation](https://git-scm.com/doc)
@@ -143,6 +143,8 @@ How work is integrated into shared repository
         - If there is a new commit to pull, cannot push with out pulling
         - Need to merge changes into local, get passing build and push
           - Normally work on stories that are on separate parts of same code base, but different pairs would work on different apps so no merge issues
+      - https://stxnext.com/blog/2018/02/28/escape-merge-hell-why-i-prefer-trunk-based-development-over-feature-branching-and-gitflow/
+      - https://trunkbaseddevelopment.com/
   - Branching for each user story
     - General format
       - create branch from master
