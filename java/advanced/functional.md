@@ -50,6 +50,7 @@
   - using map
 
   - https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html
+  - https://dzone.com/articles/java-optionals-for-more-expressive-code
 
 ## currying and partial functions
 

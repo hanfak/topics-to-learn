@@ -34,3 +34,11 @@ https://dzone.com/articles/ignore-exceptions-in-java
   - multi catch
 - creating custom exceptions
 - try with resources
+
+## checked exceptions
+
+### Why bad
+
+- https://phauer.com/2015/checked-exceptions-are-evil/
+- https://programming.guide/java/checked-exceptions-good-or-bad.html
+- http://literatejava.com/exceptions/checked-exceptions-javas-biggest-mistake/

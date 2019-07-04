@@ -77,3 +77,4 @@ Implementing these design principles to have better code
 
 - http://blog.thecodewhisperer.com/permalink/putting-an-age-old-battle-to-rest
 - https://www.tonymarston.net/php-mysql/oop-for-heretics.html#definitions
+- https://tomassetti.me/oops-concepts/

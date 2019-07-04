@@ -8,3 +8,7 @@
 - super
 - No multiple inheritence
 - use of final
+
+## Issues
+
+- https://dzone.com/articles/problems-with-inheritance-in-java

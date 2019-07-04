@@ -25,5 +25,9 @@
   - cpd
   - skills matrix
   - code reviews
+- Recruitment
+  - unattended tests
+  - pair tests
+  - interviews
 
 - https://blog.ippon.tech/agile-story-development/

@@ -9,6 +9,10 @@
   - Exceptions
   - Comparators
   - Generics
+  - Constants
+  - date time
+  - Collections
+  - Regex
 - Advanced
   - Functional Programming
   - Files, Input/Output
@@ -24,9 +28,16 @@
   - Memoization
   - Encryption and Decryption
   - Bit Manipulation
+  - Networks
+  - properties
+  - scaling
+  - scheduling
 - Libraries
 - Code Style
--
+- Frameworks
+  - Spring
+  - Hibernate
+- IDE
 
 
 ## Projects

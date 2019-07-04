@@ -31,3 +31,8 @@ https://github.com/makersacademy/java_intro/blob/master/chapter0-What-is-Java/te
 ### Jmx
 
 - https://stackify.com/asynchronous-programming-easier-think/
+- https://self-learning-java-tutorial.blogspot.com/2018/07/jmx-tutorial.html
+
+### Thread dumps
+
+- https://self-learning-java-tutorial.blogspot.com/2018/08/working-with-jcmd-command.html
