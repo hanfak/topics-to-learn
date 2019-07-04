@@ -1,4 +1,4 @@
-# Introduction
+# General Paradigms
 
 Information about
 

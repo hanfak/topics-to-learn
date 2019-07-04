@@ -1,4 +1,4 @@
-# Management
+# Management & Workflow
 
 - Agile
   - Kanban

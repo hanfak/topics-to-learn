@@ -1,4 +1,6 @@
-# What is devOps?
+# DevOps
+
+## What is devOps?
 
 - https://www.javacodegeeks.com/2018/05/devops-a-methodology-to-learn-from.html
 
@@ -8,7 +10,7 @@
 - https://www.javacodegeeks.com/2018/07/devops-vs-sre-difference.html
 - https://www.youtube.com/watch?v=JHoy3lDZOfY&t=66s
 
-ci/cd
+## ci/cd
 
 Developers practicing continuous integration merge their changes back to the main branch as often as possible. By doing so, you avoid the integration hell that usually happens when people wait for release day to merge their changes into the release branch.
 
@@ -18,7 +20,7 @@ Continuous deployment goes one step further than continuous delivery. With this 
 
 https://semaphoreci.com/blog/cicd-pipeline
 
-# Glossary
+## Glossary
 
 - https://xebialabs.com/glossary/
 - https://medium.com/@DZoneInc/48-devops-terms-you-should-know-a-devops-glossary-37e60fd23752
