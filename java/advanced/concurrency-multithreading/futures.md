@@ -1,0 +1,2 @@
+- https://www.callicoder.com/java-8-completablefuture-tutorial/
+- https://dzone.com/articles/20-examples-of-using-javas-completablefuture

@@ -23,3 +23,12 @@
   - check status pages
 
 ## Teamcity
+
+
+## Example
+
+https://www.edureka.co/blog/ci-cd-pipeline/
+
+### Jenkins
+
+- https://www.edureka.co/blog/install-jenkins/

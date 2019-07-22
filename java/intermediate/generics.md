@@ -56,3 +56,4 @@
 - https://www.youtube.com/watch?v=9tHLV0u87G4
 - https://github.com/RichardWarburton/generics-examples/tree/master/src/main/java
 - https://www.javacodegeeks.com/2019/04/variance-java.html
+- https://www.java67.com/2019/07/top-50-java-generics-and-collection-interview-questions.html

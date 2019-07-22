@@ -2,6 +2,7 @@
 
 - https://www.journaldev.com/9731/jms-tutorial
 - https://dzone.com/articles/asynchronous-messaging-rabbitmq-introduction
+- https://dzone.com/articles/java-message-service-1?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava
 
 ## Why use?
 

@@ -18,6 +18,8 @@
 - Enterprise software is meant for large businesses that require software that can scale with the needs of the business. Enterprise software, therefore, needs to be more powerful than the software sold to smaller businesses
 - tailored towards ensuring maximizing performance at low costs.
 - https://www.aoe.com/en/enterprise.html
+- http://tractsystems.com/what-is-enterprise-grade-software/
+- https://www.bmc.com/blogs/enterprise-application-software-defined-how-is-it-different-from-other-software/
 
 ### Common features
 
