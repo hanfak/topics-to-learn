@@ -54,7 +54,7 @@ Implementing these design principles to have better code
 - http://javarevisited.blogspot.co.uk/2012/03/10-object-oriented-design-principles.html
 - [Core Design Principles for Software Developers by Venkat Subramaniam](https://www.youtube.com/watch?v=llGgO74uXMI&t=2s)
 - https://dzone.com/articles/software-design-principles
--
+- https://dev.to/racingdeveloper/from-procedural-to-objects-applying-the-tell-dont-ask-principle
 
 ## SOLID Principles
 

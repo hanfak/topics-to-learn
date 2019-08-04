@@ -3,6 +3,11 @@
 ## Pair Programming
 
 - PingPong
+- Roles
+  - Navigator and driver
+  - Experienced or junior dev
+  - Experienced or junior domain wise
+  - These can be any combination. Need to adjust depending on what you are.
 
 ## TDDs
 

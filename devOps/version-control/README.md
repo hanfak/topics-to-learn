@@ -48,6 +48,7 @@ I have mainly been using Git to version control all software that has been worke
 ## Trunk and feature based development
 
 - https://www.javacodegeeks.com/2018/12/improve-proces-trunk-based-development.html
+- https://medium.com/@mattia.battiston/why-i-love-trunk-based-development-641fcf0b94a0
 
 ## Git In Intellij
 

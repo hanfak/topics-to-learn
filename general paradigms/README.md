@@ -9,3 +9,5 @@ Information about
 - Networks
 - Integrations
 - etc
+
+- https://hackernoon.com/first-do-no-harm-30-principles-that-helped-me-avoid-fly-by-architecture-reviews-e8952ac632a
