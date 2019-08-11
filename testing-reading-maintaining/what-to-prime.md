@@ -40,3 +40,9 @@ To test anything, need to setup the conditions to test that situation/behaviour
   - It is dumb, but fast
   - Generally used for database or network calls classes, for acceptance tests
   - Can replace a network call without going over the network, or go other network to a local server which returns whatever you want (wiremock)
+
+
+- Issues when priming
+  - Mocked an object, primed it, but it does not look like it been primed during debugging
+    - check the mocked class, is passed in as a dependency
+    - While debugging, break point on test as well, note the object ref in test, it should be the same as the obj ref in the prod code.

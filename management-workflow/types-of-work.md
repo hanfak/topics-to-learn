@@ -63,6 +63,9 @@
 
 ## Hack days
 
+- Working in teams/individual, to create/spike an idea that could be useful to the department or business.
+- This could be something that was worked on during innovation time
+
 ## Conferences or courses
 
 ## New application or breaking an application
@@ -74,6 +77,7 @@
 - Stand ups
 - retros
 - Feedback session
+- skill matrix
 - one to one
 - Meetings
   - planning sessions for story work
@@ -89,7 +93,7 @@
   - There will be meetings and actions that need to happen
   - There will be work that team needs to do
 
-## CI/CD builds/steps are passing
+## CI/CD builds/steps are failing
 
 ## Testing
 

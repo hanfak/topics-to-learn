@@ -71,7 +71,8 @@
   - `du -sh .[!.]* *` to include hidden files
 - df -h
   - summarises disk usage of each harddrive
--
+- source ./bashrc 
+  - to run bash profile, if updating it
 
 
 ## Permissions

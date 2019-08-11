@@ -1,3 +1,13 @@
+# Kanban
+
+## Work In Progress (WIP)
+
+### WIP limits 
+
+## Batching
+
+## Board
+
 ## Links
 
 - http://www.tocinstitute.org/the-goal-summary.html
