@@ -9,12 +9,12 @@ There is some sense of organisation, but it is not complete and a lot of overlap
 Areas
 
 - [Career](career/README.md)
-- [Computer Science](computer science/README.md)
+- [Computer Science](computer-science/README.md)
 - [DevOps](devops/README.md)
 - [Front End](front end/README.md)
-- [General Paradigms](general paradigms/README.md)
+- [General Paradigms](general-paradigms/README.md)
 - [Java](java/README.md)
-- [Machine Learning](Machine Learning/README.md)
+- [Machine Learning](Machine-Learning/README.md)
 - [Management & Workflow](management-workflow/README.md)
 - [Operating Systems](operating-system/README.md)
 - [Other](other/README.md)
