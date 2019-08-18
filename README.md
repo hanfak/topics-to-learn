@@ -11,7 +11,7 @@ Areas
 - [Career](career/README.md)
 - [Computer Science](computer-science/README.md)
 - [DevOps](devops/README.md)
-- [Front End](front end/README.md)
+- [Front End](front-end/README.md)
 - [General Paradigms](general-paradigms/README.md)
 - [Java](java/README.md)
 - [Machine Learning](Machine-Learning/README.md)

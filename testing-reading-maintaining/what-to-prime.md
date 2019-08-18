@@ -40,7 +40,8 @@ To test anything, need to setup the conditions to test that situation/behaviour
   - It is dumb, but fast
   - Generally used for database or network calls classes, for acceptance tests
   - Can replace a network call without going over the network, or go other network to a local server which returns whatever you want (wiremock)
-
+  - Can have a test database (ie test container) which mimics prod db
+  - Used when method under test cannot be checked, so need to verify behaviour in a delegate that is called in the method. Thus can use a fake delegate as stub and assert on its state or methods.
 
 - Issues when priming
   - Mocked an object, primed it, but it does not look like it been primed during debugging

@@ -158,6 +158,14 @@ How work is integrated into shared repository
 
 - Merging
 
+- What should go in to version control
+  - All app code and dependencies
+  - scripts that create database, environments
+  - Automated and manual tests
+  - scripts that suppoort code packaging, deployment, db migrations, environment provisioning,
+  - Configuration files for environments and applications
+  -
+
 ### Links
 
 - https://www.thoughtworks.com/continuous-integration
