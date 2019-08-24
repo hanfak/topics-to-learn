@@ -1,0 +1,41 @@
+# Improving team's output
+
+- Good way to do things to get noticed as a junior or new member, to get promoted or leave a good impression, is to improve the efficiency of the team in getting more features done in the applications you code.
+- Look to get your team to improve on increasing the number of features done, and/or reducing the number of bugs or non feature work being done.
+- The more features you get out into prod and the faster you do it, the more you can learn, the more you can get ahead of the competition, the faster you can respond to changes in the business, the faster you can deal with bugs
+- This is differnt to making your application faster or do more requests
+
+- Ideas
+  - Make your code more maintable and readable
+  - Reduce build time
+    - locally
+    - build agent
+  - Make flakey tests consistent
+  - Improve QA
+    - create stubs so app can be tested in isolation
+    - Produce realistic documentation, and tests with requests and responses into app and with external dependencies
+  - Get 100% code coverage, so bugs are not caught in production
+    - Create static analysis tool or use one ie jacoco, or mutation testing ie pitest
+  - Reduce common bugs
+    - Create static analysis tool or use one ie findbugs, sonarcube
+  - Implement a style guide
+    - Create static analysis tool or use one ie pmd
+  - Automate tasks
+  - Have live and updated build monitor
+    - Fix failing builds immediately
+  - Effectively use kanban, handle contraints
+    - Measure performance of stories being completed (in each stage of dev and test) to look for bottle necks and ways to improve
+  - Test/QA when needed
+  - Ways of getting more things to done (ie in production)
+  - Help team tester
+    - being available for questions
+    - automating tasks for them
+  - Processes which are documentated, make them into scripts
+  - Automate infrastructure setup using scripts
+  - Implement checks so that dependencies you rely on checked regularly
+    - pact tests for internal services used
+    - status probes for external dependencies to warn for certs out of date, or service not up or service has changed api
+  - Produce enough information to diagnose bugs or problems
+    - metrics from jvm, database, webserver
+    - logs and stack traces
+  - Help new team members get up to scratch with domain knowledge and apps and ways of working

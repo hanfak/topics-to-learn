@@ -14,6 +14,7 @@ To test anything, need to setup the conditions to test that situation/behaviour
 - module tests (integration tests)
   - Some dependencies need not be primed
     - ie io/3rd party/ http/jms/database
+  - If testing integration part, ie db or network, the associated dependencies to allow for real implemenation must not be mocked but use the real object.
 
 - End to End tests
   - use stubs to return value for external dependencies

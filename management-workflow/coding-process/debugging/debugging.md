@@ -1,10 +1,12 @@
 # Debugging
 
-## From bug in running application in production
+## From bug in a running application in production
 
-## From build
+## From a failing build
 
 ## From test not passing correctly
+
+## Within container or application is running
 
 ## Debugging Issues With memory or high requests
 

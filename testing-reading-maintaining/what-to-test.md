@@ -20,7 +20,11 @@
 
 ## What to test
 
+Need to test behaviour
+- if I call this method or hit this end point, what do i expect to happen,  depending on the state/setup of the system?
+
 - Return value of method
+  -
 - Exceptions thrown
   - message
   - type of exception
@@ -29,7 +33,8 @@
 - Return value us null
   - test dependencies are called (verify/spies), with inputs and how many times
   - use stubs in place of dependencies.
-    - create extra methods used in tests only which return some value that can be tested
+    - create extra methods in stubbed dependencies, used only in tests which return some value that can be asserted on.
+  - ie logs
 - Static methods
   - Change constructor to accept a supplier, while keeping original constructor
     - pass in stub as dependency which can be primed
@@ -74,8 +79,8 @@
 
 ## Acceptance/Documentation (end to end, integration or unit)
 
-- Show in some output(ie http/file) the logs, the requests and responses, database info stored (ie object fields)
-- If exposing unit tests, then cannot really show much output apart from the what was written in the tests
+- Show in some output(ie webpage/file) the logs, the requests and responses, database info stored (ie object fields)
+- If exposing unit tests, then cannot really show much output apart from the what was written in the tests or return value of method ie usecase performed.
 - Regressiong testing
   - https://www.guru99.com/regression-testing.html
 - Use BDD terminalogy
@@ -84,6 +89,7 @@
   - Then - Asserting on the key areas to show behaviour was done ( ie database has correct info, response for call has correct info, requests sent to internal requests are correct )
 - Accpetance tests on classes (ie usecases - the main business area, or how the response is marshalled into json or how the request to dataprovder is marshalled etc)
   - These can show output, but mainly in object form. which may not make much sense to BA or testers
+    - can format the output
   - Relying on the BDD wording of the test to show the situation being tested
 
 ## Black box tests
