@@ -1,4 +1,4 @@
-# unattended test
+# Unattended test
 
 This is a test that is given to prospective applicants, who have passed the first phase of the recruitment stage, ie cv and/or phone call.
 
@@ -17,4 +17,4 @@ Work in pairs, or individual but at least two eyes on it, for some agreement.
 
 Should get a firm yes from both, for that level.
 
-## Feedback to the developer 
+## Feedback to the developer

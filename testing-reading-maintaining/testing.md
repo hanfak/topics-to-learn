@@ -172,6 +172,7 @@ Types of test
 - https://mixandgo.com/learn/feature-tests-vs-integration-tests-vs-unit-tests-in-ruby-and-rails
 - https://testing.googleblog.com/2008/12/static-methods-are-death-to-testability.html
 - http://misko.hevery.com/code-reviewers-guide/
+- https://blog.sebastian-daschner.com/entries/thoughts-on-efficient-testing
 
 * Wiremock
 * Yatspec

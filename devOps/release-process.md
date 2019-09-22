@@ -4,6 +4,8 @@
 
 - Check for go ahead
 - deploy
+  - put app on box
+- start app
 - check status page
   - No errors in status page
   - status page has correct version

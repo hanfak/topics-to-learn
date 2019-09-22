@@ -11,13 +11,6 @@
 - Tests allows us to refactor/redesign the code, without changing the behaviour.
   - Safety net for changing the code with out breaking it
 
-## Unit tests
-
-- Test only the behavoir of one class
-- All dependencies should be mocked
-- Any tiny types/ domain types/ DTO/DAO etc, do not need to be mocked
-- Test edge cases, technical issues
-
 ## What to test
 
 Need to test behaviour
@@ -45,6 +38,18 @@ Need to test behaviour
     - ie logs
 - Table / parametised  tests
   - Multiple cases for same flow
+
+## Unit tests
+
+- Test only the behavoir of one class
+  - verify the behavior of a single unit, usually a class, while all concerns that are external to the unit are ignored or simulated.
+  - test the business logic of the individual units, without verifying further integration or configuration thereof.
+- All dependencies should be mocked
+- Any tiny types/ domain types/ DTO/DAO etc, do not need to be mocked
+- Test edge cases, technical issues
+- fast feedback
+- Issues
+  - mocking the dependencies of the tested class means it is tightly coupled to the implementation, thus hard to refactor. As lots of changes need to be made to prod and test code
 
 ## Integration/module tests
 
@@ -99,3 +104,8 @@ Need to test behaviour
 - Have access to log files, or see the log output of the app as it is processing the inputs
 - Have a access to the output ie browser/postman
 - Have access to stub (for external app calls) logs or output to see its interactions with app under test
+
+## Links
+
+- https://blog.sebastian-daschner.com/entries/thoughts-on-efficient-testing
+- https://phauer.com/2019/modern-best-practices-testing-java/
