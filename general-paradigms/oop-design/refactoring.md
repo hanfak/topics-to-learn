@@ -13,6 +13,7 @@
 ## nested if statements
 
 - https://wpshout.com/unconditionally-refactoring-nested-statements-cleaner-code/
+- the most important characteristic we know to make an if statement under- standable is to make it look like the specification. And this matters more than reducing nesting.
 
 ## Conditional to polymorphism
 - https://www.youtube.com/watch?v=8uJC9wkA204

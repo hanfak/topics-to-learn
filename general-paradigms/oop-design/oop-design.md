@@ -4,6 +4,8 @@ Writing a program to do something is the first and easy part, writing it and cha
 
 The only constant in application is change. That is why the soft is in software. To make change easy/fast/efficient/cheap we need software to be designed with this in mind. Software design helps with making the software more readable/maintainable/extendable with out increasing costs or time for reading/maintaining/extending.
 
+a lot of what writing good code is about comes down to making proper use of abstraction levels, and deciding which abstractions to put in place is the first step to a good design.
+
 ## Use of diagramming and planning
 
 - UML

@@ -1,0 +1,86 @@
+# Design ideas
+
+Here is a list of design ideas that software can be engineered for. These, all have a cost, and some have conflict with each other. Prioritizing this list, and implementing some of these up to a certain point, is the goal of engineering
+
+-  accessibility
+  - Software that is accessible, allows users to be able to consume the software by taking into account any impairment
+    - ie make fonts larger, better contrast, voice instead of text
+  - For Backend
+-  affordability
+  - The cost of software, its creations/maintainace/use
+-  compatibility
+  - The software works in different environments or programs
+    - ie windows or unix, ie7 or firefox, hardware requirements
+-  customizability
+  - How easy it is for the user to change to suit its needs
+-  dependability
+-  effectiveness
+-  fault tolerance
+-  integrity
+-  mobility
+-  portability
+-  provability
+-  reproducibility
+-  safety
+-  securability
+-  sustainability
+-  accountability
+-  agility
+-  composability
+-  debugability
+-  deployability
+-  efficiency
+-  fidelity
+-  interoperability
+-  modifiability
+-  precision
+-  recoverability
+-  resilience
+-  scalability
+-  simplicity
+-  tailorability
+-  accuracy
+-  auditability
+-  configurability
+-  degradability
+-  discoverability
+-  usability
+-  flexibility
+-  learnability
+-  modularity
+-  predictability
+-  relevance
+-  responsiveness
+-  seamlessness
+-  stability
+-  testability
+-  adaptability
+-  autonomy
+-  correctness
+-  determinability
+-  distributability
+-  extensibility
+-  inspectability
+-  maintainability
+-  operability process
+-  capabilities
+-  reliability
+-  reusability
+-  self-sustainability
+-  standards compliance
+-  timeliness
+-  administrability
+-  availability
+-  credibility
+-  demonstrability
+-  durability
+-  failure transparency
+-  installability
+-  manageability
+-  orthogonality
+-  producibility
+-  repeatability
+-  robustness
+-  serviceability
+-  survivability
+-  traceability

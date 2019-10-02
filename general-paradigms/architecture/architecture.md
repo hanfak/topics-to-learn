@@ -13,6 +13,10 @@ demilaturised zone = adapters implement adapters
 world = frameworks/db/entrypoints/libraries/file systems
 
 
+## Concerns to think about
+
+- https://reflectoring.io/checklist-architecture-setup/
+
 ## Patterns
 
 - Archetectural Patterns

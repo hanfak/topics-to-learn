@@ -1,6 +1,7 @@
 ## Links
 
 - https://dzone.com/articles/creating-custom-annotations-in-java
+- https://dzone.com/videos/devnexus2015/how-annotations-work-java?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava
 
 ## The bad
 

@@ -1,5 +1,7 @@
 # General Paradigms
 
+Software is soft, not rigid. The aim is to design software, to keep it software as well as being well engineered for the task at hand
+
 Information about
 
 - Architecture

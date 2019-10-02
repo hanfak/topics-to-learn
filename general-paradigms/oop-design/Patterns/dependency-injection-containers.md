@@ -1,13 +1,18 @@
+
+
+
 ## Why bad
 
 - https://www.yegor256.com/2014/10/03/di-containers-are-evil.html
 - https://www.tonymarston.net/php-mysql/dependency-injection-is-evil.html
-- - http://davidscode.com/blog/2015/04/17/when-does-dependency-injection-become-an-anti-pattern/
+- http://davidscode.com/blog/2015/04/17/when-does-dependency-injection-become-an-anti-pattern/
+- https://www.continuousimprover.com/2018/05/dont-blame-dependency-injection.html
 
 
 ### notes
 
-Dependency Injection Makes Code UnintelligibleJanuary 8, 2009 11:08:00 PM
+Dependency Injection Makes Code Unintelligible
+
 Dependency Injection (DI) has become pervasive due to frameworks such as Spring and J2EE and libraries such as Guice. DI's aim is to make configuration and mapping of objects easier and reduce (or eliminate) coupling between services and implementations. These are good goals. Coupling of objects can lead to brittle and hard to maintain code. Configuration and linking of services to implementations can be tedious and error prone. Does DI accomplish these goals?
 
 Coupling
@@ -47,5 +52,3 @@ or
 
 
 I'll take the good 'ol simple 1 line of Java every time.
-
-Comments
