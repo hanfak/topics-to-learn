@@ -191,6 +191,114 @@ What?
 
 ### How to find the source of a bug without knowing a lot of code
 
+- Maintaince is associated with using a debugger to find the error/bug in code
+- The natural way of find bug (inefficient):
+  - 1. You receive a bug report related feature X
+  - 2. You look around the code of feature X
+  - 3. You step through the codebase with the debugger, looking for the cause of the problem.
+  -  if you start by looking at the code, you don’t know what you’re looking for
+    - Stumble into bug
+- don’t start by looking at the code.
+  - **begin by spending time analysing the application while it is running.**
+- Better approach
+  - Step 0: Dont look at code
+  - Step 1: Reproduce the issue
+    - Check the bug is there
+    - Check bug is in on dev machine
+      - if not then could be environment specific, config etc
+  - Step 2: Perform differential testing to locate the issue
+    - After reproducing bug
+    - Reduce the test case
+      - trying slight variations of the original test case in order to refine the scope of the bug
+      - Aim of finding simplest test case to reproduce bug
+    - Step 2a: Start with a tiny difference
+      - Change something small between two configs, then the delta is where the issue is
+    - Step 2b: Continue with larger differences
+      - Maybe differences between new feature and old version
+  - Step 3: Formulate and validate a hypothesis
+    - After we end up with a probable location for the bug and a method for reliably reproducing it
+    - We formulate a hypothesis about what is causing the incorrect behaviour.
+      - If many things go wrong choose gut feeling
+    - Now look at code to confirm it, use debugger here
+    - If validates hypothesis, great, if not repeat this step
+  - Binary search for root cause of bug
+    - Use divide and conquer, to quickly get to a bug
+    - narrowing the search by repeatedly splitting up the search space into a good half and a bad half, then looking further into the bad half for the problem.
+
+
 ### What to fix and not fix
 
+- Can be like a bully
+  - Big code base, inconsistent, duplicates, big functions/objects
+  - When fixed, a regression test fails
+  - Need a strategy to help fix code
+- The value-based approach
+  - Problem is there are many areas to fix, but little time
+  - Do lots of refactoring or rewrite is not feasible
+  - Need to assess both the value and the cost, for each refactoring that you are considering.
+    - act on the best value/cost ratios
+  - Sources of costs to think about
+    - Changing prod code
+    - fixing regressions
+    - adding tests
+    - handling conflicts
+  - There will be unknown unknowns that will add to the costs
+  - To refactor, need to understand code -> takes time
+  - The cost of the regression depends on two things:
+    - how long it takes to identify what caused the regression - how long it takes to fix it.
+    - Both those amounts of time are correlated with how close your tests are to the code.
+    - The farther a test is from the code, the longer it takes to launch and the less often it’s launched
+    - Use of unit tests, that run often, reduces fixes time, and increase fix is done correctly
+    - The test that is the farthest from the code is when a client uses the software
+      - Regressions discovered by a user are amongst the longest to identify and fix.
+      - Due to context switching, bad rep, new release, research etc
+  - Adding tests
+    - time needed to write tests includes thinking of the scenarios to test and implementing them
+    - Most of the time taken in writing tests is doing that one last thing to cut off a dependency so that the code under test can be put into a test harness.
+      - refactoring code to make it more testable
+  - Handling conflicts
+    - good candidates for refactoring are regions of code that get in your way
+    - Hot spots are areas of code where lots of current dev work is occuring.
+      - can lead to merge conflicts
+      - identify hot spots is to look in your version control system what parts of the code tend to be modified very often, and to understand why they need more fixes than the rest of the code
+      - Other potential hot spots are those that come up in bug reports on a regular basis, as well as those where a lot of regressions appear.
+    - Refactoring hotspots takes coordination between devs
+    - Try having only one developer at a time is allowed to work on a refactoring on a hot spot.
+      - developers aren’t allowed to exceed one or two days of lock time
+  - every developer of the team marks off places in the code every time something related to the quality of the code slowed them down, while debugging or fixing a bug, or in any other development activity
+- Valuable refactorings
+  - What annoys you the most in your codebase on a daily basis?
+  - Get team invovled in deciding
+  - Slice up a big function
+    - Forces devs to be bog down into details and not get a big picture of what is going on quickly
+    - Identifying the responsibilities of that function to split into sub functions with good naming
+      - Or delegate to another object
+    - If function is used a lot, then prime candidate
+  - Slice up a big object
+    - Object might have lots of responsibilities
+    - Splitting their members allows you to manipulate lighter structures that take up less mental space in the mind of a reader.
+  - Make side effects visible
+    - Making it clear what effects a function has on objects helps following along and being less surprised when debugging code.
+    - use of built in language features to make immutable objects
+    - you can pass in the objects to be modified as function argument instead of global variable
+    - bundle the function that makes a side effect on a piece of data with it into a class
+    - make it clear in a function’s name what side effects it has
+  - Use names that make sense
+    - Poorly named objects can send you on a wrong track and make you waste a lot of time.
+  - Don’t Repeat Yourself
+    - Two (or more) identical pieces of code in the codebase means
+      - more code to become familiar with
+      - more places for bugs to settle in
+      - more intellectual strain to fit everything in your head
+    - duplicated code that start off as identical tend to evolve in separate directions
+    - Merging two exact duplicates, that haven’t had the time to diverge yet.
+      - preventing diverging
+    - Merging two non-identical duplicates, that have already diverged.
+      - harder, need to find commanlity
+      - a first step is to place them next to each other in code
+- talking about the code in terms of the target design, even before you carry out a refactoring project
+
 ### refactoring techniques to reduce function size
+
+- long functions/classes make legacy code hard to work with
+  - Also over engineered (lots of patterns/abstractions)
