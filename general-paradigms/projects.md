@@ -1,5 +1,9 @@
 # Projects and Software types
 
+What an application is:
+  - a model of the rules or “policies” that govern the business in order to make it easier for the users to interact with them.
+
+
 ## Greenfield
 
 ## Brownfield

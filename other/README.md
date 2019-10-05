@@ -1,3 +1,3 @@
 # Other
 
-For everything else that does not fit anywhere else
+For everything else that does not fit anywhere else.
