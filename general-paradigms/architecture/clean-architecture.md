@@ -428,9 +428,169 @@ Example
   - If we’re working on a query, the “no mapping” strategy is the first choice between the web and application layer and between the application and persistence layer in order to be able to quickly evolve the code without mapping overhead
   - As soon as we have to deal with web or persistence issues in the application layer, however, we move to a “two-way” mapping strategy between the web and application layer or the application layer and persistence layer, respectively.
 
-
 ## Assembling the Application
+
+- The application wont work, unless we instantiate all the classes that do the work
+- This happens at start up, when the main method is called.
+- Called wiring or configuration
+    - it is just a bunch of factories
+- Use Dependency Injection framework or you can new up the classes manually
+- We dont want to instantiate the dependencies in the classes
+  - Because we want to keep the code dependencies pointed in the right direction.
+  - coupling
+  - better to test
+- must be a configuration component that is neutral to our architecture and that has a dependency to all classes in order to instantiate them
+- This wiring layer is the outer most layer
+- responsible for assembling a working application from the parts we provided. It must
+  - create web adapter instances,
+  - ensure that HTTP requests are actually routed to the web adapters,
+  - create use case instances,
+  - provide web adapters with use case instances
+  - create persistence adapter instances,
+  - provide use cases with persistence adapter instances,
+  - and ensure that the persistence adapters can actually access the database.
+- the configuration component should be able to access certain sources of configuration parameters, like configuration files or command line parameters
+- During application assembly, the configuration component then passes these parameters on to the application components to control behavior like which database to access or which server to use for sending email.
+- This does break SRP
+  - but we accept this to keep application clean
+- Manual wiring
+  - This can grow massively
+  - since we’re instantiating all classes ourselves from outside of their packages, those classes all need to be public
+    - The compiler does not stop one layer using another properly
+  - Keeps it easy to understand
+- DI framework using class path scanning
+  - Spring goes through all classes that are available in the classpath and searches for classes that are annotated with the @Component annotation. The framework then creates an object from each of these classes. The classes should have a constructor that take all required fields as an argument
+  - Spring will find this constructor and search for @Component-annotated classes of the required argu- ment types and instantiate them in a similar manner to add them to the application context. Once all required objects are available, it will finally call the constructor of the class and add the resulting object to the application context as well.
+  - Drawbacks
+    - it’s invasive in that it requires us to put a framework-specific annotation to our classes.
+      - If you’re a Clean Architecture hardliner, you’d say that this is forbidden as it binds our code to a specific framework.
+    - A lot of magic happens, hard to debug when things go wrong  or understand when the unexpected happens unless you are an expert in this framework
+-  Spring’s Java Config
+  - we create configuration classes, each responsible for constructing a set of beans that are to be added to the application context.
+  - The @Configuration annotation marks this class as a configuration class to be picked up by Spring’s classpath scanning
+  - The beans themselves are created within the @Bean-annotated factory methods of our configuration classes.
+  - we could create configuration classes for web adapters, or for certain modules within our application layer. We can now create an application context that contains certain modules, but mocks the beans of other modules, which gives us great flexibility in tests
+  - We could even push the code of each of those modules into its own codebase, its own package, or its own JAR file without much refactoring.
+  - Drawbacks
+    - If the configuration class is not within the same package as the classes of the beans it creates (the persistence adapter classes in this case), those classes must be public.
+      - To restrict visibility, we can use packages as module boundaries and create a dedicated configuration class within each package. This way, we cannot use sub-packages,
+
 
 ## Enforcing Architecture Boundaries
 
+- Over time architecture erodes
+  - Boundaries between layers weaken
+  - code becomes harder to test
+  - we generally need more and more time to implement new features
+- Need to fight this erosion by enforcing the architecture and it's boundaries
+  - Make sure there are no illegal dependencies ie dependencies point in the wrong way
+- Visibility modifiers
+  - 4 types (public, protected, package private, private)
+  - Use package private (default)
+    - it allows us to use Java packages to group classes into cohesive “modules”.
+    - Classes within such a module that can access each other, but cannot be accessed from outside of the package.
+  - We can then choose to make specific classes public to act as entry points to the module
+  - The classes in the outgoing adapters/infrastructure (ie database) can be packagae private
+    - as accessed by the outgoing port interface
+  - the domain package needs to be accessible by the other layers
+  - This only works with frameworks, as it uses reflection
+  - The package-private modifier is awesome for small modules with no more than a couple handful of classes
+    - it grows confusing to have so many classes in the same package.
+    - Having subpackages, will fail this mechanism
+      - members in sub-packages must be public
+- Post-Compile Checks
+  - Checks conducted at runtime
+  - Such runtime checks are best run during automated tests within a continuous integration build.
+  - Use some framework, ie Arhcunit, to check dependencies work, as part of a unit test
+  - Drawbacks
+    - if we misspell the package name buckpal in the code example above, for example, the test will find no classes and thus no dependency violations
+- Build Artifacts
+  - Modularising our application
+  - Use of maven/gradle
+    - A main feature of build tools is dependency resolution
+    - To transform a certain codebase into a build artifact, a build tool first checks if all artifacts the codebase depends on are available.
+    - If not, it tries to load them from an artifact repository.
+    - If this fails, the build will fail with an error, before even trying to compile the code.
+  - For each such module or layer, we create a separate build module with its own codebase and its own build artifact (JAR file) as a result.
+  - In the build script of each module, we specify only those dependencies to other modules that are allowed according to our architecture.
+  - Developers can no longer inadvertently create illegal dependencies because the classes are not even available on the classpath and they would run into compile errors.
+  - Can split each layer
+  - Can split each package in the layer in to jars/modules
+    - ie one module per adapter
+      - we usually don’t want changes in the persistence layer to leak into the web layer and vice versa
+      - We don’t want details of that API leaking into other adapters by adding accidental dependencies between adapters.
+    - ie one module per port
+      - Make it clear which is an incoming and outgoing port
+    - domain layer as module
+      - Depends on whether these will be used in different layers
+      - mapping strategy - disallow no mapping strategy if domain is module
+      - Can split domain layer packages into modules, and allow for different mapping strategies for specific domain entities
+    - services as module
+    - wiring as module
+  -  **The gist is that the finer we cut our modules, the stronger we can control dependencies between them. The finer we cut, however, the more mapping we have to do between those modules**
+  - added cost of having to maintain a build script
+  - Advantages
+    -  build tools absolutely hate circular dependencies, violates SRP, and dont allow it
+    -  build modules allow isolated code changes within certain modules without having to take the other modules into consideration
+      - ie we do a major refactoring in the application layer that causes temporary compile errors in a certain adapter.
+        - If the adapters and application layer are within the same build module, most IDEs will insist that all compile errors in the adapters must be fixed before we can run the tests in the application layer, even though the tests don’t need the adapters to compile.
+        - If the application layer is in its own build module, however, the IDE won’t care about the adapters at the moment, and we could run the application layer tests at will.
+      -  multiple build modules allow isolated changes in each module.
+        - Can put each module into its own code repository, allowing different teams to maintain different modules.
+  - Now we have to thinks about our architecture
+
 ## Taking Shortcuts Consciously
+
+- Taking shortcuts can lead to technical debt
+- Need to identify such shortcuts and be able to discuss their effects when deciding to choose to do them or fix them
+- Shortcuts are like broken windows
+  - if devs see shortcuts, they will automatically use them or copy them in any new features with out thinking about the consequences
+  - Broken window theory applied to code
+    -  When working on a low-quality codebase, the threshold to add more low-quality code is low.
+    -  When working on a codebase with a lot of coding violations, the threshold to add another coding violation is low.
+    -  When working on a codebase with a lot of shortcuts, the threshold to add another shortcut is low.
+- Need to keep code as clean as possible, so others will treat in the same way
+- Why take a shortcut
+  - the part of the code we’re working on is not that important to the project as a whole
+  - that we’re prototyping
+  - for economical reasons
+- Should document are architectural decisions, ie Architecture Decision Records (ADRs),
+  - If every member of the team is aware of this documentation, it will even reduce the Broken Windows effect, because the team will know that the shortcuts have been taken consciously and for good reason.
+- Sharing models between use cases
+  - different use cases should have a different input and output model, meaning that the types of the input parameters and the types of the return values should be different.
+    - Multiple use cases using the same input/output model, means they are coupled to each other
+    - They share a reason to change in terms of the Single Responsibility Principle
+    - This can lead to duplicate code, but allows use cases to be decoupled and grow indepdently
+  - Sharing input and output models between use cases is valid if the use cases are functionally bound
+    - i.e. if they share a certain requirement.
+    - In this case, we actually want both use cases to be affected if we change a certain detail.
+  - to regularly ask the question whether the use cases should evolve separately from each other.
+    - As soon as the answer becomes a “yes”, it’s time to separate the input and output models.
+- Using Domain Entities as Input or Output Model
+  - incoming/outgoing port has a dependency to the domain entity
+  - If the use case needs something from input model which is not in domain entity, then we might be tempted to add a field to the domain entity because it is available
+  - For simple create or update use cases, a domain entity in the use case interface may be fine, since the entity contains exactly the information we need to persist its state in the database.
+  - As soon as a use case is not simply about updating a couple of fields in the database, but instead implements more complex domain logic (potentially delegating part of the domain logic to a rich domain entity)
+    - we should use a dedicated input and output model for the use case interface
+    - because we don’t want changes in the use case to propagate to the domain entity
+- Skipping Incoming Ports
+  - we don’t need the incoming ports for dependency inversion.
+    - We could decide to let the incoming adapters access our application services directly, without incoming ports in between
+  - The incoming ports, however, define the entry points into out application core
+    - Once we remove them, we must know more about the internals of our application to find out which service method we can call to implement a certain use case.
+    - By maintaining dedicated incoming ports, we can identify the entry points to the application at a glance.
+    - increases readabilitykeep the incoming ports is that they allow us to easily enforce architecture.
+  - keeping the incoming ports is that they allow us to easily enforce architecture.
+    - we can make certain that incoming adapters only call incoming ports and not application services.
+    - No accidental calls of services not meant for the incoming adapter
+  - If an application is small enough or only has a single incoming adapter so that we can grasp the whole control flow without the help of incoming ports, we might want to do without incoming ports
+- Skipping Application Services
+  - we might want to skip the application layer as a whole
+  - do this for simple CRUD use cases, since in this case an application service usually only forwards a create, update or delete request to the persistence adapter, without adding any domain logic.
+    - Instead of forwarding, we can let the persistence adapter implement the use case directly.
+    - requires a shared model between the incoming adapter and the outgoing adapter,
+  - we no longer have a representation of the use case within our application core
+    - If CRUD app grows, then we start to add domain logic directly to the outgoing adapter. Spreading the domain logic all over the app
+    - to prevent boilerplate pass-through services, we might choose to skip the application services for simple CRUD use cases after all
+    - Should introduce application service as soon business logic occurs
+  - 

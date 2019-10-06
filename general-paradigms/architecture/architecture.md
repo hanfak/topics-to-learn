@@ -12,6 +12,10 @@ Happy = core, use case, interfaces
 demilaturised zone = adapters implement adapters
 world = frameworks/db/entrypoints/libraries/file systems
 
+Software architecture is basically all about managing dependencies between architecture elements. If the dependencies become a big ball of mud, the architecture becomes a big ball of mud.
+
+The Domain is King
+
 
 ## Concerns to think about
 

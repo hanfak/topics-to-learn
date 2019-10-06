@@ -31,3 +31,4 @@
   - interviews
 
 - https://blog.ippon.tech/agile-story-development/
+- https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/

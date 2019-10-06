@@ -1,5 +1,9 @@
 # Concurrency and Threads
 
+## Links
+
+- https://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/
+
 ## Concurrency vs parallelism
 
 - https://www.youtube.com/watch?v=FChZP09Ba4E
