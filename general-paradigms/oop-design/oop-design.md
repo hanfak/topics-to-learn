@@ -6,6 +6,15 @@ The only constant in application is change. That is why the soft is in software.
 
 a lot of what writing good code is about comes down to making proper use of abstraction levels, and deciding which abstractions to put in place is the first step to a good design.
 
+Improving OO design or any software design is to keep software soft.
+  - why?
+    - May result in lower total cost of ownership (TCO) for a longer-lived system
+    - May allow the business to be more agile (responding more quickly to changing marketplace conditions)
+    - May result in happier development teams (which in turn,may increase productivity and reduce staff turnover)
+
+ultimately it is the code that must be transformed from its current state to a new state to support the goals of the organisation or users.
+
+
 ## Use of diagramming and planning
 
 - UML

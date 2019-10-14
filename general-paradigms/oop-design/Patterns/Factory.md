@@ -1,3 +1,11 @@
+# Factory Pattern
+
+- The Factory pattern allows client code to delegate creation of a particular kind of object to another class (“factory”).
+  - The type of the returned instance can depend on some data supplied by the client or
+  - can be based on the current context or state of the application.
+- The factory method does not have to have any parameters passed to it, instead it may just examine the existing state of the application to make the decision
+
+
 
 ## See Wiring class
 
