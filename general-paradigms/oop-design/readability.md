@@ -13,18 +13,6 @@
 
 - Reduces the mental effort required to understand it and therefore be able to change it safely.
 
-## Comments
-
-- Comments should always add value to the person reading the code.
-- Comments that do not add value should be removed
-  - otherwise it distracts the reader
-- Should not explain what the code is doing, if it is hard to follow then need to refactor
-- Should not explain the language
-  - The reader should know the language
-- Should explain why this decision was taken
-- To come back to the code and make changes, ie todos
-- If the code is going to be provided as a library to people to use as an API, or there is a need to auto-generate documentation, then XML comments may still need to be provided.
-- Do not comment every line
 
 ## Naming booleans
 

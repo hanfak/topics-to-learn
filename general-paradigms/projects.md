@@ -10,6 +10,8 @@ What an application is:
 
 ## Enterprise software
 
+- The display, manipulation, and storage of large amounts of complex data.
+- The support and/or automation of business processes that rely on this data.
 - used by Business
   - used by other areas of business
 - makes or saves money for the business
@@ -24,6 +26,10 @@ What an application is:
 - https://www.aoe.com/en/enterprise.html
 - http://tractsystems.com/what-is-enterprise-grade-software/
 - https://www.bmc.com/blogs/enterprise-application-software-defined-how-is-it-different-from-other-software/
+- https://www.cio.com/article/2439502/what-is-erp-key-features-of-top-enterprise-resource-planning-systems.html
+- https://softwareengineering.stackexchange.com/questions/141411/what-is-enterprise-software-exactly
+- https://codeburst.io/enterprise-software-is-the-hardest-software-to-write-c76d59725f3
+-https://www.bmc.com/blogs/enterprise-application-software-defined-how-is-it-different-from-other-software/
 
 ### Common features
 
@@ -77,12 +83,14 @@ What an application is:
   - does not break systems when rolled out, can be roll backed
   - properties/config for different environments
   - database
+- 
 
 
 
 ## Consumer/application software
 
 - the day-to-day software we rely on to create documents, databases, spreadsheets, presentations, graphics, and more. We use application software, often shortened to applications or apps, to complete a function or even play a game. Enterprise application software falls into this category, as its function is to support the mission of a large enterprise.
+- normal software would be the software made with individuals in mind, i.e. retail software or web applications targeting the general populace. Its success depends on how well it is received by users who in most part are offered a ready-made, 'standard issue' product. The development is an investment and the revenue comes from individual product or ad space sales.
 
 ### Individual user
 
@@ -100,6 +108,8 @@ What an application is:
 - the software programs that help the computer run, like the operating system. Without systems software, we would have to manually enter directions for each task we want a computer to complete. Examples of systems software include Microsoft Windows, Apple’s OS, and others.
 
 ## Middleware
+
+- https://stackoverflow.com/questions/2904854/what-is-middleware-exactly
 
 ## Front end
 
@@ -121,6 +131,8 @@ What an application is:
 ## PaaS
 
 - https://en.wikipedia.org/wiki/Platform_as_a_service
+
+## FaaS
 
 ## Mobile apps
 

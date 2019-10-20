@@ -4,6 +4,11 @@
 
 - https://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/
 
+## Thread safety
+
+- https://dzone.com/articles/7-techniques-for-thread-safe-classes
+- https://www.baeldung.com/java-thread-safety
+
 ## Concurrency vs parallelism
 
 - https://www.youtube.com/watch?v=FChZP09Ba4E

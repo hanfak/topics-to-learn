@@ -59,3 +59,4 @@
 
 - http://ocpj8.javastudyguide.com/ch01.html
 - https://github.com/enkidevs/curriculum/wiki/Java-Topic
+- http://blog.paralleluniverse.co/2014/05/01/modern-java/

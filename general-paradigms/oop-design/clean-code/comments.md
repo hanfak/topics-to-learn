@@ -1,0 +1,36 @@
+# Comments
+
+- Comments should always add value to the person reading the code.
+- Comments that do not add value should be removed
+  - otherwise it distracts the reader
+- Should not explain what the code is doing, if it is hard to follow then need to refactor
+- Should not explain the language
+  - The reader should know the language
+- Should explain why this decision was taken
+- To come back to the code and make changes, ie todos
+- If the code is going to be provided as a library to people to use as an API, or there is a need to auto-generate documentation, then XML comments may still need to be provided.
+- Do not comment every line
+- Comments are evil. The goal of comments is to compensate for our failure or to help express ourselves better.
+  - They are always sign of failure.
+- Comments get outdated as there is no good way of maintaining them.
+  - People move the code but forget the comment.
+  - People change the code but forget the comment, or no longer remember what it was supposed to mean.
+- They are reasonable only sometimes (
+  - express rationale behind choosing a certain approach, or
+  - to stress out some important detail in the implementation),
+  - but in general try to minimize using them.
+-  Javadocs are useful, but keep them accurate.
+- Misleading comment is worse than no comment
+- If you write a comment, write about what is just next to it, not about the whole system around.
+  - Only about what the function has control over. Otherwise it will soon become outdated, and therefore misleading.
+- No point in writing sth like /* Returns the name. */ getName().
+- Using HTML in comments makes them harder to be read in IDE - so where they are read the most.
+- Don't comment out code. Just remove.
+  - it is in version control
+- Don't use closing brace comments.
+- Always try to explain yourself in code.
+- Use as explanation of intent.
+- Use as clarification of code.
+- Use as warning of consequences.
+- Create method names and informative variables instead of explaining the code with comments.
+- They should not be used to indicate who changed or why, for that already exists in versioning.
