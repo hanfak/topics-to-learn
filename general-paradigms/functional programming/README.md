@@ -1,5 +1,30 @@
 # Functional Programming
 
+- AKA Declarative Programming
+- Intent of FP is for readability and understandablility
+- About what rather than how (procedural)
+
+## Pure functions
+
+- No side effects
+- Only acts on the inputs
+
+## Immutability
+
+## When not to use
+
+- When the code becomes
+  - messy (greater than one line lambdas )
+  - lots of exit points (ie exceptions)
+- When there are side effects
+  - ie dealing with external input like database, io etc
+  - A purely functional program, cannot take any outside input, cannot really do anything
+- Use of forEach()
+  - takes a consumer, which has side effects
+  - `s -> {}` is a pure consumer, but does nothing and useless
+- Alternative to consumer, is a supplier
+  - does not take any input and returns a value
+
 ## Links
 
 - https://dev.to/riccardo_cardin/object-oriented-programming-strikes-back
@@ -10,3 +35,4 @@
 - https://github.com/hemanth/functional-programming-jargon
 - https://codurance.com/2018/08/09/the-functional-style-part-1/
 - https://blog.knoldus.com/functional-programming-a-paradigm/
+- https://github.com/blalasaadri/functional-programming-in-java-examples

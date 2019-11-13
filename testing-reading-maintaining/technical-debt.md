@@ -5,11 +5,12 @@
 - Slows down the ability to change software
 - All software has technical debt
 - technical debt accrues, if so is it done on purpose and accepted that we will have to handle the consequences
+- what can happen when developers do not factor their learning back in to their code as they're building it
 
 
 ## Causes of technical debt
 
-- Biggest cause of technical debt is delivery schedule pressure
+- Biggest cause of technical debt is delivery schedule pressure, and devs get sloppy and cut corners
 - Unmanaged, incorrect, or chaotically changing requirements
 - Junior, inexperienced, or unmotivated programmers
 - Parallel development streams followed by big-bang merges

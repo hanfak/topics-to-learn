@@ -57,3 +57,4 @@
 - https://docker-curriculum.com/
 - https://www.tutorialspoint.com/docker/index.htm
 - https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/docker.sh
+- https://github.com/Albertoimpl/k8s-for-the-busy/blob/master/containerizing-java/README.adoc

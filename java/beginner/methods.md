@@ -38,7 +38,7 @@
     - cannot change parameter
     - if parameter is an object (ie `Integer b`), then the reference of the object cannot be changed
       - but state of object can be changed
-      
+
 ## Overloading methods
   - Same method name with different number of parameter types or type of parameters
   - for example
@@ -54,12 +54,34 @@
   - use of static keyword
   - ```static String method() {...}```
   - no instance needed to be created to be used
+  - Cannot be overridden
+  - Disadvantage - breaks encapsulation
+    - allow state to be maintained across all instances of a class
+    - If a variable can be altered by any instance of a class then the fundamental principle behind encapsulation/information hiding is lost entirely
+  - Disadvantage - Cannot mock if used in a classes
+    - If a instance method calls a static method, and you need to mock it as it is calls an expensive (time/money/performance) operation (ie database), it becomes hard to add a mock for it. Thus hard to test the instance method as a unit.
+  - Disadvantage - polymorphism goes out the window
+    - Cannot override
+  - Disadvantage - Cannot handle state
+    - As other calls, which is not the class of the static method can change it's state
+    - Causes concurrency bugs
+  - One rule-of-thumb: ask yourself "does it make sense to call this method, even if no Obj has been constructed yet?" If so, it should definitely be static.
+  - Requirements for static methods
+    - If you are writing utility classes and they are not supposed to be changed.
+    - If the method is not using any instance variable.
+    - If any operation is not dependent on instance creation.
+    - If there is some code that can easily be shared by all the instance methods, extract that code into a static method.
+  - Reason for static methods
+    - Performance: if you want some code to be run, and don't want to instantiate an extra object to do so, shove it into a static method. The JVM also can optimize static methods a lot
+    - Practicality: instead of calling new Util().method(arg), call Util.method(arg), or method(arg) with static imports. Easier, shorter.
+    - Adding methods: you really wanted the class String to have a removeSpecialChars() instance method, but it's not there (and it shouldn't, since your project's special characters may be different from the other project's), and you can't add it , so you create an utility class, and call removeSpecialChars(s) instead of s.removeSpecialChars().
+    - Purity: taking some precautions, your static method will be a pure function, that is, the only thing it depends on is its parameters. Data in, data out. This is easier to read and debug, since you don't have inheritance quirks to worry about. You can do it with instance methods too, but the compiler will help you a little more with static methods (by not allowing references to instance attributes, overriding methods, etc.).
 
 ## Return type is declared
 - ```static String method() {... return ....}```
 - return should match the type to be returned of the method in the method signature.
 - Can return `null`
-- multiple returns
+- multiple returns of same type
   - using a control flow statement like if else, both blocks should return the same type.
 - `return` on its own?
   - exits the level ie if statement or method returns the to higher leve.
@@ -87,6 +109,13 @@ public String aMethod(int x) throws Exception {
   - but the method should throw that exception
     - also any other method that uses this method should throw that exception too.
     - but can use `try/catch` and placing the method which throws the exception in the try block and do something with it in the catch block, thus no need to add the `throw exception` in the method signature.
+- Return multiple types
+  - not possible
+  - Can get around this by:
+    - returning an object wrapper which holds all the types you want to return
+    - return a Pair (part of jdk) or a tuple library
+    - return an Object ArrayList/Array
+    - Return a string with delimiters
 
 ### void
 
@@ -97,12 +126,14 @@ public String aMethod(int x) throws Exception {
 ## Using methods
 
 - passing arguments to a method
-- within class
+- within class, private method
   - just use the name of method
   - ie ```method(1)```
 - in different class
   - where instance is initialized and thus intance can be used ie `Instance instance = new Instance();`
-  - ```instance.method(1);```
+    - ```instance.method(1);```
+    - ```instance.methodTwo(1, "hello");```
+    - ```instance.methodThree(1, new Car(new Engine(), "Honda"), Arrays.asList(1,2,3), (x, y) -> x > y);```
   - Use of static methods
     - `Instance.staticMethod();`
 - Defining variable for storing/referencing output of method
@@ -113,6 +144,7 @@ public String aMethod(int x) throws Exception {
   - camel case
     - aMethod()
     - method()
+  - Should be descriptive
 
 ## side effects
   - Avoid using setters to alter the Instance

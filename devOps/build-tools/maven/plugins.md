@@ -95,3 +95,15 @@ To get the maven coordinates, check the `full name` at the top of the page from 
 Can add any of the parameters, like verbose in the xml above.
 
 To configure plugins: http://maven.apache.org/guides/mini/guide-configuring-plugins.html
+
+
+## Surefire
+
+- Used to run unit tests
+- Class name of test file should end with Test
+
+## Failsafe
+
+- Used to run integration tests
+- Class name of test file should end with IntegrationTest or IT
+- can run integration only test `mvn test-compile failsafe:integration-test failsafe:verify`

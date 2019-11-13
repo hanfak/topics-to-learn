@@ -27,7 +27,7 @@ int orderValueInEnum = direction.WEST.ordinal();
 
 toString() and getName()
 
-```jave
+```java
 System.out.println(direction.WEST); // prints WEST
 
 String nameOfEnum = direction.WEST.name() // returns  WEST
@@ -70,6 +70,9 @@ Enum methods
  - compiler creates class of this enum
    - can have fields, constructors and methods
    - the class extends java.lang.Enum which has toSting(), equals() etc
+ - The power of this way, is to avoid using decision/control statements and use polymorphism to implement the logic based on the enum type without having to know about the enum type
+   - Benefit: reduce code bloat in calling code
+   - Benefit: only one place to change logic or add new types, instead of in the calling class
 
 ```java
 public enum Level {
@@ -84,6 +87,7 @@ public enum Level {
   }
 
   public int getLevelValue() {
+    // This can have other logic, can use params passed into this method to
     return levelValue;
   }
 }

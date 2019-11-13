@@ -1,5 +1,26 @@
 # Functional Programming
 
+## Immutability
+
+- Declare the class as final so it can’t be extended.
+  - make the constructor private and construct instances in factory methods.
+- Make all fields private so that direct access is not allowed.
+- Don’t provide setter methods for variables
+- Make all mutable fields final so that it’s value can be assigned only once.
+- Initialize all the fields via a constructor performing deep copy.
+- Perform cloning of objects in the getter methods to return a copy rather than returning the actual object reference.
+- If the instance fields include references to mutable objects, don't allow those objects to be changed:
+  -Don't provide methods that modify the mutable objects.
+  - Don't share references to the mutable objects.
+  - Never store references to external, mutable objects passed to the constructor;
+    - if necessary, create copies, and store references to the copies.
+    - Similarly, create copies of your internal mutable objects when necessary to avoid returning the originals in your methods.
+
+### Links
+- https://stackoverflow.com/questions/50257305/java-making-a-class-immutable
+- https://www.journaldev.com/129/how-to-create-immutable-class-in-java
+- https://medium.com/@mykola.shumyn/immutable-classes-in-java-76635df0356d
+
 ## streams
   - map
   - filter

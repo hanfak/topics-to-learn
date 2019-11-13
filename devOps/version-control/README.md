@@ -34,6 +34,11 @@ I have mainly been using Git to version control all software that has been worke
   - need to commit after doing this
 - submodule
   - Have a separate repo inside another repo
+
+### Tips
+
+To change anything, instead of changin git config via the command line commangs, can alter the file in /.git/config
+
 ### Links
 
 - [Git Documentation](https://git-scm.com/doc)

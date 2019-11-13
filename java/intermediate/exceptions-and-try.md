@@ -30,10 +30,15 @@ https://dzone.com/articles/ignore-exceptions-in-java
 ## try - catch
   - catch exceptions
     - logging exceptions and stack trace that are thrown
+    - wrapping Exceptions
+      - Why?
+      - As runtime exceptions
   - finally block
   - multi catch
 - creating custom exceptions
 - try with resources
+
+
 
 ## checked exceptions
 
@@ -42,3 +47,5 @@ https://dzone.com/articles/ignore-exceptions-in-java
 - https://phauer.com/2015/checked-exceptions-are-evil/
 - https://programming.guide/java/checked-exceptions-good-or-bad.html
 - http://literatejava.com/exceptions/checked-exceptions-javas-biggest-mistake/
+- https://stackoverflow.com/questions/613954/the-case-against-checked-exceptions
+- https://stackoverflow.com/questions/37834521/why-one-should-try-throw-unchecked-exception-over-checked-exception

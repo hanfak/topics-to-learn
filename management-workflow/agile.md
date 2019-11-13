@@ -24,6 +24,19 @@ The principles behind agile values:
 - The best architectures, requirements, and designs emerge from self-organizing teams.
 - At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
 
+An organisation is agile, when it responds to threat and opportunity in ways uniquely of the moment. It is informed by history and not shackled to practices encoded in software not likely to be revised soon
+
+Organisations are adaptable.
+
+Prevents fortune telling
+- Guess the future of a coorperative task
+
+The manifesto had two issues
+- Thinking this applied in general rather than just for writing software
+- Led to only being applied to new software projects, and only until they went live
+
+Instead of figuring everything upfront, we design, build and test little bits of software at time.
+
 ### Links
 
 - http://agilemanifesto.org/
