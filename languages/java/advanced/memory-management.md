@@ -7,6 +7,10 @@
 
 performance https://www.dynatrace.com/resources/ebooks/javabook/
 
+## Debugging
+
+- https://mydeveloperplanet.com/2018/11/14/how-to-solve-your-java-performance-problems-part-1/
+
 ## Heap and stack
 
 - https://stackify.com/java-heap-vs-stack/

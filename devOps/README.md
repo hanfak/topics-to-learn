@@ -1,5 +1,16 @@
 # DevOps
 
+About
+
+- Version control
+- Continuous delivery
+- Continous integration
+- Monitoring
+- Containerisation and container management
+- Build tools
+- Dependency management
+- Releases
+
 ## What is devOps?
 
 - https://www.javacodegeeks.com/2018/05/devops-a-methodology-to-learn-from.html

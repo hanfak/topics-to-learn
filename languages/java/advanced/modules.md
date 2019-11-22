@@ -2,6 +2,9 @@
 
 **Java 9+ - will need the jdk of 9 and above**
 
+- Different to maven modules
+  - are a way to organize your project into several subprojects (modules). With Maven, you can control the versions of these modules and the dependencies between these modules. Each module will produce an artifact.
+  - Java modules are a way to strongly encapsulate your classes. It does not provide any means to control the version of an artifact you are using.
 - By default, a type in a module is not accessible to other modules unless it’s a public type and you export its package
 - List all modules `java --list-modules`
   - Standard java libraries start with `java.`
@@ -33,9 +36,47 @@
   - `open, opens, and opens…to` allows reflection to packages you want it to have
 - jmod file
   -???
+- It is not necessary to explicitly add the java.base module because it is always implicitly added
+- compiling
+  - The -d option specifies the destination directory for the compiled classes
+    ```
+      javac -d mods/com.mydeveloperplanet.jpmshello
+      src/com.mydeveloperplanet.jpmshello/module-info.java
+      src/com.mydeveloperplanet.jpmshello/com/mydeveloperplanet/jpmshello/HelloModules.java
+    ```
+- Execution
+  -  module-path option sets the directories where the modules can be found. The module option sets the main class that must be invoked
+  ```
+  java --module-path mods
+  --module com.mydeveloperplanet.jpmshello/com.mydeveloperplanet.jpmshello.HelloModules
+  ```
+- Packaging
+  - The file option specifies the location and name of the JAR file.
+  - The main-class option specifies the entry point of the application — in other words, where the main class resides.
+  - The C option specifies the location of the classes to include in the JAR file
+  ```
+  jar
+  --create
+  --file target/jpms-hello-modules.jar
+  --main-class com.mydeveloperplanet.jpmshello.HelloModules
+  -C mods/com.mydeveloperplanet.jpmshello .
+  ```
+- Execute package/jar
+  ```
+  java
+  --module-path target/jpms-hello-modules.jar
+  --module com.mydeveloperplanet.jpmshello/com.mydeveloperplanet.jpmshello.HelloModules
+  ```
+- If importing package, which has not been declared inthe module-info file, we get `error: static import only from classes and interfaces`
+
+### Links
+
+- http://tutorials.jenkov.com/java/modules.html
 
 ## Examples
 
 - https://mydeveloperplanet.com/2018/01/10/java-9-modules-introduction-part-1/
 - https://mydeveloperplanet.com/2018/01/24/java-9-modules-with-intellij-and-maven-part-2/
 - https://mydeveloperplanet.com/2018/02/07/java-9-modules-directives-part-3/
+- Clean architecture
+  - https://medium.com/slalom-engineering/clean-architecture-with-java-11-f78bba431041

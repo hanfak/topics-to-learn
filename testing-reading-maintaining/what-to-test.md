@@ -105,6 +105,13 @@ Need to test behaviour
 - Have a access to the output ie browser/postman
 - Have access to stub (for external app calls) logs or output to see its interactions with app under test
 
+## Acceptance/end to end or unit
+
+- Doing ATDD means starting with a test which tests a whole flow (several modules). This means several classes might be created. But as these are already tested by acceptance test, you might not need to do a unit test on that class, because you will be duplicating tests and more things change later on.
+- But if the class contains business logic or different flows ie handling resources or exceptions, which are not tested via the acceptance test then we need to unit test it.
+  - If there is more business logic here then might need to write the unit test as a documentation test so it can be read by non technical stake holders.
+- Dont just rely on the acceptance test to cover everything. Need to make a judgement on what needs to be unit tested and what needs to be documented
+
 ## Links
 
 - https://blog.sebastian-daschner.com/entries/thoughts-on-efficient-testing

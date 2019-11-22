@@ -26,7 +26,6 @@ To test anything, need to setup the conditions to test that situation/behaviour
     - use in memory database
     - use test container
 
-
 - clearing primed data
   -  Otherwise other tests will have primed data/http responses not for that situation
   - before each test, good to remove data from database
@@ -42,7 +41,15 @@ To test anything, need to setup the conditions to test that situation/behaviour
   - Generally used for database or network calls classes, for acceptance tests
   - Can replace a network call without going over the network, or go other network to a local server which returns whatever you want (wiremock)
   - Can have a test database (ie test container) which mimics prod db
-  - Used when method under test cannot be checked, so need to verify behaviour in a delegate that is called in the method. Thus can use a fake delegate as stub and assert on its state or methods.
+  - Used when method under test cannot be checked, so need to verify behaviour in a delegate that is called in the method. Thus can use a stub as a fake delegate  and assert on its state or methods.
+  - Can have extra methods in stubs, which we can use to assert on
+    - useful when method under test returns void, or want to check action has been performed by dependency (better to use verify with a mock)
+
+- Ways of priming time
+  - Can apply to time or date
+  - if test is using current time, ie Instant.now(), the code can not use the same current time, ie calling Instant.now() in prod code, as there will be time lag.
+  - Solutions
+    - Create an Interface, ie MyClock, with a one method, ie Instant getCurrentTime(). Pass this Interface as a dependency into
 
 - Issues when priming
   - Mocked an object, primed it, but it does not look like it been primed during debugging

@@ -1,5 +1,8 @@
 # Management & Workflow
 
+- Coding processing
+  - Debugging
+  - legacy code
 - Agile
   - Kanban
   - Scrum

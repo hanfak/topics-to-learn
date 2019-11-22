@@ -4,4 +4,5 @@ Information about using
 
 - Linux
 - Bash
+- Scripting
 - etc

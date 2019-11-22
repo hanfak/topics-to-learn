@@ -23,6 +23,7 @@ What an application is:
 -  is typically owned outright, giving users much more ability to customize it. Enterprises often have in-house developers and programmers tweak or overhaul the software to make it match enterprise needs. It’s also always malleable – if a new enterprise problem comes up, programmers can implement a new solution within the existing software.
 - Enterprise software is meant for large businesses that require software that can scale with the needs of the business. Enterprise software, therefore, needs to be more powerful than the software sold to smaller businesses
 - tailored towards ensuring maximizing performance at low costs.
+- a piece of software provides enough confidence for companies to run the most critical parts of their business with it.
 - https://www.aoe.com/en/enterprise.html
 - http://tractsystems.com/what-is-enterprise-grade-software/
 - https://www.bmc.com/blogs/enterprise-application-software-defined-how-is-it-different-from-other-software/
@@ -33,10 +34,12 @@ What an application is:
 
 ### Common features
 
+- Can be accessed by users for business purpose
 - Integration with other apps
   - types
     - internal (Same department, other department)
     - external/3rd party
+    - Human(user, support, devs, business), computer
   - via
     - HTTP (REST/Webservice/soap/graphql)
     - messaging services (jms/activemq)
@@ -48,6 +51,9 @@ What an application is:
 - Reporting off data for business and functionality
   - Data most important and valuable resource that comes from the use of this application
   - Data warehousing
+- Auditing data
+- Improving efficiencies in the data, no repeated data
+- Can be integrated with current business services
 - Monitoring to diagnose issues and makes sure app is running and alerting if something is wrong or about to go wrong
   - via metrics, status pages and probes, logging
 - Availability & Resilancy
@@ -56,15 +62,23 @@ What an application is:
   - run on many servers and/or in different locations
 - Can handle multiple users
 - Can handle user access for parts or whole of system
-  - authorization
-  - authentication
+  - authorization - who can do what in app
+  - authentication - who can access app
 - Can handle lots of actions, calls to the system (transactions)
+  - Use of concurrency and parallel techniques
+  - scalable application (ie increased replicas)
 - Can handle high intensive operations (calls to the systems) within agreed sla (service level agreements) timelimits
   - expensive calls to 3rd parties waiting for the response
+  - calls to long processing services (internal or external)
+  - Use of messaging protocols and patterns
+    - aysnc integration
+  - Use of concurrency and parallel techniques
 - Secure
-  - encrypted passwords/usernames for database etc
+  - encrypted passwords/usernames for database, version control, logs etc
   - certificates
   - Access to servers and database with necessary permissions
+  - GDPR
+  - Monitors traffic, access logs
 - Well tested
   - Automated
   - Manual
@@ -76,6 +90,8 @@ What an application is:
 - Buisness rules applied
   - happy paths
   - sad paths
+- Does not break easily
+  - handles exceptions gracefully
 - Deployment
   - deployed to various environments for testing and prod releases (canary release)
   - make sure the release passes through stringent controls
@@ -83,8 +99,20 @@ What an application is:
   - does not break systems when rolled out, can be roll backed
   - properties/config for different environments
   - database
-- 
+  - Can be deoloyed with little to no down time
+- Well documented
+- Code modular, maintainable and extendable
+  - Easy for the business to add or change features, fix bugs within an acceptable time frame instead of rewriting it
+- Decision on design, code, integration etc are made with
+  - long term lifespan view,
+  - policies of other departments in specifiying, making, testing, releasing and maintaining it, are followed,
+  - Users of app needs are met
+    - ie clients, business, laws and commissions
 
+### Links
+
+- https://tallyfy.com/enterprise-application/
+- https://www.forbes.com/sites/adrianbridgwater/2019/03/02/what-makes-an-app-an-enterprise-application/
 
 
 ## Consumer/application software

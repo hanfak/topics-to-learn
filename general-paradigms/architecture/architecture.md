@@ -74,6 +74,7 @@ http://blog.borud.no/2013/03/gorging-on-java-frameworks-and.html
 - https://www.youtube.com/watch?v=CnailTcJV_U&list=WL&index=154&t=10s
 - https://javadevguy.wordpress.com/2017/07/27/a-detailed-analysis-of-the-clean-architecture-from-an-object-oriented-perspective/
 - https://www.freecodecamp.org/news/implementing-a-hexagonal-architecture/
+- http://www.plainionist.net/Implementing-Clean-Architecture-Scream/
 
 ### Books
 

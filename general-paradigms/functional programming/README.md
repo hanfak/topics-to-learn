@@ -25,6 +25,16 @@
 - Alternative to consumer, is a supplier
   - does not take any input and returns a value
 
+## Advantages
+
+- https://alvinalexander.com/scala/fp-book/benefits-of-functional-programming
+- https://itnext.io/pros-and-cons-of-functional-programming-32cdf527e1c2
+
+## Drawbacks of functional programming
+
+- https://alvinalexander.com/scala/fp-book/disadvantages-of-functional-programming
+- https://www.quora.com/What-is-the-dark-side-of-functional-programming-What-problems-are-not-suited-for-functional-programming-What-problems-arise-in-large-deployments
+
 ## Links
 
 - https://dev.to/riccardo_cardin/object-oriented-programming-strikes-back
