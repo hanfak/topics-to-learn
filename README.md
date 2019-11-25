@@ -22,4 +22,4 @@ Areas
 - [Other](other/README.md)
 - [Persistance](Persistance/README.md)
 - [Secruity](secruity/README.md)
-- [Testing & Maintaing](testing-reading-maintaining/README.md)
+- [Testing & Maintaining](testing-reading-maintaining/README.md)

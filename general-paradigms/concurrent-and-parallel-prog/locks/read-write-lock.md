@@ -1,0 +1,25 @@
+# Read write lock
+
+- We use a locker mutex to protect a critical section of code to defend against data races, which can occur when multiple threads are concurrently accessing the same location in memory and at least one of those threads is writing to that location.
+- That second part is key, because if we have a bunch of threads and none of them are writing, they are all just want to read from the same location, that's fine.
+- **It's okay to let multiple threads read the same shared value as long as no one else can change it. **
+  - They'll all safely see the same thing.
+  - Danger only exists when you add a thread that's writing to the mix.
+- When we use a basic lock or a mutex to protect the shared resource, we limit access so that only one of the threads can use it at a time, regardless of whether that thread is reading, or writing, or both.
+  - That works but it's not necessarily the most efficient way to do things, especially when there are lots of threads that only need to read.
+  - This is where reader-writer locks can be useful.
+- A reader-writer lock or shared mutex can be locked in one of two ways.
+  - It can be locked in a shared read mode that allows multiple threads that only need to read simultaneously to lock it, or
+  - it can be locked in an exclusive write mode that limits access to only one thread at a time, allowing that thread to safely write to the shared resource.
+- A read-write lock is useful for protecting a shared resource like a calendar, because threads frequently need to read the calendar throughout the day. But they rarely need to modify it. This marker represents our shared mutex. When my thread wants to read the calendar, I'll lock the mutex in the read only mode by placing my finger on it. The other thread also want to read the calendar, I can also place my finger on the marker. Now we both have a shared lock on it, so we can both concurrently read it. When a thread is done checking the date, It'll release its lock on the mutex. Now, I think it's time to increment the calendar's date. In other words, I want to modify it, and to do that, I'll need to lock the shared mutex in exclusive write mode by picking it up.
+  - But the other thread is still holding onto the lock to read.
+  - **A thread trying to acquire the lock in write mode can't do so as long as it's still being held by any other threads in the read mode, so It'll have to wait.** - Now the shared mutex is completely free, so I'll pick it up to place a write lock on it and update the calendar.
+  - When a thread wants to read, it can't read the calendar now because the other thread has an exclusive hold on the lock to write.
+  - **Since only one thread can have the write lock at a time, all other threads wanting to read or write will have to until the lock becomes available again.**
+- Now, recognizing when to use a read-write lock is just as important as knowing how to use it.
+  - In certain scenarios, read-write locks can improve a program's performance versus using a standard mutex.
+  - But they are more complicated to implement and they typically use more resources under the hood to keep track of the number of readers.
+  - And there can be language dependent differences in how they're implemented that affect performance.
+    - Do they give preference to readers, or writers that are trying to acquire the lock?
+  - Deciding which type of mutex to use is a complicated decision, but as a general rule of thumb,
+    - **it makes sense to use a shared reader-writer lock when you have a lot more threads that will be reading from the shared data than the number of threads that will be writing to it, such as certain types of database applications. If the majority of your threads are writing, then there's not much, if any, advantage to using a read-write lock.**

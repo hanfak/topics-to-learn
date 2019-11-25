@@ -1,0 +1,44 @@
+# Execution Scheduling
+
+- Threads don't just execute whenever they want to.
+  - A computer might have hundreds of processes, with thousands of threads, that all want their turn to run on just a handful of processors.
+- So, how do they decide who goes first?
+  - That's the operating system's job.
+  - The OS includes a scheduler that controls when different threads and processes get their turn to execute on the CPU.
+  - The scheduler makes it possible for multiple programs to run concurrently on a single processor.
+  - When a process is created and ready to run, it gets loaded into memory and placed in the ready queue.
+    - Think of these as cooks in the kitchen that are ready to work.
+    - The scheduler is like the head chef that tells the other cooks when they get to use the cutting board.
+  - It cycles through the ready processes so they get a chance to execute on the processor.
+  - If there are multiple processors, then the OS will schedule processes to run on each of them, to make the most use of the additional resources.
+  - A process will run until it finishes, and then the scheduler will assign another process to execute on that processor.
+  - Or, a process might get blocked and have to wait for an I/O event,
+    - in which case it will go into a separate I/O waiting queue, so another process can run.
+  - Or, the scheduler might determine that a process has spent its fair share of time on the processor, and swap it out for another process from the ready queue.
+    - When that occurs, it's called a context switch.
+    - The operating system has to save the state, or context, of the process that was running, so it can be resumed later, and it has to load the context of the new process that's about to run.
+    - If I'm a process that's executing on this processor to chop cucumbers, when a scheduler decides it's time for a context switch, I'll need to pause what I'm doing and store the state of that task. And as the new process that just got scheduled, It will load my state information and then begin executing.
+    - context switches are not instantaneous.
+      - It takes time to save and restore the registers and memory state, so the scheduler needs a strategy for how frequently it switches between processes.
+      - There's a wide variety of algorithms that different operating system schedulers implement.
+        - Some of these algorithms are preemptive,
+          - which means they may pause, or preempt, a running, low-priority task when a higher priority task enters the ready state.
+        - In non-preemptive algorithms, once a process enters the ready state, it'll be allowed to run for its allotted time.
+        - Types
+          - first come first served
+          - shortest job next
+          - priority
+          - shortest remaining time
+          - round robin
+          - multiple level queues
+      - Which algorithm a scheduler chooses to implement will depend on its goals.
+        - Some schedulers might try to maximize throughput, or the amount of work they complete in a given time, whereas others might aim to minimize latency, to improve the system's responsiveness.
+        - Different operating systems have different purposes, and a desktop OS like Windows will have a different set of goals and use a different type of scheduler than a real-time OS for embedded systems.
+        - Types of goals
+          - maximize throughput
+          - maximize fairness
+          - minimize wait time
+          - minimize latency
+  - Now, while it's important to understand the concept of scheduling, and that it's taking place, you usually don't need to worry about the nitty-gritty details of how the scheduler works, because it's often handled under the hood by the operating system.
+  - In fact, you might not have any control over when the parts of your program actually execute.
+  - And that's an important thing to keep in mind. **Avoid running programs expecting that multiple threads or processes will execute in a certain order, or for an equal amount of time, because the operating system may choose to schedule them differently from run to run.**

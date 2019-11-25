@@ -1,0 +1,26 @@
+# Thread Lifecycle
+
+- When a new process or program begins running, it will start with just one thread, which is called the main thread, because it's the main one that runs when the program begins.
+- That main thread can then start or spawn additional threads to help out, referred to as its child threads, which are part of the same process but execute independently to do other tasks.
+  - Those threads can spawn their own children if needed, and as each of those threads finish executing, they'll notify their parent and terminate, with the main thread usually being the last to finish execution.
+- Over the life cycle of a thread, from creation through execution and finally termination, threads will usually be in one of four states.
+  - If I'm the main thread in this kitchen, and I spawn or create another thread to help me, that child thread will begin in the **new state**.
+  -  This thread isn't actually running yet, so it doesn't take any CPU resources.
+  - Part of creating a new thread is assigning it a function, the code it's going to execute.
+    - Once it has this function it is ready to start, and can be told to start executing
+  - Some programming languages require you to explicitly start a thread after creating it.
+  - Now that the thread has started, I'm in the **runnable state**, which means the operating system can schedule me to execute.
+  - Through contact switches, I'll get swapped out with other threads to run on one of the available processors.
+  - The child thread is running independently now, so my thread is free to continue executing my own tasks, when it's my turn to get scheduled on the processor.
+  - When a thread needs to wait for an event to occur, like an external input or a timer, it goes into a **blocked state** while it waits.
+    - The good thing is that, while I'm blocked, I'm not using any CPU resources.
+    - The operating system will return me to the runnable state when the thread is unblocked - And that frees up the processor for other threads to use.
+    - A thread that calls the join method on another thread will enter the blocked state until the other thread finishes executing.
+  -  Now my thread may eventually reach a point where I need to wait until one of my children threads has finished for me to continue on.
+    -  Maybe I've finished preparing everything else. I've completed all of my tasks, and I need a thread to finish it's job.
+    - I can wait for the thread to complete its execution by calling the join method.
+      - When I call join, my thread will enter a block state, waiting until thread is done.
+    - Now I've finished executing, so I'll notify my parent thread that I'm done.
+  -  A thread enters the **terminated state** when it either completes its execution or is abnormally aborted. -
+    - Since the child thread notified me that it's done, I'll return to the runnable state, so I can continue preparing soup.
+- Now, different programming languages may use different names for their states, and have a few additional ones, but in general, **new, runnable, blocked, and terminated** are the four phases of the life cycle of a thread.
