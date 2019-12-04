@@ -7,6 +7,10 @@
 - technical debt accrues, if so is it done on purpose and accepted that we will have to handle the consequences
 - what can happen when developers do not factor their learning back in to their code as they're building it
 
+## Handling
+
+- Need to be mindful, know that debt is accruing and accepting the trade offs for doing it.
+
 
 ## Causes of technical debt
 
@@ -20,11 +24,13 @@
 
 ## Examples of technical debt
 
-- Tight coupling between internal and external dependencies • Poor test coverage
+- Tight coupling between internal and external dependencies
+- Poor test coverage
 - Poor quality tests
 - Inconsistent code formatting styles
 - Hardcoded values (“magic strings”)
-- Complex or bloated methods, functions, classes, etc. • Code duplication
+- Complex or bloated methods, functions, classes, etc.
+- Code duplication
 - Redundant or unused code
 - Out of date or unsupported third party libraries
 - Poor code commenting

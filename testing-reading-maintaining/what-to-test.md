@@ -68,6 +68,7 @@ Need to test behaviour
   - ie what is stored in the database/files
 - Testing requests created to external dependencies
   - ie http request - headers, body, params, url
+  - Only if specific section is important ie version number
 - Have logs shown in console and access to database, to help with debugging
   - logs should show request and response for entry point and dataprovider
 - When debugging, not obvious where the issues can happen, and where to put breakpoints
