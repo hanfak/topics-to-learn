@@ -41,3 +41,7 @@
 - Instantiate Thread class, and inject the a class that implements runnable
   - Multiple threads can share a single Runnable object, reduce memory usage
   - Recommended
+
+## Links
+
+- https://baptiste-wicht.com/posts/2010/05/java-concurrency-part-1-threads.html

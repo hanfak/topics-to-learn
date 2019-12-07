@@ -24,3 +24,5 @@ Dependency Injection and Service Locator design pattern is specific implementati
   - Dependencies can be added and removed (for example constructor parameters) and classes can be refactored and combined without having to spend time coding how those dependencies are provided.
 
 - Can also do this, by newing up objects in another class (wiring//config) where the dependencies are inverted
+
+## https://www.yegor256.com/2017/05/10/inversion-of-control.html

@@ -4,3 +4,4 @@
 - https://blog.codinghorror.com/code-smells/
 - http://mikamantyla.eu/BadCodeSmellsTaxonomy.html
 - https://8thlight.com/blog/georgina-mcfadyen/2017/01/19/common-code-smells.html
+-

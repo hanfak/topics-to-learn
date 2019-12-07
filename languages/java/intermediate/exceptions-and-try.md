@@ -25,7 +25,9 @@ https://dzone.com/articles/ignore-exceptions-in-java
 
 - https://stackify.com/best-practices-exceptions-java/
 - https://stackify.com/common-mistakes-handling-java-exception/
-
+- https://www.javaworld.com/article/3269036/learn-java/java-101-mastering-java-exceptions-part-1.html
+- https://www.javaworld.com/article/3269037/mastering-java-exceptions-part-2-advanced-features-and-library-types.html
+- https://dzone.com/articles/9-best-practices-to-handle-exceptions-in-java
 
 ## try - catch
   - catch exceptions
@@ -37,7 +39,6 @@ https://dzone.com/articles/ignore-exceptions-in-java
   - multi catch
 - creating custom exceptions
 - try with resources
-
 
 
 ## checked exceptions

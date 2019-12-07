@@ -21,8 +21,10 @@
 - https://jaxenter.com/patterns-java-8-lambdas-127635.html
 - https://stackoverflow.com/questions/23126207/what-is-the-most-effective-way-of-writing-a-factory-method
 - https://stackoverflow.com/questions/29504945/the-best-way-to-implement-factory-without-if-switch
+- https://dzone.com/articles/factory-pattern-using-lambda-expression-in-java-8
 
 ## Links
 
 - https://egkatzioura.com/2018/03/27/creational-design-patterns-factory-pattern/
 - https://www.jiffle.net/blog/2017/04/02/the-factory-pattern-using-java-8-lambda-evolved/
+- https://dzone.com/articles/factory-method-vs-simple-factory-1

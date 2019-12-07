@@ -5,6 +5,10 @@
 
 ## Paths
 
+## Locking
+
+- https://dzone.com/articles/locking-files-in-java
+
 
 ## Links
 

@@ -1,0 +1,26 @@
+# producer consumer pattern
+
+- A common design pattern in concurrent programming is the producer-consumer architecture **where one or more threads or processes act as a producer which adds elements to some shared data structure and one or more other threads act as a consumer which removes items from that structure and does something with them**.
+- To demonstrate that, T1 will be the producer serving up bowls of soup. - I guess that makes T2 the consumer who eats the soup.
+- After T1 fills a bowl, T1 adds it to this line of bowls that represents a queue.
+  - Queues operate on a principle called a First-In-First-Out or FIFO which means items are removed in the same order that they're put into the queue. The first item that was added will be the first item to be removed.
+  - So when T2 is ready to consume another bowl of soup, T2 will grab one from this end of the line because it's been in the queue the longest.
+  - These bowls of soup represent elements of data for the consumer thread to process or perhaps packaged tasks for the consumer to execute.
+- Now when multiple threads are operating in this type of producer-consumer situation, it poses several challenges for synchronization.
+  - First off, the queue is a shared resource, so we'll need something to enforce mutual exclusion and make sure that only one thread can use it at a time to add or remove items.
+  - We also need to make sure that the producer will not try to add data to the queue when it's full.
+  - And that the consumer won't try to remove data from an empty buffer.
+- Some programming languages may include implementations of a queue, that's considered thread safe, and handles all of these challenges under the hood so you don't have to but if your language does not include that support, then you an use the combination of a mutex and condition variables to implement your own thread-safe synchronized queue.
+- You may run into scenarios where the producer cannot be paused if the queue fills up. The producer might be an external source of streaming data that you can't slow down so it's important to consider the rate at which items are produced and consumed from the queue.
+  - If the consumer can't keep up with production, then we face a buffer overflow and we'll lose data. This table is only so big, our queue can only hold a limited number of bowls of soup before they start falling on the floor.
+  - Some programming languages offer implementations of unbounded queues which are implemented using linked lists to have an advertised unlimited capacity but keep in mind, even those will be limited by the amount of physical memory in the computer.
+- The rate at which the producer is adding items may not always be consistent.
+  - For example, in network applications, data might arrive in bursts of network packets which fill the queue quickly but if those bursts occur rather infrequently, the consumer has time to catch up between bursts. **You should consider the average rate at which items are produced and consumed. You want the average rate of production to be less than the average rate of consumption**.
+- With two consumer threads eating in parallel, maybe we'll be able to keep up with T1's rate of production. Now there are only two tasks going on here. T1 is serving soup while T2 and T3 eat it.
+  - But if more steps were required to process this data, perhaps we also need to season the soup, then we could expand our simple producer-consumer setup into a pipeline of tasks.
+  - **A pipeline consist of a chain of processing elements arranged so that the output of each element is the input to the next one.**
+    -  It's basically a series of producer-consumer pairs connected together with some sort of buffer like a queue between each consecutive element.
+  - As a pipeline, T1 passes it's full bowls of soup to a queue.
+    - T2 takes bowls from that queue, add spice, then I pass them along to another queue which T3 takes from to eat.
+    - If all three of our threads can execute in parallel, then as a pipeline, we're processing up to three bowls at any given moment.
+    - Now the issue of processing rates is still a concern. **Each element needs to be able to consume and process data faster than the elements upstream can produce it.**

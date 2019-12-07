@@ -107,3 +107,7 @@ To configure plugins: http://maven.apache.org/guides/mini/guide-configuring-plug
 - Used to run integration tests
 - Class name of test file should end with IntegrationTest or IT
 - can run integration only test `mvn test-compile failsafe:integration-test failsafe:verify`
+
+## Create Plugin
+
+- https://developer.okta.com/blog/2019/09/23/tutorial-build-a-maven-plugin

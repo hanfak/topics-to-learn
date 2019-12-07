@@ -39,6 +39,7 @@ end entity or leaf ca
 self signed cert
   - https://devcenter.heroku.com/articles/ssl-certificate-self
   - https://www.akadia.com/services/ssh_test_certificate.html
+  - https://developer.okta.com/blog/2019/10/23/dangers-of-self-signed-certs
 
 pem format
 

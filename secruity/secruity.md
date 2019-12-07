@@ -60,6 +60,8 @@
 
 ## Encryption
 
+- https://developer.okta.com/blog/2019/09/12/why-public-key-cryptography-matters
+
 ## types
 
 - Communicating with the application

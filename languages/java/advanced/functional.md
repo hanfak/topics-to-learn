@@ -35,6 +35,9 @@
     - https://dzone.com/articles/infinite-streams-in-java-8-and-9
   - lambdas that throw exceptions
     - https://medium.freecodecamp.org/why-you-should-ignore-exceptions-in-java-and-how-to-do-it-correctly-8e95e5775e58
+  - https://flyingbytes.github.io/programming/java8/functional/part3/2017/02/18/Java8-Part3.html
+  - Splitting streams 
+    - https://flyingbytes.github.io/programming/java8/functional/part4/2017/03/10/Java8-Part4.html
 
 ## Collectors
 
@@ -45,6 +48,11 @@
 ## lambdas/ Annoynmous functions
 
   - http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html
+  - https://dzone.com/articles/java-8-lambas-limitations-closures
+
+## Functions
+
+- https://flyingbytes.github.io/programming/java8/functional/part1/2017/01/23/Java8-Part1.html
 
 
 ## Functional interfaces
@@ -72,6 +80,7 @@
 
   - https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html
   - https://dzone.com/articles/java-optionals-for-more-expressive-code
+  - https://flyingbytes.github.io/programming/java8/functional/part2/2017/02/04/Java8-Part2.html
 
 ## currying and partial functions
 

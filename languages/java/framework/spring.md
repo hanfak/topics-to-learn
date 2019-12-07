@@ -1,4 +1,6 @@
 - https://www.javacodegeeks.com/2019/02/spring-dependency-injection-inversion-control.html
+- https://dzone.com/articles/spring-framework-tutorial-for-beginners-2
+- https://examples.javacodegeeks.com/enterprise-java/spring/java-spring-hibernate-tutorial-beginners/
 
 ## why bad
 

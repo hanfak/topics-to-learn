@@ -133,6 +133,7 @@ Types of test
   - in tests
   - outside of test
 - @Note
+- Fuzzy assertions
 
 ### AssertJ
 

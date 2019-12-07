@@ -1,1 +1,3 @@
 - https://professional-practical-programmer.com/2016/06/26/assert-j/
+- https://dzone.com/articles/assertj-and-collections-introduction
+- https://dzone.com/articles/fluent-assertions-with-assertj?fromrel=true
