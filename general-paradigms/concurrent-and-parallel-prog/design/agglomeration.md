@@ -1,0 +1,22 @@
+# agglomeration
+
+- In the first two stages of our parallel design process. We partitioned the problem into a set of separate tasks, and then established communication to provide those tasks with the data they needed. We looked at different ways to decompose the problem and focused on defining as many small tasks as possible, that approach helped us consider a wide range of opportunities for parallel execution.
+  - However, the solution it created is not very efficient, especially if there are way more tasks than there are processors on the target computer.
+- Now it's time to turn our thinking from abstract, to something concrete and modify that design to execute more efficiently on a specific computer. In the third agglomeration stage, we'll revisit the decisions we made during the partitioning and communication stages to consider changes to make our program more efficient.
+- Combining some of those tasks and possibly replicating data or computations.
+-  As a parallel program executes periods of time spent performing useful computations are usually separated by periods of communication and synchronization events.
+- The concept of g**ranularity gives us a qualitative measure of the time spent performing computation, over the time spent on communication.**
+  - granularity = computation/ communication
+-  Parallelism can be classified into two categories based on the amount of work performed by each task.
+  - With fine-grained parallelism a program is broken down into a large number of small tasks.
+    - The benefit is that lots of small tasks can be more evenly distributed among processors to maximize their usage.
+    - A concept called load balancing.
+    - The down side is that having lots of tasks, increases the overhead for communication and synchronization.
+    - So it has a lower computation to communication ratio.
+  - On the other end of the spectrum, coarse-grained parallelism splits the program into a small number of large tasks.
+    - The advantage is that it has a much lower communication overhead, so more time can be spent on computation,
+    - however the larger chunks of work may produce a load imbalance where certain tasks process the bulk of data while others remain idle.
+  - Those are two extremes and the most efficient solution will be dependent on the algorithm and the hardware on which it runs.
+  - For most general purpose computers that's usually in the middle with some form of medium-grained parallelism.
+    - When we partitioned our cupcakes earlier, we took a fine-grained approach. The array has 12 elements that need to be frosted, so we decomposed that into 12 separate tasks, one for each cupcake. As we evaluated communication we determined that each cupcake task will need to share data with the four other cupcakes surrounding it to coordinate their colors to form a rainbow pattern, which would require 34 communication events. In addition to that being a lot of communication 12 tasks is way more than the number of processors in our kitchen, there's only two of us! - Then let's agglomerate and combine some of those tasks. Since we only have two processors, Olivia, and me. We'll restructure the program into two tasks that are each responsible for frosting six of the cupcakes, that reduces the amount of communications between those tasks from 34 down to just two because everything else is handled locally within the task. However now each time they communicate they'll have to share more information to convey the status of the three cupcakes along that edge, now we have two tasks and two processors, perfect. - Hey guys, I heard you need some help frosting cupcakes. - Aww Steve, we just restructured our program into two tasks and now with Steve we have three processors available, and that's too many cooks. - Too many cooks? - Too many cooks. One of us would be sitting idle while the other two cooks are busy processing, it's easy to make shortsighted decisions like this that can limit a program's scalability. Choosing to restructure our program into just two tasks prevented us from taking advantage of Steve's additional processing power.
+  -  A well designed parallel program should adapt to changes in the number of processors so keep flexibility in mind. Try not to incorporate unnecessary hard-coded limits on the number of tasks in a program. If possible use compile time or runtime parameters to control the granularity.

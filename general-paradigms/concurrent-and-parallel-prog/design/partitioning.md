@@ -1,0 +1,21 @@
+# Partitioning
+
+- How do you actually design a parallel program?  There is a common four-step methodology for taking a problem and developing a parallel solution for it.
+- This methodology can be used to design complex programs that run on large-scale parallel systems, and not all parts of it are applicable to writing simple desktop applications.
+-  The four stages can be summarized as
+  - partitioning,
+  - communication,
+  - agglomeration, and
+  - mapping.
+- That first stage, **partitioning, is about breaking down the problem into discrete chunks of work that can be distributed to multiple tasks**.
+- At this beginning stage, we are not concerned with practical issues like the number of processors in our computer. We'll consider the later. For now, our goal is to simply decompose the problem at hand into as many small tasks as possible and there are two basic ways to approach partitioning.
+  - Domain decomposition, and functional decomposition.
+  - Domain or data decomposition focuses on dividing the data associated with the problem into lots of small and if possible, equally sized partitions.
+  - The secondly focus is then to consider the computations to be performed and associating them with that partition data.
+    - For example, if Olivia and I need to decorate this tray of cupcakes, that's a two-dimensional array of data elements we need to process. So we can use domain decomposition to split that work into two similar tasks. We could break the array into two blocks. I'll handle decorating this half, and you take the other block. Or we could break up elements cyclically and each decorate every other cupcake.  different ways of decomposing data can have different advantages and disadvantages depending on the problem and hardware involved.
+  - Once we've partitioned the data, we can turn our focus towards the processing that needs to be applied to each section.
+  - The other form of decomposition, functional decomposition, provides a different, complementary way to break down the problem. Rather than focusing on the data being manipulated, **functional decomposition begins by considering all of the computational work that a program needs to do, and then divides that into separate tasks that perform different portions of the overall work.**
+    -  The data requirements for those tasks are a secondary consideration.
+    - For example, to functionally decompose making cupcakes, we would first break up all of the individual tasks that go into making them. Then, from there, we continue on to consider the data involved with each of those tasks.
+- Keep in mind that domain and functional decomposition are complementary ways to approach a problem, and it's natural to use a combination of the two.
+-  Programmers typically start with domain decomposition, because it forms the foundation for a lot of parallel algorithms, but sometimes taking a functional approach instead can provide different ways of thinking about these problems. It's worth taking the time to explore alternative perspectives. They can reveal problems or opportunities for better optimization that would be missed by considering data alone.

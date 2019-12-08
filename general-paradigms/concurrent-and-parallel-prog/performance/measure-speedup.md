@@ -1,0 +1,21 @@
+# Measure Speed up
+
+- Amdahl's Law is great for estimating the speedup that you might achieve by parellelizing a program, but once you've created that parallel program, it can be useful to actually measure its speedup empirically.
+- Speedup is calculated as the ratio of two values: the time it takes for the program to execute sequentially divided by the time it takes to execute in its parallel implementation.
+- That means we'll actually need to take two separate measurements to calculate speedup. First,** we'll see how long the algorithm takes to execute with a single processor.** Now, this doesn't mean just take the parallel version of the program and run it with only one processor, because the parallel program will include additional overhead that isn't necessary to run sequentially. **We want to measure the best possible implementation of that algorithm written with sequential execution in mind.**
+- Example
+    - I've got my stopwatch ready. Let's see how fast you can add up these receipts by yourself. Well, the fastest way to do that work, working alone, is to simply iterate through the stack of receipts and accumulate their totals. - 25 seconds. that's our sequential baseline.
+    - Now, let's try that again working together using a divide and conquer approach that's structured for parallel execution.  - 17 seconds this time around. - Cool.
+    - We can calculate speedup now. 25 seconds divided by 17 seconds gives us a speedup of 1.47. Working together in parallel made us almost one and 1/2 times faster. - Not too shabby considering there are only two of us, but if this had been a result with many more processors to help with the work, then the speedup of only 1.47 doesn't sound that impressive.
+- Speedup is a great metric, but it doesn't paint the whole picture.
+- Another metric to consider is **efficiency, which indicates how well system resources, like additional processors, are utilized**.
+  - We can get a rough calculation for efficiency by dividing the speedup by the number of processors.
+  - With just two processors, Olivia and me, we achieved a speedup of 1.47, which means we were 73.5% efficient, and I think that's pretty good.
+  - Now, let's say we increase the number of processors in our system to eight, but doing so only produces a speedup of 2.2. Now, we're only running at 27.5% efficiency. Our program did not scale well to utilize those additional processors.
+- Measuring speedup and efficiency gives us a sense of how well our parallel program is actually performing. **As long as you achieve a speedup that's greater than one, you know you've achieved at least something by making the program parallel.**
+- But, **if your speedup is less than one, you're better off just running the sequential algorithm**.
+- Now, a few recommended things to consider when benchmarking a program's performance.
+  - It's important to l**imit the number of programs running at the same time so they don't compete with the program you're trying to measure for resources like processor time.**
+  - Also, since execution scheduling and other background tasks like garbage collection can change how long a program takes from run to run, I like to m**easure the execution time for multiple, independent runs of the program and then average those times together**.
+  - Finally, s**ome programming environments use just-in-time compilation to compile parts of the program at run time. That can cause the program to execute slower when it first starts up, so you want to let the environment warm up before you begin taking measurements**.
+  -  Some programming languages may have compiler options or runtime settings that can address those concerns, but as a very simple warmup, I always like to run the algorithm I'm going to be measuring once before I actually run and measure it to make sure things like the cash are in a somewhat consistent state from run to run.

@@ -25,11 +25,19 @@ The Domain is King
 
 - Archetectural Patterns
   - Clean
+    - https://dzone.com/articles/clean-architecture-is-screaming
   - hexagonal
+    - https://dzone.com/articles/hexagonal-architecture-is-powerful
   - ports/adapters
   - domain driven
   - layered
+    - https://dzone.com/articles/layered-architecture-is-good
   - onion
+    - https://dzone.com/articles/onion-architecture-is-interesting
+  - features
+    - https://dzone.com/articles/package-by-feature-is-demanded
+  - DCI
+    - https://dzone.com/articles/dci-architecture-is-visionary
   - Martin Fowler Patterns
   - Feature toggles
     - ie for new versions of api

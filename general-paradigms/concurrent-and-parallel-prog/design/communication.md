@@ -1,0 +1,23 @@
+# Communication
+
+- After decomposing the problem into separate tasks, the next step in our design process is to establish communication, **which involves figuring out how to coordinate execution and share data between the task**.
+- Some problems can be decomposed in ways that do not require tasks to share data between them.
+  - Consider the job of frosting these cupcakes. If I'm tasked to add frosting to this one, and you're tasked to add frosting to that one, even though we're operating on adjacent elements in this array, there's no need for us to communicate with each other. They're completely independent tasks. This is embarrassingly easy to make parallel.
+- Sure, we could spend our quality family time together in the kitchen not talking to each other, but what if there is a need to share data between tasks? Let's say we want to decorate the cupcakes to have a rainbow pattern across them. That would require each task to know information. I need to know what color you're making your cupcakes, so I can color my cupcakes accordingly. Although our separate tasks can execute concurrently, we're not longer completely independent from each other.
+  - In this type of situation, we might establish **a network of direct point-to-point communication links between neighboring tasks**. For each link, one task is acting as the sender, or producer of data, and the other task that needs it is the receiver or consumer.
+  - That type of local point-to-point communication can work when each task only needs to communicate with a small number of other tasks.
+- But if your tasks need to communicate with a larger audience, then you should consider other structures for sharing data between multiple tasks.
+  - You might have one task that **broadcasts the same data out to all members of a group, or collective, or it scatters different pieces of the data out to each of the members to process.**
+  - **Afterwards, that task can gather all of the individual results from the members of the group and combine them for a final output.**
+  -  When operations require this type of global communication, it's important to consider how it can grow and scale. Simply establishing point-to-point pairs may not be sufficient.
+  - If one task is acting as a centralized manager to coordinate operations with a group of distributed workers, as the number of workers grow, the communication workload of the central manager grows too and may turn it into a bottleneck.
+  - This is where strategies like divide and conquer can be useful to distribute the computation and communication in a way that reduces the burden on any one task.
+  - These are just a few high-level structures to serve as a starting point as you begin to plan the communications for a parallel program.
+- A few other factors to consider include whether the communications will be synchronous or asynchronous.
+  - **Synchronous communications are sometimes called blocking communications because all tasks involved have to wait until the entire communication process is completed to continue doing other work**.
+    - That can potentially result in tasks spending a lot of time waiting on communications instead of doing useful work.
+  -  **Asynchronous communications, on the other hand, are often referred to as nonblocking communications because, after a task sends an asynchronous message, it can begin doing other work immediately, regardless of when the receiving task actually gets that message.**
+-  You should also **consider the amount of processing overhead a communications strategy involves, because the computer cycles spent sending and receiving data are cycles not being spent processing it**.
+- Latency is another factor to consider, the time it takes for a message to travel from point A to B expressed in units of time like microseconds, and
+- **bandwidth, which is the amount of data that can be communicated per unit of time, expressed in some unit of bytes per second.** 
+- Now, if you're just writing basic multi-threaded or multi-processed programs to run on a desktop computer, some of these factors like latency and bandwidth probably aren't major concerns because everything is running on the same physical system. But as you develop larger programs that distribute their processing across multiple physical systems, those inter-system communication factors can have a significant impact on the overall performance.

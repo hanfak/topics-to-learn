@@ -17,3 +17,7 @@ https://java-design-patterns.com/patterns/
 - front end
 - security
 - Debugging
+
+## Links
+
+- https://dzone.com/articles/design-patterns-in-the-age-of-microservices-and-frameworks

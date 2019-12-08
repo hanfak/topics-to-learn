@@ -1,0 +1,21 @@
+# Latency, throughput & speed
+
+- There are several reasons for using multiple processors to execute a program in parallel.
+  - One reason might be to **increase the size of the problem you can tackle in a certain amount of time.**
+    -  For example, we're going to a party, and I promised to bring 10 cupcakes. Working by myself, I can decorate 10 cupcakes in one hour. They are very fancy cupcakes. But if Baron joins me as a second processor, doing the same type of work in parallel, together we can decorate 20 cupcakes in one hour.
+    - This type of parallelization is called **weak scaling**.
+      - We are keeping the size of the problem for each processor constant, but we are bringing in more processors to accomplish more work in the same amount of time.
+  - Another reason for parallelization and bringing in more processors is to **accomplish a given task faster.**
+    - If Olivia promised to bring 10 cupcakes to the party, then working alone, it would take her one hour to decorate all of them, but if we split the workload, so she'll do half and I'll do half, then working together in parallel, we can decorate those 10 cupcakes in only about 30 minutes.
+    - This is called **strong scaling**, and it involves breaking down and spreading a problem across multiple processors to execute the program faster.
+- In those two examples, we're using parallel processors to do more work in a set amount of time or do a set amount of work in less time.
+  - In either case, we're increasing the program's overall throughput.
+    - That is, the number of tasks it can complete in a given amount of time.
+  - Another important metric called latency which is the amount of time it takes to execute a task from beginning to end.
+- Latency is measured in units of time, so if it takes six minutes to decorate one cupcake, that's a latency of six minutes.
+- Throughput is expressed in actions per unit of time, so the throughput of one processor, that is Olivia working alone, is 10 cupcakes per hour. Two processors working in parallel will have the same latency of six minutes to decorate each cupcake, but their combined throughput increases to 20 cupcakes per hour, and with three processors, the throughput goes even higher to 30 cupcakes per hour.
+- A metric that's commonly used **to measure the effectiveness of a parallel program is speedup,** which is related to the program's efficiency.
+  - Speedup is calculated as a ratio of the time it takes to execute the program in the optimal sequential manner with just one worker or a single processor, over the time it takes to execute in a parallel manner with a certain number of parallel processors.
+  - So if one worker takes an hour or 60 minutes to make 10 cupcakes, but two workers can do the same job in only 30 minutes, that corresponds to a speedup of two. If adding a third worker drops the time to 20 minutes, that's a speedup of three.
+- Now, our simplified cupcake example really represents a best case scenario, because a task like decorating cupcakes can be completely parallelized among multiple workers. But in practice, that's rarely the case. It's more common to have programs where some parts can be parallelized but other parts can't.
+  - Let's say at the end of our cupcake decorating program, we need to pack the finished cupcakes into this container. If only one of our threads can interact with the shared container at a time, we'll have to take turns using it, so that part of our program will have to execute sequentially, and that creates a limit on the amount of speedup we can possibly achieve.

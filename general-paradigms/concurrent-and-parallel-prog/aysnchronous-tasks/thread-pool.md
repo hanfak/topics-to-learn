@@ -1,0 +1,11 @@
+# Thread Pool
+
+- After identifying the tasks in a program that can run asynchronously, one way to run those tasks in parallel is to create independent threads or processes for each of them.
+- Preparing a basic salad requires us to chop lettuce and chop tomatoes. So Olivia and I will act as independent threads to execute those tasks in parallel on our two processors, the knives.
+  - A salad with just lettuce and tomatoes is so boring. We need something more. What about cucumbers? - Sure. Chopping cucumbers is another task that can run asynchronously so we'll spawn another thread to handle that. Hey Barron. - Hey Barron. - We need onions too. What's up, Olivia? - What's up? - Another task, another thread. - And mushrooms. - Again, another thread. - And carrots, and celery, and peppers and an eggplant. - Whoa, whoa, whoa. It's getting crowded in here.
+  - We've got to lot of threads in the kitchen but only two processors to execute on. That means a lot of threads'll be standing around waiting their turn. Although threads are considered to be lightweight, **every time we spawn a new thread it does require some amount of overhead in terms of processor time and memory**, or in this case, kitchen space. In some scenarios, **rather than creating a new thread for every single task, it can be more efficient to use a thread pool, which creates and maintains a small collection of worker threads**.
+  - As the program submits tasks to the thread pool, the thread pool reuses those existing worker threads to execute the task. Submitting tasks to a thread pool is like adding them to a to-do list for the worker threads.
+    - Now, Olivia and I are two workers in a pool and we have a queue of tasks, or vegetables, waiting for us to chop.
+    - After one of us finishes executing our current task, we'll take another one from the queue.
+  - Reusing threads with a thread pool addresses the overhead involved with creating new threads. And that becomes a real advantage when the time it takes to execute the task is less than the time required to create a new thread.
+  - It doesn't take long to chop one of the vegetables but it does take a long time to call up our friends to take on each of these individual tasks. Since our threads already exist, when a new task arrives, we eliminate the delay of thread creation which can make our program more responsive.

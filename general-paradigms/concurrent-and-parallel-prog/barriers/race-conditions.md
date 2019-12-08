@@ -1,0 +1,21 @@
+# Race conditions
+
+- Data races and race conditions are two different potential problems in concurrent programs.
+- **Data races can occur when two or more threads concurrently access the same memory location. **
+  - If at least one of those threads is writing to or changing that memory value, that can cause the threads to overwrite each other or read wrong values.
+  - That's a pretty straightforward definition, which makes it possible to create automated tools to identify potential data races in code,
+  - to prevent those data races, you need to ensure mutual exclusion for the shared resource.
+- **A race condition is a flaw in the timing or ordering of a program's execution that causes incorrect behavior. **
+  - In practice, many race conditions are caused by data races, and many data races lead to race conditions, but those two problems are not dependent on each other.
+  - It's possible to have data races without a race condition and race conditions without a data race.
+  - Example
+    - Olivia and I invited Steve and the gang over to play video games next weekend, so we need to figure out how many bags of chips we need to buy to keep them all fed.
+    - Our shopping list is the shared resource, and this pencil serves as a mutex to protect it. Only the person or thread with the pencil can view or modify the shopping list.
+    - I'll go first. I see that our shopping list already has one bag of chips. With Steve and the gang coming over, I think we need three more. So one plus three, that means we need four bags.
+    - Well, I always overestimate the amount of chips we need for a party, so I'm going to double that. I see we have four, two times four is eight. Great, we need eight.
+    - Now, let's rewind that and see how else those operations could've played out if our two threads got scheduled differently. (tape rewinding) - I'll go first. - Hold on. I'll go first this time. I see one bag of chips but I like to overestimate, so I'll double that. One times two is two. - Thanks, now I'll add three bags to that. Two plus three is, hmm, five bags is less than the eight we calculated last time. - (sighs) Don't tell me we're not going to have enough chips for the party. - That's okay. We'll fix this.
+    - Even though we're using this pencil as a mutex to protect against a data race, **the potential for a race condition still exists because the order in which our threads execute is not deterministic**.
+    - When deciding how many bags to buy, if my thread runs first to add three bags before Baron doubles it, that gives us eight, but if Baron's thread runs first to double the original value before I add three bags, then we end up with five.
+  - in practice, race conditions can be really hard to discover, and that's because a program might run correctly for millions of times while you're building and testing it, so you think everything's fine. You release the finished program, and then one time, things happen to execute in a different order and that causes an incorrect result.
+  - Unfortunately, there's not a single catchall way to detect race conditions. Sometimes putting sleep statements at different places throughout your code can help to uncover potential race conditions by changing the timing and therefore order in which threads can execute it.
+  -  race conditions are often a type of Heisenbug, which is a software bug that seems to disappear or alter its behavior when you try to study it. Running debuggers and doing things to affect the timing of your code in search of a race condition may actually prevent the race condition from occurring.

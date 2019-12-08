@@ -14,6 +14,10 @@
 - https://www.oracle.com/corporate/features/library-in-java-best-practices.html
 - https://www.baeldung.com/design-a-user-friendly-java-library
 
+## framework coupling
+
+- https://dzone.com/articles/framework-coupling-revisited
+
 ## framworks disadvantages
 
 - http://tomasp.net/blog/2015/library-frameworks/
@@ -21,6 +25,11 @@
 - https://medium.com/@kevincennis/you-re-thinking-about-frameworks-the-wrong-way-83544a337a27
 - http://www.catonmat.net/blog/frameworks-dont-make-sense/
 - http://samatkinson.com/why-i-hate-spring/
+
+## Framework v library
+
+- https://dzone.com/articles/programming-without-a-framework
+- https://dzone.com/articles/discussion-recap-to-framework-or-not-to-framework
 
 > The whole article really doesn't apply to any mainstream programming languages like ruby, python, java, javascript etc.
 Why? I use JavaScript solely, and I agree with the author 100%. The frameworks solve a lot of problems, but by bundling those solutions together they introduce a new problem.
