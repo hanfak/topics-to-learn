@@ -2,6 +2,14 @@
 - https://dzone.com/articles/spring-framework-tutorial-for-beginners-2
 - https://examples.javacodegeeks.com/enterprise-java/spring/java-spring-hibernate-tutorial-beginners/
 
+## Tomcat and spring
+
+- https://developer.okta.com/blog/2019/04/16/spring-boot-tomcat
+
+## Spring Batch
+
+- https://dzone.com/articles/introduction-to-spring-batch?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava
+
 ## why bad
 
 - https://www.reddit.com/r/java/comments/2emu2s/whats_with_all_the_antispring_sentiment/

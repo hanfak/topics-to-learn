@@ -16,3 +16,5 @@
   - Combinatorics
   - Graph theory
   - algorithms
+
+- https://dzone.com/articles/lambda-calculus-for-mortal-developers

@@ -39,6 +39,11 @@
 
 ## Java api
 
+
+## Fabric8
+
+- https://www.javacodegeeks.com/2019/02/docker-ise-java-application-maven-plugin.html
+
 ## Dockerfile
 
 ## Volumes
@@ -68,6 +73,10 @@
 
 - https://dzone.com/articles/multi-stage-docker-image-build-for-java-apps
 
+## Performance
+
+- https://www.thedevcoach.co.uk/docker-performance-tips-and-tricks/
+
 
 ## Disadvantages
 
@@ -81,3 +90,4 @@
 - https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/docker.sh
 - https://github.com/Albertoimpl/k8s-for-the-busy/blob/master/containerizing-java/README.adoc
 - https://www.freecodecamp.org/news/a-beginners-guide-to-docker-how-to-create-your-first-docker-application-cc03de9b639f/
+- https://www.freecodecamp.org/news/a-practical-guide-to-containers-dfa66d37ac30/?source=rss----336d898217ee---4

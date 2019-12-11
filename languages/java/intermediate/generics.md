@@ -16,12 +16,16 @@
   - class
   - interface
   - methods
+    - https://www.java67.com/2019/09/how-to-write-generic-method-in-java.html
 - Invariant
 - generic types must be classes not primitives
 - No generic arrays
   - `T[] arr = new T[10];// this code will not compile`
 - Example ArrayList
+- covariance and contravariance
+  - https://www.freecodecamp.org/news/understanding-java-generic-types-covariance-and-contravariance-88f4c19763d2/
 - Bounded
+    -
   - extends
   - super
   - PECS

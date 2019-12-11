@@ -10,11 +10,16 @@
 - https://github.com/rafaelpsouza/spring-boot-spikes
 
 
-Servlet
+## Servlet
 
 - https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-servlet
 
 
-Jetty
+## Jetty
 
 - https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-jetty
+
+## Clean architecture
+
+- https://reflectoring.io/spring-hexagonal/
+- https://github.com/mattia-battiston/clean-architecture-example

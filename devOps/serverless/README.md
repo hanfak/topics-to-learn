@@ -1,1 +1,3 @@
 - https://medium.com/@AlexeyBalchunas/make-any-java-web-app-serverless-786119ffdf83
+- https://www.javacodegeeks.com/2019/06/build-first-serverless-function-minutes.html
+- https://www.exoscale.com/syslog/java-serverless-micronaut-graalvm/

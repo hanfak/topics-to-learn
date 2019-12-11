@@ -2,7 +2,9 @@
 
 - Libraries
   - Logback
+    - https://examples.javacodegeeks.com/enterprise-java/logback/logback-custom-appender-example/
   - slf4j
+    - https://examples.javacodegeeks.com/enterprise-java/slf4j/slf4j-tutorial-beginners/
 - levels
   - info
   - warn
