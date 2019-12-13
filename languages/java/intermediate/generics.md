@@ -17,6 +17,8 @@
   - interface
   - methods
     - https://www.java67.com/2019/09/how-to-write-generic-method-in-java.html
+- Generic subtypes
+  - https://dzone.com/articles/how-do-generic-subtypes-work
 - Invariant
 - generic types must be classes not primitives
 - No generic arrays

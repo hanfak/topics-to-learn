@@ -21,6 +21,7 @@
 - http://www.baeldung.com/intro-to-servlets
 - http://tutorials.jenkov.com/java-servlets/index.html
 - https://examples.javacodegeeks.com/enterprise-java/servlet/how-servlets-work/
+- https://examples.javacodegeeks.com/enterprise-java/servlet/basics-servlets-tutorial/
 
 ## Jetty
 

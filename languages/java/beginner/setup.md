@@ -23,6 +23,10 @@
 ```
   - Use of shortcuts ie ```sout``` and ```psvm```
 
+## Java Home
+
+- https://self-learning-java-tutorial.blogspot.com/2017/06/why-and-how-to-set-javahome.html
+
 ### Links
 
 - https://www.tutorialspoint.com/java/java_environment_setup.htm

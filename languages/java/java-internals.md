@@ -5,6 +5,7 @@
 - https://www.javacodegeeks.com/2018/04/jvm-architecture-execution-engine-in-jvm.html
 - https://www.javacodegeeks.com/2018/04/jvm-architecture-overview-of-jvm-and-jvm-architecture.html
 - https://www.youtube.com/watch?v=iDypTyErl78
+- https://www.javacodegeeks.com/2017/10/introduction-java-virtual-machine-jvm.html
 
 
 ## compiler
@@ -45,3 +46,5 @@
 - https://self-learning-java-tutorial.blogspot.co.uk/2014/03/jit-compiler.html
 
 ## Linker?????
+
+- https://www.developer.com/java/data/understand-jvm-loading-jvm-linking-and-jvm-initialization.html

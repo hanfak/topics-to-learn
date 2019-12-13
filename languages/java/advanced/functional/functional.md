@@ -1,5 +1,7 @@
 # Functional Programming
 
+- https://www.javacodegeeks.com/2017/09/overview-functional-programming.html
+
 ## Immutability
 
 - Declare the class as final so it can’t be extended.
@@ -20,9 +22,11 @@
 - https://stackoverflow.com/questions/50257305/java-making-a-class-immutable
 - https://www.journaldev.com/129/how-to-create-immutable-class-in-java
 - https://medium.com/@mykola.shumyn/immutable-classes-in-java-76635df0356d
+- https://dzone.com/articles/taming-concurrency-with-immutability
+-
 
 ## streams
-  - map
+
   - filter
   - reduce
   - Other Reduce
@@ -36,8 +40,56 @@
   - lambdas that throw exceptions
     - https://medium.freecodecamp.org/why-you-should-ignore-exceptions-in-java-and-how-to-do-it-correctly-8e95e5775e58
   - https://flyingbytes.github.io/programming/java8/functional/part3/2017/02/18/Java8-Part3.html
-  - Splitting streams 
+  - Splitting streams
     - https://flyingbytes.github.io/programming/java8/functional/part4/2017/03/10/Java8-Part4.html
+
+
+### Checked exceptions
+
+- need to add try catch in the stream, not great
+
+```java
+list.stream()
+    .map(i -> i.toString())
+    .map(s -> s.toUpperCase())
+    .forEach(s -> System.out.println(s));
+```
+
+If they throw checked exceptions
+
+```java
+list.stream()
+    .map(i - > {
+        try {
+            return i.toString();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    })
+    .map(s - > {
+        try {
+            return s.toUpperCase();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    })
+    .forEach(s - > {
+        try {
+            System.out.println(s);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    });
+```
+
+
+### Map and FlatMap
+
+- FlatMap
+  - thinks of it as MapFlatter, it maps (applies a function) then flattens it
+  - https://www.mkyong.com/java8/java-8-flatmap-example/
+- https://www.baeldung.com/java-difference-map-and-flatmap
+- https://stackoverflow.com/questions/26684562/whats-the-difference-between-map-and-flatmap-methods-in-java-8
 
 ## Collectors
 

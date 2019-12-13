@@ -5,6 +5,8 @@
   - checked
   - errors
 
+- https://www.javacodegeeks.com/2017/12/handling-exceptions-java.html
+
 ## List of Exceptions
 
 - https://stackify.com/top-java-software-errors/

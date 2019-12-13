@@ -117,6 +117,9 @@
 
 - https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
 
+# Soft Reference
+
+- references to data (generally reflective) will not be garbage collected until the JVM is low on memory
 
 ## Other
 

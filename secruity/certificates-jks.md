@@ -1,3 +1,6 @@
+
+- https://www.youtube.com/watch?v=SEKsvHYZz8s
+
 jks
   - https://en.wikipedia.org/wiki/Java_KeyStore
   - https://www.moreofless.co.uk/java-keystore-truststore-difference-certificate/
@@ -52,6 +55,8 @@ public key and cert
 private key
 
 tls/ssl
+
+- https://www.youtube.com/watch?v=yJrJEvvW_HA
 
 https communication
 
