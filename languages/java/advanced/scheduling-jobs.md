@@ -9,9 +9,13 @@
 
 - https://self-learning-java-tutorial.blogspot.com/2014/10/quartz-scheduler.html
 
-## databases
+### databases
 -https://medium.com/viithiisys/quartz-scheduler-with-mysql-database-506a608cf7a8
 - https://support.mulesoft.com/servlet/servlet.FileDownload?file=01534000001ZjYMAA0
+
+## java scheduler library
+
+- https://dzone.com/articles/schedulers-in-java-and-spring
 
 ## Cron jobs
 
@@ -19,7 +23,6 @@
 
 ## Spring
 
-- https://www.freecodecamp.org/news/what-is-dns-anyway/
 
 ## Links
 

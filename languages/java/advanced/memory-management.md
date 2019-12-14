@@ -49,6 +49,12 @@ performance https://www.dynatrace.com/resources/ebooks/javabook/
 
 https://github.com/makersacademy/java_intro/blob/master/chapter0-What-is-Java/terminology.md
 
+
+## Heap dumps
+
+- https://www.javacodegeeks.com/2019/10/7-options-to-capture-java-heap-dumps.html
+
+
 ## Graphs
 
 - saw tooth graph
@@ -63,3 +69,7 @@ https://github.com/makersacademy/java_intro/blob/master/chapter0-What-is-Java/te
 ## Thread dumps
 
 - https://self-learning-java-tutorial.blogspot.com/2018/08/working-with-jcmd-command.html
+
+## Jstat
+
+- https://www.javacodegeeks.com/2019/11/jstat-analysis.html

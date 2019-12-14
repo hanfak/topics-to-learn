@@ -1,6 +1,7 @@
 # Functional Programming
 
 - https://www.javacodegeeks.com/2017/09/overview-functional-programming.html
+- https://tedvinke.wordpress.com/2017/11/07/functional-java-by-example-part-1-from-imperative-to-declarative/
 
 ## Immutability
 

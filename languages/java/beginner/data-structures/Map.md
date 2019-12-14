@@ -22,3 +22,4 @@
 
 - https://beginnersbook.com/2013/12/hashmap-in-java-with-example/
 - https://www.javacodegeeks.com/2017/11/java-hashmap-detail-explanation.html
+- https://dzone.com/articles/how-to-use-java-hashmap-effectively

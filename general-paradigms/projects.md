@@ -147,6 +147,7 @@ What an application is:
 
 - A web service is a service that can be called by an application. These web services are separate programs that are independent from other applications and can be run on different machines.
 - A web service exposes an API (Application Programming Interface) to communicate over a network usually through HTTP (Hyper Text Transfer Protocol). HTTP is an application protocol often used for communication between a web-client and a web-server. A web service exposes a port that gives other programs access to its functionality.
+- https://www.javacodegeeks.com/2019/04/web-services-interview-questions-answers.html
 
 ## web applications/ web sites
 

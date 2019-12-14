@@ -4,6 +4,7 @@
 jks
   - https://en.wikipedia.org/wiki/Java_KeyStore
   - https://www.moreofless.co.uk/java-keystore-truststore-difference-certificate/
+  - https://dzone.com/articles/extracting-a-private-key-from-java-keystore-jks
 
 truststore jks
   public cert - trusted server to talk to
