@@ -42,6 +42,9 @@
   - Multiple threads can share a single Runnable object, reduce memory usage
   - Recommended
 
+## Testing for thread safety
+  - https://dzone.com/articles/how-i-test-my-java-classes-for-thread-safety
+
 ## Links
 
 - https://baptiste-wicht.com/posts/2010/05/java-concurrency-part-1-threads.html

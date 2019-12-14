@@ -16,3 +16,5 @@ A pattern that allows the use of a mapper to convert between code (ie java) to d
 # Hibernate
 
 A popular ORM for java.
+
+- https://thoughts-on-java.org/hibernate-getting-started/

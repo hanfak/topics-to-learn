@@ -1,4 +1,4 @@
-# Spring 
+# Spring
 
 
 - https://www.javacodegeeks.com/2019/02/spring-dependency-injection-inversion-control.html
@@ -20,3 +20,4 @@
 - https://dzone.com/articles/why-i-stopped-using-spring
 - https://medium.com/@nayeemzen/stay-away-from-spring-90d8612a539d
 - https://softwareengineering.stackexchange.com/questions/42817/why-not-spring-framework
+- https://www.javacodegeeks.com/2019/11/memory-wasted-by-spring-boot-application.html

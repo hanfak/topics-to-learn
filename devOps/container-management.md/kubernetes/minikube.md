@@ -3,6 +3,9 @@
 
 ## Setup
 
+- mac
+  - https://egkatzioura.com/2019/09/21/using-minikube-on-osx/
+
 ## Vitual box
 
 ## Links

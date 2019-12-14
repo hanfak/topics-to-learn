@@ -1,3 +1,5 @@
 # Nginx
 
 - https://www.freecodecamp.org/news/an-introduction-to-nginx-for-developers-62179b6a458f/
+- https://self-learning-java-tutorial.blogspot.com/2019/11/nginx-tutorial.html
+- https://self-learning-java-tutorial.blogspot.com/2019/11/introduction-to-nginx.html

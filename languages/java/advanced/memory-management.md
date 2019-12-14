@@ -15,6 +15,9 @@ performance https://www.dynatrace.com/resources/ebooks/javabook/
 
 - https://stackify.com/java-heap-vs-stack/
 - https://www.journaldev.com/4098/java-heap-space-vs-stack-memory
+- https://dzone.com/articles/stack-vs-heap-understanding-java-memory-allocation
+- https://gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html
+
 
 ### Defintions
 
@@ -40,6 +43,8 @@ performance https://www.dynatrace.com/resources/ebooks/javabook/
 - https://dzone.com/articles/how-memory-leaks-happen-in-java-apps
 - https://www.toptal.com/java/hunting-memory-leaks-in-java
 - https://www.dynatrace.com/news/blog/how-to-identify-a-java-memory-leak/
+- https://dzone.com/articles/what-to-do-about-java-memory-leaks-tools-fixes-and
+- https://dzone.com/articles/how-to-find-and-fix-memory-leaks-in-your-java-appl
 
 
 https://github.com/makersacademy/java_intro/blob/master/chapter0-What-is-Java/terminology.md

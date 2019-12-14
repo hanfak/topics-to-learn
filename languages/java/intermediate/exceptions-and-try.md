@@ -6,6 +6,7 @@
   - errors
 
 - https://www.javacodegeeks.com/2017/12/handling-exceptions-java.html
+- https://dzone.com/articles/how-to-deal-with-exceptions
 
 ## List of Exceptions
 

@@ -73,6 +73,11 @@
 
 - https://dzone.com/articles/multi-stage-docker-image-build-for-java-apps
 
+
+### Fat jars/ layering
+
+- https://phauer.com/2019/no-fat-jar-in-docker-image/
+
 ## Performance
 
 - https://www.thedevcoach.co.uk/docker-performance-tips-and-tricks/

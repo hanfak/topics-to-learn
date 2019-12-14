@@ -105,6 +105,7 @@ list.stream()
 ## Functions
 
 - https://flyingbytes.github.io/programming/java8/functional/part1/2017/01/23/Java8-Part1.html
+- https://dzone.com/articles/functional-programming-functions
 
 
 ## Functional interfaces
@@ -130,9 +131,14 @@ list.stream()
   - isPresent
   - using map
 
+### Links
   - https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html
   - https://dzone.com/articles/java-optionals-for-more-expressive-code
   - https://flyingbytes.github.io/programming/java8/functional/part2/2017/02/04/Java8-Part2.html
+
+## Comparators
+
+- https://examples.javacodegeeks.com/core-java/java-8-comparator-example/
 
 ## currying and partial functions
 
@@ -143,6 +149,10 @@ list.stream()
 - https://adorow.github.io/blog/2017/06/04/currying-in-java
 - https://www.pgrs.net/2015/04/23/partial-function-application-in-java-8/
 - https://medium.com/@andre_videla/excuse-me-sir-there-is-no-curry-in-my-java-2750284c7a1e
+
+## Parallel an async
+
+- https://www.javacodegeeks.com/2018/04/parallel-and-asynchronous-programming-in-java-8.html
 
 ## Links
 

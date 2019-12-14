@@ -1,5 +1,11 @@
 # Database Migrations - flywaydb
 
+## What is it?
+
+- Flyway is an open-source tool, licensed under Apache License 2.0, that helps you implement automated and version-based database migrations.
+- It allows you to define the required update operations in an SQL script or as Java code.
+- You can then run the migration from a command line client or automatically as part of your build process or integrated into your Java application.
+
 - Maven
   - running locally
 - Running as part of deployment via helm/kubernetes
@@ -23,3 +29,4 @@
 - https://technology.amis.nl/2016/04/22/continuous-delivery-oracle-database-iii/
 - https://www.wlangiewicz.com/2017/07/03/flyway-database-migrations-best-practices/
 - example http://bisaga.com/blog/tag/flyway/
+-  https://thoughts-on-java.org/flyway-getting-started/

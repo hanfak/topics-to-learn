@@ -72,3 +72,7 @@ public class ASingleton {
    -  a class should not know whether it is a singleton or not. So if you want to limit the ability to instantiate, use the factory or builder patterns, which encapsulates creation. There, you can limit the number of objects to one or whatever you wish for.
  - Singletons Provide Global State
    - Because you hide the dependencies of your application in your code, instead of exposing them through the interfaces. Making something global to avoid passing it around is a code smell.
+
+## Links
+
+- https://egkatzioura.com/2018/03/27/creational-design-patterns-singleton-pattern/

@@ -4,7 +4,7 @@ A class is a blueprint where objects can be created, an abstraction of all objec
 
 For example, a dog is an abstraction of different dogs, like your aunt's dog Bubbles, or your neighbour' dog Rocky etc. Dog is the class, Bubbles and Rocky are the objects. Each dog has their own characteristics (ie state) and behaviour, but they are similar to each other. Bubbles and Rocky have state such as sex and age, which can be different. Dog has state such as sex and age which can take a range of values. Bubbles and Rocky have behaviour like bark and run, which can be different. Dog has behaviour such as bark and run, which can implement a common way of doing them that applies to all dogs.
 
-- They can represent 
+- They can represent
   - tangible things - wheel barrow
   - intangible things - checking account
   - ideas
@@ -44,4 +44,10 @@ public class Dog {
 }
 ```
 
+
 ## Links
+
+- https://dzone.com/articles/understanding-classes-in-java-part-1
+- https://dzone.com/articles/understanding-classes-in-java-part-2
+- https://dzone.com/articles/understanding-classes-in-java-part-3
+- https://dzone.com/articles/understanding-classes-in-java-part-4

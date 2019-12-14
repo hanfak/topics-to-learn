@@ -5,6 +5,7 @@
 
 - http://www.java2s.com/Tutorials/Java/Java_Reflection/index.htm
 - http://tutorials.jenkov.com/java-reflection/index.html
+- https://www.javacodegeeks.com/2018/01/java-reflection-much-faster.html
 
 ## Drawbacks
 

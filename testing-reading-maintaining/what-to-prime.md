@@ -45,6 +45,9 @@ To test anything, need to setup the conditions to test that situation/behaviour
   - Can have extra methods in stubs, which we can use to assert on
     - useful when method under test returns void, or want to check action has been performed by dependency (better to use verify with a mock)
 
+- Using a lambda as a stub
+  - https://dzone.com/articles/to-mock-to-stub-or-to-lambda
+
 - Ways of priming time
   - Can apply to time or date
   - if test is using current time, ie Instant.now(), the code can not use the same current time, ie calling Instant.now() in prod code, as there will be time lag.

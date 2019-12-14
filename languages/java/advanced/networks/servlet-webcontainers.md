@@ -12,6 +12,11 @@
   - extends HttpServlet
   - gets the request and sends the response
     - you deal with the request and form the response
+- Redirects
+  - https://examples.javacodegeeks.com/enterprise-java/servlet/java-servlet-sendredirect-example/
+- HTTPS
+  - https://www.javacodegeeks.com/2018/01/configuring-https-use-servlets.html
+
 
 
 ### Links
@@ -22,6 +27,7 @@
 - http://tutorials.jenkov.com/java-servlets/index.html
 - https://examples.javacodegeeks.com/enterprise-java/servlet/how-servlets-work/
 - https://examples.javacodegeeks.com/enterprise-java/servlet/basics-servlets-tutorial/
+- https://examples.javacodegeeks.com/enterprise-java/servlet/java-servlet-life-cycle-example/
 
 ## Jetty
 
