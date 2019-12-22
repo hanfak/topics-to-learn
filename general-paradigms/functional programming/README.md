@@ -35,6 +35,10 @@
 - https://alvinalexander.com/scala/fp-book/disadvantages-of-functional-programming
 - https://www.quora.com/What-is-the-dark-side-of-functional-programming-What-problems-are-not-suited-for-functional-programming-What-problems-arise-in-large-deployments
 
+## Glossary
+
+- https://github.com/hemanth/functional-programming-jargon
+
 ## Links
 
 - https://dev.to/riccardo_cardin/object-oriented-programming-strikes-back

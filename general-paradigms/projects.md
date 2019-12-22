@@ -151,7 +151,12 @@ What an application is:
 
 ## web applications/ web sites
 
-## soap
+## SOA - service oriented architecture
+
+-https://medium.com/@SoftwareDevelopmentCommunity/what-is-service-oriented-architecture-fa894d11a7ec
+
+
+## SOAP
 
 ## SaaS
 
