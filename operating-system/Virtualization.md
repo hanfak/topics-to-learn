@@ -1,0 +1,35 @@
+# Virtualization
+
+- A technology that allows you to create multiple simulated environments or dedicated resources from a single, physical hardware system.
+- Software called a hypervisor connects directly to that hardware and allows you to split one system into separate, distinct, and secure environments known as virtual machines (VMs).
+  -  These VMs rely on the hypervisor’s ability to separate the machine’s resources from the hardware and distribute them appropriately.
+  - The original, physical machine equipped with the hypervisor is called the host, while the many VMs that use its resources are called guests.
+  - These guests treat computing resources — like CPU, memory, and storage — as a hangar of resources that can easily be relocated.
+  - Operators can control virtual instances of CPU, memory, storage, and other resources so that guests receive the resources they need when they need them.
+- Ideally, all related VMs are managed through a single web-based virtualization management console, which speeds things up. Virtualization lets you dictate how much processing power, storage, and memory to give to VMs, and environments are better protected since VMs are separated from their supporting hardware and each other.
+- virtualization creates the environments and resources you need from underused hardware.
+- Types of Virtualization:
+  - Data Virtualization:
+    - Data that’s spread all over can be consolidated into a single source.
+    - Data virtualization allows companies to treat data as a dynamic supply
+    — providing processing capabilities that can bring together data from multiple sources, easily accommodate new data sources, and transform data according to user needs.
+    - Data virtualization tools sit in front of multiple data sources and allow them to be treated as single source.
+    - They deliver the needed data — in the required form — at the right time to any application or user.
+- Desktop Virtualization:
+  - Easily confused with operating system virtualization (which allows you to deploy multiple operating systems on a single machine) desktop virtualization allows a central administrator (or automated administration tool) to deploy simulated desktop environments to hundreds of physical machines at once.
+  -  Unlike traditional desktop environments that are physically installed, configured, and updated on each machine, desktop virtualization allows admins to perform mass configurations, updates, and security checks on all virtual desktops.
+- Server Virtualization:
+  - Servers are computers designed to process a high volume of specific tasks really well so other computers — like laptops and desktops — can do a variety of other tasks.
+  - Virtualizing a server lets it to do more of those specific functions and involves partitioning it so that the components can be used to serve multiple functions.
+- Operating System Virtualization:
+  - Operating system virtualization happens at the kernel — the central task managers of operating systems.
+  - It’s a useful way to run Linux and Windows environments side-by-side.
+  - Enterprises can also push virtual operating systems to computers, which:
+    - (1) Reduces bulk hardware costs, since the computers don’t require such high out-of-the-box capabilities
+    - (2) Increases security, since all virtual instances can be monitored and isolated
+    - (3) Limits time spent on IT services like software updates.
+- Network Functions Virtualization:
+  - Network functions virtualization (NFV) separates a network’s key functions (like directory services, file sharing, and IP configuration) so they can be distributed among environments.
+  - Once software functions are independent of the physical machines they once lived on, specific functions can be packaged together into a new network and assigned to an environment.
+  - Virtualizing networks reduces the number of physical components — like switches, routers, servers, cables, and hubs — that are needed to create multiple, independent networks, and it’s particularly popular in the telecommunications industry.
+- 

@@ -8,6 +8,7 @@
 - https://github.com/ageron/handson-ml
 - https://github.com/rasbt/python-machine-learning-book
 - https://github.com/hangtwenty/dive-into-machine-learning
+- https://medium.com/@james_aka_yale
 
 
 ## Pycharm

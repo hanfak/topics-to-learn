@@ -1,0 +1,33 @@
+# Processes and Process Management
+
+- A process is basically a program in execution
+- The execution of a process must progress in a sequential fashion.
+- when we execute a program (ie one programmed like a jar running on a jvm), it becomes a process which performs all the tasks mentioned in the program.
+- When a program is loaded into the memory and it becomes a process, it can be divided into four sections ─ stack, heap, text, and data.
+  - Stack: The process Stack contains the temporary data, such as:
+    -  method/function parameters, return address, and local variables.
+  - Heap: This is dynamically allocated memory to a process during its run time.
+  - Text: This includes the current activity represented by the value of Program Counter and the contents of the processor’s registers.
+  - Data: This section contains the global and static variables.
+- When a process executes, it passes through different states. These stages may differ in different operating systems, and the names of these states are also not standardized.
+  - Can have one of 5 states at a time
+    - Start: The initial state when a process is first started/created.
+    - Ready: The process is waiting to be assigned to a processor.
+      -  Ready processes are waiting to have the processor allocated to them by the operating system so that they can run.
+      - A process may come into this state after the Start state, or while running it by but getting interrupted by the scheduler to assign CPU to some other process.
+    - Running: Once the process has been assigned to a processor by the OS scheduler, the process state is set to running and the processor executes its instructions.
+    - Waiting: the process moves into the waiting state if it needs to wait for a resource,
+      - such as waiting for user input, or waiting for a file to become available.
+    - Terminated or Exit: Once the process finishes its execution, or it is terminated by the operating system, it is moved to the terminated state where it waits to be removed from main memory.
+- A Process Control Block is a data structure maintained by the Operating System for every process. The PCB is identified by an integer process ID (PID). A PCB keeps all the information needed to keep track of a process:
+  - Process State: The current state of the process
+    - whether it is ready, running, waiting, or whatever.
+  - Process Privileges: This is required to allow/disallow access to system resources.
+  - Process ID: Unique identification for each of the processes in the operating system.
+  - Pointer: A pointer to the parent process.
+  - Program Counter: Program Counter is a pointer to the address of the next instruction to be executed for this process.
+  - CPU Registers: Various CPU registers where processes need to be stored for execution for running state.
+  - CPU Scheduling Information: Process priority and other scheduling information which is required to schedule the process.
+  - Memory Management Information: This includes the information of page table, memory limits, and segment table, depending on the memory used by the operating system.
+  - Accounting Information: This includes the amount of CPU used for process execution, time limits, execution ID, and so on.
+  - IO Status Information: This includes a list of I/O devices allocated to the process.

@@ -1,0 +1,53 @@
+# Threads and Concurrency
+
+- A thread is a flow of execution through the process code.
+  - It has its own program counter that keeps track of which instruction to execute next.
+  - It also has system registers which hold its current working variables,
+  - and a stack which contains the execution history.
+- A thread shares with its peer threads various information like code segment, data segment, and open files.
+  - When one thread alters a code segment memory item, all other threads see that.
+- A thread is also called a lightweight process.
+  - Threads provide a way to improve application performance through parallelism.
+  - Threads represent a software approach to improving the performance of operating systems by reducing the overhead.
+  - A thread is equivalent to a classical process.
+- Each thread belongs to exactly one process, and no thread can exist outside a process.
+  - Each thread represents a separate flow of control.
+  - Threads have been successfully used in implementing network servers and web servers.
+  - They also provide a suitable foundation for parallel execution of applications on shared memory multiprocessors.
+- Advantages of threads:
+  - They minimize the context switching time.
+  - Using them provides concurrency within a process.
+  - They provide efficient communication.
+  - It is more economical to create and context switch threads.
+  - Threads allow utilization of multiprocessor architectures to a greater scale and efficiency.
+- Threads are implemented in the following two ways:
+  - User Level Threads: User-managed threads.
+    - the thread management kernel is not aware of the existence of threads.
+    - The thread library contains code for creating and destroying threads, for passing messages and data between threads, for scheduling thread execution, and for saving and restoring thread contexts.
+    - The application starts with a single thread.
+  - Advantages:
+    - Thread switching does not require Kernel mode privileges.
+    - User level thread can run on any operating system.
+    - Scheduling can be application-specific in the user level thread.
+    - User level threads are fast to create and manage.
+  - Disadvantages:
+    - In a typical operating system, most system calls are blocking.
+    - Multithreaded application cannot take advantage of multiprocessing.
+  - Kernel Level Threads: Operating System-managed threads acting on a kernel, an operating system core.
+    - thread management is done by the Kernel.
+    - There is no thread management code in the application area.
+    - Kernel threads are supported directly by the operating system.
+    - Any application can be programmed to be multithreaded.
+    - All of the threads within an application are supported within a single process.
+    - The Kernel maintains context information for the process as a whole and for individuals threads within the process.
+    - Scheduling by the Kernel is done on a thread basis.
+    - The Kernel performs thread creation, scheduling, and management in Kernel space.
+    - Kernel threads are generally slower to create and manage than the user threads.
+    - Advantages
+      - The Kernel can simultaneously schedule multiple threads from the same process on multiple processes.
+      - If one thread in a process is blocked, the Kernel can schedule another thread of the same process.
+      - Kernel routines themselves can be multithreaded.
+    - Disadvantages
+      - Kernel threads are generally slower to create and manage than the user threads.
+      - Transfer of control from one thread to another within the same process requires a mode switch to the Kernel.
+  

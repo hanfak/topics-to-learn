@@ -1,0 +1,30 @@
+# Distributed Shared Memory
+
+- Distributed Shared Memory (DSM) is a resource management component of a distributed operating system that implements the shared memory model in distributed systems, which have no physically shared memory.
+- The shared memory provides a virtual address space that is shared among all computers in a distributed system.
+- In DSM, data is accessed from a shared space similar to the way that virtual memory is accessed.
+- Data moves between secondary and main memory, as well as, between the distributed main memories of different nodes.
+- Ownership of pages in memory starts out in some pre-defined state but changes during the course of normal operation.
+- Ownership changes take place when data moves from one node to another due to an access by a particular process.
+- Advantages of Distributed Shared Memory:
+  - Hide data movement and provide a simpler abstraction for sharing data. Programmers don’t need to worry about memory transfers between machines like when using the message passing model.
+  - Allows the passing of complex structures by reference, simplifying algorithm development for distributed applications.
+  - Takes advantage of “locality of reference” by moving the entire page containing the data referenced rather than just the piece of data.
+  - Cheaper to build than multiprocessor systems. Ideas can be implemented using normal hardware and do not require anything complex to connect the shared memory to the processors.
+  - Larger memory sizes are available to programs, by combining all physical memory of all nodes. This large memory will not incur disk latency due to swapping like in traditional distributed systems.
+  - Unlimited number of nodes can be used. Unlike multiprocessor systems where main memory is accessed via a common bus, thus limiting the size of the multiprocessor system.
+  - Programs written for shared memory multiprocessors can be run on DSM systems.
+- Disadvantages:
+  - Generally slower to access than non-distributed shared memory
+  - Must provide additional protection against simultaneous accesses to shared data
+  - May incur a performance penalty
+  - Little programmer control over actual messages being generated
+  - Programmers need to understand consistency models, to write correct programs
+  - DSM implementations use asynchronous message-passing, and hence cannot be more efficient than message-passing implementations
+- There are two different ways that nodes can be informed of who owns what page:
+  - invalidation
+    - a method that invalidates a page when some process asks for write access to that page and becomes its new owner.
+    - This way the next time some other process tries to read or write to a copy of the page it thought it had, the page will not be available and the process will have to re-request access to that page.
+  - broadcast.
+    - Broadcasting will automatically update all copies of a memory page when a process writes to it. This is also called write-update.
+    - This method is a lot less efficient more difficult to implement because a new value has to sent instead of an invalidation message.

@@ -83,9 +83,16 @@
 - https://www.thedevcoach.co.uk/docker-performance-tips-and-tricks/
 
 
-## Disadvantages
+## Disadvantages or not to use
 
 - https://www.freecodecamp.org/news/7-cases-when-not-to-use-docker/
+  - Do Not Use Docker if You Need to Boost Speed
+  - Do Not Use Docker if You Prioritize Security
+  - Do Not Use Docker if You Develop a Desktop GUI Application
+  - Do Not Use Docker if You Want to Light Up Development and Debugging
+  - Do Not Use Docker if You Need to Use Different Operating Systems or Kernels
+  - Do Not Use Docker if You Have a Lot of Valuable Data to Store
+  - Do Not Use Docker if You Are Looking for The Easiest Technology to Manage
 
 ## Links
 

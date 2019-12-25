@@ -1,0 +1,47 @@
+# Scheduling
+
+- The process of scheduling is the responsibility of the process manager that handles the removal of the running process from the CPU and the selection of another process on the basis of a particular strategy.
+- part of a Multiprogramming operating system.
+  - These operating systems allow more than one process to be loaded into the executable memory at a time, and the loaded process shares the CPU using time multiplexing.
+- The OS maintains all Process Control Blocks (PCBs) in Process Scheduling Queues.
+  - The OS maintains a separate queue for each of the process states, and PCBs of all processes in the same execution state are placed in the same queue.
+  -  When the state of a process is changed, its PCB is unlinked from its current queue and moved to its new state queue.
+- The Operating System maintains the following important process scheduling queues
+  - Job queue: This queue keeps all the processes in the system.
+  - Ready queue: This queue keeps a set of all processes residing in the main memory, ready and waiting to execute.
+    - A new process is always put in this queue.
+  - Device queues: The processes which are blocked due to unavailability of an I/O device constitute this queue.
+- The OS can use different policies to manage each queue
+  - FIFO,
+  - Round Robin,
+  - Priority,
+  - etc
+- The OS scheduler determines how to move processes between the ready and run queues which can only have one entry per processor core on the system
+- Two-state process models refer to running and non-running states:
+  - Running:
+    - When a new process is created, it enters into the system in the running state.
+  - Not Running:
+    - Processes that are not running are kept in queue, waiting for their turn to execute.
+    - Each entry in the queue is a pointer to a particular process.
+    - Queue is implemented by using a linked list.
+    - The use of dispatcher is as follows:
+      - when a process is interrupted, that process is transferred in the waiting queue.
+      - If the process has completed or aborted, the process is discarded.
+      - In either case, the dispatcher then selects a process from the queue to execute.
+- A context switch is the mechanism that stores and restores the state or context of a CPU in the Process Control block.
+  - It allows a process execution to be resumed from the same point at a later time.
+  - Using this technique, a context switcher enables multiple processes to share a single CPU.
+  - Context switching is an essential feature of a multitasking operating system.
+  - When the scheduler switches the CPU from executing one process to another, the state from the current running process is stored into the process control block.
+    - After this, the state for the next process is loaded from its own PCB and used to set the PC, registers, etc.
+    - At that point, the second process can start executing.
+- Context switches are computationally intensive, since register and memory state must be saved and restored.
+  - To avoid the amount of context switching time, some hardware systems employ two or more sets of processor registers.
+- When the process is switched, the following information is stored for later use:
+  - Program Counter,
+  - Scheduling Information,
+  - Base and Limit Register Value,
+  - Currently Used Register,
+  - Changed State,
+  - I/O State Information,
+  - Accounting Information.
