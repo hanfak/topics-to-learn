@@ -1,6 +1,16 @@
 # String Class
 
 - https://www.journaldev.com/16928/java-string
+- https://www.java67.com/2018/01/10-important-points-about-string-in-java.html
+
+## Splitting
+
+- https://www.java67.com/2019/12/difference-between-stringtokenizer-and.html
+
+## String, String Builder & String buffer
+
+- https://www.java67.com/2014/05/difference-between-stringbuilder-and-StringBuffer-java.html
+- https://www.java67.com/2012/08/difference-between-string-and-stringbuffer-in-java.html
 
 ## Operations
 
