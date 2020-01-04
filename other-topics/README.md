@@ -11,5 +11,7 @@ Other areas, which I am not currently using.
 - video game
 - embedded systems
 - no sql
+- Graph database
 - low code development
+- systems/embedded programming
 - IOT

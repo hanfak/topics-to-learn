@@ -1,10 +1,13 @@
-Part 1 - An agile approach to acceptance testing
+# Part 1 - An agile approach to acceptance testing
+
 Part 1 introduces an acceptance testing approach centered around clearly defined requirements, customer authored acceptance criteria and the implementation of executable tests to exercise that criteria. This approach is used by many successful agile teams today.
 
 Whilst this part describes the approach, Part 2 goes on to discuss why it’s not always the best approach.
 
-Introduction
-What is an acceptance test?
+## Introduction
+
+### What is an acceptance test?
+
 Before we start, we should agree on some working definitions. Deciding on a definition of acceptance test can be contentious. Different people have different interpretations. So what is an acceptance test?
 
 An acceptance test is a set of examples or a specification that helps the customer “accept” that a system behaves as intended.
@@ -19,7 +22,7 @@ Many teams emphasize that acceptance tests should be customer authored. If we wr
 
 In Agile Testing, Lisa Crispin and Janet Gregory describe acceptance tests as
 
-“Tests that define the business value each story must deliver. They may verify functional requirements or non-functional requirements such as performance or reliability … Acceptance test is a broad term that may include both business facing and technology facing tests.”
+  “Tests that define the business value each story must deliver. They may verify functional requirements or non-functional requirements such as performance or reliability … Acceptance test is a broad term that may include both business facing and technology facing tests.”
 
 An important addendum to our definition then should be that acceptance tests don’t have to be about just business behaviour, they can also be about broader system qualities such as non-functional requirements and usability. It’s still about customer confidence.
 
@@ -29,7 +32,8 @@ Applying the addendum to our definition gives the following.
 
 An acceptance test is a set of examples or a specification that helps the customer “accept” that a system behaves as intended. The test is used to specify required behaviour and to verify that behaviour against a running system. Acceptance tests are not limited to confirming business behaviour but can also verify that broader, non-functional objectives have been met.
 
-What are acceptance criteria?
+### What are acceptance criteria?
+
 We’ll often use the terms acceptance criteria and acceptance test interchangeably but really they’re distinct.
 
 Acceptance criteria are the set of criteria that, when verified against a running system, give confidence to the customer that the system behaves as intended. They represent the requirements or specification for a small set of functionality and are written in such a way as to be quantifiable. They’re typically defined when doing analysis and since they’re mostly concerned with business requirements, the customer is best placed to define them. Non-functional requirements, despite affecting the customer, usually end up being championed by technical stakeholders.
@@ -46,7 +50,7 @@ An acceptance test is a set of executable criteria that helps the customer “ac
 
 Acceptance criteria become acceptance tests. Attributes that describe acceptance tests also describe acceptance criteria with the additional fact that tests should be executable. Executing acceptance tests verify that the acceptance criteria have been met.
 
-Attributes of acceptance criteria and tests
+### Attributes of acceptance criteria and tests
 
 Acceptance Criteria	Acceptance Tests
 Document behaviour	Document behaviour
@@ -56,7 +60,9 @@ Are quantitative	Are quantitative
 Require discussion	Require discussion
 Are agreed	Are agreed
  	Are executable
-What is a story?
+
+### What is a story?
+
 Acceptance criteria are usually discussed in terms of user stories so it’s worthwhile making sure we have a common understanding of what makes up a story. Agile processes often focus on stories as a way of gathering requirements and organising them into deliverable chunks that have business value. In Planning Extreme Programming, Kent Beck and Martin Fowler describe a user story as “a chunk of functionality that is of value to the customer”. It’s common to associate acceptance tests with stories. Once the tests are passing, a story is considered finished. There’s a close relationship between stories and acceptance testing.
 
 Mike Cohen describes user stories as follows.
@@ -75,12 +81,14 @@ The reason this matters is because “business value” is supposed to enable an
 
 To capture and track progress, some teams write stories on index cards, others write tasks or work items on post-its. Others still write up analysis in their issue tracking software or wiki.
 
-Tasks vs stories
+### Tasks vs stories
+
 It’s easy to get confused with the difference between tasks and stories. The team lead role can suffer from this especially but keeping track of todo items needn’t muddy the waters when it comes to planning story delivery.
 
 It’s important to realise that tasks or todo items fit more appropriately under project or team management activities and not story planning. That way, it’s easier to pick the right tool to manage them. David Allen’s Getting Things Done is a great way to manage your todo pile.
 
-Bringing it all together
+### Bringing it all together
+
 Why is this discussion important? How we interpret the definition of user stories has a knock on effect on how we choose to implement our acceptance testing approach. Sticking to the letter of Cohen’s story definition above can lead to ambiguous requirements. We need to think a little harder. His definition should encourage us to think about requirements from the customer’s perspective, clearly articulate the goal and solidify why it’s important (the so that clause).
 
 It’s also important to recognise that the Connextra template is not a literal mantra. Articulating the goal will likely take more than a single sentence on an index card. That’s where defining unambiguous acceptance criteria comes in.
@@ -89,23 +97,28 @@ If the story definition is vague, it’s difficult to define concise acceptance 
 
 Working from story definition through defining acceptance criteria to delivery is something David Peterson calls the Story delivery lifecycle. It brings together the ideas of stories, acceptance criteria and tests with a framework for iterative development that underpins common agile processes. We’ll take a closer look at it next.
 
-Typical process overview
+### Typical process overview
+
 The story delivery lifecycle
 A typical agile process used by many teams today revolves around the following steps often referred to as the story delivery lifecycle. The steps act as a guide to ensuring you’re working on incremental value, to highligh problems or misunderstanding early and give you the chance to adjust.
 
 
-Story delivery lifecycle
+### Story delivery lifecycle
+
 1. Pick a story
 2. Agree acceptance criteria
 3. Develop functionality
 4. Demonstrate and sign off
 6. Repeat
+
 Let’s go through these steps in more detail.
 
-Pick a story
+#### Pick a story
+
 Picking the next story to play should be as simple as taking the next highest priority story from the list of options. Creating the option list or backlog is a little more interesting. Ideally, there should be ongoing work to identify concepts that, if realised, would help achieve business goals (cash). In the corporate environment, it’s typically the responsibility of the business analysts to come up with candidate features for a project.
 
-What’s a Story?
+- What’s a Story?
+
 There is often some debate about the definition of the term “story”. For the purpose of this discussion, lets assume that a story is just a way to decompose the requirements into achievable chunks that, if implemented, would add business value.
 
 It’s common to physically write the story description on an index card. Teams might then use this as a token on the team’s project board to visualise it’s life, moving from left to right to indicate progress.
@@ -114,7 +127,8 @@ It would usually fall to the iteration planning of a Scrum process to move a set
 
 The next step is to express this value in the form of acceptance criteria.
 
-Agree acceptance criteria
+#### Agree acceptance criteria
+
 Inputs and outputs
 Inputs:
 
@@ -128,6 +142,7 @@ Additional documentation or context in whatever form is appropriate
 Avoid:
 
 Implementation details
+
 It may be that the story you pick up lacks sufficient detail to answer the question “how do we know it’s done?”. To figure this out, you define the acceptance criteria and in doing so, better understand what’s really needed. You might explore example scenarios, edge cases and outcomes to help. The idea here is to describe the requirements not in terms of a series of instructions to follow (a traditional test script) but as an english description of the business goals. When you can prove these have been met, you know the story is done.
 
 When you describe the high level business scenarios like this, you implicitly create a specification accessible to business and technical staff. You’re not concerned with the details of how things will be implemented. It’s a chance to focus on the business intent and make sure everyone involved understands what’s expected, the terminology and the business context.

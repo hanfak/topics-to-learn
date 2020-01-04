@@ -65,6 +65,7 @@
     - in creating features, maintaining and fixing bugs
   - Reputation
     - built and maintained by a company
+- large software systems built on dynamically typed and interpreted languages have all kinds of issues from correctness to performance.
 
 ### Why use java
 
@@ -105,7 +106,12 @@ links
 - Dynamically typed
   - no support from compiler, problem occurs at runtime
   - hard to refactor
+  - hey’re much more costly to debug
+-  GC tuning and memory management strategies are much more mature in JVM than Python (which only provides a basic interface)
+- hat most unattended 24x7 software systems require monitoring, and this is not yet part of CPython to the extent it is supported in JVM for instance. While you can build your own metrics in Python and expose them, JVM has them ready.
+- Another disadvantage is scalability. There is something called global interpreter log. This thing ensures that from a given process nothing can really run in parallel without spawning a complete new process which is expensive.
 
 links
 
 - https://www.analyticsindiamag.com/why-has-python-failed-to-penetrate-the-enterprise-development-sector/
+- https://www.sayonetech.com/blog/can-your-enterprise-choose-python-software-development/
