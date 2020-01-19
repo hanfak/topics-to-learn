@@ -13,6 +13,14 @@
 
 - https://dzone.com/articles/introduction-to-spring-batch?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava
 
+## Multi module
+
+- https://spring.io/guides/gs/multi-module/
+
+## Profiles
+
+- https://reflectoring.io/spring-boot-profiles/
+
 ## why bad
 
 - https://www.reddit.com/r/java/comments/2emu2s/whats_with_all_the_antispring_sentiment/

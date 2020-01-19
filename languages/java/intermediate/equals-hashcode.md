@@ -22,6 +22,15 @@
 - this leads to performing equals between the parent and child class's objects will not give correct outputs.
   -  a.equals(b) != b.equals(a) where a is subclass of b
 
-## contracts 
+## contracts
 
 - https://www.baeldung.com/java-equals-hashcode-contracts
+
+## Equivalence
+
+- https://www.pragmaticobjects.com/chapters/009_equivalence_101.html
+
+## Issues
+
+- https://www.pragmaticobjects.com/chapters/004_object_equivalence.html
+-

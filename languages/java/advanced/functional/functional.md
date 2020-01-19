@@ -24,6 +24,7 @@
 - https://www.journaldev.com/129/how-to-create-immutable-class-in-java
 - https://medium.com/@mykola.shumyn/immutable-classes-in-java-76635df0356d
 - https://dzone.com/articles/taming-concurrency-with-immutability
+- https://reflectoring.io/java-immutables/
 -
 
 ## streams

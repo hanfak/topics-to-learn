@@ -7,6 +7,7 @@
 - https://www.tonymarston.net/php-mysql/dependency-injection-is-evil.html
 - http://davidscode.com/blog/2015/04/17/when-does-dependency-injection-become-an-anti-pattern/
 - https://www.continuousimprover.com/2018/05/dont-blame-dependency-injection.html
+- https://www.pragmaticobjects.com/chapters/007_di_containers.html
 
 
 ### notes

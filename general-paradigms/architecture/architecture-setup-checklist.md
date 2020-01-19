@@ -1,0 +1,253 @@
+# Checklist for new project
+
+## Development language
+
+- Language to use
+  - java, c-sharp
+- Features of language
+  - Maturity
+  - libraries
+  - Secruity and language patches
+  - memory management - manual or automated
+  - memory statistics - jmx, jprofile
+  - Concurrency
+
+## Architecture Style
+
+- Monolithic
+  - Might not support a flexible release cycle but doesn’t need potentially fragile distributed communication.
+  - Whole funcitionality can be released at once
+- (micro)- services
+  - Flexible, only need to deploy ones that changes
+  - Smaller, and thus less code to maintain
+  - distrubited so communication and infrastructure maintainance an issue
+- Style, organisation
+  - Clean, mvc, domain driven design, framwork??
+  - Modularising and package structure?? Java9? OGCD? Static analysis tools
+
+
+## Backend Concerns
+
+- Logging
+  - Use SLF4J with either Logback or Log4J2 underneath.
+  - How to manage logs
+    - files and or console output
+    - length of rentention
+    - searchable
+    - Format and levels (info/error/warn/debug)
+    - Which information should be logged when?
+    -
+- Application Server
+  - WAR that works on a separate server like tomcat/wildfly
+    - monolith
+  - Embedded server (jetty/spring), the application starts up this server and runs access to the app
+    - microservices
+    - Docker
+- Job Execution
+  - What services are needed to be excuted at a regular interval or time
+  - ie leaning up a database or batch-importing third-party data
+  - quartz for more features
+  - spring for basic jobs
+- Database Refactoring
+  - how to update the structure of your relational database between two versions of your software
+    - migrations
+    - zero down time migrations
+  - In small projects, manual execution of SQL scripts may be acceptable,
+  - in medium-to-large projects you may want to use a database refactoring framework like Flyway or Liquibase
+- API Technology
+  - How will it communicate with other services
+  - third party apis
+    -  is there a choice? What documentation? Can it be changed on their end?
+  - Internal services
+    - types of communications
+      - http rest, Soap, jms, rpc
+    - Contract testing
+      - pacts
+    - Messeging and queues (Asynchronous communcations)
+      - streaming data - kafka
+      - message brokers - amq
+- API Documentation
+  - The internal and external APIs you create must be documented in some form
+- Measuring Metrics
+  - Are there any metrics like thoughput that should be measured while the application is running?
+  - Dropwizard
+  - Prometheus Java Client.
+  - Use Grafana to hava dashboards of graphics
+- Monitoring
+  - metrics
+  - status pages
+  - application readiness
+- Environment configuration
+  - dynamic or static properties
+  - puppet
+- Authentication
+  - How will users of the application prove that they are who they claim to be? Will users be asked to provide username and password or are there additional credentials to check?
+  - With a client-side single page app, you need to issue some kind of token like in OAuth or JWT, OpenID
+  - In other web apps, a session id cookie may be enough.
+  - Use of tls or mutual tls, checking certificates that are signed by trusted
+  - Basic Auth
+- Authorization
+  - how will the application check what the user is allowed to do and what is prohibited?
+  - On the server side, Spring Security is a framework that supports implementation of different authorization mechanisms.
+- Database Technology
+  - Does the application need a structured, schema-based database?
+    - Use a relational database.
+  - Is it storing document-based structures?
+    - Use MongoDB.
+  - Key-Value Pairs?
+    - Redis.
+  - Graphs?
+    - Neo4J.
+  - Who manages this?
+  - Are we stuck on a specific technology
+- Reporting and datawhare house
+  - what needs to be stored for long term use?
+  - Does there need to be a transfer of data to another tech for other teams to use? Or just expose read only  views?
+- What available libraries that we can use?
+  - Open source? Version?
+  - Passed secruity check?
+- Persistence Layer
+  - When using a relational database, Hibernate is the de-facto default technology to map your objects into the database.
+  - there are alternative database-accessing technologies like iBatis and jOOQ
+  - Spring Data JPA also supports many NoSQL databases like Neo4J or MongoDB.
+  - Can use custom access, jdbctemplate or pure jdbc with sql
+
+## Testing Concerns
+
+- Testing pyramid
+- Full end to end integration tests
+- Performance tests
+  - SLAs
+- Contract testing
+  - use this instead of integration tests
+- Smoke tests
+  - automated
+  - For deployments into new environments
+- Production tests
+- Environments for testing
+- Documentation from tests
+  - Yatspec, cucumber
+  - What tests to document
+- Test coverage
+- app integration tests
+- Tools
+  - Junit, mockito, assertj, hamcrest
+  - selenium
+
+## Operations Concerns
+
+- Continuous Deployment
+  - Are there automatic tasks that deploy your application to a development, staging or production environment?
+  - How will these tasks be executed?
+  - Will scripts or configuration files be manually created or automated using minimum info the app needs to run
+  - Manual gates
+    - A break to ensure the deploying to an environment is though out and everything is ready to go
+  - Quality gates
+    - fails on status page or smoke tests
+- Servers
+  - 	Will the application be hosted on real hardware or on virtual machines?
+  - Docker is a popular choice for virtualization nowadays.
+- Management of servers and applications
+  - Will this be done manually by SAs ?
+  - Will be done using kubernetes ?
+  - Will it be on the cloud?
+- Service Registry
+  - When building a (Micro-)Service Architecture, you may need a central registry for your services so that they find each other
+  - Service mesh
+- Database Operations
+  - What are the requirements towards the database?
+  - Does it need to support hot failover and / or load balancing between database instance?
+  - Does it need online backup?
+  - What is the deletion process?
+- Central Log Server
+  - Especially in a distributed architecture with many deployment units, but also in a monolithic application (which also should have at least two instances running), a central log server may make bug hunting easier.
+  - The Elastic Stack (Elastic Search, Logstash, Kibana) is popular
+- Monitoring
+  - How is the health of the server instances monitored and alarmed (Icinga may be a fitting tool)?
+  - Who will be alarmed?
+  - Should there be a central dashboard where all kinds of metrics like thoughput etc. are measured (Prometheus + Grafana may be the tools of choice).
+  - How will be supporting the releases? Timetabling?
+- Load Balancing
+  - How will the load on the application be balanced between multiple instances of the software?
+  - Is there a hardware load balancer?
+  - Does it have to support sticky sessions?
+  - Does the app need a reverse proxy that routes requests to different deployment units of the application (you may want to use Zuul)?
+  - Nginix
+- Network Infrastructure
+  - How is the network setup?
+  - Are there any communication obstacles between different parts of the application or between the application and third party applications?
+
+
+## Development Concerns
+
+- IDE
+  - What’s the policy on using IDE’s?
+  - Is each developer allowed to use his/her IDE of choice?
+  - Making a specific IDE mandatory may reduce costs for providing several parallel solutions while letting each developer use his favorite IDE may reduce training costs.
+- Build Tool
+  - Which tool will do the building?
+  - Both Maven and Gradle are popular choices
+  - Old school is Ant
+  - Or do manual using make files and bash scripts
+- Version Control
+  - Where will the source code be hosted?
+    - Gitlabs (internal) or github (external)
+  - Secruity
+    - access to view and upload
+  - Git is quickly becoming the de-facto standard, but Subversion has a better learning curve.
+  - What needs to checked in?
+    - Passwords or sensitve data (encrypted or reference local env variables)
+  - README.md
+    - Standardised for devs to run, test and understand code to be productive
+- Coding Conventions
+  - How are classes and variables named?
+  - Is code and javadoc in english or any other language?
+  - choose an existing code formatter and a Checkstyle rule set and include it as a build breaker into the build process
+  - Findbugs, PMD for build static analysis tools
+  - Sonarcube for hosted analysis tools
+- Code Quality
+  - How will you measure code quality?
+  - Are the coding conventions enough or will you run additional metrics on the code?
+  - How will those metrics be made visible?
+  - You may want to setup a central code quality server like SonarQube for all to access.
+- Application fitness
+  - Does it meet the goals of key engineering principles
+  - Evolutionary architecture by Ford
+  - Tests that check fetures, fitness tests
+- Pairing or/and Code reviews
+  - Will you perform code reviews during development?
+  - How will thos code reviews be supported by software?
+    - github, reviewboard
+  - When will they be performed?
+  - Metrics used
+- Pair programming
+  - When will this be done?
+  - How long for?
+    - Monitoring equal pairing
+  - Switching up?
+  - Equipment?
+    - one box two computers
+    - desks
+- Trunk or feature/branch based development
+  - use of feature toggles for trunk based
+- Continuous Integration
+  - How will the build process be executed on a regular basis?
+  - There are cloud providers like CircleCI or Travis or you may install a local Jenkins server or GoCD.
+- Build Monitors
+  - A screen which displays any failing builds from CI (red builds)
+  - Any metrics from Production
+  - Calendars/events or reminders
+- CI and CD separated
+  - binary from CI is not the same as deployed version
+- Documentation
+  - Which parts of the application should be documented how?
+  - What information should be documented in a wiki like Confluence?
+  - what should be put into Word documents?
+  - If there is a chance, use a markup format like Markdown ord AsciiDoc instead of Word.
+- Licensing
+- Stories
+  - Use of jira to track and document stories
+  - Breaking down when too long?
+  - How to handle TODOs in code?
+- Agile
+  - kanban or scrum

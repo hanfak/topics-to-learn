@@ -50,7 +50,13 @@
   - In some cases, an asynchronous publish-subscribe communication mechanism suits the use case better than a synchronous point-to-point mechanism.
   - The Atom syndication format is becoming increasingly popular as a lightweight means of implementing pub-sub between microservices.
   - n larger systems, there are often multiple teams each with responsibility for different bounded contexts.
-
+- In a microservice environment, we never understand the whole picture because it’s too complex.
+- So why not go back to monoliths?
+  - Because we want to be able to make cheap experiments.
+  -  We want to quickly implement a certain feature and test it in production.
+  - We want to release many times a day.
+- To operate microservices successfully, DevOps is key. Only the developers really know what’s going on and can fix things.
+- 
 ## links
 
 - https://www.javacodegeeks.com/2018/03/introduction-to-microservices.html

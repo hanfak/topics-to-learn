@@ -1,5 +1,7 @@
 # Pair Programming
 
+- https://martinfowler.com/articles/on-pair-programming.html#HowToPair
+
 ## Benefits
 
 - Code review in real time
