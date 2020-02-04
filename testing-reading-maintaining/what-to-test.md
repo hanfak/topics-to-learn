@@ -112,6 +112,7 @@ Need to test behaviour
 - But if the class contains business logic or different flows ie handling resources or exceptions, which are not tested via the acceptance test then we need to unit test it.
   - If there is more business logic here then might need to write the unit test as a documentation test so it can be read by non technical stake holders.
 - Dont just rely on the acceptance test to cover everything. Need to make a judgement on what needs to be unit tested and what needs to be documented
+- End to end tests, where the app is up and running, can make it hard to know where the code is being run (ie where to put a debug point in) and tdd with it makes it hard unless you know the architecture and and where the code goes.
 
 ## Links
 

@@ -12,3 +12,8 @@ Info about career in software development
 ## Quitting
 
 - https://medium.com/swlh/how-to-stop-your-best-developers-from-quitting-8e251c110f36
+
+
+## Finding talent
+
+- https://codeburst.io/why-developers-become-frustrated-and-companies-cant-find-talent-c4114d8b72ac

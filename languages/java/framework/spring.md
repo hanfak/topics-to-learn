@@ -21,6 +21,10 @@
 
 - https://reflectoring.io/spring-boot-profiles/
 
+## Tips
+
+- https://www.toptal.com/spring/top-10-most-common-spring-framework-mistakes
+
 ## why bad
 
 - https://www.reddit.com/r/java/comments/2emu2s/whats_with_all_the_antispring_sentiment/
@@ -29,3 +33,4 @@
 - https://medium.com/@nayeemzen/stay-away-from-spring-90d8612a539d
 - https://softwareengineering.stackexchange.com/questions/42817/why-not-spring-framework
 - https://www.javacodegeeks.com/2019/11/memory-wasted-by-spring-boot-application.html
+- https://dzone.com/articles/perils-of-opinionated-frameworks-like-spring-boot

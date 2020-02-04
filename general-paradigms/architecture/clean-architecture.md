@@ -1,5 +1,7 @@
 # Clean Architecture
 
+
+
 Goes by many names
 - hexagonal
 - ports and adapters
@@ -593,4 +595,4 @@ Example
     - If CRUD app grows, then we start to add domain logic directly to the outgoing adapter. Spreading the domain logic all over the app
     - to prevent boilerplate pass-through services, we might choose to skip the application services for simple CRUD use cases after all
     - Should introduce application service as soon business logic occurs
-  - 
+  -

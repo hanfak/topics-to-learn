@@ -4,6 +4,11 @@ A pattern that allows the use of a mapper to convert between code (ie java) to d
 
 ## Disadvantages of using orms
 
+- Close coupling of data and business layer
+- Lack of control in how ORM implements SQL
+
+### Links
+
 - https://blog.oio.de/2016/05/12/orm-vs-sql-when-should-i-use-a-sql-centric-persistence-layer/
 - https://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html
 

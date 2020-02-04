@@ -1,3 +1,5 @@
+# Mocks, Stubs & Doubles
+
 - https://8thlight.com/blog/uncle-bob/2014/05/14/TheLittleMocker.html
 - https://martinfowler.com/articles/mocksArentStubs.html
 - https://javacodehouse.com/blog/mockito-tutorial/
@@ -21,3 +23,10 @@
 ## Fakes
 ## London/mockist school
 ## chicago/classic school
+
+
+## Problems with mocking
+
+- Essential for unit testing
+- Essential for testing and not want to call anything which can have consequences (ie state change (internally or externally), production calls, charges for services)
+- When you mock something you’re removing all confidence in the integration between what you’re testing and what’s being mocked. 

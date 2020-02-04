@@ -9,6 +9,7 @@
 - https://www.youtube.com/watch?v=Gnxk_uf6qTQ
 - https://www.youtube.com/watch?v=zlEdzJccdps&list=WL&index=163&t=0s
 - https://www.freecodecamp.org/news/a-quick-introduction-to-web-security-f90beaf4dd41/
+- http://adriangrigoras.com/blog/13-security-principles/
 
 ## Certificates
 

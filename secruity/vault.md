@@ -1,2 +1,3 @@
 - https://www.baeldung.com/vault
 - https://learn.hashicorp.com/vault/?track=getting-started#getting-started
+- https://learn.hashicorp.com/vault/getting-started-k8s/minikube

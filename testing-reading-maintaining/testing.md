@@ -2,6 +2,19 @@
 
 Testing is baked into everything I do. We write test first and have testers do checks on our applications.
 
+## Why write tests
+
+- Give us confidence in system
+- Prevent bugs, spot bugs early, reduce costs
+- Document behaviour (business flows), show examples of how system works
+- Enforce coding behaviour (architecture, styles)
+- Allows for refactoring, by allowing changes and know if they break the behaviour
+- If a bug or something unexpected happened, a test will prevent this from happenning again
+- No manually checking code yourself
+- A set of tests can be used in CI to check that system does what it is supposed to do, and that version can be used to be deployed
+- As a reminder to be sure you want to make that change
+- If wanting to refactor a code, writing all possible tests to check all behaviour has been documented first then can refactor it
+
 ## Methodologies
 
 ## Test Driven Development (TDD)
@@ -42,6 +55,37 @@ Testing is baked into everything I do. We write test first and have testers do c
 * More unit tests, less expensive, mocked/stubbed, fast running tests at the bottom. Cover more of the code base.
 
 - https://blog.ncrunch.net/post/testing-pyramid-automated-testing.aspx
+
+## Trophy Pyramid
+
+![](testing-reading-maintaining/testing-trophy.png?raw=true)
+
+- ROI is better to have more integration tests, than unit tests.
+  - Int tests cost more and slower than unit tests. But need to write more unit tests, to match one Int test
+- Rely on static typing and compiler to handle syntax and language errors
+  - use of static analysis tools
+  - Dont test business logic
+- Unit tests
+  - to test edge cases
+- Integration tests
+  - to handle business flows or integration points ie database, http calls
+  - test multiple areas at once
+  - make sure that parts of system work together
+  - Less mocking, more real objects used
+- End to End test
+  - Bring up whole app, test user flows
+  - critical paths
+  - little to no mocking, some for services dont want to use
+- Integration and end to end can be very fuzzy demarcation
+- Reduce duplication of tests, if unit is tested via Integration or end to end test, it does not need to be retested
+  - Makes code more brittle, more places to change code
+- If test does something that your consumer of that code doesnt then it's testing implementation details
+- If refactor breaks your tests, then it's testing implementation details
+
+## Links
+
+- https://blog.usejournal.com/lean-testing-or-why-unit-tests-are-worse-than-you-think-b6500139a009
+- https://kentcdodds.com/blog/write-tests
 
 ## Types of Tests
 

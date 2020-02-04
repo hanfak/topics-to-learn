@@ -58,3 +58,4 @@ To test anything, need to setup the conditions to test that situation/behaviour
   - Mocked an object, primed it, but it does not look like it been primed during debugging
     - check the mocked class, is passed in as a dependency
     - While debugging, break point on test as well, note the object ref in test, it should be the same as the obj ref in the prod code.
+  - Cannot prime a mock's mehtod to return something, when that method is called in the constructor

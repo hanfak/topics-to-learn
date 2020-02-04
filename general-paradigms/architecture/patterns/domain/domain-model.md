@@ -21,3 +21,4 @@
 - lots of indirection, hard to see flow of logic
 - complex data mapping
 - object bloat
+- Need to model domain in different layers

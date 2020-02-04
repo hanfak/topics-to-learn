@@ -8,7 +8,38 @@ public enum Direction {
 }
 ```
 
-To use an enum:
+## When to use
+
+- When you need a predefined list of values which do represent some kind of numeric or textual data, you should use an enum
+- You should always use enums when a variable (especially a method parameter) can only take one out of a small set of possible values.
+  - constants or flags
+- If you use enums instead of integers (or String codes), you increase compile-time checking and avoid errors from passing in invalid constants, and you document which values are legal to use.
+
+## Properties
+
+- an enum cannot extend anything else.
+- Enum in Java are type-safe: Enum has there own name-space. It means your enum will have a type for example EAST in above example and you can not assign any value other than specified in Enum Constants.
+  - ```Direction east = Direction.EAST;```
+  - ```Direction east = 1; // Compile error```
+- Enum constants are implicitly static and final and can not be changed once created.
+- Enum can be safely compare using
+  - Switch-Case Statement
+  - == Operator
+  - .equals() method
+- You can not create instance of enums by using new operator in Java because constructor of Enum in Java can only be private and Enums constants can only be created inside Enums itself.
+- Instance of Enum in Java is created when any Enum constants are first called or referenced in code.
+- An enum specifies a list of constant values assigned to a type.
+- An enum can be declared outside or inside a class, but NOT in a method.
+- An enum declared outside a class must NOT be marked static, final , abstract, protected , or private
+- Enums can contain constructors, methods, variables, and constant class bodies.
+- enum constants can send arguments to the enum constructor, using the syntax BIG(8), where the int literal 8 is passed to the enum constructor.
+- enum constructors can have arguments, and can be overloaded.
+- enum constructors can NEVER be invoked directly in code. They are always called automatically when an enum is initialized.
+- The semicolon at the end of an enum declaration is optional.
+
+
+
+## To use an enum:
 
 ```java
 Direction aDirection = Direction.EAST;
@@ -16,7 +47,7 @@ Direction aDirection = Direction.EAST;
   - Notice the type of aDirection is the enum type, Direction.
   - To use enum, use it like static/class field
 
-Use of ordinals.
+## Use of ordinals.
 
 ```java
 int orderValueInEnum = direction.WEST.ordinal();
@@ -33,7 +64,7 @@ System.out.println(direction.WEST); // prints WEST
 String nameOfEnum = direction.WEST.name() // returns  WEST
 ```
 
-Implementing an inteface
+## Implementing an inteface
 
 ```java
 interface Laugh {
@@ -64,7 +95,7 @@ for (Laugh cmd : Gender.values()) {
   - When defining method in block, must also define it as abstract singature of method outside of block
   - Do not need to have interface to define method in block
 
-Enum methods
+## Enum methods
 
  - enum type is actually a class type
  - compiler creates class of this enum
@@ -95,3 +126,33 @@ public enum Level {
 int levelValue = Level.LOW.getLevelValue();
 //returns 30
 ```
+
+## Singleton
+
+```java
+
+public enum MySingleton {
+     INSTANCE;
+     public void someMethod() { ... }
+}
+
+```
+
+Actually equivalent to;
+
+```java
+public final class MySingleton {
+    public final static MySingleton INSTANCE = new MySingleton();
+    private MySingleton(){}
+    public void someMethod() { ... }
+}
+
+
+// When your code first accesses INSTANCE, the class MySingleton will be loaded and initialized by the JVM. This process initializes the static field above once (lazily).
+```
+
+### Why is it better?
+
+- it is more concise,
+- provides the serialization machinery for free,
+- provides an ironclad guarantee against multiple instantiation, even in the face of sophisticated serialization or reflection attacks

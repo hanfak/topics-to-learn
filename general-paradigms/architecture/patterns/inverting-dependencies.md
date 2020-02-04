@@ -17,7 +17,8 @@ Inverting dependencies allows our architecture to maint SRP and DIP of SOLID.
 - We can turn around (invert) the direction of any dependency within our codebase
 -  layered architecture, the cross-layer dependencies always point downward to the next layer.
 - due to the domain layer’s dependency to the persistence layer, each change in the persistence layer potentially requires a change in the domain layer
-- But the domain code is the most important code in our application! We don’t want to have to change it when something changes in the persistence code!
+- But the domain code is the most important code in our application!
+  - We don’t want to have to change it when something changes in the persistence code!
 - Thus domain is not beholden to changes in persistence when DIP is used
 
 example 1 = Coupled, poor
@@ -30,7 +31,7 @@ example 1 = Coupled, poor
       |                    |
       |                    |
 ------|-- Persistence -----|------
-|     \/                    \/    |
+|     \/                   \/     |
 |   Entity <---------- Repository |
 |                                 |
 -----------------------------------
@@ -52,3 +53,8 @@ Example 2: Applying dependency inversion
 |   for            implementation |
 |   repository                    |
 -----------------------------------
+
+- the business rules are testable by design and independent of
+frameworks, databases, UI technologies and other external applications or interfaces
+  - the domain code must not have any outward facing dependencies.
+  - all dependencies should point toward the domain code.

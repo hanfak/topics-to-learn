@@ -1,5 +1,13 @@
 # Test driven development (TDD)
 
+## What??
+
+## When??
+
+## Why?
+
+## Links
+
 - intro https://technologyconversations.com/2013/12/24/test-driven-development-tdd-best-practices-using-java-examples-2/
 - example and intro https://www.youtube.com/watch?v=PIWLC3dexSA
 - jbrains tutorial https://online-training.jbrains.ca/courses/wbitdd-01/lectures/133270
@@ -13,6 +21,7 @@
 - Example https://www.youtube.com/watch?v=2Ekty7t621k&t=333s
 - marsrover https://www.youtube.com/watch?time_continue=4119&v=24vzFAvOzo0
 - trip service https://github.com/sandromancuso/trip-service-kata
+- https://www.freecodecamp.org/news/test-driven-development-what-it-is-and-what-it-is-not-41fa6bca02a2/
 
 https://medium.com/javascript-scene/the-outrageous-cost-of-skipping-tdd-code-reviews-57887064c412
 

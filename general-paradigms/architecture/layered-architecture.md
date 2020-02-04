@@ -20,11 +20,12 @@
 - Can allow bad habits to creep in, leave the app in a bad state  and hard to maintain or add features
 - Need strong self discipline to avoid the following
   - but this discipline detrioates when deadlines occcur
+  - Good practices become optional and not at all 
 - Promotes Database-Driven-Design
   - DB is the foundation of Layered Architecture
   - Any application aims is to model behaviour not state
     - behaviour changes state an drives business
-  - Domain logic should be foundation of app
+  - *Domain logic should be foundation of app*
   - The app should start with the domain logic first, once correct then build persistence and web around it
   - ORM frameworks has led to intermixing of domain and persistence
     - using persistence objects in domain services will lead to coupling, especially if used via ORM
@@ -38,7 +39,7 @@
     - The lower layers will grow fat, with more responsibilities
     - Global architectural rules should be enforced by devs and within the build
 - It grows hard to test
-  - Sometimes layers are skipped, ie web access the persistence directly
+  - Sometimes layers are skipped, ie web access the persistence directly wihtout going through domain layer
     - This scatters the domain logic, mixing responsibilities in different layers
   - Means having to mock domain and persistence layer in web layer, making tests complex
     - complex tests means less tests, as no one wants to do them or lack of time
@@ -47,6 +48,7 @@
   - We change what exists more than adding new features
   - Finding where the domain logic is, is vital to get work done
   - architecture should help us navigate easily to the code to change or fix
+  - Services become broad, doing multiple things and lots of dependencies
   - Services become bloated, do lots of things/use cases,
     - This leads to many dependencies, hard  to tests
 - It makes parallel work difficult
@@ -59,6 +61,10 @@
       - As long as no layers are coupled with each other ie database driven design
       - As long as we have narrow services which do one thing
   -
+### Links
+
+- https://www.pixelstech.net/article/1493900728-Benefits-and-Drawback-of-a-Layered-Architecture
+
 
 ## Package structure
 
