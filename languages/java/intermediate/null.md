@@ -21,6 +21,53 @@
 - @NotNull/@Nullable.
   - One of the problems with complex code bases is understanding what are actually valid values. If you’re checking for null parameters, try putting @NotNull on the signature and seeing if null values are ever passed.  If nulls are never passed, you can remove the null check.
 
+### How to handle
+
+- KISS
+  ```java
+  if (Optional.ofNullable(myVariable).isPresent()) // bad
+  if (Objects.nonNull(myVariable)) // better, but still bad
+  if (myVariable != null) // good
+  ```
+- Use Objects Methods as Stream Predicates
+  ```java
+  myStream.filter(Objects::nonNull)
+  myStream.anyMatch(Objects::isNull)
+  ```
+- Never Pass Null as an Argument
+  - Passing null to indicate that there’s no value for a given argument might seem like a viable option. Because:
+    - You need to read the function’s implementation and figure out if it, and potentially every affected function down the way, can handle null value correctly.
+    - You have to always be careful when changing function’s implementation not to throw away something that might handle nulls for its users. Otherwise, you have to search through the whole source code to check if null is being passed anywhere.
+  -  make sure things are safe from the outside
+    - you can give up on the rule when dealing with private methods
+- Validate Public API Arguments
+  - when you’re exposing a public API, you have no control over its users and what they pass to your functions.
+  - always check the arguments being passed to your public APIs for correctness
+  - consider using the requireNonNull function from the Objects class:
+    ```java
+    public Foo(Bar bar, Baz baz) {
+        this.bar = Objects.requireNonNull(bar, "bar must not be null");
+        this.baz = Objects.requireNonNull(baz, "baz must not be null");
+    }
+    ```
+- Use Optional
+  - designed specifically to indicate that a return value might be missing
+  - calling a method with Optional as the return value has to explicitly handle the case when the value is not present.
+- Return Empty Collections Instead of Null
+  - we should avoid returning null or complicating things with Optional and return an empty collection when there are no values to fill it with.
+- Optional Ain’t for Fields
+  - By means of encapsulation, you should have full control over the field's value, including null.
+  - making fields explicitly Optional might bring you weird problems like:
+    - How should you write a constructor or setter for such a field?
+    - You have to deal with the Optional even in cases when you’re sure that the value is there.
+    - How should automappers handle those fields?
+- Use Exceptions Over Nulls
+  - when you might see people using null is exceptional situations.
+  - This is an inherently error prone practice, as critical errors can be omitted or resurface in different places of the system, causing debugging to be a pain.
+  - Therefore, always throw an exception instead of returning null if something went wrong.
+- Test Your Code
+- https://dzone.com/articles/10-tips-to-handle-null-effectively
+
 ## Code smell
 
 - Leads to lots of null checks

@@ -19,3 +19,7 @@ Information about
 - Increasing quality today, will increase velocity tomorrow.
   - Makes code easier to debug and maintain
   - Slow down in feature, will not occur]
+
+## Hype
+
+- https://blog.daftcode.pl/hype-driven-development-3469fc2e9b22

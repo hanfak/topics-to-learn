@@ -28,6 +28,8 @@
 - https://examples.javacodegeeks.com/enterprise-java/servlet/how-servlets-work/
 - https://examples.javacodegeeks.com/enterprise-java/servlet/basics-servlets-tutorial/
 - https://examples.javacodegeeks.com/enterprise-java/servlet/java-servlet-life-cycle-example/
+- https://www.javatpoint.com/servlet-tutorial
+- http://pdf.coreservlets.com/
 
 ## Jetty
 

@@ -25,6 +25,8 @@
 - https://medium.com/@kevincennis/you-re-thinking-about-frameworks-the-wrong-way-83544a337a27
 - http://www.catonmat.net/blog/frameworks-dont-make-sense/
 - http://samatkinson.com/why-i-hate-spring/
+- http://tomasp.net/blog/2015/library-frameworks/
+- https://timperrett.com/2016/11/12/frameworks-are-fundimentally-broken/
 
 ## Framework v library
 

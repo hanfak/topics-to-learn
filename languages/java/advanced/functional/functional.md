@@ -3,6 +3,34 @@
 - https://www.javacodegeeks.com/2017/09/overview-functional-programming.html
 - https://tedvinke.wordpress.com/2017/11/07/functional-java-by-example-part-1-from-imperative-to-declarative/
 
+## ISsues
+
+- Just because you are using Lambda expressions, does not mean you are doing functional programming.
+  - Lambda expressions in Java are simply a less verbose way of creating (slightly constrained) Objects and as such the most likely outcome of adopting Lambda’s without a good understanding of core functional concepts is gnarly, twisted, hard to follow, obfuscated imperative Object Oriented code with a nice concise syntax.
+- Java is not a functional language, it is fundamentally an Object Oriented language that allows us to adopt some functional concepts in so far as we enforce their correct implementation through developer discipline
+
+### To use FP in java correctly
+
+- Make good use of Generic Types
+  - Don’t ignore type parameters, declare them and enforce them everywhere.
+  - Minimize casting and if instanceOfing
+    - Where you do use them centralize each type of cast within a resuable method,
+  - use proper type parameters on the inputs and outputs
+  -  write good tests!
+- Make illegal states unrepresentable in our code.
+  - Avoid nulls,
+    - Optionals
+      - Use sparingly and not for fields (apart from data objects)
+    - Dont allow null fields
+    - USe inheritance
+  - don’t throw Exceptions,
+  - avoid locking and synchronization
+- Make our own data classes immutable and final where possible,
+  - use immutable collections (proper ones).
+  - Avoid instanceof checks where possible, and
+  - where you use them make sure the types are not extensible.
+- Mse libraries that avoid runtime magic and reflection where pragmatically possible.
+
 ## Immutability
 
 - Declare the class as final so it can’t be extended.
@@ -18,6 +46,7 @@
   - Never store references to external, mutable objects passed to the constructor;
     - if necessary, create copies, and store references to the copies.
     - Similarly, create copies of your internal mutable objects when necessary to avoid returning the originals in your methods.
+
 
 ### Links
 - https://stackoverflow.com/questions/50257305/java-making-a-class-immutable

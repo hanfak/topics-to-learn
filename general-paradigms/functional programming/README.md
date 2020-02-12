@@ -30,6 +30,10 @@
 - https://alvinalexander.com/scala/fp-book/benefits-of-functional-programming
 - https://itnext.io/pros-and-cons-of-functional-programming-32cdf527e1c2
 
+## Properties
+
+- 
+
 ## Drawbacks of functional programming
 
 - https://alvinalexander.com/scala/fp-book/disadvantages-of-functional-programming

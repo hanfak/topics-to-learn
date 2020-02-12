@@ -24,6 +24,8 @@
 ## Tips
 
 - https://www.toptal.com/spring/top-10-most-common-spring-framework-mistakes
+- https://spring.io/blog/2015/11/29/how-not-to-hate-spring-in-2016
+- https://dzone.com/articles/spring-di-patterns-the-good-the-bad-and-the-ugly
 
 ## why bad
 
@@ -34,3 +36,4 @@
 - https://softwareengineering.stackexchange.com/questions/42817/why-not-spring-framework
 - https://www.javacodegeeks.com/2019/11/memory-wasted-by-spring-boot-application.html
 - https://dzone.com/articles/perils-of-opinionated-frameworks-like-spring-boot
+- http://samatkinson.com/why-i-hate-spring/

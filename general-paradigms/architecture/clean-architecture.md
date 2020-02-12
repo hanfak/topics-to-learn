@@ -1,6 +1,21 @@
 # Clean Architecture
 
 
+- [Clean Architecture](#clean-architecture)
+	- [Aim:](#aim)
+	- [Description](#description)
+	- [Cost](#cost)
+	- [Package structure](#package-structure)
+		- [Links](#links)
+	- [Use cases and Domain](#use-cases-and-domain)
+	- [Incoming Adpaters (infrastructure, web layer)](#incoming-adpaters-infrastructure-web-layer)
+	- [Outgoing Adpaters (infrastructure, data layer)](#outgoing-adpaters-infrastructure-data-layer)
+	- [Testing Architecture Elements](#testing-architecture-elements)
+	- [Mapping Between Boundaries](#mapping-between-boundaries)
+	- [Assembling the Application](#assembling-the-application)
+	- [Enforcing Architecture Boundaries](#enforcing-architecture-boundaries)
+	- [Taking Shortcuts Consciously](#taking-shortcuts-consciously)
+
 
 Goes by many names
 - hexagonal
@@ -21,6 +36,8 @@ Goes by many names
 - Easier to navigate
 - Can work on domain and usecase, without worrying about low level details such as databases, as we will be dealing with the interfaces
 
+[Top of Page](#clean-architecture)
+
 ## Description
 
 - The core of the architecture contains the domain entities which are accessed by the surrounding use cases.
@@ -39,12 +56,16 @@ Goes by many names
     - input/entry points, drive application, as they call it
     - dataproviders, the applications calls these
 
+[Top of Page](#clean-architecture)
+
 ## Cost
 
 - we have to maintain a model of our application’s entities in each of the layers.
   - that means we have to translate between both representations when the domain layer sends and receives data to and from the persistence layer. The same translation applies between the domain layer and other outer layers.
   - This is good as we are decoupling
   -
+
+[Top of Page](#clean-architecture)
 
 ## Package structure
 
@@ -63,8 +84,7 @@ Goes by many names
     - In order to clearly demarcate the entry points to our application, we might want to hide the actual services between port interfaces nonetheless.
   - For outgoing adapters, like our persistence adapter, we have to make use of the Dependency Inversion Principle to turn the dependency against the direction of the control flow.
 
-
-Example
+### Example
 
 ```
 1 Application
@@ -117,6 +137,9 @@ Example
   - Must know everything about all classes in all the packages which needs to be instantiated
   - The main method lives here to start the application
 - Having multiple modules, ie Account, maps directly to domain driven design and bounded contexts
+
+[Top of Page](#clean-architecture)
+
 
 ### Links
 
@@ -214,6 +237,8 @@ Example
     - This can be a slippery slope, if not thinking about it
     - ie business rules can end up in incoming adapters
 
+[Top of Page](#clean-architecture)
+
 ## Incoming Adpaters (infrastructure, web layer)
 
 - Most applications today have some kind of web interface
@@ -277,6 +302,8 @@ Example
       - so not reused else where
     - Controllers may still share models, but using shared classes from another package makes us think about it more and perhaps we find out that we don’t need half of the fields and create our own, after all.
   - Should have desciptive rich names for controllers, models etc
+
+[Top of Page](#clean-architecture)
 
 ## Outgoing Adpaters (infrastructure, data layer)
 
@@ -345,7 +372,11 @@ Example
   - Can use workflows if something goes wrong with an event, then the failed event is written and can be dealt with by support
   - Use aspect oriented programming
 
+[Top of Page](#clean-architecture)
+
 ## Testing Architecture Elements
+
+[Top of Page](#clean-architecture)
 
 ## Mapping Between Boundaries
 
@@ -430,6 +461,8 @@ Example
   - If we’re working on a query, the “no mapping” strategy is the first choice between the web and application layer and between the application and persistence layer in order to be able to quickly evolve the code without mapping overhead
   - As soon as we have to deal with web or persistence issues in the application layer, however, we move to a “two-way” mapping strategy between the web and application layer or the application layer and persistence layer, respectively.
 
+[Top of Page](#clean-architecture)
+
 ## Assembling the Application
 
 - The application wont work, unless we instantiate all the classes that do the work
@@ -477,6 +510,7 @@ Example
     - If the configuration class is not within the same package as the classes of the beans it creates (the persistence adapter classes in this case), those classes must be public.
       - To restrict visibility, we can use packages as module boundaries and create a dedicated configuration class within each package. This way, we cannot use sub-packages,
 
+[Top of Page](#clean-architecture)
 
 ## Enforcing Architecture Boundaries
 
@@ -541,6 +575,8 @@ Example
         - Can put each module into its own code repository, allowing different teams to maintain different modules.
   - Now we have to thinks about our architecture
 
+[Top of Page](#clean-architecture)
+
 ## Taking Shortcuts Consciously
 
 - Taking shortcuts can lead to technical debt
@@ -595,4 +631,6 @@ Example
     - If CRUD app grows, then we start to add domain logic directly to the outgoing adapter. Spreading the domain logic all over the app
     - to prevent boilerplate pass-through services, we might choose to skip the application services for simple CRUD use cases after all
     - Should introduce application service as soon business logic occurs
-  -
+  
+
+[Top of Page](#clean-architecture)

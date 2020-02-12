@@ -80,3 +80,9 @@
 - https://mydeveloperplanet.com/2018/02/07/java-9-modules-directives-part-3/
 - Clean architecture
   - https://medium.com/slalom-engineering/clean-architecture-with-java-11-f78bba431041
+- https://www.baeldung.com/java-9-modularity
+
+
+## Migration
+
+- https://www.romexsoft.com/blog/migrate-to-java-9/

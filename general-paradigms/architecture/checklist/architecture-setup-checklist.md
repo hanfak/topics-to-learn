@@ -274,6 +274,9 @@
   - Vault
 - Automating environments
   - Terraform
+- Expiry dates
+  - certifactes, licenses, secrets
+  - When do they occur? Is there a reminder - alerting system, emails etc?
 
 [Top of Page](#checklist-for-new-project)
 
