@@ -1,6 +1,6 @@
 # Hexagonal architecture
 
-![](hexagonal-architecture.png)
+<img src="../diagram/hexagonal-architecture.png" alt="hexagonal-architecture.png" width="700">
 
 - Within the hexagon, we find our domain entities and the use cases that work with them.
   - he hexagon has no outgoing dependencies, all dependencies point inwards

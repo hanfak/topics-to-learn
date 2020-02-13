@@ -58,7 +58,7 @@ Testing is baked into everything I do. We write test first and have testers do c
 
 ## Trophy Pyramid
 
-<img src="/testing-trophy.png" alt="testing-trophy.png" width="700">
+<img src="testing-trophy.png" alt="testing-trophy.png" width="700">
 
 - ROI is better to have more integration tests, than unit tests.
   - Int tests cost more and slower than unit tests. But need to write more unit tests, to match one Int test
