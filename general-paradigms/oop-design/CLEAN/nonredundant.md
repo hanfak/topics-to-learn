@@ -21,6 +21,3 @@
 - redundency is a repetition of intent
 - We are dealing with bugs and changes only once and in one location
 - If I have to write the same test over and over, I have dependency issues
-
-
-9?Fylu@2aKxbd

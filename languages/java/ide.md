@@ -1,5 +1,19 @@
 # IDE - Intellij
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [IDE - Intellij](#ide-intellij)
+	- [Shortcuts](#shortcuts)
+		- [Live templates](#live-templates)
+		- [Links](#links)
+	- [Setup/preferences](#setuppreferences)
+	- [Plugins](#plugins)
+	- [Scratch Files](#scratch-files)
+	- [Links](#links)
+	- [Other IDEs](#other-ides)
+
+<!-- /TOC -->
+
 I exclusively use Intellij as an IDE for developing code with either java, javascript, bash, sql and scala. It has many plugins that help with development and lots of shortcuts to help develop and refactor code effectively.
 
 ## Shortcuts

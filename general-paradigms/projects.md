@@ -1,5 +1,33 @@
 # Projects and Software types
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Projects and Software types](#projects-and-software-types)
+	- [Greenfield](#greenfield)
+	- [Brownfield](#brownfield)
+	- [Enterprise software](#enterprise-software)
+		- [Common features](#common-features)
+		- [Links](#links)
+	- [Consumer/application software](#consumerapplication-software)
+		- [Individual user](#individual-user)
+		- [Business/organisation user](#businessorganisation-user)
+	- [System software](#system-software)
+	- [Middleware](#middleware)
+	- [Front end](#front-end)
+	- [Back end](#back-end)
+	- [web services](#web-services)
+	- [web applications/ web sites](#web-applications-web-sites)
+	- [SOA - service oriented architecture](#soa-service-oriented-architecture)
+	- [SOAP](#soap)
+	- [SaaS](#saas)
+	- [PaaS](#paas)
+	- [FaaS](#faas)
+	- [Mobile apps](#mobile-apps)
+	- [desktop apps](#desktop-apps)
+	- [Links](#links)
+
+<!-- /TOC -->
+
 What an application is:
   - a model of the rules or “policies” that govern the business in order to make it easier for the users to interact with them.
 

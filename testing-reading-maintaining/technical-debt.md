@@ -1,5 +1,16 @@
 # Technical Debt
 
+
+- [Technical Debt](#technical-debt)
+	- [What](#what)
+	- [Handling](#handling)
+	- [Causes of technical debt](#causes-of-technical-debt)
+	- [Examples of technical debt](#examples-of-technical-debt)
+	- [Handling technical debt](#handling-technical-debt)
+	- [Issues with technical debt](#issues-with-technical-debt)
+
+## What
+
 - that when it is accrued, interest must be paid on it over time. The cost of paying this interest reduces the amount of resources available that could otherwise be spent adding new features and business value.
 - when there is too much Technical Debt and all effort is being spent on paying the interest, a system may have to be rewritten before new features can start to be added again.
 - Slows down the ability to change software

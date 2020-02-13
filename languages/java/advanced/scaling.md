@@ -1,3 +1,5 @@
+# Scaling
+
 low latency, high throughput
 
 - https://blog.jooq.org/2015/02/05/top-10-easy-performance-optimisations-in-java/

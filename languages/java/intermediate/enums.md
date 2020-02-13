@@ -1,5 +1,23 @@
 # Enums
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Enums](#enums)
+	- [What](#what)
+	- [When to use](#when-to-use)
+	- [Properties](#properties)
+	- [To use an enum:](#to-use-an-enum)
+	- [Use of ordinals.](#use-of-ordinals)
+	- [Implementing an inteface](#implementing-an-inteface)
+	- [Enum methods](#enum-methods)
+	- [Singleton](#singleton)
+		- [Why is it better?](#why-is-it-better)
+
+<!-- /TOC -->
+
+
+## What
+
 A list of ordered named constants. The constants are of type of that enum type. Cannot instantiate enum type.
 
 ```java

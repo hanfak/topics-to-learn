@@ -1,5 +1,21 @@
 # Date and Time
 
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Date and Time](#date-and-time)
+	- [LocalDate](#localdate)
+	- [LocalTime](#localtime)
+	- [LocalDateTime](#localdatetime)
+		- [Links](#links)
+	- [ZoneDateTime](#zonedatetime)
+	- [Duration](#duration)
+	- [Time measurement](#time-measurement)
+	- [links](#links)
+
+<!-- /TOC -->
+
+
 - Use different libraries for differnt needs
   - `LocalDate` for just the date
   - `LocalTime` for just the time

@@ -1,5 +1,17 @@
 # What to test
 
+- [What to test](#what-to-test)
+	- [General](#general)
+	- [What to test](#what-to-test)
+	- [Unit tests](#unit-tests)
+	- [Integration/module tests](#integrationmodule-tests)
+	- [End to End tests](#end-to-end-tests)
+	- [Static Analysis tests](#static-analysis-tests)
+	- [Acceptance/Documentation (end to end, integration or unit)](#acceptancedocumentation-end-to-end-integration-or-unit)
+	- [Black box tests](#black-box-tests)
+	- [Acceptance/end to end or unit](#acceptanceend-to-end-or-unit)
+	- [Links](#links)
+
 ## General
 
 - One behaviour per test

@@ -1,3 +1,5 @@
+# Static factory method
+
 - https://dzone.com/articles/consider-static-factory-methods-instead-of-constru
 
 ## Negatives

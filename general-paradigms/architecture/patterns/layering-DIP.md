@@ -1,5 +1,21 @@
 # Layering & Dependency Inversion Principle
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Layering & Dependency Inversion Principle](#layering-dependency-inversion-principle)
+	- [Moving into layers](#moving-into-layers)
+	- [Layers Vs tiers](#layers-vs-tiers)
+	- [Fowler: 3 Layers - Presentation, Domain, Data source](#fowler-3-layers-presentation-domain-data-source)
+		- [Presentation](#presentation)
+		- [Data Source](#data-source)
+		- [Domain/business logic](#domainbusiness-logic)
+		- [interaction](#interaction)
+		- [When to layer](#when-to-layer)
+		- [Dependencies](#dependencies)
+		- [Where to run layers](#where-to-run-layers)
+
+<!-- /TOC -->
+
 ## Moving into layers
 
 - https://www.youtube.com/watch?v=v4dIcL0rVbs

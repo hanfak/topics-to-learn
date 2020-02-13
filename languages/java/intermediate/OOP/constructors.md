@@ -1,5 +1,22 @@
 # Constructors
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Constructors](#constructors)
+	- [What](#what)
+	- [Default/hidden constructor](#defaulthidden-constructor)
+	- [Paramatised constructor](#paramatised-constructor)
+	- [Overlaoding](#overlaoding)
+	- [Private constructors](#private-constructors)
+	- [Telescoping](#telescoping)
+	- [Static initialization/ static factory methods](#static-initialization-static-factory-methods)
+	- [initialization Block](#initialization-block)
+		- [Links](#links)
+
+<!-- /TOC -->
+
+## What
+
 - It is a public method, with same name and case as the class. It is invoke when newing up an instance of the class.
 
 

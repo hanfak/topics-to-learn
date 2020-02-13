@@ -1,5 +1,23 @@
 # Spring
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Spring](#spring)
+	- [What](#what)
+	- [Why use](#why-use)
+	- [Tomcat and spring](#tomcat-and-spring)
+	- [Spring Batch](#spring-batch)
+	- [Multi module](#multi-module)
+	- [Profiles](#profiles)
+	- [Tips](#tips)
+	- [why bad](#why-bad)
+
+<!-- /TOC -->
+
+## What
+
+## Why use
+
 
 - https://www.javacodegeeks.com/2019/02/spring-dependency-injection-inversion-control.html
 - https://dzone.com/articles/spring-framework-tutorial-for-beginners-2

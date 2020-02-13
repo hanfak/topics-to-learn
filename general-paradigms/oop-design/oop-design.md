@@ -1,5 +1,18 @@
 ## OOP Design
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+	- [OOP Design](#oop-design)
+	- [Use of diagramming and planning](#use-of-diagramming-and-planning)
+	- [OO features](#oo-features)
+	- [Design Principles](#design-principles)
+		- [Links](#links)
+	- [SOLID Principles](#solid-principles)
+		- [Links and Books](#links-and-books)
+	- [links](#links)
+
+<!-- /TOC -->
+
 Writing a program to do something is the first and easy part, writing it and change it (refactoring it) with good design and knowing the trade offs is different.
 
 The only constant in application is change. That is why the soft is in software. To make change easy/fast/efficient/cheap we need software to be designed with this in mind. Software design helps with making the software more readable/maintainable/extendable with out increasing costs or time for reading/maintaining/extending.
@@ -36,6 +49,7 @@ Using an OO programming language does not mean that you are programming in a OO 
 - inheritence
 
 - https://stackify.com/oops-concepts-in-java/
+
 ## Design Principles
 
 Implementing these design principles to have better code
@@ -83,8 +97,6 @@ Implementing these design principles to have better code
 - https://dzone.com/articles/object-oriented-programming-concepts-with-a-system
 
 ## links
-
-
 
 - http://blog.thecodewhisperer.com/permalink/putting-an-age-old-battle-to-rest
 - https://www.tonymarston.net/php-mysql/oop-for-heretics.html#definitions

@@ -1,5 +1,25 @@
 # Excuting code
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Excuting code](#excuting-code)
+	- [Have main method](#have-main-method)
+	- [Use command line for single class](#use-command-line-for-single-class)
+	- [Use intellij](#use-intellij)
+	- [Use jar](#use-jar)
+	- [Manifest file](#manifest-file)
+		- [using maven](#using-maven)
+			- [Build jar](#build-jar)
+			- [Run jar](#run-jar)
+		- [Command line](#command-line)
+			- [creating jar](#creating-jar)
+			- [Running jar](#running-jar)
+			- [Running main() method](#running-main-method)
+	- [Use Docker](#use-docker)
+		- [Using maven fabric8](#using-maven-fabric8)
+
+<!-- /TOC -->
+
 ## Have main method
 
 To run a Java app a main() method must be supplied. This is where all the code is wired up (objects newed up) and methods run. It is the entry point of a Java app.

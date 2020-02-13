@@ -1,15 +1,33 @@
 # Agile
 
+- [Agile](#agile)
+	- [Overview](#overview)
+		- [The agile values](#the-agile-values)
+		- [The principles behind agile values:](#the-principles-behind-agile-values)
+		- [Links](#links)
+	- [Team](#team)
+	- [Backlog](#backlog)
+	- [Iterative development](#iterative-development)
+	- [Stand ups](#stand-ups)
+	- [Retrospectives](#retrospectives)
+	- [Done](#done)
+	- [Cardwall](#cardwall)
+		- [Links](#links)
+	- [User Stories](#user-stories)
+	- [Autamated Tests](#autamated-tests)
+	- [Showcases](#showcases)
+	- [Pace](#pace)
+
 ## Overview
 
-The agile values
+### The agile values
 
 - Individuals and interactions over processes and tools
 - Working software over comprehensive documentation
 - Customer collaboration over contract negotiation
 - Responding to change over following a plan
 
-The principles behind agile values:
+### The principles behind agile values:
 
 - Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
 - Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage.

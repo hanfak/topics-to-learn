@@ -1,5 +1,21 @@
 # 9 Rules of Thumb of Dubugging
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [9 Rules of Thumb of Dubugging](#9-rules-of-thumb-of-dubugging)
+	- [List of Rules](#list-of-rules)
+	- [Understand The system](#understand-the-system)
+	- [Make it fail](#make-it-fail)
+	- [Quit thinking and look](#quit-thinking-and-look)
+	- [Divide and conquer](#divide-and-conquer)
+	- [Change one thing at a time](#change-one-thing-at-a-time)
+	- [Keep an audit trail](#keep-an-audit-trail)
+	- [Check the Plug](#check-the-plug)
+	- [Get a fresh view](#get-a-fresh-view)
+	- [If you didn't fix it, it ain't fixed](#if-you-didnt-fix-it-it-aint-fixed)
+
+<!-- /TOC -->
+
 - Debugging: Figuring out why a design doesnt work as planned
 - troubleshooting: Figuring out what's broken when the design is  known to be good
 - Once you have bugs, you have to detect them

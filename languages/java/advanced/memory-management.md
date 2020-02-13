@@ -1,5 +1,21 @@
 # Memory Management
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Memory Management](#memory-management)
+	- [Debugging](#debugging)
+	- [Heap and stack](#heap-and-stack)
+		- [Defintions](#defintions)
+	- [GArbage collection](#garbage-collection)
+	- [Memory leaks](#memory-leaks)
+	- [Heap dumps](#heap-dumps)
+	- [Graphs](#graphs)
+	- [Jmx](#jmx)
+	- [Thread dumps](#thread-dumps)
+	- [Jstat](#jstat)
+
+<!-- /TOC -->
+
 - https://dzone.com/articles/java-memory-management
 - http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
 - https://www.journaldev.com/4098/java-heap-space-vs-stack-memory

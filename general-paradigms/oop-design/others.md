@@ -1,3 +1,14 @@
+# Other principles
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Other principles](#other-principles)
+	- [KISS - Keep it simple stupid](#kiss-keep-it-simple-stupid)
+	- [Don’t Repeat Yourself (DRY)](#dont-repeat-yourself-dry)
+	- [You Aren’t Gonna Need It (YAGNI)](#you-arent-gonna-need-it-yagni)
+
+<!-- /TOC -->
+
 ## KISS - Keep it simple stupid
 
 - that code that is as simple as possible is better than code that is more complex.

@@ -1,5 +1,32 @@
 # Functional Programming
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Functional Programming](#functional-programming)
+	- [ISsues](#issues)
+		- [To use FP in java correctly](#to-use-fp-in-java-correctly)
+	- [Immutability](#immutability)
+		- [Links](#links)
+	- [streams](#streams)
+		- [Checked exceptions](#checked-exceptions)
+		- [Map and FlatMap](#map-and-flatmap)
+	- [Collectors](#collectors)
+	- [Method references](#method-references)
+	- [lambdas/ Annoynmous functions](#lambdas-annoynmous-functions)
+	- [Functions](#functions)
+	- [Functional interfaces](#functional-interfaces)
+		- [Links](#links)
+	- [Moving from imperative to functional style](#moving-from-imperative-to-functional-style)
+	- [Optional](#optional)
+		- [Links](#links)
+	- [Comparators](#comparators)
+	- [currying and partial functions](#currying-and-partial-functions)
+		- [Links](#links)
+	- [Parallel an async](#parallel-an-async)
+	- [Links](#links)
+
+<!-- /TOC -->
+
 - https://www.javacodegeeks.com/2017/09/overview-functional-programming.html
 - https://tedvinke.wordpress.com/2017/11/07/functional-java-by-example-part-1-from-imperative-to-declarative/
 

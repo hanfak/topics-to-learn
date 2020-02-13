@@ -1,3 +1,21 @@
+# a-philosophy-of-software-design-notes
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [a-philosophy-of-software-design-notes](#a-philosophy-of-software-design-notes)
+	- [From you tube talk](#from-you-tube-talk)
+	- [Nature of complexity](#nature-of-complexity)
+	- [Working code is not enough](#working-code-is-not-enough)
+	- [Modules should be deep](#modules-should-be-deep)
+	- [Information Hiding](#information-hiding)
+	- [General purpose modules are deeper](#general-purpose-modules-are-deeper)
+	- [Different layer, different abstraction](#different-layer-different-abstraction)
+	- [Pull complexity downwards](#pull-complexity-downwards)
+	- [Better together or better appart](#better-together-or-better-appart)
+	- [Define Errors out of existence](#define-errors-out-of-existence)
+
+<!-- /TOC -->
+
 ## From you tube talk
 
 https://www.youtube.com/watch?v=bmSAYlu0NcY
@@ -457,4 +475,4 @@ Quotes
   - Define the implementation to avoid throwing exception
 - Example
   - When deleting do it async so that no need to check for other processes that are using it. Rather, mark it for deletion and no other process can use it and wait for the file to be finished if being used, then delete.
-- 
+-

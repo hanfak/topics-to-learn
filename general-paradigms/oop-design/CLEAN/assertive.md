@@ -1,4 +1,4 @@
-## code is assertive
+# code is assertive
 
 - It manages it's own responsibilities
 - Entities should be assertive instead of inquisitive

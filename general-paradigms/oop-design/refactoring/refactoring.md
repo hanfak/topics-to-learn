@@ -1,5 +1,27 @@
 # Refactoring
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Refactoring](#refactoring)
+	- [aims](#aims)
+	- [Slicing big functions](#slicing-big-functions)
+		- [Extract for loops](#extract-for-loops)
+		- [Extract intensive uses of the same object](#extract-intensive-uses-of-the-same-object)
+		- [Raise the level of abstraction in unbalanced if statements](#raise-the-level-of-abstraction-in-unbalanced-if-statements)
+		- [Lump up pieces of data that stick together](#lump-up-pieces-of-data-that-stick-together)
+		- [Follow the hints in the layout of the code](#follow-the-hints-in-the-layout-of-the-code)
+	- [Slicing big objects](#slicing-big-objects)
+	- [Better naming](#better-naming)
+	- [Remove duplication](#remove-duplication)
+	- [nested if statements](#nested-if-statements)
+	- [Making side effects visible](#making-side-effects-visible)
+	- [Conditional to polymorphism](#conditional-to-polymorphism)
+	- [replace method with method object](#replace-method-with-method-object)
+	- [Links](#links)
+	- [Book](#book)
+
+<!-- /TOC -->
+
 - Generally part of TDD cycle
 - Cannot refactor everything, bit by bit
   - When working on new feature, or fixing bugs

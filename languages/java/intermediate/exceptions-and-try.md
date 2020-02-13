@@ -1,6 +1,29 @@
 # Exceptions
 
-- Types
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Exceptions](#exceptions)
+	- [What](#what)
+	- [Why Use](#why-use)
+	- [Types](#types)
+	- [List of Exceptions](#list-of-exceptions)
+	- [Throwing Exceptions](#throwing-exceptions)
+	- [Handle exceptions](#handle-exceptions)
+	- [try - catch](#try-catch)
+	- [Anti patterns to handling exceptions](#anti-patterns-to-handling-exceptions)
+	- [checked exceptions](#checked-exceptions)
+		- [Why bad](#why-bad)
+
+<!-- /TOC -->
+
+## What
+
+
+## Why Use
+
+## Types
+
   - Runtime/unchecked
   - checked
   - errors
@@ -11,9 +34,7 @@
 ## List of Exceptions
 
 - https://stackify.com/top-java-software-errors/
-
-
-https://dzone.com/articles/ignore-exceptions-in-java
+- https://dzone.com/articles/ignore-exceptions-in-java
 
 ## Throwing Exceptions
   - `throw`

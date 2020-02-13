@@ -1,5 +1,22 @@
 # API
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [API](#api)
+	- [What](#what)
+	- [Code base](#code-base)
+	- [Http](#http)
+	- [Cosumner contract testing](#cosumner-contract-testing)
+	- [Use of status probes](#use-of-status-probes)
+	- [Links](#links)
+	- [Design](#design)
+	- [Versioning](#versioning)
+	- [REST](#rest)
+
+<!-- /TOC -->
+
+## What
+
 - An interface, which defines how to use the service, and hides/abstracts the implementation
 
 

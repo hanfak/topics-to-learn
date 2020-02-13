@@ -1,5 +1,27 @@
 # Mobile Architecture Checklist
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Mobile Architecture Checklist](#mobile-architecture-checklist)
+	- [Design Considerations](#design-considerations)
+	- [Authentication and Authorization](#authentication-and-authorization)
+	- [Caching](#caching)
+	- [Communication](#communication)
+	- [Configuration Management](#configuration-management)
+	- [Data Access](#data-access)
+	- [Debugging](#debugging)
+	- [Deployment](#deployment)
+	- [Device](#device)
+	- [Exception Management](#exception-management)
+	- [Logging](#logging)
+	- [Porting](#porting)
+	- [Power](#power)
+	- [Synchronization](#synchronization)
+	- [User Interface (UI)](#user-interface-ui)
+	- [Performance Considerations](#performance-considerations)
+
+<!-- /TOC -->
+
 ## Design Considerations
 
 - What device types you will support?

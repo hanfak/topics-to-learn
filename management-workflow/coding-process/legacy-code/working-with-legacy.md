@@ -1,6 +1,27 @@
 # Working with legacy code
 
-What?
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Working with legacy code](#working-with-legacy-code)
+	- [What?](#what)
+	- [How to approach legacy code](#how-to-approach-legacy-code)
+		- [Attitude](#attitude)
+	- [Understand Legacy code](#understand-legacy-code)
+		- [Get an overivew of code](#get-an-overivew-of-code)
+		- [Reading code faster](#reading-code-faster)
+		- [Understand code in detail](#understand-code-in-detail)
+	- [Knowledge](#knowledge)
+		- [Knowledge is Power](#knowledge-is-power)
+		- [How to make knowledge flow in your team](#how-to-make-knowledge-flow-in-your-team)
+		- [The Dailies](#the-dailies)
+	- [Cutting through legacy code](#cutting-through-legacy-code)
+		- [How to find the source of a bug without knowing a lot of code](#how-to-find-the-source-of-a-bug-without-knowing-a-lot-of-code)
+		- [What to fix and not fix](#what-to-fix-and-not-fix)
+		- [refactoring techniques to reduce function size](#refactoring-techniques-to-reduce-function-size)
+
+<!-- /TOC -->
+
+## What?
 
 - “source code that relates to a no-longer supported or manufactured operating system or other computer technology.”
 -  legacy code as code without tests

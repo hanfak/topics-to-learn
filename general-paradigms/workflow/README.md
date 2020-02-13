@@ -11,8 +11,7 @@
 
 ## Types
 
-![workflowpatterns](general-paradigms/workflow/workflows-examples.jpg)
-
+<img src="workflows-examples.jpg" alt="workflows-examples.jpg" width="700">
 
 - (a) Sequential
   - Several tasks follow after one another

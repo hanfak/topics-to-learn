@@ -1,5 +1,22 @@
 # Java internals
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Java internals](#java-internals)
+	- [Links](#links)
+	- [compiler](#compiler)
+	- [JVM](#jvm)
+		- [links](#links)
+		- [Byte code](#byte-code)
+		- [Class Loader](#class-loader)
+	- [JDK/JRE/JVM](#jdkjrejvm)
+	- [Just In Time Compiler](#just-in-time-compiler)
+	- [Linker?????](#linker)
+
+<!-- /TOC -->
+
+
+## Links
 
 - https://www.javaworld.com/article/2076075/learn-java/core-java-learn-java-from-the-ground-up.html
 - https://www.javacodegeeks.com/2018/04/jvm-architecture-execution-engine-in-jvm.html

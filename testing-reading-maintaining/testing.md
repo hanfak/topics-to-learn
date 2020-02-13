@@ -1,6 +1,36 @@
 # Testing
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Testing](#testing)
+	- [What are tests](#what-are-tests)
+	- [Why write tests](#why-write-tests)
+	- [Methodologies](#methodologies)
+	- [Test Driven Development (TDD)](#test-driven-development-tdd)
+	- [Acceptance Test Driven Development (ATDD)](#acceptance-test-driven-development-atdd)
+	- [Testing pyramid](#testing-pyramid)
+	- [Trophy Pyramid](#trophy-pyramid)
+	- [Links](#links)
+	- [Types of Tests](#types-of-tests)
+		- [White Box Testing](#white-box-testing)
+	- [Builds](#builds)
+	- [Making code more testable](#making-code-more-testable)
+		- [Black Box Testing](#black-box-testing)
+	- [Stubs](#stubs)
+	- [mockito](#mockito)
+	- [Junit](#junit)
+		- [AssertJ](#assertj)
+	- [yatspec](#yatspec)
+	- [Writing Tests](#writing-tests)
+	- [links](#links)
+
+<!-- /TOC -->
+
 Testing is baked into everything I do. We write test first and have testers do checks on our applications.
+
+## What are tests
+
+- Make sure code does what it is meant to do
 
 ## Why write tests
 

@@ -1,7 +1,12 @@
 # Waterfall Methodology
 
+
+
+## What
+
 - Way of creating software, where software was planend, built and tested in distinct phases.
 - Figuring all things up front
+- Built on old engineering concepts for hardware/buildings etc
 
 
 ## Issues

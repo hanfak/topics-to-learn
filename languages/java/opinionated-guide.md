@@ -1,6 +1,50 @@
-Not Your Father's Java: An Opinionated Guide to Modern Java Development, Part 1
-By Ron
-This is part 1 in a three-part series: part 2, part 3
+Opinionated guide
+
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Not Your Father's Java: An Opinionated Guide to Modern Java Development, Part 1](#not-your-fathers-java-an-opinionated-guide-to-modern-java-development-part-1)
+- [The JVM](#the-jvm)
+- [The Build](#the-build)
+	- [Gradle init directory structure](#gradle-init-directory-structure)
+- [The IDE](#the-ide)
+- [Documenting Your Code in Markdown](#documenting-your-code-in-markdown)
+- [Write Succinct Code with Java 8](#write-succinct-code-with-java-8)
+- [Simple Lightweight Concurrency with Fibers](#simple-lightweight-concurrency-with-fibers)
+- [Fault-Tolerant Actors and Hot Code Swapping](#fault-tolerant-actors-and-hot-code-swapping)
+- [Advanced Topic: Pluggable Types](#advanced-topic-pluggable-types)
+- [Wrapping Up (For Now)](#wrapping-up-for-now)
+- [An Opinionated Guide to Modern Java, Part 2: Deployment, Monitoring & Management, Profiling and Benchmarking](#an-opinionated-guide-to-modern-java-part-2-deployment-monitoring-management-profiling-and-benchmarking)
+- [Preamble](#preamble)
+- [Modern Java Packaging and Deployment](#modern-java-packaging-and-deployment)
+- [Capsule](#capsule)
+- [Logging](#logging)
+- [Monitoring and Management with jcmd and jstat](#monitoring-and-management-with-jcmd-and-jstat)
+- [Monitoring and Management with JMX](#monitoring-and-management-with-jmx)
+	- [Jolokia](#jolokia)
+- [Easy Health and Performance Monitoring with Metrics](#easy-health-and-performance-monitoring-with-metrics)
+- [Profiling](#profiling)
+- [Advanced Topic: Profiling and Debugging with Byteman](#advanced-topic-profiling-and-debugging-with-byteman)
+- [Advanced Topic: Benchmarking with JMH](#advanced-topic-benchmarking-with-jmh)
+- [So, What Have We Learned So Far?](#so-what-have-we-learned-so-far)
+- [An Opinionated Guide to Modern Java, Part 3: Web Development](#an-opinionated-guide-to-modern-java-part-3-web-development)
+- [Preamble](#preamble)
+- [Introduction to Modern Java Web Development](#introduction-to-modern-java-web-development)
+- [HTTP Services with JAX-RS and Dropwizard](#http-services-with-jax-rs-and-dropwizard)
+- [Dropwizrd](#dropwizrd)
+- [HTTP Clients](#http-clients)
+- [Database Access](#database-access)
+	- [JDBI](#jdbi)
+	- [JOOQ](#jooq)
+- [Dependency Injection](#dependency-injection)
+	- [Dagger](#dagger)
+- [Advanced Topic: Blocking vs. Non-blocking or Synchronous vs. Asynchronous](#advanced-topic-blocking-vs-non-blocking-or-synchronous-vs-asynchronous)
+- [Advanced Topic: Interactive Web Services with Web Actors](#advanced-topic-interactive-web-services-with-web-actors)
+
+<!-- /TOC -->
+
+
+# Not Your Father's Java: An Opinionated Guide to Modern Java Development, Part 1
 
 More working, useful code has been written in the Java programming language than in any other in history, with the possible exceptions of C and COBOL. When Java was released almost 20 years ago, it took the software world by storm. It was **a simpler, safer, alternative to C++, and some time later its performance caught up, too** (depending on the exact usage, a large Java program can be slightly slower, as fast, or a little faster than a comparable C++ codebase). It offered truly tremendous productivity benefits over C++, while sacrificing very little (if anything at all) in return.
 

@@ -1,4 +1,30 @@
 # Looping/Iterating
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Looping/Iterating](#loopingiterating)
+	- [What](#what)
+	- [While](#while)
+	- [Do While](#do-while)
+	- [For](#for)
+		- [Old/basic](#oldbasic)
+		- [New/enhanced](#newenhanced)
+	- [break statement](#break-statement)
+	- [continue statement](#continue-statement)
+	- [Recursion](#recursion)
+	- [Nested loops](#nested-loops)
+			- [Links](#links)
+	- [for](#for)
+	- [while](#while)
+	- [do while](#do-while)
+	- [break, continue](#break-continue)
+	- [Nested loops](#nested-loops)
+	- [other](#other)
+
+<!-- /TOC -->
+
+## What
+
 - Repeating the same task
 - Doing the same thing across a data structure
 - ```for```/```while```/```do while``` (imperative)
@@ -12,6 +38,7 @@ while(booleanExpression) {
   //body
 }
 ```
+
 - need to ensure that loop is terminated
   - what the booleanExpression is for
   - Can make booleanExpression = true, and loop will be infinite
@@ -20,11 +47,13 @@ while(booleanExpression) {
 ## Do While
 
 - Format
+-
 ```java
 do {
   //body
 } while(booleanExpression)
 ```
+
 - similar to while loop, but always does one execution of the body first.
 
 ## For
@@ -32,11 +61,13 @@ do {
 ### Old/basic
 
 - Format
+-
 ```java
 for(initialization; booleanExpression; updateStatement) {
   //body
 }
 ```
+
 - Not good for functional style as initialization has mutated variable.
 - initialization can declared in the loop, and has scope just for the for loop.
   - Can declared outside of loop, initialized in loop and thus have scope inside nad outside of loop
@@ -50,17 +81,20 @@ for(initialization; booleanExpression; updateStatement) {
 
 - aka for-each loop
 -format
+
 ```java
 for (datatype instance : collection) {
   //body...
 }
 ```
+
 - `collection` must implement Iterable interface
-- 
+-
 
 ## break statement
 
 -  using a label (which is optional)
+
 ```java
 aLabel: while (x > 5) {
   // some logic
@@ -70,6 +104,7 @@ aLabel: while (x > 5) {
   }
 }
 ```
+
   - This will break out of the top level loop instead of inner loop where the break is set.
 - used in while/do while/switch/ for
 
@@ -88,21 +123,25 @@ aLabel: while (x > 5) {
 #### Links
 
 ## for
+
 - https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html
 - https://www.javatpoint.com/java-for-loop
 - https://www.tutorialspoint.com/java/java_for_loop.htm
 
 
 ## while
+
 - https://www.javatpoint.com/java-while-loop
 - https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html
 - https://www.tutorialspoint.com/java/java_while_loop.htm
 
 ## do while
+
 - https://www.javatpoint.com/java-do-while-loop
 - https://www.tutorialspoint.com/java/java_do_while_loop.htm
 
 ## break, continue
+
 - https://www.javatpoint.com/java-break
 - https://www.javatpoint.com/java-continue
 

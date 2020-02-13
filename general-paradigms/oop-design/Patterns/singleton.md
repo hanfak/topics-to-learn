@@ -1,5 +1,18 @@
 # Singleton
 
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Singleton](#singleton)
+	- [What](#what)
+	- [Why use Singleton](#why-use-singleton)
+	- [Disadvantages of Singleton](#disadvantages-of-singleton)
+	- [Links](#links)
+
+<!-- /TOC -->
+
+## What
+
 - A creational pattern, which onyl creates one and only one instance of a class. If instantiating another object, and an object already exists, it will return the object already created.
 - This pattern involves a single class which is responsible for creating an object while making sure that only one object gets created.
 - When you use this pattern, you define an object that will exist across all application scope and that you can easily access from anywhere in the code at any time

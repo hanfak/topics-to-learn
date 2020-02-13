@@ -1,5 +1,17 @@
 # Comparators
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Comparators](#comparators)
+	- [Comparable interface](#comparable-interface)
+		- [Links](#links)
+	- [Comparators](#comparators)
+		- [Links](#links)
+		- [Collection.sort or stream.sorted()](#collectionsort-or-streamsorted)
+	- [Links](#links)
+
+<!-- /TOC -->
+
 ## Comparable interface
 
 - One method to implement, `compareTo`

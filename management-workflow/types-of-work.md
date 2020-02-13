@@ -1,5 +1,31 @@
 # Type of work
 
+- [Type of work](#type-of-work)
+	- [Feature addition](#feature-addition)
+	- [Turning on features](#turning-on-features)
+	- [Bug fixes](#bug-fixes)
+	- [Business research](#business-research)
+	- [Config changes](#config-changes)
+	- [Data warehouse](#data-warehouse)
+	- [Spiking](#spiking)
+	- [Documentation](#documentation)
+	- [Devops - general](#devops-general)
+	- [Devops - application specific](#devops-application-specific)
+	- [Technical debt](#technical-debt)
+	- [Self learning / innovation time](#self-learning-innovation-time)
+	- [Hack days](#hack-days)
+	- [Conferences or courses](#conferences-or-courses)
+	- [New application or breaking an application](#new-application-or-breaking-an-application)
+	- [Emails](#emails)
+	- [Meetings](#meetings)
+	- [Non team work](#non-team-work)
+	- [CI/CD builds/steps are failing](#cicd-buildssteps-are-failing)
+	- [Testing](#testing)
+	- [Deploying applications](#deploying-applications)
+	- [Release cover](#release-cover)
+  - [Technical Support](#technical-support)
+
+
 ## Feature addition
 
 - Adding new features required for the business, ops, pipeline, technical requirements
@@ -103,3 +129,5 @@
 
 - over night, on call to resolve any Issues (ie for bring app down, to do release)
 - During the day (ie for rolling releases, no downtime)
+
+## Technical Supports

@@ -1,5 +1,18 @@
 # Interfaces
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Interfaces](#interfaces)
+	- [What?](#what)
+	- [Why use?](#why-use)
+	- [Override method](#override-method)
+	- [Inheritence](#inheritence)
+	- [Default Methods (JAVA8 +)](#default-methods-java8-)
+	- [other](#other)
+	- [Links](#links)
+
+<!-- /TOC -->
+
 ## What?
 
 - is an abstract type that is used to specify a behavior that classes must implement.

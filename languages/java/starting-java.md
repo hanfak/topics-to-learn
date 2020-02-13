@@ -1,22 +1,26 @@
-Take this from a Java developer working for Sky, creating middleware enterprise applications with lots of integration between internal and external services. This can be quite deep.
+# Starting java
 
-Depends on what you want to do. If learning java, then it is quite simple, do the aiport challenge and other tasks that your did at makers in Java:
+Take this from a Java developer working for multinational company creating middleware enterprise applications with lots of integration between internal and external services.
 
-For doing the airport exercise:
+Depends on what you want to do. If learning java, then it is quite simple, do the aiport challenge and other tasks (ie fizzbuzz) that your did at makers in Java:
 
-I would use pure vanilla java, and avoid using libraries and annotations for this.
+For doing the airport/fizzbuzz exercise:
 
-Language: Java 8 or 11 (long term support versions)
+I would use pure vanilla java, and avoid using libraries (apart from the java supplied one) and annotations for production code.
+
+I would implement a main method, although this is not necessary, but will help you hava an app which you can run from the command line.
+
+Language: Java 8 or 11 (long term support versions). Majority of software is still written in java8
 Testing: Junit 4 (version 5 is new and different so not as widely supported)
 Testing libraries: AssertJ to write cleaner and fluent tests (Hamcrest is popular but has lots issues)
 Mocking: Mockito
-IDE: Intellij - This makes things very simple, I would first learn how to compile and run your code using the terminal. Learn how to use the debug features!!
+IDE: Intellij - This makes things very simple, I would first learn how to compile and run your code using the terminal. Learn how to use the debug features in your IDE!! Intellij is the best IDE
 Build and dependency management: Maven or Gradle - You want to be  able to use the build to run your tests and build your jar (avoid Ant, I have had to deal with it and it is not pretty). For maven, look at maven-assembly-plugin for building jar
 Patterns: All the stuff you learned at makers (ie SOLID)
 
 For more complex projects, ie building a webservice (crud app):
 
-Build a crud app that talks to 3rd party services (ie weather app), does some logic with inputs and services, and return something.
+Build a crud (needs a database) app that talks to 3rd party services (ie weather app), does some logic with inputs and services, and return something.
 
 This will mean using different libraries. I would suggest doing two versions, one using pure libraries, the other using frameworks (ie spring, hibernate).
 
@@ -28,13 +32,13 @@ All the above plus
 Libraries:
   - jetty - embedded webserver to allow for connections via the web. This also means using servlets. (Can use Tomcat, but this is not an embedded server, not greate for containerising your application) see https://codeforfunandmoney.wordpress.com/2016/07/20/embedded-jetty-server-example/
   - Apache Http client - This will allow you to connect to a 3rd party services (Java 11 has its own, but not very mature. apache has a standard one). Another one is unirest.
-  - apache commons lang3 - to help override hashcode() and equals() methods for types.
+  - apache commons lang3 - to help override hashcode() and equals() methods for types. Can let your IDE create it for you. Remember to test
   - SLF4J - This will help with creating logs
   - Logbook by zalando - logging incoming and outgoing calls to the app
-  - Hikari or c3po - To create database connections, using object pooling pattern
+  - Hikari or c3po - To create database connections, using object pooling pattern to improve performance when using a database
   - Jdbc - allow you to communicate with the database, this does mean using sql. Need specific ones for your type of db
   - flywaydb - to perform sql migration, ie setup your database, tables etc with out having to run it via the terminal
-  - yatsepc - acceptance testing framework, very popular at work (see https://codeforfunandmoney.wordpress.com/ for examples on how to use and the repo https://github.com/bodar/yatspec). Other common ones are cucumber, concordion
+  - yatsepc - acceptance testing framework, very popular at my work (see https://codeforfunandmoney.wordpress.com/ for examples on how to use and the repo https://github.com/bodar/yatspec). Other common ones are cucumber, concordion
   - Other libraries depending on what logics you are performing like guava, math etc
 Patterns:
   - Use of Clean/hexagonal architecture, which means using SOLID principles to organise classes and calls etc, to make your code more maintainable and extendable. (see https://github.com/mattia-battiston/clean-architecture-example uses spring but should be easy to follow)
@@ -43,17 +47,18 @@ Patterns:
   - Functional programming - use of lambdas,streams, optional, immutable objects, should be standard through out your code
   - Wiring - This is where you build all your objects (new them up) and is called when you run the main method (start the app up). Known as service locator pattern or factories
   - Design patterns - Builder, factory, static factory methods, strategy, domain objects, repository, facade, adapter (https://github.com/iluwatar/java-design-patterns for examples)
-  - return Json or xml, build these up yourself instead of using a library
+  - return Json or xml, build these up yourself instead of using a framework like jackson
 DevOps:
   - Docker: To containerise your app, to be able to run anywhere where docker is installed
   - Kubernetes: This is much more than you need, this is to help manage your containers, number of replicas, etc
+  - Deploy to aws or google cloud
 
 
 Have a look at my project, it is not all uniform code as i was exploring diferent ways of doing stuff, but follows and uses the above https://github.com/hanfak/ShopOfHan/
 
 Framework version:
 
-Using frameworks means you are beholden to the framework as you write code for it (just like rails). where as libraries your code uses it when it needs it (dont need it to run your app). A lot of frameworks use annotations and reflection, which makes it hard to debug when your need to investigate, there is a lot of magic, makes it hard to see how things connect. But frameworks makes it easy to build and create from scratch and a build at a faster speed. I would suggest using https://github.com/mattia-battiston/clean-architecture-example as way of not having your app totally beholden a framework, by using clean architecture.
+Using frameworks means you are beholden to the framework as you write code for it (just like rails). where as libraries your code uses it when it needs it (dont need it to run your app). A lot of frameworks use annotations and reflection, which makes it hard to debug when your need to investigate, there is a lot of magic, makes it hard to see how things connect. Also frameworks can make it difficult if you want to do something which is not what they expect or improve performance. But frameworks makes it easy to build and create from scratch and a build at a faster speed. I would suggest using https://github.com/mattia-battiston/clean-architecture-example as way of not having your app totally beholden a framework, by using clean architecture.
 
 - Will need to use some of the above libraries and patterns here to0
 - Use Spring - Spring boot (for wiring, new up objects), spring web (for creating webservice) see https://spring.io/guides
@@ -63,7 +68,7 @@ Using frameworks means you are beholden to the framework as you write code for i
 
 Other things to use or learn:
 
-- Use a stub, like wiremock, to stub a 3rd party service over http so that a dummy one is used but you control the response. (http://wiremock.org/ )
+- Use a stub, like wiremock, to stub a 3rd party service over http so that a dummy one is used but you control the response. (http://wiremock.org/ ). Useful for automated end to end tests
 - Use of multi threading (complex so would not bother for now, but should learn this especially for apps that deals with lots of requests)
 - completable futures for aysnc programming
 - messaging queues like activemq or rabbitmq

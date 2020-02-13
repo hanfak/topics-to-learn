@@ -1,5 +1,15 @@
 # Null
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Null](#null)
+	- [what it means](#what-it-means)
+	- [Alternative](#alternative)
+		- [How to handle](#how-to-handle)
+	- [Code smell](#code-smell)
+
+<!-- /TOC -->
+
 - https://stackoverflow.com/questions/2707322/what-is-null-in-java
 
 ## what it means

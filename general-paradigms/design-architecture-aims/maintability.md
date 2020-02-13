@@ -1,3 +1,5 @@
+# Maintability
+
 Over time, many different people will work on the system (engineering and oper‐ ations, both maintaining current behavior and adapting the system to new use cases), and they should all be able to work on it productively.
 
 Types of ongoing maintance:

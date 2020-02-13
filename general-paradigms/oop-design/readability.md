@@ -1,5 +1,16 @@
 # Readability
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Readability](#readability)
+	- [Naming booleans](#naming-booleans)
+	- [Method length](#method-length)
+	- [Remove Unused Code](#remove-unused-code)
+	- [Nesting](#nesting)
+	- [Naming Variables and Parameters](#naming-variables-and-parameters)
+
+<!-- /TOC -->
+
 - Code is written for humans not compilers
   - compiler does not have to maintain the code over time - humans do.
   - Code needs to be easily understood for it to be soft

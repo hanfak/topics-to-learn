@@ -1,5 +1,13 @@
 # Code coverage
 
+- [Code coverage](#code-coverage)
+	- [What??](#what)
+	- [Types](#types)
+	- [Why?](#why)
+	- [Aim for](#aim-for)
+	- [Issues](#issues)
+
+
 ## What??
 
 - A percentage that shows what amount of the code base covered by tests

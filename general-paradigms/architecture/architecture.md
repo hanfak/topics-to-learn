@@ -1,5 +1,17 @@
 # Architecture
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Architecture](#architecture)
+	- [Concerns to think about](#concerns-to-think-about)
+	- [Patterns](#patterns)
+	- [Used Patterns](#used-patterns)
+		- [Books and Links](#books-and-links)
+	- [Books and Links](#books-and-links)
+		- [Books](#books)
+
+<!-- /TOC -->
+
 Concerned with where to put things.
 
 Now more important to know where dependencies flow.

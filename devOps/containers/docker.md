@@ -1,6 +1,27 @@
 # Docker
 
-- what is it?
+- [Docker](#docker)
+	- [what is it?](#what-is-it)
+	- [Containers](#containers)
+	- [Pushing image to repository](#pushing-image-to-repository)
+		- [Pushing image to docker repo](#pushing-image-to-docker-repo)
+		- [Pushing image to some other repository](#pushing-image-to-some-other-repository)
+	- [other](#other)
+	- [Java api](#java-api)
+	- [Fabric8](#fabric8)
+	- [Dockerfile](#dockerfile)
+	- [Volumes](#volumes)
+	- [Deploying](#deploying)
+	- [images](#images)
+	- [Multistage docker image build](#multistage-docker-image-build)
+		- [Fat jars/ layering](#fat-jars-layering)
+	- [Performance](#performance)
+	- [Docker image size](#docker-image-size)
+	- [Disadvantages or not to use](#disadvantages-or-not-to-use)
+	- [Links](#links)
+
+## what is it?
+
   - https://www.docker.com/what-docker
   - https://www.youtube.com/watch?v=-NzfOhSAZpA
   - https://www.linkedin.com/pulse/beginner-friendly-intro-containers-vm-docker-preethi-kasireddy/
@@ -81,6 +102,10 @@
 ## Performance
 
 - https://www.thedevcoach.co.uk/docker-performance-tips-and-tricks/
+
+## Docker image size
+
+- https://semaphoreci.com/blog/2018/03/14/docker-image-size.html
 
 
 ## Disadvantages or not to use

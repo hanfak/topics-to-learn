@@ -1,6 +1,26 @@
 ### Functions/methods
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+		- [Functions/methods](#functionsmethods)
+	- [method signature](#method-signature)
+	- [Method body](#method-body)
+	- [Parameter list](#parameter-list)
+	- [Overloading methods](#overloading-methods)
+	- [Instance method](#instance-method)
+	- [Static method](#static-method)
+	- [Return type is declared](#return-type-is-declared)
+		- [void](#void)
+	- [Using methods](#using-methods)
+	- [Naming conventions](#naming-conventions)
+	- [side effects](#side-effects)
+	- [CQRS](#cqrs)
+	- [Links](#links)
+
+<!-- /TOC -->
+
 ## method signature
+
 - Defines the inputs and outputs of the method
 - ie `void aMethod(String firstParam, Intger secondParam)`
   - output is void
@@ -9,6 +29,7 @@
   - ie `void aMethod(String firstParam, Intger secondParam) throws Exception`
 
 ## Method body
+
   - can be empty
     - ie ```String method() {}```
   - where the logic happens
@@ -40,6 +61,7 @@
       - but state of object can be changed
 
 ## Overloading methods
+
   - Same method name with different number of parameter types or type of parameters
   - for example
     - ```String method(){...}```
@@ -47,10 +69,12 @@
     - ```String method(String a){...}```
 
 ## Instance method
+
   - no static keyword
   - only used with an instance of class
 
 ## Static method
+
   - use of static keyword
   - ```static String method() {...}```
   - no instance needed to be created to be used
@@ -78,6 +102,7 @@
     - Purity: taking some precautions, your static method will be a pure function, that is, the only thing it depends on is its parameters. Data in, data out. This is easier to read and debug, since you don't have inheritance quirks to worry about. You can do it with instance methods too, but the compiler will help you a little more with static methods (by not allowing references to instance attributes, overriding methods, etc.).
 
 ## Return type is declared
+
 - ```static String method() {... return ....}```
 - return should match the type to be returned of the method in the method signature.
 - Can return `null`
@@ -98,6 +123,7 @@
     }
   }
 ```
+
   - in the above code, if isSunday() == true, then add to list then exit method.
 - throw Exception
   - can throw exception and no need to return anything
@@ -141,12 +167,14 @@ public String aMethod(int x) throws Exception {
   - ```Integer a = method(1);```
 
 ## Naming conventions
+
   - camel case
     - aMethod()
     - method()
   - Should be descriptive
 
 ## side effects
+
   - Avoid using setters to alter the Instance
     - new up another instance with changed state instead
     - make fields private
@@ -156,6 +184,7 @@ public String aMethod(int x) throws Exception {
     - https://stackoverflow.com/questions/1073909/side-effect-whats-this
 
 ## CQRS
+
   - method should either query and return something, or do something (ie delegate to another object and its behaviour) and return void
 
 ## Links

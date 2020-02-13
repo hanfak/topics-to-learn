@@ -1,5 +1,32 @@
 # Certificates and JKS
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Certificates and JKS](#certificates-and-jks)
+	- [jks](#jks)
+	- [truststore jks](#truststore-jks)
+	- [keystore jks](#keystore-jks)
+	- [keytool](#keytool)
+	- [openssl](#openssl)
+	- [csr - certificate signing request](#csr-certificate-signing-request)
+	- [crt/cer](#crtcer)
+	- [ca/signing authority](#casigning-authority)
+		- [cert chain](#cert-chain)
+			- [root ca](#root-ca)
+			- [intermediate ca](#intermediate-ca)
+			- [end entity or leaf or site specific ca](#end-entity-or-leaf-or-site-specific-ca)
+	- [self signed cert](#self-signed-cert)
+	- [pem format](#pem-format)
+	- [der format](#der-format)
+	- [public key and cert](#public-key-and-cert)
+	- [private key](#private-key)
+	- [tls/ssl](#tlsssl)
+	- [Mutual tls](#mutual-tls)
+	- [https communication](#https-communication)
+	- [jetty https server](#jetty-https-server)
+
+<!-- /TOC -->
+
 - https://www.youtube.com/watch?v=SEKsvHYZz8s
 - https://codeburst.io/how-mutual-tls-work-aec3d91451ce
 -
@@ -69,7 +96,7 @@
 
 - https://www.youtube.com/watch?v=yJrJEvvW_HA
 
-# Mutual tls
+## Mutual tls
 
 - Where the server authenticates the client during the ssl handshake
 - The client must have a signed public certificate which is trusted by the server
