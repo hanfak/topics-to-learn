@@ -11,7 +11,7 @@
 
 ## Types
 
-![](workflows-examples.jpg?raw=true)
+![workflowpatterns](general-paradigms/workflow/workflows-examples.jpg)
 
 
 - (a) Sequential
