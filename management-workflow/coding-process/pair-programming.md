@@ -1,6 +1,7 @@
 # Pair Programming
 
 - https://martinfowler.com/articles/on-pair-programming.html#HowToPair
+- https://www.thoughtworks.com/insights/blog/seven-principles-pair-programming-etiquette?utm_source=linkedin&utm_medium=social&utm_campaign=tech
 
 ## Benefits
 

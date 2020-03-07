@@ -5,8 +5,10 @@
 - This results in a number of benefits over a traditional monolithic architecture such as
   -  independent deployability
   - language
+    - less coupling to a language or stack
   - platform and technology independence for different components
   - distinct axes of scalability
+    - vertical scaling of parts of system rathe than whole monolith
   - increased architectural flexibility.
 - size
   - Commonly, microservices are of the order of hundreds of lines but can be tens or thousands depending on the responsibility they encapsulate. A good, albeit non-specific, rule of thumb is as small as possible but as big as necessary to represent the domain concept they own.
@@ -56,7 +58,13 @@
   -  We want to quickly implement a certain feature and test it in production.
   - We want to release many times a day.
 - To operate microservices successfully, DevOps is key. Only the developers really know what’s going on and can fix things.
-- 
+
+
+## Why No need for Microservices
+
+- https://medium.com/swlh/stop-you-dont-need-microservices-dc732d70b3e0
+
+
 ## links
 
 - https://www.javacodegeeks.com/2018/03/introduction-to-microservices.html

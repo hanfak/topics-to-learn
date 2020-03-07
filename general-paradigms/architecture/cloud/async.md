@@ -1,0 +1,26 @@
+# Asynchronous Request and Reply
+
+- synchronously processing the client request before all the back end work is completed may not always be feasible
+  - Becuase of
+    - Takes too long, lots of processing
+    - microservice architecture, lots of calls between services
+    - Lots of wait time between I/O
+  - Cannot have as client may need low latency (set SLAs) for a response to come back
+- Solution
+  - Asynchronous Processing (HTTP Polling or Event Notification)
+    - Benefit
+      - client does not need to wait
+      - If passed to a message queue, can be sure that the requests reaches the server, which is not certain with direct sync requests.
+    - How it works
+      - The client makes an API request
+      - The application now offloads the work to another back end service or message queue
+      - The client can poll for the resource/process status using an HTTP GET (HTTP Polling) at regular intervals as appropriate for the client application
+      - The status API returns “In-Progress” indicating the back end process is still running
+      - Once the process completes, the status will return the required output or another reference to the resource
+      - The application can also push event notifications once the process is complete without the need for the client to poll repeatedly
+    - Example
+      - Imagine you’re too tired to make dinner and decide to place a takeaway order over the phone at your favorite restaurant (API request)
+      - The restaurant provides you with an order number (Acknowledgement and reference identifier)
+      - You arrive at the restaurant to pick up your order, provide them the order number and the restaurant staff informs you that your order is still not complete
+      - If you’re particularly hungry, you might return to the reception to inquire about your order every 5–10 mins (HTTP Polling)
+      - Or, the restaurant can provide you with a pager that buzzes once your order is complete (Event Notification)

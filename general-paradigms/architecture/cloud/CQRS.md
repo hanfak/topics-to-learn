@@ -1,0 +1,21 @@
+# Command and Query Responsibility Segregation (CQRS)
+
+- Problem
+  - Traditionally, people interact with Information Systems through a CRUD data store.
+  - Read and Write Data models are often the same. As the complexity of the application increases, multiple representations of the information are created, all referring to one common data (conceptual) model.
+  - This can lead to data/resource contentions, performance slowdown and in some cases, security issues.
+- Solutions
+  - Separate the Read and Write models
+    - How it works
+      - This can be done by creating separate schemas or different databases for the Read and Write operations. All reads from a single data store and all Writes/Updates to a separate data store
+      - Creating separate databases provides additional isolation that helps with scalability and performance
+      - The Write databases can be relational while Read databases can be No SQL document-based
+      - This approach not only provides separation of concerns but also allows each data store to independently scale based on its workload
+      - The important consideration in this model is to maintain sync between the Read and Write stores. This is typically achieved through publishing events from the Write store and consumed by the Read store
+    - Example
+      - Imagine you’re waiting at the restaurant for your order
+      - You notice the delay is due to there being only a single server who is taking care of all diners and takeaway orders
+      - While our server, is taking orders from one of the diners, the other diners are all waiting to place their orders
+      - Then some (like you) are waiting for a status on their takeaway orders and others who have placed their order and now waiting to be served
+      - Sadly, the server has become the bottleneck in this operation and the overall performance of the restaurant has degraded
+      - Thankfully, Charlie is back from his break and gets to work on accepting takeaway and dine-in orders while Roger proceeds to serve food to the tables and takeaway diners

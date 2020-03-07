@@ -10,3 +10,9 @@
 ## Fork/join
 
 - https://www.javacodegeeks.com/2019/01/brief-overview-fork-join-framework-java.html
+
+
+## General
+
+- https://vmlens.com/blog-2/s
+- https://blog.usejournal.com/java-multithreading-part-1-ec0c42bbead6

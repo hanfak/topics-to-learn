@@ -35,3 +35,4 @@
 ## Links
 
 - http://www.bizcoder.com/rpc-vs-rest-is-not-in-the-url
+- https://www.guru99.com/restful-web-services.html

@@ -7,3 +7,4 @@
 - https://github.com/Albertoimpl/k8s-for-the-busy/blob/master/k8s-basics/README.adoc
 - https://www.toptal.com/kubernetes/what-is-kubernetes
 - https://medium.com/tarkalabs/know-kubernetes-pictorially-f6e6a0052dd0
+- https://semaphoreci.com/blog/kubernetes-deployment

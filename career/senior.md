@@ -14,3 +14,7 @@
 - Solid understanding of unit and integration testing (coverage >= 80%);
 - Databases understanding, at least understand how an ORM works and know the most common DB concerns
 - Doing code review and writing code every day.
+
+## Links
+
+- https://medium.com/better-programming/the-differences-between-a-junior-mid-level-and-senior-developer-bb2cb2eb000d

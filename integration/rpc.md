@@ -1,5 +1,9 @@
 # Remote Procedure Calls
 
+## Links
+
+- https://www.quora.com/What-is-RPC-and-RMI
+
 ## GRPC
 
 - gRPC is an open-source RPC framework that is created and used by Google. It is built upon HTTP/2.0 which makes bi-directional communication possible. gRPC communicates using binary data using protocol buffers by default for serializing structured data. gRPC servers allow cross-language unary calls or stream calls.

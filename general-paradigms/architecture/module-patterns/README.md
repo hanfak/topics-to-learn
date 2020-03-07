@@ -21,3 +21,13 @@
   - But packages in Java aren’t very good at protecting those boundaries.
   - Suffice it to say that the dependencies between classes within a single monolithic codebase tend to quickly degrade into a big ball of mud.
   - If we split up the codebase into multiple smaller modules that each has clearly defined dependencies to other modules, we take a big step towards an easily maintainable codebase.
+
+
+## Types of Modules
+
+- Relating to Java
+- Types
+  - Maven modules are a way to organize your project into several subprojects (modules). With Maven, you can control the versions of these modules and the dependencies between these modules. Each module will produce an artifact.
+  - Java modules are a way to strongly encapsulate your classes. It does not provide any means to control the version of an artifact you are using.
+  - ntelliJ also uses the term module. It is a way to group files
+  - 

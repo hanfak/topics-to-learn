@@ -5,9 +5,11 @@
 - The control flow workflow patterns describe the standard ways of task execution in a business process.
 - Patterns used in use case to describe the behaviour
 
--
+## links
+
 - http://www.workflowpatterns.com/patterns/control/
 - https://www.sciencedirect.com/topics/computer-science/workflow-pattern
+- https://docs.aws.amazon.com/amazonswf/latest/awsrbflowguide/programming-workflow-patterns.html
 
 ## Types
 

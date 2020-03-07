@@ -1,13 +1,17 @@
 # Arayslist/list
 
-- What is a List
+## What is a List
 ????
 
-- What is an ArrayList
+## What is an ArrayList
 ?????
 
-- Difference between Arrays and ArrayList
+## Difference between Arrays and ArrayList
   - ????
+
+## Operations on ArrayList
+
+### Creation
 
 - **Creating new ArrayList**
 
@@ -21,6 +25,7 @@
   List<Integer> integerList = Arrays.asList(1,2,3,4);
   ```
 
+### General
 - **Check if empty**
 
   - set up an empty list: `List<Integer> anArrayList = new ArrayList<>();`
@@ -50,7 +55,7 @@
   - `integerList.get(5)` throws ArrayIndexOutOfBoundsException
 
 
-- **Add single element to list**
+### **Add single element to list**
 
   ```java
   List<Integer> anArrayList = new ArrayList<>();
@@ -84,7 +89,7 @@
   - `System.out.println(anArrayList);` returns [5, 1, 2, 3, 4] as anArrayList already has 5 in it
     - Also addAll adds to the end of the list
 
-- **Replace an element at index**
+### **Replace an element at index**
 
   - setup list: `List<Integer> integerList = Arrays.asList(1,2,3,4);`
   ```java
@@ -109,7 +114,7 @@
       - This will return [1,4,3,4]
 
 
-- **Element exist in list**
+### **Element exist in list**
 
   ```java
   anArrayList.contains(<element>);
@@ -125,7 +130,7 @@
     - `anArrayList.containsAll(Arrays.asList(1, 5));` will return true as 1 and 5 are in the list
     - `anArrayList.containsAll(Arrays.asList(1, 8));` will return false as 8 is not in the list
 
-- **Find index of an element**
+### **Find index of an element**
 
   ```java
   int i = anArrayList.indexOf(3);
@@ -133,7 +138,7 @@
     - will return 3
     - If the arraylist was  [5, 3, 2, 3, 4], then `int i = anArrayList.indexOf(3);` will return the index of the first element it matches with, which is 1
 
-- **Reverse a list**
+### **Reverse a list**
 
   ```java
   Collections.reverse(anArrayList);
@@ -146,7 +151,7 @@
     - Can use the comparator, Collections.reverseOrder(), as list is of Integer types.
 
 
-- **Sort list**
+### **Sort list**
 
   ```java
   Collections.sort(anArrayList);
@@ -168,7 +173,7 @@
   - Does not mutate the original list
   - Uses natural ordering, as Arraylist implements comparable
 
-- **sublist of list**
+### **sublist of list**
 
   if anArrayList is [4,3,2,1,5]
 
@@ -190,7 +195,8 @@
 
     - This will throw `java.lang.IndexOutOfBoundsException: toIndex = 6` as the list is only size 5
 
-- **Remove an element**
+### **Remove an element**
+
   - Two ways of doing this, either by remove an element using the index, or getting the first element matched.
 
   ```java

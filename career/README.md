@@ -9,6 +9,11 @@ Info about career in software development
 - https://content.pivotal.io/blog/a-letter-to-a-junior-engineer
 - https://www.freecodecamp.org/news/how-to-be-a-successful-software-engineer-6f82a5b1a82e/
 
+## General
+
+- https://diceus.com/java-developer-salary/
+
+
 ## Quitting
 
 - https://medium.com/swlh/how-to-stop-your-best-developers-from-quitting-8e251c110f36
@@ -17,3 +22,7 @@ Info about career in software development
 ## Finding talent
 
 - https://codeburst.io/why-developers-become-frustrated-and-companies-cant-find-talent-c4114d8b72ac
+
+## Backend vs frontend
+
+- https://www.guru99.com/what-is-backend-developer.html

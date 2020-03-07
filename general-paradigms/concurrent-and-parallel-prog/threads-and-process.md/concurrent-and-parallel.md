@@ -39,3 +39,9 @@
   - Parallel processing really becomes useful for computationally intensive tasks,
     - such as calculating the result of multiplying two matrices together.
     - When large math operations can be divided into independent subparts, executing those parts in parallel on separate processors can really speed things up.
+
+## Links
+
+- https://howtodoinjava.com/java/multi-threading/concurrency-vs-parallelism/
+- http://tutorials.jenkov.com/java-concurrency/concurrency-vs-parallelism.html
+- https://stackoverflow.com/questions/1050222/what-is-the-difference-between-concurrency-and-parallelism
