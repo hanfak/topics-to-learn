@@ -85,13 +85,27 @@
 
 ## streams
 
+	- Streams
+		- Give lazy evaluation (ie filter)
+			- Also gives visual reminder that lazy evaluation is happening
+			- Lazy evaluation will only happen when the terminal operation is hit ie forEach
+		- Act like an iterator
   - filter
+		- lazy
   - reduce
-  - Other Reduce
-    - count
-    - distinct
-    - sum
+		- terminal op
+		- converts a stream into something concrete
+			- takes a collection and reduces to a single value
+			- Take a collection and reduce to another collection
+		- Other Reduce
+	    - count
+	    - distinct
+	    - sum
+	- map
+	- forEach
+		- terminal op
   - collect
+		- Is a reduce operator
     - Collectors.toList
   - infinite streams
     - https://dzone.com/articles/infinite-streams-in-java-8-and-9

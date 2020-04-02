@@ -101,3 +101,4 @@ Implementing these design principles to have better code
 - http://blog.thecodewhisperer.com/permalink/putting-an-age-old-battle-to-rest
 - https://www.tonymarston.net/php-mysql/oop-for-heretics.html#definitions
 - https://tomassetti.me/oops-concepts/
+- https://medium.com/@richardeng/a-simple-explanation-of-oop-46a156581214

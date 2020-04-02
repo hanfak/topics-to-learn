@@ -10,6 +10,12 @@
 - http://www.workflowpatterns.com/patterns/control/
 - https://www.sciencedirect.com/topics/computer-science/workflow-pattern
 - https://docs.aws.amazon.com/amazonswf/latest/awsrbflowguide/programming-workflow-patterns.html
+- https://en.wikipedia.org/wiki/Workflow_pattern
+
+## Libraries
+
+- https://github.com/j-easy/easy-flows
+- https://github.com/copper-engine/copper-engine
 
 ## Types
 

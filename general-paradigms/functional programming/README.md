@@ -4,10 +4,21 @@
 - Intent of FP is for readability and understandablility
 - About what rather than how (procedural)
 
+## Properties
+
+- Pure functions
+- functional composition
+- lazy evaluation
+- High order functions
+- Immutability
+
 ## Pure functions
 
 - No side effects
 - Only acts on the inputs
+- Always returns the same outputs regardless the number of times called
+- idempotent
+- do not depend on anything that could change or have side effects
 
 ## Immutability
 
@@ -32,7 +43,7 @@
 
 ## Properties
 
-- 
+-
 
 ## Drawbacks of functional programming
 

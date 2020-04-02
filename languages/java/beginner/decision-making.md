@@ -73,3 +73,4 @@
 
 - https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html
 - https://www.tutorialspoint.com/java/switch_statement_in_java.htm
+- https://blog.codefx.org/java/switch-expressions/

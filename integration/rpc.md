@@ -39,6 +39,7 @@
 - When the microservices is only internal and when one server needs to talk to the other.
 - When your internal services requires duplex streaming with high load of data.
 - When you don’t feel to write client libraries
+-
 ## Links
 
 - https://medium.com/@EdgePress/is-grpc-the-future-of-client-server-communication-b112acf9f365
@@ -48,3 +49,4 @@
 - https://searchapparchitecture.techtarget.com/definition/Remote-Procedure-Call-RPC
 - http://www.bizcoder.com/rpc-vs-rest-is-not-in-the-url
 - https://www.baeldung.com/grpc-introduction
+- https://medium.com/better-programming/understanding-grpc-60737b23e79e

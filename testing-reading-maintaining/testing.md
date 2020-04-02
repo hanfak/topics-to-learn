@@ -194,6 +194,7 @@ Types of test
 * Verify
 * When...ThenReturn...
 * Dummy
+* Argument captors
 
 ## Junit
 
@@ -214,17 +215,31 @@ Types of test
 ### AssertJ
 
 - Readbility and intent via fluent api
+- Extracting
 - Soft Assertions
+	- https://joel-costigliola.github.io/assertj/core/api/org/assertj/core/api/SoftAssertions.html
 
 ## yatspec
 
+* Acceptance Tests
+* BDD language
 * Captured inputs and outputs
 * combining with Wiremock
 * linking note
   * link test to classes or other tests
 * Interesting givens
   * any important domain information set in the givens
+	* givens state
 * test state
+* state extractors
+* given builders
+* action under test
+* Sequence diagrams
+* Dictionary
+* Linking notes
+* html output
+* parametised/table  tests
+
 
 
 ## Writing Tests

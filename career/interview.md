@@ -6,6 +6,7 @@
 - https://medium.com/swlh/interview-questions-for-junior-to-senior-software-engineers-architects-a283c2c167e9
 - https://howtodoinjava.com/java-interview-questions/
 - https://blog.usejournal.com/most-frequently-java-interview-question-127e923f70d9
+- https://medium.com/free-code-camp/a-software-engineering-survival-guide-fe3eafb47166
 
 ## coding challenges
 

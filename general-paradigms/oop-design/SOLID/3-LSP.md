@@ -8,7 +8,14 @@
   - reduce complexity in calling code so that it can work generically on any class or subclass without additional conditional code.
   -
 
+
+## Testing
+
+- https://blog.caplin.com/2010/09/30/a-junit-trick-for-ensuring-solid-design/
+
+
 ## Links
 
 - https://stackify.com/solid-design-liskov-substitution-principle/
 - https://dzone.com/articles/solid-principles-liskov-substitution-principle
+- https://medium.com/hackernoon/the-liskov-substitution-principle-and-why-you-might-want-to-enforce-it-6f5bbb05c06d

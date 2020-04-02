@@ -1,1 +1,3 @@
 - https://martinfowler.com/articles/break-monolith-into-microservices.htmlcv
+- https://www.youtube.com/watch?v=arxm7llvDdg
+  - https://www.slideshare.net/Lightbend/digital-transformation-from-monoliths-to-microservices-to-serverless-and-beyond/

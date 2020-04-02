@@ -1,7 +1,5 @@
 # Projects and Software types
 
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
 - [Projects and Software types](#projects-and-software-types)
 	- [Greenfield](#greenfield)
 	- [Brownfield](#brownfield)
@@ -15,6 +13,7 @@
 	- [Middleware](#middleware)
 	- [Front end](#front-end)
 	- [Back end](#back-end)
+		- [What they do?](#what-they-do?)
 	- [web services](#web-services)
 	- [web applications/ web sites](#web-applications-web-sites)
 	- [SOA - service oriented architecture](#soa-service-oriented-architecture)
@@ -26,7 +25,6 @@
 	- [desktop apps](#desktop-apps)
 	- [Links](#links)
 
-<!-- /TOC -->
 
 What an application is:
   - a model of the rules or “policies” that govern the business in order to make it easier for the users to interact with them.
@@ -170,6 +168,17 @@ What an application is:
 ## Front end
 
 ## Back end
+
+### What they do?
+
+- API Design
+- API Development
+- Database
+- Infrastructure
+- Business Rules and Algorithms
+- Validation of data
+- Transformation of data
+- Communication with services
 
 ## web services
 

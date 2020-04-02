@@ -21,6 +21,7 @@ About
 - https://www.javacodegeeks.com/2018/07/devops-vs-sre-difference.html
 - https://www.youtube.com/watch?v=JHoy3lDZOfY&t=66s
 - https://www.edureka.co/blog/puppet-tutorial/
+- https://medium.com/hackernoon/the-2018-devops-roadmap-31588d8670cb
 
 ## ci/cd
 

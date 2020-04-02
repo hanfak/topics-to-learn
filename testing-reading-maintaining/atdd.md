@@ -1,3 +1,17 @@
+# Acceptance Testing Driven Developement (ATDD)
+
+## What
+
+## why
+
+## How
+
+- Do acceptance test, then do unit tests
+  - double loop tdd
+  - why acceptance test will show how system works (if testing whole system). This logic can happen anywhere in the application. Unit testing will force the logic of where this happens to one locale, or if spread about can test different classes via tdd. This will cover edge cases
+
+## Links
+
 - https://reqtest.com/testing-blog/tdd-and-atdd-an-overview-of-the-two-popular-methods-2/
 - https://gaboesquivel.com/blog/2014/differences-between-tdd-atdd-and-bdd/
 

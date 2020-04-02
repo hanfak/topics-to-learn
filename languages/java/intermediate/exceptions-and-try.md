@@ -147,6 +147,8 @@
 
 ## checked exceptions
 
+- Unchecked exceptions are designed to detect programming errors of the users of your library,
+
 ### Why bad
 
 - Exceptions increase the complexity of our code
