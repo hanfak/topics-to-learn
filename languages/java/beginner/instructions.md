@@ -1,6 +1,15 @@
 # Instructions
+
   - Expression
+    - they can yield results without causing mutation.
+    - Expressions work more like a chain: when one person completes a task, they hand off the item to the next person in the chain.
+    - Expressions facilitate the Collection Pipeline pattern, which Martin Fowler described as a sequence of operations where one operation’s collected output is fed into the next. 
   - Statements
+    - Statements perform an action but do not yield any results
+    - any statement that does something useful will result in a mutation of data.
+    - Using statements in your code is like collaborating on a piece of work without being able to directly pass that work between team
+      - The only way to share something is by placing it on a table or a shelf, where another team member can then retrieve it.
+  - Ending of statements
     - ```;```
   - Order of Statements
     - procedural thinking

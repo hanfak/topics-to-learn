@@ -13,10 +13,13 @@
 
 ## What
 
-- A creational pattern, which onyl creates one and only one instance of a class. If instantiating another object, and an object already exists, it will return the object already created.
+- A creational pattern, which only creates one and only one instance of a class. If instantiating another object, and an object already exists, it will return the object already created.
 - This pattern involves a single class which is responsible for creating an object while making sure that only one object gets created.
 - When you use this pattern, you define an object that will exist across all application scope and that you can easily access from anywhere in the code at any time
-- Example
+- Sometimes it is necessary that one and only one instance of a particular class exists in the entire Java Virtual Machine.  This is achieved through the Singleton design pattern .
+
+
+### Example
 
 ```java
 
@@ -41,7 +44,7 @@ class Singleton {
 
 ```
 
-- Example
+### Example
 
 ```java
 public class ASingleton {
@@ -86,6 +89,62 @@ public class ASingleton {
  - Singletons Provide Global State
    - Because you hide the dependencies of your application in your code, instead of exposing them through the interfaces. Making something global to avoid passing it around is a code smell.
 
+## Types
+
+### Lazy initialization
+
+- The Singleton pattern is implemented by creating a class with a method that creates a new instance of the object if one does not exist.
+- If an instance already exists, it simply returns a reference to that object.
+- To make sure that the object cannot be instantiated any other way, the constructor is made private.
+- Although a Singleton can be implemented as a static instance, it can also be lazily constructed, requiring no memory or resources until needed.
+
+### Lazy initialization with Double check locking
+
+- The above works absolutely fine in a single threaded environment and processes the result faster because of lazy initialization.
+- However the above code might create some abrupt behavior in the results in a multithreaded environment as in this situation multiple threads can possibly create multiple instance of the same SingletonExample class if they try to access the getSingletonInstance() method at the same time.
+- In the multithreading environment to prevent each thread to create another instance of singleton object and thus creating concurrency issue we will need to use locking mechanism.
+	- This can be achieved by synchronized keyword. By using this synchronized keyword we prevent Thread2 or Thread3 to access the singleton instance while Thread1 is inside the method getSingletonInstance().
+	- So this means that every time the getSingletonInstance() is called it gives us an additional overhead . To prevent this expensive operation we will use double checked locking so that the synchronization happens only during the first call and we limit this expensive operation to happen only once.
+
+### Eager initialization
+
+- If the program will always need an instance, or if the cost of creating the instance is not too large in terms of time/resources, the programmer can switch to eager initialization, which always creates an instance when the class is loaded into the JVM.
+
+### Static block initialization
+
+- This is similar to the eager initialization.
+- The main advantage of using the static block here is that it supports the options for exception handling for the instantiation of the singleton class.
+
+### Using Enum
+
+- Enum has some distinct benefits in terms of thread-safety during instance creation, serialization guarantee by JVM and amazingly reduce amount of code which makes it perfect choice of using as Singleton class.
+
+###  Initialization-on-demand holder idiom
+
+- This idiom derives its thread safety from the fact that operations that are part of class initialization, which is guaranteed by the JVM.
+- It derives its lazy initialization from the fact that the inner class is not loaded until some thread references one of its fields or methods. This provides the best of both options and guaranteed to be thread-safe by the JVM.
+- The trick is to use private nested class to hold Singleton instance.
+
+### Cloning
+
+- Cloning the object can still copy it and result into duplicate object.
+- The clone of the singleton object can be constructed using clone() method of the object.
+- Hence it is advisable to overload clone() method of Object class and throw CloneNotSupportedException exception.
+
+### Singleton vs Static classes
+
+- The Singleton pattern has several advantages over static classes.
+	- a singleton can extend classes and implement interfaces, while a static class cannot (it can extend classes, but it does not inherit their instance members)
+	- A singleton can be initialized lazily or asynchronously while a static class is generally initialized when it is first loaded, leading to potential class loader issues.
+	- singletons can be handled polymorphically without forcing their users to assume that there is only one instance.
+- When to use static classes
+	- Prime example of this is java.lang.Math which is not Singleton, instead a class with all static methods.
+	- If your Singleton is not maintaining any state, and just providing global access to methods, than consider using static class, as static methods are much faster than Singleton, because of static binding during compile time.
+		-  But remember its not advised to maintain state inside static class, especially in concurrent environment, where it could lead subtle race conditions when modified parallel by multiple threads without adequate synchronization
+	- You can also choose to use static method, if you need to combine bunch of utility method together.
+		- Anything else, which requires singles access to some resource, should use Singleton design pattern.
+
 ## Links
 
 - https://egkatzioura.com/2018/03/27/creational-design-patterns-singleton-pattern/
+- https://javarevealed.wordpress.com/2013/07/04/singleton-design-pattern/
