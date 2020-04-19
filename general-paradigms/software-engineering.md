@@ -18,9 +18,11 @@
   - We cannot use the 5 senses
 - Developing software is about making a series of the best trade offs for a given situation.
   - Understanding the implications of trade offs to help make better decisions
+- Due to the internet, open source, software dev is not about creating alogorithms for everything. Instead it is about knowing about libraries and using and combining these to create your product.
 
 
 ## Links
 
 - https://www.computersciencedegreehub.com/faq/what-is-the-difference-between-software-engineering-and-software/
 - https://medium.com/shakuro/programmer-vs-developer-vs-engineer-91ef374e5033
+- https://www.rainerhahnekamp.com/en/modern-software-development/

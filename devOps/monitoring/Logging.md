@@ -26,7 +26,7 @@
 - Getting logs to match with same flow/input
   - use of tracey id
   - Makes it easier to search and have all logs for one flow through system
-    - especially when logs of different requests are interspered 
+    - especially when logs of different requests are interspered
 - splunk
   - queries
 - Passing tracey id from incoming request throughout its entire journey in the app to the outgoing response
@@ -40,3 +40,7 @@
   -  monitoring, troubleshooting and debugging.
 - Secruity
 - Avoid using for performance
+
+## Links
+
+- https://completedeveloperpodcast.com/episode-73/

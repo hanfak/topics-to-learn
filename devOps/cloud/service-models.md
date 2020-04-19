@@ -1,5 +1,10 @@
 # Service Models
 
+## History - servers, virtualisation
+
+- https://blog.containership.io/iaas-vs-paas-vs-caas-which-cloud-architecture-is-right-for-you-part-1-c7bf3c48c70c/
+
+
 ## Types
 
 Typical services offered by cloud vendors
@@ -51,3 +56,11 @@ Typical services offered by cloud vendors
   - Create and manage replication controllers, which manage the creation and deletion of pod replicas based on a template. Replication controllers help to ensure that your application has the resources it needs to run reliably and scale appropriately.
   - Create and manage services. Services create an abstraction layer that decouples frontend clients from pods that provide backend functions. In this way, clients can work without concerns about which pods are being created and deleted at any given moment.
   - Create an external network load balancer.
+
+## Comparisons
+
+- https://containerjournal.com/features/paas-vs-caas-wrong-question-ask/
+- https://www.knowledgenile.com/blogs/caas-vs-paas/
+- https://blog.containership.io/iaas-vs-paas-vs-caas-which-cloud-architecture-is-right-for-you-part-2-a72623d7d001/
+- https://stacksense.io/krishnan/platforms/understanding-caas-paas-container-platforms-and-application-platforms/
+- trustradius.com/buyer-blog/do-you-need-iaas-caas-paas-or-faas

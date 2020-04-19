@@ -52,6 +52,7 @@
 
 - Hypertext Transfer Protocol  defines a language for clients and servers to speak to each other.
 - This protocol defines how messages are formatted and transmitted, and what actions web servers and browsers should take in response to various commands.
+- https://completedeveloperpodcast.com/episode-219/
 
 
 ## HTTPS

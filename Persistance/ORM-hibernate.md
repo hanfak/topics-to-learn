@@ -6,6 +6,8 @@ A pattern that allows the use of a mapper to convert between code (ie java) to d
 
 - Close coupling of data and business layer
 - Lack of control in how ORM implements SQL
+- https://completedeveloperpodcast.com/episode-38/
+- https://completedeveloperpodcast.com/episode-111/
 
 ### Links
 

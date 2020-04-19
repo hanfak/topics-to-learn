@@ -38,3 +38,7 @@
 - Overlapping feature flags might conflict with each other and may have unwanted side effects on each other.
 - Dangerous feature flags are feature flags that wrap a very important feature without which many users couldn’t work with the software anymore. Either remove the feature flag completely or at least don’t make it too easy to disable (e.g. don’t put a button on a dashboard that allows to disable it - there’s a true story behind that).
 - Leftover feature flags are feature flags that stay in the system and are not maintained anymore. They become technical debt. What’s worse: when the feature flag server isn’t available for some reason, the feature flags fall back to the default value we defined 2 years ago, which might not be the value we want anymore.
+
+## Links
+
+- https://completedeveloperpodcast.com/episode-25/

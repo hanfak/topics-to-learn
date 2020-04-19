@@ -1,0 +1,48 @@
+- Learn about computers, software etc for a general overview
+  - Have you computer setup - software, ide, install stuff etc
+- Learn how to use the command line
+  - line about operating systems, just read about the ideas
+  - search, list, navigate, viewing, permissions, manipulate files and folders
+  - pipes, nano/vim
+  - env variables, process
+  - bash scripts, bash profiles
+- Learn git, github and how to use them
+  - init, add, commit, push, pull, clone, fork, branch, remote, merge, reset, stauts, logs,  pull requests
+  - command line, and via gui
+- Learn the basics of a language
+  - variables (creating, updating, types), decisions, looping, methods
+  - comments, maths statements, printing output
+  - Input from terminal, handle strings
+  - Files - reading, writing
+  - Lists and maps
+  - Use libray methods that come with language, read documentation
+  - functional programming (if up for it)
+  - Do python or java track on https://www.codecademy.com/
+  - Do some small exercises  to solve problems https://www.codewars.com/, be able to read the solutions of others
+  - Do fizzbuzz
+  - Automate something, get used to building a script that does something useful
+- Learn how to split requirements into actionable features in your code
+- Learn object oriented design
+  - Start using java
+  - Topics ????
+  - Do fizzbuzz
+- Learn to use build and dependency manager like maven/gradle
+- Learn to write tests
+  - learn to use a mocking framework
+- Build a program in OO way
+  - fizzbuzz
+- Learn TDD
+- Solve some simple OO problems
+  - Airport
+- Learn more features of the language
+  - functional
+  - Call http api and learn how http/networks works
+  - use a database
+  - jars
+- Create an api in agile manner
+  - learn about agile
+- Go deeper in to the langauge, frameworkds, design/engineering, frontend, devops, computer science, 
+- More projects
+  - build something wiht front end that people can use
+  - refactor some  good to be better engineered
+  - Increase performance

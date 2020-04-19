@@ -47,6 +47,10 @@
 - Any change in an external api, should have been warned about before it is deployed, so work can be done to consume it.
 - The producer should have versioning in api to allow consumers to be able to switch over
 
+## Best practices
+
+- https://completedeveloperpodcast.com/episode-162/
+
 ## Links
 
 - https://www.mulesoft.com/resources/api/types-of-apis

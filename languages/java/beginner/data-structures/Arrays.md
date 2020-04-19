@@ -53,3 +53,4 @@
 - https://introcs.cs.princeton.edu/java/14array/
 - https://en.wikipedia.org/wiki/Array_data_structure
 - https://en.wikipedia.org/wiki/Array_data_type
+- https://completedeveloperpodcast.com/episode-78/

@@ -16,6 +16,7 @@
 - All software has technical debt
 - technical debt accrues, if so is it done on purpose and accepted that we will have to handle the consequences
 - what can happen when developers do not factor their learning back in to their code as they're building it
+- https://completedeveloperpodcast.com/episode-138/
 
 ## Links
 
@@ -81,3 +82,4 @@
 ## Links
 
 - https://www.bmc.com/blogs/technical-debt-explained-the-complete-guide-to-understanding-and-dealing-with-technical-debt/
+- https://completedeveloperpodcast.com/episode-205/

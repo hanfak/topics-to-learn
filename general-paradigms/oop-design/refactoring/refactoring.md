@@ -31,7 +31,8 @@
   - shortcuts
   - looking for yellow warnings
 
-  https://martinfowler.com/articles/workflowsOfRefactoring/#final
+- https://martinfowler.com/articles/workflowsOfRefactoring/#final
+- https://completedeveloperpodcast.com/episode-27/
 
 ## aims
 

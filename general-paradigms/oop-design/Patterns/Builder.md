@@ -18,6 +18,12 @@
 ## Drawbacks
 
 -  Builder pattern is verbose and requires code duplication as Builder needs to copy all fields from Original or Item class.
+- It does not really guide the user through the creation.
+- A user can always call the build method in any moment, even without the needed information.
+- There is no way to guide the user from a creation path instead of another based on conditions.
+- There is always the risk to leave your object in an inconsistent state.
+  - You could also put default values around all the required properties, but then the readability of the code will be lost ( new PaninoBuilder().build(); what are you building here?)
+- All methods are always available, leaving the responsibility of which to use and when to use to the user who did not write the api.
 
 ## when
 

@@ -38,6 +38,7 @@ The Domain is King
 - Archetectural Patterns
   - Clean
     - https://dzone.com/articles/clean-architecture-is-screaming
+		- https://proandroiddev.com/multiple-ways-of-defining-clean-architecture-layers-bbb70afa5d4a
   - hexagonal
     - https://dzone.com/articles/hexagonal-architecture-is-powerful
   - ports/adapters

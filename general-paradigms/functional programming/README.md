@@ -65,3 +65,4 @@
 - https://codurance.com/2018/08/09/the-functional-style-part-1/
 - https://blog.knoldus.com/functional-programming-a-paradigm/
 - https://github.com/blalasaadri/functional-programming-in-java-examples
+- https://completedeveloperpodcast.com/episode-75/

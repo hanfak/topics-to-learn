@@ -22,30 +22,50 @@
 
 - ls
   - flags -al
+- pwd
+  - Where am I? Linux can be unforgiving, particularly when you delete something. Make sure you know where you are before you issue your commands.
 - cd
   - multiple folders
   - to root
 - copy ```cp```
+  - Copy file from source to destination preserving same mode
 - move ```mv```
-  - rename
+  - used to rename
+    - mv text new
+  - to move files with the command line
 - ```.```
 - cat
   - combining text
   - showingfile
+  - To display the contents of a text file, just type cat myfile.
 - less
+  - allows you to quickly view a file. You can page up and down. Press ‘q‘ to quit from the less window
   - searching in less
-- ```head -3 <filename>```
-  - show first n number of lines
-- ```tail -3 <filename>```
-  - show last n lines
-  - '''tail -f <filename>
-    - follow end of file, great for following logs as a program is run
-  - ```/<regex search term>``` searching within less
-- https://www.lifewire.com/what-to-know-less-command-4051972
+    - ```head -3 <filename>```
+      - show first n number of lines
+    - ```tail -3 <filename>```
+      - show last n lines
+    - '''tail -f <filename>
+      - follow end of file, great for following logs as a program is run
+    - ```/<regex search term>``` searching within less
+  - https://www.lifewire.com/what-to-know-less-command-4051972
+- more
+  - allows you to quickly view a file and shows details in percentage. You can page up and down. Press ‘q‘ to quit out from the more window.
 - echo
+  - This takes the text you give it and sends it somewhere—back to the screen, to a file, or to another command. Example: echo "hello!"
 - grep
+  - To find lines of text that contain a certain string, use grep.
+  - Example: grep 'root' /etc/passwd # root:x:0:0:root:/root:/bin/bash
 - find
+  - It does what it says, and it’s good at it. Use it to locate files by path, size, date, owner and a bunch of other useful filters. Example: find . -type f -mtime -1h # List files in this directory modified in the past hour.
+- sed
+  - Use sed to find and change a substring in a piece of text. Example: echo "this, that, and the other" | sed 's/that/those/' # "this, those, and the other"
+- cut
+  - When you have a string with separators in it, use cut to filter out certain fields.
+  - echo "this, that, and the other" | cut -d, -f2 # "that"
 - create file
+- shutdown
+  - Use shut down the system and turn off the power. Example: shutdown -h now shuts down the system immediately. shutdown -h +5 shuts down the system after five minutes.
 - `xkill`
   - Then click on program that wont shutdown
 - reverse search
@@ -59,7 +79,18 @@
 
 - ```echo <something``` printing to console
 - piping
+- uptime
+  - shows how long your system has been running and the number of users that are currently logged in. It also displays load average for 1,5 and 15 minutes intervals.
+- w
+  - displays users currently logged in and their process along with load averages. Also shows the login name, tty name, remote host, login time, idle time, JCPU, PCPU, command and processes.
+- users
+  -  displays currently logged in users.
+- date
+  - Just type date when you want to know what time it is. Example: date "+It's %l:%m%p on %A"
+- who
+  - simply returns user name, date, time and host information. The who command is similar to the w command. Unlike w, who doesn’t print what users are doing
 - whoami
+  -  prints the name of the current user. You can also use “who am i” to display the current user. If you are logged in as a root, using sudo command “whoami” returns root as current user. Use “who am i” if you want to know the exact user logged in
 - permissions
 - chmod
 - chown
@@ -70,6 +101,7 @@
   - rmdir -r
 - rm
   - rm -f
+  - This command removes files, not directories. rm file.txt will remove the file named "file.txt" as long as it exists and is in the current directory.
 - chain command &&
 - watch
 - view ports in use
@@ -88,6 +120,8 @@
   - summarises disk usage of each harddrive
 - source ./bashrc
   - to run bash profile, if updating it
+- crontab
+  - lists scheduled jobs for current user with crontab command and -l option.
 
 
 ## Permissions

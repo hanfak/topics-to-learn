@@ -1,2 +1,3 @@
 - https://www.yegor256.com/2018/12/11/unit-testing-anti-patterns.html
 - http://archive.li/3acB#selection-119.0-119.17
+- https://completedeveloperpodcast.com/episode-207/

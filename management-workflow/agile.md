@@ -17,6 +17,7 @@
 	- [Autamated Tests](#autamated-tests)
 	- [Showcases](#showcases)
 	- [Pace](#pace)
+	- [Myths](#myths)
 
 ## Overview
 
@@ -87,3 +88,7 @@ Instead of figuring everything upfront, we design, build and test little bits of
 ## Showcases
 
 ## Pace
+
+## Myths
+
+- https://completedeveloperpodcast.com/episode-153/

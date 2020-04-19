@@ -59,10 +59,13 @@
   - We want to release many times a day.
 - To operate microservices successfully, DevOps is key. Only the developers really know what’s going on and can fix things.
 
+## Advantages
+
 
 ## Why No need for Microservices
 
 - https://medium.com/swlh/stop-you-dont-need-microservices-dc732d70b3e0
+- https://completedeveloperpodcast.com/episode-189/
 
 
 ## links

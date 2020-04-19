@@ -1,0 +1,53 @@
+# general-laws-of-programming
+
+-  Pareto Principle
+  - For many phenomena, 80% of consequences come from 20% of the causes.
+- Parkinson’s Law
+  - Work expands to fill the time available for its completion. Also known as the law of bikeshedding.
+- Haack’s Law
+  - Work expands to overflow the time available and spill on the floor leaving a very sticky mess.
+- Peter Principle
+  - In a hierarchy, every employee tends to rise to their level of incompetence.
+- Murphy’s Law
+  - Anything that can go wrong, will go wrong.
+- Brook’s Law
+  - Adding manpower to a software project will make it later.
+- Linus’s Law
+  - Given enough eyeballs, all bugs are shallow.
+- Kerchkohoff’s Principle
+  - In cryptography, a system should be secure even if everything about the system except for a small piece of information — the key — is public knowledge.
+- Conway’s Law
+  - Any piece of software reflects the organizational structure that produced it.
+- Moore’s Law
+  - The power of computers doubles every 24 months OR The number of transistors on an integrated circuit board will double in about 18 months.
+- Wirth’s Law
+  - Software gets slower faster than hardware gets faster.
+- Zawinski’s Law
+  - Every program expands until it can read mail. Those programs which cannot so expand are replaced by those which can.
+- Fitt’s Law
+  - The time to acquire a target is a function of the distance to and the size of the target. This is why the corners and edges of windows are so important, as it makes their “size”, for the purposes of navigation, infinite.
+- The 99 Rule
+  - The first 90% of the code takes 10% of the time. The remaining 10% takes the other 90% of the time.
+- Knuth’s Optimization Principle
+  - Premature optimization is the root of all evil.
+- Hofstadter’s Law
+  - It always takes longer than you expect, even when you take into account Hofstadter’s law.
+- Law of Demeter
+  - This is also known as the law of least coupling. Each unit should have only limited knowledge about other units: only units “closely” related to the current unit. Each unit should only talk to its friends; don’t talk to strangers.
+- Hanlon’s Razor
+  - Never ascribe to malice that which can adequately be explained by stupidity.
+- Dunning-Kruger Effect
+  - Unskilled persons tend to mistakenly assess their own abilities as being much more competent than they actually are.
+- Postel’s Law
+  - Be conservative in what you do, be liberal in what you accept from others.
+- Eagleson’s Law
+  - Any code of your own that you haven’t looked at for six or more months might as well have been written by someone else.
+- Dilbert’s Law
+  - Incompetent workers will be promoted above competent workers to managerial positions, thus removing them from the actual work and minimizing the damage they can do.
+- Sayre’s Law
+  - In any dispute the intensity of feeling is inversely proportional to the value of the issues at stake.
+- The Abstraction Principle
+  - Each significant piece of functionality in a program should be implemented in just one place in the source code. Where similar functions are carried out by distinct pieces of code, it is generally beneficial to combine them into one by abstracting out the varying parts.
+- KISS Principle
+- Brandolini’s Law
+  - The amount of energy needed to refute false statements is an order of magnitude bigger than to produce it.

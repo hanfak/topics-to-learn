@@ -15,3 +15,4 @@
 ## Libraries
 
 - https://github.com/j-easy/easy-rules
+- https://www.michael-whelan.net/rules-design-pattern/

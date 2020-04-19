@@ -15,6 +15,10 @@
 
 ## How?
 
+### How to solve problems in implementing
+
+- https://completedeveloperpodcast.com/episode-53/
+
 ## Links
 
 - intro https://technologyconversations.com/2013/12/24/test-driven-development-tdd-best-practices-using-java-examples-2/
