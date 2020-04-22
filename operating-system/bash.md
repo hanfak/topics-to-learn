@@ -122,6 +122,8 @@
   - to run bash profile, if updating it
 - crontab
   - lists scheduled jobs for current user with crontab command and -l option.
+- count number of files
+  -  ls -1 | wc -l
 
 
 ## Permissions

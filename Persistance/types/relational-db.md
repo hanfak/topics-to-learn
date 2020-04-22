@@ -20,6 +20,17 @@
   - When additional details are required, or data needs to be associated with a record from one table to another, then we have what we call relationships.
     - A common key is established between the two (or more) tables and this is used for that association there after.
 
+- has strictly enforced relationships between things  stored in the database.
+- These relationships are typically made possible by requiring the database to represented each such thing (called the "entity") as a structured table - with zero or more rows ("records", "entries") and and one or more columns ("attributes, "fields").
+- By forcing such a structure on an entity, we can ensure that each item/entry/record has the right data to go with it.  It makes for better consistency and the ability to make tight relationships between the entities.
+- a formalized entity structure is called a **schema**
+- This structure in enforced by ensuring that data added to the table conforms to that structure.
+  - Adding a another field to the table when its schema doesn't allow for it will not be permitted.
+- Most relational databases support a database querying language called SQL - Structured Query Language.
+  - This is a language specifically designed to interact with the contents of a structured (relational) database. 
+  - it is considered that SQL (relational) databases support more complex queries (combining different fields and filters and conditions) than non-relational databases.
+  -
+
 ## When?
 
 - You will enforce the ACID (Atomicity, Consistency, Isolation, Durability) principles.

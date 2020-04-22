@@ -1,8 +1,20 @@
 # Databases
 
-All apps that I have worked with has used a database to persist data. Either for the running of the app (quartz scheduler), for storing information to perform some logic later on, for storing information to record workflow, or audit information of a workflow for reporting purposes
+- Generally, all apps use a database to persist data.
+  - Either for the running of the app (quartz scheduler),
+  - for storing information to perform some logic later on,
+  - for storing information to record workflow, or
+  - audit information of a workflow for reporting purposes
 
-I currently work with Oracle Sql.
+## What
+
+## Types
+
+- Relational Databases
+- NoSQL
+
+
+
 
 ## Areas
 

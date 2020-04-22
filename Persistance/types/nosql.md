@@ -16,6 +16,9 @@
 - This is more intuitive and requires fewer hops across tables to find all the data relating to a customer.
   - Note however that this results in a need for additional processing effort and more storage as the document sizes grow.
   - The storage will not be as highly organized at with an Relational Database.
+- has a less rigid, or, put another way, a more flexible structure to its data
+- The data typically is presented as "key-value" pairs.
+- NoSQL database properties are sometimes referred to as BASE:
 
 
 ## When ?
@@ -32,6 +35,16 @@
 - Can be hosted in cheaper hardware machines
 - In memory caching option is available to increase the performance of queries
 - were specifically designed for high availability and performance
+- at their core, these databases hold data in a hash-table-like structure, they are extremely fast, simple and easy to use, and are perfect for use cases like
+  - caching,
+  - environment variables,
+  - configuration files
+  - session state etc.
+
+## Types
+
+- This flexibility makes them perfect for using in memory (e.g. Memcached) and also in persistent storage (e.g. DynamoDb).
+- There are other "JSON-like" databases called document databases like the well-loved MongoDb, and at the core these are also "key-value" stores.
 
 ## ISsues
 

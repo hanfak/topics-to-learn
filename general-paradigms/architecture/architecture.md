@@ -39,6 +39,8 @@ The Domain is King
   - Clean
     - https://dzone.com/articles/clean-architecture-is-screaming
 		- https://proandroiddev.com/multiple-ways-of-defining-clean-architecture-layers-bbb70afa5d4a
+		- https://softwareengineering.stackexchange.com/questions/371966/is-clean-architecture-by-bob-martin-a-rule-of-thumb-for-all-architectures-or-i
+		- http://www.plainionist.net/Implementing-Clean-Architecture/
   - hexagonal
     - https://dzone.com/articles/hexagonal-architecture-is-powerful
   - ports/adapters
