@@ -1,8 +1,18 @@
 # Getting started
 
+- https://clojure.org/
+- https://github.com/clojure-cookbook/clojure-cookbook
+- https://www.youtube.com/watch?v=VSdnJDO-xdg
+-
+
+## Philosphy
+
+- https://www.youtube.com/watch?v=6ayR9s5pudk
+  - https://www.slideshare.net/ogrigas/living-withoutobjects
 ## Installation
 
 - https://clojure.org/guides/getting_started
+- https://www.surveymonkey.com/results/SM-S9JVNXNQV/
 
 ## Build tools
 
@@ -36,11 +46,26 @@
 ## Web
 
 - https://www.youtube.com/watch?v=3Xm_nVqxowk
+- https://www.youtube.com/watch?v=LcpbBth7FaQ
+- https://purelyfunctional.tv/mini-guide/what-web-framework-should-i-use-in-clojure/
 
 ## Test
 
 - https://clojure.github.io/clojure/clojure.test-api.html
 
-## polymorphism
+## polymorphism && dep inversion
 
 - https://8thlight.com/blog/myles-megyesi/2012/04/26/polymorphism-in-clojure.html
+- clojure protocols
+
+## Database
+
+- https://www.youtube.com/watch?v=yjS0jHr_-2g
+
+## Properties
+
+## Concurrency/ threads/async
+
+- https://www.youtube.com/watch?v=AhxcGGeh5ho
+- https://www.youtube.com/watch?v=drmNlZVkUeE
+- https://www.youtube.com/watch?v=nDAfZK8m5_8

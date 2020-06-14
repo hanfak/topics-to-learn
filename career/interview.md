@@ -8,6 +8,10 @@
 - https://blog.usejournal.com/most-frequently-java-interview-question-127e923f70d9
 - https://medium.com/free-code-camp/a-software-engineering-survival-guide-fe3eafb47166
 
+## q
+
+- https://deniseyu.io/2020/02/04/interview-questions-to-ask.html
+
 ## coding challenges
 
 - https://medium.com/hackernoon/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0

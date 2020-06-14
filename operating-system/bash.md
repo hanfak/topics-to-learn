@@ -115,9 +115,12 @@
 - du
   - monitoring disk usuage
   - `du -sh *`` summarises disk usages of the files in the current directory we use
+    - `du -sh /root/test` total disk usage in folder and subfolders
   - `du -sh .[!.]* *` to include hidden files
 - df -h
   - summarises disk usage of each harddrive
+- SSD usage
+  - https://www.cnet.com/how-to/find-how-how-much-longer-your-ssd-will-last/
 - source ./bashrc
   - to run bash profile, if updating it
 - crontab

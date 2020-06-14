@@ -39,6 +39,8 @@ Another way to practise is to turn off tabs.
 
 NOTE: There will be some specific shortcuts and ways of using IntelliJ in different sections of this repo.
 
+- https://blog.jetbrains.com/idea/2020/05/debugger-basics-in-intellij-idea/
+
 ### Live templates
 
 Help reduce amount of typing for common code pieces

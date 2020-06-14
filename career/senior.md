@@ -19,3 +19,4 @@
 
 - https://medium.com/better-programming/the-differences-between-a-junior-mid-level-and-senior-developer-bb2cb2eb000d
 - https://dottedsquirrel.com/better-developer/the-marks-of-a-true-senior-developer/
+- https://www.colbyfayock.com/2020/05/what-is-a-senior-developer-and-how-can-i-become-one

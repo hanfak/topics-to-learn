@@ -1,3 +1,5 @@
+# Solid for packages
+
 - http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod
 - https://adriancitu.com/tag/the-common-reuse-principle/
 - https://en.wikipedia.org/wiki/Package_principles

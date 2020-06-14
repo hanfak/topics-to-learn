@@ -265,6 +265,7 @@ Types of test
 - https://testing.googleblog.com/2008/12/static-methods-are-death-to-testability.html
 - http://misko.hevery.com/code-reviewers-guide/
 - https://blog.sebastian-daschner.com/entries/thoughts-on-efficient-testing
+- Google testing blog: https://testing.googleblog.com/search/label/TotT
 
 * Wiremock
 * Yatspec

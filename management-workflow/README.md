@@ -35,3 +35,4 @@
 
 - https://blog.ippon.tech/agile-story-development/
 - https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/
+- https://joshlearningto.code.blog/2020/02/07/level-4-diploma-in-software-development-methodologies/

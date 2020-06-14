@@ -1,0 +1,1 @@
+- https://piotrminkowski.com/2019/04/15/micronaut-tutorial-beans-and-scopes/

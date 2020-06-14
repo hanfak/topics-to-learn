@@ -23,6 +23,13 @@ I have mainly been using Git to version control all software that has been worke
 - fetch
 - patch
 - stash
+- unstaged files
+  - if dont want them committed, they are unadded, so can delete them
+- Remove changes to file
+  - 'git checktout -f <name of file>'
+- Files that have changes, but dont want them commited
+  - intellij can put to another changeset
+  -  can stash them
 - branch
   - checkout
 - merge
