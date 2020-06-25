@@ -46,3 +46,32 @@
       - logs should be enabled
   - Tests should not interfere with each other
     - Tests should not share state with each other, so can be run in parallel
+
+## Issues with running build
+
+- Running a build means running all your tests to make sure that specific build is a candidate for deployment
+- The larger the project gets (or more features it adds) the number of tests increases
+- This leads to long build times, either locally or on CI. Which is bad for fast feed back
+- How to decrease time taken to improve lower time of build
+  - Separate unit tests from end to end and integration Tests
+    - Run unit tests first, this will be fast, and if this fails get fast feed back
+    - The longer running tests (E2E and integration) are run later, after the unit tests pass
+    - This may mean separating unit tests into one module and E2E and integration tests into anothe module. where the jars/binaries are run during separate stages of the build
+      - Probably not best for early stages of projects
+    - Can use build tool to run different packages, and to fail fast depending on the package, and order what packages to test first
+      - surefire and failsafe for maven
+  - Reduce the number of integration, E2E and module tests
+    - edge cases, lots of different cases can be done via a unit test
+    - Add a link between the tests to keep track
+    - One E2E for one case, and several unit/documentation tests for the other cases (as long as they follow same logic and flow within app)
+  - Do not replicate tests, if acceptance test tests a flow, do not repeat with unit or integration test.
+    - If turning unit test to documentation test delete the unit test
+  - Do not create the output (ie html) when running a local build but do it for CI
+  - Run tests in parallel
+    - easier for unit tests with mocks
+  - Run only tests which affect changed, deleted or new methods/classes - dynamic tests
+    - https://engineering.shopify.com/blogs/engineering/spark-joy-by-running-fewer-tests
+  - Reduce start up time of tests
+    - if running E2E test and takes time to start up app, then keep the app for all the other tests
+      - Will need to return the app to clean state before each test though
+    - Use a docker container of the app, keep the container running until all the tests have finished

@@ -164,6 +164,7 @@ What an application is:
 ## Middleware
 
 - https://stackoverflow.com/questions/2904854/what-is-middleware-exactly
+- https://www.redhat.com/en/topics/middleware/what-is-middleware
 
 ## Front end
 

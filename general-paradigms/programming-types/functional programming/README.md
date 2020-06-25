@@ -3,6 +3,18 @@
 - AKA Declarative Programming
 - Intent of FP is for readability and understandablility
 - About what rather than how (procedural)
+- functional programming as a paradigm begins with three things, the three main concepts — actions, calculations, and data. These are mutually exclusive categories that everything falls into.
+
+## Types
+
+- https://functional.works-hub.com/learn/Where-did-the-Functional-Languages-come-from-
+  - Clojure
+  - Erlang
+  - Haskell
+  - OCaml
+  - F#
+  - Scala
+- https://functional.works-hub.com/learn/On-Types-And-Intent
 
 ## Properties
 
@@ -66,3 +78,5 @@
 - https://blog.knoldus.com/functional-programming-a-paradigm/
 - https://github.com/blalasaadri/functional-programming-in-java-examples
 - https://completedeveloperpodcast.com/episode-75/
+- https://github.com/leandrotk/functional-programming-learning-path
+- https://functional.works-hub.com/learn/an-introduction-to-the-basic-principles-of-functional-programming-f509c

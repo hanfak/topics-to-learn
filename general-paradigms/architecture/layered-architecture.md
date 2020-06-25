@@ -20,7 +20,7 @@
 - Can allow bad habits to creep in, leave the app in a bad state  and hard to maintain or add features
 - Need strong self discipline to avoid the following
   - but this discipline detrioates when deadlines occcur
-  - Good practices become optional and not at all 
+  - Good practices become optional and not at all
 - Promotes Database-Driven-Design
   - DB is the foundation of Layered Architecture
   - Any application aims is to model behaviour not state
@@ -64,6 +64,7 @@
 ### Links
 
 - https://www.pixelstech.net/article/1493900728-Benefits-and-Drawback-of-a-Layered-Architecture
+- https://javadevguy.wordpress.com/2019/01/06/reevaluating-the-layered-architecture/
 
 
 ## Package structure

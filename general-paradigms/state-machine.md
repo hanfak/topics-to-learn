@@ -1,3 +1,4 @@
+# State Machines
 
 - A system or process, where it can only be in one state at a time
 - A collection of states, which when triggered by an event starts a transitions a state from the old state to a new state.

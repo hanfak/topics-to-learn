@@ -15,7 +15,7 @@
 	- [Assembling the Application](#assembling-the-application)
 	- [Enforcing Architecture Boundaries](#enforcing-architecture-boundaries)
 	- [Taking Shortcuts Consciously](#taking-shortcuts-consciously)
-
+	- [Issues](#issues)
 
 Goes by many names
 - hexagonal
@@ -631,6 +631,12 @@ Goes by many names
     - If CRUD app grows, then we start to add domain logic directly to the outgoing adapter. Spreading the domain logic all over the app
     - to prevent boilerplate pass-through services, we might choose to skip the application services for simple CRUD use cases after all
     - Should introduce application service as soon business logic occurs
-  
+
+
+[Top of Page](#clean-architecture)
+
+## issues
+
+- https://javadevguy.wordpress.com/2017/07/27/a-detailed-analysis-of-the-clean-architecture-from-an-object-oriented-perspective/
 
 [Top of Page](#clean-architecture)

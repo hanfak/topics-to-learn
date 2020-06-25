@@ -18,13 +18,24 @@ This is also for personal and professional use,
     - Sublime
 - Terminal
   - standard one that comes with OS should be fine
+  - bash
+  - zsh
+  - shell
 - Browsers
   - Chrome
-    - Extensions
-      - Wiremock
   - Firefox
+  - Extensions
+    - json/xml/md renderer
+    - suspender
+    - Wiremock
 - Http Client
   - Postman
+- artifacts
+  - artifactory
+  - maven
+  - gcr
+  - dockerhub
+  - helm
 - Log searcher
   - splunk
 - Pdf viewer

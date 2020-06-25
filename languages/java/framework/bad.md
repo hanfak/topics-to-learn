@@ -1,0 +1,5 @@
+- https://dzone.com/articles/are-annotations-bad
+  - 90% of the time, these frameworks that use annotations work well, but that 10% where you need your system to perform under stress is EXACTLY when these fail.
+  - We sacrifice the art of writing good and performant code for the short term gains of improving developer productivity
+  - While people say – it’s easier to read the code and it’s easier to debug the code with annotations in the mix. They forget that they now have embedded configuration in code.
+  - his style of programming is great when I have to try something new in a personal pet project to get off the ground quickly – I can just write a class, type a few annotations and boom, I am ready to do CRUD. But does this really works in enterprise level applications, especially given how we manage this in production

@@ -48,6 +48,11 @@ Using an OO programming language does not mean that you are programming in a OO 
 - Abstraction
 - inheritence
 
+- Object-oriented programming, there’s basically three main concepts.
+	- There are objects, which hold state and accept messages,
+	- there are the messages that are sent between objects, and
+	- there are the methods, which are the code that runs when the message is received.
+- In this way, you create this network of objects that communicate with each other. The computation happens through the dispatch of different messages and what each object does with the messages it receives
 - https://stackify.com/oops-concepts-in-java/
 
 ## Design Principles
