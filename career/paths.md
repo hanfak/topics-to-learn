@@ -1,0 +1,1 @@
+- https://www.freecodecamp.org/news/alternative-career-paths/

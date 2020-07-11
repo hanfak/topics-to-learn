@@ -3,6 +3,8 @@
 ## Custom Annotations
 
 - https://www.baeldung.com/java-custom-annotation
+- https://mkyong.com/java/java-custom-annotations-example/
+- https://www.javatpoint.com/java-annotation
 
 ## Links
 

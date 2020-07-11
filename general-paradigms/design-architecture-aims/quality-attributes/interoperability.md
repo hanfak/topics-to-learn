@@ -1,0 +1,205 @@
+# Interoperability
+
+- Interoperability is about the degree to which two or more systems can usefully exchange meaningful information via interfaces in a particular context.
+  - includes:
+    - syntactic interoperability
+      -  having the ability to exchange data
+    - semantic interoperability
+      -  having the ability to correctly interpret the data being exchanged
+  - exchange information
+    - mean something as simple as program A calling program B with some parameters.
+    - two systems (or parts of a system) can exchange information even if they never communicate directly with each other.
+      - via a queue, a file in filesystem, database
+    - Entities can exchange information in even less direct ways. If I have an idea of a program's behavior, and I design my program to work assuming that behavior, the two programs have also exchanged information just not at runtime.
+  - Systems (or components within systems) often have or embody expectations about the behaviors of its "information exchange" partners
+    - But this may not be true or enforced
+  - Interface
+    -  the simple case is a syntactic description of a component's programs and the type and number of their parameters, most commonly realized as an API
+      - not sufficient description, necessary for compliation and interoperability
+    - mean the set of assumptions that you can safely make about an entity
+    -
+- A system cannot be interoperable in isolation
+  - needs to identify with whom, with what, and under what circumstances
+    - the context
+- Design affected by the systems expected to interoperate.
+  - If we already know the interfaces of external systems with which our system will interoperate, then we can design with specificity for that system
+  - If we dont know the interfaces of external systems with which our system will interoperate, then we design in a more generic fashion
+    - that the identity and the services that another system provides can be bound later in the life cycle, at build time or runtime.
+- Levels of Interoperability Maturity defined by frameworks
+  - level 1
+    - systems that do not share data at all, or do not do so with any success
+  - Levels in between
+  - Level 5
+    - systems that work together seamlessly, never make any mistakes interpreting each other's communications, and share the same underlying semantic model ofthe world in which they work.
+- Reasons for interoperability
+  - Your system provides a service to be used by a collection of unknown systems.
+    - These systems need to interoperate with your system even though you may know nothing about them
+    - ie third party services like google maps
+  - You are constructing capabilities from existing systems
+    - ie a traffic sensing system where the input comes from individual vehicles, the raw data is processed into common units ofmeasurement, is interpreted and fused, and traffic congestion information is broadcast
+- Aspectst of interoperability
+  - Discovery.
+    -  The consumer of a service must discover (possibly at runtime, possibly prior to runtime) the location, identity, and the interface ofthe service
+  - Handling/disposition ofthe response
+    - The service reports back to the requester with the response
+    - The service sends its response on to another system
+    - The service broadcasts its response to any interested parties.
+- System of systems
+  - a group of systems that are interoperating to achieve a joint purpose
+  - an arrangement of systems that results when independent and useful systems are integrated into a larger system that delivers unique capabilities.
+  - Categories
+    - Directed
+      - SoS objectlves, centralized management, funding, and authority for the overall SoS are in place. Systems are subordinated to the SoS
+      - a deliberate attempt to create an SoS
+    - Acknowledged
+      - SoS objectives, centralized management, funding, and authority In place. However, systems retain their own management, funding, and authority in parallel with the SoS
+      - a deliberate attempt to create an SoS
+    - Collaborative
+      - There are no overall objectives, centralized management, authority, responsibility, o·r funding at the SoS level. Systems voluntarily work together to address shared or common interests
+      - more ad hoc, absent an overarching authority or source of funding
+      - common
+      - ie Google is the manager and funding authority for the map service. Each use of the maps in an application (an SoS) has its own management and funding authority, and there is no overall management of all ofthe applications that use Google Maps. The various organizations involved in the applications collaborate (either explicitly or implicitly) to enable the applications to work correctly
+    - virtual
+      - Like collaborative, but systems don't know about each other
+      - more ad hoc, absent an overarching authority or source of funding
+      - For large systems
+      - ie systems within the electric grid must interoperate, but there is no management authority for the overall system
+- interoperability general scenario
+  - Source ofstimulus.
+    - A system initiates a request to interoperate with another system.
+  - Stimulus.
+    - A request to exchange information among system(s)
+  - Artifacts.
+    - The systems that wish to interoperat
+  - Environment.
+    - The systems that wish to interoperate are discovered at runtime or are known prior to runtime.
+  - Response.
+    - The request to interoperate results in the exchange of information. The information is understood by the receiving party both syntactically and semantically.
+    - Alternatively, the request is rejected and appropriate entities are notified.
+    - In either case, the request may be logged
+  -  Response measure.
+    - The percentage of information exchanges correctly processed
+    - the percentage of information exchanges correctly rejected
+- SOAP vs REST
+  - Two majors ways for web-based applications to interoperate
+  - SOAP is a protocol specification for XML-based information that distributed applications can use to exchange information and hence interoperate
+    - often accompanied by a set of SOA middleware interoperability standards and compliant implementations, referred to (collectively) as WS*
+    - such as
+      - An infrastructurefor service composition. SOAP can employ the Business Process Execution Language (BPEL) as a way to let developers express business processes that are implemented as WS* services
+      -  Transactions. ensures they are managed properly
+      -  Service discovery. The Universal Description, Discovery and Integration (UDDI) language enables businesses to publish service listings and discover each other.
+      - Reliability. Applications that require such guarantees must use services compliant with SOAP's reliability standard
+    - has its roots in a remote procedure call (RPC) model
+    - SOAP relies on HTTP and RPC for message transmission, but it could, in theory, be implemented on top of any communication protocol
+    - it is just an information exchange standard
+    - interacting applications need to agree on how to interpret the payload, which is where you get semantic interoperability
+    - SOAP offers completeness
+  - REST is a client-server-based architectural style that
+    - is structured around
+      -  a small set of create, read, update, delete (CRUD) operations (called POST, GET, PUT, DELETE respectively in the REST world)
+      - a single addressing scheme (based on a URI, or uniform resource identifier).
+    - REST offers simplicity
+    - REST is about state and state transfer
+      - views the web and the services that service-oriented systems can string together as a huge network of information that is accessible by a single URI-based addressing scheme
+      - There is no notion of type and hence no type checking in REST it is up to the applications to get the semantics of interaction right
+    - any HTTP client can talk to any HTTP server, using the REST operations (POST, GET, PUT, DELETE) with no further configuration.
+      - buys you syntactic interoperability,
+    - there must be organization-level agreement about what these programs actually do and what information they exchange
+      - which is semantic interoperability is not guaranteed between services just because both have REST interfaces
+    - is meant to be self-descriptive and in the best case is a stateless protocol
+- To choose
+  - accept the complexity and restrictions of SOAP+WSDL (the Web Services Description Language) to get more standardized interoperability
+  - if you want to avoid the overhead by using REST, but perhaps benefit from less standardization
+  - A message exchange in REST has somewhat fewer characters than SOAP
+  - For systems exchanging a large number of messages, another tradeoff is between performance (favoring REST) and structured messages (favoring SOAP).
+  - Quality of service
+    - WS* implementation has greater support for security, availability, and so on and type of functionality.
+    - A RESTful implementation, because of its simplicity, is more appropriate for read-only functionality, typical of mashups, where there are minimal QoS requirements and concerns.
+- Tactics
+  - Locate intefaces tactics
+    - discover service.
+      - It is used when the systems that interoperate must be discovered at runtime.
+      - Locate a service through searching a known directory service.
+      - service
+        - we simply mean a set of capabilities that is accessible via some kind of interface.
+      - There may be multiple levels of indirection in this location process
+      - The service can be located by type of service, by name, by location, or by some other attribute
+  - Manage Interfaces tactics
+    - Orchestrate.
+      - Orchestrate is a tactic that uses a control mechanism to coordinate and manage and sequence the invocation of particular services (which could be ignorant of each other)
+      - Orchestration is used when the interoperating systems must interact in a complex fashion to accomplish a complex task;
+        - orchestration "scripts" the interaction.
+      - Workflow engines are an example of the use of the orchestrate tactic.
+      - The mediator design pattern can serve this function for simple orchestration.
+      - Complex orchestration can be specified in a language such as BPEL.
+  - Tailor interface.
+    - Tailor interface is a tactic that adds or removes capabilities to an interface.
+    - Capabilities such as translation, adding buffering, or smoothing data can be added.
+      - Capabilities may be removed as well.
+    - An example of removing capabilities is to hide particular functions from untrusted users.
+    - The decorator pattern is an example of the tailor interface tactic.
+  - The enterprise service bus that underlies many service-oriented architectures combines both of the manage interface tactics.
+- Standards
+  - Standards need to apply to syntatically (ie num of decimals in number) and semantically (ie what this num should include ie tax and value)
+  - Cannot just rely on standards enforced automatically ie WS*
+  - challenges
+    - Ideally, every implementation of a standard should be identical and thus completely interoperable with any other implementation.
+      - This is hard, as when standards are incorporated into products, tools, and services, undergo customizations and extensions due vendors wanting to create a unique selling point as a competitive advantage
+    - Standards are often deliberately open-ended and provide extension points
+      - The actual implementation ofthese extension points is left to the discretion of implementers, leading to proprietary implementations
+    - have a life cycle oftheir own and evolve over time in compatible and noncompatible ways
+      - Deciding when to adopt a new or revised standard is a critical decision for organizations.
+      - Committing to a new standard that is not ready or eventually not adopted by the community is a big risk for organizations.
+      - but waiting too long may also become a problem, which can lead to unsupported products, incompatibilities, and workarounds, because everyone else is using the standard
+    - there are as many bad standards as there are engineers with opinions.
+      - include underspecified, overspecified, inconsistently specified, unstable, or irrelevant standards
+    - common for standards to be championed by competing organizations, resulting in conflicting standards due to overlap or mutual exclusion
+      - Can lead to vendor lock in
+    - For new and rapidly emerging domains, the argument often made is that standardization will be destructive because it will hinder flexibility:
+      -  premature standardization will force the use of an inadequate approach and lead to abandoning other presumably better approaches.
+      - what do organizations do in the meantime? Wait until standardized and mature? Use now but spend time on changing to fit current systems, then change when new version is out?
+  - **we cannot let standards drive our architectures**
+    - We need to architect systems first and then decide which standards can support desired system requirements and qualities.
+    - allows standards to change and evolve without affecting the overall architecture of the system
+- A Design Checklist for Interoperability
+  - Allocation of Responsibilities
+    - Determine which of your system responsibilitres will need to interoperate with other systems.
+    - Ensure that responsibilities have been allocated to detect a request to interoperate with known or unknown external systems.
+    - Ensure that responsibilities have been allocated to carry out
+      - Accept the request
+      - Exchange information
+      - Reject the request
+      - Notify appropriate entities (people or systems)
+      - Log the request (for lnteroperablllty In an untrusted environment, logging for nonrepudiation is essential)
+  - Coordination Model
+    - Ensure that the coordination mechan.lsms can meet the critical quality attribute requirements
+    - For performance need to know the following
+      - Volume of traffic on the network both created by the systems under your control and generated by systems not under your control
+      - Timeliness of the messages being sent by your systems
+      - Currency of the messages being sent by your systems
+      - Jitter of the messages' arrival times
+      - Ensure that all of the systems under your control make assumptions about protocols and underlying networks that are consistent with the systems not under your control.
+  - Data Model
+    - Determine the syntax and semantics of the maj,or data abstractions that may be exchanged among interoperating systems.
+    - Ensure that these major data abstractions are consistent with data from the interoperating systems
+      - apply transformations to confidential data
+  - Mapping among Architectural Elements
+    - the critical mapping is that of components to processors
+    - making sure that components that communicate externally are hosted on processors that can reach the network
+    - the primary considerations deal wi1h meeting the security, availability, and performance requirements for the communication.
+  - Resource Management
+    - Ensure that interoperation with another system (accepting a request and/or rejecting a request) can never exhaust crftical system resources
+      - can a flood of such requests cause servlce to be denied to legitimate users?
+    - Ensure that the resource load imposed by the communication requirements of interoperation is acceptable.
+    - Ensure that if interoperation requires that resources be shared among the participating systems, an adequate arbitration policyis In place
+  - Binding Time
+    - Determine the systems that may interoperate, and when they become known to each other
+      - For all systems under your control
+        - Ensure tha1 1t has a policy for dealing with binding to both known and unknown external systems
+        - Ensure that it has mechanisms in place to reject unacceptable bindings and to log such requests
+        - In the case of late binding, ensure that mechanisms will support the discovery of relevant new services or protocols, or the sending of information using chosen protocols
+  - Choice of Technology
+    - are they "visible" at theinterface boundary of a system?
+      - what interoperability effects do they have?
+      - Do they support, undercut, or have no effect on the lnteroperablllty scenarios that appty to your system?
+    - Consider technologies that are designed to support interoperability, such as web services.

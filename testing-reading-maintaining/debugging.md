@@ -23,3 +23,5 @@
   - code fragment
 
 ## Debugging while container is up
+
+- https://medium.com/swlh/remote-debugging-a-java-application-running-in-docker-container-with-intellij-idea-efe54cd77f02

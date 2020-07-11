@@ -17,6 +17,7 @@ I have mainly been using Git to version control all software that has been worke
 - diff
 - logs/history
 - push
+  - all branches
 - pull
 - fork
 - clone

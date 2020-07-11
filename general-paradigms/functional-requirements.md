@@ -6,7 +6,8 @@
 - Example
   - It can be a calculation, data manipulation, business process, user interaction, or any other specific functionality which defines what function a system is likely to perform
   - transaction corrections, adjustments, and cancellations, Business Rules, Certification Requirements, Reporting Requirements, Administrative functions, Authorization levels, Audit Tracking, External Interfaces, Historical Data management, Legal or Regulatory Requirements are various types of functional requirements.
-  - 
+- These requirements state what the system must do, and how it must behave or react to runtime stimuli.
+  - functionality does not determine architecture
 - Functional software requirements help you to capture the intended behavior of the system. This behavior may be expressed as functions, services or tasks or which system is required to perform.
 - It's what the system does
 - It is mandatory
@@ -17,6 +18,7 @@
 - Type of Testing involve functional Testing like System, Integration, End to End, API testing, etc.
 - defines a system or its component
 - Functional requirements along with requirement analysis help identify missing requirements
+-
 
 
 

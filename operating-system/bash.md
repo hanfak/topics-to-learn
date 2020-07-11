@@ -127,6 +127,8 @@
   - lists scheduled jobs for current user with crontab command and -l option.
 - count number of files
   -  ls -1 | wc -l
+- leave {1258}
+  - set alarm for current day
 
 
 ## Permissions
