@@ -1,0 +1,234 @@
+# Modifiability
+
+- Change happens
+  - most of the cost of the typical software system occurs after it has been
+initially released
+  - For
+    - add new features
+      - to change or even retire old ones.
+    - to fix defects
+    - tighten security
+    - improve performance.
+    - to enhance the user's experience
+    - to embrace new technology, new platforms, new protocols, new standards.
+    - to make systems work together, even if they were never designed to do so.
+  - change can occur to any aspect of a system:
+    - the functions that the system computes
+    - the platform (the hardware, operating system, middleware)
+    - the environment in which the system operates (the systems with which it must interoperate, the protocols it uses to communicate with the rest of the world)
+    - the qualities the system exhibits (its performance, its reliability, and even its future modifications)
+    - its capacity (number of users supported, number of simultaneous operations).
+  - These changes can be done by a variety of actors
+    - developers change source code
+    - Users changing the screen saver is clearly making a change to one of the aspects of the system
+    - Tech ops, changing stat of database to fix the system
+    - Release team changing properties
+  - Types of changes
+    - made to the implementation (by modifying the source code)
+    - made during compile (using compile-time switches)
+    - made during build (by choice of libraries)
+    - made during configuration setup (by a range of techniques, including parameter setting)
+    - made during execution (by parameter settings, plugins, etc.)
+- Modifiability is about the cost and risk of making changes.
+  - Modifiability deals with change and the cost in time or money of making a change, including the extent to which this modification affects other functions or quality attributes
+  - Changes can be made by developers, installers, or end users, and these changes need to be prepared for.
+  - There is a cost ofpreparing for change as well as a cost of making a change.
+  - 
+- To plan for it
+  - Need to know  what can change?
+  - What is the likelihood ofthe change?
+    - Cannot plan for all possible changes
+      - otherwise system would never get done, or cost too much, or other attributes might suffere
+    - Need to decide what is important that could change and should be supported in the system to allow for that change to happen easily
+  - When is the change made and who makes it?
+  - What is the cost ofthe change?
+    - the cost of introducing the mechanism(s) to make the system more modifiable
+    - The cost of making the modification using the mechanism(s)
+    - Example
+      - The simplest mechanism for making a change is to wait for a change request to come in, then change the source code to accommodate the request. The cost of introducing the mechanism is zero; the cost of exercising it is the cost of changing the source code and revalidating the system
+      - an application generator, such as a user interface builder. The builder takes as input a description of the designer user interface produced through direct manipulation techniques and produces (usually) source code. The cost of introducing the mechanism is the cost of constructing the UI builder, which can be substantial. The cost of using the mechanism is the cost of producing the input to feed the builder (cost can be substantial or negligible), the cost ofrunning the builder (approximately zero), and then the cost ofwhatever testing is performed on the result (usually much less than usual).
+- For N similar modifications, a simplified justification for a change mechanism is that
+  - N x Cost of making the change without the mechanism =< Cost of installing the mechanism + (N x Cost of making the change using the mechanism).
+  - N is the anticipated number of modifications that will use the modifiability mechanism. It's only a prediction
+- General scenario
+  - Source of stimulus.
+    - This portion specifies who makes the change: the developer, a system administrator, or an end user
+  - Stimulus.
+    - This portion specifies the change to be made
+    - A change can be the addition of a function, the modification of an existing function (also seen as fixing a defect), or the deletion of a function
+    -  change can also be made to the qualities of the system: making it more responsive, increasing its availability detect etc
+    - The capacity ofthe system may also change, to accomadate more users
+    - changes may happen to accommodate new technology of some sort
+  - Artifact.
+    - This portion specifies what is to be changed: specific components or modules, the system's platform, its user interface, its environtnent, or another system with which it interoperates.
+  - Environment.
+    - This portion specifies when the change can be made: design time, compile time, build time, initiation time, or runtime.
+  -  Response.
+    - Make the change, test it, and deploy it
+  - Response measure
+    - time and money are the most common response measures.
+    - Others
+      - Number, size, complexity of affected artifacts
+      - Effort
+      - Calendar time
+      -  Money (direct outlay or opportunity cost)
+      -  Extent to which this modification affects other functions or quality attributes
+      - New defects introduced
+- Tactics to control modifiability have as their goal controlling the complexity ofmaking changes, as well as the time and cost to make changes
+
+## Coupling and Cohesion
+
+- Modules have responsibilities. When a change causes a module to be modified, its responsibilities are changed in some way.
+- Generally, a change that affects one module is easier and less expensive than if it changes more than one module.
+  - if two modules' responsibilities overlap in some way, then a single change may well affect them both.
+  - coupling
+    - the probability that a modification to one module will propagate to the other
+- high coupling is an enemy of modifiability
+- Cohesion
+  - measures how strongly the responsibilities of a module are related
+  - measures the module's "unity ofpurpose."
+  - The cohesion of a module is the probability that a change scenario that affects a responsibility will also affect other (different) responsibilities
+  - The higher the cohesion, the lower the probability that a given change will affect multiple responsibilities.
+  - low cohesion is bad
+
+## tactics
+
+- Framework
+  - Size of a module
+    - Tactics that split modules will reduce the cost of making a modification to the module that is being split as long as the split is chosen to reflect the type of change that is likely to be made.
+    - Tactic: Split module
+      -  If the module being modified includes a great deal of capability, the modification costs will likely be high.
+      - Refining the module into several smaller modules should reduce the average cost of future changes.
+  - Coupling (increase it)
+    - Tactics that reduce coupling are those that place intermediaries of various sorts between modules A and B
+    - Tactic: Encapsulate
+      -  introduces an explicit interface to a module
+      - This interface includes an application programming interface (API) and its associated responsibilities
+      - reduces the probability that a change to one module propagates to other modules
+      - The strengths of coupling that previously went to the module now go to the interface for the module
+        - These strengths are, however, reduced because the interface limits the ways in which external responsibilities can interact with the module (perhaps through a wrapper).
+      - The external responsibilities can now only directly interact with the module through the exposed interface
+        - indirect interaction
+      - Interfaces designed to increase modifiability should be abstract with respect to the details of the module that are likely to change that is, they should hide those details
+    - Tactics: Use an intermediary
+      - Given a dependency between responsibility A and responsibility B, the dependency can be broken by using an intermediary
+        - ie carrying out A first requires carrying out B
+      - ie a publish-subscribe intermediary will remove the data producer's knowledge of its consumers
+    - Tactic: Restrict dependencies
+      - restricts the modules that a given module interacts with or depends on.
+      - restricting a module's visibility (ie private, public, protected, namespaces, java9 modules, mvn scopes for dep)
+      - restricting a module by authorization
+      - ie layered architecture
+    - Tactic: Refactor
+      - a tactic undertaken when two modules are affected by the same change because they are (at least partial) duplicates of each other
+      - it is aslso a cleanup step to make sure that teams have not produced duplicative or overly complex code
+      - Common responsibilities (and the code that implements them) are "factored out" of the modules where they exist and assigned an appropriate home oftheir own
+      - By co-locating common responsibilities that is, making them submodules of the same parent module
+    - Tactic: Abstract common services
+      - the case where two modules provide not-quite-the-same but similar services, it may be cost-effective to implement the services just once in a more general/abstract fomr
+      - Any modification to the (common) service would then need to occurjust in one place, reducing modification cost
+      - A common way to introduce an abstraction is by parameterizing the description (and implementation) of a module's activities.
+  - Cohesion
+    - cohesion can be improved by removing responsibilities unaffected by anticipated changes
+    - The purpose of moving a responsibility from one module to another is to reduce the likelihood of side effects affecting other responsibilities in the original module
+    - Tactic: Increase semantic coherence
+      - If the responsibilities A and B in a module do not serve the same purpose, they should be placed in different modules
+        - ie moving to new or exsiting module
+      - identifying responsibilities to be moved is to hypothesize likely changes that affect a module. if some responsibilities are not affected by these changes, then those responsibilities should probably be removed.
+  - Binding time of modification
+    - If we ignore the cost of preparing the architecture for the modification, we prefer that a change is bound as late as possible.
+    - Changes can be made late in software lifecycle ie execution rather than compile time
+    - cost will be lower
+    - Because the work ofpeople is almost always more expensive than the work of computers, letting computers handle a change as much as possible will almost always reduce the cost of making that change.
+      - designing artifacts with built-in flexibility, then exercising that flexibility is usually cheaper than hand-coding a specific change
+    - Tactic: Parameters
+      - Introduces flexibility
+      - ie f(a,b) is more flexible than f(a) with b = 0 is set
+        - f(a,b) bind values at runtime
+        - f(a) where b = 0 bind values at compile time
+        - f(a) where b = 1 is a new case, and needs to be done at code time
+    - In general, the later in the life cycle we can bind values, the better.
+      - putting the mechanisms in place to facilitate that late binding tends to be more expensive
+    - We want to bind as late as possible, as long as the mechanism that allows it is cost-effective.
+    - Tactis: to bind values at Compile/Build time
+      - Component replacement
+      - Compile-time parameterization
+      - Aspects
+    - Tactics: to bind values at deployment time
+      -  Configuration-time binding
+    - Tactics: to bind values at startup or initialization time
+      - Resource files
+    - Tactics: to bind values at runtime
+      - Runtime registration
+      - Dynamic lookup (for services)
+      - Interpret parameters
+      - Startup time binding
+      - Name servers
+      - Plug-ins
+      - Publish-subscribe
+      - Shared repositories
+      - Polymorphism
+    - externalizing the change
+      - Installing a mechanism so that someone else can make a change to the system without having to change any code
+
+## Design checklist to support modifiability
+
+- Allocation of Responsibilities
+  - Determine which changes or categories of changes are likely tooccur through consideration of changes in
+    - technical
+    - legal
+    - social
+    - business
+    - customer forces
+  - For each potential change or category of changes
+    - Determine the responsibilities that would need to be added, modifted, or deleted to make the change.
+    - Determine what responsibilities are impacted by tile change
+    - Determine an allocation of responsibilities to modules that places, as much as possible, responsibilities that will be changed (or Impacted by the change) together in the same module, and
+      -  places responsibilities that will be changed at different times in separate modules
+- Coordination Model
+  - Determine which functionality or quality attribute can change at runtime and how this affects coordination
+    - will the information being communicated change at runtime, or will the communication protocol change at runtime?
+    - ensure that such changes affect a small number set of modules.
+  - Determine which devices, protocols, and communication paths used for coordination are likely to change
+    - ensure that the impact of changes will be limited to a small set of modules.
+  - For those elements for which modifiability is a concern,
+    - use a coordination model that reduces coupling such as publish/subscribe, - defers bindings such as enterprise service bus, or
+    - restricts dependencies such as broadcast
+- Data Model
+  - Determine which changes (or categories of changes) to the data abstractions, their operations, or their properties are likely to occur
+  - determine which changes or categories of changes to these data abstractions will involve their creation, initialization, persistence, manipulation, translation, or destruction
+  - For each change or category of change, determine if the changes will be made by an end user, a system administrator, or a developer
+    - changes to be made by an end user or system administrator, ensure that the necessary attributes are visible to that user and that the user has the correct priviteges to modify the data, 'l1s operations, or its properties.
+  - For each potential change or category of change:
+    - Determine which data abstractions would need to be added, modified, or deleted to make the change
+    - Determine whether there would be any ohanges to the creation, initialization, persistence, manipulation, translation, or destruction of these data abstractions
+    - Determine which other data abstractions are impacted by the change
+      - determine whether the impact would be· on the operations, their properties, their creation, initialization, persistence, manipulation, translation, or destruction.
+    - Ensure an allocation of data abstractions that minimizes the number and severity of modifications to the abstractions by the potential changes
+  - Design your data model so that items allocated to each element of the data model are likely to change together
+- Mapping among Architectural Elements
+  - Determine if it is desirable to change the way in which functionality is mapped to computational elements (e.g. processes, threads, processors) at runtime, compile time, design time, or build time
+  - Determine the extent of modifications necessary to accommodatethe addition, deletion, or modification of a function or a quality attribute
+    - de1ermination of the following
+      - Execution dependencies
+      - Assignment of data to databases
+      - Assignment of runtime elements to processes, threads, or processors
+  - Ensure that such changes are performed with mechanlsms that utilize deferred blnding of mapping decisions.
+- Resource Management
+  - Determine how the additi:on, deletion, or modification of a responsibility or quality attribute will affect resource usage.
+    - Determining what changes might introduce new resources or remove old ones or affect existing resource usage
+    - Determining what resource limits will change and how
+  - Ensure that the resources after the modification are sufficient to meet the system requirements
+  - Encapsulate all resource managers and ensure that the policies implemented by those resource managers are themselves encapsulated and bindings are deferred to the extent possible.
+- Binding Time
+  - For each change or category of change:
+    - Determine the latest time at which the chang.e will need to be made
+    - Choose a defer-binding mechanism that delivers the appropriate capability at the time chosen
+    - Determine the cost of introducing the mechanism and the cost of making changes using the chosen mechanism.
+    - Do not introduce so many binding choices that change is impeded because the dependencies among the choices are complex and unknown.
+- Choice of Technology
+  - Determine what modifications are made easier or harder by your technology choices
+    - Will your technology choices help to make, test, and deploy modifications?
+    - How easy is it to modify your choice of technologies (In case some of these technologies change or become obsolete)?
+  - Choose your technologies to support the most likely modif1catlons
+    - ie an -enterprise service bus makes it easier to change how elements are connected but may introduce vendor lock-in

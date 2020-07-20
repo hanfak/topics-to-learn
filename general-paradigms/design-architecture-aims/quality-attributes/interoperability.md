@@ -1,4 +1,4 @@
-# Interoperability
+<!-- # Interoperability -->
 
 - Interoperability is about the degree to which two or more systems can usefully exchange meaningful information via interfaces in a particular context.
   - includes:
