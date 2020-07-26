@@ -5,6 +5,7 @@
 - [Testing](#testing)
 	- [What are tests](#what-are-tests)
 	- [Why write tests](#why-write-tests)
+	- [Test harness and Test frameworks](#test-harness-tand-test-frameworks)
 	- [Methodologies](#methodologies)
 	- [Test Driven Development (TDD)](#test-driven-development-tdd)
 	- [Acceptance Test Driven Development (ATDD)](#acceptance-test-driven-development-atdd)
@@ -44,6 +45,53 @@ Testing is baked into everything I do. We write test first and have testers do c
 - A set of tests can be used in CI to check that system does what it is supposed to do, and that version can be used to be deployed
 - As a reminder to be sure you want to make that change
 - If wanting to refactor a code, writing all possible tests to check all behaviour has been documented first then can refactor it
+
+## Test harness and Test frameworks
+
+- Test harness can be explained as a unit testing tool that helps in the automation and execution of unit test cases.
+	- It enables the automation of unit tests for any software application
+- Advantages of test harness
+	- helps to automate the overall testing process to the maximum extent.
+	- capable to execute test suites which are composed of multiple test cases.
+	- capable to generate test report either by its own as in case of TestNG or through another third party tool or development as in the case of Junit.
+	- composed of drivers and stubs which are small programs, therefore, they are capable to Support debugging of code.
+	-  tools can capture the test results for an entire suite as well as individual test present inside the suite or standalone test.
+	- helps developers in the early identification of a defect at the code
+	- enables developers to measure the code coverage at code or elementary level during application development.
+	- helpful in terms of increasing the system productivity through the test automation
+	- enhance the quality of software components or overall software application
+	- help to cover complex test scenarios which are very difficult to handle through tradition testing approach.
+	- adds confidence to the organization marketing team towards the robustness of the application software as it is well tested right at unit level.
+- Disdavantages of test harness
+	- tools do not support record and play features.
+	- Testers using test harness tools are expected to have knowledge of programming languages
+	- it incurs a cost for writing automates test suites or test cases through skilled developers.
+- Where test harness is used
+	- Automation testing:
+		- developers develop test scripts
+		- test scripts require test data along with setting up of certain test parameters which are necessary to execute the automation test scripts
+		- After these test scripts are executed, the test results are captured and analyzed in the form of test reports.
+	- Integration testing:
+		- the two modules within the same application or different applications are integrated and testing is conducted to make sure both modules which are developed separately are working smoothly as a single unit when integrated.
+		- test cases are written and executed as automation script or through tools such as Junit
+		- results are recorded as a report and analyzed for exit criteria of the overall integration testing to be successful.
+- Example of test harness
+	- Junit: It is an API written in JAVA language which is used to design and implement test cases to conduct the unit testing for JAVA program or JAVA based applications. They are very frequently used to test applications which are built in JAVA language.
+- Test Automation framewokr
+	- a set of procedures, processes, intellectual concept and environment through which the tester can design and implement automated tests.
+	- composed of information such as the test library, automated testing, testing tools, best practices, and testing platform
+	- It allows tester can manually “Record & Playback” script in this framework
+	- categorized into
+		- Data-driven testing
+		-  Modularity driven testing
+		- Hybrid testing
+		- Code driven testing
+		- module driven testing
+		- behavior driven testing
+		- Keyword driven testing.
+	- Exmaples
+		- Cucumber, Robot Framework, etc
+		- yatspec
 
 ## Methodologies
 

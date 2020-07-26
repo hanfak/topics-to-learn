@@ -1,0 +1,282 @@
+# Testability
+
+- 30-50% of software costs (money/time) taken up by testing
+  - Reducing this cost is a highish priority
+  - Includes
+    - writing automated tests
+    - manual testings
+    - setup for tests
+    - maintaince for testing (servers)
+    - redoing testing after fixing defacts from test or bugs
+    - Helping QA/testers learn or solve their problems
+- Software testability refers to the ease with which software can be made to demonstrate its faults through (typically execution-based) testing
+  - testability refers to the probability, assuming that the software has at least one fault, that it will fail on its next test execution
+  - a system is testable if it "gives up" its faults easily. If a fault is present in a system, then we want it to fail during testing as quickly as possible.
+- Typical model
+  - includes
+    - inputs to program
+    - output of program
+    - internal state before/after program has ran
+    - Quality attributes ie performance
+    - Oracle (tester/test harness) who compares the above outputs with the program specs (expected results) then approves or rejects
+- For a system to be properly testable, it must be possible to control each component's inputs (and possibly manipulate its internal state) and then to observe its outputs and internal state
+- Testing of code is a special case of validation, which is making sure that an engineered artifact meets the needs of its stakeholders or is suitable for use
+- Generally done via test harness,
+  - which is specialized software (or in some cases, hardware) designed to exercise the software under test.
+  - Exampels
+    - a record-and-playback capability for data sent across various interfaces
+    - a simulator for an external environment in which a piece of embedded software is tested, or even during production
+  - IT can
+    - provide assistance in executing the test procedures and recording the output
+- Portions of the system or the entire system may be tested.
+- Carried out by
+  - developers
+  - QA
+  - Users
+- TEsts can be written by
+  - developers
+  - testing group
+  - customers
+- The response measures for testability deal with how effective the tests are in discovering faults and how long it takes to perform the tests to some desired level of coverage
+- Testing can be done after feature has been done or during developement(TDD)
+-
+
+##  Testability General Scenario
+
+- Source of stimulus.
+  - The testing is performed by
+    - unit testers
+    - integration testers
+    - system testers (on the developing organization side)
+    - acceptance testers
+    - end users (on the customer side).
+  - The source could be human or an automated tester.
+- Stimulus.
+  - A set of tests is executed due to
+    - the completion of a coding increment such as a class layer or service,
+    - the completed integration of a subsystem
+    - the complete implementation of the whole system
+    - the delivery of the system to the customer
+- Artifact.
+  - A unit of code (corresponding to a module in the architecture)
+  - a subsystem
+  - the whole system is the artifact being tested.
+- Environment.
+  - The test can happen at
+    - development time
+    - compile time
+    - deployment time
+    - while the system is running (perhaps in routine use)
+  - The environment can also include the test harness or test environments in use
+-  Response.
+  - The system can be controlled to perform the desired tests and the results from the test can be observed
+- Response measure.
+  - Response measures are aimed at representing how easily a system under test "gives up" its faults.
+  - Measures might include
+    - the effort involved in finding a fault or a particular class of faults,
+    - the effort required to test a given percentage of statements
+    - the length ofthe longest test chain (a measure of the difficulty of performing the tests)
+    - measures of effort to perform the tests
+    - measures of effort to actually find faults
+    - estimates of the probability of finding additional faults
+    - the length of time or amount of effort to prepare the test environment
+    - the ease at which the systetn can be brought into a specific state.
+    - the reduction in risk of the remaining errors in the systetn can be used.
+      - attempt to rate the severity of faults found (or to be found)
+      - Not all faults are equal in terms of their possible impact
+
+## Tactics for Testability
+
+- The goal is to allow for easier testing when an increment of software development is completed.
+
+### Control and Observe System State
+
+- Come as a pair
+- The simplest form of control and observation is to provide a software component with a set of inputs, let it do its work, and then observe its outputs
+- These tactics
+  - cause a component to maintain some sort of state information
+  - allow testers to assign a value to that state information
+  - and/or make that information accessible to testers on demand
+-  state information might be
+  - an operating state
+  - the value of some key variable
+  - performance load
+  - intermediate process steps
+  - anything else useful to re-creating component behavior
+- Tactic: Specialized interfaces
+  - allows you to control or capture variable values for a component either through a test harness or through normal execution
+  - Examples
+    - A set and get method for important variables, modes, or attributes (methods that might otherwise not be available except for testing purposes)
+    - A report method that returns the full state ofthe object
+    - A reset method to set the internal state (for example, all the attributes of a class) to a specified internal state
+    - A method to tum on verbose output, various levels of event logging, performance instrumentation, or resource monitoring
+  - Specialized testing interfaces and methods should be clearly identified or kept separate from the access methods and interfaces for required functionality, so that they can be removed if needed
+    - in performance-critical and some safety-critical systems, it is problematic to field different code than that which was tested. If you remove the test code, how will you know the code you field has the same behavior, particularly the same timing behavior, as the code you tested?
+  - Record/playback.
+    - The state that caused a fault is often difficult to re-create.
+    - Recording the state when it crosses an interface allows that state to be used to "play the system back" and to recreate the fault.
+    - Record/playback refers to both capturing information crossing an interface and using it as input for further testing
+  - Localize state storage.
+    - To start a system, subsystem, or module in an arbitrary state for a test, it is most convenient if that state is stored in a single place.
+      - By contrast, if the state is buried or distributed, this becomes difficult if not impossible.
+    - The state can be fine-grained, even bit level, or coarse-grained to represent broad abstractions or overall operational modes.
+    - The choice of granularity depends on how the states will be used in testing.
+    - A convenient way to "externalize" state storage (that is, to make it able to be manipulated through interface features) is to use a state machine (or state machine object) as the mechanism to track and report current state.
+  - Abstract data sources.
+    - Similar to controlling a program's state, easily controlling its input data makes it easier to test.
+    - Abstracting the interfaces lets you substitute test data more easily.
+      - For example, if you have a database of customer transactions, you could design your architecture so that it is easy to point your test system at other test databases, or possibly even to files of test data instead, without having to change your functional code.
+  - Sandbox.
+    - "Sandboxing" refers to isolating an instance of the system from the real world to enable experimentation that is unconstrained by the worry about having to undo the consequences of the experiment.
+    - Testing is helped by the ability to operate the system in such a way that it has no permanent consequences, or so that any consequences can be rolled back.
+    - This can be used for
+      - scenario analysis
+      - training
+      - simulation.
+    - Example, the Spring framework comes with a set of test utilities that support this.
+    - Tests are run as a "transaction," which is rolled back at the end.
+      - Thus removing any state changes
+    - A common form of sandboxing is to virtualize resources.
+      - Testing a system often involves interacting with resources whose behavior is outside the control of the system.
+      - Using a sandbox, you can build a version ofthe resource whose behavior is under your control
+        - ie control the clock, as waiting for the action for the resource undert test to occur is a waste of time
+          - Can allow the system (or components) to run at faster than wall-clock time, and to allow the system (or components) to be tested at critical time boundaries (ie daylight savings)
+      - Similar virtualizations could be done for other resources, such as memory, battery, network, and so on
+      - Forms of virtualisation
+        - Stubs
+        - mocks
+        - dependency injection
+  - Executable assertions.
+    - Using this tactic, assertions are (usually) hand-coded and placed at desired locations to indicate when and where a program is in a faulty state.
+    - The assertions are often designed to check that data values satisfy specified constraints.
+    - Assertions are defined in terms of specific data declarations, and they must be placed where the data values are referenced or modified.
+    - Assertions can be expressed as pre- and post-conditions for each method and also as class-level invariants.
+    - This results in increasing observability, when an assertion is flagged as having failed.
+    - Assertions systematically inserted where data values change can be seen as a manual way to produce an "extended" type.
+      - Essentially, the user is annotating a type with additional checking code.
+      - Any time an object of that type is modified, the checking code is automatically executed, and warnings are generated if any conditions are violated. To the extent that the assertions cover the test cases, they effectively embed the test oracle in the code assuming the assertions are correct and correctly coded.
+- All of these tactics add capability or abstraction to the software that (were we not interested in testing) otherwise would not be there
+- Tactics for adding abstractions and capabilities for testing
+  - Tactic: Component replacement
+    - which simply swaps the implementation of a component with adifferent implementation that (in the case of testability) has features that facilitate testing.
+    - Component replacement is often accomplished in a system's build scripts
+    - Using DI framework to replace component with a testing componement (ie stub, with same interface but added testing features)
+  - Tactic: Preprocessor macros
+    - that, when activated, expand to state-reporting code or activate probe statements that return or display information, or return control to a testing console
+  - Tactic: Aspects (in aspect-oriented programs)
+    - that handle the cross-cutting concern of how state is reported
+
+### Limit Complexity
+
+- by the definition of complexity, its operating state space is very large and (all else being equal) it is more difficult to re-create an exact state in a large state space than to do so in a small state space.
+-  testing is not just about making the software fail but **about finding the fault that caused the failure so that it can be removed**, we are often concerned with making behavior repeatable
+- Tactic: Limit structural Complexity
+  - includes
+    - avoiding or resolving cyclic dependencies between components
+    - isolating and encapsulating dependencies on the external environment
+    - reducing dependencies between components in general
+      - for example, reduce the number of external accesses to a module's public data
+  - In object-oriented systems, you can simplify the inheritance hierarchy:
+    - Limit the number of classes from which a class is derived,
+    - or the number of classes derived from a class.
+    - Limit the depth ofthe inheritance tree, and the number of children of a class.
+    - Limit polymorphism and dynamic calls.
+  - One structural metric that has been shown empirically to correlate to testability is called the response of a class.
+    - The response of class C is a count of the number of methods of C plus the number of methods of other classes that are invoked by the methods of C.
+    - Keeping this metric low can increase testability.
+  - Having high cohesion, loose coupling, and separation of concerns all modifiability tactics can also help with testability.
+    - They are a form of limiting the complexity of the architectural elements by giving each element a focused task with limited interaction with other elements.
+    - Separation of concerns can help achieve controllability and observability
+      - as well as reducing the size of the overall program's state space
+    - Controllability is critical to making testing tractable,
+      - A component that can act independently of others is more readily controllable
+        -  With high coupling among classes it is typically more difficult to control the class under test, thus reducing testability
+        - If user interface capabilities are entwined with basic functions it will be more difficult to test each function
+  - systems that require complete data consistency at all times are often more complex than those that do not.
+    - If your requirements allow it, consider building your system under the "eventual consistency" model,
+      - where sooner or later (but maybe not right now) your data will reach a consistent state.
+    - This often makes system design simpler, and therefore easier to test
+  -  some architectural styles lend themselves to testability.
+    - In a layered style, you can test lower layers first, then test higher layers with confidence in the lower layers.
+- Tactic: Limit nondeterminism
+  - The counterpart to limiting structural complexity is limiting behavioral complexity
+  - Nondeterministic systems are harder to test than deterministic systems.
+  - This tactic involves finding all the sources of nondeterminism, such as
+    -  unconstrained parallelism, and weeding them out as much as possible.
+  - Some sources of nondeterminism are unavoidable
+    - for instance, in multi-threaded systems that respond to unpredictable events but for such systems, other tactics (such as record/playback) are available.
+
+## A Design Checklist for Testability
+
+- Allocation of Responsibilities
+  - Determine which system responsibilities are most crrtical and hence need to be most thoroughly tested.
+  - Ensure that additional system responsibilities have been allocated to do the following:
+    - Execute test sune and capture results (external test or self-test)
+    - Capture (log) the activity that resulted in a fault or that resulted in unexpected (perhaps emergent) behavior that was not necessarily a fault
+    - Control and observe relevant system state for testing
+  - Make sure the allocation of functionality provides high cohesion, low coupling, strong separation of concerns, and low structural complexity
+- Coordination Model
+  - Ensure the system's coordination and communication mechanisms:
+    - Support the execution of a test suite and capture the results within a system or between systems
+    - Support capturing activity that resulted in a fault within a system or between systems
+    - Support injection and moni1oring of state into the communication channels for use in testing, within a system or between systems
+    - Do not introduce needless nondeterminism
+- Data Model
+  - Determine the major data abstractions that must be tested to ensure the correct operation of the system.
+    - Ensure that It is possible to capture the values of instances of these data abstractions
+    - Ensure that the values of instances of these data abstractions can be set when state is injected into the system, so that system state leading to a fault may be re-created
+    - Ensure that the creation, initialization, persistence, manipulation, translation, and destruction of instances of these data abstractions can be exercised and captured
+- Mapping among Architectural Elements
+  - Determine how to test the possible mappings of architectural elements (especially mapplngs of processes to processors, threads to processes, and modules to components) so that the desired test response is achieved and potential race conditions identified.
+  - determine whether it is possible to test for illegal mappings of architectural' elements
+- Resource Management
+  - Ensure there are sufficient resources available to execute a test suite and capture the results.
+  - Ensure that your test environment is representative of (or better yet. identlcal to) the environment in which the system will run.
+  - Ensure that the system provides the means to do the following:
+    - Test resource limits
+    - Capture detailed resource usage for analysis in the event of a failure
+    - Inject new resource timits Into the system for the purposes of testing
+    - Provide virtualized resources for testing
+- Binding Time
+  - Ensure that components that are bound later than compile time can be tested in the late-bound context.
+  - Ensure that late bindings can be captured in the event of a failure, so that you can re-create the system's state leading to the failure.
+  - Ensure that the full range of binding possibilities can be tested
+- Choice of Technology
+  - Determine what technologies are available to help achieve the testability scenarios that apply to your architecture.
+    - Are technologies available to help with regression testing. fault injection, recording and playback, and so on?
+  - Determine how testable the technologies are that you have chosen (or are considering choosing in the future) and ensure that your chosen technologies support the level of testing appropriate for your system.
+    - For example, if your chosen technologies do not make it posstble to inject state, It may be difficult to re-create fault scenarios.
+
+## Issues with testing
+
+- Test Data
+  - is how to create large, consistent and useful test data sets.
+  -  particularly for
+    - integration testing (that is, testing a number of components to confirm that they work together correctly) and
+    - performance testing (confirming that the system meets it requirements for throughput, latency, and response time).
+  - For unit tests, and usually for user acceptance tests, the test data is typically created by hand.
+  - This data has to be sufficiently varied to make testing worthwhile
+  -  It has to conform to all the referential integrity rules and other constraints of your data model
+  - you need to be able to calculate and specify the expected results of the tests.
+  - Solutions
+    - you either write a system to generate your test data
+      - Ideal
+      - in full control
+      - cover edge cases
+      - High effort, high upfront costs
+    - you capture a representative data set from the production environment and anonymize it as necessary.
+      - Anonymizing test data involves removing any sensitive information
+      - Capturing data from the live environment is easier
+      - dont know what data you may get, so not all cases are covered
+- Test Automation
+  -  In practice it is not possible to test large systems by hand because of the number oftests, their complexity, and the amount of checking of results that's required
+    - In the ideal world, you create a test automation framework to do this automatically, which you feed with test data, and set running every night, or even run every time you check in something
+      - the continuous integration model
+  - A test automation framework
+    - costs
+    - Should be budgeted alongside prod budget
+    - Should not be thought of as part of prod and can be absorbed into it
+  - how the framework will invoke functions on the system under test,
+    - particularly for testing user interfaces, which is almost without exception a nightmare
+      - use of selenium
+      - can be hard to test, and maintain these tests
