@@ -1,1 +1,331 @@
-# Performance 
+# Performance
+
+- It's about time and the software system's ability to meet timing requirements
+  - When events occur marking the passage of time
+    - like
+      - interrupts
+      - messages
+      - requests from users or other systems
+      - clock events
+    - the system, or some element of the system, must respond to them in time.
+- Example
+  - web-based system
+    - the desired response might be expressed as number oftransactions that can be processed in a minute.
+  - engine control system
+    - the response might be the allowable variation in the firing time.
+- performance has been the driving factor in system architecture for most of history, due to hardware constraints
+  - This has compromised other quality attributes
+  - As the price/performance ratio of hardware continues to plummet and the cost of developing software continues to rise, other attributes are gaining more importance
+- all systems have performance requirements
+  - even if they are not expressed
+  - Example, word processor has the expectation not to wait an hour to see a character on the screen after pressing the button
+- Performance is often linked to **scalability**
+  - **increasing your system's capacity for work, while still performing well**
+  - scalability is making your system easy to change in a particular way, and so is a kind of modifiability
+
+## Genearl Scenario
+
+- it begins with an event arriving at the system
+  - Events can arrive in
+    - periodic - predictable patterns
+      - arrive predictably at regular time intervals.
+      - ie an event may arrive every 10 millisecond
+      - most often seen in real-time systems
+    - Stochastic - mathematical distributions
+      - events arrive according to some probabilistic distribution
+    - Sporadic  unpredictable patterns
+      - These can be captured like:
+        - we might know that at most 600 events will occur in a minute
+        - That there will be at least 200 milliseconds between the arrival of any two events.
+      - But hard to specific
+  -
+- Responding correctly to the event requires resources (including time) to be consumed
+  - can be measured by the following:
+    - Latency
+      - **The time between the arrival ofthe stimulus and the system's response to it**
+    - Deadlines in processing
+      - In the engine controller, for example, the fuel should ignite when the cylinder is in a particular position, thus introducing a processing deadline
+    - The throughput of the system
+      - **usually given as the number of transactions the system can process in a unit of time.**
+    - The jitter of the response
+      - is the allowable variation in latency
+    - The number of events not processed because the system was too busy to respond
+- While this is happening, the system may be simultaneously servicing other events
+- Scenario
+  - Source of stimulus
+    - The stimuli arrive either from external (possibly multiple) or internal sources.
+  - Stimulus
+    - The stimuli are the event arrivals. The arrival pattern can be periodic, stochastic, or sporadic, characterized by numeric parameters
+  - Artifact
+    - The artifact is the system or one or more of its components.
+  - Environment
+    - The system can be in various operational modes, such as normal, emergency, peak load, or overload.
+  - Response
+    - The system must process the arriving events. This may cause a change in the system environtnent (e.g., from normal to overload mode).
+  - Response measure
+    - The response measures are the time it takes to process the arriving events (latency or a deadline), the variation in this time (jitter), the number of events that can be processed within a particular time interval (throughput), or a characterization ofthe events that cannot be processed (miss rate)
+
+
+### Concurrency
+
+- operations occurring in parallel
+  - either on the same processor or multiple processors
+- Concurrency occurs any time your system creates a new thread,
+  - because threads, by definition, are independent sequences of control
+- Multi-tasking on your system is supported by independent thread
+- Multiple users are simultaneously supported on your system through the use ofthreads.
+- Concurrency occurs any time your system is executing on more than one processors
+  - mulit core on same box or different computers
+- Scheduling is important when processing multiple threads on same processor
+- Allowing operations to occur in parallel improves performance, because delays introduced in one thread allow the processor to progress on another thread
+  - because of the interleaving phenomenon (race condition), concurrency must also be carefully managed
+  - race conditions can occur when there are two threads of control and there is shared state
+- The management of concurrency frequently comes down to managing how state is shared
+  - Solutions:
+    - for preventing race conditions is to use locks to enforce sequential access to state
+    - to partition the state based on the thread executing a portion of code
+- Race conditions are one of the hardest types ofbugs to discover
+
+## Tactics
+
+- The goal of performance tactics is to generate a response to an event arriving at the system within some time-based constraint.
+  - The event can be single or a stream and is the trigger to perform computation.
+  - tactics control the time within which a response is generated
+- At any instant during the period after an event arrives but before the system's response fo it is complete,
+  - either
+    - the system is working to respond to that event or
+    - the processing is blocked for some reason
+- two basic contributors to the response time:
+  - processing time (when the system is working to respond)
+    - Processing consumes resources, which takes time
+    -  Events are handled by the execution of one or more components, whose time expended is a resource
+      - Hardware resources
+        - CPU, data stores, network communication bandwidth, and tnemory
+      - Software resources
+        - include entities defined by the system under design.
+        - For example, buffers must be managed and access to critical sections must be made sequential
+          - **A critical section is a section of code in a multi-threaded system in which at most one thread may be active at any time**
+    - Different resources behave differently as they become saturated
+      - as their utilization approaches their capacity
+      - For example
+        - as a CPU becomes more heavily loaded, performance usually degrades fairly steadily
+        - when you start to run out of memory, at some point the page swapping becomes overwhelming and performance crashes suddenly
+  - Blocked time (when the system is unable to respond)
+    - A computation can be blocked because
+      -  of contention for some needed resource, because the resource is unavailable or
+        - Many resources can only be used by a single client at a time
+        - that other clients must wait for access to those resources, until the client has finished using the resource
+          - ie a resource can only process 5 requests at a time
+        - Multiple streams vying for the same resource or different events in the same stream vying for the same resource contribute to latency.
+        - The more contention for a resource, the more likelihood of latency being introduced
+      - Availability ofresources
+        - computation cannot proceed if a resource is unavailable
+        - Unavailability may be caused by the resource being offline or by failure of the component
+        - Unavailability may be caused by the resource being offline or by failure of the component
+      - the computation depends on the result of other computations that are not yet available
+        - A computation may have to wait because
+          - it must synchronize with the results of another computation or
+          - it is waiting for the results of a computation that it initiated
+        - This can increase with network latency or other hardware being performance
+- Type of tactics
+  -  Control resource demand.
+    - This tactic operates on the demand side to produce smaller demand on the resources that will have to service the events
+    - Tactic: Manage sampling rate
+      - reduce the sampling frequency at which a stream of environmental data is captured, then demand can be reduced, typically with some attendant loss of fidelity
+      - maintain predictable levels oflatency
+      - decide whether having a lower fidelity but consistent stream of data is preferable to losing packets of data
+    - Tactic: Limit event response.
+      - When discrete events arrive at the system too rapidly to be processed, then the events must be queued until they can be processed
+      - Because these events are discrete, it is typically not desirable to "downsample" them
+      - may choose to process events only up to a set maximum rate, thereby ensuring more predictable processing when the events are actually processed
+      - could be triggered by a queue size or processor utilization measure exceeding some warning level
+      - if it is unacceptable to lose any events, then you must ensure that your queues are large enough to handle the worst case.
+      - If you choose to drop events,
+        - then you need to choose a policy for handling this situation:
+          - Do you log the dropped events, or simply ignore them?
+          - Do you notify other systems, users, or administrators?
+    - Tactics: Prioritize events
+      - If not all events are equally important, you can impose a priority scheme that ranks events according to how important it is to service them
+      - If there are not enough resources available to service them when they arise, low-priority events might be ignored
+      - Ignoring events consumes minimal resources (including time), and thus increases performance compared to a system that services all events all the time
+    - Tactic: Reduce overhead
+      - The use of intermediaries increases the resources consumed in processing an event stream, and so removing them improves latency
+      - Separation of concerns, another linchpin of modifiability, can also increase the processing overhead necessary to service an event if it leads to an event being serviced by a chain of components rather than a single component
+      - The context switching and intercomponent communication costs add up,
+        -  especially when the components are on different nodes on a network
+      - is to co-locate resources
+        - Co-location may mean hosting cooperating components on the same processor to avoid the time delay of network communication
+        - putting the resources in the same runtime software component to avoid even the expense of a subroutine call
+        - perform a periodic cleanup of resources that have become inefficient
+        - execute single-threaded servers (for simplicity and avoiding contention) and split workload across them
+    - Tactic: Bound execution times
+      - Place a limit on how much execution time is used to respond to an event
+      - Timeouts
+      - For iterative, data-dependent algorithms, limiting the number of iterations is a method for bounding execution times.
+        - cost is usually a less accurate computation.
+    - Tactic:  Increase resource efficiency
+      - Improving the algorithms used in critical areas will decrease latency
+  - Manage resources.
+    - This tactic operates on the response side to make the resources at hand work more effectively in handling the demands put to them
+    - Tactic: Increase resources
+      - Faster processors, additional processors, additional memory, and faster networks all have the potential for reducing latency
+      - Can cost, at the very top limit may not be cost effective
+    - Tactic: Introduce concurrency
+      - If requests can be processed in parallel, the blocked time can be reduced
+      - Concurrency can be introduced by
+        - processing different streams of events on different threads
+        - by creating additional threads to process different sets of activities
+      - scheduling policies can be used to achieve the goals you find desirable
+      - Different scheduling policies may
+        - maximize fairness (all requests get equal time)
+        - throughput (shortest time to finish first)
+        -  other goals
+    - Tactic: Maintain multiple copies of computations
+      - Multiple servers in a client-server pattern are replicas of computation
+      - purpose of replicas is to reduce the contention that would occur if all computations took place on a single server
+      - **A load balancer is a piece of software that assigns new work to one of the available duplicate servers**
+        -  criteria for assignment vary but can be as simple as round-robin or assigning the next request to the least busy server.
+    - Tactic: Maintain multiple copies of data
+      - **Caching is a tactic that involves keeping copies of data (possibly one a subset of the other) on storage with different access speeds.**
+        - The different access speeds may be inherent (memory versus secondary storage) or may be due to the necessity for network communication.
+      - Data replication involves keeping separate copies of the data to reduce the contention from multiple simultaneous accesses
+      - Because the data being cached or replicated is usually a copy of existing data, **keeping the copies consistent and synchronized** becomes a responsibility that the system must assume
+      - What to cache needs to be decided
+        - Some caches operate by merely keeping copies of whatever was recently requested, but it is also possible to predict users' future requests based on patterns of behavior, and begin the calculations or prefetches necessary to comply with those requests before the user has made them.
+    - Tactic: Bound queue sizes
+      - This controls the maximum number of queued arrivals and consequently the resources used to process the arrivals
+      - need to adopt a policy for what happens when the queues overflow and decide if not responding to lost events is acceptable.
+    - Tactic: Schedule resources
+      - Whenever there is contention for a resource, the resource must be scheduled
+      -  understand the characteristics of each resource's use and choose the scheduling strategy that is compatible with it
+
+## Scheduling Policies
+
+- A scheduling policy conceptually has two parts
+  - a priority assignment
+    - ie FIFO
+    - it can be tied to the deadline ofthe request or its semantic importance.
+    - Competing criteria for scheduling include
+      - optimal resource usage
+      - request importance
+      - minimizing the number of resources used
+      - minimizing latency
+      - maximizing throughput
+      - preventing starvation to ensure fairness
+  - dispatching
+- A high-priority event stream can be dispatched only ifthe resource to which it is being assigned is available.
+  - Sometimes this depends on preempting the current user of the resource
+    -  preemption options :
+      - can occur anytime
+      - can occur only at specific preemption points
+      - executing processes cannot be preempted
+- Scheduling policies
+  - First-in/first-out
+    - treat all requests for resources as equals and satisfy them in turn
+    - Issues
+      - one request will be stuck behind another one that takes a long time to generate a response
+        - Ok if all requests are equal, but not it some have different priorities
+  - Fixed-priority scheduling
+    - assigns each source of resource requests a particular priority and assigns the resources in that priority order.
+    - Issues
+      - it admits the possibility of a lower priority, but important, request taking an arbitrarily long time to be serviced, because it is stuck behind a series of higher priority requests.
+    - prioritization strategies
+      - Semantic importance
+        - Each stream is assigned a priority statically according to some domain characteristic of the task that generates it
+      - Deadline monotonic
+        - is a static priority assignment that assigns higher priority to streams with shorter deadlines.
+        - This scheduling policy is used when streams of different priorities with real-time deadlines are to be scheduled
+      - Rate monotonic
+        - is a static priority assignment for periodic streams that assigns higher priority to streams with shorter periods.
+        - This scheduling policy is a special case of deadline monotonic but is better known and more likely to be supported by the operating system.
+      - Dynamic priority scheduling
+        - Round-robin
+          - is a scheduling strategy that orders the requests and then, at every assignment possibility, assigns the resource to the next request in that order.
+          - A special form of round-robin is a cyclic executive, where assignment possibilities are at fixed time intervals
+        - Earliest-deadline-first
+          -  assigns priorities based on the pending requests with the earliest deadline
+        - Least-slack-first
+          - This strategy assigns the highest priority to the job having the least "slack time," which is the difference between the execution time remaining and the time to the job's deadline.
+- For a single processor and processes that are preemptible (it is possible to suspend processing of one task in order to service a task whose deadline is drawing near)
+  - the earliest-deadline and least-slack scheduling strategies are optimal.
+- Static scheduling
+  - A cyclic executive schedule is a scheduling strategy where the preemption points and the sequence of assignment to the resource are determined offline. The runtime overhead of a scheduler is thereby obviated.
+
+## Checklist for Performance
+
+- Allocation of Responsibilities
+  - Determine the system's responsibilities that will involve
+    - heavy loading
+    - have time-critical response requirements
+    - are heavily used
+    - impact portions of the system where
+      -  heavy load's occur
+      - time-critical events occur.
+  - For those responsibilities
+    -  Identify the processing requirements of each respons1bility,
+    -  determine whether they may cause bottlenecks
+  - identify additional responsibilities to recognize and process requests appropriately, including
+    - Responsibilities that result from a thread of control crossing process or processor boundaries
+    - Responsibilities to manage the threads of control-allocation and deallocation of threads, malntalnlng thread pools, and so forth
+    - Responslbilities for scheduling shared resources or managing performance-related artifacts such as
+      - queues
+      - buffers
+      - caches
+  - For the responsibiliti.es and resources you identified, ensure that the required performance response can be met
+- Coordination Model
+  - Determine the elements of the system that must coordinate with each other-directly or indirectly and choose communication and coordination mechanisms that do the following:
+    - Support any introduced
+      - concurrency (for example, is it thread safe?)
+      - event prioritization
+      - scheduling strategy
+    -  Ensure that the required performance response can be delivered
+    - Can capture periodic, stochastic, or sporadic event arrivals, as needed
+    - Have the appropriate properties of the communication mechanlsms;
+      - for example:
+        - stateful
+        - stateless
+        - synchronous
+        - asynchronous
+        - guaranteed delivery
+        - throughput
+        - latency
+- Data Model
+  - Determine those port1;ons of the data model that will be
+    - heavily loaded
+    - have time-critical response requirements
+    - are heavily used
+    - impact portions of the system where heavy loads
+    - time-critical events occur
+  - For those data abstractions, determine the following:
+    - Whether maintaining multiple copies of key data would benefit performance
+    - Whether partitioning data would benefit performance
+    - Whether reducing the processing requirements for the creatlon, initialization, persistence, manipulation, translation, or destruction of the enumerated data abstractions is possible
+    -  Whether adding resources to reduce bottlenecks for the creation, Initialization, persistence, manipulatton, translation, or destruction of the enumerated data abstractions is feasible
+- Mapping among Architectural Elements
+  - Where heavy network loading will occur, determine whether co-locating some components will reduce loading and improve overall efficiency.
+  - Ensure that components with heavy computation requirements are assigned to processors with the most processing capacity
+  - Determine where introducing concurrency (that is, allocattng a piece of functionallty to two or more copies of a component running simultaneously) is feasible and has a significant positive effect on performance
+  - Determine whether the choice of threads of control and their associated responsibilities introduces bottlenecks.
+- Resource Management
+  - Determine which resources in your system are critical for performance.
+  - For these resources, ensure that they will be monitored and managed under normal and overloaded system operation. For example:
+    - System elements that need to be aware of, and manage, time and other performance-critical resources
+    -  Process/thread models
+    - Prioritization of resources and access to resources
+    - Scheduling and looking strategies
+    - Deploying additional resources on demand to meet increased loads
+- Binding Time
+  - For each element that will be bound after compile time, determine time following:
+    - Time necessary to complete the binding
+    - Additional overhead introduced by using the late binding mechanism
+  - Ensure that these values do not pose unacceptable performance penalties on the system
+- Choice of Technology
+  - Will your choice of technology let you set and meet hard, real time deadlines?
+  - Do you know its characteristics under load and its limits?
+  - Does your choice of technology g'ive you the ability to set the following
+    - Scheduling policy
+    - Priorities
+    - Policies for reducing demand
+    - Allocation of portions of the technology to processors
+    - Other performance-related parameters
+  - Does your choice of technology introduce excessive overhead for heavily used operations?
