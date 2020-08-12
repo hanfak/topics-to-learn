@@ -1,0 +1,23 @@
+# Self Healing
+
+- Linked to availability
+- Self-healing is a property going beyond graceful failure handling; it is the ability to detect and fix problems automatically without human intervention
+  - difficult and costly to build
+  - Minimizing the mean time to recovery and automating the repair process is what self-healing is all about.
+  -
+- you want to make your system appear as if all of its components were functioning perfectly even when things break and during maintenance times.
+  - so in times of failures, system should still be functioning
+- As you scale out, failures become a much more frequent occurrence.
+- Be able to handle power outages, human error, network failures
+- Always prepare for these failures
+- Trigger them yourselves and to test your self healing, responsiveness etc
+  - chaos monkey
+- Crash-Only
+  -  the system should always be ready to crash, and whenever it reboots, it should be able to continue to work without human interaction
+  - he system needs to be able to detect its failure, fix the broken data if necessary, and start work as normal,
+  - if you want to shut the system down, you need to terminate it
+- ensuring high availability is mainly about removing single points of failure and graceful failover.
+  - Single point of failure is any piece of infrastructure that is necessary for the system to work properly
+  - Once you identify your single points of failure, you need to decide with your business team whether it is a good investment to put redundancy in place.
+    - Redundancy is having more than one copy of each piece of data or each component of the infrastructure
+    - Systems that are not redundant need special attention, and it is a best practice to prepare a disaster recovery plan (sometimes called a business continuity plan) with recovery procedures for all critical pieces of infrastructure.

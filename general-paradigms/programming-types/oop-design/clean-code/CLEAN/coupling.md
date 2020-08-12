@@ -1,7 +1,9 @@
 # Coupling
 
+- Coupling is a measure of how much two components know about and depend on one another
 - Aim to reduce coupling between objects.
 - Cannot have no coupling.
+  - no coupling between components means that they are completely unaware of each other’s existence
 -  the level of knowledge that one piece of code has about another piece of code that it is interacting with
 - Can be either loose/weak or tight/strong
 - Tight coupling means that one piece of code relies on the internal implementation details of code it collaborates with;
@@ -14,7 +16,7 @@
   - Replacing the service will only affect the intermediary, reducing the impact of the change on the rest of the system.
 - Should think in terms of intentional and accidental coupling
 - Code has fewer side effects among entities, easier to test, reuse and extend
-- If I have lots of unrelated dependencies, it is a coupling issue 
+- If I have lots of unrelated dependencies, it is a coupling issue
 
 ### Accidental coupling
 

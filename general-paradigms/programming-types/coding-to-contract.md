@@ -1,0 +1,27 @@
+# Coding to Contract/Interface
+
+ - about decoupling clients from providers.
+   - making refactoring, unit testing, and changes to the implementation much simpler.
+ - you extract the things that clients are allowed to see and depend upon
+ - **A contract is a set of rules that the provider of the functionality agrees to fulfill**
+   - you should not change the contract
+   - clients of the code may assume and depend upon
+   - dictates how a piece of software can be used and what functionality is available
+   - does not require clients to know how this functionality is implemented
+   - methods in object-oriented programming, the contract is the signature of the method
+     - defines what the expected parameters are and what the expected result is
+   - defines what the expected parameters are and what the expected result is
+     - consists of all the accessible methods and their signatures
+   - a module includes all the publicly available classes/interfaces and their public method signatures
+     - an application, contract usually means some form of a web service API specification.
+   - the higher the level of abstraction, the more complex and broader a contract may get
+- As long as you keep the contract intact, clients and providers can be modified independently
+  - makes your code changes more isolated and thus simpler
+- depend on the contracts instead of implementations whenever you can.
+- Dont expose more in your contract then necessary
+- When designing a class, first consider what functionality your clients really need and then define the minimal interface as the contract
+  - Finally, implement the code fulfilling the contract.
+  - Deal with libraries and web services in the same way.
+- When you expose a web service API, be explicit and careful about what you expose to your clients. Make it easy to add features and publish more data when needed, but start with as simple a contract as possible.
+- Example
+  - Http

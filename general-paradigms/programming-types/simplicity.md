@@ -1,0 +1,60 @@
+# Simplicity
+
+- keeping things simple
+  - KIS = keep it simple
+- not about using shortcuts and creating the quickest solution to the problem at hand
+- Without simplicity
+  - new developers to the system will need to understand the whole system first,
+    - leads bottlenecks as only few people will know about the system,
+    - lead to lots of documentation
+    - Scaling becomes harder
+  - Harder and time consuming to add features and test it, potentially lots of bugs
+- **what would be the easiest way for another software engineer to use your solution in the future**
+  - about being able to comprehend the system as it grows larger and more complex
+- Keeping software simple is difficult because it is inherently relative
+  - There is no standardised measurement
+  - It is subjective
+- To define simplicity, need to know **for whom and when**
+  - is it simpler for you or for your clients?
+  - Is it simpler for you to do now or maintain in the future?
+- Learnt from  experience with different applications using different technologies in different domains or usecases
+- How to learn
+  - From others, pairing, code reviews
+  - Revisiting code you have written, identifying complexity, and looking for solutions to simplify is the first step to learn from your own mistakes.
+
+## How to promote simplicity
+
+- Hide Complexity and Build Abstractions
+  - As your system grows, you will not be able to build a mental picture of the entire system because it will have too many details
+    - Need to reduce the load on your brain
+  - To make software simple is to allow this mental zoom in and zoom out.
+  - As your system grows, it cannot and will not all be simple, so you have **to strive for local simplicity**
+  - Local simplicity
+    - is achieved by ensuring that you can look at any single class, module, or application and quickly understand what its purpose is and how it works.
+    - When you look at a class, you should be able to quickly understand how it works without knowing all the details of how other remote parts of the system work
+    - When you look at a module, you should be able to disregard the methods and think of the module as a set of classes
+    - when you look at the application, you should be able to identify key modules and their higher-level functions, but without the need to know the classes’ details.
+    - when you look at the entire system, you should be able to see only your top-level applications and identify their responsibilities without having to care about how they fulfill them.
+  - complexity is not about how many nodes/classes you have in your network,
+    - but how many edges/dependencies you have between your nodes/classes
+  -  general rule is that **no class should depend on more than a few other interfaces or classes.**
+  - **need to separate functionality into modules**, so once you look at the higher level of abstraction, you need not be worried about how modules perform their duties, but **how they interact**
+    - how does modules use each others interfaces
+- **Avoid Overengineering**
+  - Dont try to predict every possible use case and every edge case, you lose focus on the most common use cases.
+  - **Good design allows you to add more details and features later on, but does not require you to build a massive solution up front.**
+  - Beginning with a reasonable level of abstraction and iterating over it
+    - better than over enginnering something which will take too long and mostly not used
+  - Always ask
+    - “What tradeoffs am I making here?”
+    - “Will I really need this?”
+    - work closely with the business stakeholders to better understand the biggest risks and unknowns
+  - There is always tradeoffs when building something, need to find that line between the right amount of complexity and overengineering
+-  Test-Driven Development
+  - Since developers write tests first, they would not add unnecessary functionality, as it would require them to write tests for it as well
+  - tests can be used as a type of documentation, as they show you how the code was meant to be used and what the expected behavior was.
+  - It forces them to assume the client’s point of view first, which helps them to create much cleaner and simpler interfaces
+  - Put yourself in the shoes of a new developer who joined your team and started using your interface. What methods would they want to call, what parameters would they want to pass, and what response would they expect to be returned?
+- Learn from Models of Simplicity in Software Design
+  - Whenever you find this quality, analyze it and look for patterns
+  -

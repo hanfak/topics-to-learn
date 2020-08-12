@@ -1,0 +1,40 @@
+# Dont Repeat Yourself
+
+- Repeating yourself, means wasting time, time that could be used to do other stuff
+- DRY is about wasting time
+- Areas of wasting time
+  - Following an inefficient process
+    - This can occur in the release cycle, the way new features are designed, sign-offs, or meetings
+      - Use feedback, retros, to find out the waste and improve processes
+      - automate these processes
+    - Hearing we have alwasy done it, is a sign of inefficiency
+  - Lack of automation
+    - ie
+      - deploying manually
+      - compiling
+      - testing
+      - building
+      - configuring development machines
+      - provisioning servers
+      - documenting APIs
+    - Try to automate your builds and deployments from day one, as they will only get more complicated as you go along
+  - Not invented here, also known as reinventing the wheel
+    - arising from writing code before considering the reuse of existing code
+    - people who enjoy implementing things that are easily available (inhouse or in open-source world)
+    - Always search for libraries which do what you want
+      - but make sure it can do exactly what you need, and if not it can be configured, do spikes
+  - Copy/paste programming
+    - Leads to errors
+    - Leads to multiple places where changes need to occur
+  - “I won’t need it again so let’s just hack it quickly” solutions
+    - Never good if not tested
+- There is always a trade off
+  - sometimes better to copy and paste, and minimal changes, instead of having lots of logic
+  - Time to refactor might be too long to remove duplication, and changing other code will require retesting
+  - To much dry code can result in complex code and hard to understand
+- Copy and Paste Programming
+  - the more code you write, the more expensive it becomes to support and maintain the application
+  - Both composition and inheritance are your friends in battling repetitive code
+  - the use of design patterns and shared libraries.
+  - web services to combat duplication on higher levels of abstraction.
+    -  Instead of building the same functionality into each application you develop, it is often a good idea to create a service and reuse it across the company.

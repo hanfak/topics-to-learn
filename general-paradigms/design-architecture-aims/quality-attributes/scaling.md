@@ -1,5 +1,43 @@
 # Scaling
 
+- Before implementing scalability or potential to scale, you should first carefully estimate the most realistic scalability needs of your system and design accordingly
+- Main ways of scaling
+  - Adding more clones
+    - Easiest and cheapest
+    - A clone here is an exact copy of a component or a server.
+    - you should be able to send each request to a random clone and get a correct result.
+    - In the long run, better than scaling vertically (improving hardware)
+    - More clones, allows more distribuition of traffic
+    - Difficult arises in where state is stored, and how it is propergated to other clones
+    - works best for stateless services, as there is no state to synchronize
+      - Stateless service is a term used to indicate that a service does not depend on the local state, so processing requests does not affect the way the service behaves. No particular instance needs to be used to get the correct result
+    - clone management should be able to scale up/down number of clones necessary depending on traffic (elastic scaling)
+  - Functional partitioning
+    - Dividing the system into smaller subsystems based on functionality
+    -  to look for parts of the system focused on a specific functionality and create independent subsystems out of them.
+    - functional partitioning is the isolation of different server roles in infrastructure
+      - ie datacenters, queues, load balancers
+      - before these were all in the system, but spliting out improved scaling
+    - functional partitioning is dividing a system into self-sufficient applications
+    - applied most often in the web services layer
+    - By giving your services more autonomy, you promote coding to contract and allow each service to make independent decisions as to what components are required and what the best way to scale them out is
+      - Allows different teams to work on different parts and in parallel
+    - Functional partitioning is most often applied on a low level, where you break your application down into modules and deploy different types of software to different servers
+    - Isses
+      - Functional partitions are independent and usually require more management and effort to start with
+      - a limited number of functional partitions that you can come up with, limiting your ability to scale using this technique
+  - Data partitioning
+    - Keeping a subset of the data on each machine instead of cloning the entire data set onto each machine.
+    - the share-nothing principle, as each server has its own subset of data, which it can control independently.
+      - Share nothing is an architectural principle where each node is fully autonomous.
+    - each node can make its own decisions about its state without the need to propagate state changes to its peers
+    - Not coupled to other services
+      - no data synchronization, no need for locking, and that failures can be isolated because nodes do not depend on one another.
+    - If you partition your data correctly, you can always add more users, handle more parallel connections, collect more data, and deploy your system onto more servers
+    - The biggest challenge that data partitioning introduces is the fact that you need to be able to locate the partition on which the data lives before sending queries to the servers and that queries spanning multiple partitions may become very inefficient and difficult to implement.
+-
+## links
+
 - https://eng.uber.com/soa/
 - https://eng.uber.com/tech-stack-part-two/
 - https://eng.uber.com/tech-stack-part-one/
