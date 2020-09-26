@@ -5,7 +5,12 @@
 - Help in diagnosing calls over the network
   - ie A curl request may not be sending the correct request, but the command looks correct. Wireshark will help see what was actually sent over the network
 
+## Examples
+
+- https://www.youtube.com/playlist?list=PLQnljOFTspQWSY37fn_xcOS0k1KjX_zsK
+
 ## Links
 
 - https://en.wikipedia.org/wiki/Wireshark
 - https://www.wireshark.org/
+-

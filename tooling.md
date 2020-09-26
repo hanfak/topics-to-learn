@@ -30,6 +30,7 @@ This is also for personal and professional use,
     - Wiremock
 - Http Client
   - Postman
+  - curl
 - artifacts
   - artifactory
   - maven
@@ -55,9 +56,11 @@ This is also for personal and professional use,
   - Whatsapp
   - zoom
   - teams
+  - use engine
 - Database
   - dbeaver
   - squirrel
+  - oracle sql developer
 - Network
   - wireshark
 - Shared storage

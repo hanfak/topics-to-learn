@@ -1,11 +1,35 @@
 # Internet & Web
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Internet & Web](#internet-web)
+	- [Example Process](#example-process)
+	- [Clients and Servers](#clients-and-servers)
+	- [ISP - internet service provider](#isp-internet-service-provider)
+	- [Web Browser](#web-browser)
+	- [URI and URL](#uri-and-url)
+	- [HTTP](#http)
+	- [HTTPS](#https)
+		- [Links](#links)
+	- [TCP/IP](#tcpip)
+		- [Links](#links)
+	- [Domain Name](#domain-name)
+	- [DNS](#dns)
+		- [etc/hosts file](#etchosts-file)
+	- [OSI](#osi)
+	- [Firewall](#firewall)
+	- [Router](#router)
+
+<!-- /TOC -->
+
 - a global network of billions of electronic devices. It is made up of a vast amount of independently operated networks. There is no central operating hub. All users are incentivized to make sure there is end to end activity which keeps things operating efficiently. The result is a mass of cables, computers, data centers, routers, servers, repeaters, satellites and wifi towers that allows digital information to travel around the world.
 
 - https://monami555.github.io/2017/03/04/how-internet-works.html
 - https://gist.github.com/alyssaq/6388253
 - https://github.com/enkidevs/curriculum/wiki/Comp.-Sci.-networking-Course
 - https://blog.codeanalogies.com/2018/04/26/web-servers-explained-by-running-a-microbrewery/
+- https://www.youtube.com/watch?v=dh406O2v_1c (what happens when hit a website)
+- https://github.com/alex/what-happens-when ()
 
 ## Example Process
 

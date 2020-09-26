@@ -305,7 +305,7 @@ Types of test
       * mockito
     * Asserting on output
       * Junit and AssertJ
-
+ 
 
 ## links
 
@@ -314,6 +314,7 @@ Types of test
 - http://misko.hevery.com/code-reviewers-guide/
 - https://blog.sebastian-daschner.com/entries/thoughts-on-efficient-testing
 - Google testing blog: https://testing.googleblog.com/search/label/TotT
+- automation test (UI) https://ultimateqa.com/automation-patterns-antipatterns
 
 * Wiremock
 * Yatspec

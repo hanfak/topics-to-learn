@@ -11,6 +11,12 @@
 
 - https://kukuruku.co/post/do-not-learn-frameworks-learn-the-architecture/
 
+## frameworkless
+
+- https://frameworkless.js.org/
+- https://dev.to/misomir/frameworkless-web-development-3n2h
+- https://github.com/frameworkless-movement/awesome-frameworkless
+
 ## Libraries
 
 - https://www.oracle.com/corporate/features/library-in-java-best-practices.html

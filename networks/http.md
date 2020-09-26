@@ -11,4 +11,8 @@
 - HTTP requests and responses can be thought of as messages with key-value pairs
 - HTTP also comes with some "verbs" or "methods" which are commands that give you an idea of what sort of operation is intended to be performed.
   - "GET", "POST", "PUT", "DELETE" and "PATCH" etc
-  - 
+  -
+
+## Link
+
+- https://www.youtube.com/watch?v=0OrmKCB0UrQ  (Hussein Nasser intro)

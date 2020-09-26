@@ -12,18 +12,18 @@
 - Learn the basics of a language
   - variables (creating, updating, types), decisions, looping, methods
   - comments, maths statements, printing output
-  - Input from terminal, handle strings
+  - Input from terminal, handle strings, regex
   - Files - reading, writing
-  - Lists and maps
+  - arrays, Lists and maps
   - Use libray methods that come with language, read documentation
-  - functional programming (if up for it)
   - Do python or java track on https://www.codecademy.com/
   - Do some small exercises  to solve problems https://www.codewars.com/, be able to read the solutions of others
   - Do fizzbuzz
   - Automate something, get used to building a script that does something useful
+- Use an IDE (intellij/vscode), learn short cuts and its main features, use plugins
 - Learn how to split requirements into actionable features in your code
 - Learn object oriented design
-  - Start using java
+  - Start using java or typed language
   - Topics ????
   - Do fizzbuzz
 - Learn to use build and dependency manager like maven/gradle
@@ -34,14 +34,23 @@
 - Learn TDD
 - Solve some simple OO problems
   - Airport
-- Learn more features of the language
+- Learn how the internet works
+  - http, https, http/2, tcp, ip, networks, OSI model, tls, rest, soap, ftp, dns, wireshark, push/pull, websockets, browsers/clients, browser dev tools, headers
+  - api, formats (xml, json), postman, cache,
+  - html, css, javascript for front end
+- Learn about databases
+- Learn more features of the language and libraries
   - functional
   - Call http api and learn how http/networks works
-  - use a database
-  - jars
+  - use a database, sql and nosql
+  - Build a webserver
+  - serialize and deserialize standard formats like json, xml
+  - use properties
+  - create and run jars
 - Create an api in agile manner
   - learn about agile
-- Go deeper in to the langauge, frameworkds, design/engineering, frontend, devops, computer science, 
+- Dockerise app and run
+- Go deeper in to the langauge, frameworks, design/engineering, frontend, devops, computer science, integration, caches, proxies, load balancers, container management
 - More projects
   - build something wiht front end that people can use
   - refactor some  good to be better engineered

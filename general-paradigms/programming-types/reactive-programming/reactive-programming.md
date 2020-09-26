@@ -16,6 +16,7 @@
 - https://www.baeldung.com/rxjava-tutorial
 - https://blog.mindorks.com/a-complete-guide-to-learn-rxjava-b55c0cea3631
 - https://gist.github.com/staltz/868e7e9bc2a7b8c1f754
+- https://reflectoring.io/rxjava-reactive-batch-processing/
 
 ## why use
 

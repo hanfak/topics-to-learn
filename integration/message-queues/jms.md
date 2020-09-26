@@ -3,7 +3,15 @@
 - https://www.journaldev.com/9731/jms-tutorial
 - https://dzone.com/articles/asynchronous-messaging-rabbitmq-introduction
 - https://dzone.com/articles/java-message-service-1?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava
+- https://www.tomitribe.com/blog/5-minutes-or-less-activemq-with-jms-queues-and-topics/
 
+## spec
+
+- https://docs.oracle.com/cd/E19435-01/819-0069/index.html
+
+## testing
+
+- https://activemq.apache.org/how-to-unit-test-jms-code
 ## Why use?
 
 - https://stackify.com/message-queues-12-reasons/

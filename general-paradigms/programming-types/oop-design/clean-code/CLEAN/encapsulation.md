@@ -36,7 +36,7 @@
 - All about delegating to other objects to do the work
 - Design patterns encapsulate something differently
 - Manages complexity, keep the caller out of the implementation details of the callee, makes it easier to change
-  - If my tests are implementation dependent, I have encapsulation issues 
+  - If my tests are implementation dependent, I have encapsulation issues
 
 
 ## Benefits
@@ -69,3 +69,16 @@
 - http://web.archive.org/web/20090505194203/http://homepage.mac.com/keithray/blog/2006/02/22/#EncapsulationHiding
 - http://wiki.c2.com/?EncapsulationIsNotInformationHiding
 - http://www.stefanoricciardi.com/2009/12/06/encapsulation-and-information-hiding/
+
+## Breaking encapsulation
+
+- Examples
+  - Using setters
+  - violating law of demeter
+  - using the details of impl of an object, rather than a cleaner interface
+  - not using interface
+  - non final fields
+  - data structures that can be mutated despite reference to it
+  - use of reflection
+  - inheritence
+  - patterns like visitor
