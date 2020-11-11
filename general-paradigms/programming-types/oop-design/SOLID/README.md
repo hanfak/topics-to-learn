@@ -1,6 +1,7 @@
 # SOLID
 
 - https://completedeveloperpodcast.com/episode-142/
+- http://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html
 
 
 How to organise your classes

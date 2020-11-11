@@ -1,0 +1,44 @@
+# Sad Paths
+
+- Dealing with exceptions
+  - Can use a Jetty Exception Handler, or JMS Error handler, which is the last stage at which we can handle an exception
+    - useful for
+      - retriable scenarios
+      - putting on dead letter queues
+      - Handling exceptions after catching them
+- Transient exceptions
+  - things that break, that cause exceptions, but are not permanent
+  - ie a service is down
+  - should be retriable
+  - retriable up to a point then be a failure
+- Failures
+  - exceptions that lead to complete failure
+  - not retriable
+  - does not mean the app should break
+  - maybe a flow ends in failed state, and some intervention needs to be taken to fix or to allow it to be replayed
+- Validations
+  - User input should be validated
+  - Internal service to service, should not
+    - as long as both services are well tested
+    - use of pact tests
+- Aim of dealing with exceptions/sad paths,
+  - never lose a failure or success
+  - There must be an audit, either in logs or database
+- Exceptions should always be logged, and keep the stack trace
+- Pattern for dealing with failures
+  - using client libraries can sometimes hide the failure
+    - give nice message,
+    - can throw exception, and deal with it, possibly store state for that flow and message and/or code (which should be able to get from client output)
+    - can ppossibly get the throwable, which you can make visible too
+  - If lots of exceptions, or possible exceptions that can be bubbled up from a class (or it's calls to delegates)
+    - can wrap the class, with a decorator, that will have try/catch and can deal with the exception there
+    - this simplifies the logic of the business/usecase class
+    - if some actions cannot be caught, be bubbld up to an error handler
+    - This is useful, if need to deal with all exceptions the same
+      - ie log, store in db, and /or send report to user with info
+      - any specific actions that need to be taken cannot use this process, and this will impact the logic (making it more complex)
+- Not all exceptions are sad paths
+  - some exceptions can be considered normal and part of normal processing
+    - Should be handled specificially (ie wrap or retry or use outdated data) and not as a whole (bubble up to a catch all exception gatherer)
+  - Wrapping these in business specific exceptions and bubbling up (either to be thrown and reported to user) is essential
+    - This can allow us to get more information, which we report to the user with

@@ -12,6 +12,11 @@
 
 - Non-relational databases are document-oriented. This so called document type storage allows multiple 'categories' of data to be stored in one construct or Document.
   - A Customer document, would have the customer's information, a sub-category for all their orders, etc.
+- Concerns
+  - Data structure is highly based around how it will be retrieved and structured based on how it will be read.
+  - While relationships between documents are supported to varying degrees,they aren’t treated with the importance that they are in a relational model.
+  - The data that is generally read together is generally stored together.
+  -  Duplicate data is less of a concern than it would be in a relational model.
 - NoSQL databases are document-oriented. Instead of using tables, these documents allow us to store unstructured data in a single document. So a document could contain a customer's details, as well as all their orders to date, their favourites, etc.
 - This is more intuitive and requires fewer hops across tables to find all the data relating to a customer.
   - Note however that this results in a need for additional processing effort and more storage as the document sizes grow.

@@ -11,6 +11,11 @@
 
 - Relational databases are structured. You have tables and these tables may have dependencies on each other, or relationships.
   -  A database for a store will have a table for customers and one for orders. These two tables are related, because an order is made by a customer.
+- Concerns
+  - No duplication of data.
+  - Flat structures connected by joins.
+  - Focus is on entities and their relationships.
+  - Queries and indexes tend to be built after the data model is worked out.
 - A relational database uses SQL which is short for Structured Query Language.
   - This is a fairly rigid and standard way of storing data using tables, columns and rows.
   - Columns represent the data point to be stored
@@ -27,7 +32,7 @@
 - This structure in enforced by ensuring that data added to the table conforms to that structure.
   - Adding a another field to the table when its schema doesn't allow for it will not be permitted.
 - Most relational databases support a database querying language called SQL - Structured Query Language.
-  - This is a language specifically designed to interact with the contents of a structured (relational) database. 
+  - This is a language specifically designed to interact with the contents of a structured (relational) database.
   - it is considered that SQL (relational) databases support more complex queries (combining different fields and filters and conditions) than non-relational databases.
   -
 

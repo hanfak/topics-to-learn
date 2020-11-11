@@ -116,6 +116,11 @@
 ## Pass by value
 
 - https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
+- https://dzone.com/articles/java-copy-shallow-vs-deep-in-which-you-will-swim
+- https://www.baeldung.com/java-deep-copy
+- List
+  - https://stackoverflow.com/questions/23607881/returning-a-private-collection-using-a-getter-method-in-java
+  - https://blog.frankel.ch/back-to-basics-encapsulating-collections/
 
 # Soft Reference
 

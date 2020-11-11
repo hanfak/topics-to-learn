@@ -4,7 +4,17 @@
 - https://www.baeldung.com/assertJ-java-8-features
 - https://www.baeldung.com/introduction-to-assertj
 
-## custum asssertions
+## describedAs
+
+- when assertions fails, the message returned to the user can be consfusing
+- using the method `describedAs`, allows you to pass in a message and possible values to give a better output to help the user make changes to pass the test
+- You will need to use this at the beginning of the assertion
+
+```java
+assertThat(false).describedAs("Message to help with passing test").isTrue();
+```
+
+## custom asssertions
 
 - https://www.javacodegeeks.com/2018/01/write-custom-assertj-assertions.html
 
