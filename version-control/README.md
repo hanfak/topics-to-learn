@@ -170,6 +170,7 @@ How work is integrated into shared repository
       - no pairing takes place thus reviewing code is a must
 
 - Merging
+  - After merging, from remote and local. You will need to fix merge conflict and then rerun the build, before pushing
 
 - What should go in to version control
   - All app code and dependencies

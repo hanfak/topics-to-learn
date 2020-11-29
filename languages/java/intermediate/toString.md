@@ -1,0 +1,24 @@
+# toString()
+
+- Always override this
+- It will show, esp in tests, the object reference
+  - Makes it hard to understand what was meaningfully different between two objects
+  - Good for debugging
+- toString auto invoked on methods like
+  - println
+  - printf
+  - assert
+  - string concatentation
+- Must include all the necessary and important information about the object
+  - ie what was used in logical equality
+- Generally should have standard format for all toStrings
+  - this can be a disadvantage, when others use toSTring rep of an object to parse and create the object itself
+- Whatever you show in the toString, the fields should have accessor methods
+  - avoids user using the toString value to get the value for  a field
+  - Avoid users code breaking if string format has changed
+- Do not override for enum, use the defualt provided
+- Avoid using a static utility class to implement this
+- Done need to do one if the superclass has already on defined (thus you must follow liskov substitution)
+- You should, however, write a toString method in any abstract class whose subclasses share a common string representation
+- Can use IDE to generate or libraries  (guava/lombok)
+  - but these are generic so for special types of toString to give it some meaning will need to be done manually (ie phone number class if fields are the parts fo the number)

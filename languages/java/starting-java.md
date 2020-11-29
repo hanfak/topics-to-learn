@@ -24,6 +24,21 @@ Build a crud (needs a database) app that talks to 3rd party services (ie weather
 
 This will mean using different libraries. I would suggest doing two versions, one using pure libraries, the other using frameworks (ie spring, hibernate).
 
+When I talk about logic, I mean doing some sort of decision (ie predicate, if) based on some rules. We do this with data, ie:
+
+- inputs to app (ie http request, jms message, command line input)
+- data in persistence (ie files, database)
+- Getting more data outside of app (ie external http response)
+
+Types of rules, ie:
+
+- If the weather is stormy, then no planes can land or take off
+- If the value1 is less than 5 and value 2 equals 10 then (if value 3 greater than 9 then return true else return false) else return false
+
+For lots of rules on different data, we use **rules engines**
+
+There is also workflows, which dictate how a business journey for a usecase should occur. The type of workflow depends not only on business logic, but also on non functional requirements of the system and technology available.
+
 Pure version:
 
 there is a lot here, so might feel a lot to learn, but doing stuff like this will help you learn the language and design, and how this works compared to using a framework.

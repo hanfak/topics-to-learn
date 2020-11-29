@@ -15,6 +15,9 @@
   - Ant
   - Bash scripts
 
+- Use a build wrapper
+  - This is some extra files, which allows any user to run the build tool (and its functions) on any machine, by fixing the build tool version (and downloading it if necessary)
+
 - Aim
   - Should run before commiting the code changes, makes sure all tests are passing, past behviour is not breaking.
   - Can run on CI step (ie when pushed changes to repo (Github), runs the build to makes sure this the version and application that can be deployed to an environment ie prod/test)

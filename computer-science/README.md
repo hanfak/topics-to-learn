@@ -1,5 +1,7 @@
 # Computer Science
 
+- Part of Computer science is about spending lots of effort mapping the real world into our restrictive data structures
+
 - Data structures
 - Big O complexity (time and space)
 - Compilers and interpreters

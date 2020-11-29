@@ -1,9 +1,24 @@
 # Encapsulation
 
-## Definitions
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Encapsulation](#encapsulation)
+	- [Definitions](#definitions)
+	- [Benefits](#benefits)
+	- [Information hiding](#information-hiding)
+	- [Encapsulation is not information hiding](#encapsulation-is-not-information-hiding)
+	- [Breaking encapsulation](#breaking-encapsulation)
+	- [Encapsulation and frameworks](#encapsulation-and-frameworks)
+
+<!-- /TOC -->
 
 - Encapsulation is a programming language feature.
+
+## Definitions
+
 - Encapasulation is making something which is varying appear to the outside as if it is not varying.
+- Encapsulation allows us to tame the growing state and complexity
+  - The idea that we can internalize the state, hide it from other components, and offer only a carefully designed API surface for any state mutation is core to the design and coding of complex information systems
 - Encapsulation means drawing a boundary around something. It means being able to talk about the inside and the outside of it
 - What can be encapsulated
   - Relationships
@@ -47,6 +62,7 @@
 - Reduce ripple effect
 - if you dont know about something you can't couple to it.
   - Fewer dependencies make code easier to change
+- Prevent hard bugs to solve caused by inconsistent state
 
 ## Information hiding
 
@@ -82,3 +98,10 @@
   - use of reflection
   - inheritence
   - patterns like visitor
+  - Using the toString output, to get values of fields
+
+## Encapsulation and frameworks
+
+- Frameworks dont work well with immutability.
+  - They need fields to be non final, or setters need to be created
+-  use an anticorruption layer to protect and validate your internal state after those setter interactions

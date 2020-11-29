@@ -13,6 +13,7 @@
 	- [Jmx](#jmx)
 	- [Thread dumps](#thread-dumps)
 	- [Jstat](#jstat)
+	- [Benchmarking](#benchmarking)
 
 <!-- /TOC -->
 
@@ -89,3 +90,18 @@ https://github.com/makersacademy/java_intro/blob/master/chapter0-What-is-Java/te
 ## Jstat
 
 - https://www.javacodegeeks.com/2019/11/jstat-analysis.html
+
+## Benchmarking
+
+- Use Benchmarking to find out current performance
+	- used to decide where to optimise
+- Benchmarking and microbenchmarking on the JVM is hard
+	- need to consider the following:
+		- warm-up
+		- HotSpot compilation
+		- code optimizations like inlining and dead code elimination
+		- multithreading
+		- consistency of measurement
+		- and more
+- Tooling
+	- https://github.com/openjdk/jmh
