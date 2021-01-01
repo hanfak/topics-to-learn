@@ -12,6 +12,9 @@
 - Mutable collections have decent characteristics in data world: they are fast, cheap and flexible.
   - Which make them good candidates for keeping state in memory.
   - But at code world, they are the source of undesirable side effects.
+- Arguments and variables (method/fields) should be final (ie cannot be reassigned with a new value) be assigning once
+  - Improves reasoning about code
+  - Can lead to nulls with unset variables
 
 ## Benefits
 

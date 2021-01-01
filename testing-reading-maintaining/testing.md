@@ -5,7 +5,8 @@
 - [Testing](#testing)
 	- [What are tests](#what-are-tests)
 	- [Why write tests](#why-write-tests)
-	- [Test harness and Test frameworks](#test-harness-tand-test-frameworks)
+	- [Good unit tests](#good-unit-tests)
+	- [Test harness and Test frameworks](#test-harness-and-test-frameworks)
 	- [Methodologies](#methodologies)
 	- [Test Driven Development (TDD)](#test-driven-development-tdd)
 	- [Acceptance Test Driven Development (ATDD)](#acceptance-test-driven-development-atdd)
@@ -32,6 +33,9 @@ Testing is baked into everything I do. We write test first and have testers do c
 ## What are tests
 
 - Make sure code does what it is meant to do
+- Passing tests don’t guarantee that the code works
+- Program testing can be used to show the presence of bugs, but never
+to show their absence!
 
 ## Why write tests
 
@@ -45,6 +49,28 @@ Testing is baked into everything I do. We write test first and have testers do c
 - A set of tests can be used in CI to check that system does what it is supposed to do, and that version can be used to be deployed
 - As a reminder to be sure you want to make that change
 - If wanting to refactor a code, writing all possible tests to check all behaviour has been documented first then can refactor it
+
+## Good unit tests
+
+- Tell the reader what you’re testing, not that you’re testing
+	- Dont need to have the "test" in name as it is in the annotation
+- tell the reader what behavior, property, capability, etc. is under test.
+- Identify the cases of behavior, and test only one case per test case.
+- the purpose of your test
+	-  test that it works
+	-  and what it means to work
+- consider using underscores to improve readability of test names
+	-  @DisplayName("adfa") can be used in junit 5
+- the meaning of failure should be clear: it should mean the code doesn’t work.
+- unit test shouldn’t depend on things that can’t be controlled within the test.
+	- ie Filesystem? Network? Database? Asynchronous ordering?
+		- Theses should be mocked or stubbed
+	- unit under test shouldn’t depend on things that could cause failure when the code is correct
+- watch out for overfitting tests. You know the ones: brittle assertions on implementation details rather than required features. You update something—spelling, a magic value, a quality outcome—and tests fail.
+- Dont have underfitting tests too. They’re vague, passing at the drop of a hat, even with code that’s wildly and obviously wrong.
+	- Using prod code to use as expected
+	- never failing tests
+- Factor out the repetition. Use it to group tests into inner classes with @Nested.
 
 ## Test harness and Test frameworks
 
@@ -305,7 +331,7 @@ Types of test
       * mockito
     * Asserting on output
       * Junit and AssertJ
- 
+
 
 ## links
 

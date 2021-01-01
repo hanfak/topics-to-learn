@@ -169,6 +169,12 @@ public final class MySingleton {
 // When your code first accesses INSTANCE, the class MySingleton will be loaded and initialized by the JVM. This process initializes the static field above once (lazily).
 ```
 
+### Use instead of Booleans
+
+- Avoid magic booleans, like avoiding magic numbers
+- If argument can have two values (true/false or implied to be), this may not stay true, others can be added, best to use an enum
+- Can have enum methods that state which is true or false
+
 ### Why is it better?
 
 - it is more concise,

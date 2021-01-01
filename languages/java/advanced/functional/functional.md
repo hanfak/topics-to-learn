@@ -154,6 +154,9 @@ list.stream()
     });
 ```
 
+- https://stackoverflow.com/questions/19757300/java-8-lambda-streams-filter-by-method-with-exception
+- can use a library which catches the exception and throws runtime
+	- https://github.com/pivovarit/throwing-function
 
 ### Map and FlatMap
 

@@ -56,6 +56,22 @@ Goes by many names
     - input/entry points, drive application, as they call it
     - dataproviders, the applications calls these
 
+## Links
+
+- https://beyondxscratch.com/2017/08/19/hexagonal-architecture-the-practical-guide-for-a-clean-architecture/
+- https://jmgarridopaz.github.io/content/hexagonalarchitecture.html
+- https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749
+- https://alistair.cockburn.us/hexagonal-architecture/
+- https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+- http://geekswithblogs.net/cyoung/archive/2014/12/20/hexagonal-architecturendashthe-great-reconciler.aspx
+- https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/
+
+## Examples
+
+- https://gitlab.com/crafts-records/talkadvisor/talkadvisor-back
+- https://github.com/jmgarridopaz/bluezone
+- https://github.com/mattia-battiston/clean-architecture-example
+
 [Top of Page](#clean-architecture)
 
 ## Cost
@@ -638,5 +654,48 @@ Goes by many names
 ## issues
 
 - https://javadevguy.wordpress.com/2017/07/27/a-detailed-analysis-of-the-clean-architecture-from-an-object-oriented-perspective/
+- https://www.jamesmichaelhickey.com/clean-architecture/
+- https://jimmybogard.com/vertical-slice-architecture/
+- https://stackoverflow.com/questions/29576344/drawbacks-of-hexagonal-architecture#:~:text=Since%20Hexagonal%20makes%20use%20of,the%20drawbacks%20of%20those%20patterns%3A&text=Adapters%20are%20traditionally%20polymorphic%20(in,are%20also%20a%20hidden%20indirection).
+
+### Duplication of models
+
+- this approach sometimes requires duplicated entity objects. For example, if a dependent API uses gRPC, you’ll likely already have generated classes representing the entities. But in order to keep business logic protobuf agnostic, you’d have to define your own entity classes that more or less duplicate the protobuf messages
+	- solution
+		- You would have separate classes yes. The way to think about this is that the classes generated from the protobuf form part of the gRPC client, and are used to represent requests and responses from the gRPC call (part of the infrastructure layer) where as the business layer contains it’s own data representations that make sense in the context of the business logic
+		- These will contain similar data, but are conceptually different.
+		- So you might have the following defined in your business layer:
+		```java
+		class User(val username: String, val dateOfBirth: Date)
+
+		interface UserRepository { fun getUsers(): List<User>} // a ‘port’
+		```
+		- and have the following defined in the infrastructure:
+		```java
+		class GRPCUser( val email: String, val password: String, val dob: Date ) // Generated from protobuf
+		class UserRepositoryGRPC implements UserRepository { … } // an ‘adaptor’
+		```
+		- It is the responsibility of the adaptor to translate between the two. This as you say, allows the business layer to remain agnostic of how it’s ports are implemented in the infrastructure layer
+-  If you share an Entity between all layers then all layers will be effected directly by changes within that Entity.
+	- So once you have a model for each layer then you'll also need a mapper for each model, and don't forget the unit tests.
+	- you need decide whether you want a scalable, maintainable architecture in cost of extra code
+	- To avoid mapping too much, you can use the entities in the core/hexagon, throughout the code base. But models used the outer layers must be mapped to the core entities (to avoid leaking infrastructure technology ie jpa/jackson annotations)
+
+### A higher level of complexity
+
+- Building an application with multiple layers of abstraction will mean that the level of complexity will dramatically increase
+	- the on-boarding process for new developers to get a handle on the architecture of the application can be longer
+- Premature building of layers, abstraction can make code harder to understand, and cost of time
+
+### The cost of indirection and isolation
+
+- when you have many layers of indirection and isolation, the cost of building and maintaining the application can often be more costly than the benefits of the abstraction.
+- optimising for isolation and indirection to make testing your application easier can have a detrimental effect on the design of your application.
+
+### Most web applications don’t need that level of complexity
+
+- Only useful for implementing business logic and need for adaptability
+- Most web apps are fixed in terms of frameworks or datasources
+- Some are just CRUD apps, and dont need any business logic
 
 [Top of Page](#clean-architecture)

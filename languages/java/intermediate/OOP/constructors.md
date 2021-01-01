@@ -12,12 +12,14 @@
 	- [Static initialization/ static factory methods](#static-initialization-static-factory-methods)
 	- [initialization Block](#initialization-block)
 		- [Links](#links)
+	- [Dealing with Dependency injection frameworks](#dealing-with-dependency-injection-frameworks)
 
 <!-- /TOC -->
 
 ## What
 
 - It is a public method, with same name and case as the class. It is invoke when newing up an instance of the class.
+- Constructors should do one thing, just set the fields of the object to the arguments passed in via the constructor
 
 
 ## Default/hidden constructor
@@ -140,7 +142,9 @@ Dog dog4 = new Dog(5, "Bubbles"); // will have age = 5, name= Bubbles
 ## Static initialization/ static factory methods
 
 - Useful for creating new domain objects
-- exanple
+- Useful for adding code (ie validation), setting fields as null or defaults
+- Better naming
+- example
   ```java
   public class Card {
       public final Rank rank;
@@ -157,6 +161,8 @@ Dog dog4 = new Dog(5, "Bubbles"); // will have age = 5, name= Bubbles
   }
   ```
 - https://stackoverflow.com/questions/929021/what-are-static-factory-methods
+- Negatives
+	- no inheritance
 
 ## initialization Block
 
@@ -164,3 +170,7 @@ Dog dog4 = new Dog(5, "Bubbles"); // will have age = 5, name= Bubbles
 
 - https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html
 - https://www.javatpoint.com/java-constructor
+
+## Dealing with Dependency injection frameworks
+
+- Due to Most DI using reflection, factories might not be possible, and constructors might need to be polluted with logic

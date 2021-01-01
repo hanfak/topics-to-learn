@@ -9,6 +9,7 @@
 		- [links](#links)
 		- [Byte code](#byte-code)
 		- [Class Loader](#class-loader)
+		- [Crashing the JVM](#crashing-the-jvm)
 	- [JDK](#jdk)
 	- [JRE](#jre)
 	- [JDK/JRE/JVM](#jdkjrejvm)
@@ -16,7 +17,6 @@
 	- [Linker?????](#linker)
 
 <!-- /TOC -->
-
 
 - Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
 - Platform:
@@ -98,13 +98,39 @@
 - https://stackoverflow.com/questions/2424604/what-is-a-java-classloader
 - https://www.javacodegeeks.com/2018/04/jvm-architecture-jvm-class-loader-and-runtime-data-areas.html
 
+### Crashing the JVM
+
+- Understanding code outside of libraries/apis and IDEs can help prevent or solve problems
+- Examples
+	- Try to allocate as much memory as you can.
+		- if more than what exists it will crash
+	- Try to write data to your hard disk until it is full.
+		- If not enough HDD space then fail
+	-  Try to open as many files as you can
+		-  Dependent on `maximum number of file descriptors for your environment`
+	- Try to create as many threads as you can. On a Linux system,
+		- you can look at /proc/sys/kernel/pid_max and you will see how many processes may be running on your system.
+		- How many threads are you allowed to create on your system?
+	- Try to modify your own .class files in the filesystem
+	- Try to find your own process ID, and then try to kill it by using Runtime.exec (e.g., by calling kill -9 on your process ID)
+	- Try to create a class at runtime that only calls System.exit, load that class dynamically via the class loader, then call it.
+	- Try to open as many socket connections as possible.
+		- On a Unix system, the maximum number of possible socket connections equals the maximum number of file descriptors (often 2,048)
+	- Try to hack your system.
+		- Download an exploit via code or by using wget. Execute the exploit, and then call `shutdown -h` as root on a Unix system or `shutdown /s` as administrator on a Windows system.
+	-  Run your JVM with `-noverify` or `-Xverify:none`, which disables all bytecode verification, and write something that would otherwise not be allowed to run.
+	-  Try using Unsafe.
+		- This backdoor class is used to get access to low-level facilities such as memory management. All the syntax of Java, all the safety of C!
+	- Try going native. Write some native code. All the syntax of C, all the safety of C!
+
+
 ## JDK
 
 - acronym for Java Development Kit
 - a software development environment which is used to develop Java applications and applets.
 - physically exists and contains JRE + development tools.
 -  JDK contains a
-	- private Java Virtual Machine (JVM) and 
+	- private Java Virtual Machine (JVM) and
 	- a few other resources such as
 	- an interpreter/loader (java)
 	- a compiler (javac)

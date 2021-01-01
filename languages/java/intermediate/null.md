@@ -50,6 +50,7 @@
     - You have to always be careful when changing function’s implementation not to throw away something that might handle nulls for its users. Otherwise, you have to search through the whole source code to check if null is being passed anywhere.
   -  make sure things are safe from the outside
     - you can give up on the rule when dealing with private methods
+	- If you need a T, ask for it; if you can get by without one, then don’t ask for it. For an operation that can have an optional parameter, create two methods: one with the parameter and one without
 - Validate Public API Arguments
   - when you’re exposing a public API, you have no control over its users and what they pass to your functions.
   - always check the arguments being passed to your public APIs for correctness
@@ -63,7 +64,7 @@
 - Use Optional
   - designed specifically to indicate that a return value might be missing
   - calling a method with Optional as the return value has to explicitly handle the case when the value is not present.
-- Return Empty Collections Instead of Null
+- Return Empty Collections or optionals Instead of Null
   - we should avoid returning null or complicating things with Optional and return an empty collection when there are no values to fill it with.
 - Optional Ain’t for Fields
   - By means of encapsulation, you should have full control over the field's value, including null.
@@ -75,6 +76,38 @@
   - when you might see people using null is exceptional situations.
   - This is an inherently error prone practice, as critical errors can be omitted or resurface in different places of the system, causing debugging to be a pain.
   - Therefore, always throw an exception instead of returning null if something went wrong.
+- Avoid Initializing Variables to Null
+	- Initializing a variable to null might leak null unintentionally if you are not careful with your error-handling code.
+	- For complex initialization, move all the initialization logic to a method.
+	- instead of this
+		```java
+		public String getEllipsifiedPageSummary(Path path) {
+			String summary = null;
+			Resource resource = this.resolver.resolve(path);
+			if (resource.exists()) {
+				ValueMap properties = resource.getProperties();
+				summary = properties.get("summary");
+			} else {
+				summary = "";
+			}
+			return ellipsify(summary);
+		}
+		```
+	- do this
+		```java
+		public String getEllipsifiedPageSummary(Path path) {
+			var summary = getPageSummary(path);
+			return ellipsify(summary);
+		}
+		public String getPageSummary(Path path) {
+			var resource = this.resolver.resolve(path);
+			if (!resource.exists()) {
+				return "";
+			}
+			var properties = resource.getProperties();
+			return properties.get("summary");
+		}
+		```
 - Test Your Code
 - https://dzone.com/articles/10-tips-to-handle-null-effectively
 

@@ -1,0 +1,2 @@
+- https://4comprehension.com/java-8-the-bad-parts/
+- https://morioh.com/p/6b859b7a83e6

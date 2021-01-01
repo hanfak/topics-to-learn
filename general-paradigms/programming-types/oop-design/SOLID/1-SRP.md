@@ -24,7 +24,26 @@
   - higher level of abstraction
     - you should partition your functionality across modules to avoid overlaps
     - try to summarize responsibility of a module or an application in one or two sentences
-    -  Limit its scope and isolate it from the rest of the system using an explicit interface 
+    -  Limit its scope and isolate it from the rest of the system using an explicit interface
+
+
+## Separation of concerns
+
+- SRP is known as this
+- Anything with "and" when describing the actions of the behaviour/method one should think of separating out
+- Separating concerns, improves modularity and composability 
+- Be careful implicit behaviour
+  ```java
+  assertThat(Fractions.addFraction("1/3", "1/3")).isEqualsTo("2/3");
+  ```
+  - This is only adding fractions from the name, but is doing a lot more
+    - The behavior is doing taking two strings, parses them, and calculates their sum.
+  - It should just calculate the sum and nothing else
+  - Instead
+  ```java
+  Fraction fraction = new Fraction(1, 3);
+  assertThat(fraction.addFraction(new Fraction(1, 3))).isEqualsTo(new Fraction(2, 3));
+  ```
 
 ## Links
 

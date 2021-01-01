@@ -12,3 +12,4 @@
 - That said, there may be times when you need to work with locks in more complex ways, perhaps **acquiring and releasing a series of locks in a nested or hand over hand manner**, and that's not possible with a synchronized statement,
 - but locks do allow more flexibility to be acquired and released in different scopes and to be acquired and released in any order.
 - But with that increased flexibility, comes additional responsibility
+- 

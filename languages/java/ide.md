@@ -16,6 +16,17 @@
 
 I exclusively use Intellij as an IDE for developing code with either java, javascript, bash, sql and scala. It has many plugins that help with development and lots of shortcuts to help develop and refactor code effectively.
 
+## Benefits
+
+- Spot compiler issues, bad code style, unneeded code etc
+- Offers hints
+- custom templating, ie sout or psvm
+- Can generate code for you so you don’t have to type it. Getters and setters, equals and hashCode, and toString
+	- Becareful, to when generating complex code like hashcode etc, have tests in place
+- Has refactoring tools that can automatically move your code in a particular direction while keeping the compiler happy
+- Can run your tests and help you debug problems.
+- Can even help you with tools or systems external to your application code—for example, version control, database access, or code review
+
 ## Shortcuts
 
 There are loads of shortcuts (See link below for a list) but that will be a waste of time writing them instead here are few areas that should be learned to be an efficient developer.

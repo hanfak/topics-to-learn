@@ -148,6 +148,15 @@
 ## checked exceptions
 
 - Unchecked exceptions are designed to detect programming errors of the users of your library,
+- if not handled within a method (try/catch), must appear in the method’s throws clause.
+- it is not sub class of Error or RuntimeException
+- It gives developer type/compiler level confidence that some exceptions are not overlooked is an easy goal to meet and, once met, offers some (very) basic reassurance about the completeness of the code.
+	- This was fine for small projects, but large projects lead to decrease in productivity and convulted codebase
+	- Lead to method signatures with long list of exceptions
+		- Could just use `throws Exception` but this hides the reason for having checked exceptions
+		- Which lead to interfaces being affected
+- Can catch the checked exception and throw runtime exception
+- Avoid catching them doing nothing with them
 
 ### Why bad
 

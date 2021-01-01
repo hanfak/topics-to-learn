@@ -74,6 +74,7 @@
 - InformationHiding is the idea that a design decision should be hidden from the rest of the system to prevent unintended coupling
 - is hiding the fact that your using an ArrayList to implement your data structure. Although the client could still find out how your implementing it (Information Hiding Is Not Information Erasing), you're no longer responsible for supporting that implementation.
 - mechanism for restricting access to some of the object's components. Your above example is the case of Information Hiding if you make age private.
+- Information hiding is a great principle for enabling focus on a useful abstraction rather than a mass of detail, for sure. But it implies a choice to delve into details only when relevant, not ignorance of the details.
 
 ## Encapsulation is not information hiding
 
