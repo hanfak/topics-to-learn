@@ -1,0 +1,33 @@
+# Intel Machine
+
+- Intel architecture based systems are most popular not only for development but also for production
+- Model
+  - cpu
+    - Registers
+    - ALUs - arithmetic logical unit
+    - L1/L2 caches
+  - system bus that connects multiple cpus to shared memory
+  - share memory
+- Hyperthreading
+  - Only a small set of microarchitecture states is duplicated, while the arithmetic logic units and cache(s) are shared.
+  - Compared with a single processor without HT support, the die size of a single processor with HT is increased by less than 5%
+  - HT may slow down single-threaded applications because of the overhead for synchronizations between the n logical processors.
+  - the effectiveness of HT depends on whether a system can be driven to its fullest possible utilization
+    - CPUs  are relatively idle without HT, enabling it wont help improve performance
+    - effectiveness of HT depends on how busy the systems are without HT when an intended load is applied to the systems under test.
+- Mulitcore architecture
+  - the Intel multicore microarchitecture shares nothing above L2 cache
+  - both single-threaded and multithreaded applications can benefit from the multiple execution cores.
+  - HT can be enabled on the cores
+  - Built off low power consumption (mobile) and high performance (NetBurst) technologies
+  - Intel architecture is moving toward more and more cores while keeping increasing front-side-bus speed and L2/L3 cache.
+    - Hyper-threading support becomes less important as more and more cores are packaged in a single processor
+    - clock rate is not necessarily going higher with more cores
+    - based on the goal of increasing performance by maximizing the parallelism that a multi-core processor can support.
+- General
+  - Processor architecture refers to the instruction set, registers, and memory dataresident data structure that is public to the programmer. Processor architecture maintains instruction set compatibility so that processors will run the programs written for generations of processors.
+  -  Microarchitecture refers to the implementation of processor architecture in silicon.
+  - Processors are productized implementation of microarchitecture.
+  - Processor implies the separate chip package or socket. A system with one, two, or N processors with N . 2 are called one-way (UP), two-way (DP), or N-way systems (MP).
+  -  A processor could be a dual-core or quad-core processor with two or four cores in that processor. Cores are called execution engines in Intel’s term.
+  -  You can have hyperthreading turned on within each core. Then you would have two computing threads within each core

@@ -1,5 +1,13 @@
 # Data structures
 
+- Most languages provide two types of containers:
+  - Sequential containers store objects at a particular position, denoted by a numerical index.
+  - Associative containers use the object itself to determine where the object should be stored inside the collection.
+- For certain contianer methods to work, the objects must have implement some form comparability and equivalence (equals() and hashcode())
+- The object is not store in the container, it is the reference to the object
+- The Collections API defines a set of interfaces specifying the operations a container of that type must conform to
+
+
 - Mutable collections which allow mutation of their state in place
   - he majority of standard collections from java.util.
   - When you add or remove elements there, you get the changes at all places which keep a reference to the collection instance.
@@ -7,7 +15,7 @@
   - When you apply mutation operation on such collection, you get a new independent instance of it, with updated content.
   - Such characteristic makes them effectively immutable.
   - There are plenty different implementations of persistent collections in Java ecosystem.
-  - External libraries such as Vavr 
+  - External libraries such as Vavr
 
 - What is it?
   - https://en.wikipedia.org/wiki/Data_structure

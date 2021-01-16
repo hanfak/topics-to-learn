@@ -49,6 +49,7 @@
 ## Antipatterns
 
 - Don’t Use Builders to create immutable objects
+  - trade off, depends on it's useage
 - Don’t Use Withers
   ```java
   @RequiredArgsConstructor

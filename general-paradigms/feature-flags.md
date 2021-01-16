@@ -42,3 +42,5 @@
 ## Links
 
 - https://completedeveloperpodcast.com/episode-25/
+- https://trunkbaseddevelopment.com/feature-flags/
+- https://martinfowler.com/articles/feature-toggles.html

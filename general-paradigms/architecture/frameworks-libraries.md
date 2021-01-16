@@ -1,5 +1,24 @@
 # Framework and Libraries
 
+## NOTE: With any library,
+- be sure to understand it's pros and cons (esp around secruity and legal), does it meet cost benefit for usage
+- Does it fit in with your organisation, team, codebase, when used in production?
+- Is it well maintained, number of contributors, passing tests, good test coverage, usages in production code
+- Good documentation, good example tests
+- test it
+- write poc (proof of concept)
+- try it out but be able to make it easy to remove if not working out
+  - The only way it can be found as useful is in production
+- avoid having to build lots of hacks or engineer solutions to bugs or needed features which are not suited to library
+- Avoid having to have comments or readme/faqs to help user deal with problem
+- using a library, means adding new stuff to learn, new api etc.
+  - This can lead to misuse, need to place checks and balances
+    - automated tests to write to avoid issues
+    - plugins for IDEs
+    - extra time on code reviews/pairing needing to look out for these issues instead of focusing on business features or important techenical issues
+    - more time debugging, having to go through library, or decomplied classes etc
+
+
 ## Differences
 
 - https://www.programcreek.com/2011/09/what-is-the-difference-between-a-java-library-and-a-framework/

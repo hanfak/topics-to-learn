@@ -39,17 +39,33 @@
 
 ## truststore jks
 
-  public cert - trusted server to talk to
-  use intermediate
+-  public cert - trusted server to talk to
+-  use intermediate/root
+-  Have a only one cert in there
+	-  when used it will take the first cert it finds
+-  truststore passwords can be very simple, as contents is public
 
 ## keystore jks
 
-  server
-  contain private, public and cert
+- client certs
+- contain private and public cert
+- the keystore password
+	- is the same for both private key and public cert
+	- It is used in app to extract out key and cert to do tls/ssl
+	- if wrong one used (not correctly set) then tls/ssl will fail
+	- in production this should only be set and known within prod env, and only privileged users should be able to access
 
 ## keytool
 
-  - A way to look at jks contents
+- Can use to view cacerts (part of jvm) at `$JAVA_HOME/jre/lib/security/cacerts`
+- A way to look at jks contents
+	- `keytool -list -keystore <name of jks>` or `keytool -list -v -keystore <name of jks>`
+		- this will ask for password, but can press enter and will list out with less details
+- Export private key from key store
+	- `keytool -importkeystore -srckeystore <source keystore>.jks -srcstorepass <source keystore password> -srckeypass <source key password> -srcalias <source alias> -destalias <destination alias> -destkeystore <destination keystore>.p12 -deststoretype PKCS12 -deststorepass <destination keystore password> -destkeypass <destination key password>`
+	- then use openssl to view contents of cert
+- Other commands
+	- https://www.digitalocean.com/community/tutorials/java-keytool-essentials-working-with-java-keystores
 
 
 ## openssl

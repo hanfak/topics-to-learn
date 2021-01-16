@@ -1,10 +1,25 @@
 # Arayslist/list
 
 ## What is a List
-????
+
+- is an interface for ordered collections with a stable indexing order
+- allows duplicate elements to be inserted and provide a predictable iteration order
+- Has two implementations: ArrayList and LinkedList
 
 ## What is an ArrayList
-?????
+
+- backed by an array that has a fixed size.
+- Entries can be added to the array up to the maximum size of the backing array.
+  - When the backing array is full, the class will allocate a new, larger array and copy the old values.
+  - This affects performance
+  - An ArrayList is initially backed by an empty array. On the first addition to the ArrayList a backing array of capacity 10 is allocated.
+  - We can prevent this resizing behavior by passing our preferred initial capacity value to the constructor.
+  ```java
+  List<String> list = new ArrayList<>(1_000_000);
+  ```
+    - Initializing the size on creation, improves insertion performance
+
+
 
 ## Difference between Arrays and ArrayList
   - ????

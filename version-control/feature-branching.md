@@ -29,3 +29,4 @@ See Github flow ( https://githubflow.github.io/)
 
 - https://www.infoq.com/presentations/death-continuous-integration/
 - https://www.continuousdeliveryconsulting.com/blog/organisation-antipattern-build-feature-branching/
+- https://martinfowler.com/articles/branching-patterns.html

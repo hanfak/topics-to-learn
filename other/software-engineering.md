@@ -102,3 +102,4 @@
 - https://www.rainerhahnekamp.com/en/modern-software-development/
 - https://muldoon.cloud/programming/2020/04/17/programming-rules-thumb.html
 - https://braydie.gitbooks.io/how-to-be-a-programmer/content/en/
+- https://medium.com/@vgonzalo/why-software-quality-really-matters-daee462e9e7d

@@ -20,6 +20,14 @@
 
 ## Equals and hashcode
 
+- Reflexive
+- Symmetric
+- Transitive
+- Consistent
+- Non-nullity
+- missing fields
+- specific fields used only in checking equality
+
 ## Comparable
 
 ## Unmarshalling json/xml

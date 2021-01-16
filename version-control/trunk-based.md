@@ -3,6 +3,7 @@
 - Work directly on master branch
 - Use short lived feature branches
 - Need team wide practices to do this
+- A source-control branching model, where developers collaborate on code in a single branch called ‘trunk/master/main’, resist any pressure to create other long-lived development branches by employing documented techniques. They therefore avoid merge hell, do not break the build, and live happily ever after
 
 ## Benefits
   - Real time feedback
@@ -14,6 +15,7 @@
   - Established coding practices with in code base
     - The code base should look like it was written by one person, easier to integrate new team members, easier to follow/read code and make changes, establish good practices,
   - Continuous integration
+    - key enabler
     - With feature branching, pushed to master at the end, rather continously, this can lead to issues on the maste CI build
     - Trunkbased, always pushing to master, getting fast feed back, and master is always upto date
     - Broken builds are top priority
@@ -83,3 +85,4 @@ Each pair commits and pushes straight to master, at a frequency that ranges from
 
 - https://medium.com/@mattia.battiston/why-i-love-trunk-based-development-641fcf0b94a0
 - https://www.continuousdeliveryconsulting.com/blog/organisation-pattern-trunk-based-development/
+- https://trunkbaseddevelopment.com/

@@ -48,7 +48,15 @@ to show their absence!
 - No manually checking code yourself
 - A set of tests can be used in CI to check that system does what it is supposed to do, and that version can be used to be deployed
 - As a reminder to be sure you want to make that change
-- If wanting to refactor a code, writing all possible tests to check all behaviour has been documented first then can refactor it
+	- ie adding a new enum, and checking methods that use enum classes need to be added or not
+- If wanting to refactor a code, writing all possible tests cases to check all behaviour has been documented first then can refactor it
+	- Legacy code
+- By having passing tests, our code becomes better designed
+- Auto generated code (ie from IDE) does not fail when the class (or module) is updated
+	- ie equals is auto generated for a class, but is class is updated and dev forgot to update equals
+- Learning a new library
+- protecting against bugs found in library use, if compiler does not do it first
+
 
 ## Good unit tests
 

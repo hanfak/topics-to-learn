@@ -6,14 +6,22 @@
 ## Benefits
 
 - Code review in real time
+  - less disturbing of coworkers for help/review/design discussions
+  - more detailed code review when check bit by bit, rather than all the changes
 - improved team resilience
 - people are less distracted
 - work gets done faster
 - higher quality
+  - reduce errors
+  - find errors faster
 - coding style becomes more standard across the team
 - people find better solutions to problems together
+  - evaulate more options than working solo
 - knowledge sharing
   - No single point of failure
+  - No silos
+  - Introduce new members to codebase faster
+- Carry out interviews
 
 ## STyles of pairing
 
