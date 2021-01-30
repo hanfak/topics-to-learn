@@ -13,4 +13,10 @@
 - TCP needs to establish a connection between source and destination before it transmits the packets, and it does this via a "handshake".
   - This connection itself is established using packets where the source informs the destination that it wants to open a connection, and the destination says OK, and then a connection is opened.
   -  is what happens when a server "listens" at a port - just before it starts to listen there is a handshake, and then the connection is opened (listening starts).
-  - one sends the other a message that it is about to close the connection, and that ends the connection.  
+  - one sends the other a message that it is about to close the connection, and that ends the connection.
+
+## links
+
+- https://www.youtube.com/watch?v=xdQ9sgpkrX8
+- https://www.youtube.com/watch?v=NdvWI6RH1eo
+- How TCP Works - The Handshake: https://www.youtube.com/watch?v=HCHFX5O1IaQ

@@ -1,0 +1,25 @@
+# Personal Roadmap
+
+- Run kotlin on local machine using jvm 11
+  - use shell on terminal
+  - integrate via IDE
+- Kotlin learning repo - git repo wrapper
+  - Dir: examples of language use (https://play.kotlinlang.org/koans/overview)
+  - Dir: patterns (gang of 4, arch, enterprise, concurrency, effective kotlin)
+    - https://github.com/dbacinski/Design-Patterns-In-Kotlin/tree/master/patterns/src/test/kotlin
+    - functional
+      - https://github.com/arrow-kt/arrow
+      - railway
+      - streams sorting does not mutate original list
+  - Dir: Fizzbuzz TDD
+  - Dir: Airport TDD
+    - junit5 and mockito https://github.com/mockito/mockito-kotlin
+    - https://www.baeldung.com/kotlin/junit-5-kotlin
+    - https://www.kotlinresources.com/library/assertk/
+  - Dir: Airport TDD
+    - kotlin test, and https://github.com/mockk/mockk
+  - Dir: Webserver, database, http client calls, testing pyramid
+    - libraries from java - yatspec, jackson, slf4j
+    - dockerised
+  - Dir: Spring framework
+  - Dir: https://ktor.io/ to build server

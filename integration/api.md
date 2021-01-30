@@ -4,10 +4,12 @@
 
 - [API](#api)
 	- [What](#what)
+	- [Types](#types)
 	- [Code base](#code-base)
 	- [Http](#http)
 	- [Cosumner contract testing](#cosumner-contract-testing)
 	- [Use of status probes](#use-of-status-probes)
+	- [Best practices](#best-practices)
 	- [Links](#links)
 	- [Design](#design)
 	- [Versioning](#versioning)
@@ -18,13 +20,41 @@
 ## What
 
 - An interface, which defines how to use the service, and hides/abstracts the implementation
+- are the basic building blocks for software as atoms and molecules are for matter in the physical world
+- An API is an abstract specification about the basic functions provided for
+building software that needs to use it.
+- The software that provides the functionality described by an API is said to be an implementation of the API. An API implementation is presented to users as a part of a software development kit (SDK). An SDK contains not only the implementation of an API, but also the documents and code samples about how to use the APIs.
+- Access paths to APIs must be specified when calling programs are compiled
+and built.
+- An API is different from an ABI (application binary interface)
+	- An API defines the interface between source code and libraries so that the same source code will compile on any system supporting that API
+	- ABI allows compiled object code to function without changes on any system using a compatible ABI.
 
+## Types
+
+- Operating system api
+	- Allows access to the services provided by os and hardware
+- Language api
+	- set of api provided by a language (a set of libraries) that allows the user to access common higher level functions (i/o, string manipulations, data structures) to create complex software
+	- Reduces need to recreate these common functions, allows other more experienced people to create them to reduce bugs and improve performance
+- Internal code api
+	- This is a part of your software, using another part of your software (ie method, function, instance/static method, constructors etc)
+	- Not splitting code into separate services/api etc makes it harder to code as complexity sets in
+	- Design does not matter much for small or if it is single person working on it
+		- but when it gets big, multiple people working on it, people leaving it, then thought needs to be taken care and should have apis similar to language/library apis (those of high standards)
+- First party api
+	- generally libraries or programs access over network produced by the same programmer, team, department or company
+- Third party api
+	- eg google api
+	- generally libraries or programs access over network produced by another company or opensource
+	- Can pay for it's usage to get better access/performance/support
 
 ## Code base
 
 - Defined by an interface, which defines the method's signature (name of method, params, return type)
 - When using a library, which is external and cannot change, need to follow it's api
   - Should wrap it in an adapter/facade to avoid core application logic from being too dependent on it. Can now change it in one place with out changes in the api affecting it's usage in the application
+-
 
 ## Http
 
@@ -56,7 +86,16 @@
 - https://www.mulesoft.com/resources/api/types-of-apis
 
 ## Design
-
+- As they are not in our control (although can monkey patch or take over if opensource) they affect the performance of the software that depends on them
+	- So changes in version, can have an impact on the software's
+		- performance
+		- compilation can break
+		- creation of code (learn new api or it's changes)
+	- If paid service is not renewed or service breaks legal/regulations than it needs to be removed and replaced,
+		-  which will slow down creation of features of software
+		-  need to retune to match previous performance
+-  Need of good naming
+-  Use of conventions
 - https://swagger.io/blog/api-development/how-to-build-an-api/
 - https://dzone.com/articles/7-tips-for-building-an-api
 - https://github.com/dwyl/learn-api-design

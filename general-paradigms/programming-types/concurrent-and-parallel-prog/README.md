@@ -1,7 +1,12 @@
 # Concurrent and Parallel Programming
 
 - threads
+  - typically are spawned within a process without crossing the boundary of that process
+  - ie multiple separate actions happening within the same jvm
+    - Can be mimic wiht multiple replicas of jvms on server (ie replica pods on kubernetes cluster)
 - processes
+  - is a stand-alone program
+  - ie A program running on a jvm
 - Mutual exclusion
 - locks
 

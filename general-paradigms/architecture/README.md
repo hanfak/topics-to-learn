@@ -6,8 +6,10 @@
   -  cost is measured in terms of certain qualities that represent a software architecture’s design and implementation
   - in addition to the cost of the infrastructure to operate it.
   - defining trait of a software quality is that it can be tangibly measured and has an impact on other qualities
+- conveys two major pieces of information about software:
+  - The software components that constitute a whole system to provide certain functions at the system level.
+  -  How the components communicate with each other to fulfill the system functions
 
-  
 ## General
 
 - https://engineering.videoblocks.com/web-architecture-101-a3224e126947

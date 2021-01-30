@@ -1,5 +1,17 @@
 # Multithreading
 
+
+- It allows multitasks to be executed simultaneously or in parallel to make the most of the computer hardware with multiple CPUs.
+  - True parallel processing  happens when you have multi cores (or multi replica pods)
+  - where as on a single core, multi threads must share the same cpu, and use switching mechanism to share the threads with the cpu (but generally so fast it seems in parallel)
+- Increases performance and used to increase high throughput and lower latency
+  - Poor performance is to allow a slow process being single threaded on a multi core cpu, as other cpu/resources are idle
+  - In general, the maximum throughput is achieved when every processor is fully busy
+  - If thread is waiting for something, then cpu is not busy
+    - read/write to disk
+    - network call
+- Generally a tough area to design, to debug, and lots of possible bugs
+
 ## Drawbacks
 
 - https://web.stanford.edu/~ouster/cgi-bin/papers/threads.pdf

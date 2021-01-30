@@ -57,9 +57,15 @@
 ## Issues with alternatives
 
 - Brittle tests
+- Easy to write bad plumbing/fixtures (this needs tests)
+  - need to engineer this, more time than needed spent on test rather than prod
+- NEed to learn a DSL, and it's magic when things go wrong
+  - hard to debug or rather not obvious
 - Concordian
   - Can lead to overspecifying, which leads to a change in some area affecting tests which doesnt test the changes made
-  - Devs having to rewrite the html, when the specs given do not match up
+  - Devs/QA having to rewrite the html, when the specs given do not match up
+    - This can be error prone, people dont like it
+    - Duplicated effort
   - A lot duplication
 
 - Cucumber/gherkin

@@ -1,5 +1,12 @@
 # Software Engineering
 
+## Software
+
+- software controls what computers do.
+- Since there are an unlimited number of things that computers can do, there are an unlimited number of software programs developed for various kinds of computing tasks.
+-  all software programs share some commonalities in how they are created and how they run on computers
+
+## What?
 - It is different to other forms of engineering.
 - It is about designing and making something that is soft, not hard.
 - Soft is about easily changeable thing.
@@ -20,6 +27,9 @@
   - Understanding the implications of trade offs to help make better decisions
   - **There are not right or perfect choices**
 - Due to the internet, open source, software dev is not about creating alogorithms for everything. Instead it is about knowing about libraries and using and combining these to create your product.
+- Understanding how software is developed inside out and deployed, allows us to design/engineer it better for functional and non functional requirements
+  - Poorly designed and implemented software will not run fast on fast hardware.
+  - Even well-designed software may not perform and scale optimally on fast hardware
 
 ## Deliver Better Software, Faster
 
@@ -94,6 +104,79 @@
     - it can have a real impact on your company and thereby the world
   - Greater understanding of everything, not just a fixed area
     - A lot to know and understand, can be overwhelming
+
+## Difficulty of software engineering
+
+We cannot engineer a perfect solution or a solution that has everything
+  - one, there are things we want that compete against each other, so need to make trade offs, and priortise what we want
+  - There are constraints
+    - physical - hardware software works on
+    - law/regulation
+    - contracts - must use this software/service
+    - time
+    - money
+    - number of developers, or number of good developers
+    - etc
+
+Coding isn’t hard - if you are left alone to code what you want, when you want, how you want and keep the option to just give up when it gets too hard.
+
+That’s the really hard bit: we can’t do that.
+
+Write code is simple, but the more things it needs to do or add it becomes more difficult
+
+Simple amateur coding is trivial and most people can do it. Making an Excel spreadsheet or script, probably making ten or twenty lines of code in a programming language is something most people could do or learn to do.
+
+As a professional, two factors mess that up:
+  - Figuring out what to code.
+    - You just get asked, say, ‘Can you make it email me if more than five expense claims get rejected on the same day for the same person?’. How do you code that?
+  - Fitting it in to existing code.
+    - You have to figure out how to fit your new code in to the existing code without breaking it. It might be millions of lines you have never seen. it might be very badly constructed and might break on small changes.
+
+And then, we want to do better as professionals.
+
+We want our code to have automated tests, which changes how you design it a bit.
+
+We want it to be easy to deploy to computers, so you have to design that in.
+
+We want it free from security holes, to keep data safe.
+
+We want to never corrupt any data.
+
+We want our colleagues to easily read and easily change our code, which needs designing in.
+
+We want our code to be robust and correctly handle bad data, bad user input and anything else ‘unexpected’. We have to learn to expect that.
+
+We want our code to be maintainable and extendable, without rewriting or making lots of changes or getting lost or taking lots of time
+
+We want documentation for different people (developers, business, testers)
+
+We need to communicate with others, using different language for other parties to understand us, what we are doing, what we need, how the app works or doesn't etc
+
+We might need to work with other people (ie pairing) and this can be challenging
+
+Then, our bosses want to know when all that is going to be ready, so they can plan around it. Once the TV advert goes live, that software better be running. Deadlines add pressure, so all these tricky bits need to be done under pressure
+
+We have to juggle competing priorities of adding features, managing tech debt and fixing bugs. There’s no right answer for that. Somebody is always disappointed.
+
+We have to cope with floods of new users and feature requests that are difficult to build. The whole ‘scalability’ piece is hard.
+
+The code needs to stay running 24/7 or close to it - even if half the computers, disk drives, cooling systems, internet switches and electrical power fails.
+
+We need to use existing libraries wherever we can, so we need to understand code we’ve not written. Tricky. But trickier still, we need to be part-time lawyers, because we have to check we are legally allowed to use that code without it affecting the business.
+
+We have to solve bugs in production or while coding, we need to be a detective, but also plan ways of making it easy for us to spot issues or even better find or alert us to the problem or causes of the problems before they occur, we have to be able to quick fix things to make the client happy then find a better way (automated or manual) to deal with this
+
+We need to remember somebody pays for all the computing our code runs on, so we have to make it play nice.
+
+We have to work for and with people who range from fantastic humans to the sort you’d rather not spend time with. And with all ranges of skill levels.
+
+We have to know so much about computing, engineering, the problem area (domain, business) we are creating requirements, solving, testing.
+
+We can spend hours, failing and not getting it to work, we cannot give up. Sometimes there are no instant results, there are no clear path to a solution, there is no great feedback
+
+We have to deal with people, politics, lack of motivation
+
+We have to always be learning, new technologies, new patterns, languages, new domains, different conventions at different workplaces etc. The skill can grow weak with out practice
 
 ## Links
 

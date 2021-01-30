@@ -77,3 +77,16 @@ Aspects of software that is engineered to have the following, although some will
 -  serviceability
 -  survivability
 -  traceability
+
+- To improve design to meet design requirements not only depends on the logic of your program, but other factors in the software stack
+  - software stack from top to bottom dependencies
+    - your programs
+    - libraries/api
+    - compilers
+    - assembler
+    - virtualisation
+    - operating system
+    - hardware
+- As everything depends on hardware, improving this despite improving it's dependents can lead to better performance
+  - but is an easy way out, but can be exponentially expensive for little gain after a while
+  - So design needs to take to deal with other levels first, the higher levels are generally cheaper to fix or improve first
