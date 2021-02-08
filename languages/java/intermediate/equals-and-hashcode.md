@@ -17,6 +17,8 @@
 
 <!-- /TOC -->
 
+- https://www.baeldung.com/java-equals-hashcode-contracts
+
 ## Why override them
 
 - By default, each object has an equals() method, this does equality check on the object
@@ -143,9 +145,10 @@ object exists with each value
     - This value need not remain consistent from one execution of an application to another
   - If two objects are equal according to the equals(Object) method, then calling hashCode on the two objects must produce the same integer result.
   - If two objects are unequal according to the equals(Object) method, it is not required that calling hashCode on each of the objects must produce distinct results. However, the programmer should be aware that producing distinct results for unequal objects may improve the performance of hash tables
-
+- Override both or none
 
 ## Why test
 
 - To make sure changes to the object (number of fields, change of type) do not break these methods
-- Do not have to test if using proven library
+- Do not have to test if using proven library ie lombok
+- There ar libraries that test your equals method (https://jqno.nl/equalsverifier/)

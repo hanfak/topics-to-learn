@@ -21,6 +21,7 @@
 - http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
 - https://www.journaldev.com/4098/java-heap-space-vs-stack-memory
 - http://www.baeldung.com/java-initialization
+- https://examples.javacodegeeks.com/java-memory-management/
 
 performance https://www.dynatrace.com/resources/ebooks/javabook/
 

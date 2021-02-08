@@ -51,3 +51,4 @@
 - http://www.bizcoder.com/rpc-vs-rest-is-not-in-the-url
 - https://www.baeldung.com/grpc-introduction
 - https://medium.com/better-programming/understanding-grpc-60737b23e79e
+- https://www.freecodecamp.org/news/what-is-grpc-protocol-buffers-stream-architecture/

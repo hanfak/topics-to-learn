@@ -77,6 +77,10 @@
 	-	Garbage-collected heap
 	-	Fatal error reporting etc
 
+### Arguments
+
+- https://www.javacodegeeks.com/2020/03/7-jvm-arguments-of-highly-effective-applications.html
+
 ### links
 
 - https://www.quora.com/How-does-JVM-works-internally
@@ -84,6 +88,7 @@
 - https://www.javacodegeeks.com/2018/05/jvm-architecture-101-get-to-know-your-virtual-machine.html
 - https://www.javacodegeeks.com/2018/04/jvm-architecture-overview-of-jvm-and-jvm-architecture.html
 - https://www.javacodegeeks.com/2018/04/jvm-architecture-jvm-class-loader-and-runtime-data-areas.html
+- https://www.freecodecamp.org/news/jvm-tutorial-java-virtual-machine-architecture-explained-for-beginners/
 
 ### Byte code
 
@@ -137,6 +142,10 @@
 	- an archiver (jar)
 	- a documentation generator (Javadoc)
 	- jconsole
+
+### Multple jdk
+
+- https://reflectoring.io/manage-jdks-with-sdkman/
 
 ## JRE
 

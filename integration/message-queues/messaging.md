@@ -24,3 +24,4 @@
 - https://www.youtube.com/watch?v=sjDnqrnnYNM
 - https://www.youtube.com/watch?v=Yz8HXTFMqcE&list=WL&index=4&t=0s
 - https://www.freecodecamp.org/news/rabbitmq-9e8f78194993/
+- https://examples.javacodegeeks.com/rabbitmq-tutorial-for-beginners/

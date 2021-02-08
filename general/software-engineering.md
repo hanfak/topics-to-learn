@@ -1,5 +1,7 @@
 # Software Engineering
 
+
+
 ## Software
 
 - software controls what computers do.
@@ -7,7 +9,9 @@
 -  all software programs share some commonalities in how they are created and how they run on computers
 
 ## What?
+- Managing complexity
 - It is different to other forms of engineering.
+- Knowing the requirements/aims and deciding on the best technologies/methodologies to use within the constraints used, for different timeframes within the area of software
 - It is about designing and making something that is soft, not hard.
 - Soft is about easily changeable thing.
 - SE make products that are soft, and apply principles, techniques, patterns and methodologies to create soft products
@@ -30,6 +34,56 @@
 - Understanding how software is developed inside out and deployed, allows us to design/engineer it better for functional and non functional requirements
   - Poorly designed and implemented software will not run fast on fast hardware.
   - Even well-designed software may not perform and scale optimally on fast hardware
+
+## Layers
+
+- Deals with levels of code to produce some product that solves a problem
+- levels/abstraction
+  1. System
+  2. Subsystem
+  3. Layers
+  4. Components
+  5. Classes
+  6. Data and methods
+- There is a separation between layers and components.
+  - 3 and above is concerned with architecture
+  - 4 and below is concerned with code
+
+## Fundamental Concepts
+
+- These are the building blocks of what many technologies/patterns/architectures that are used in software.
+- All new software is built on these ideas either
+  - to improve upon it
+  - Fix Issues
+  - Make it easier to use
+- Any list will be different, esp in terms of grouping
+- List
+  - Knowledge & Approach
+    - Domain specific, logical, problem solving, scientific approach, abstract thinking
+  - How a computer works
+  - Making a computer hardware or software do something via software
+    - programming languages, operating systems etc, sync, async, parallel actions
+  - Running software on hardware
+    - deploying, maintaining, cloud
+  - Communication via different modules
+    - interfaces, api, protocols( http, tcp, jms), sync, async
+  - Networking
+    - internet, osi, tcp/ip, load balancing, proxy, tls, hardware
+  - Creating software
+    - version control, agile/waterfall, requirements, algorithms/rules
+  - Data
+    - persisting and querying data, database, files, caching
+  - Constraints
+    - speed, memory, -ilities, secruity
+  - Works
+    - tested, documented, used, can be fixed
+  - People
+    - communication
+
+### Links
+
+- https://readwrite.com/2008/07/22/top_10_concepts_that_every_software_engineer_should_know/
+- https://medium.com/software-alchemy/basic-concepts-of-software-design-and-architecture-e302697a8e51
 
 ## Deliver Better Software, Faster
 
@@ -186,3 +240,4 @@ We have to always be learning, new technologies, new patterns, languages, new do
 - https://muldoon.cloud/programming/2020/04/17/programming-rules-thumb.html
 - https://braydie.gitbooks.io/how-to-be-a-programmer/content/en/
 - https://medium.com/@vgonzalo/why-software-quality-really-matters-daee462e9e7d
+- https://www.sivaprasadreddy.com/posts/2019/06/the-ugly-truth/

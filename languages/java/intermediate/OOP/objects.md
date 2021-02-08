@@ -16,8 +16,10 @@ Dog rocky = new Dog(5, Sex.MALE, "Rocky", 5.9);
 
 ## Pass by reference
 
+- https://examples.javacodegeeks.com/java-pass-by-reference-vs-pass-by-value-example/
 
 ### links
 
 - https://self-learning-java-tutorial.blogspot.co.uk/2014/02/object-creation-and-destruction.html
+
 ## Object equality

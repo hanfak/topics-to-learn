@@ -1,6 +1,14 @@
 # Files IO
 
+## JAva 8
+
+- https://reflectoring.io/processing-files-using-java-8-streams/
+
 ## Streams and Buffers
+
+## Creating files
+
+- https://www.callicoder.com/how-to-create-new-file-java/
 
 
 ## Paths

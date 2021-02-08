@@ -43,6 +43,9 @@
 
 ## Setter Injection
 - dependencies are instantiated after the class is created.
-- https://www.vojtechruzicka.com/field-dependency-injection-considered-harmful/
 
 ## Field Injection
+
+- having a public non final field, where you can inject the dependencies
+- dependencies are instantiated after the class is created
+- https://www.vojtechruzicka.com/field-dependency-injection-considered-harmful/

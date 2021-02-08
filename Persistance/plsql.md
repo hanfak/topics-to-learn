@@ -20,3 +20,9 @@ BEGIN
 
 END <nameOfFunction>;
 ```
+
+## Debugging
+
+- When working with plsql, it helps to run it in an ide like SQL developer, where you can run the script against data
+  - This can be done via code which will call the script, and have tests written, but sometimes feedback can be slow
+  - In SQL developer (or alt) can split apart sections, replace variables with actual data, add print statements, check if it works quickly 

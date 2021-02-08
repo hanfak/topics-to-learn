@@ -130,6 +130,9 @@
 - leave {1258}
   - set alarm for current day
 
+## symlink
+
+- https://www.freecodecamp.org/news/symlink-tutorial-in-linux-how-to-create-and-remove-a-symbolic-link/
 
 ## Permissions
 
@@ -141,3 +144,4 @@
 - https://learncodethehardway.org/unix/
 - https://github.com/Idnan/bash-guide
 - https://github.com/enkidevs/curriculum/wiki/Linux-Topic
+- https://www.freecodecamp.org/news/terminal-tips-tweets/

@@ -19,3 +19,4 @@
 - https://stackify.com/solid-design-liskov-substitution-principle/
 - https://dzone.com/articles/solid-principles-liskov-substitution-principle
 - https://medium.com/hackernoon/the-liskov-substitution-principle-and-why-you-might-want-to-enforce-it-6f5bbb05c06d
+- https://reflectoring.io/lsp-explained/

@@ -1,7 +1,13 @@
 # Software
 
+- Software Is an Abstraction, Built Using Reasoning
 - Computers do not have their own intelligence and they do not speak our languages.
 - They can only understand electronic signals that have two states: on and off. - These electronic signals are represented in binary numbers of 0 and 1. A mixed string of 0’s and 1’s can constitute instructions or commands that instruct computers what to do
+- comprised of machine instructions that are processed by the CPUs of physical machines and/or virtual machines
+
+### Links
+
+- https://www.javacodegeeks.com/2018/09/what-is-software.html
 
 ## Assembly Language
 

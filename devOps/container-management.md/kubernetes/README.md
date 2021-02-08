@@ -8,3 +8,5 @@
 - https://www.toptal.com/kubernetes/what-is-kubernetes
 - https://medium.com/tarkalabs/know-kubernetes-pictorially-f6e6a0052dd0
 - https://semaphoreci.com/blog/kubernetes-deployment
+- https://www.freecodecamp.org/news/kubernetes-vs-docker-whats-the-difference-explained-with-examples/
+- https://www.youtube.com/watch?v=Wf2eSG3owoA&feature=youtu.be
