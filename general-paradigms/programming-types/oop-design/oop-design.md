@@ -94,6 +94,28 @@ Implementing these design principles to have better code
 - ISP - Interface Segregation Principle
 - DIP - Dependency Inversion Principle
 
+## Object Design Rules
+
+- talk https://www.youtube.com/watch?v=JMssBdJOSMQ
+- Not be all rules
+	- just a set of practices that make you think when coding
+- Rules for good OO design
+	- One level of indentation per method
+	- Don’t use the ELSE keyword
+		- guard clause
+		- Polymorpshism
+	- Wrap all primitives and Strings
+	- First class collections
+		- only one field with the collection
+	- One dot per line
+		- law of demeter
+	- Don’t abbreviate
+	- Keep all entities small (50 lines classes, methods 7 lines)
+	- No classes with more than two instance variables
+	- No getters/setters/properties
+		- tell dont ask
+		- should not get info from getter to do something else with it or extract something else. This should be the responsiblity of the object the getter is from, ie a new method that can encapsulate this
+
 ### Links and Books
 
 - https://github.com/mikeknep/SOLID

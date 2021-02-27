@@ -80,6 +80,8 @@
 - run image
   - `docker run --name <alias you choose> -d -p 8080:8080 <name of image>`
     - -p 8080:8080 : This is setting the port to be used in you app and expoing in the docker image. This has to match the port in the dockerfile
+	- if the container crashes and you want to exec on to it you can add `tail -f /dev/null `
+		- `docker run --name <alias you choose> -d -p 8080:8080 <name of image> tail -f /dev/null `
 - Passing arguments
   - https://forums.docker.com/t/is-it-possible-to-pass-arguments-in-dockerfile/14488/3
   - https://vsupalov.com/docker-env-vars/

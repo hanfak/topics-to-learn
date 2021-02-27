@@ -1190,6 +1190,7 @@ _Replace the type code with a state object_
 		Employee (int type) {
 			_type = type;
 		}
+
 		int payAmount() {
 			switch (_type) {
 				case ENGINEER:
@@ -1208,46 +1209,97 @@ _Replace the type code with a state object_
 to
 ```java
 
-	class Employee...
-		static final int ENGINEER = 0;
-		static final int SALESMAN = 1;
-		static final int MANAGER = 2;
+	class Employee {
 
-		void setType(int arg) {
-			_type = EmployeeType.newType(arg);
-		}
-		class EmployeeType...
-			static EmployeeType newType(int code) {
-				switch (code) {
-					case ENGINEER:
-						return new Engineer();
-					case SALESMAN:
-						return new Salesman();
-					case MANAGER:
-						return new Manager();
-					default:
-						throw new IllegalArgumentException("Incorrect Employee Code");
-				}
-			}
-		}
+    private final EmployeeType employeeType;
+
+    public Employee(int type) {
+        this.employeeType = EmployeeType.newType(type);
+    }
+
 		int payAmount() {
-			switch (getType()) {
-				case EmployeeType.ENGINEER:
-					return _monthlySalary;
-				case EmployeeType.SALESMAN:
-					return _monthlySalary + _commission;
-				case EmployeeType.MANAGER:
-					return _monthlySalary + _bonus;
-				default:
-					throw new RuntimeException("Incorrect Employee");
-			}
+			return employeeType.salary();
+			// switch (employeeType) {
+			// 	case EmployeeType.ENGINEER:
+			// 		return _monthlySalary;
+			// 	case EmployeeType.SALESMAN:
+			// 		return _monthlySalary + _commission;
+			// 	case EmployeeType.MANAGER:
+			// 		return _monthlySalary + _bonus;
+			// 	default:
+			// 		throw new RuntimeException("Incorrect Employee");
+			// }
 		}
 	}
+
+	public abstract class EmployeeType {
+    abstract int getTypeCode();
+		abstract int salary();
+
+    static final int ENGINEER = 0;
+    static final int SALESMAN = 1;
+    static final int MANAGER = 2;
+
+    public static EmployeeType newType(int code) {
+        switch (code) {
+            case ENGINEER:
+                return new Engineer();
+            case SALESMAN:
+                return new SaleMan();
+            case MANAGER:
+                return new Manager();
+            default:
+                throw new IllegalArgumentException("Incorrect Employee code");
+        }
+    }
+	}
+
+
+	public class Engineer extends EmployeeType {
+	    @Override
+	    int getTypeCode() {
+	        return ENGINEER;
+	    }
+
+			@Override
+			int salary() {
+					return _monthlySalary;
+			}
+	}
+	public class Manager extends EmployeeType {
+	    @Override
+	    int getTypeCode() {
+	        return MANAGER;
+	    }
+
+			@Override
+			int salary() {
+					return _monthlySalary + _bonus;
+			}
+	}
+	public class SaleMan extends EmployeeType {
+	    @Override
+	    int getTypeCode() {
+	        return SALEMAN;
+	    }
+
+			@Override
+			int salary() {
+					return _monthlySalary + _commission;
+			}
+	}
+
 ```
+
 **Motivation**
 
 * Similar to [31. Replace Type Code with Subclasses](#31-replace-type-code-with-subclasses), but can be used if the type code changes during the life of the object or if another reason prevents subclassing.
 * It uses either the state or strategy pattern
+
+### Links
+
+- https://www.youtube.com/watch?v=hV-DEDwUKyM
+- https://www.youtube.com/watch?v=nOX27nHmFKQ
 
 ## 32. Replace Subclass with Fields
 You have subclasses that vary only in methods that return constant data.

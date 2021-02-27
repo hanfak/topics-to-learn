@@ -85,35 +85,116 @@
 
 ## streams
 
-	- Streams
-		- Give lazy evaluation (ie filter)
-			- Also gives visual reminder that lazy evaluation is happening
-			- Lazy evaluation will only happen when the terminal operation is hit ie forEach
-		- Act like an iterator
-  - filter
-		- lazy
-  - reduce
-		- terminal op
-		- converts a stream into something concrete
-			- takes a collection and reduces to a single value
-			- Take a collection and reduce to another collection
-		- Other Reduce
-	    - count
-	    - distinct
-	    - sum
-	- map
-	- forEach
-		- terminal op
-  - collect
-		- Is a reduce operator
-    - Collectors.toList
-  - infinite streams
-    - https://dzone.com/articles/infinite-streams-in-java-8-and-9
-  - lambdas that throw exceptions
-    - https://medium.freecodecamp.org/why-you-should-ignore-exceptions-in-java-and-how-to-do-it-correctly-8e95e5775e58
-  - https://flyingbytes.github.io/programming/java8/functional/part3/2017/02/18/Java8-Part3.html
-  - Splitting streams
-    - https://flyingbytes.github.io/programming/java8/functional/part4/2017/03/10/Java8-Part4.html
+- Streams
+	- Give lazy evaluation (ie filter)
+		- Also gives visual reminder that lazy evaluation is happening
+		- Lazy evaluation will only happen when the terminal operation is hit ie forEach
+	- Act like an iterator
+	- Are monads
+	- Stream operations are either intermediate (map, filter) or terminal (reduce, collect, foreach)
+		- Intermediate operations return a stream so we can chain multiple intermediate operations without using semicolons
+		- Terminal operations are either void or return a non-stream result
+	- `operation pipeline` = a chain of stream operations
+	- Most stream operations accept some kind of lambda expression parameter, a functional interface specifying the exact behavior of the operation.
+		- Most of those operations must be both non-interfering and stateless.
+		- A function is `non-interfering` when it does not modify the underlying data source of the stream, ie does not add or remove elements for the collection you are streaming from
+		- A function is `stateless` when the execution of the operation is deterministic, e.g. in the above example no lambda expression depends on any mutable variables or states from the outer scope which might change during execution.
+	- Reuse
+		- Java 8 streams cannot be reuse
+		- To overcome this limitation we have to to create a new stream chain for every terminal operation we want to execute
+		- we could create a stream supplier to construct a new stream with all intermediate operations already set up:
+		```java
+		Supplier<Stream<String>> streamSupplier =
+		    () -> Stream.of("d2", "a2", "b1", "b3", "c")
+		            .filter(s -> s.startsWith("a"));
+
+		streamSupplier.get().anyMatch(s -> true);   // ok
+		streamSupplier.get().noneMatch(s -> true);  // ok
+		```
+	- infinite streams
+	  - https://dzone.com/articles/infinite-streams-in-java-8-and-9
+	- Splitting streams
+	  - https://flyingbytes.github.io/programming/java8/functional/part4/2017/03/10/Java8-Part4.html
+- CReating streams
+	- `Arrays.asList("a1", "a2", "a3").stream()...`
+	- `Stream.of("a1", "a2", "a3")...`
+	- `IntStream.range(1, 4)...` similar to for loop
+		- Also exists LongStream and DoubleStream
+		- Form of primitive stream
+		- Primitive streams use specialized lambda expressions
+	- Convert from object to primitive stream  `Stream.of("a1", "a2", "a3").map(s -> s.substring(1)).mapToInt(Integer::parseInt)`
+		- As primitive stream have extra functions on the primitve type ie max, sum
+	- Convert from primitve to object stream  `IntStream.range(1, 4).mapToObj(i -> "a" + i)`
+- Processing order
+	- An important characteristic of intermediate operations is laziness
+	```java
+	Stream.of("d2", "a2", "b1", "b3", "c")
+    .filter(s -> {
+        System.out.println("filter: " + s);
+        return true;
+    });
+	```
+	- When executing this code snippet, nothing is printed to the console
+		- As intermediate operations will only be executed when a terminal operation is present.
+	- Each element is processed all the way through the operation pipeline until it hits the terminal op, then goes to the next element in the stream
+	- This is why we do `filter` before `maps`
+
+- sorted
+	- is a stateful intermediate operation
+	- in order to sort a collection of elements you have to maintain state during ordering.
+	- is executed horizontally, on all the elements of the stream first
+	- Best to filter out elements to reduce this space complexity on sorted
+		- If only one element in stream, sorted is never called
+	- https://stackoverflow.com/questions/49798129/what-is-more-efficient-sorted-stream-or-sorting-a-list/49799144
+- filter
+	- lazy
+- reduce
+	- terminal op
+	- converts a stream into something concrete
+		- takes a collection and reduces to a single value
+		- Take a collection and reduce to another collection
+	- Other Reduce
+    - count
+    - distinct
+    - sum
+- map
+- forEach
+	- terminal op
+- collect
+	- Is a reduce operator
+  - Terminal op
+	- transform the elements of the stream into a different kind of result, e.g. a List, Set or Map
+	- Can accept `groupingBy`
+	- create aggregations on the elements of the stream, e.g. determining the average age of all persons
+	```java
+	Double averageAge = persons
+    .stream()
+    .collect(Collectors.averagingInt(p -> p.age));
+
+	System.out.println(averageAge);
+	```
+	- `Collectors.joining(...)` used join all elements in stream into String
+	- In order to transform the stream elements into a map, we have to specify how both the keys and the values should be mapped. Keep in mind that the mapped keys must be unique, otherwise an IllegalStateException is thrown. You can optionally pass a merge function as an additional parameter to bypass the exception
+	```java
+	Map<Integer, String> map = persons
+	    .stream()
+	    .collect(Collectors.toMap(
+	        p -> p.age, // create key
+	        p -> p.name, // create value
+	        (name1, name2) -> name1 + ";" + name2)); // merge func
+
+	System.out.println(map);
+	// {18=Max, 23=Peter;Pamela, 12=David}
+	```
+- FlatMap
+- lambdas that throw exceptions
+  - https://medium.freecodecamp.org/why-you-should-ignore-exceptions-in-java-and-how-to-do-it-correctly-8e95e5775e58
+- https://flyingbytes.github.io/programming/java8/functional/part3/2017/02/18/Java8-Part3.html
+- performance
+	- https://www.daniellas.tech/posts/speed-of-stream.html
+#### Links
+
+- General example https://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/
 
 
 ### Checked exceptions

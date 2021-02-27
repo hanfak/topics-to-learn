@@ -2,7 +2,21 @@
 
 ## What
 
-## why
+- a single acceptance test is written from the user’s perspective. It mainly focuses on satisfying the functional behavior of the system.
+- This technique attempts to answer the question – Is the code working as expected?
+- enhances collaboration among developers, users, and QAs with a common focus on defining the acceptance criteria
+- key practices
+  - Analyzing and discussing the real-world scenario
+  - Deciding the acceptance criteria for those scenarios
+  - Automating the acceptance test cases
+  - Focusing on the development of those requirement cases
+- ATDD is a process in which high-level acceptance tests are automated to fail and then developed against to create enough production code to make the acceptance test pass.
+
+## Benefits
+
+- Requirements are very clearly analyzed without any ambiguity
+- Encourages collaboration among cross-team members
+- The acceptance test serves as a guide for the entire development process
 
 ## How
 

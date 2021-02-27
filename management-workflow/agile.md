@@ -23,6 +23,10 @@
 
 ## Overview
 
+- Waterfall but in shorter time frame (or set of features) repeated
+	- a few features produced then all features
+	- To get early feedback
+
 ### The agile values
 
 - Individuals and interactions over processes and tools

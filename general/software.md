@@ -9,6 +9,12 @@
 
 - https://www.javacodegeeks.com/2018/09/what-is-software.html
 
+## Programming
+
+- It is the act of creating instructions, the software
+- Programming has always been about analysing a problem and codifying it so unambiguously that it can be executed by a machine.
+  - Thus trying to turn natural language into machine instructions was doomed to fail, it is too ambigious, not the syntax
+
 ## Assembly Language
 
 - the symbolic version of the computer instructions that is a step closer to our language.

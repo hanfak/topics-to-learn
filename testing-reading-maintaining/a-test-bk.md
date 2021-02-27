@@ -1,3 +1,60 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Part 1 - An agile approach to acceptance testing](#part-1-an-agile-approach-to-acceptance-testing)
+	- [Introduction](#introduction)
+		- [What is an acceptance test?](#what-is-an-acceptance-test)
+		- [What are acceptance criteria?](#what-are-acceptance-criteria)
+		- [Attributes of acceptance criteria and tests](#attributes-of-acceptance-criteria-and-tests)
+		- [What is a story?](#what-is-a-story)
+		- [Tasks vs stories](#tasks-vs-stories)
+		- [Bringing it all together](#bringing-it-all-together)
+		- [Typical process overview](#typical-process-overview)
+		- [Story delivery lifecycle](#story-delivery-lifecycle)
+			- [Pick a story](#pick-a-story)
+			- [Agree acceptance criteria](#agree-acceptance-criteria)
+- [Part 2 - Discussion and alternatives](#part-2-discussion-and-alternatives)
+	- [Problems acceptance testing can fix](#problems-acceptance-testing-can-fix)
+		- [Communication barriers](#communication-barriers)
+		- [Stickers as sign-off](#stickers-as-sign-off)
+		- [Lack of shared memory](#lack-of-shared-memory)
+		- [Lack of collective understanding of requirements](#lack-of-collective-understanding-of-requirements)
+		- [Blurring the “what” with the “how”](#blurring-the-what-with-the-how)
+		- [Ambiguous language](#ambiguous-language)
+		- [Lack of structure and direction](#lack-of-structure-and-direction)
+		- [Team engagement](#team-engagement)
+	- [Problems acceptance testing can cause](#problems-acceptance-testing-can-cause)
+		- [Communication crutch](#communication-crutch)
+		- [Hand off behaviour](#hand-off-behaviour)
+		- [Technical overexposure](#technical-overexposure)
+		- [Cargo cult](#cargo-cult)
+		- [Command and control structures](#command-and-control-structures)
+		- [Construct validity](#construct-validity)
+		- [Artificial constraints](#artificial-constraints)
+		- [Business value](#business-value)
+	- [Use a ports and adapters architecture](#use-a-ports-and-adapters-architecture)
+	- [Don’t specify](#dont-specify)
+	- [Measure, don’t agree](#measure-dont-agree)
+	- [Log, don’t specify](#log-dont-specify)
+	- [How design can influence testing](#how-design-can-influence-testing)
+	- [Sample application](#sample-application)
+	- [Coupled architecture](#coupled-architecture)
+	- [Page driver pattern](#page-driver-pattern)
+	- [Decoupled architecture using ports and adapters](#decoupled-architecture-using-ports-and-adapters)
+	- [Example 2: Testing the outgoing messages](#example-2-testing-the-outgoing-messages)
+	- [Example 3: Testing the Portfolio HTTP API](#example-3-testing-the-portfolio-http-api)
+	- [Example 4: Testing the Portfolio valuation calculation](#example-4-testing-the-portfolio-valuation-calculation)
+	- [Example 5: Testing the Market Data API](#example-5-testing-the-market-data-api)
+	- [Example 6: Testing real Yahoo! Market Data](#example-6-testing-real-yahoo-market-data)
+	- [Keeping fakes in sync with real services](#keeping-fakes-in-sync-with-real-services)
+	- [Testing end-to-end (system tests)](#testing-end-to-end-system-tests)
+	- [Summary of test coverage](#summary-of-test-coverage)
+	- [Benefits using ports and adapters](#benefits-using-ports-and-adapters)
+	- [Disadvantages using ports and adapters](#disadvantages-using-ports-and-adapters)
+	- [Common pitfalls](#common-pitfalls)
+	- [Reading list](#reading-list)
+
+<!-- /TOC -->
+
 # Part 1 - An agile approach to acceptance testing
 
 Part 1 introduces an acceptance testing approach centered around clearly defined requirements, customer authored acceptance criteria and the implementation of executable tests to exercise that criteria. This approach is used by many successful agile teams today.
@@ -178,6 +235,7 @@ Acceptance tests (converted from acceptance criteria)
 Avoid:
 
 Implementing anything unrelated to the story
+
 As well as implementing the underlying features, the developers should be converting acceptance criteria into runnable tests during this phase. It may be that tests are written early in the development phase, before any real work has gone on and they’ll continue to fail until the story is completed. Or, it may be that the majority of development is undertaken before work on implementing the acceptance tests start.
 
 Which approach you choose has interesting affects on developer testing. For example, if the coarse grained acceptance test is left until the end, you might focus on unit tests and use TDD to drive out design. TDD in this sense is a tool to aid design. When it comes to implementing the acceptance test, there’ll be very little left unknown. It can be a bit like test-confirm where you back fill the details to get a green test.
@@ -191,6 +249,7 @@ Unit tests give confidence at a low level but if the overall system behaviour do
 Your team’s experiences and preferences will influence which approach you choose. Sometimes, the two compliment each other, other times they get in each others way and duplicate effort. Judicious testing takes care and practice.
 
 Demonstrate
+
 This step is about proving to customers that their requirements have been realised. It’s about giving them confidence. You can do this in whatever way works best for your team. A common approach is to run through a manual demo and walk through the passing acceptance tests huddled around a desk.
 
 After the demo, if everyone agrees the implementation does what’s expected, the story can be marked as done and you can go round the cycle again with the next story. If there is disagreement or if new issues come up, it’s ok to go round the loop again with the same story. Agree, develop, demo and deliver.
@@ -198,6 +257,7 @@ After the demo, if everyone agrees the implementation does what’s expected, th
 If you discover incremental improvements could be made, you might create a new story and go round the loop with that. This is different from going through the cycle again with the same story which would be more iterative. Think of it like incrementally adding value rather than iteratively building value piece by piece before finally releasing. It’s like tweaking an already selling product in order to sell more (incremental improvement) as opposed to building a product out until the point it can start to sell (iterating).
 
 A note on manual testing
+
 If you’re lucky, there’s plenty of people on hand willing to perform some exploratory testing. This doesn’t have to wait until the end of an iteration, it can start as soon as a story is stable enough to test. Usually this would be when the story is finished and acceptance tests are passing. It’s useful to have a stable deployment environment for this.
 
 Acceptance testing doesn’t negate the need for manual, exploratory style testing. Lisa Crispin calls this kind of testing critiquing the product. Some critiquing can be achieved using acceptance testing whilst more may require a manual approach or specialist tools. We’ll look more at this later when we talk about Brian Marick’s testing matrix and Crispin’s elaboration.
@@ -205,23 +265,27 @@ Acceptance testing doesn’t negate the need for manual, exploratory style testi
 To some degree, acceptance test suites address the need for regression testing. That is to say that derivation of behaviour hasn’t been introduced if the acceptance tests still pass.
 
 Deliver
+
 When a story is finished, you may go round the loop again with a new story or choose to deliver the functionality directly to your production environment. This often gets less emphasis because it usually happens when multiple stories are batched up and deployed together, for example, at the end of an iteration. It’s actually a crucial step though as it is only after this point that potential story value can be realised.
 
 It can be incorporated into the story delivery lifecycle when continuous delivery ideas are applied with the aim to deploy individual stories as they’re ready. It’s a fairly sophisticated position to take and requires careful crafting of stories so that they add demonstrable value. It also implies a well groomed and automated build and deployment procedure.
 
 The expanded story delivery lifecycle
-The expanded story delivery lifecycle
 
-Part 2 - Discussion and alternatives
+# Part 2 - Discussion and alternatives
+
 Having introduced the typical strategy used by many agile teams today, Part 2 discusses some of the pros and cons. It highlights several common pitfalls and strategies to avoid them.
 
-Problems acceptance testing can fix
+## Problems acceptance testing can fix
+
 The typical process described previously isn’t a panacea; it’s always worth considering what problems you’re actually facing before adopting any new process. Acceptance testing isn’t always appropriate so it’s worth considering your circumstances and what problems acceptance testing can fix.
 
-Communication barriers
+### Communication barriers
+
 The typical process described in Part 1 can be useful in encouraging communication. There’s a formal vehicle (the acceptance test artifacts) that must be created and agreed and it puts checkpoints in place to emphasise the agreement (for example, using stickers as sign-off).
 
-Stickers as sign-off
+### Stickers as sign-off
+
 A great technique to visualise progress of a story is to use stickers to represent agreement or sign-off at the various stages. For example, when business analysts agree to the acceptance criteria, a story’s index card might get a green sticker. When testers agree, a blue sticker and when developers agree, a yellow one. You can have as many stickers as you like. As an alternative, you could use columns on your board and move stories across columns to indicate agreement.
 
 The whole purpose of the story delivery lifecycle is to spot problems early and adjust. In that spirit, it makes sense to prevent progress to the next step until previous steps have be completed. For example, don’t start development until you have the full set of stickers. If this causes delays and ‘blocked’ work, missing stickers can help highlight where the bottleneck lies.
@@ -232,25 +296,28 @@ It doesn’t mean that the story delivery lifecycle is a substitute for spontane
 
 The process is intended to encourage communication not to stifle it. You create artifacts that can be shared, referred back to and you demonstrate these executable artifacts to the stakeholders. It doesn’t preclude speaking to them whenever you feel like it. If you discover new insight, you’re free to adjust the acceptance criteria and tests; to go round the loop again.
 
-Lack of shared memory
+### Lack of shared memory
+
 The acceptance tests document a shared (and agreed) understanding of features. As time goes on, its easy to forget how a particular feature is supposed to behave. If acceptance tests are in a customer friendly format, they form reference documentation that will always be accurate; a live record of the system’s behaviour.
 
 Tools like Yatspec, Concordion and Concordion.NET emphasise this aspect and can be used to create HTML documentation to share. You can organise this however you like. You might show features grouped by area, iteration and even use it to document a low level API.
 
 An example of a Concordion HTML overview. Tests are grouped under tabs and users can drill down into the detail.
-An example of a Concordion HTML overview. Tests are grouped under tabs and users can drill down into the detail.
 
-Lack of collective understanding of requirements
+### Lack of collective understanding of requirements
+
 It’s very difficult to appreciate what a customer really wants from broken fragments of conversations or email trails. There’s a lot of room for ambiguity. By slowing down and carefully going over examples and collaboratively creating acceptance criteria, the hope is that any misunderstanding will come up early and be addressed. It’s often the case that specific questions about error and edge cases will surface and cause the customer to think harder about their requirements.
 
 Writing acceptance criteria down in the form of tests isn’t the only tool available here. Conversation, previously generated documentation, spreadsheets, flow diagrams, gorilla diagramming, anything and everything all feed into the process. Acceptance tests just document the understanding.
 
-Blurring the “what” with the “how”
+### Blurring the “what” with the “how”
+
 When it comes to business goals it’s the “what” that’s important and not the “how”. At least, when it comes to making money, focusing on the goal is very different than focusing on the details of how to achieve it. If these ideas are blurred, all kinds of problems can arise.
 
 Acceptance testing aims to help separate goals from implementation. Goals are defined as acceptance criteria and the development team are left to implement and prove that the criteria have been met in whatever way they feel is appropriate. The criteria describe the “what” and proving this is more important than “how”. In practice, technology choice can undermine this aspiration. For example, if a testing technology exposes too much detail about the system design or criteria are written in technical terms (rather than business terms), the business will acclimatise to the detail and may miss the high level objectives. Defining technically oriented stories (with little real value) can be another example of blurring the lines.
 
-Ambiguous language
+### Ambiguous language
+
 Often customers and developers have their own language for things. When there’s ambiguity in terminology, misunderstanding or confusion is bound to arise.
 
 For example, in finance, the noun trade can mean very different things to different departments. The direction of a transaction, buy or sell can be inverted depending on what side of the fence you sit on. Getting this right in your system is obviously going to be important.
@@ -259,7 +326,8 @@ Not assuming anything and defining terms clearly in acceptance tests can be a go
 
 Common language is formalised in an acceptance test, crystallising it’s definition. The goal here is to achieve an ubiquitous language.
 
-Lack of structure and direction
+### Lack of structure and direction
+
 Iterative development favours planning; iterations are planned ahead of time. The stories to deliver are fixed at the start of an iteration. Although the iterations are short, it still imposes rigidity. The balance is in offering the delivery team stability as well as being responsive to changes in business priorities.
 
 By stability, I mean that the goal for the next week or so is well known and the team know where they’re heading and why. They’re free from process distraction. With it, scope creep and fire fighting can be kept to a minimum and the team is free to focus on multiple, small, achievable deliveries.
@@ -270,16 +338,20 @@ Compare this to the prospect of working on a large multi-feature chunk of work w
 
 This point may well be more about decomposition than adopting an acceptance testing process. People just handle small tasks better. There is a personal psychology aspect but there’s also advantages for the business in dealing in small features. It reduces risk and allows for quicker change of direction.
 
-Team engagement
+### Team engagement
+
 The story delivery cycle can give the entire team (developers, testers and the business) the opportunity to understand the motivations and contribute to the planning and execution of solutions. Along with creating the rhythm or cadence already mentioned, it can help galvanise the team around small, frequent delivery milestones. Compare this to teams that actively encourage “shelf stacking”, where developers are spoon fed technical tasks with no real engagement and expected to simply stack the shelves without understanding why.
 
-Problems acceptance testing can cause
-Communication crutch
+## Problems acceptance testing can cause
+
+### Communication crutch
+
 The typical process described above encourages communication but it also formalises it. It places check points which are designed to ensure that key conversations take place and agreement is established.
 
 However, it can also encourage the team to focus on these as the only required conversations. If developers find it hard to have conversations with the business, it may be that they’ll make a token effort under the umbrella of “agreeing acceptance criteria” and forgo more meaningful conversations.
 
-Hand off behaviour
+### Hand off behaviour
+
 In agreeing acceptance criteria, the whole team (testers, developers and business) should be engaged and collaborating. With discrete steps it can be easy to assign responsibilities to roles and hand off responsibility when your step is done. I’m not sure if this kind of process really encourages collective responsibility.
 
 For example, in one team I worked with, testers would speak with the business to define acceptance criteria and draft acceptance tests. These were then handed off to the development team who would alter the draft tests to fit in with the code structure before implementing the feature. When done, developers would demo to the business but it would often bear little resemblance to what they agreed with the testers.
@@ -288,36 +360,40 @@ The problem here was that each stage was accompanied with a hand off and a loss 
 
 The intention behind having defined steps is around breaking down communication barriers, but examples like this show that we can misuse it to reinforce existing barriers.
 
-Technical overexposure
+### Technical overexposure
+
 If we’re not careful, the business can end up knowing too much about the technology choices. The business may feel that they need to be aware of the system architecture or technical decisions in order to approve a working system. In reality, it’s really none of their concern. The business should be concerned that their business goals can be met and should learn to trust the technical staff to deliver an architecture that can support that objective. This goes both ways as the technical staff have to earn that trust.
 
 Business staff are not best placed to make technical decisions and knowing too much about technology empowers them to do so. It’s the same for technical staff; technical staff are not best placed in making business decisions. That’s not to say that business and technology staff shouldn’t collaborate but they should be realistic and honest about their limitations.
 
 If the business are acclimatised to focus on technology, it can be difficult to refocus on high-level business value. It can help to be upfront about this and have an honest discussion with the entire team.
 
-Cargo cult
+### Cargo cult
+
 One of the biggest problems with the traditional acceptance test process is the temptation to focus on the practices and not the reasons behind them. Just like a cargo cult, practitioners can be lured into following behaviours in the hope that the benefits will magically manifest. It’s a causal fallacy; tests aren’t the goal unto themselves.
 
 The best recourse is to continually evaluate the process. Having something to actually measure against makes this much less subjective but coming up with meaningful heuristics is notoriously difficult.
 
-Command and control structures
+### Command and control structures
+
 The agree, demo, sign off checkpoints are designed to ensure key things happen during development. However, the steps can be misused to support command and control structures and put pressure on the team if they don’t complete steps.
 
 The steps are supposed to be a guide. Getting a sticker or moving an index card across the board are not goals unto themselves. Progress indicators like this can highlight bottlenecks and show progress but if these symptoms are used as a stick to beat the team, the overall situation won’t improve.
 
 We shouldn’t lose sight that the steps in any system should not be about targets and outputs but about understanding the team’s capabilities. If we can demonstrate that the biggest bottleneck in the system is getting the business to go through acceptance criteria, we’ve exposed an underlying problem to address. We shouldn’t plaster over it by working around it or blame individuals which can lead to defensive behaviours.
 
-Construct validity
+### Construct validity
+
 The story delivery cycle is premised on a story having business “value”. In practice, it can be very difficult to define this value. Often, we assume real value (i.e. cash) will come later and speculative value (i.e. features) will come from stories. There is obvious tension between real value and theoretical value. For example, some business models adopt a “build it and they will come” approach. They may interpret business value in the story sense to mean incremental features but its real value may well be in attracting users and capturing their life time value (revenue).
 
 Defining business “value” can easily suffer from a lack of construct validity. Are the things we measure reflective of the underlying value we’re postulating? Are we creating a “value” construct that really models our goals?
 
-Artificial constraints
+### Artificial constraints
+
 We have to be careful not to constrain ourselves artificially. The given/when/then pattern advocated by BDD encourages a certain way to frame our thought process. This isn’t always appropriate and we should avoid assuming it is. At the heart of agile principles is the idea to adapt, we should always be mindful of this and continually review process.
 
-Business value
-warning
-This section is not yet written
+### Business value
+
 I’m interested in what ‘business value’ actually is. If stories are supposed to have business value, how can we define and measure this “value”? I suspect there’s the idea of potential or speculative value as well as real value (cash).
 
 This section will explore these ideas as I’m curious that why, as a peer group, we tend to do speculate on value and rarely attempt to measure it.
@@ -337,7 +413,6 @@ A big part of acceptance testing is ensuring you achieve what the customer inten
 In Brian Marick’s testing matrix, testing focus tends to shift from the upper to lower quadrants when you don’t have a customer.
 
 Brian Marick's testing matrix
-Brian Marick’s testing matrix
 
 You may shift emphasis onto coarse grained style testing, exercising large parts of the system with scenarios driven out by the development team and not the business. You can think of this as component testing if it helps. Test whatever you feel needs testing. Start the stack up, drive the application through it’s UI or test multiple components using a ports and adapters style. The choice is yours.
 
@@ -346,9 +421,10 @@ The key to this point is that you should understand if you really need to write 
 Another way to visualise your testing is to use consider where your tests fit in terms of the testing pyramid developed by Mike Cohn in Succeeding in Agile. Cohen suggests a balance of testing types; write fewer tests that exercise the UI than tests that exercise core services (behaviours) and components (unit tests). This is just one approach though and not gospel. It’s certainly possible to invert the triangle and still have an effective testing strategy (we touched on this in the previous overview section).
 
 The testing triangle; fewer tests exist that exercise the UI than core services (behaviours) and components (units)
-The testing triangle; fewer tests exist that exercise the UI than core services (behaviours) and components (units)
 
-Use a ports and adapters architecture
+
+## Use a ports and adapters architecture
+
 The traditional view of acceptance tests is that they are heavy weight, long running and coarse grained. This is because they usually test multiple components, often repeatedly over different scenarios. They’ll often exercise the UI and database and start up the full stack.
 
 Alistair Cockburn’s Hexagonal or ports and adapters architecture talks about decoupling these components to provide a lightweight alternative. When you decompose to components that can be tested independently, you can be more flexible about composing test scenarios. That way, scenarios no longer have to contain repeated fragments.
@@ -382,26 +458,28 @@ These verifications overlap each other to verify the overall behaviour in a seri
 
 This is a slightly simplified description. See the How design can influence testing section for more details.
 
-Don’t specify
+## Don’t specify
+
 We’ve talked about specifying upfront but defining a specification upfront, albeit incrementally, is still a form of upfront design and has an inherent cost associated with it. It’s an improvement over traditional waterfall “big upfront design” but it may be that you’re able to eliminate it all together.
 
 If you can deliver features quickly enough and cheaply enough, you can agree behaviour with the customer against the deployed, live features. To do this effectively, it makes sense to have very small requirements or stories and to be talking to the business constantly. You should expect to deploy several iterations of a feature before getting it right and so it may not be appropriate for all businesses. Google practice these ideas by deploying experimental features to a subset of their environment to gather feedback.
 
 It’s a difficult technique to pull off though as it presupposes that the stories have demonstrable value and can be small enough to deliver cheaply. In some domains it may just not be possible to deliver “work in progress” if it isn’t technically correct. Finance applications for example may not be able to tolerate imprecise calculations. Domains may also be constrained by regulatory requirements.
 
-Measure, don’t agree
+## Measure, don’t agree
+
 Arguably the most important success criterion is whether a feature directly affects your revenue. If a deployed feature is making or saving you money, it’s a success. You may get additional feedback by deploying often to a live environment. If you can move away from agreeing acceptance criteria and defining acceptance tests upfront towards understanding how features affect key business metrics, you can start to measure these and use them to course correct.
 
 William Deming popularised the ideas of solving problems using a critical thinking framework based on Walter Shewhart’s work on statistical process control at Bell Labs in the 1930’s. The Shewhart Cycle, later known as the Plan Do Check Adjust (or Act) Cycle emphasises continuous improvement based on careful planning, execution, reflection and adjustments. If you can gather meaningful statistics about deployed features, you can start to apply Deming’s principles and act (or adjust) based on the measurements. The aim is to take speculation out of it and make genuinely informed decisions.
 
 Identifying business metrics inputs directly into the check step of Deming's PDCA cycle
-Identifying business metrics inputs directly into the check step of Deming’s PDCA cycle
 
 A trivial example might be to gather information about how much a partially complete feature is actually being used. If there’s no uptake after a few days in production, you’ll have more information to go on when deciding to continue work on the feature. Taking it further, if you then realise the partial feature is actually costing more money that it’s generating, you might make the call to drop it.
 
 In short, start measuring meaningful indicators and show the business. Rather than agree with the business what might be valuable upfront, prove to them what is valuable against production.
 
-Log, don’t specify
+## Log, don’t specify
+
 As described in Part 1, when agreeing acceptance criteria, stakeholders get together to agree the specification and then development gets underway. When done, everyone gets together and confirms that the tests verify the criteria.
 
 Using traditional specification frameworks like Concordion or FIT, HTML “specifications” document important events, inputs and outputs of a test. The HTML is then instrumented and run with the framework to produce styled HTML artifacts indicating success or failure. These are the kind of artifacts you can share with business to verify requirements and document system behaviour. There’s usually a setup cost in authoring then instrumenting these artifacts.
@@ -411,12 +489,13 @@ You can flip this on its head if you skip the specification step and instrument 
 The Yatspec framework does this for the Java community. It logs events in HTML as they happen based on conventions and constraints to the way you write your tests. This has a cost in itself as the natural language structure it requires may not come easily for all test problems. The theory though is that this instrumentation cost is lower than, for example, Concordion’s upfront costs. That’s something you’ll have to judge for yourself however.
 
 Example of Yatspec output documenting system behaviour. The test code logs runtime behaviour
-Example of Yatspec output documenting system behaviour. The test code logs runtime behaviour
 
-How design can influence testing
+## How design can influence testing
+
 How you design your architecture will directly affect how easy your application is to test. If you decouple a system’s components, it makes them easier to test in isolation. This has the additional benefit of creating a more flexible architecture. This chapter describes how a ports and adapters approach can make testing easier and more efficient. We introduce a sample application and show how testing is complicated by a coupled design and how the de-coupled alternative is easier to test. The sample application is available on Github.
 
-Sample application
+## Sample application
+
 Lets imagine a system concerned with helping customers manage their stock portfolio. It displays details about stocks owned and allows the customer to buy and sell directly with an exchange. The system is made up of a browser based UI and a RESTful backend server. The backend uses a market data service provided by Yahoo to retrieve stock prices and connects directly to an exchange to execute trades.
 
 One important aspect of the sample application is that the UI is deployed as a separate app from the RESTful server. It’s made up of static HTML and JavaScript and is served by an embedded HTTP server. The RESTful backend is deployed separately with an embedded HTTP server and is called by the UI to perform the business logic. This separation decouples the UI logic from the business logic and allows us to develop the two independently, potentially with differing technologies.
@@ -430,11 +509,12 @@ In further discussion, the stakeholder clarifies that the calculation is done by
 The UI might look something like this.
 
 
-Coupled architecture
+## Coupled architecture
+
 If a system is built with components tightly coupled, the only way to test a scenario is with a coarse grained system test. In our example application, we could test against real Yahoo with something like this.
 
 Listing 1: Coarse grained test starting up the full stack
-
+```java
  1 public class PortfolioSystemTestWithRealYahoo {
  2     private final Server application = Fixture.applicationWithRealYahoo();
  3     private final Browser browser = new Browser();
@@ -457,17 +537,25 @@ Listing 1: Coarse grained test starting up the full stack
 20         browser.quit();
 21     }
 22 }
+```
+
 It exercises all of the components but it’s naive as it relies on Yahoo being up and returning the expected result. It starts up the entire application in the @Before which in turn starts up the web container, initialises the UI and market data components. The browser is then fired up and used to simulate the user’s interaction (line 12). The result is scraped directly from the browser (line 13).
 
-Page driver pattern
+## Page driver pattern
+
 Abstracting the business intent from the UI mechanics means that UI “driver” code isn’t coupled to a specific UI. If done carefully, switching the UI would mean just implementing a new adapter. Notice how in the above we avoided the following.
 
+```
 browser.navigateToSummaryPage()
   .setNumberOfSharesTextBoxTo(100)
   .clickRequestValuationButton();
+```
 and used the following instead.
 
+```
 browser.navigateToSummaryPage().requestValuationForShares(100);
+```
+
 The assertion on the result is wrapped in a call to poll the UI periodically (the call to waitFor on line 13) because the request from the browser to the application is asynchronous. Notice the long timeout value of five seconds because Yahoo is a publicly available service with no guarantees of responsiveness. It may take this long or longer to respond. It’s another brittle aspect to this test.
 
 The waitFor is shown inline above for illustrative purposes, a more object-oriented approach would be to push this into the browser object and hide the asynchronousity and timeout details from the client.
@@ -477,10 +565,12 @@ Pushing the asynchronous handing into the browser model
     browser.navigateToSummaryPage()
         .requestValuationForShares(100)
         .assertThatPortfolioValue(is("91,203.83"));
+
 We can improve the test slightly by faking out Yahoo and forcing it to return a canned response (a price of 200.10 for each request). Lines 15-17 below set up any HTTP call to the URL /v1/public/yql to respond with a valid HTTP response containing the response string from line 14.
 
 Listing 2: Same test but with a faked out market data service
 
+```java
  1 public class PortfolioSystemTestWithFakeYahoo {
  2     private final Server application = Fixture.applicationWithRealYahoo();
  3     private final FakeYahoo fakeYahoo = new FakeYahoo();
@@ -510,6 +600,8 @@ Listing 2: Same test but with a faked out market data service
 27         browser.quit();
 28     }
 29 }
+```
+
 Both tests exercise the happy path through the entire system. If we want to check what happens when no price is available from Yahoo or if Yahoo is down, we’d repeat the majority of the test to do so. If we want to test user errors on input, we’d startup the application unnecessarily.
 
 On the surface, we’re testing different behaviours but we’re actually exercising the same code over and over again. It’s something James likens to taking a car out for a test drive.
@@ -518,7 +610,7 @@ On the surface, we’re testing different behaviours but we’re actually exerci
 
 You could keep on testing the car in this way but there comes a point when the cost of evaluating the car begins to outweigh the risk of something going wrong. It’s the same with software. The cost of developing and maintaining high level tests should be weighed against the uncertainty and risk of something going wrong.”
 
-Decoupled architecture using ports and adapters
+## Decoupled architecture using ports and adapters
 Rather than running several coarse grained tests, let’s decouple the system by defining explicit boundaries between components using interfaces and design a set of tests to exercise the interaction between those boundaries. The tests should compliment each other to provide the same level of confidence as coarse grained tests (for example, tests like Listing 1).
 
 Ports and adapter symbols
@@ -547,6 +639,7 @@ Testing end-to-end (system tests)
 Lets have a closer look at each of these next. You can also refer to the source code of the sample application for more details.
 
 Example 1: Testing the UI display and behaviour
+
 Testing the UI display is about verifying the UI behaviour without exercising backend components. For example, we might want to verify that if the user asks for the current portfolio’s value in the UI that it’s displayed with correct rounding and with commas. You might also be interested if currencies are displayed, negative numbers are shown in red or informational text is displayed in the event that no value is available.
 
 We’d like to be able to make assertions without having to go through the backend so we’ll use a real UI but a fake backend. Taking our system component diagram from earlier, we’ll be faking out the first port below. We’re interested in exercising the components within the dotted line only and as you’ll see as we progress, all the components will eventually be covered in overlapping dotted boundaries.
@@ -580,6 +673,7 @@ The HTML specification for our example would look like the following.
 
 Listing 1.1: HTML Specification marked up with Concordion instrumentation
 
+```html
  1 <html xmlns:concordion="http://www.concordion.org/2007/concordion">
  2 <body>
  3 <h1>Portfolio Valuation</h1>
@@ -611,12 +705,14 @@ Listing 1.1: HTML Specification marked up with Concordion instrumentation
 29
 30 </body>
 31 </html>
+```
 Concordion uses a test fixture to match the specification to an executable test. In science, a fixture is often physical apparatus used to support a test specimen during an experiment. The experiment or test is distinct from the apparatus that supports it. Unit testing frameworks often muddy this idea because they expect tests to include test support code (the fixture part) as well as the actual test scenarios (the experiment part).
 
 When we use a HTML specification like Listing 1.1, we can create fixtures which are more about supporting the test and the test scenarios themselves are encoded in the specification. We can create differing scenarios in HTML but reuse the same fixture. Our fixture for the above might look like the following.
 
 Listing 1.2: Test fixture for use with scenarios described in HTML specifications
 
+```java
  1 @RunWith(ConcordionRunner.class)
  2 @ExpectedToPass
  3 public class UiPortfolioValueDisplayTest {
@@ -648,6 +744,8 @@ Listing 1.2: Test fixture for use with scenarios described in HTML specification
 29         browser.quit();
 30     }
 31 }
+```
+
 By annotating the fixture with @RunWith(ConcordionRunner.class), the class can be run like a regular JUnit test. It will use the Concordion runner to find and parse the HTML specification calling into the fixture as appropriate. Notice that there is no @Test methods, the fixture is run using the JUnit framework but it’s the HTML specification that acts as the test.
 
 The HTML sets up the fake server to respond with 10500.988 by setting a “variable” on line 15 (Listing 1.1) which is passed into the requestPortfolioValue() method of the fixture. As the HTML is interpreted and when it reaches line 20, it’ll call the method on the fixture. At this point, the fixture will control an instance of the browser, refresh the page and cause a GET request to be made.
@@ -655,7 +753,8 @@ The HTML sets up the fake server to respond with 10500.988 by setting a “varia
 The GET request causes the canned response to be returned ready for display. It’s JavaScript in the UI that receives this response and introduces the commas. It’s this that we’re really trying to test so we add an assertion in the Concordion markup at line 27 (Listing 1.1). This line will get the actual value from the UI using the fixture’s method and compare it with the HTML element. After running, Concordion updates the specification with a successful result shown in green.
 
 
-Example 2: Testing the outgoing messages
+## Example 2: Testing the outgoing messages
+
 In the previous example, we made no verifications against the request mechanism so that we could focus solely on display semantics. The next example focuses on the request mechanics. We’re interested in exercising the interaction between the UI and the Portfolio port.
 
 The previous test asks “when I ask for a portfolio value in the UI, how is it displayed?”, this test is concerned with what it actually means to ask for a portfolio’s value?
@@ -683,6 +782,7 @@ With a corresponding fixture as follows.
 
 Listing 2.1: Test fixture for working with UI to Portfolio requests
 
+```java
  1 @RunWith(ConcordionRunner.class)
  2 @ExpectedToPass
  3 public class UiPortfolioValueRequestTest {
@@ -729,12 +829,15 @@ Listing 2.1: Test fixture for working with UI to Portfolio requests
 44         browser.quit();
 45     }
 46 }
+```
+
 Like the previous example, a canned response is setup (lines 17-19) only this time, the fixture can verify that the UI made the correct type of request (line 26). It asserts that the correct URL was accessed using the HTTP GET method. The test can then go on to verify the response is correct (line 36). In this case, it just verifies that the response makes it’s way onto the UI but doesn’t test anything specific.
 
 In the result below, the specifics of what it means for a request to be valid are omitted. The language in the test talks in abstract terms about the request (“a request for the portfolio value is made and the valuation is returned”). This decouples the language in the test from it’s implementation. That way, this test should be insulated against changes to the response or rendering formats.
 
 
-Example 3: Testing the Portfolio HTTP API
+## Example 3: Testing the Portfolio HTTP API
+
 Once we’re satisfied with the communication between UI and Portfolio, we can look at the behaviour of the Portfolio in detail. This component is responsible for exposing an interface for requesting valuations and processing any valuation requests. The interface is implemented as a HTTP adapter to accept incoming requests. It turns the HTTP call (the external API) into a Java call (the internal API) and a Java result into a HTTP response.
 
 
@@ -753,6 +856,7 @@ With a corresponding fixture used to verify the HTTP adapter works as intended.
 
 Listing 3.1: Test fixture for the Portfolio’s port HTTP adapter
 
+```java
  1 @RunWith(ConcordionRunner.class)
  2 @ExpectedToPass
  3 public class PortfolioValuationTest {
@@ -772,12 +876,15 @@ Listing 3.1: Test fixture for the Portfolio’s port HTTP adapter
 17         return true;
 18     }
 19 }
+```
+
 The PortfolioResource class is accessed when a HTTP request is received. It implements the external API mentioned above or in other words, it plays the role of the Portfolio port. The RESTful framework used to route the GET call here is a JAX-RS (JSR-311) framework called Utterlyidle running in an embedded HTTP server. A common alternative is to use Jersey. Either way, we’re not interested in testing these frameworks or their configuration here. We’re assuming that a HTTP GET is relayed to the PortfolioResource class and the value method is executed. Line 15 above calls the method directly in the test to simulate this.
 
 The PortfolioResource class shown below uses an instance of Valuation as a collaborator to perform the actual calculation and at line 12, sets the result in the HTTP response body. We use JMock in the test to implement a test double for Valuation and simply verify that it’s used and it’s result is bundled in the HTTP response body in Listing 3.1 at line 16.
 
 Listing 3.2: The PortfolioResource class represents the HTTP adapter
 
+```java
  1 public class PortfolioResource {
  2     private final Valuation valuation;
  3
@@ -793,10 +900,13 @@ Listing 3.2: The PortfolioResource class represents the HTTP adapter
 13             .build();
 14     }
 15 }
+```
+
 This may seem very much like a unit test. That’s because it is. It focuses narrowly on specific questions and can only be called an acceptance test because of the way its used (to give customer’s confidence via the HTML output). There’s nothing in our definition of an acceptance test that precludes it being written as a unit test.
 
 
-Example 4: Testing the Portfolio valuation calculation
+## Example 4: Testing the Portfolio valuation calculation
+
 One or more tests will be needed to verify the calculation logic of the domain model. How does the Portfolio actually go about summing the stocks and where does it get their prices? Given the previous example shows that HTTP requests are translated into a Java messages to get a valuation, these tests will go into more detail as to what is involved in valuing the portfolio.
 
 For example, you might include tests to verify the summing of stock prices a customer owns, how the system responds when prices can not be retrieved or if a customer has no stocks to value. Our example is going to look at the simple case of how a single stock is valued, which is done by looking up the price in the Market Data component.
@@ -817,6 +927,7 @@ with a corresponding fixture.
 
 Listing 4.1: Test fixture for the Portfolio’s calculation logic
 
+```java
  1 @RunWith(ConcordionRunner.class)
  2 @ExpectedToPass
  3 public class PortfolioValuationCalculationTest {
@@ -837,10 +948,13 @@ Listing 4.1: Test fixture for the Portfolio’s calculation logic
 18     }
 19
 20 }
+```
+
 The previous example mocked out the valuation component (at line 12 in Listing 3.1) whereas this test uses the real class to calculate prices (defined at line 6 and executed at line 17). It works with the MarketData and Book components to get the information it needs. These are stubbed at lines 4 and 5. Given these test doubles, we can setup stocks on a customer book along with corresponding prices in this fixture and verify different scenarios using HTML specifications like the following.
 
 Listing 4.2: HTML Specification marked up with Concordion instrumentation
 
+```html
  1 <html xmlns:concordion="http://www.concordion.org/2007/concordion">
  2 <body>
  3 <h1>Portfolio Valuation</h1>
@@ -867,10 +981,13 @@ Listing 4.2: HTML Specification marked up with Concordion instrumentation
 24 </p>
 25 </body>
 26 </html>
+```
+
 As before, the HTML interacts with the fixture to setup the stubs (lines 7 and 10), execute the function under test and verify the results (line 23). The result would look something like this.
 
 
-Example 5: Testing the Market Data API
+## Example 5: Testing the Market Data API
+
 The previous example was concerned with calculation logic once we have stock quantities and prices but we still need to test how stock prices are actually retrieved. Stock prices change frequently and are typically supplied by large institutions like Bloomberg for a fee. In production, we’re using a free data feed supplied by Yahoo!
 
 We have a Market Data API to get the prices, so we focus on testing this here. For example, we might verify what happens when stock prices are happily retrieved or what happens when stock prices are unavailable.
@@ -887,6 +1004,7 @@ With a corresponding fixture Setting expectations against the market data API.
 
 Listing 5.1: Test fixture for the market data API
 
+```java
  1 @RunWith(ConcordionRunner.class)
  2 @ExpectedToPass
  3 public class MarketDataTest {
@@ -910,6 +1028,8 @@ Listing 5.1: Test fixture for the market data API
 21             .with("secondSymbol", secondSymbol);
 22     }
 23 }
+```
+
 Notice the verification is in the form of expectations. We’re saying here that we expect a certain interaction between the portfolio and the marketData components but not verifying how any return values might be used by the portfolio.
 
 We’re saying that when when prices are queried for Amazon and Google, the market data component is accessed using the getPrice method of the API and that’s all.
@@ -917,7 +1037,8 @@ We’re saying that when when prices are queried for Amazon and Google, the mark
 The result would look something like this. Again, notice that no results are explicitly stated, only that the market data “is queried for AMZN and GOOG”.
 
 
-Example 6: Testing real Yahoo! Market Data
+## Example 6: Testing real Yahoo! Market Data
+
 We’d also need tests to ensure that the real Yahoo market data component operates as expected. We’ve already built our market data adapter that we fake out in the previous tests (Example 5.) but now we need to make sure that how we expect fake market data components to behave in tests is actually how they behave with real Yahoo.
 
 We’ve shown that when the market data API is queried for say, Amazon or Google, that a specific API method is called, now we need to show what happens when it’s called.
@@ -934,6 +1055,7 @@ With a fixture as below.
 
 Listing 6.1: Test Yahoo’s query endpoint
 
+```java
  1 @RunWith(ConcordionRunner.class)
  2 @ExpectedToPass
  3 public class YahooTest {
@@ -972,6 +1094,8 @@ Listing 6.1: Test Yahoo’s query endpoint
 36         yahoo.stop();
 37     }
 38 }
+```
+
 There’s a lot of setup in this test. The main thing to note is that a fake Yahoo server is setup (line 6) and the internal component that acts as the client (at line 8) is configured to point to it. The client will make a real HTTP request to the fake server. The fake server allows us to interrogate the messages it received for the purposes of the test (line 29).
 
 The assertion against a specific HTTP message is defined in the HTML specification. The result looks like this.
@@ -979,12 +1103,14 @@ The assertion against a specific HTTP message is defined in the HTML specificati
 
 In principle, tests like this should be runnable against a real instance of Yahoo or our locally controlled fake Yahoo.
 
-Keeping fakes in sync with real services
+## Keeping fakes in sync with real services
+
 We’ve verified that we make the right API calls to Yahoo but used a fake Yahoo to do so. The tests go through the production Yahoo class but talk to a different end point which we own. There’s a danger that the behaviour we set on these fake services can get out of sync with the real services. If Yahoo change their API, we’d want a test to fail. Faked out tests could still pass.
 
 For example, if we’ve build our tests expecting market data to respond with a HTTP response code of 404 (Not Found) for a price that isn’t yet available, we should prove that’s what Yahoo would actually return. Working from a specification is one thing but we’d prefer to have a test fail if our mocks and real market data components get out of sync.
 
-Testing end-to-end (system tests)
+## Testing end-to-end (system tests)
+
 The previous examples focus on specific scenarios, interacting with a limited number of components but they overlap to simulate the broader path through the system. They run within a reduced context (for example, not within a fully started application stack) and avoid duplication. This does however mean that so far, we’ve never run all the components together at the same time.
 
 To address this, we still need to write some additional end-to-end tests. From the introduction of the decoupled architecture above, we still need to address the following points. I’m describing these as end-to-end as it reflects the notion of multiple components working together. It doesn’t mean that we’ll use real external systems though, the tests will be entirely within our own system boundary.
@@ -994,32 +1120,31 @@ The few end-to-end tests required would startup the full stack and fake out exte
 
 People often get hung up on this kind of test. They worry that without exercising many scenarios through a fully assembled application, the system may not work in production. You have to have confidence in the previous tests and that they demonstrate the system’s behaviour. You really shouldn’t need many of these heavier, end-to-end tests.
 
-Summary of test coverage
+## Summary of test coverage
+
 When all the examples are run together they give a sensible amount of coverage without the duplication. The tests are meant to be demonstrative rather than exhaustive; they don’t represent the full suite of tests you’d write in a production system but give you an idea of what component interactions should be tested. You may or may not choose to include addition business scenarios or interactions.
 
 The diagram below visualises the overall coverage offered by the examples.
 
 The examples combine for overall coverage
-The examples combine for overall coverage
 
-Benefits using ports and adapters
+## Benefits using ports and adapters
+
 Getting the design of your tests right using ports and adapters means you wont be duplicating effort, you’ll have created a efficient test suite that runs quickly. In a similar way that TDD gives you a flexible design, a ports and adapters design will encourage loosely coupled components with very flexible composability. You’ll have built a very adaptable architecture.
 
 Applying ports and adapters to your test code; creating a composable architecture and abstracting your test language, means that you’ll have created tests narrowly focused on business requirements. A change to a small piece of production code shouldn’t break dozens of acceptance tests. Applying these ideas should get you someway there.
 
 A lot of these ideas are really just about abstraction. If you apply any abstraction correctly, you should see decoupling. Ports and adapters allows you to decouple your architecture, empowering you to test small groups of components in isolation. This frees you up to use abstract language in your specifications, insulating them against implementation changes.
 
-Disadvantages using ports and adapters
+## Disadvantages using ports and adapters
+
 Decomposing a system into discrete but overlapping areas is actually quite difficult. It often feels like a protracted process and once done, it’s difficult to keep all the overlapping parts in your head. When you come to write a new set of tests, you’ve got to first understand previous tests and how they interconnect. Reasoning about where new ones might fit in is hard and its difficult to get feedback if you’ve got it wrong. Build times may go up but you probably won’t notice that you’re duplicating effort.
 
 It can also be hard to win over business stakeholders, testers and developers. It’s much more natural for people to accept the system is working a certain way if they see if running in it’s entirety. Despite logical arguments that a decoupled testing approach can yield equivalent coverage, it’s just human nature to accept the empirical over the intellectual argument.
 
 Introducing these ideas late in a project lifecycle is less likely to succeed. If you’ve already got a slow and duplication heavy build, it’s probably not the right technique for a quick fix. It takes sustained effort to get right and is easier to introduce right from the start of a new project. If you’re willing to retrofit to an existing system, be prepared to re-architect large parts of it.
 
-Common pitfalls
-warning
-This section is not yet finished
-This section is not yet finished. It’s a work in progress, a lean publishing effort. It will include a description of common pitfalls and how to avoid them. At the moment, it just lists them with no explanation.
+## Common pitfalls
 
 Help set the direction, get involved and make suggestions via the Leanpub page.
 
@@ -1059,13 +1184,9 @@ Yatspec is “yet another specification testing framework” that focuses on use
 
 Fit (Framework for Integrated Test) was probably the original framework built around 2002. It’s essentially unmaintained now but has been influential in the area of user viewable testing. It has a heavy focus on instrumenting HTML table and cell structures and so if often criticised for influencing how tests are written to the detriment of readability.
 
-warning
-This section is not yet written
-This section is not yet written. It may never be written or it may end up coming from a completely different angle. It’s a place holder for future work.
 
-If you have an opinion, get involved and make suggestions via the Leanpub page.
+## Reading list
 
-Reading list
 User Stories Applied: For Agile Software Development, Mike Cohn
 Succeeding with Agile: Software Development Using Scrum, Mike Cohn
 Bridging the Communication Gap, Gojko Adzic

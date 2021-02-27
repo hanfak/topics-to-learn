@@ -1,5 +1,6 @@
 # Domain driven design
 
+- An architectural design strategy in which we selectively distill, organize, and abstract the body of knowledge from the users to the software
 - https://completedeveloperpodcast.com/episode-132/
 
 ## Issues

@@ -15,11 +15,48 @@
 
 ## What??
 
-## When??
+-  testing methodology or a programming practice implemented from a developer’s perspective.
+- attempts to answer a simple question – Is the code valid?
+- The main intention of this technique is to modify or write a fresh code only when the test fails.
+- technique is largely popular in agile development ecosystems.
 
-## Why?
+## Benefits
+
+- Helps reduce the amount of time required for rework
+- Helps explore bugs or errors very quickly
+- Helps get faster feedback
+- Encourages the development of cleaner and better designs
+	- Reduces intelligent code for more maintainable and readable code
+- Enhances the productivity of the programmer
+- Allows any team member to start working on the code in the absence of a specific team member. This encourages knowledge sharing and collaboration
+	- Shows how the unit works and should do
+- Gives the programmer confidence to change the large architecture of an application easily
+- Results in the creation of extensive code that is flexible and easy to maintain
+- results in lesser duplication of test scripts
+- Reduces manual testing
+- Enforces discipline
+- No prod code is written without being tested
 
 ## How?
+
+- Red -> Green -> Refactor -> Repeat until all behaviour has been done
+- Based on the requirements specified in the documents, a developer writes an automated test case
+- These tests are executed, and in most cases, they fail as they are developed before the development of an actual feature
+- The development team then refactors or changes the code for the test to pass successfully
+- With a set of passing tests, the developers refactor code to improve design without adding any behaviour
+
+## Issues
+
+- Mocking external services (ie database calls, io) only, does not check whether the external service work, but just checks the type.
+	- Can have integration tests, if the external service is wrapped
+	- Have a system/end to end tests which check these integration points
+- The desire for code coverage, can lead to mocking and verifying something was called, but not checking it actually works
+- TDDing UI can be difficult
+	- UI testing is mainly about looks and feels, thus difficult to test
+- Can take time, and more complex testing(system) even longer esp with initial setup
+	- But time is made up, via less bugs, can refactor wiht safety
+	- it is not instant and can slow down initial development
+- Tests are code, and this needs to be maintained
 
 ## Design and TDD
 
@@ -114,18 +151,24 @@
 - intro https://technologyconversations.com/2013/12/24/test-driven-development-tdd-best-practices-using-java-examples-2/
 - example and intro https://www.youtube.com/watch?v=PIWLC3dexSA
 - jbrains tutorial https://online-training.jbrains.ca/courses/wbitdd-01/lectures/133270
-- Fizzbuzz https://www.youtube.com/watch?v=NDikuKeYATg
-- Fizzbuzz and refactoring to chain of responsibility pattern https://www.youtube.com/watch?v=9RJyI1Mu4wI
-- palindrome https://www.youtube.com/watch?v=O-ZT_dtlrR0&t=85s
-- string calculator https://www.youtube.com/watch?v=5rADTdrjhMY
+
 - outside in testing https://www.youtube.com/watch?v=XHnuMjah6ps
-- Example https://www.youtube.com/watch?v=QXo8bCv1BiQ
-- Example https://www.youtube.com/watch?v=HRxjvaKu-X4
-- Example https://www.youtube.com/watch?v=2Ekty7t621k&t=333s
+
 - marsrover https://www.youtube.com/watch?time_continue=4119&v=24vzFAvOzo0
-- trip service https://github.com/sandromancuso/trip-service-kata
 - https://www.freecodecamp.org/news/test-driven-development-what-it-is-and-what-it-is-not-41fa6bca02a2/
+- https://www.codurance.com/publications/2016/06/14/mastering-tdd
 
 https://medium.com/javascript-scene/the-outrageous-cost-of-skipping-tdd-code-reviews-57887064c412
 
 - https://medium.freecodecamp.org/test-driven-development-i-hated-it-now-i-cant-live-without-it-4a10b7ce7ed6
+
+## Examples
+
+- trip service https://github.com/sandromancuso/trip-service-kata
+- Example https://www.youtube.com/watch?v=QXo8bCv1BiQ
+- Example https://www.youtube.com/watch?v=HRxjvaKu-X4
+- Example https://www.youtube.com/watch?v=2Ekty7t621k&t=333s
+- Fizzbuzz https://www.youtube.com/watch?v=NDikuKeYATg
+- Fizzbuzz and refactoring to chain of responsibility pattern https://www.youtube.com/watch?v=9RJyI1Mu4wI
+- palindrome https://www.youtube.com/watch?v=O-ZT_dtlrR0&t=85s
+- - string calculator https://www.youtube.com/watch?v=5rADTdrjhMY

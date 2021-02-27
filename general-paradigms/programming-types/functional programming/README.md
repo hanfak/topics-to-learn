@@ -4,6 +4,10 @@
 - Intent of FP is for readability and understandablility
 - About what rather than how (procedural)
 - functional programming as a paradigm begins with three things, the three main concepts — actions, calculations, and data. These are mutually exclusive categories that everything falls into.
+- Functional programming, therefore, is programming so as to avoid these side effects wherever possible.
+- Functional programming imposes discipline on mutating state.
+- A functional language makes all data immutable by default.
+- FP makes code understandable by minimizing moving parts (mutating state).
 
 ## Types
 
@@ -12,8 +16,8 @@
   - Erlang
   - Haskell
   - OCaml
-  - F#
-  - Scala
+  - F# (hybrid)
+  - Scala (hybrid)
 - https://functional.works-hub.com/learn/On-Types-And-Intent
 
 ## Properties
@@ -27,10 +31,23 @@
 ## Pure functions
 
 - No side effects
+  - avoidance of changing state
 - Only acts on the inputs
 - Always returns the same outputs regardless the number of times called
 - idempotent
 - do not depend on anything that could change or have side effects
+- the output value of a function depends only on the arguments that are passed to the function, so calling a function f twice with the same value for an argument x produces the same result f(x) each time.
+  - impure functions
+    - they depend on state that may change outside the function. This external state might be in the form of global variables, or objects, it might be in a file, or a database, or any number of other thing
+    - These are side effects
+  - Pure functions element side effects
+
+### side effects
+
+- Statements
+  - assign a variable, reassign a variable, call a procedure, etc.
+  -  Statements cause side effects.
+-  Functional programming takes this idea further, and asserts that it is better not even to modify local, private variables.
 
 ## Immutability
 

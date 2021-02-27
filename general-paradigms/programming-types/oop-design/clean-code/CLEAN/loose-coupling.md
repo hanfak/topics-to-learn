@@ -1,5 +1,14 @@
 # Loose Coupling
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Loose Coupling](#loose-coupling)
+	- [Promoting Loose Coupling](#promoting-loose-coupling)
+	- [Avoiding Unnecessary Coupling](#avoiding-unnecessary-coupling)
+	- [Models of Loose Coupling](#models-of-loose-coupling)
+
+<!-- /TOC -->
+
 - keep coupling between parts of your system as low as necessary
 - Loose coupling refers to a situation where different components know as little as necessary about each other
 - Allows to scale system
@@ -59,4 +68,4 @@
 - A good example of loose coupling is the design of Unix command-line programs and their use of pipes
 - SL4J logging framework for java
   - A good example of loose coupling is the design of Unix command-line programs and their use of pipes
-  - 
+  -

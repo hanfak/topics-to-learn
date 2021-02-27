@@ -35,6 +35,7 @@ Goes by many names
 - Easier to test
 - Easier to navigate
 - Can work on domain and usecase, without worrying about low level details such as databases, as we will be dealing with the interfaces
+- Clean Architecture aims to separate the business rules from the I/O (thus the indirections)
 
 [Top of Page](#clean-architecture)
 
@@ -79,7 +80,7 @@ Goes by many names
 - we have to maintain a model of our application’s entities in each of the layers.
   - that means we have to translate between both representations when the domain layer sends and receives data to and from the persistence layer. The same translation applies between the domain layer and other outer layers.
   - This is good as we are decoupling
-  -
+- https://www.jamesmichaelhickey.com/clean-architecture/
 
 [Top of Page](#clean-architecture)
 

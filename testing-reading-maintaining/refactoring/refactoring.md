@@ -151,6 +151,7 @@
 - https://dzone.com/articles/what-is-refactoring
 - http://www.lagerweij.com/2011/05/28/code-cleaning-a-refactoring-example-in-50-easy-steps/
 - Gilded rose https://www.youtube.com/watch?v=4DTRY1u7cXg
+- Example of how to refactor https://www.youtube.com/watch?v=jwJnd9ycs6Q
 
 ## Book
 

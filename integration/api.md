@@ -29,6 +29,8 @@ and built.
 - An API is different from an ABI (application binary interface)
 	- An API defines the interface between source code and libraries so that the same source code will compile on any system supporting that API
 	- ABI allows compiled object code to function without changes on any system using a compatible ABI.
+- API providers (backend developers) should do everything in their power to reduce the work done by the clients of their APIs
+	- Having APIs created by backend developers without clearly understanding the needs of the their clients and respective flows lead to complex delivery mechanisms and frictions between teams
 
 ## Types
 
@@ -48,6 +50,12 @@ and built.
 	- eg google api
 	- generally libraries or programs access over network produced by another company or opensource
 	- Can pay for it's usage to get better access/performance/support
+- Company-private APIs
+	- Only used by systems controlled by the API provider (internal)
+- Public APIs
+	- Used by systems not controlled by the API provider (external)
+- Hybrid APIs
+	-  Used by internal and external systems
 
 ## Code base
 

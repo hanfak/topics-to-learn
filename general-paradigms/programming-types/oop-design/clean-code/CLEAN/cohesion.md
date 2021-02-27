@@ -19,7 +19,7 @@
 - This allows us to name the entity when responsibilty is well defined
 - With a complex class, we need to abstract details to other classes, we do this via composition. And let the complex class delegate behaviour to the other classes it is composed of.
 - Code is easier to understand and find bugs , as each entity is dealing with just one thing
-- 
+-
 
 ## Classes
 
@@ -52,5 +52,5 @@
 
 ## Links
 
-- https://codurance.com/software-creation/2016/03/03/cohesion-cornerstone-software-design/
 - https://pragprog.com/magazines/2010-12/cohesive-software-design
+- https://www.codurance.com/publications/software-creation/2016/03/03/cohesion-cornerstone-software-design
