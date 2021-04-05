@@ -46,6 +46,14 @@
   - &
   - Binary compatiblity
 
+## Raw types
+
+- https://stackoverflow.com/questions/2770321/what-is-a-raw-type-and-why-shouldnt-we-use-it
+- Allow for backwards compatiblity, before generics
+- Only warning, as not compile time issue
+  - but can lead to runtime issues
+- Using Parameterized Types (generics) will prevent runtime issues by having a compiletime error 
+
 ## Links
 
 - https://docs.oracle.com/javase/tutorial/java/generics/

@@ -1,0 +1,2 @@
+- https://www.youtube.com/watch?v=a9_0UUUNt-Y
+- https://google.github.io/eng-practices/review/reviewer/looking-for.html

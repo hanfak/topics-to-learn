@@ -40,7 +40,7 @@
     -  sets are backed by maps where the keys are the elements and values are null
     - implementations like HashSet (backed by HashMap), LinkedHashSet (backed by LinkedHashMap), and TreeSet (backed by TreeMap).
     - The contains method on a Set delegates to containsKey of a Map and therefore is an O(1)
-  - 
+  -
 
 Basic collections see
 
@@ -72,3 +72,4 @@ Basic collections see
 ## Links
 
 - https://www.java67.com/2013/08/ata-structures-in-java-programming-array-linked-list-map-set-stack-queue.html
+- Java docs about Collections library: https://docs.oracle.com/javase/8/docs/technotes/guides/collections/designfaq.html

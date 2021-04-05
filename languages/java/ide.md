@@ -76,6 +76,7 @@ Cool plugins which help with productivity
 - rainbow brackets
 - syntax highlighter
 - markdown support
+- string manipulation
 - ???
 - language specific - docker/yaml/javascript/scala
 

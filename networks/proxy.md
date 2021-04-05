@@ -41,6 +41,7 @@
 - Anonymity
   - proxies mask the client’s real IP address and in effect, they also hide the client’s identity.
   - This allows users to use the internet anonymously, making them relatively safe from data brokers, their ISP, and even hackers.
+  - In reverse proxies, only the ip address of the proxy is known to the client, individual address which reverse proxy forwards to are unknown to client
 - Caching
   - Proxies cache web pages and files that have been previously requested by the client.
   - If the client requests for the same page or file again, the proxy server will return the cached version, making connections faster and the browsing experience a lot better for the client.

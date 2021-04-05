@@ -71,6 +71,12 @@
 
 ### Editioning and views
 
+- https://oracle-base.com/articles/11g/edition-based-redefinition-11gr2
+
+#### Cross edition triggers
+
+- https://asktom.oracle.com/pls/apex/f?p=100:11:0::::P11_QUESTION_ID:2076251000346161474
+
 ### Oracle developer GUI
 
 - worksheets

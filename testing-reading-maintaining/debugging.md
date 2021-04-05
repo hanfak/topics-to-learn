@@ -1,5 +1,6 @@
 # Debugging
 
+- https://www.freecodecamp.org/news/how-to-improve-your-debugging-skills/
 - cornerstone of programming
   - Most important skill
   - Helps professional programmers work in a non ideal world
@@ -124,3 +125,10 @@
 ## Debugging while container is up
 
 - https://medium.com/swlh/remote-debugging-a-java-application-running-in-docker-container-with-intellij-idea-efe54cd77f02
+
+## Debugging after merge
+
+- When merging, must make sure that the branch or patch already passes the build
+- when merged and compliation passes, there will probably be failing tests
+  - especially if patching changes from current system to a new system, as new system may have changed (refactored/deleted code/changed code etc)
+  - Check things which might be affected from the changes made first, this might require using a debugger to find where in code base the flow hits the changed code 

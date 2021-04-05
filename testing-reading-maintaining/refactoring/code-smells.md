@@ -12,6 +12,7 @@
 			- [Conditional Complexity](#conditional-complexity)
 			- [Combinatorial Explosion](#combinatorial-explosion)
 			- [Large Class](#large-class)
+			- [Mysterious Name](#mysterious-name)
 			- [Type Embedded in Name](#type-embedded-in-name)
 			- [Uncommunicative Name](#uncommunicative-name)
 			- [Inconsistent Names](#inconsistent-names)
@@ -20,6 +21,7 @@
 			- [Oddball Solution](#oddball-solution)
 			- [Temporary Field](#temporary-field)
 			- [Switch Statements](#switch-statements)
+			- [Loops](#loops)
 		- [Code Smells Between Classes](#code-smells-between-classes)
 			- [Alternative Classes with Different Interfaces](#alternative-classes-with-different-interfaces)
 			- [Primitive Obsession](#primitive-obsession)
@@ -37,6 +39,8 @@
 			- [Parallel Inheritance Hierarchies](#parallel-inheritance-hierarchies)
 			- [Incomplete Library Class](#incomplete-library-class)
 			- [Solution Sprawl](#solution-sprawl)
+			- [Global Data](#global-data)
+			- [Mutable Data](#mutable-data)
 	- [Bad Code Smells Taxonmy](#bad-code-smells-taxonmy)
 		- [The Bloaters](#the-bloaters)
 		- [The Object-Orientation Abusers](#the-object-orientation-abusers)
@@ -51,6 +55,7 @@
 - These are issues which may or may not cause problems later, this is a trade off
 - It helps you think, you may want this as it is better for your design
 - You have to understand your code, your project and the system you're supporting, to make a decision on whether something is smell (and should be refactored) or not
+	- There no metric to say that code smell means refactor
 - There can lots of different code smells, and they can be defined per codebase, per team, per department, per language, per architecture etc
 	- These conventions/opinions can have higher or lower weight depending on senior/team leads
 	- To maintian should use static analysis tools or fitness tests to check what conventions you want to maintain
@@ -210,6 +215,15 @@
 	- If a large class is responsible for the graphical interface, you may try to move some of its data and behavior to a separate domain object. In doing so, it may be necessary to store copies of some data in two places and keep the data consistent, use `Duplicate Observed Data`
 -
 
+#### Mysterious Name
+	- The name that we use is not clear or meaningful or how to use it, that leads us to investigate (ie go through logic of code)
+	- Applies to functions, modules, variables, classes
+	- Naming should be given a lot of thought to
+	- Also applies to the signature
+	- Refactorings to use
+		- Change Function Declaration (to rename a function)
+		- Rename Variable
+		- Rename Field
 
 #### Type Embedded in Name
   - Avoid placing types in method names;
@@ -287,6 +301,14 @@
 	- If there aren’t too many conditions in the operator and they all call same method with different parameters, polymorphism will be superfluous.
 		- If this case, you can break that method into multiple smaller methods with `Replace Parameter with Explicit Methods` and change the switch accordingly
 	- If one of the conditional options is null, use `Introduce Null Object`
+
+#### Loops
+
+- Use a language or library which helps avoid using loops
+- Refactoring
+	- Replace Loop with Pipeline
+		- With first ­class functions this can be implemented (ie streams)
+		- help us quickly see the elements that are included in the processing and what is done with them
 
 ### Code Smells Between Classes
 
@@ -564,6 +586,47 @@
 #### Solution Sprawl
   - If it takes five classes to do anything useful, you might have solution sprawl.
   - Consider simplifying and consolidating your design.
+
+#### Global Data
+
+- global data is that it can be modified from anywhere in the code base, and there’s no mechanism to discover which bit of code touched it
+- most obvious form of global data is global variables, but we also see this problem with class variables and singletons.
+- Refactorings
+	- Encapsulate Variable
+		- when you have it wrapped by a function, you can start seeing where it’s modified and start to control its access
+		- Then, it’s good to limit its scope as much as possible by moving it within a class or module where only that module’s code can see it
+	- Enforce immutability
+- Global data is especially nasty when it’s mutable.
+
+#### Mutable Data
+
+- Changes to data can often lead to unexpected consequences and tricky bugs.
+	- I can update some data here, not realizing that another part of the software expects something different and now fails—a failure that’s particularly hard to spot if it only happens under rare conditions
+- Mutable data isn’t a big problem when it’s a variable whose scope is just a couple of lines
+- Refactoring
+	- Use functional programming
+		- use immutable data
+		- When updating data, return new copy of data
+		- use language that enforces this or write tests
+	-  Encapsulate Variable
+		-  to ensure that all updates occur through narrow functions that can be easier to monitor and evolve
+	-  Split Variable
+		-  If a variable is being updatedto store different things
+		-  to keep them separate and avoid the risky update
+	-  Slide Statements
+		-  move logic out of code that processes the update
+	-  Extract Function
+		-  to separate the side ­effect ­free code from anything that performs the update
+	-  Separate Query from Modifier
+		- to ensure callers don’t need to call code that has side effects unless they really need to
+	- Remove Setting Method
+		- trying to find clients of a setter helps spot opportunities to reduce the scope of a variable
+	- Replace Derived Variable with Query
+	- Combine Functions into Class or Combine Functions into Transform
+		-  to limit how much code needs to update a variable.
+	-  Change Reference to Value
+		-  If a variable contains some data with internal structure, it’s usually better to replace the entire structure rather than modify it in place
+
 
 
 ## Bad Code Smells Taxonmy

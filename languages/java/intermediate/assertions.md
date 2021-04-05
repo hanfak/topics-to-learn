@@ -11,3 +11,4 @@
 ## Links
 
 - https://www.baeldung.com/java-assert
+- https://docs.oracle.com/javase/6/docs/technotes/guides/language/assert.html#design-faq

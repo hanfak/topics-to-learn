@@ -1,7 +1,11 @@
 # Software Engineering
 
 
+- The primary goal of engineering is to produce working systems (meet functional and non functional requirements)
+  - beauty is not the main goal
+  - ease of use, correctness, adoptability are higher goals
 
+  
 ## Software
 
 - software controls what computers do.

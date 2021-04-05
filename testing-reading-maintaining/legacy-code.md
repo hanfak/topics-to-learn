@@ -14,6 +14,11 @@ Many different definitions (See links), but mainly about code that is made somet
 
 - Singletons, static methods or instantiated objects in the class under test makes testing hard
 - An intermediate step is to create an subclass of class under test, where the hard coded dependencies in prod code are moved to a protected method, thus the sub class can override them with stubbed out responses to match the test cases
+- overload the constructor, where original constructor will new up the object, and the main constructor can have a param for that newed object, and thus inject a stub/mock in.
+
+## Signs of hard to test code
+
+- http://misko.hevery.com/2008/07/30/top-10-things-which-make-your-code-hard-to-test/
 
 ### When fully covered by tests refactor
 

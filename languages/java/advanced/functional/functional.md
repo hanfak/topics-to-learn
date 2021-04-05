@@ -56,7 +56,7 @@
   - use immutable collections (proper ones).
   - Avoid instanceof checks where possible, and
   - where you use them make sure the types are not extensible.
-- Mse libraries that avoid runtime magic and reflection where pragmatically possible.
+- use libraries that avoid runtime magic and reflection where pragmatically possible.
 
 ## Immutability
 

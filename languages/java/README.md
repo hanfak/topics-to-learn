@@ -49,6 +49,11 @@
 - https://stackify.com/java-glossary/
 - https://docs.oracle.com/javase/tutorial/information/glossary.html
 
+## Offical Documentation
+
+- https://docs.oracle.com/javase/8/docs/index.html
+- https://docs.oracle.com/javase/8/docs/technotes/guides/
+
 ## History
 
 - https://blog.heroku.com/the_next_twenty_years_of_java_where_we_ve_been_and_where_we_re_going
