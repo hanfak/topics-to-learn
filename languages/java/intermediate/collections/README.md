@@ -53,6 +53,7 @@ Basic collections see
 ## Queues
 
 - https://dzone.com/articles/the-developers-guide-to-collections-queues
+- https://www.javamex.com/tutorials/synchronization_concurrency_8_queues_2.shtml
 
 
 ## Stacks
@@ -69,7 +70,16 @@ Basic collections see
 
 ## Vector
 
+## choosing
+
+- https://www.javamex.com/tutorials/collections/how_to_choose.shtml
+- https://www.javamex.com/tutorials/collections/how_to_choose_2.shtml
+-
+
 ## Links
 
 - https://www.java67.com/2013/08/ata-structures-in-java-programming-array-linked-list-map-set-stack-queue.html
 - Java docs about Collections library: https://docs.oracle.com/javase/8/docs/technotes/guides/collections/designfaq.html
+- https://www.journaldev.com/1260/collections-in-java-tutorial
+- https://www.jrebel.com/blog/java-collections-cheat-sheet
+- https://www.javamex.com/tutorials/collections/index.shtml

@@ -10,6 +10,9 @@
 
 ## q
 
+- Can you explain the design of the application
+  - why did you do it that way, than another way
+  - why build own services than use another service
 - https://deniseyu.io/2020/02/04/interview-questions-to-ask.html
 
 ## coding challenges

@@ -1,0 +1,2 @@
+- https://www.prostdev.com/post/intro-to-scatter-gather-integration-pattern
+- https://www.vinsguru.com/scatter-gather-pattern/

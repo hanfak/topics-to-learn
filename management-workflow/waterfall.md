@@ -8,6 +8,10 @@
 - Figuring all things up front
 - Built on old engineering concepts for hardware/buildings etc
 
+## Advantages
+
+-  Waterfall is superior to Agile when the requirements are already locked in and are guaranteed not to change due to clarity gained from knowing exactly how much work there is to do at the inception of the project.
+
 
 ## Issues
 

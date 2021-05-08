@@ -10,6 +10,7 @@
 - examples https://play.kotlinlang.org/hands-on/overview
 - https://www.toptal.com/kotlin/kotlin-server-side-development
 - https://bezkoder.com/category/kotlin/
+- https://blog.allegro.tech/2018/05/From-Java-to-Kotlin-and-Back-Again.html
 
 - https://play.kotlinlang.org/koans/overview
 
@@ -25,6 +26,7 @@
 - https://kotest.io/
 - https://mockk.io/
 - https://www.kotlinresources.com/library/assertk/
+- https://strikt.io/
 
 ## With Spring
 

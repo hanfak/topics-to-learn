@@ -32,6 +32,10 @@ What an application is:
 
 ## Greenfield
 
+- new Projects
+- Can be the case that the project has not been deployed or in use
+	- or just in early stages of being in use 
+
 ## Brownfield
 
 ## Enterprise software

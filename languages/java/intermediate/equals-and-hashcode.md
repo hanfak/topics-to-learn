@@ -9,6 +9,7 @@
 	- [Contract of Equals](#contract-of-equals)
 	- [How to override Equals()](#how-to-override-equals)
 		- [links](#links)
+	- [Equals ==](#equals-)
 	- [How to override hashcode](#how-to-override-hashcode)
 	- [Contract of hashcode](#contract-of-hashcode)
 	- [Contract of hashcode and equals](#contract-of-hashcode-and-equals)
@@ -117,6 +118,19 @@ object exists with each value
 ### links
 
 - https://techrocking.com/how-to-write-equals-method-in-java/
+
+## Equals ==
+
+- Tests only object reference
+- use for primitive
+- With Integer
+	- Java keeps a cache (default 128) on integers
+	- Creating Integer(1) and Integer("1"), they are == the same as the refere to the same object from the cache
+	- Creating Integer(1000) and Integer("1000"), they are not == the same as the refer to the different objects (as they cannot use the cache) and two new integer objects are created
+- Args from main and Strings
+	- if args[0] (is "hello") and "hello", then both are equals. But args[0] is an object creaed on the heap while "hello" is from the String pool. thus == will be false, but equals() will be true
+	- Never use ==
+	- When Strings are concat using + in a field, this will be done at compile time, but when done in say predicate of if argument this will be done at runtime hence createing different object. Thus different == will return false when comparing the field with the one created at runtime
 
 ## How to override hashcode
 

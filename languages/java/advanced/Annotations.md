@@ -28,3 +28,4 @@
 - https://javadevguy.wordpress.com/2016/01/13/evil-annotations/
 - https://dzone.com/articles/are-annotations-bad
 - https://doanduyhai.wordpress.com/2012/04/21/magics-is-evil/
+- https://blog.softwaremill.com/the-case-against-annotations-4b2fb170ed67

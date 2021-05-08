@@ -24,6 +24,8 @@
 - Object references in Java may be specified to be of an interface type; in each case, they must either be null, or be bound to an object that implements the interface.
 - Interfaces can extend multiple interfaces
 
+- https://www.quora.com/If-asked-on-a-coding-interview-What-is-the-primary-difference-between-an-interface-and-abstract-class-what-is-the-correct-answer
+
 ## Why use?
 
 - Interfaces are the best way to maintain well decoupled constructs.

@@ -21,6 +21,10 @@
 
 ## Why use
 
+- Remove boiler plate
+- get started quickly
+- focus on business logic rather than infrastructure
+- Due to wide use, most developers have experience with it
 
 - https://www.javacodegeeks.com/2019/02/spring-dependency-injection-inversion-control.html
 - https://dzone.com/articles/spring-framework-tutorial-for-beginners-2

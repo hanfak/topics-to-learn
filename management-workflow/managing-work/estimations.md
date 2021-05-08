@@ -1,0 +1,2 @@
+- https://neilonsoftware.com/2016/07/13/a-far-too-brief-rough-outline-of-how-to-approach-single-date-estimation/
+- https://www.quora.com/How-do-I-tell-my-boss-that-developing-backend-is-hard-and-need-such-a-long-time-or-need-more-engineers-to-finish-an-app-like-WhatsApp-for-Android-and-iOS
