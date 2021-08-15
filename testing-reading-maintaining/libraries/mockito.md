@@ -1,1 +1,3 @@
 - https://dzone.com/articles/a-guide-to-mocking-with-mockito
+- https://reflectoring.io/clean-unit-tests-with-mockito/
+- https://reflectoring.io/spring-boot-mock/

@@ -1,0 +1,1 @@
+- https://reflectoring.io/bean-validation-anti-patterns/

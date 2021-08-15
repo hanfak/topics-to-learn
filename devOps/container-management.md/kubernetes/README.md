@@ -10,3 +10,4 @@
 - https://semaphoreci.com/blog/kubernetes-deployment
 - https://www.freecodecamp.org/news/kubernetes-vs-docker-whats-the-difference-explained-with-examples/
 - https://www.youtube.com/watch?v=Wf2eSG3owoA&feature=youtu.be
+- https://www.youtube.com/watch?v=yznvWW_L7AA

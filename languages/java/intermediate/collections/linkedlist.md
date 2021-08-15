@@ -9,4 +9,6 @@
 
 ## When to use linked list
 
+- https://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist-in-java
+
 ## Common operations

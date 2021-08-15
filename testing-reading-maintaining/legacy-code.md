@@ -2,6 +2,26 @@
 
 Many different definitions (See links), but mainly about code that is made sometime ago by developers who are no longer around, using technologies/libraries which are outdated or not supported, and probably written with bad structure, poor or little testing, poorly engineered. But they are still used by the business and need to be maintained, thus making it hard to do so.
 
+## General ideas on how to handle untested code
+
+If you are replacing or refactoring it, ideally a ‘golden master’ test.
+
+A golden master takes every input, runs it through the code then records the outputs. You then turn that into a test that compares future outputs against the golden master. That shows you if your changes broke anything.
+
+If you can’t do that, key functional tests give you a degree of confidence that changes didn’t break anything you cared to test for.
+
+If you are doing BAU (business as usual) maintenance work on the legacy code, then usually write new code TDD style as a standalone component, then try to add an integration test where it joins the legacy.
+
+You can’t always get the hook. Get as much new code under unit test as you can; make do with integrating under manual test.
+
+The key idea is to work towards a test pyramid; many fast, isolated, repeatable unit tests. Fewer integration/contract tests; fewer functional tests. Refactor and redesign the code to support that as you work with it.
+
+Or write a strangler application. Here, you build slices of legacy functionality in a new, best-practices application. You route requests for that through the new app. Route everything else to legacy.
+
+Over time, the legacy is ‘strangled’ like Ivy growing round a legacy tree. The legacy app can then be discarded. Remove the router and you have a shiny new replacement app.
+
+Or just leave it alone. Eventually the whole thing will get replaced or abandoned. Software systems do.
+
 ## Write tests before refactoring
 
 - Have a 100% coverage of the required behaviour before changing anything.

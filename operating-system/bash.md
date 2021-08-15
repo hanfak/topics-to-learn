@@ -20,6 +20,16 @@
 
 ## bash commands
 
+### Bash history
+-  show `history`
+-  search `history | grep your_search`
+- clear bash history completely: `history -c`
+- rerun last command `!!`
+- rerun last nth command `!!-n`
+- https://www.howtogeek.com/howto/44997/how-to-use-bash-history-to-improve-your-command-line-productivity/#:~:text=View%20Your%20Bash%20History&text=The%20command%20with%20a%20%E2%80%9C1,number%20is%20the%20most%20recent.&text=You%20can%20do%20anything%20you,to%20search%20your%20command%20history.
+
+### Others
+
 - ls
   - flags -al
 - pwd

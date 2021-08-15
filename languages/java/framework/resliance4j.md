@@ -1,0 +1,8 @@
+- https://reflectoring.io/circuitbreaker-with-resilience4j/
+- https://reflectoring.io/retry-with-resilience4j/
+- https://reflectoring.io/rate-limiting-with-resilience4j/
+- https://reflectoring.io/time-limiting-with-resilience4j/
+- https://reflectoring.io/bulkhead-with-resilience4j/
+- https://reflectoring.io/retry-with-resilience4j/#what-is-resilience4j
+- https://www.baeldung.com/resilience4j
+- https://resilience4j.readme.io/docs

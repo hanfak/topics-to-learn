@@ -1,4 +1,4 @@
-## Messaging
+# Messaging
 
 - Use of asychronous processing
 - instead of telling the system what to do step by step, we break down the work into smaller pieces and let it decide the optimal execution order.
@@ -25,3 +25,4 @@
 - https://www.youtube.com/watch?v=Yz8HXTFMqcE&list=WL&index=4&t=0s
 - https://www.freecodecamp.org/news/rabbitmq-9e8f78194993/
 - https://examples.javacodegeeks.com/rabbitmq-tutorial-for-beginners/
+- https://www.youtube.com/watch?v=DXTHb9TqJOs

@@ -20,6 +20,10 @@ https://java-design-patterns.com/patterns/
 - security
 - Debugging
 
+## Issues
+
+- https://www.quora.com/A-senior-software-engineer-in-our-team-told-me-that-the-popularity-of-design-patterns-has-led-to-a-kind-of-pattern-abuse-and-over-designing-by-novice-programmers-what-does-he-mean
+- 
 ## Links
 
 - https://dzone.com/articles/design-patterns-in-the-age-of-microservices-and-frameworks
