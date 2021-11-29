@@ -40,7 +40,7 @@
   - Can link between other tests
   - Can add notes to add more documentation
   - Can add links to jira stories
-  - Add screenshots to documentation
+  - Add screenshots to documentation. Makes testing UI easier
   - searchable index
 - Can work with business to create tests that satisfy their desires
 - Log dont specify
@@ -83,3 +83,5 @@
 - http://javing.blogspot.com/2015/03/yet-another-blog-article-about.html
 - https://github.com/bodar/yatspec
 - https://codeforfunandmoney.wordpress.com/
+- https://medium.com/ft-product-technology/behaviour-driven-development-at-the-ft-46dc2991471d
+- https://vimeo.com/17846934

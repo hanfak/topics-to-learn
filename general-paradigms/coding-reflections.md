@@ -1,0 +1,33 @@
+# Coding reflections
+
+- Browsing the source is almost always faster than finding an answer on StackOverflow.
+- In many cases, what you're working on doesn't have an answer on the internet. - That usually means the problem is hard or important, or both.
+- Delete as much code as you can.
+- Syntactic sugar is usually bad.
+- Simple is hard.
+- Have a wide variety of tools and know which ones to use for the job.
+- Know the internals of the most used ones like git and bash (I can get out of the most gnarly git rebase or merge).
+- Build your own tools for repeated workflows. There is nothing faster than using a tool you made yourself (see: software I wrote).
+- Only learn from the best. So when I was learning Go, I read the standard library.
+- If it looks ugly, it is most likely a terrible mistake.
+- If you have to write a comment that isn't a docstring, it should probably be refactored. Every new line of comments increases this probability. (For a more nuanced take, the Linux Kernel Documentation)
+- If you don't understand how your program runs in production, you don't understand the program itself. In my experience, the best engineers know how their program works in every environment.
+- The above rule applies to the build pipeline as well.
+- Use other people's code religiously.
+  - Corollary: Most code out there is terrible. Sometimes it's easier to write a better version yourself.
+- A rough rule of thumb: never take a direct dependency on a small library that you could easily rewrite or a large library that should have been small.
+- Know when to break the rules. For rules like "don't repeat yourself," sometimes a little repetition is better than a bit of dependency.
+- Organizing your code into modules, packages, and functions is important. Knowing where API boundaries will materialize is an art.
+- Pick the most efficient tool most of the time, but also pick what you know. Is Arch Linux the most efficient operating system for the modern developer? For me, it is, but for most, probably not. Should you use acme? Only if you're Rob Pike.
+- Avoid cyclomatic complexity. Novice coders don't even know that they've tangled the dependency graph until it's too late.
+- Avoid nesting conditionals deeply. Have common sense about your conditional tests and naming convention.
+- Name variables correctly. Again, an art.
+- While rare, sometimes it's a problem with the compiler. Otherwise, it's always DNS.
+- Use esoteric language features sparingly, but use them when you're supposed to, for that is the point.
+- Technology does not diffuse equally. For example, there is a lot that frontend developers could learn from low-level engineers (especially now that everything is compiled). Likewise, there are UX and usability features that JavaScript developers could teach cloud engineers.
+- As a result, different kinds of engineers look at the world differently.
+- Some programmers are 10x more efficient than others. I know because I've been both a 10x programmer and a -1x programmer.
+- There's no correlation between being a 10x programmer and a 10x employee (maybe a negative one).
+- Good APIs are easy to use and hard to misuse.
+- The configuration cycle goes from hardcoded values to environment variables, to CLI flags, to a configuration file, to a templated configuration file, to a DSL, to a generic bash script, and back to hardcoded values. Know where you are on this Heptagon of Configuration.
+- All layers of abstraction are malleable. If you run into a fundamental wall, sometimes the answer is to go down a layer of abstraction. You aren't confined to the surface.

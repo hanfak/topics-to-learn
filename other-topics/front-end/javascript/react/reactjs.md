@@ -5,6 +5,7 @@
 - https://www.taniarascia.com/getting-started-with-react/
 - https://www.freecodecamp.org/news/react-beginner-handbook/
 - https://www.freecodecamp.org/news/react-js-for-beginners-props-state-explained/
+- https://lo-victoria.com/react-cheat-sheet-for-beginners
 
 ## roadmpa
 

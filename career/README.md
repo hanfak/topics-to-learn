@@ -12,6 +12,7 @@ Info about career in software development
 ## General
 
 - https://diceus.com/java-developer-salary/
+- https://www.quora.com/What-should-you-never-say-to-software-developers
 
 
 ## Quitting

@@ -1,5 +1,6 @@
 - https://www.youtube.com/watch?v=a9_0UUUNt-Y
 - https://google.github.io/eng-practices/review/reviewer/looking-for.html
+- https://matt-rickard.com/code-review-checklist/
 - pyramid of code review
   - https://www.reddit.com/r/programming/comments/2wau2x/maslows_pyramid_of_code_review/
   - Code should be: (importance going down)
@@ -10,4 +11,3 @@
     - Altruist: does the code leave the codebase better than what it was? Does it inspire other engineers to improve their code as well? Is it cleaning up unused code, improving documentation, introducing better patterns through small-scale refactoring?
   - Issues
     - Order
-    

@@ -6,6 +6,10 @@
 
 - https://dzone.com/articles/7-reasons-to-consider-junit-5
 
+### Paramatised tests
+
+- https://www.arhohuttunen.com/junit-5-parameterized-tests/
+
 
 ## Best practices
 

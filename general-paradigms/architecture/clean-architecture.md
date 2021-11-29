@@ -16,6 +16,7 @@
 	- [Enforcing Architecture Boundaries](#enforcing-architecture-boundaries)
 	- [Taking Shortcuts Consciously](#taking-shortcuts-consciously)
 	- [Issues](#issues)
+	- [Links](#links)
 
 Goes by many names
 - hexagonal
@@ -701,4 +702,9 @@ Goes by many names
 
 [Top of Page](#clean-architecture)
 
-https://github.com/lievendoclo/cleanarch
+## Links
+
+- https://github.com/lievendoclo/cleanarch
+- https://www.freecodecamp.org/news/modern-clean-architecture/
+
+[Top of Page](#clean-architecture)

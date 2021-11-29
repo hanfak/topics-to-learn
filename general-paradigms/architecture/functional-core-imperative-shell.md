@@ -1,0 +1,6 @@
+- https://www.kennethlange.com/functional-core-imperative-shell/
+- https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
+- https://www.destroyallsoftware.com/talks/boundaries
+- https://www.youtube.com/watch?v=kPLGftyQ5ho&list=PLC2LZCNWKL9a7b7Ufx0ngo9xH_b8j9ZlA
+- https://github.com/kbilsted/Functional-core-imperative-shell/blob/master/README.md
+- https://www.raresportan.com/functional-style-programming/

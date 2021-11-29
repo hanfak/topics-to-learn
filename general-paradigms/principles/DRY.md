@@ -2,6 +2,7 @@
 
 - Repeating yourself, means wasting time, time that could be used to do other stuff
 - DRY is about wasting time
+- **Focus on not repeating the business logic, this is should be one place**
 - Areas of wasting time
   - Following an inefficient process
     - This can occur in the release cycle, the way new features are designed, sign-offs, or meetings
@@ -28,13 +29,33 @@
     - Leads to multiple places where changes need to occur
   - “I won’t need it again so let’s just hack it quickly” solutions
     - Never good if not tested
-- There is always a trade off
-  - sometimes better to copy and paste, and minimal changes, instead of having lots of logic
-  - Time to refactor might be too long to remove duplication, and changing other code will require retesting
-  - To much dry code can result in complex code and hard to understand
+- Not doing so means changing in one place, means having to remember to change in other places
 - Copy and Paste Programming
   - the more code you write, the more expensive it becomes to support and maintain the application
   - Both composition and inheritance are your friends in battling repetitive code
   - the use of design patterns and shared libraries.
   - web services to combat duplication on higher levels of abstraction.
     -  Instead of building the same functionality into each application you develop, it is often a good idea to create a service and reuse it across the company.
+
+## Types
+
+- Imposed duplication.
+  - Developers feel they have no choice
+  - the environment seems to require duplication.
+- Inadvertent duplication.
+  - Developers don’t realize that they are duplicating information.
+- Impatient duplication.
+  - Developers get lazy and duplicate because it seems easier.
+- Interdeveloper duplication.
+  - Multiple people on a team (or on different teams) duplicate a piece of information
+
+## Pifulls
+
+- A little duplication is often better than a little dependency.
+- Prematurely optimize when the requirements aren't finalized (spoiler: they never are).
+- Duplication is a convenient but not the best source for discovering abstractions
+- wrong abstraction at a lower level creates an exponentially worse dependency hell at higher levels.
+- There is always a trade off
+  - sometimes better to copy and paste, and minimal changes, instead of having lots of logic
+  - Time to refactor might be too long to remove duplication, and changing other code will require retesting
+  - To much dry code can result in complex code, too much abstraction and hard to understand

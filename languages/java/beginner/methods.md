@@ -15,6 +15,9 @@
 	- [Naming conventions](#naming-conventions)
 	- [side effects](#side-effects)
 	- [CQRS](#cqrs)
+	- [Recusion](#recusion)
+		- [Corecusion](#corecusion)
+	- [How handled by java](#how-handled-by-java)
 	- [Links](#links)
 
 <!-- /TOC -->
@@ -186,6 +189,33 @@ public String aMethod(int x) throws Exception {
 ## CQRS
 
   - method should either query and return something, or do something (ie delegate to another object and its behaviour) and return void
+
+## Recusion
+
+- Calling the itself to complete some tasks
+- Java does not handle this well out of the box
+	- can lead to stack overflow exception for large values, as stack is continually adding the methods, and only evaluated (and popped off the stack) when it reaches the base case
+- Common problem is fibonacci
+- Need a base case, to allow evaluation
+	- otherwise will go into infinite loop
+
+### Corecusion
+
+## How handled by java
+
+- When a method is called, Java suspends what it’s currently doing and pushes the environment on the stack to make a place for executing the called method.
+- When this method returns, Java pops the stack to restore the environment and resume program execution.
+- If you call one method after another, the stack always holds at most one of these method call environments.
+- But methods aren’t composed only by calling them one after the other. Methods call methods.
+  -	If method1 calls method2 as part of its implementation, Java again suspends the method1 execution, pushes the current environment on the stack, and starts executing method2.
+	-	When method2 returns, Java pops the last pushed environment from the stack and resumes execution (of method1 in this case).
+	-	When method1 completes, Java again pops the last environment from the stack and resumes what it was doing before calling this method.
+-	Method calls may be deeply nested, and this nesting depth does have a limit, which is the size of the stack.
+	-	Around few thousands
+	-	depends on the java version and system used
+	-	Can be increased using flags
+		-	the same stack size is used for all threads, increasing the stack size generally wastes space.
+	-	Generally, you won’t need more, except in specific cases. One such case is recursive method calls.
 
 ## Links
 

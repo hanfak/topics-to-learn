@@ -32,3 +32,6 @@
 - when adopting BDD it’s important to focus on solving the problems of delivering the right thing and not on the automation technique
 - Once the collaborative sessions are flowing a team may choose to capture examples from those conversations using the Gherkin syntax
 - and then use the captured examples with automated tools to help guide what developers deliver, in what is known as outside in development.
+
+- https://lizkeogh.com/behaviour-driven-development/
+- https://medium.com/ft-product-technology/behaviour-driven-development-at-the-ft-46dc2991471d

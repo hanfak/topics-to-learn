@@ -42,6 +42,8 @@
   -  Procedural Cohesion: related by always following the same sequence of execution
   - Temporal Cohesion: related by the points in time when they are used
   - Logical Cohesion: related by some logical category but different by actual nature
+  - functional: where pieces of code are highly related by the task that they perform.
+  - Coincidental: this is code that has been grouped together in a completely arbitrary way with no thought having been put into it.
 
 ## Why?
 
