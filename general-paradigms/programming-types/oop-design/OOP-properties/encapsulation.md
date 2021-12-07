@@ -1,1 +1,1 @@
-See [encapsulation](..\clean-code\CLEAN\encapsulation.md)
+See [encapsulation](../clean-code/CLEAN/encapsulation.md)
