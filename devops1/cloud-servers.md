@@ -1,0 +1,1 @@
+- https://www.quora.com/What-is-the-difference-between-a-cloud-and-a-server

@@ -1,0 +1,2 @@
+- https://it.badykov.com/blog/2018/11/05/database-patterns/
+- 
