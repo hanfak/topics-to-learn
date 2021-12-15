@@ -1,1 +1,0 @@
-- https://dzone.com/articles/simple-ways-to-add-and-work-with-a-jar-file-in-you

@@ -1,1 +1,0 @@
-- https://matthewpalmer.net/kubernetes-app-developer/articles/multi-container-pod-design-patterns.html
