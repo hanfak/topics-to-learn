@@ -1,4 +1,7 @@
 # Arrays
+  - static array  
+    - does not change size of array
+    - has fixed memory, all in adjacent location to first element
   - terminology
     - array: An orderd list of elements
     - element: A member of an array

@@ -150,6 +150,10 @@ object exists with each value
 - If two objects are equal according to the equals(Object) method, then calling the hashcode() method on each of the two objects must produce the same integer result.
 - developers should override both methods in order to achieve a fully working equality mechanism — it's not enough to just implement the equals() method.
 
+### Links
+
+- https://www.youtube.com/watch?v=IwUwIrz9Ge8
+
 ### override both hashcode and equals
 
 - If hashcode is not also overridden at the same time as equals, then collections that use the hashcode, will find that hashcode will create a new value for equal objects (that which was defined by user overidden equals() method)

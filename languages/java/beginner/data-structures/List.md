@@ -8,7 +8,10 @@
 
 ## What is an ArrayList
 
-- backed by an array that has a fixed size.
+- backed by a static array that has a fixed size.
+- it is a dynamic array
+  - The size of the array is fixed on creation, but extended on add/remove etc operations, by creating a new array of greater length and copying the elements
+  - The new size of the array is a geometric pattern, to allow for amortization of copying elments
 - Entries can be added to the array up to the maximum size of the backing array.
   - When the backing array is full, the class will allocate a new, larger array and copy the old values.
   - This affects performance

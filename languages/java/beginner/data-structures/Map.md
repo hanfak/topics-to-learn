@@ -22,8 +22,10 @@
 
 ## HashMap
 
+- implementation of Map
 - hash table, but with a few additional embellishments
 - Initially the bucket entries will be stored in a list.
+	- A list of linked lists
 - When it comes to finding a value, the hash of the key is calculated and then the equals() method is used to find the key in the list.
   - Because of the mechanics of hashing the key and using equality to find it in the list, duplicate keys are not permitted in a HashMap.
   - Inserting the same key simply replaces the key currently stored in the HashMap.
@@ -68,6 +70,7 @@
 
 - https://stackoverflow.com/questions/30164087/how-does-java-8s-hashmap-degenerate-to-balanced-trees-when-many-keys-have-the-s/30180593
 - https://stackoverflow.com/questions/43911369/hashmap-java-8-implementation
+- https://www.youtube.com/watch?v=NrMaQL_4Npo
 
 
 
@@ -116,6 +119,7 @@ dictionary[h("b".hashCode(), DICT_SIZE)] = "world"
 ```java
 int keyA = h("a".hashCode(), DICT_SIZE);
 int keyB = h("b".hashCode(), DICT_SIZE);
+keyA == keyB; //return true
 ```
 - may yield the same values for keyA and keyB, and in that case we would accidentally overwrite a value in our array:
 ```java
@@ -134,7 +138,7 @@ for (int i = 0; i <= DICT_SIZE; i++) {
 }
 ```
 - This loop stores DICT_SIZE + 1 values (always the same value, actually, namely the String "dummy") in the dictionary. Mhh, but the array can only store DICT_SIZE different entries! That means, when we use h, we would overwrite (at least) one entry. Or in other words, h will map two different keys to the same value! These "collisions" can't be avoided: if n pigeons try to go into n-1 pigeon holes, at least two of them have to go into the same hole.
-- But what we can do is to extend our implementation so that the array can store multiple values under the same index. This can easily be done by using lists. So instead of using:
+- But what we can do is to extend our implementation so that the array can store multiple values under the same index. This can easily be done by using lists (a linked list). So instead of using:
 ```java
 String[] dictionary = new String[DICT_SIZE];
 ```
@@ -206,6 +210,12 @@ public String get(String key) {
 - This is the general idea of hashing, and you will recognize the put and get method from java.util.Map. Of course, the above implementation is an oversimplification, but it should illustrate the gist of it all.
 - Naturally, this approach is not limited to Strings, it works for all kinds of objects, since the methods hashCode() and equals are members of the top-level class java.lang.Object and all other classes inherit from that one.
 - As you can see, it doesn't really matter if two distinct objects return the same value in their hashCode() method: the above approach will always work! But still it is desirable that they return different values to lower the chances for hash collisions produced by h. We have seen that these can't be avoided 100% in general, but the less collisions we get, the more efficient our hashtable becomes. In the worst case, all keys map to the same array index: in that case, all pairs are stored in a single list and finding a value will then become an operation with costs linear in the size of the hashtable.
+- Note
+	- If the hash function returns the same number, then all the key-value pairs will be stored in one bucket/pigeonhole, and thus you will be left with linkedlist of key-value pair. Thus losing the efficiency of the hashing function, ie get the value from key.
+		- Aim is to implement a good hashcode, that will evenly spread out the hashnumbers, and thus the buckets that will be filled. Generally, use of prime numbers will be invovled
+	- Due to hashcode and equuals being used in hashmap, they need to be implemented (esp if equals is overridden)
+	- Keys should be immutable, to maintain contract of equality. Others will break searchign for keys to get value
+		 - Enums are good for this 
 
 ## Links
 

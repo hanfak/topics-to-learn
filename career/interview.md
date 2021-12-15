@@ -20,10 +20,15 @@
 - https://medium.com/hackernoon/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0
 - hackerrank.com/dashboard
 - https://dev.to/seattledataguy/the-interview-study-guide-for-software-engineers-764
+- https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
+  - https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0
+- MIT course https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY
 
 ## Software design
 
 - https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/
+-  https://github.com/donnemartin/system-design-primer#how-to-approach-a-system-design-interview-question
+- https://systeminterview.com/
 
 ## Resume
 

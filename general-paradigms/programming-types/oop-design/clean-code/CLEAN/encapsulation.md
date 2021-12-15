@@ -91,13 +91,13 @@
 
 - Examples
   - Using setters
-  - violating law of demeter
+  - violating law of Demetar
   - using the details of impl of an object, rather than a cleaner interface
   - not using interface
   - non final fields
   - data structures that can be mutated despite reference to it
   - use of reflection
-  - inheritence
+  - inheritance
   - patterns like visitor
   - Using the toString output, to get values of fields
 
@@ -106,3 +106,13 @@
 - Frameworks dont work well with immutability.
   - They need fields to be non final, or setters need to be created
 -  use an anticorruption layer to protect and validate your internal state after those setter interactions
+
+## Drawbacks
+
+- you protect "mutable" state within the object with methods that receive messages and these public interface methods would protect data -- especially if you are working with multi-threaded applications
+	- This allowed us to limit the scope of the code that had access to mutate the data.
+	- this did not get rid of the problems with working with multi threaded applications, just reduced it to one area
+	- The lack of good coding standards and frameworks, has led to code breaking encapsulation
+	- Since the data is mutable and the functions and methods mutate the data and rely on the state which can change - testing the correctness of any algorithmic function is meaningless in the overall correctness of the object or the application.
+	- To avoid the issues with mulit threading, we need to synchronize the data access in the object itself which is often not done perfectly.
+- The move to immutable data, means no changes to data/state in the class, thus encapsulation is just a grouping of functions in such classes

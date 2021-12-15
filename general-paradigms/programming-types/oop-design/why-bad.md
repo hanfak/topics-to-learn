@@ -8,6 +8,12 @@
 - https://www.leaseweb.com/labs/2015/08/object-oriented-programming-is-exceptionally-bad/
 - http://www.smashcompany.com/technology/object-oriented-programming-is-an-expensive-disaster-which-must-end
 
+- The "promise" at the time was that you could model the real world better through objects. In programming that might have been the hope or the hype at the time but
+  - the reality is that most object-oriented coding does not really reflect reality but patterns and abstractions.
+- The difficulty in being able to prove OO programs, compared to functional paradigm
+  - Due to mutable state
+
+
 ## Inheritance
 
 - https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53
