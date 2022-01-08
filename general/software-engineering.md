@@ -4,8 +4,9 @@
 - The primary goal of engineering is to produce working systems (meet functional and non functional requirements)
   - beauty is not the main goal
   - ease of use, correctness, adoptability are higher goals
+- Software engineering is the application of an empirical, scientific approach to finding efficient, economic solutions to practical problems in software.
+  - must manage the complexity of the systems that we create in ways that maintain our ability to learn new things and adapt to them.
 
-  
 ## Software
 
 - software controls what computers do.

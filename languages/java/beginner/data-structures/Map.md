@@ -8,6 +8,7 @@
 	- [Treeifying](#treeifying)
 	- [Links](#links)
 	- [Why hashcode is used is in hashmap](#why-hashcode-is-used-is-in-hashmap)
+	- [Complexity](#complexity)
 	- [Links](#links)
 
 <!-- /TOC -->
@@ -52,11 +53,23 @@
   - So the hashcode is used to check the buckets, if no buckets then can create new linked list in bucket of the entry
     - if bucket exists it will use equals, if not equals it will add it to the linked list or tree. Otherwise overwrite if equals
 
+### Load factor
+
+- Is a setting, that states when the map must resize the capacity (increase the number of buckets) when the number  of buckets are filling up
+- default is 75%
+- if not set, then resize does not happen, then collisions will happen, and multiple keys will be set for each bucket (linked list created)
+- As hashcode function is used, this means that their is a limit to unique hashcodes, and thus collisions will happen
+- resizing, includes rehashing, which makes this operation expensive if load factor is too low
+	- also may redistribute entries in a linked list, to a bucket
+- https://www.baeldung.com/java-hashmap-load-factor
+
 ## Treeifying
 
+- From Java8 onwards
 - internal aspect of hashmap
-- when a bucket becomes highly populated. If the bucket elements are implemented as a LinkedList, traversal to find an element becomes on average more expensive as the list grows.
+- when a bucket becomes highly populated. If the bucket elements are implemented as a LinkedList, traversal to find an element becomes on average more expensive as the list grows. O(n)
 - To reduce this linear affect, the bucket turns from list to tree (treeenodes), when the treeifying_threshold is reached
+- Adding to a linked list for a bucket, increase cost of insertion into map
 - This is not done at the beginning
   - tree nodes are double the size of list nodes
   - A well-distributed hashing function will rarely cause buckets to be converted to TreeNodes.
@@ -64,7 +77,13 @@
 - Implements a red-black tree structure, for better performance in searching
   - Offers worst case guarentees
 - If the hash codes are the same, it uses the compareTo method of Comparable if the objects implement that interface, else the identity hash code.
+- Implications
+	- Can set up the hashcode to return a constant, the Treeifying value to 1. Then you get red and black tree data structure. Where insertion, search and deletion will o(logN).
+		- But this is already implemented in java as a TreeMap
 
+### Links
+
+- https://runzhuoli.me/2018/08/31/the-secret-improvement-of-hashmap-in-java8.html
 
 ## Links
 
@@ -215,7 +234,11 @@ public String get(String key) {
 		- Aim is to implement a good hashcode, that will evenly spread out the hashnumbers, and thus the buckets that will be filled. Generally, use of prime numbers will be invovled
 	- Due to hashcode and equuals being used in hashmap, they need to be implemented (esp if equals is overridden)
 	- Keys should be immutable, to maintain contract of equality. Others will break searchign for keys to get value
-		 - Enums are good for this 
+		 - Enums are good for this
+
+## Complexity
+
+- https://javabypatel.blogspot.com/2015/10/time-complexity-of-hashmap-get-and-put-operation.html
 
 ## Links
 

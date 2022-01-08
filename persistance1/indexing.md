@@ -11,6 +11,22 @@
   - So if the census bureau has 120 million records with names and ages, and you most often need to retrieve lists of people belonging to an age group, then you would index that database on the age attribute.
 - Indexing is core to relational databases and is also widely offered on non-relational databases.
 
+## What to index
+
+- Primary keys
+- unique values
+- required in WHERE and ORDER BY clauses
+- No need to index a column that is a prefix in a multi column index
+- Indexed columns should not be nullable
+- columns used in a join
+- frequently need to look up somethign by it
+
+# when not to index a column
+
+- heavy writes 
+- additional space usage is an issue
+- ou are selecting a large % (>10-20%) of the rows in the table
+
 ## Advantages
 
 ## Drawbacks

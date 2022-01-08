@@ -35,3 +35,11 @@
 
 - https://lizkeogh.com/behaviour-driven-development/
 - https://medium.com/ft-product-technology/behaviour-driven-development-at-the-ft-46dc2991471d
+
+## Issues
+
+- Just as with ATDD, in gerneal it is not the devs who write the tests, but th testers/BAs who do it
+  - This can lead to issues as described in [/libraries/yatspec.md]
+  - You lose the ability to think of the design when the test and prod code are separated
+  - test code written, can become a nightmare to work with after a while
+  - Long feedback cycles, to add code to parse user tests, and to go from test to code

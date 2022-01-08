@@ -111,6 +111,7 @@
 ## tls/ssl
 
 - https://www.youtube.com/watch?v=yJrJEvvW_HA
+- https://www.cloudflare.com/en-gb/learning/ssl/what-happens-in-a-tls-handshake/
 
 ## Mutual tls
 

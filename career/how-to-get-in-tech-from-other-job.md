@@ -1,5 +1,3 @@
-@Geert
-
 I am an enterprise backend software developer working for a multi national company for a few years now. Heres my take:
 
 1 - You work in finance, the sector makes more money than coding, apart from being a contractor. I would not leave that field, unless you don’t like this work.
@@ -39,7 +37,7 @@ Here is a list …
 	- A good guide is python the hard way, https://github.com/chris-void/pyway/blob/master/Learn%20Python%20The%20Hard%20Way%2C%203rd%20Edition%20.pdf
 - Be able to write some simple programs which  interact with the database, http service, files
 - Don’t worry about learning computer science topics yet (ie algorithms -sorting/searching, BigO, graphs etc) as most of these will be implemented in libraries, although learning about data structures is necessary. These can learned later, if you want to go deep or just for interest (a good intro book is https://bigmachine.io/products/the-imposters-handbook/ it also has info on software engineering ideas too)
-- I suggest be comfortable in one language, know it well, before moving to other languages. All languages are very similar, they have differences esp syntactically
+- I suggest be comfortable in one language, know it well, before moving to other languages. Majority of languages are very similar, they have differences esp syntactically
   - If you want to websites, you will have to learn javascript. But if you are comfortable workign in a terminal, then you dont need a website/gui/frontend, as you can see the out put in the terminal or files or database.
 - If you want to learn sql, then learn postgres. If you want to code with a database, then you need to learn a library in Python that interacts with the database, this will have it's own way of talking to the database but easier to use one where you write sql in the python code, which will not be sql. If you want to setup postgres (install it first see a tutorial), you can interact with it via the terminal or use a gui like dbeaver (https://dbeaver.io/) which i just started to use and is very good.
   - https://www.postgresqltutorial.com/postgresql-python/insert/
@@ -66,4 +64,4 @@ This is a lot to do, esp on your own. But the downfall of most people who do the
 
 TBC ...
 
-7 - I work primarily in java, for most things java (or any jvm language) or C# is good enough, esp for backend/server code. C/rust is good for systems or embedded coding, or high performance code. Other dynamic languages like python, ruby and javascript or good for startups, but have drawbacks esp when running high loads or speeds or tooling. There is alot choice of languages to use, and they have the uses. But for me, I get alot of calls through my recruiter to work on HFT codebases which are built using java. 
+7 - I work primarily in java, for most things java (or any jvm language) or C# is good enough, esp for backend/server code. C/rust is good for systems or embedded coding, or high performance code. Other dynamic languages like python, ruby and javascript or good for startups, but have drawbacks esp when running high loads or speeds or tooling. There is alot choice of languages to use, and they have the uses. But for me, I get alot of calls through my recruiter to work on HFT codebases which are built using java.

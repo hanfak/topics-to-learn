@@ -52,7 +52,7 @@
 - Allow for backwards compatiblity, before generics
 - Only warning, as not compile time issue
   - but can lead to runtime issues
-- Using Parameterized Types (generics) will prevent runtime issues by having a compiletime error 
+- Using Parameterized Types (generics) will prevent runtime issues by having a compiletime error
 
 ## Links
 
@@ -68,6 +68,7 @@
 - https://github.com/annimon-tutorials/Java-Generics-Tutorial/tree/master/src/test/java/com/example/generics
 - https://www.youtube.com/watch?v=34oiEq9nD0M
 - https://www.youtube.com/watch?v=9tHLV0u87G4
+- https://www.youtube.com/watch?v=K1iu1kXkVoA
 - https://github.com/RichardWarburton/generics-examples/tree/master/src/main/java
 - https://www.javacodegeeks.com/2019/04/variance-java.html
 - https://www.java67.com/2019/07/top-50-java-generics-and-collection-interview-questions.html

@@ -4,14 +4,27 @@
 
 This is also for personal and professional use,
 
+- Physical
+  - laptop - work one with security setup
+  - key board
+  - mouse
+  - good chair and desk, possible footstool
+  - headphones and microphone
+  - dock to connect all items
+  - monitors - need to keep at eye level so many need stands/books to place underneath
 - Coding
   - Use some sort of IDE
     - Intellij
     - VScode
+  - Install plugins in your IDE to improve the efficiency and experience of coding - too many can use up too much memory
+  - Set up templates
+  - setup auto complete rules
+  - Setup colours, background, fonts etc
+  - setup memory/settings to optimise IDE
 - Editing files
   - In terminal
     - Nano
-    - Vim
+    - Vim/vi (most popular esp on servers)
   - In OS
     - Atom
     - Notepad++
@@ -21,17 +34,19 @@ This is also for personal and professional use,
   - bash
   - zsh
   - shell
+  - Have tools that you can use in terminal ie openssl, curl, ping etc
 - Browsers
   - Chrome
   - Firefox
-  - Extensions
+  - Extensions - too many and can take up to much memory
     - json/xml/md renderer
     - suspender
     - Wiremock
+    - safety/ad blockers
 - Http Client
   - Postman
   - curl
-- artifacts
+- artifacts - services that need to be signed up to, hosted locally or third party
   - artifactory
   - maven
   - gcr
@@ -39,11 +54,13 @@ This is also for personal and professional use,
   - helm
 - Log searcher
   - splunk
+  - ELK
 - Pdf viewer
   - Foxit
 - Word document
   - Word
   - libreoffice
+  - Office 365
 - Spreadsheet
   - excel
   - libreoffice
@@ -51,12 +68,14 @@ This is also for personal and professional use,
   - meld
 - Password keeper
   - keypass
+  - vault (company host solution)
 - Communications
   - slack
   - Whatsapp
   - zoom
   - teams
-  - use engine
+  - drovio
+  - outlook
 - Database
   - dbeaver
   - squirrel
@@ -65,7 +84,11 @@ This is also for personal and professional use,
   - wireshark
 - Shared storage
   - Dropbox
+  - one drive
+  - google drive
 - General
   - Google account
     - mail, drive, doc
   - microsoft 360 account
+- CI servers
+  - Just a computer or service

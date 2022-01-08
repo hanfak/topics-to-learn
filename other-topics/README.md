@@ -5,7 +5,7 @@ Other areas, which I am not currently using.
 - Blockchain
 - Machine learning/AI
 - Data science
-- Front end
+- Front end - desktop apps, websites, browser based application
 - Other languages
 - Mobile development
 - video game
@@ -15,3 +15,4 @@ Other areas, which I am not currently using.
 - low code development
 - systems/embedded programming
 - IOT
+- augmented reality

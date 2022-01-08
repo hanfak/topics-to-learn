@@ -44,6 +44,8 @@
 
 Basic collections see
 
+- https://docs.oracle.com/javase/tutorial/collections/implementations/index.html
+
 ## unmodifiable equivalents
 
 ## Linked list
@@ -83,3 +85,5 @@ Basic collections see
 - https://www.journaldev.com/1260/collections-in-java-tutorial
 - https://www.jrebel.com/blog/java-collections-cheat-sheet
 - https://www.javamex.com/tutorials/collections/index.shtml
+- https://www.geeksforgeeks.org/how-to-learn-java-collections-a-complete-guide/
+- https://www.logicbig.com/tutorials/core-java-tutorial/java-collections/java-collection-cheatsheet.html

@@ -14,6 +14,7 @@
   - https://www.youtube.com/watch?v=oz9cEqFynHU
 - https://inst.eecs.berkeley.edu/~cs61b/sp20/
   - https://www.youtube.com/playlist?list=PLu0nzW8Es1x3TmpwQRLMQwCtulEd43ZY8
+- https://www.khanacademy.org/computing/computer-science/algorithms
 
 ## Topic
 

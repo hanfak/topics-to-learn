@@ -10,12 +10,14 @@
 
 ## Reading
 
+## podcasts and videos
+
 ## Katas
 
-- 3 types (in order of easiest first)
+- types (in order of easiest first)
   - Refactoring
     - Given code and tests
-  - TDD
+  - TDD, no or limited code (ie interfaces)
     - Given spec only
   - Legacy
     - Given code and/or  (limited) spec but no tests

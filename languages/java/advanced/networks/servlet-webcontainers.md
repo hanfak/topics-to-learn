@@ -43,6 +43,34 @@
 - addFilter
   - add filter to handler
 
+### Secruity
+
+- JKS
+  - https://wiki.eclipse.org/Jetty/Howto/Configure_SSL
+  - http://blog.anvard.org/articles/2013/10/05/jetty-ssl-server.html
+
+#### Example
+
+```java
+Server server = new Server();
+
+HttpConfiguration https = new HttpConfiguration();
+https.addCustomizer(new SecureRequestCustomizer());
+
+SslContextFactory sslContextFactory = new SslContextFactory();
+sslContextFactory.setKeyStorePath(EmbeddedServer.class.getResource(
+        "/keystore.jks").toExternalForm());
+sslContextFactory.setKeyStorePassword("123456");
+sslContextFactory.setKeyManagerPassword("123456");
+
+ServerConnector sslConnector = new ServerConnector(server,
+        new SslConnectionFactory(sslContextFactory, "http/1.1"),
+        new HttpConnectionFactory(https));
+sslConnector.setPort(9998);
+
+server.setConnectors(new Connector[] {sslConnector });
+```
+
 ## WARS on containers, external servers, external vs embedded servers
 
 - https://steveperkins.com/war-files-vs-embedded-servers/

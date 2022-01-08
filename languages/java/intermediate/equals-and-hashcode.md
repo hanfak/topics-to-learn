@@ -19,7 +19,7 @@
 <!-- /TOC -->
 
 - https://www.baeldung.com/java-equals-hashcode-contracts
-
+- https://codejava.net/java-core/collections/understanding-equals-and-hashcode-in-java
 ## Why override them
 
 - By default, each object has an equals() method, this does equality check on the object
