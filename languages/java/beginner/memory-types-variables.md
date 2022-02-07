@@ -112,6 +112,30 @@
 
 ## boxing and unboxing
 
+## Wrappers vs primitives
+
+- Definitions
+  - A primitive data type specifies the size and type of variable values, and it has no additional methods.
+    - Defaults is some value
+  - Wrapper classes provide a way to use primitive data types (int, boolean, etc..) as objects.
+    - Have identities separate from their value
+    - Default is always null if not assigned
+- Problems
+  - A Boolean variable should only be true or false, but in fact has third state of null
+  - If int variable has default, but this can never be true
+  - If some type is null by default can lead to NPE
+  - Use of Database models, can have null values, so need to use wrappers
+  - Generics can only use Types and not primitives
+    - prevents use of collections libraries
+  - Memory issues, primitives use less than type (regarding time and space)
+  - Comparasion bugs when using == and equals
+  - Doing multiple boxing and unboxing, espeically in loops can lead to increased time taken
+- Good practice
+  - use primitives in local scope
+  - Effective java suggest to use primitives over wrapped
+  - Use boxed for elements, keys and values in collections
+
+
 
 ## Pass by value
 

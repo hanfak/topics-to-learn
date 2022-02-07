@@ -1,0 +1,13 @@
+- Generally, created to allow for mulitple inputs, or different types for an input
+- Use overloading judiciously and sparingly
+  - best to refrain from overloading methods with same number of params
+  - avoid situations where the same set of parameters can be passed to different overloadings by the addition of casts
+  - ensure that all overloadings behave identically when passed the same parameters
+  - Have consistent argument order
+  - Avoid long list of args, esp with same type
+    - encapsulate in an object
+- For constructors
+  - use static factory methods
+    - can return differetn subclasses in these methods
+    - add validation, without polluting the constructor
+    - avoid overloading the constructor 

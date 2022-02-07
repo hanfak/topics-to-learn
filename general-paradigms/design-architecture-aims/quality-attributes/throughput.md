@@ -1,5 +1,6 @@
 # Throughput
 
+- Amount of owrk done in time taken
 -  the maximum capacity of a machine or system
   - in factories to calculate how much work an assembly line can do in an hour or a day, or some other unit of time measurement.
   - the amount of data that can be passed around in a unit of time
@@ -16,3 +17,4 @@
   - so systems designer will think through the best ways to scale the throughput of a given system
     - including by splitting up requests (or any other form of "load"), and distributing them across other resources etc.
 - The key point to remember is what throughput is, what a constraint or bottleneck is, and how it impacts a system
+- https://youtu.be/HrfgslRY7Ak

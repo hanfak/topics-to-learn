@@ -105,3 +105,8 @@ Why care about reliability?
 - outages of ecommerce sites can have huge costs in terms of lost revenue and damage to reputation
 
 Sacrifice reliability will reduce costs, development and operational. For prototyping
+
+## Links
+
+- shirazi https://youtu.be/KoIabbk_gsg
+  - https://medium.com/expedia-group-tech/the-cost-of-100-reliability-ecb2901f23a4

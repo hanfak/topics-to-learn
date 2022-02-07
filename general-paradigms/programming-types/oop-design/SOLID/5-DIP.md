@@ -12,7 +12,18 @@ Why?
 - Classes are more tightly coupled, meaning that changes can ripple throughout the system
 - it may make unit testing harder because fake versions of dependencies cannot easily be supplied
   - As newing objects occurs in the class under test
-  -
+
+## Issues
+
+- This is all about adding flexibility, codeing to the an interface
+  - Taken to the extreme is bad
+- This came about due to mocking frameworks needed interfaces, to be able to mock
+  - Then adding final to the class, meant you could not mock it
+- With all this dependency injection, you need a class/s in layer, that knows about all these dependenices, to be able to construct the object map
+  - frameworks used to use xml config, now they use annotations, which make the code hard to follow
+
+### Links
+  - https://naildrivin5.com/blog/2019/12/02/dependency-inversion-principle-is-a-tradeoff.html
 
 ## Links
 

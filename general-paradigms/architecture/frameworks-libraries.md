@@ -1,14 +1,19 @@
 # Framework and Libraries
 
-You should prefer core-language solutions to small abstractions to small helper libraries to general libraries to frameworks
+- You should prefer core-language solutions to small abstractions to small helper internal libraries to general libraries to frameworks
+- When you use a library, you are in charge of the flow of the application. You are choosing when and where to call the library.
+- When you use a framework, the framework is in charge of the flow. It provides some places for you to plug in your code, but it calls the code you plugged in as needed. You write code for the framework to be able to use it, you are beholden to the framework, to get it's benefits
 
 ## NOTE: With any library,
 - be sure to understand it's pros and cons (esp around secruity and legal), does it meet cost benefit for usage
 - Does it fit in with your organisation, team, codebase, when used in production?
 - Is it well maintained, number of contributors, passing tests, good test coverage, usages in production code
-- Good documentation, good example tests
+- Good documentation, good example tests, easy to follow source code
+  - Should be able to follow code in library, esp during dubugging.
+  - Need to rely on documentation, and if poor, then rely on stack overflow
 - test it
-- write poc (proof of concept)
+- write poc (proof of concept), investigate using it
+  - best to do this with similar libraries to make a choice between
 - try it out but be able to make it easy to remove if not working out
   - The only way it can be found as useful is in production
 - avoid having to build lots of hacks or engineer solutions to bugs or needed features which are not suited to library
@@ -19,6 +24,38 @@ You should prefer core-language solutions to small abstractions to small helper 
     - plugins for IDEs
     - extra time on code reviews/pairing needing to look out for these issues instead of focusing on business features or important techenical issues
     - more time debugging, having to go through library, or decomplied classes etc
+  - This can be avoiding, practicing good design ie least astonishment, ease of use, fluent api, etc
+- Coupling problems, when a new version is out, then consumers will need to upgrade
+  - but if there are breaking chagnes in the new version, this can lead to some consumers using different versions (esp with open source libraries)
+  - Eventually they will need to move to new version
+    - security updates, deprecation of functions
+    - which means more work which is not of business value
+
+### Choosing
+
+We often have two choices when implementing some logic. Either:
+- Build it ourselves
+  - This involves a cost of time, maintaining
+  - But in charge of fixing, being custom built
+- Get it from someone else
+  - Which can entail:
+    - Some one else builds it for you, thus it becomes custom to your needs, and likely improved upon or bug fixed quickly
+    - Use something that is already out there, ie a library (private or open source), but beholden to the creator(s) to decide when to fix bugs or improve.
+      - This is built with general user in mind, so may not fully meet your needs
+
+When choosing a library or service to use, despite being free or paid, we must take it upon ourselves as engineers and for the well being of the business to evaluate it properly.
+
+Areas to consider:
+- If the code is small, poorly implemented, not well tested, no maintained, few users (forks/clones/downloads) then should not use
+- If code has had issues in terms bugs, poor defaults, doing more than it should
+- If it brings in the world
+- If the license will cause problems
+- If compatibility with future upgrades may cause problems
+- Design choices - easy to use
+
+There are ways of mitigating these issues, is too put libraries on edge of your applications, using dependency inversion, adapters, so that the may logic of the app is not tied to the library. The user of a library, should not be beholden to a library (or be very careful in what libraries you choose to couple/tie yourself to).
+
+https://jaxenter.com/choose-right-java-library-159386.html
 
 
 ## Differences
@@ -47,9 +84,11 @@ You should prefer core-language solutions to small abstractions to small helper 
 
 - https://dzone.com/articles/framework-coupling-revisited
 
-## framworks disadvantages
+## Frameworks advantages
 
-- Frameworks are one of the hugest anti-patterns in software development.
+## frameworks disadvantages
+
+- Frameworks can be seen as one of the hugest anti-patterns in software development.
 - They're hard to learn and this knowledge is generally useless
   - Where as learning fundamental tools, core computer science concepts, and programming techniques which are useful and timeless
   - The core stuff learned will help in being able to use frameworks and how it works

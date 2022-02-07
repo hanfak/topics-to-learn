@@ -1,10 +1,13 @@
 # Software Engineering
 
-
 - The primary goal of engineering is to produce working systems (meet functional and non functional requirements)
-  - beauty is not the main goal
+  - beauty/elegance is not the main goal
   - ease of use, correctness, adoptability are higher goals
-- Software engineering is the application of an empirical, scientific approach to finding efficient, economic solutions to practical problems in software.
+  - deliver customer deliverables (creating/maintaining/changing features) with:
+    - the least amount of resources (money/time/constraints/regulations)
+    - the highest possible quality within those resources
+  - Engineering is an economic endeavour  
+- Software engineering is the **application of an empirical, scientific approach to finding efficient, economic solutions to practical problems in software**.
   - must manage the complexity of the systems that we create in ways that maintain our ability to learn new things and adapt to them.
 
 ## Software
@@ -167,7 +170,7 @@
 ## Difficulty of software engineering
 
 We cannot engineer a perfect solution or a solution that has everything
-  - one, there are things we want that compete against each other, so need to make trade offs, and priortise what we want
+  - one, there are things we want that compete against each other, so need to make **trade offs**, and prioritise what we want
   - There are constraints
     - physical - hardware software works on
     - law/regulation
@@ -175,6 +178,7 @@ We cannot engineer a perfect solution or a solution that has everything
     - time
     - money
     - number of developers, or number of good developers
+    - non functional requirements
     - etc
 
 Coding isn’t hard - if you are left alone to code what you want, when you want, how you want and keep the option to just give up when it gets too hard.

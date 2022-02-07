@@ -7,7 +7,8 @@
   - LLater, you will notice that your classes become large and closely coupled with each other
   - the size of each class will make it hard to fully understand its behavior and its role
   -
-- Why?
+
+## Why?
   -  A component that conforms to SRP only needs to be changed when the thing it is responsible for changes
   - Each class now has fewer lines of more highl related code,so it should be easier for a developer to understand in its entirety
   - More individual source code files (one for each responsible class) should result in fewer merge conflicts
@@ -31,7 +32,7 @@
 
 - SRP is known as this
 - Anything with "and" when describing the actions of the behaviour/method one should think of separating out
-- Separating concerns, improves modularity and composability 
+- Separating concerns, improves modularity and composability
 - Be careful implicit behaviour
   ```java
   assertThat(Fractions.addFraction("1/3", "1/3")).isEqualsTo("2/3");
@@ -44,6 +45,22 @@
   Fraction fraction = new Fraction(1, 3);
   assertThat(fraction.addFraction(new Fraction(1, 3))).isEqualsTo(new Fraction(2, 3));
   ```
+## Issues
+
+- This can lead to many small classes, with logic split all over the place.
+  - Leads to lots of coupling between lots of objects
+  - Hard to understand the flow of the logic, this can lead to hard to debug
+- Having one module that can be used by many consumers, leads to good reuse, but high coupling
+  - So if one consumer needs to change this shared module, this can affect all the other consumers that use this shared module.
+  - This can happen when applying SRP wrongly
+  - Instead the shared module should bot shared across domain boundaries
+- Better to call it **Single Concept Responsibility**
+  - A module should represent a single concept
+- It can be too focused on size of the module
+- It is very vague, thus different opinions
+- IF it is about pure functions, then it makes sense due to the definition of functions
+  - but applied to objects, where state is exists, its harder to apply to
+- https://naildrivin5.com/blog/2019/11/11/solid-is-not-solid-rexamining-the-single-responsibility-principle.html
 
 ## Links
 

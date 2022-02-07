@@ -182,3 +182,17 @@
 - Reduces coupling
 - when dealing with views (xml/json) it can be acceptable to reach into strangers’ data in order to display it.
 - is it data or behaviour that is being wrapped/”delegated”. If it is behaviour then it can often be a better candidate for applying LoD than data.
+
+### Issues
+
+- when blindly applied to core classes and data structures, it leads to convoluted, over-de-coupled code that obscures behavior.
+- The name is too rigid, it is not a law, you code will not break if you follow it
+- it can be seen here http://labs.cs.upt.ro/labs/acs/html/lectures/6/res/Lieberherr-LawOfDemeter.pdf
+	- Looks more nuanced definition
+- Another location https://www2.ccs.neu.edu/research/demeter/demeter-method/LawOfDemeter/general-formulation.html
+	- Each unit should have only limited knowledge about other units: only units “closely” related to the current unit.
+- Should this be applied to domain objects, basically data structures
+- comply with demeter, leads to more methods, more tests, more code, more stuff to look after
+	- This leads to increase number of ways of getting something, violation of DRY
+
+- https://naildrivin5.com/blog/2020/01/22/law-of-demeter-creates-more-problems-than-it-solves.html

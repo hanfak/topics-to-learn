@@ -13,6 +13,12 @@
 
 - https://blog.caplin.com/2010/09/30/a-junit-trick-for-ensuring-solid-design/
 
+## Issues
+
+- Sometimes you do want to have different behaviour to the super class
+- It was original stated by
+- Even the author says, the idea of substitutability was informal and was not evening in formal definition (https://dl.acm.org/doi/10.1145/197320.197383, https://www.youtube.com/watch?v=-Z-17h3jG0A)
+
 
 ## Links
 

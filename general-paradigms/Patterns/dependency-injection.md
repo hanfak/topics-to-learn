@@ -49,3 +49,10 @@
 - having a public non final field, where you can inject the dependencies
 - dependencies are instantiated after the class is created
 - https://www.vojtechruzicka.com/field-dependency-injection-considered-harmful/
+
+## Issues with injecting too many dependencies
+
+- Some times having too many dependencies injected, can make the code more complex (esp for testing)
+- Things like crosscutting concerns (logging, date etc) can pollute the class.
+  - Instead try using a factory, which can pass a supplier to a static factory method, and when the method of dependency is called, can call the supplier and instantiate it. Then the supplier is passed in at composition root, or a stub/fake is passed in for tests
+- https://enterprisecraftsmanship.com/posts/singleton-vs-dependency-injection/

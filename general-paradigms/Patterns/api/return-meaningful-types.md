@@ -1,0 +1,12 @@
+- Example: Map<String, Map<PhoneType, String>> is hard to understanding
+  - could infer from body, docs, method name but add more verbosity
+  - use a simpler return type ie PhoneBook
+- This is a form of primitive obsession
+  - writers want to stick with using only primitives, or base types
+- Having complex types can lead to problems with having to change this return type
+  - Encapsulating this will be better, allows for easier chagnes
+- This example is solved by making Collections first class
+  - Wrapping the collection in class
+  - avoids pass around complex or hard to understand collections with primitives
+  - Behaviours which are not part of collections api are encapsulated and can have complex uses of api as an encapsulated method
+  - https://softwareengineering.stackexchange.com/questions/139353/why-should-we-preferably-use-first-class-collections 

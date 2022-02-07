@@ -97,3 +97,4 @@
 - https://completedeveloperpodcast.com/episode-75/
 - https://github.com/leandrotk/functional-programming-learning-path
 - https://functional.works-hub.com/learn/an-introduction-to-the-basic-principles-of-functional-programming-f509c
+- https://www.youtube.com/watch?v=-k2X7guaArU

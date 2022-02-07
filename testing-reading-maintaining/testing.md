@@ -11,6 +11,7 @@
 	- [Test Driven Development (TDD)](#test-driven-development-tdd)
 	- [Acceptance Test Driven Development (ATDD)](#acceptance-test-driven-development-atdd)
 	- [Testing pyramid](#testing-pyramid)
+		- [issues](#issues)
 	- [Trophy Pyramid](#trophy-pyramid)
 	- [Links](#links)
 	- [Types of Tests](#types-of-tests)
@@ -167,6 +168,11 @@ to show their absence!
 * More unit tests, less expensive, mocked/stubbed, fast running tests at the bottom. Cover more of the code base.
 
 - https://blog.ncrunch.net/post/testing-pyramid-automated-testing.aspx
+
+### issues
+
+- https://blog.devgenius.io/what-is-the-problem-of-testing-pyramid-model-7fe7612a02e8
+- https://johnfergusonsmart.com/test-pyramid-heresy/
 
 ## Trophy Pyramid
 

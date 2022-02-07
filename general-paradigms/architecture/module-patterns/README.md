@@ -30,4 +30,7 @@
   - Maven modules are a way to organize your project into several subprojects (modules). With Maven, you can control the versions of these modules and the dependencies between these modules. Each module will produce an artifact.
   - Java modules are a way to strongly encapsulate your classes. It does not provide any means to control the version of an artifact you are using.
   - ntelliJ also uses the term module. It is a way to group files
-  - 
+  -
+
+## Monoliths (modular) vs Microservices
+- Modules or Microservices? - Sander Mak https://youtu.be/siHAu5sIIko

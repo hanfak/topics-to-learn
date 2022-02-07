@@ -1,6 +1,5 @@
 # Exceptions
 
-
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Exceptions](#exceptions)
@@ -13,7 +12,9 @@
 	- [try - catch](#try-catch)
 	- [Anti patterns to handling exceptions](#anti-patterns-to-handling-exceptions)
 	- [checked exceptions](#checked-exceptions)
+		- [Links](#links)
 		- [Why bad](#why-bad)
+			- [Links](#links)
 
 <!-- /TOC -->
 
@@ -142,7 +143,6 @@
   - Failing to anticipate error states
   - Hiding error states (e.g. catch Exception)
   - Complecting control flow
--
 
 
 ## checked exceptions
@@ -157,12 +157,16 @@
 		- Which lead to interfaces being affected
 - Can catch the checked exception and throw runtime exception
 - Avoid catching them doing nothing with them
+### Links
+
+- http://tutorials.jenkov.com/java-exception-handling/checked-or-unchecked-exceptions.html
 
 ### Why bad
 
 - Exceptions increase the complexity of our code
 - Exceptions disrupt the flow of execution in our applications, jumping from the point at which the exception is thrown to whatever point, with whatever state, our application defines the catch point
 
+#### Links
 
 - https://phauer.com/2015/checked-exceptions-are-evil/
 - https://programming.guide/java/checked-exceptions-good-or-bad.html

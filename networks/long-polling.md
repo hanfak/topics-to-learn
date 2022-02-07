@@ -1,2 +1,4 @@
 - https://ably.com/blog/websockets-vs-long-polling
 - https://codeburst.io/polling-vs-sse-vs-websocket-how-to-choose-the-right-one-1859e4e13bd9
+
+This involves opening an XMLHttpRequest connection to the server and leaving it open until ongoing communication is no longer required. leaving an HTTP connection open means that the server can continue to deliver response data for as long as the connection remains open. There is no technical requirement that the data be in one format or another, or that the request be closed after sending data to the client.  A server may begin delivering its response before the client’s request data has arrived in its entirety, and the client is not strictly required to stop sending request data until it chooses to do so. This means that, just as the server may continue delivering response data for the life of the connection, the client may do the same. The result is a de facto two-way communication stream between server and client.

@@ -31,3 +31,4 @@
 
 - https://www.freecodecamp.org/news/concurrency-parallelism-and-the-many-threads-of-santa-claus/
 - https://completedeveloperpodcast.com/episode-152/
+- http://tutorials.jenkov.com/java-concurrency/concurrency-vs-parallelism.html

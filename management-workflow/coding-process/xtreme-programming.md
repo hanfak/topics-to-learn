@@ -388,3 +388,4 @@ https://basusourav.wordpress.com/2015/05/18/12-core-practices-of-xp/
 - https://ronjeffries.com/xprog/what-is-extreme-programming/
 - http://www.extremeprogramming.org/rules.html
 - https://www.tutorialspoint.com/extreme_programming/extreme_programming_introduction.htm
+- https://www.altexsoft.com/blog/business/extreme-programming-values-principles-and-practices/

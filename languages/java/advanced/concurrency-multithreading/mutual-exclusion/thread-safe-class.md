@@ -40,9 +40,11 @@
   - If you cannot use one of the above techniques, use this
   - By putting a lock inside a synchronized block, you make sure that only one thread at a time can execute this section.
   - when you use multiple nested synchronize blocks, you risk deadlocks.
+
 - Volatile Fields
   - Normal, nonvolatile fields can be cached in registers or caches. Through the declaration of a variable as volatile, you tell the JVM and the compiler to always return the latest written value
   - You can use volatile fields if the writes do not depend on the current value. Or if you can make sure that only one thread at a time can update the field.
+
 - Atomic updates:
   - A technique in which you call atomic instructions like compare and set provided by the CPU
 - java.util.concurrent.locks.ReentrantLock:

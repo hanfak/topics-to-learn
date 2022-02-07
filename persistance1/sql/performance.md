@@ -1,1 +1,5 @@
 - https://www.youtube.com/watch?v=BuDWWadCqIw
+- indexs
+- performant queries
+  - joins used
+- Schema is optimised

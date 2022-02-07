@@ -38,6 +38,16 @@
 -  https://github.com/donnemartin/system-design-primer#how-to-approach-a-system-design-interview-question
 - https://systeminterview.com/
 
+### Mistakes during this
+
+- https://youtu.be/ySfpftMZnoU
+
+### capacity estimation
+
+- sudo code https://youtu.be/VBw703pjC3E
+- https://dev.to/ievolved/how-i-calculate-capacity-for-systems-design-3477
+- https://www.codementor.io/@robinpalotai/back-of-the-envelope-calculation-for-system-design-interviews-z4ljbsp5l
+-  Latency Numbers Every Programmer Should Know https://gist.github.comM/jboner/2841832
 ## Resume
 
 ## Assess Developers

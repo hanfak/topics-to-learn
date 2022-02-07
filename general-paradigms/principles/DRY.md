@@ -24,7 +24,7 @@
     - people who enjoy implementing things that are easily available (inhouse or in open-source world)
     - Always search for libraries which do what you want
       - but make sure it can do exactly what you need, and if not it can be configured, do spikes
-  - Copy/paste programming
+  - Copy/paste programming - this is a common misconception of DRY addressed by the authors of it
     - Leads to errors
     - Leads to multiple places where changes need to occur
   - “I won’t need it again so let’s just hack it quickly” solutions
@@ -36,6 +36,10 @@
   - the use of design patterns and shared libraries.
   - web services to combat duplication on higher levels of abstraction.
     -  Instead of building the same functionality into each application you develop, it is often a good idea to create a service and reuse it across the company.
+
+## Acid Test
+
+the acid test: when some single facet of the code has to change, do you find yourself making that change in multiple places, and in multiple different formats? Do you have to change code and documentation, or a database schema and a structure that holds it, or…?
 
 ## Types
 
@@ -49,7 +53,7 @@
 - Interdeveloper duplication.
   - Multiple people on a team (or on different teams) duplicate a piece of information
 
-## Pifulls
+## Pitfulls and issues
 
 - A little duplication is often better than a little dependency.
 - Prematurely optimize when the requirements aren't finalized (spoiler: they never are).
@@ -59,3 +63,13 @@
   - sometimes better to copy and paste, and minimal changes, instead of having lots of logic
   - Time to refactor might be too long to remove duplication, and changing other code will require retesting
   - To much dry code can result in complex code, too much abstraction and hard to understand
+- **Removing Duplication Requires Abstractions and Abstractions Breed Complexity**
+  - Such generalized abstractions are notoriously hard to test and understand because they must handle many more use-cases than the original (potentially duplicated) code.
+  - Said another way, abstractions support more behaviors than might actually be needed for the system to function properly.
+  - Thus, the removal of duplication can introduce new behaviors to the system that aren’t required.
+- This was first promoted in Pragmatic Programmer (Thomas)
+  - In the second edition, they realised that it was not the correct message, as people took it too far
+    - people believe that no copy and pasting was allowed
+  - Instead Duplication of business logic should not be repeated, there should be a single source of truth
+  - DRY is about the duplication of knowledge, of intent. It’s about expressing the same thing in two different places, possibly in two totally different ways
+  -

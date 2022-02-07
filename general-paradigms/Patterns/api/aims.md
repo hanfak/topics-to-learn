@@ -1,0 +1,47 @@
+# Aims of API designs
+
+- List of aims for apis, some of these are at odds with each other:
+  - intuitive
+  - understandable
+  - learnable
+  - discoverable
+  - consistent
+    - method arguments
+    - method names - should make sense
+  - self defensive
+  - concise
+  - easy to use
+  - minimal
+  - orthogonal
+  - idiomatic
+  - flexible
+  - evolvable
+  - well documented
+    - The api should not require to the docs to be read first to be able to use it
+    - Docs should not be what or how it does, the signature and method body will tell you that
+      - this increases the bloatness of code base
+    - Say why
+      - why was the choice made to do it this way if it is not obvious
+    - Examples of what to put in
+      - Give preconditions
+      - postconditions
+      - ranges of input
+      - what happens when illegal values are added etc ie exceptions
+      - Any side effects
+      - Thread safe or not
+    - Without can lead to question marks from users
+  - right level of abstraction
+  - correct use of type system
+  - limited number of entry points
+  - respect principle of least astonishment
+    - Example of breaking this is Optional.of and ofNullable
+
+- If in doubt, leave it out
+  - otherwise
+    - can create 100s hour of support
+    - bloat software
+    - confuse users
+    - become burden
+    - prevent future improvements
+  - "it's easy to build" is not a good reason to add it
+  - Have to understand that it impacts and works with other features, and is used by others
