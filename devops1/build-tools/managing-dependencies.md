@@ -23,3 +23,10 @@
     - Check issues on github
   - If cannot, make sure application can replace library easily
   - This applies to code in production
+- Always fix dependencies
+  - And have schedule to update
+  - Have a way of monitoring when an update is needed due to a vulnerabilities
+
+## Links
+
+- https://pointersgonewild.com/2022/02/11/code-that-doesnt-rot/

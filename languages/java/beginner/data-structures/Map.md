@@ -245,3 +245,5 @@ public String get(String key) {
 - https://beginnersbook.com/2013/12/hashmap-in-java-with-example/
 - https://www.javacodegeeks.com/2017/11/java-hashmap-detail-explanation.html
 - https://dzone.com/articles/how-to-use-java-hashmap-effectively
+- https://www.youtube.com/watch?v=NrMaQL_4Npo
+- https://youtu.be/bnWprR-QG9w

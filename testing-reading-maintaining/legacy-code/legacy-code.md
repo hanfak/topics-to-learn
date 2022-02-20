@@ -2,6 +2,8 @@
 
 Many different definitions (See links), but mainly about code that is made sometime ago by developers who are no longer around, using technologies/libraries which are outdated or not supported, and probably written with bad structure, poor or little testing, poorly engineered. But they are still used by the business and need to be maintained, thus making it hard to do so.
 
+ Legacy Code is valuable code you’re afraid to change. https://understandlegacycode.com/blog/what-is-legacy-code-is-it-code-without-tests/#code-youre-not-comfortable-changing
+
 ## General ideas on how to handle untested code
 
 If you are replacing or refactoring it, ideally a ‘golden master’ test.
@@ -80,8 +82,6 @@ Or just leave it alone. Eventually the whole thing will get replaced or abandone
   - Noisy output
     - Will need to filter it out
 
-
-
 ### Links
 
 - https://www.codurance.com/publications/2012/11/11/testing-legacy-code-with-golden-master
@@ -96,8 +96,10 @@ Or just leave it alone. Eventually the whole thing will get replaced or abandone
 - Good if SUT is simple and business rules are known
 - Being with a new class, and build the implementation using TDD, then replace the old class with it (wire it in) as long as it does exactly what the old class did
 - Can use a golden master as a check when code has been implemented
+
 ## Links
 
+- https://understandlegacycode.com/
 - https://en.wikipedia.org/wiki/Legacy_code
 - https://www.techopedia.com/definition/25326/legacy-code
 - https://www.quora.com/What-is-legacy-code

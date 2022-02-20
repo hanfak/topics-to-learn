@@ -1,5 +1,7 @@
 # Feature Branching Development
 
+- https://www.freecodecamp.org/news/practical-git-and-git-workflows/
+
 ## Typical workflow for short lived feature branches
 
 Probably not the most opitmal

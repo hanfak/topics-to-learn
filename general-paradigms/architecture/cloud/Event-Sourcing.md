@@ -1,4 +1,4 @@
-# Event Sourcing
+# Event Sourcing & CQRS
 
 - Problem
   - When interacting with data, most applications store the current state of the data.
@@ -21,3 +21,12 @@
     - All the financial events, money-in and money-out are now available in these ledgers (..the audit trail)
     - An accountant can use this information to create reports for any custom time-period
     - Going through the transactions (replay), the accountant could potentially recreate the same report multiple times and still get the same result for that specified period
+
+## Links
+
+- https://youtu.be/i2eVTk2Fb40
+- https://codurance.com/2015/07/18/cqrs-and-event-sourcing-for-dummies/
+- https://martinfowler.com/eaaDev/EventSourcing.html
+- https://axoniq.io/resources/concepts
+- https://completedeveloperpodcast.com/episode-134/
+- Event Sourcing - You are doing it wrong – David Schmitz https://www.youtube.com/watch?v=UevquaeEJ8c

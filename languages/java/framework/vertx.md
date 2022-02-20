@@ -5,3 +5,8 @@
 - http://tutorials.jenkov.com/vert.x/index.html
 - vertx in action author https://www.youtube.com/watch?v=o_P-KdP92Fw
 - From Zero to Back End in 45 Minutes with Eclipse Vert.x https://www.youtube.com/watch?v=3_CRKfs4Zzo
+
+## With coroutines
+
+- https://medium.com/nerd-for-tech/building-a-vertx-application-with-kotlin-coroutines-6c7dbb7ad893
+- https://dev.to/frosnerd/vertx-kotlin-coroutines-327i

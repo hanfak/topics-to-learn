@@ -22,6 +22,7 @@
   - You can then scale each application separately depending on its needs
     - ie some parts may need more processors, others need more memory
   - Provide hardware to meet the requirements of each part of the system easily, with out using excess
+	-  is to reduce the assumptions two parties (components, applications, services, programs, users) make about each other when they exchange information. The more assumptions two parties make about each other and the common protocol, the more efficient the communication can be, but the less tolerant the solution is of interruptions or changes because the parties are tightly coupled to each other
 
 ## Promoting Loose Coupling
 
@@ -69,3 +70,17 @@
 - SL4J logging framework for java
   - A good example of loose coupling is the design of Unix command-line programs and their use of pipes
   -
+
+## Tight Coupling
+
+- Example
+	-  a local method invocation.
+	- Invoking a local method inside an application is based on a lot of assumptions between the called and the calling routine.
+	- Both methods have to run in the same process (e.g. a virtual machine) and be written in the same language (or at least use a common intermediate language or byte code).
+	- The calling method has to pass the exact number of expected parameters, each using the correct type.
+	- The call is immediate, i.e. the called method starts processing immediately after the calling method makes the call.
+	- Meanwhile, the calling method will only resume processing when the called method completes (meaning the invocation is synchronous).
+	- Processing will automatically resume in the calling method with the next statement after the method call.
+	- The communication between the methods is immediate and instantaneous, so neither the caller nor the called method have to worry about security in the form of eavesdropping 3rd parties.
+	- All these assumptions make it very easy to write well structured applications that break functionality into individual methods to be called by other methods.
+	-  A large number of small method allow for flexibility and reuse.

@@ -41,6 +41,10 @@
 - When your internal services requires duplex streaming with high load of data.
 - When you don’t feel to write client libraries
 -
+
+## Protocol buffers
+
+- http://itshark.xyz/posts/2018/7/11/Protocol_Buffers_basic_stuff_you_need_to_know
 ## Links
 
 - https://medium.com/@EdgePress/is-grpc-the-future-of-client-server-communication-b112acf9f365
@@ -52,3 +56,5 @@
 - https://www.baeldung.com/grpc-introduction
 - https://medium.com/better-programming/understanding-grpc-60737b23e79e
 - https://www.freecodecamp.org/news/what-is-grpc-protocol-buffers-stream-architecture/
+- Vladimir Dejanović - REST API vs gRPC, Which One Should You Use in Breaking a Monolith @ DevConf https://youtu.be/sSZ1oXf2ssk
+  - https://github.com/vladimir-dejanovic/grpc-bank-example

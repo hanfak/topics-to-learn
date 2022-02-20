@@ -1,26 +1,37 @@
 # Why use java
 
 - widely used
+  -  **But** starting to diminish for new systems
 - older systems written in java
+  -  **But** this can be a nightmare if using older versions of java
 - backwards compatibility, stable platform
-- support from owner and community
-- Mature libraries and frameworks, and lots of them
-- write once run anywhere
+  - **But** libraries may not support new versions of java
+- support from big company owner (oracle) and community
+  -  **But** instead of being free, can lead to charges
+- Mature libraries and frameworks, and lots of them with good documentation
+  -  **But** this has led to bloat
+- write once run anywhere,  platform independent
+  -  **But** we have containers, so this is not much of an issue
 - efficient memory management, Automatic Garbage Collection
+  -  **But** Not as good a performance as non managed memory like C and Rust
 - Easy to hire, comp sci grads learn java
+  -  **But** comp sci are using python and javascript now, same as bootcamps
 - Highly scalable, good support for concurrency, multithreading
+  - Good for monoliths,  **But** for distributed systems not so much of an issue
 - Good testing libraries
 - Good support for integration (servlets/http, message brokers)
-- Good integration with databases
-- platform independent
+- Good integration with databases - jdbc
 - No licensing costs (if on non oracle)
+  - **But** relying on opensource community, which can be unreliable and stop
 - statically typed, compiler spots problems first
-- Great IDEs
-- Good build tools (maven)
+  - prevents mistakes **but** can be verbose
+- Great IDEs - helps improve developer experience, improve efficiency and design
+  - **But** can take up a lot of computer resources, and problems with IDE can occur that need to be dealt with instead of code
+- Good build and dependency tools (maven, gradle)
 - JVM, tooling (jconsole, Java Flight Recorder and Mission Control), jmx for dynamic management of app
 - jvm separate from language, can have multiple languages running on it
 - Increased number of languages on jvm, and some of these can use java libraries and frameworks, as well as tooling
-- Easy to learn
+- Easy to learn, lots of docs, tutorials
 - Better secruity
 - Standards - https://docs.oracle.com/javase/specs/
 - high performance, internal jvm performance always improving

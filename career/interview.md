@@ -8,6 +8,7 @@
 - https://blog.usejournal.com/most-frequently-java-interview-question-127e923f70d9
 - https://medium.com/free-code-camp/a-software-engineering-survival-guide-fe3eafb47166
 - https://www.pathrise.com/guides/93-software-engineer-interview-questions-to-nail-your-onsite/
+- https://www.freecodecamp.org/news/interviewing-prep-tips-and-tricks/
 
 ## behaviour
 
@@ -25,6 +26,8 @@
 
 ## coding challenges
 
+
+- https://jacobian.org/series/work-sample-tests/
 - https://medium.com/hackernoon/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0
 - hackerrank.com/dashboard
 - https://dev.to/seattledataguy/the-interview-study-guide-for-software-engineers-764
@@ -37,6 +40,7 @@
 - https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/
 -  https://github.com/donnemartin/system-design-primer#how-to-approach-a-system-design-interview-question
 - https://systeminterview.com/
+- https://www.quora.com/What-is-the-best-way-to-prepare-for-a-System-Design-interview-for-Amazon
 
 ### Mistakes during this
 

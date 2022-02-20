@@ -14,3 +14,4 @@ For people to connect to machines and code that communicate with each other, the
 ## links
 
 - https://medium.com/javascript-in-plain-english/what-every-new-software-developer-needs-to-know-about-the-internet-da5d5c7ed84c
+- course https://youtu.be/QKfk7YFILws
