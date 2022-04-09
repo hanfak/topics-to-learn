@@ -1,34 +1,37 @@
+# Performance Engineer Progression
+
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [Performance Engineer Progression](#performance-engineer-progression)
 - [-- Engineering --](#-engineering-)
 - [Primary Programming Language (OO or FP)](#primary-programming-language-oo-or-fp)
-- [Secondary Programming Language (OO or FP)](#secondary-programming-language-oo-or-fp)
 - [Testing](#testing)
 - [Good Coding Practice (& Design Patterns/SOLID principles)](#good-coding-practice-design-patternssolid-principles)
 - [Technical Decision Making](#technical-decision-making)
 - [Technology Strategy](#technology-strategy)
-- [Software Design](#software-design)
-- [Debugging of Production Issues](#debugging-of-production-issues)
+- [Test Framework Design](#test-framework-design)
+- [Production Issue Investigation and Testing](#production-issue-investigation-and-testing)
 - [Performance Optimisation & Scalability](#performance-optimisation-scalability)
-- [Continuous Deployment](#continuous-deployment)
+- [Performance Testing in Continuous Deployment](#performance-testing-in-continuous-deployment)
+- [Automation](#automation)
 - [Security](#security)
 - [Resilience & Reliability](#resilience-reliability)
 - [Monitoring & Analytics](#monitoring-analytics)
-- [Automation](#automation)
-- [-- Customer --](#-customer-)
+- [-- Customer--](#-customer-)
 - [Customer Focus and Value](#customer-focus-and-value)
 - [Business Value](#business-value)
 - [Strategy](#strategy)
-- [-- people culture--](#-people-culture-)
+- [--People--](#-people-)
 - [Contribute to Agile Practices](#contribute-to-agile-practices)
 - [Domain Knowledge](#domain-knowledge)
 - [Technical Leadership](#technical-leadership)
 - [Growing the Team](#growing-the-team)
 - [Communication](#communication)
+- [Identifying Opportunities for Improvement](#identifying-opportunities-for-improvement)
+- [Community](#community)
 - [Delivery](#delivery)
 - [Professional Accreditation](#professional-accreditation)
-- [Industry Insight](#industry-insight)
-- [-- Management --](#-management-)
+- [--Management--](#-management-)
 - [Budgets and Control](#budgets-and-control)
 - [Business Case Creation](#business-case-creation)
 - [Planning, Scheduling and Time Management](#planning-scheduling-and-time-management)
@@ -36,39 +39,13 @@
 - [Prioritisation & Resource Management](#prioritisation-resource-management)
 - [Stakeholder Management](#stakeholder-management)
 - [Risk Management](#risk-management)
-- [-- analysis --](#-analysis-)
+- [-- Analysis --](#-analysis-)
 - [Requirements Gathering](#requirements-gathering)
 
 <!-- /TOC -->
-
 # -- Engineering --
+
 # Primary Programming Language (OO or FP)
-Overall knowledge of the language; its style, ecosystem, strengths and weaknesses.
-
-Level	Attainment Critera (non-exhaustive)
-0 - None
-1 - Understand
-I know the basics of what this is and why it's important but have not had much practical experience.
-2 - Follow
-Be able to read and understand code written by yourself and others, with the ability to and make simple changes
-Understand the ecosystem (package managers, task runners, development tools etc)
-Have some familiarity with debugging tools
-3 - Practice
-Able to work independently, maybe working on own project
-Refactor existing code to improve its design
-Actively research for new ideas and technologies
-Understand the different paradigms of the language (e.g OOP, FP)
-4 - Drive/Lead
-Ability to focus on Non Functional Aspects (e.g performance , resiliency etc.)
-Mentor others learning the language
-Understand the relative strengths and weaknesses of the language and which design patterns do/do not work well.
-Write idiomatic and clean code
-Good knowledge of 3rd party tools - what to use and why. Evaluate “up and coming” frameworks and tools for fit.
-5 - Evangelise
-I Influence and evangelise both within the company and publicly.
-I Identify the next generation of experts and foster them.
-
-# Secondary Programming Language (OO or FP)
 Overall knowledge of the language; its style, ecosystem, strengths and weaknesses.
 
 Level	Attainment Critera (non-exhaustive)
@@ -200,58 +177,51 @@ Contribute to the vision for the wider company’s technology strategy
 Understand implications of technical strategy (cost/funding, timescales, problems, etc.)
 5 - Evangelise
 
-# Software Design
-Designing systems that conform to the relevant architecture, evolving that architecture to support changing business needs.
+# Test Framework Design
+Designing test framework that makes scripts, blend preparation, test data management and results analysis simple and quick, evolving to support changing business needs.
 
 Level	Attainment Critera (non-exhaustive)
 0 - None
 1 - Understand
 [Code] Understands how the code is organised and can find their way around it
-[Systems] Knowledge of the components that form the system being developed, and what is their purpose
 2 - Follow
 [Code] Influences how the code is structured
-[Systems] Able to make changes to the current architecture and introduce new components that fit within it
-[Code/Systems] Understands when the architecture needs to change to meet requirements
+[Test Tool] Able to make changes to the current architecture and introduce new scripts/blends
+[Code/Test Tool] Understands when the architecture needs to change to meet requirements
 3 - Practice
-[Code] Use previous experience to drive the structure of a new component
-[Systems] Able to design interactions between components in the local estate, considering both business and technical requirements
-[Company] Take local decisions that fit within the broader company architecture, and agree interfaces with the clients
-Able to come up with a phased approach for large-scale changes, and prioritise them based on value
+[Code] Use previous experience to drive the structure of a new component in the framework
+[Test Tool] Able to design the test code components, considering both business and technical requirements
+[Company] Take local decisions that fit within the broader company
 4 - Drive/Lead
-[Company] Drive changes that affect the broader x architecture
+[Company] Drive changes that affect the broader x
 Understand when sacrifices need to be made to achieve future goals
 Able to construct a longer term plan to move to a better architecture in small pieces of work
 5 - Evangelise
 I Influence and evangelise both within the company and publicly.
 I Identify the next generation of experts and foster them.
 
-
-# Debugging of Production Issues
-Investigating and getting down to the root cause of issues using monitoring, logging, application insight and other tools.
+# Production Issue Investigation and Testing
+Investigating and getting down to the root cause of issues using monitoring, logging and other tools.
 
 Level	Attainment Critera (non-exhaustive)
 0 - None
 1 - Understand
-I know the basics of what this is and why it's important but have not had much practical experience.
+Understand the point people for production issues and engagement methods
 2 - Follow
-Know where to find the tools for production monitoring and debugging.
-Know where the support systems are.
-Understand the incident management process.
-Understand the deployment process.
-Know how and when a hotfix should be implemented.
+Know where to find the tools for production monitoring and load profile.
+Know how to use the production load information to define blend tests
 Assist debugging a production issue.
 3 - Practice
-Identify and understand the difference between HPI, MPI and P3 incidents, to appropriately classify and fix the issue.
 Understand the architecture of production systems.
 Understand how a request from a customer gets to your application and the infrastructure it passes through.
-Study analytics data debug and test solution.
-Ability to stop the same issue from happening, identify a root cause.
+Study analytics data and test solution.
+Ability to stop the same issue from happening, identify a root cause from performance testing perspective.
 4 - Drive/Lead
-Improve the visibility of monitoring, reporting and analytics of production applications and infrastructure.
+Work with devs and devops to improve the visibility of monitoring, reporting and analytics of applications and infrastructure.
 Ensuring the correct data is captured to be able to adequately debug issues and propose improvements.
 Identify potential design and infrastructure flaws and drive the fix.
 Investigate and identify new tools to log and monitor issues that aid in debugging.
-Encourage the team to take responsibility for identify and fixing issues.
+Encourage the team to take responsibility for identify issues.
 5 - Evangelise
 I Influence and evangelise both within the company and publicly.
 I Identify the next generation of experts and foster them.
@@ -281,32 +251,53 @@ Implement scaling strategies to cope with known and unknown demand.
 I Influence and evangelise both within the company and publicly.
 I Identify the next generation of experts and foster them.
 
-# Continuous Deployment
-The streamlining and automation of integration, build and deployment; both rolling forward and reverting changes.
+# Performance Testing in Continuous Deployment
+The streamlining and automation of performance testing as part of continuous deployment; both rolling forward and reverting changes.
 
 Level	Attainment Critera (non-exhaustive)
 0 - None
 1 - Understand
-I know the basics of what this is and why it's important but have not had much practical experience.
+Understand the steps, roles and timings of a deployment flow.
 2 - Follow
-Know how to deliver artifacts to production.
-Understand different deployment methods such as blue/green and canary.
+Know how to implement performance testing as part of continuous deployment.
 3 - Practice
-Setup CD workflows.
-Build once and deploy often.
 Automation is a 1st class citizen.
-Improve CD flows, ensure customer impact is always minimal in the event of an error.
-Understand how to validate a deployment.
+Implement and maintain the test framework and blends for continuous deployment
+Understand how to validate performance test results in a deployment.
 4 - Drive/Lead
-Define a CD approach.
-Improve the visibility and monitoring of CD flows and deployments.
+Define a CD approach for performance testing
+Improve the visibility and monitoring of performance tests during CD flows and deployments.
 Research improvements to CD flows.
 Ensure test coverage is excellent to reduce bugs getting to production.
-Automation is a 1st class concern for deployment and rollbacks.
-Use deployment validation to implement rollback.
+utomation is a 1st class concern for deployment and rollbacks.
 5 - Evangelise
 I Influence and evangelise both within the company and publicly.
 I Identify the next generation of experts and foster them.
+
+# Automation
+Overall knowledge of Automation
+
+Level	Attainment Critera (non-exhaustive)
+0 - None
+1 - Understand
+Appreciates that tasks for systems development can be automated.
+2 - Follow
+Understands the basics of automation and where it is employed in current development environments.
+3 - Practice
+Be able to read and understand code written by yourself and others, with the ability to and make simple changes
+Understand the ecosystem (package managers, task runners, development tools etc)
+Have some familiarity with debugging tools
+4 - Drive/Lead
+Able to work independently, maybe working on own project
+Refactor existing code to improve its design
+Actively research for new ideas and technologies
+Understand the different paradigms of the language (e.g OOP, FP)
+5 - Evangelise
+Ability to focus on Non Functional Aspects (e.g performance , resiliency etc.)
+Mentor others learning the language
+Understand the relative strengths and weaknesses of the language and which design patterns do/do not work well.
+Write idiomatic and clean code
+Good knowledge of 3rd party tools - what to use and why. Evaluate “up and coming” frameworks and tools for fit.
 
 # Security
 The build and maintenance of systems supporting our security requirements.
@@ -383,33 +374,7 @@ Understand how to reduce noise in monitoring
 I Influence and evangelise both within the company and publicly.
 I Identify the next generation of experts and foster them.
 
-
-# Automation
-Overall knowledge of Automation
-
-Level	Attainment Critera (non-exhaustive)
-0 - None
-1 - Understand
-Appreciates that tasks for systems development can be automated.
-2 - Follow
-Understands the basics of automation and where it is employed in current development environments.
-3 - Practice
-Be able to read and understand code written by yourself and others, with the ability to and make simple changes
-Understand the ecosystem (package managers, task runners, development tools etc)
-Have some familiarity with debugging tools
-4 - Drive/Lead
-Able to work independently, maybe working on own project
-Refactor existing code to improve its design
-Actively research for new ideas and technologies
-Understand the different paradigms of the language (e.g OOP, FP)
-5 - Evangelise
-Ability to focus on Non Functional Aspects (e.g performance , resiliency etc.)
-Mentor others learning the language
-Understand the relative strengths and weaknesses of the language and which design patterns do/do not work well.
-Write idiomatic and clean code
-Good knowledge of 3rd party tools - what to use and why. Evaluate “up and coming” frameworks and tools for fit.
-
-# -- Customer --
+# -- Customer--
 
 # Customer Focus and Value
 As a x employee who understands customer focus and value, I will...
@@ -437,7 +402,7 @@ Partner with product stakeholders to define KPIs
 5 - Evangelise
 Connect strategic product goals to technology delivery
 Influence product strategy through innovative use of technology
-Identify and share patterns
+Identify and share patterns from wider industry
 
 # Business Value
 As a developer who...business value, I will...
@@ -480,7 +445,7 @@ Connect strategic business goals to technology strategy
 5 - Evangelise
 Influence business strategy through innovative use of technology
 
-# -- people culture--
+# --People--
 
 # Contribute to Agile Practices
 Helping to maintain and grow the agility of x as both a change-delivery organisation and as a business.
@@ -595,7 +560,59 @@ Writes blog posts
 5 - Evangelise
 Present to Senior Leadership
 External blog posts
-Communicate complex ideas/problems into simple, easily understandable
+Communicate complex ideas/problems into simple, easily understandable ones
+
+# Identifying Opportunities for Improvement
+Identifying what is required for both yourself and others around you to grow as professionals.
+
+Level	Attainment Critera (non-exhaustive)
+0 - None
+1 - Understand
+Understand the benefits of continually looking for ways to improve activities, processes and best practices.
+2 - Follow
+Can identify weaknesses in own skills and create a plan to improve (knows when to seek help)
+When your team has identified an opportunity for improvement, implement that new practise into your activities and provide feed back on its effectiveness.
+3 - Practice
+Make suggestions of improvements
+Identifies videos and conferences to share with team
+Can present a case to the business to improve a technical limitation on a product
+Review your own and your team’s activities for opportunities for improvement, define the potential benefits and recommend to your team or line manager.
+Measure the effectiveness of the changes implemented.
+After implementation and measurement, share these improvements and communicate the benefits to other teams in your department.
+4 - Drive/Lead
+Provide guidance to others in ways to improve technically
+Follows through with suggestions for improvements
+Know the bigger picture so can easily identify areas which can be improved
+Orchestrates the continuous improvements of ways of working to the wider audience
+Can identify tribes weaknesses and create a plan to improve
+Review your team’s activities with others within your department for opportunities for improvement, define the potential benefits, identify and work with allies to drive through the changes.
+Coordinate the measurement of the effectiveness of the changes implemented.
+Engage other departments to understand their processes and best practices and assess the potential benefit of bringing those elements into your own department.
+5 - Evangelise
+Review how your department works with other departments, discuss with stakeholders from those departments and your own stakeholders to identify and prioritise improvements, create a plan of action and deliver.
+Develop the measurement of the effectiveness of the improvements
+
+# Community
+As a developer who...Software Engineering communities, I will...
+
+Level	Attainment Critera (non-exhaustive)
+0 - None
+1 - Understand
+Be aware of x’s communities
+Understand the benefits of communities
+Be aware of how to join and get involved in a community
+2 - Follow
+Attend community events
+3 - Practice
+Contribute to community discussions and events
+Contribute to running a small community or local version of a community
+4 - Drive/Lead
+Help lead a community
+Sets goals and objectives for a community
+Leads community discussions
+5 - Evangelise
+Create new communities
+Drives community attendance
 
 # Delivery
 Level	Attainment Critera (non-exhaustive)
@@ -633,21 +650,7 @@ Apply and appropriately amend best practice in own domain area for benefit of te
 Apply and appropriately amend best practice in own domain area for benefit of team and wider.
 Gain professional accreditation appropriate to role.
 
-# Industry Insight
-Level	Attainment Critera (non-exhaustive)
-0 - None
-1 - Understand
-Know who competitors are
-2 - Follow
-Understand the USP of the business
-3 - Practice
-Follow the USP when making decisions
-4 - Drive/Lead
-Utilise knowledge of wider industry to influence day-to-day tasks
-5 - Evangelise
-Drive and lead changes that will increase the ability of the company to deliver against its USP.
-
-# -- Management --
+# --Management--
 
 # Budgets and Control
 Ensuring a piece of work is delivered as per the estimated funding.
@@ -667,7 +670,6 @@ Control a budget.
 5 - Evangelise
 Hold meaningful budgetary meetings and drive appropriate outcomes
 Report appropriate financials
-
 
 # Business Case Creation
 Building formal business cases for the development of new work.
@@ -779,7 +781,7 @@ Drive resolution of risks and issues.
 Raise the profile of key risks and issues
 Seek appropriate approval on significant risks and issues
 
-# -- analysis --
+# -- Analysis --
 
 # Requirements Gathering
 Level	Attainment Critera (non-exhaustive)
@@ -803,5 +805,3 @@ Understand how to work with 3rd parties to ensure products we consume are access
 Drive requirements sessions with stakeholders.
 Be able to run greenfield requirements sessions as well as unpicking technically complex subjects.
 Drive focus on value through eliciting effective requirements and context
-Accessibility Resources
-x Group Digital Accessibility

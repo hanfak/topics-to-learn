@@ -19,3 +19,5 @@
 - GraphQL Crash Course - Hussein Nasser https://youtu.be/fVmQCnQ_EPs
   - https://github.com/vladimir-dejanovic/dive-into-graphql-in-java
   - https://github.com/vladimir-dejanovic/graphql-mock-server to mock impl of schema that has been defined
+- https://youtu.be/mdhanLJrSxc Moving beyond REST - GraphQL and Java – Pratik Patel
+- https://youtu.be/ed8SzALpx1Q GraphQL Full Course - Novice to Expert freecodecamp

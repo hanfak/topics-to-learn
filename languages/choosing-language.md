@@ -115,3 +115,7 @@ links
 
 - https://www.analyticsindiamag.com/why-has-python-failed-to-penetrate-the-enterprise-development-sector/
 - https://www.sayonetech.com/blog/can-your-enterprise-choose-python-software-development/
+
+## Ideal languages
+
+- https://www.youtube.com/watch?v=MPyUvtPFDSg The Ideal Programming Language • Richard Feldman & Erik Doernenburg • GOTO 2021

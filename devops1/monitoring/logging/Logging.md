@@ -1,5 +1,15 @@
 # logging
 
+
+A concept that tracks occurrences of events can be composed with other concepts
+
+The tracking may be for:
+- diagnosis (determining why a failure happened by keeping and later analyzing the sequence of events that led up to it); 
+- performance analysis (checking the responsiveness of a service); analytics (collecting data on the users of a service and their usage patterns);
+- intrusion
+detection (by searching for patterns of requests that might suggest that an attack is underway); or
+- auditing (recording which hospital employees access health records, for example)
+
 - Types
   - Access
     - Who and when accessed the app (ie ip, user id) and what parts of the apps (ie uri paths)
@@ -40,6 +50,9 @@
   -  monitoring, troubleshooting and debugging.
 - Secruity
 - Avoid using for performance
+
+
+
 
 ## Links
 

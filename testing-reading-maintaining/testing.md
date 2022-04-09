@@ -41,6 +41,10 @@ to show their absence!
 ## Why write tests
 
 - Give us confidence in system
+- Give us confidence to change code without breaking it
+- the tests are the spec
+- Know when we are done
+- faster feedback
 - Prevent bugs, spot bugs early, reduce costs
 - Document behaviour (business flows), show examples of how system works
 - Enforce coding behaviour (architecture, styles)
@@ -56,6 +60,7 @@ to show their absence!
 - Auto generated code (ie from IDE) does not fail when the class (or module) is updated
 	- ie equals is auto generated for a class, but is class is updated and dev forgot to update equals
 - Learning a new library
+	- learning tests
 - protecting against bugs found in library use, if compiler does not do it first
 
 
@@ -65,6 +70,27 @@ to show their absence!
 	- Dont need to have the "test" in name as it is in the annotation
 - tell the reader what behavior, property, capability, etc. is under test.
 - Identify the cases of behavior, and test only one case per test case.
+- Goals
+	- sensitive - fail for any bug
+		- high coverage
+		- correct tests
+	- specific - precise failures
+		- expressive
+		- isolate & robust
+		- low overlap
+	- fast
+	- few
+		- small
+		- dry
+- Priorities
+	- code that you fear, hard to understand
+	- distant corner in the logic
+	- a bug, before fixing it
+	- for/if/while
+	- exception thrown
+	- method that delegates
+	- trivial code ie getters, setters
+	- legacy code, with 0 bugs, 0 changes
 - the purpose of your test
 	-  test that it works
 	-  and what it means to work
@@ -199,6 +225,11 @@ to show their absence!
   - Makes code more brittle, more places to change code
 - If test does something that your consumer of that code doesnt then it's testing implementation details
 - If refactor breaks your tests, then it's testing implementation details
+
+## Testing Quadrant
+
+- https://www.onpathtesting.com/blog/what-are-agile-testing-quadrants
+- https://agiletester.ca/applying-the-agile-testing-quadrants-to-continuous-delivery-and-devops-culture-part-1-working-towards-continuous-delivery/
 
 ## Links
 

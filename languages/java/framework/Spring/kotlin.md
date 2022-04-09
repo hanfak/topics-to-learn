@@ -1,0 +1,6 @@
+- https://github.com/joshlong/bootiful-kotlin
+  - https://www.youtube.com/watch?v=btNIey_2Zdw
+  - https://spring.io/guides/tutorials/spring-boot-kotlin/
+  - https://github.com/sdeleuze/spring-boot-kotlin-demo
+  - https://github.com/sdeleuze/spring-kotlin-fullstack
+  - https://github.com/sdeleuze/spring-kotlin-functional

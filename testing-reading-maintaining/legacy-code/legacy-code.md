@@ -18,7 +18,7 @@ You can’t always get the hook. Get as much new code under unit test as you can
 
 The key idea is to work towards a test pyramid; many fast, isolated, repeatable unit tests. Fewer integration/contract tests; fewer functional tests. Refactor and redesign the code to support that as you work with it.
 
-Or write a strangler application. Here, you build slices of legacy functionality in a new, best-practices application. You route requests for that through the new app. Route everything else to legacy.
+Or write a strangler application. Here, you build slices of legacy functionality in a new, best-practices application. You route requests for that through the new app. Route everything else to legacy. (https://www.youtube.com/watch?v=zZ95_5y_iPk "Refactoring Large Objects with the Strangler Fig Pattern" by Adrianna Chang (@adriannakchang))
 
 Over time, the legacy is ‘strangled’ like Ivy growing round a legacy tree. The legacy app can then be discarded. Remove the router and you have a shiny new replacement app.
 

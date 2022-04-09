@@ -8,6 +8,7 @@
 - https://www.planetgeek.ch/wp-content/uploads/2013/06/Clean-Code-V2.2.pdf
 - https://monami555.github.io/2016/01/13/clean-code-robert-c-martin-notes.html#12-concurrency
 - https://www.youtube.com/watch?v=QiaDztJZO5Q
+- https://youtu.be/6va1hAyh-M8 DevTernity 2021: Victor Rentea – Clean Code, Two Decades Later
 
 # Types
 

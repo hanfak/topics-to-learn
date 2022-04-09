@@ -20,3 +20,4 @@
 - https://www.youtube.com/watch?v=xdQ9sgpkrX8
 - https://www.youtube.com/watch?v=NdvWI6RH1eo
 - How TCP Works - The Handshake: https://www.youtube.com/watch?v=HCHFX5O1IaQ
+- How TCP really works // Three-way handshake // TCP/IP Deep Dive  https://youtu.be/rmFX1V49K8U

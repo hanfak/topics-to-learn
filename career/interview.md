@@ -16,6 +16,7 @@
 
 ## questions to ask
 - , are there any concerns you have about me working for your company? Because, I would prefer it that when I leave the room, we’ve addressed every issue.
+- https://youtu.be/2Afk9KVEgpE 20 Questions To Ask Your Next Employer Farley
 
 ## q
 

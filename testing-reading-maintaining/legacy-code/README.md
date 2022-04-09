@@ -8,7 +8,9 @@
   - and probably written with bad structure,
   - poor or little testing,
   - poorly engineered
-  - not kept upto date.
+  - not kept upto date
+  - Code that predates current team
+  - that has not been touched in living memory
   - But they are still used by the business and need to be maintained, thus making it hard to do so.
 
 - Legacy Code is valuable code you’re afraid to change.
@@ -33,3 +35,19 @@
         - At the time it might have been good, but it rot sets in
 
 https://understandlegacycode.com/all-articles/
+
+## Reasons for dealing with legacy code
+
+- It's legacy cause it works and does not need to changed (Rarely does), but there are cases when it does
+- It needs to change
+  - internal reasons
+    - New features
+    - new bugs
+  - external reasons
+    - ports to new hardware or operating systems
+    - new versions of dependencies, language
+    - security, vulnerabilities
+    - new laws
+    - new versions of api
+    - api being decomissioned
+    -
