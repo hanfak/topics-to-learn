@@ -10,6 +10,10 @@
 - https://www.pathrise.com/guides/93-software-engineer-interview-questions-to-nail-your-onsite/
 - https://www.freecodecamp.org/news/interviewing-prep-tips-and-tricks/
 
+## Java Questions
+
+- https://www.javatpoint.com/corejava-interview-questions
+
 ## behaviour
 
 - https://www.pathrise.com/guides/45-behavioral-interview-questions/
@@ -17,6 +21,7 @@
 ## questions to ask
 - , are there any concerns you have about me working for your company? Because, I would prefer it that when I leave the room, we’ve addressed every issue.
 - https://youtu.be/2Afk9KVEgpE 20 Questions To Ask Your Next Employer Farley
+- https://jvns.ca/blog/2013/12/30/questions-im-asking-in-interviews/
 
 ## q
 

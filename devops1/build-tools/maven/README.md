@@ -1,5 +1,34 @@
 # Project Management - maven
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Project Management - maven](#project-management-maven)
+	- [Objectives of maven](#objectives-of-maven)
+	- [Tutorials](#tutorials)
+	- [Using IDE to create maven Project](#using-ide-to-create-maven-project)
+		- [Other way - download maven](#other-way-download-maven)
+	- [pom.xml](#pomxml)
+		- [Maven coordinate](#maven-coordinate)
+	- [Archetype](#archetype)
+	- [Snapshot](#snapshot)
+	- [Maven lifecycles](#maven-lifecycles)
+	- [Dependencies](#dependencies)
+	- [Plugins](#plugins)
+	- [Profiles](#profiles)
+	- [Resources](#resources)
+	- [Repositories](#repositories)
+	- [Plugin repository](#plugin-repository)
+	- [Builds](#builds)
+	- [Excutions](#excutions)
+	- [Modules](#modules)
+	- [Properties](#properties)
+	- [Parent POMs](#parent-poms)
+	- [Best practises](#best-practises)
+	- [Links](#links)
+	- [Used plugins](#used-plugins)
+
+<!-- /TOC -->
+
 Using maven to manage our dependencies, excute commands (ie docker image creation and starting), compile and zip up, etc.
 
 https://maven.apache.org/
@@ -16,6 +45,11 @@ Alternatives are Gradle(new) and Ant(old)
 - Run plugins to acheive goals like unit tests, acceptance tests, jar -ing project with dependencies, create and run docker images etc etc
 
 Maven is just a collection of plugins that are configured in the pom.xml.
+
+## Tutorials
+
+- https://youtu.be/Xatr8AZLOsE Maven Tutorial - Nice & Easy
+
 
 ## Using IDE to create maven Project
 

@@ -1,6 +1,7 @@
 # Recursion
 
 - https://www.freecodecamp.org/news/how-recursion-works-explained-with-flowcharts-and-a-video-de61f40cb7f9/
+- https://betterprogramming.pub/when-to-loop-when-to-recurse-b786ad8977de#:~:text=When%20should%20I%20use%20recursion,searching%20through%20a%20file%20system.
 
 - To avoid mutating stating, using recursion is method of doing so
 - functional programming, and languages leads you to use this way of coding instead of using  loops
@@ -12,7 +13,14 @@
 
 - A program that jumps to a subroutine pushes the return address on the stack, to be popped when the subroutine completes. If that subroutine calls another subroutine, then it pushes its own return address on top. The stack holds all the return addresses in the correct order so that the program is always able to return control back to where it came from
 - Obviously, the greater the depth of nesting in your subroutines, the more stack space is required
+- All recursion can be transformed to loops
+  - But some problems are easier to solve, less complex using recursion
 
+## When to use
+
+Recursion is made for solving problems that can be broken down into smaller, repetitive problems. It is especially good for working on things that have many possible branches and are too complex for an iterative approach.
+
+- https://stackoverflow.com/questions/3021/what-is-recursion-and-when-should-i-use-it
 
 ## Avoiding blowing stack
 
@@ -28,7 +36,7 @@
     - if the call to C is in tail position then B may as well go to C directly, leaving its own return address on top of the call stack, because C will pop that address and return directly to A. This is what we wanted to happen anyway. This is called tail call elimination and the benefit is twofold: firstly, we’ve avoided one unnecessary jump instruction, and much more importantly, we’ve avoided growing the call stack.
   - If you eliminate tail calls this way in a recursive algorithm, you get a routine that repeatedly jumps to its entry point until the terminating condition is achieved. In machine terms this is no different to a regular loop!
     - But this is programming language specific opitmisation
-    
+
 ## Disadvantages of recursion
 
 - Issues with stackoverflow errors

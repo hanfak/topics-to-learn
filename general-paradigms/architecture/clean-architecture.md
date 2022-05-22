@@ -706,5 +706,7 @@ Goes by many names
 
 - https://github.com/lievendoclo/cleanarch
 - https://www.freecodecamp.org/news/modern-clean-architecture/
+- https://youtu.be/IZWLnn2fNko TDD and Clean Architecture - Use Case Driven Development by Valentina Cupać
+
 
 [Top of Page](#clean-architecture)

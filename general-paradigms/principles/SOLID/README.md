@@ -24,3 +24,4 @@ How to organise your classes
 - https://www.yegor256.com/2017/03/28/solid.html
 - https://www.tonymarston.net/php-mysql/not-so-solid-oo-principles.html
 - https://towardsdatascience.com/why-solid-principles-are-not-a-solid-solution-for-software-design-fa71b6017ed6
+- https://dannorth.net/2021/03/16/cupid-the-back-story/

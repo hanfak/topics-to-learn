@@ -7,3 +7,4 @@
 - https://www.nginx.com/resources/glossary/load-balancing/
 - https://youtu.be/hcw-NjOh8r0
 - https://github.com/fcambus/nginx-resources#readme
+- https://github.com/tldr-devops/nginx-common-configuration

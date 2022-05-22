@@ -16,3 +16,6 @@
     - IPv6 and is increasingly being adopted because IPv4 is running out out numerical addresses.
 - other protocols are built on top of IP,
   - like frameworks built on languages
+
+
+- https://youtu.be/o5S0-_vniiM The Beauty of the Internet Protocol hassan nasser

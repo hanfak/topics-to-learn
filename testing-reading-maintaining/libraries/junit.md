@@ -5,6 +5,7 @@
 ## Junit 5
 
 - https://dzone.com/articles/7-reasons-to-consider-junit-5
+- https://youtu.be/6uSnF6IuWIw JUnit 5 Tutorial - Nice & Easy
 
 ### Paramatised tests
 

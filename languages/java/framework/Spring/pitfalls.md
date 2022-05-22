@@ -1,6 +1,6 @@
 # Pitfalls and advice
 
--it provides too many things as a single dependency, which has caused a lot of pain over the years because teams that used it just for dependency injection needed to constantly update it for security issues non-related to any dependency injection feature, which is the opposite of Guice and Dagger
+- it provides too many things as a single dependency, which has caused a lot of pain over the years because teams that used it just for dependency injection needed to constantly update it for security issues non-related to any dependency injection feature, which is the opposite of Guice and Dagger
 - slows down your app’s startup time
 - You won’t find out if your app works or not, until you run it - in large commercial environments it can mean up to an hour build and deployment time
   - then you get a massive stacktrace, half of which concerns internal spring classes
@@ -15,8 +15,8 @@
     - you lose compile time checking and the ability of things to blow up at runtime when using Spring is less than idea
 - Deep learning curve
 - it tries to be all things to all (Java) programmers it’s not necessarily the best at any one of them
-- Due to being able to do so many things, Spring kind of messes with the simplicity benefits we get from using Java.
-  - Spring discreetly introduces complexity to your project, the framework is simple on the surface, when it works, but not many people can explain what is happening under the hood in Spring
+  - Due to being able to do so many things, Spring kind of messes with the simplicity benefits we get from using Java.
+    - Spring discreetly introduces complexity to your project, the framework is simple on the surface, when it works, but not many people can explain what is happening under the hood in Spring
 - Debugging Spring errors often seems like black magic, it’s 90% guess work and pattern matching.
   - Poor or outdated documentation  does not help
 - Spring is opinionated and tends to infect your codebase quite quickly. It is difficult to constrain Spring to certain modules, Spring can quickly becomes a core component of your architecture
@@ -35,7 +35,12 @@
 - Use of annotations
   - hard to manipulate and debug
   - https://blog.softwaremill.com/the-case-against-annotations-4b2fb170ed67
+
+## Links
+
 - https://dzone.com/articles/spring-pitfalls-proxying
 - https://www.toptal.com/spring/top-10-most-common-spring-framework-mistakes
 - https://spring.io/blog/2015/11/29/how-not-to-hate-spring-in-2016
 - https://www.quora.com/Why-do-most-programmers-whose-primary-language-is-not-Java-seem-to-have-unfavorable-opinions-of-the-Spring-Framework-and-what-do-they-dislike-about-its-philosophy
+- https://samatkinson.com/why-i-hate-spring/
+- https://blog.jakubholy.net/2020/spring-nevermore/

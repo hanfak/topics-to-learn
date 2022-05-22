@@ -22,6 +22,10 @@
 - https://www.journaldev.com/4098/java-heap-space-vs-stack-memory
 - http://www.baeldung.com/java-initialization
 - https://examples.javacodegeeks.com/java-memory-management/
+- https://youtu.be/LCSqZyjBwWA The Java Memory Model - The Basics
+- https://youtu.be/bspS-uTK0IM Understanding JVM Memory, Heap, Garbage Collection and Monitoring the JVM | Tech Primers
+- https://www.youtube.com/watch?v=JLFjY6Ixct8 A Visual Introduction to Inner-Workings of the JVM - Douglas Hawkins
+- https://opensource.com/article/22/4/jvm-parameters-java-developers
 
 performance https://www.dynatrace.com/resources/ebooks/javabook/
 

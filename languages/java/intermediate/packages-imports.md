@@ -50,3 +50,12 @@ String constant = SOME_CONSTANT;
 
 - class path
   - libraries/classes that accessible
+
+## Advantages
+
+- define their own packages to bundle a group of classes/interfaces
+- package creates a new namespace there won't be any name conflicts with names in other packages
+  - removes naming collision
+- it is easier to provide access control
+- easier to locate the related classes.
+- Understand the structure of the app, screaming architecture

@@ -20,6 +20,7 @@
 ## What
 
 - https://www.marcobehler.com/guides/spring-framework
+- https://www.quora.com/Why-did-Rob-Johnson-create-Spring/answer/Alan-Mellor?ch=15&oid=338641434&share=bc8d82de&srid=3c80F&target_type=answer
 
 ## Why use
 

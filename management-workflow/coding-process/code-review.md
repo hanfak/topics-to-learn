@@ -1,3 +1,5 @@
+# Code Review
+
 - https://www.youtube.com/watch?v=a9_0UUUNt-Y
 - https://google.github.io/eng-practices/review/reviewer/looking-for.html
 - https://matt-rickard.com/code-review-checklist/
@@ -11,3 +13,12 @@
     - Altruist: does the code leave the codebase better than what it was? Does it inspire other engineers to improve their code as well? Is it cleaning up unused code, improving documentation, introducing better patterns through small-scale refactoring?
   - Issues
     - Order
+## code review pyramid
+
+- https://www.morling.dev/blog/the-code-review-pyramid/?utm_content=201340967&utm_medium=social&utm_source=twitter&hss_channel=tw-4083531
+
+## Links
+
+- https://simpleprogrammer.com/code-review-trunk-based-development/
+- https://simpleprogrammer.com/release-trunk-based-development/
+- https://www.michaelagreiler.com/code-review-best-practices/

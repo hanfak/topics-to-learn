@@ -73,3 +73,25 @@ the acid test: when some single facet of the code has to change, do you find you
   - Instead Duplication of business logic should not be repeated, there should be a single source of truth
   - DRY is about the duplication of knowledge, of intent. It’s about expressing the same thing in two different places, possibly in two totally different ways
   -
+
+### Issues with many small methods
+
+- Implementing DRY can lead to creating many methods, and the use of the popular refactoring Extract Method.
+- Sometimes it is better to fold the mehtods in (Inline Method)
+- writing functions that are nothing but 50 functions calls that themselves are just a few lines of code. That's as bad as the people who write 1,000 line functions
+- This can cause issues:
+  - Lots of little methods makes code get hard to maintain
+  - costs to breaking code up:
+    - more cognitive load when a reader must jump around a file and remember what different functions do
+      - Logic is split apart and harder to follow
+    - too many functions means more lines of code that makes it harder to see more of the code on your screen at once
+    - more functions means more argument and return value passing which increases the chance for bugs
+    - separating two very related pieces of functionality (get next free id and update next free id) increases the chance for bugs when someone updates one piece of the functionality and doesn't realize they need to update other related functionality in a different function.
+      - issue of temporal coupling, calls need to be together if they are dependent in order
+    - pulling more functions out makes it more likely that someone will reuse that function for something else which builds up complex dependencies making it harder to change some of the code because you have to understand much more of the codebase to safely change the code.
+    -
+- https://www.reddit.com/r/ExperiencedDevs/comments/u7xynw/many_small_methods_make_code_hard_to_maintain/
+
+### Keeping long blocks of code managable
+
+- long blocks of code (within reason) are made much easier to consume when they are broken up and commented well. I approach it but looking at the logic flow, then separate lines and blocks of code that are discrete logical steps in that flow, comment each, and only THEN ask myself what would make it better as another functio

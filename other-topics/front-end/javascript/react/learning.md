@@ -1,0 +1,4 @@
+- https://github.com/Mercateo/react-with-typescript
+- https://github.com/velopert/typescript-react-sample
+- https://themeselection.com/react-typescript-tutorial-for-beginners/
+- https://www.youtube.com/watch?v=FJDVKeh7RJI freecodecamp

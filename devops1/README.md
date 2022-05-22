@@ -22,6 +22,7 @@ About
 - https://www.youtube.com/watch?v=JHoy3lDZOfY&t=66s
 - https://www.edureka.co/blog/puppet-tutorial/
 - https://medium.com/hackernoon/the-2018-devops-roadmap-31588d8670cb
+- https://www.digdeeproots.com/articles/devops-series-unclogging-the-pipelines/
 
 ## ci/cd
 

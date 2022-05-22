@@ -5,6 +5,7 @@
 - https://www.baeldung.com/java-custom-annotation
 - https://mkyong.com/java/java-custom-annotations-example/
 - https://www.javatpoint.com/java-annotation
+- https://youtu.be/DkZr7_c9ry8 coding with john: Annotations In Java Tutorial - How To Create And Use Your Own Custom Annotations
 
 ## Links
 
@@ -29,3 +30,4 @@
 - https://dzone.com/articles/are-annotations-bad
 - https://doanduyhai.wordpress.com/2012/04/21/magics-is-evil/
 - https://blog.softwaremill.com/the-case-against-annotations-4b2fb170ed67
+- https://www.quora.com/How-are-Java-Annotations-a-good-thing-Dont-they-mess-up-the-understandability-of-whats-really-going-on-in-the-code/answer/Alan-Mellor?ch=15&oid=266552112&share=005a2c81&srid=3c80F&target_type=answer

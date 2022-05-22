@@ -24,8 +24,7 @@
 - No generic arrays
   - `T[] arr = new T[10];// this code will not compile`
 - Example ArrayList
-- covariance and contravariance
-  - https://www.freecodecamp.org/news/understanding-java-generic-types-covariance-and-contravariance-88f4c19763d2/
+
 - Bounded
     -
   - extends
@@ -45,6 +44,22 @@
 - Intersection types
   - &
   - Binary compatiblity
+
+## covariance and contravariance
+- If type R derives from type T, and Foo<R> is a subtype of Foo<T>, Foo is covariant.
+- If type R derives from type T, and Foo<T> is a subtype of Foo<R>, Foo is contravariant.
+- If type R derives from type T, and Foo<R> is not related to Foo<T> in the type hierarchy, Foo is invariant.
+
+If the Foo type has multiple type parameters, it can be covariant in regards to some of them, contravariant to some of them, and invariant to others still. For example, the Function interface in typical usage in Java is contravariant towards its first parameter but covariant towards its second parameter:
+
+```java
+Function<? super T, ? extends R>
+```
+
+This is as expected: a function that accepts any supertype of T can also handle T, and if we are able to handle its result type R, we will also be able to handle any of its subtypes.
+
+### Links
+- https://www.freecodecamp.org/news/understanding-java-generic-types-covariance-and-contravariance-88f4c19763d2/
 
 ## Raw types
 

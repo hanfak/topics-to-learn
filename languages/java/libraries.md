@@ -1,6 +1,11 @@
 # Libraries
 
-Here is a list of common libraries that I have interacted with
+## Best practices
+
+- Google best practices = https://jlbp.dev/
+
+
+## Here is a list of common libraries that I have interacted with
 
 - Junit
 - Mockito
