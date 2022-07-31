@@ -1,11 +1,15 @@
 # Clean Architecture
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Clean Architecture](#clean-architecture)
 	- [Aim:](#aim)
 	- [Description](#description)
+	- [Links](#links)
+	- [Examples](#examples)
 	- [Cost](#cost)
 	- [Package structure](#package-structure)
+		- [Example](#example)
 		- [Links](#links)
 	- [Use cases and Domain](#use-cases-and-domain)
 	- [Incoming Adpaters (infrastructure, web layer)](#incoming-adpaters-infrastructure-web-layer)
@@ -15,9 +19,14 @@
 	- [Assembling the Application](#assembling-the-application)
 	- [Enforcing Architecture Boundaries](#enforcing-architecture-boundaries)
 	- [Taking Shortcuts Consciously](#taking-shortcuts-consciously)
-	- [Issues](#issues)
-	- [Links](#links)
+	- [issues](#issues)
+		- [Duplication of models](#duplication-of-models)
+		- [A higher level of complexity](#a-higher-level-of-complexity)
+		- [The cost of indirection and isolation](#the-cost-of-indirection-and-isolation)
+		- [Most web applications don’t need that level of complexity](#most-web-applications-dont-need-that-level-of-complexity)
+	- [Clean architecture and domain driven design](#clean-architecture-and-domain-driven-design)
 
+<!-- /TOC -->
 Goes by many names
 - hexagonal
 - ports and adapters
@@ -67,12 +76,20 @@ Goes by many names
 - https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 - http://geekswithblogs.net/cyoung/archive/2014/12/20/hexagonal-architecturendashthe-great-reconciler.aspx
 - https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/
+- https://github.com/lievendoclo/cleanarch
+- https://www.freecodecamp.org/news/modern-clean-architecture/
+- https://youtu.be/IZWLnn2fNko TDD and Clean Architecture - Use Case Driven Development by Valentina Cupać
+- https://youtu.be/gHSpj2zM9Nw Guilherme Ferreira - The Grand Unified Theory of Clean Architecture and Test Pyramid - NDC Porto
+- https://tpierrain.blogspot.com/2020/11/hexagonal-or-not-hexagonal.html
 
 ## Examples
 
 - https://gitlab.com/crafts-records/talkadvisor/talkadvisor-back
 - https://github.com/jmgarridopaz/bluezone
+	- https://jmgarridopaz.github.io/content/hexagonalarchitecture-ig/intro.html
+- https://github.com/jmgarridopaz/task-management
 - https://github.com/mattia-battiston/clean-architecture-example
+- https://github.com/valentinacupac/banking-kata-java
 
 [Top of Page](#clean-architecture)
 
@@ -702,11 +719,10 @@ Goes by many names
 
 [Top of Page](#clean-architecture)
 
-## Links
 
-- https://github.com/lievendoclo/cleanarch
-- https://www.freecodecamp.org/news/modern-clean-architecture/
-- https://youtu.be/IZWLnn2fNko TDD and Clean Architecture - Use Case Driven Development by Valentina Cupać
+## Clean architecture and domain driven design
 
+- https://jmgarridopaz.github.io/content/therightboundary.html
+- https://tpierrain.blogspot.com/2020/11/hexagonal-or-not-hexagonal.html
 
 [Top of Page](#clean-architecture)

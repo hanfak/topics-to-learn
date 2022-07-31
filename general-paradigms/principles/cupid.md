@@ -73,3 +73,4 @@ Definitions:
 - https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong?slide=20
 - https://www.youtube.com/watch?v=knNaUSLhx-U
 - https://mozaicworks.com/blog/cupid-vs-solid
+- https://youtu.be/2QahGarHpXQ Daniel Terhorst-North - SOLID vs. CUPID

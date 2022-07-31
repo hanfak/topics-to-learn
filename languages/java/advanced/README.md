@@ -35,3 +35,7 @@
 - encrypting and decrypting
 
 - Bit manipulation
+
+## Links
+
+- https://wiki.theory.org/YourLanguageSucks

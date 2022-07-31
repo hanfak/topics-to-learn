@@ -88,6 +88,44 @@ request#4 => hashes to 14 => 14 % 5 = 4 => send this request to servers[4] => Se
     - Consistent hashing applies a hash function to incoming requests and the servers. The resulting outputs therefore fall in a set range (continuum) of values.  This detail is very important.
     - https://www.youtube.com/watch?v=tHEyzVbl4bg
 
+## Types
+
+### Layer 4
+
+- Layer 4 load balancing, operating at the transport level, manages traffic based on network information such as application ports and protocols without visibility into the actual content of messages. This is an effective approach for simple packet-level load balancing. The fact that messages are neither inspected nor decrypted allows them to be forwarded quickly, efficiently, and securely. On the other hand, because layer 4 load balancing is unable to make decisions based on content, it’s not possible to route traffic based on media type, localization rules, or other criteria beyond simple algorithms such as round-robin routing.
+
+#### Pros
+
+- Ideal for simple packet-level load balancing
+- Because it doesn’t consider the data, it’s fast and efficient.
+- More secure because packets aren’t looked into. In the event that it gets compromised, no one can see the data.
+- Does not need to decrypt the content—it merely forwards them
+- Uses NAT
+- Maintains only one connection between client and server NATed so your load balancer can serve a maximum number of TCP connections = to (number of servers * max connections per server)
+
+#### cons
+
+- Not capable of smart load balancing based on the content
+- Can’t do real microservices
+- Needs to be sticky as it is a stateful protocol. Once a connection is established, it goes to one server at the backend. - All packets flowing to this connection goes to one server. The next connection will then pick another server based on the algorithm.
+
+### layer 7
+
+- Layer 7 load balancing operates at the application level, using protocols such as HTTP and SMTP to make decisions based on the actual content of each message. Instead of merely forwarding traffic unread, a layer 7 load balancer terminates network traffic, performs decryption as needed, inspects messages, makes content-based routing decisions, initiates a new TCP connection to the appropriate upstream server, and writes the request to the server.
+- layer 7 load balancing allows more intelligent load balancing decisions and content optimizations. By viewing or actively injecting cookies, the load balancer can identify unique client sessions to provide server persistence, or “sticky sessions,” sending all client requests to the same server for greater efficiency. Packet-level visibility allows content caching to be used, holding frequently accessed items in memory for easy retrieval. Importantly for modern organizations, layer 7 load balancing provides the intelligence to handle protocols that piggyback or multiplex requests onto a single connection to optimize traffic and reduce overhead.
+
+#### Pros
+
+- Offers smart routing based on the URL
+- Provides caching
+
+#### cons
+
+- More expensive
+- Requires decrypting
+- In terms of security, you have to share your certificate with the load balancers. If an attacker gets access to the load balancer, they automatically have access to all your data.
+- Its proxy creates multiple connections—client to proxy/proxy to server—so you are bounded by the max TCP connection on your load balancer.
+
 ## Links
 
 - https://blog.containership.io/7-things-that-nobody-told-you-about-load-balancers-that-you-ought-to-know

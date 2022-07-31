@@ -3,6 +3,7 @@
 - calling code should be able to use an instance of a base class or an instance of a derived class without knowing it, or having to do anything special.
 - Example
   - A square is not a rectangle
+- As long as an interface doesn't change, the clients don't care if you change the implementation
 - if code starts to look like if (shape is Square) ... else if (shape is Rectangle) ..., it can be a “code smell”
 - Why?
   - reduce complexity in calling code so that it can work generically on any class or subclass without additional conditional code.

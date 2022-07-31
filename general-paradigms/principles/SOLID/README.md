@@ -25,3 +25,9 @@ How to organise your classes
 - https://www.tonymarston.net/php-mysql/not-so-solid-oo-principles.html
 - https://towardsdatascience.com/why-solid-principles-are-not-a-solid-solution-for-software-design-fa71b6017ed6
 - https://dannorth.net/2021/03/16/cupid-the-back-story/
+- https://youtu.be/tMW08JkFrBA Kevlin Henney - The SOLID Design Principles Deconstructed
+
+## Alternatives
+
+- https://www.slideshare.net/Kevlin/introducing-the-fluid-principles
+  - https://www.youtube.com/watch?v=tMW08JkFrBA

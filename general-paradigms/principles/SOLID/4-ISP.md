@@ -3,6 +3,7 @@
 - It leads to the development of a greater number of more highly cohesive interfaces, rather than fewer bigger and bloated ones.
 -  the class implementing the interface should not have to implement lots of things that it does not care about; it should only have to implement the things it needs.
 - SRP for interfaces
+- Prefer small focused interfaces that adhere to SRP.
 - You done want to be in situation where a class does alot things, so the consumer of the class only needs to use part of that class
   - this can lead shard behaviour with the class, which can impact other consumers for no reason. As one class could impact another.
 

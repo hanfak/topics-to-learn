@@ -4,7 +4,7 @@
 A concept that tracks occurrences of events can be composed with other concepts
 
 The tracking may be for:
-- diagnosis (determining why a failure happened by keeping and later analyzing the sequence of events that led up to it); 
+- diagnosis (determining why a failure happened by keeping and later analyzing the sequence of events that led up to it);
 - performance analysis (checking the responsiveness of a service); analytics (collecting data on the users of a service and their usage patterns);
 - intrusion
 detection (by searching for patterns of requests that might suggest that an attack is underway); or
@@ -57,3 +57,4 @@ detection (by searching for patterns of requests that might suggest that an atta
 ## Links
 
 - https://completedeveloperpodcast.com/episode-73/
+- http://java.jonathangiles.net/JBP-5

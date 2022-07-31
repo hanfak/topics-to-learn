@@ -50,3 +50,6 @@
 - https://www.javatpoint.com/java-jdbc
 - https://www.journaldev.com/2681/jdbc-tutorial
 - http://tutorials.jenkov.com/jdbc/index.html
+- https://youtu.be/KgXq2UBNEhA MarcoCode: JDBC Tutorial - Nice & Easy
+  - https://github.com/marcobehlerjetbrains/jdbc-tutorial
+  -

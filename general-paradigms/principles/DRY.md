@@ -74,6 +74,10 @@ the acid test: when some single facet of the code has to change, do you find you
   - DRY is about the duplication of knowledge, of intent. It’s about expressing the same thing in two different places, possibly in two totally different ways
   -
 
+### Links
+
+- https://www.infoq.com/news/2012/05/DRY-code-duplication-coupling/
+- https://oncodedesign.com/dry-vs-coupling/
 ### Issues with many small methods
 
 - Implementing DRY can lead to creating many methods, and the use of the popular refactoring Extract Method.

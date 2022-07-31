@@ -114,7 +114,7 @@
 - https://www.cloudflare.com/en-gb/learning/ssl/what-happens-in-a-tls-handshake/
 - SSL TLS for Mortals by Maarten Mulders https://youtu.be/ft7fbbPXlq0
 	- https://www.slideshare.net/MaartenMulders2/ssltls-for-mortals-devoxx
-	
+
 ## Mutual tls
 
 - Where the server authenticates the client during the ssl handshake
@@ -124,6 +124,9 @@
 - Client certificates don’t encrypt any data; they’re installed for validation purposes only.
 - Issues
   - If someone gets hold of this client cert, then the server will allow them to access the server
+
+- https://youtu.be/KwpV-ICpkc4 Mutual TLS | The Backend Engineering Show
+
 
 ## https communication
 

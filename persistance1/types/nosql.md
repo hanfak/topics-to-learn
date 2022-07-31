@@ -45,6 +45,8 @@
   - environment variables,
   - configuration files
   - session state etc.
+- https://www.networkworld.com/article/2999856/10-use-cases-where-nosql-will-outperform-sql.html
+- http://highscalability.com/blog/2010/12/6/what-the-heck-are-you-actually-using-nosql-for.html
 
 ## Types
 

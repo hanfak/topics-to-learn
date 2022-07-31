@@ -3,6 +3,7 @@
 - https://www.yegor256.com/2014/06/09/objects-should-be-immutable.html
 - https://www.yegor256.com/2014/12/09/immutable-object-state-and-behavior.html
 - https://reflectoring.io/java-immutables/
+- https://xtrem-tdd.netlify.app/Flavours/immutable-types
 
 ## Data and objects
 

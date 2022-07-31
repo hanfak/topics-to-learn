@@ -3,6 +3,7 @@
 - a class should be open for extension, but closed for modification.
 - it should be possible to add or change some behaviour without modifying the existing class
 - Good architecture maximizes the number of decisions not made
+- You should be able to change a component's behavior w/o modifying the componen
 -  Any time we create code with the intent to extend it in the future without the need to modify it we should apply OCP
 - 3 strike rule
   - if having to do this samething three times, abstract it out

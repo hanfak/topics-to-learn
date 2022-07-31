@@ -3,6 +3,7 @@
 - Any given component (class/function/module) should do one well-defined thing, and only that one well-defined thing.
 - A component should have only one reason to change
 - if a class has more than one responsibility, it will have to change whenever any one of its many responsibilities change.
+- All the pieces of a component should focus on achieving the same goal
 - In the short term, it may be easier to simply keep adding methods to an existing class, regardless if the new functionality is within the responsibility of the class or not.
   - LLater, you will notice that your classes become large and closely coupled with each other
   - the size of each class will make it hard to fully understand its behavior and its role

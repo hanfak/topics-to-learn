@@ -3,6 +3,8 @@
 - https://examples.javacodegeeks.com/software-development/use-wiremock-for-mocking/
 - https://semaphoreci.com/community/tutorials/restful-integration-testing-with-wiremock-in-java
 - https://github.com/vladimir-dejanovic/wiremock-examples
+- https://youtu.be/aANqNIY2IjY WireMock Introduction and Basic Integration Test Setup to Mock HTTP Communication
+
 
 ## Why use?
 
@@ -17,3 +19,7 @@
   - If app interacts with a non http producer (ie telnet), you can create a proxy side car, which starts a server (ie telnet server) that mimics productions, which then talks to a stub which can be easily primed
 - Useful for writing tests, to prime the givens (ie what is expected to be returned from service)
 - If dont want to create a stub, can use wiremock docker instance and a wiremock chrome extension
+
+
+80.30
+74.58

@@ -26,6 +26,28 @@
 - Always fix dependencies
   - And have schedule to update
   - Have a way of monitoring when an update is needed due to a vulnerabilities
+## Bill of materials (BOM)
+
+- http://java.jonathangiles.net/JBP-1
+
+## Minimise Dependencies
+
+- http://java.jonathangiles.net/JBP-2
+
+## Versioning
+
+- Have fixed versions
+- http://java.jonathangiles.net/JBP-3
+
+## Maintance
+
+- Always keep depencies up to date
+- http://java.jonathangiles.net/JBP-4
+
+## Better to copy
+
+- depending on the license, it might be better to copy the functionality then import the whole library which contains lots of unneeded code and transitive dependencies
+- http://java.jonathangiles.net/JBP-8
 
 ## Links
 

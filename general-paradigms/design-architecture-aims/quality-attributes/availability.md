@@ -29,7 +29,6 @@
   - example
     - If AWS S3 goes down, a lot of companies will suffer, including Netflix, and that is not good.
 
-
 ## SLAs - service level agreements
 
 - In order to make online services competitive and meet the market's expectations, online service providers typically offer Service Level Agreements/Assurances.
@@ -53,6 +52,18 @@
 - you need to understand and de-compose your system into all its parts. Map out which ones are likely to cause single points of failure, which ones are not tolerant of such failure, and which parts can tolerate them
   - Because engineering HA requires tradeoffs and some of these tradeoffs may be expensive in terms of time, money and resources.
 
+## Time based Availability
+
+- The calculation of availability based on a ratio of times
+- The common metric used
+- measured in % of 9s ie Five 9s
+
+## Count based availability
+
+- The calculation of availability based on a ratio of counts
+- For example number of succeesful requests to total number of requests
+- Used for anything that can discretely counted
+- Can be a percentage or decimal number between 0 and 1
 ## Links
 
 - https://en.wikipedia.org/wiki/High_availability

@@ -1,5 +1,8 @@
 # Caching
 
+- Deals with data
+- Remember the result of an expensive operation, to speed up reads 
+
 - https://youtu.be/Ez1GK2imrsY
 - https://www.youtube.com/watch?v=_F1U6Rh0wfo
 - https://youtu.be/ccemOqDrc2I

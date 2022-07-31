@@ -75,6 +75,17 @@
 
 - http://tutorials.jenkov.com/java/modules.html
 
+## benefits
+
+- It has a modular system that allows the development of fully modular and decoupled applications.
+- You can add modules at runtime. This is useful for adding new adapters to ports.
+- A “Java 9 service” is an interface that other modules can implement. These implementations are the “service providers”. Then at runtime Java detects all the available providers, and the “service client” can choose one of them. This is perfect for swapping adapters for a driven port. The port would be a “Java 9 service”, and the available adapters for the port would be “service providers”.
+- Visibility scopes enhancement. Before Java 9, a public class was visible to the rest of the world. We just had private, package and public scopes. Now with modules, a public class is just visible inside its module. For other modules to see the public class, you have to export the package the class belongs to. To export a package would be like to “publish” its public classes to the outside world. This is great for defining APIs better. For example, a port would be a package of the hexagon module, containing the port interface and other classes that the interface uses. All the other packages wouldn’t be visible to the outside.
+- It allows to apply the “Configurable Dependency Pattern” without using any framework like Spring to inject dependencies. “Java 9 services” are not exactly the same as dependency injection, because Java 9 does a lookup of implementations instead of dependencies being injected, but using this approach solves the same problem. And it is useful if you want to get rid of dependency injection frameworks.
+
+## Links
+
+- https://youtu.be/0xijKEeb5ug Java Modules in Real Life Nicolai Parlog
 ## Examples
 
 - https://mydeveloperplanet.com/2018/01/10/java-9-modules-introduction-part-1/

@@ -1,5 +1,6 @@
 # Behaviour Driven Development/Design - BDD
 
+- https://dannorth.net/introducing-bdd/
 - BDD is an outside-in style and approach to TDD.
 - BDD is not just about coding acceptance-style tests. First and foremost it requires stakeholders, QA, and developers to work together in order to define requirements (often in the form of very small stories).
 - Stories along with their scenarios (if any) ensure that developers test drive the implementation based on the behavior that was asked for, and helps developers determine when they are truly done implementing a specific story (set of behaviors).
@@ -29,6 +30,13 @@
 
 ## How
 
+- Test names (methods) should be written in English sentences
+- language is in  the form of documentation
+  ```
+  Given some initial context (the givens),  
+  When an event occurs,  
+  Then ensure some outcomes.
+  ```
 - when adopting BDD it’s important to focus on solving the problems of delivering the right thing and not on the automation technique
 - Once the collaborative sessions are flowing a team may choose to capture examples from those conversations using the Gherkin syntax
 - and then use the captured examples with automated tools to help guide what developers deliver, in what is known as outside in development.

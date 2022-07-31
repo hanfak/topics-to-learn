@@ -36,11 +36,11 @@ https://stackoverflow.com/questions/36363142/generified-implementation-of-visito
     Greetings g = /* ... */;
     g.hello();
     ```
-- Double ouble dispatch
+- Double dispatch
   -  The ability to choose the method implementation based on this object and also one of the arguments passed to the function.
   - the Visitor pattern is a way to simulate the lack of support for double dispatch
 - To simulate multiple dispatch is a language feature known as pattern matching.
 
-## Anti patern
+## Anti pattern
 
 - https://typeinference.com/oop/2015/08/17/anti_oop_design_patterns.html

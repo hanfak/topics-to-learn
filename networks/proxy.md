@@ -1,5 +1,17 @@
 # Proxy
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Proxy](#proxy)
+	- [What?](#what)
+	- [How](#how)
+	- [Why?](#why)
+	- [Uses?](#uses)
+	- [Types](#types)
+	- [Links](#links)
+
+<!-- /TOC -->
+
 ## What?
 
 - a proxy is typically a server, and it is a server that acts as a middleman between a client and another server. It literally is a bit of code that sits between client and server.

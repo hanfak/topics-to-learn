@@ -1,11 +1,17 @@
 # Agile
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
 - [Agile](#agile)
 	- [Overview](#overview)
 		- [The agile values](#the-agile-values)
 		- [The principles behind agile values:](#the-principles-behind-agile-values)
 		- [Links](#links)
 	- [Process](#process)
+		- [What is agile](#what-is-agile)
+	- [Issues](#issues)
+	- [Types](#types)
+		- [Links](#links)
 	- [Team](#team)
 	- [Backlog](#backlog)
 	- [Iterative development](#iterative-development)
@@ -20,6 +26,8 @@
 	- [Pace](#pace)
 	- [Myths](#myths)
 	- [Sprints](#sprints)
+
+<!-- /TOC -->
 
 ## Overview
 
@@ -77,6 +85,28 @@ Instead of figuring everything upfront, we design, build and test little bits of
 	- This gives stakeholders, a better understanding of the work and how long it will take to complete, how much can be done etc
 - Was a reaction to old way of doing software development (ie waterfall), where major changes to requirements could put large strains on teams.
 	- Thus the smaller chunks of work help teams become more flexible, and dare I say agile. And in the process it helps them deliver features faster and respond to changes quicker.
+
+## Issues
+
+- Agile has led to code first rather than architect first
+  - agile can focus on the short term and the user functionality, rather than consider the overall end goal or other requirements
+  - led to not thinking about (trade offs) or including the non functional requirements (software requirements)
+  - Trying to add, makes it harder, and thus rewrites occur
+  - Or constraints (cost, legal/compliance, deadlines, staff capacity, staff exp/knowledge)
+  - or principles (how we would like to build it ie styles, standards, tech) which can lead to long issues
+- Get too tied down to the methodology
+	- becomes box ticking
+	- Do not deviate from the rules ie a sprint has 10 stories to do, if all done dont do anything else
+- All about the process, rather than the engineering aspect
+	- It is not used as a feedback mechanism
+- Seen as silver bullet
+- Dont want to take the good parts and combine, or experiment with different processes
+- Focus on features, can lead to system having software qualities that emerge accidently
+	- ie it has set level of latency  rather than aiming for a desired level of latency
+	- this can be fine, as we use the feedback from the users which informs the process to create stories to fix this
+	- But due to the accidental nature, they can be hard to fix, be cross cutting, may need rewrite or takes long time
+- To integrate the software qualites, the definition of done includes this, but then there comes a point where different vairations of done are set so that software can be released (ie done but slow, done but no security etc)
+	- this leads to qualities being ignored, and never revisited, or partially implemented 
 
 ## Types
 

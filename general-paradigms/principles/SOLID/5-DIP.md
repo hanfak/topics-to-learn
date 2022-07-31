@@ -6,6 +6,7 @@
 - higher level code here represents the “what” or “workflow” with the lower level code performing specific actions as part of this workflow.
 - Can use different implementations of the dependency
 - DIP in conjunction with dependency injection also makes it possible to provide different concrete implementations of dependencies at runtime.
+- Depend on the more-abstract thing
 
 Why?
 - Without DIP, the high level “workflow” is harder to separate from the implementation (in the lower level code).

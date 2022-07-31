@@ -1,2 +1,3 @@
 - https://www.youtube.com/watch?v=r4dryMdDZz0
 - https://stackoverflow.com/questions/4493001/good-use-case-for-akka
+- Introduction to Akka Actors with Java 8 https://youtu.be/7phNrU8DyWA

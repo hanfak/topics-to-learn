@@ -19,4 +19,4 @@
 -
 
 - https://softwareengineering.stackexchange.com/questions/101187/are-there-problems-with-using-reflection
--
+- https://www.javacodegeeks.com/2022/06/reflection-means-hidden-coupling.html

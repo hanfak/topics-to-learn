@@ -1,5 +1,22 @@
 # Software Engineering
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Software Engineering](#software-engineering)
+	- [Software](#software)
+	- [What?](#what)
+	- [Layers](#layers)
+	- [Fundamental Concepts](#fundamental-concepts)
+		- [Links](#links)
+	- [Deliver Better Software, Faster](#deliver-better-software-faster)
+	- [Software Engineering vs Coding](#software-engineering-vs-coding)
+	- [Difficulty of software engineering](#difficulty-of-software-engineering)
+	- [Design vs Architecture](#design-vs-architecture)
+		- [Links](#links)
+	- [Links](#links)
+
+<!-- /TOC -->
+
 - The primary goal of engineering is to produce working systems (meet functional and non functional requirements)
   - beauty/elegance is not the main goal
   - ease of use, correctness, adoptability are higher goals
@@ -240,6 +257,20 @@ We can spend hours, failing and not getting it to work, we cannot give up. Somet
 We have to deal with people, politics, lack of motivation
 
 We have to always be learning, new technologies, new patterns, languages, new domains, different conventions at different workplaces etc. The skill can grow weak with out practice
+
+## Design vs Architecture
+
+- Engineering involves design, or some forethought before implementing. This can be done at different levels
+  - Abstract, where the mapping to the implementation is not obvious or can be done in different ways, with different tools etc
+    - this is architecture, and doing this can blurr the lines with business design
+    - where tools, languages, patterns are can be decided
+  - Concrete, where the mapping to the implementation is obvious, and can be done using different languages but the patterns and tools are probably set
+    - this is design, and is more lower level than architecture
+- Both can blurr the lines into one another
+
+### Links
+
+- https://www.copypasteisforword.com/2011-07-13-arch-vs-design/
 
 ## Links
 

@@ -7,6 +7,7 @@
 ## Enterprise Software
 
 - enterprise refers to a business organization in general.
+- Software which the user and customer are distinct
 - Enterprise software refers to a special class of software that enables running businesses on computers
 - two categories:
   - infrastructure enterprise software
