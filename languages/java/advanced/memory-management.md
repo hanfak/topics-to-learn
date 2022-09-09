@@ -56,6 +56,7 @@ performance https://www.dynatrace.com/resources/ebooks/javabook/
 
 - https://self-learning-java-tutorial.blogspot.co.uk/2014/07/garbage-collection.html
 - https://stackify.com/what-is-java-garbage-collection/
+- https://roytuts.com/what-is-the-purpose-of-garbage-collection-in-java/
 
 ## Memory leaks
 

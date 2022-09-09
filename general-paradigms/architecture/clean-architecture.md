@@ -675,6 +675,7 @@ Goes by many names
 - https://javadevguy.wordpress.com/2017/07/27/a-detailed-analysis-of-the-clean-architecture-from-an-object-oriented-perspective/
 - https://www.jamesmichaelhickey.com/clean-architecture/
 - https://jimmybogard.com/vertical-slice-architecture/
+- https://journal.optivem.com/p/a-critique-of-clean-architecture-and-tdd
 - https://stackoverflow.com/questions/29576344/drawbacks-of-hexagonal-architecture#:~:text=Since%20Hexagonal%20makes%20use%20of,the%20drawbacks%20of%20those%20patterns%3A&text=Adapters%20are%20traditionally%20polymorphic%20(in,are%20also%20a%20hidden%20indirection).
 
 ### Duplication of models

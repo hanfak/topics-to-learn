@@ -9,6 +9,7 @@
 - http://tutorials.jenkov.com/java-reflection/index.html
 - https://www.javacodegeeks.com/2018/01/java-reflection-much-faster.html
 - https://www.javatpoint.com/java-reflection
+- https://www.youtube.com/watch?v=bhhMJSKNCQY (coding with john intro)
 
 ## Drawbacks
 

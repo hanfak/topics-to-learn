@@ -101,3 +101,25 @@
 ## ROI of refactoring
 
 - https://neilonsoftware.com/talks/the-roi-of-refactoring-lego-vs-play-doh/
+
+## Premature refactoring
+
+- Many articles about TDD emphasize the refactoring step - as in the green step is almost trivial/unimportant, and what really matters is the refactoring step. Developers misinterpret this as having to get to some over-engineered design at the start. 
+
+An example of a misconception: "if-else" isn't clean - so let's use polymorphism everywhere; we must remove all if-else statements during refactoring. The other reason (in the developer's mind) is an expectation of future requirements; the developer assumes certain requirements in the future and thus makes their CURRENT code MORE ABSTRACT to fit the predicted FUTURE needs.
+
+The problem with premature refactoring:
+
+1. The developer must now spend more time considering the more complex solution. This is actually wasted time.
+
+2. The unnecessarily more complex solution means higher maintenance costs in the future. Again, wasted time.
+
+3. When the future comes, and we get user feedback, it turns out that the real needs are different compared to what we had predicted now... So then the current abstraction has to be deleted (wasted effort) and implement the right abstraction.
+
+So what's the solution? Deferred refactoring:
+
+1. During the refactoring step, it's ok to do minor refactoring, such as variable renaming. But let's not get into the trap of trying to refactor the if-else into a polymorphic solution and trying to apply design patterns right now!
+
+2. Since we have a simpler solution (the simplest solution that was enough to solve the problem), we don't have unnecessary maintenance overhead.
+
+3. The future will come - when it comes. A month from now, it might turn out that the if-else statement is still working great. Three months pass, and the if-else statement is still working fine. After six months, due to some new requirements, and our better understanding of the business problem, we realize that we could replace the if-else statement with design pattern XYZ; at that point, "it feels right".

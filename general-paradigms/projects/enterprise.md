@@ -34,7 +34,27 @@
       - Customer relationship management system
       - Customer billing system
       - IT service management system
+  - Involves, but not all features and at varying levels
+    - critical functionality
+    - Large amounts of data
+    - large quantity of concurrently accessed data
+    - large number of screens
+    - integration
+    - conceptual dissonance
+    - complex logic and business rules
 
+## What to think about
+
+- Areas
+  - How to represent the business entities (DDD)
+  - How to persist it's state
+  - How to code the business logic
+  - How to guarantee data coherence
+  - How to handle application distribution
+
+## Patterns
+
+- see [patterns](../../patterns/enterprise/README.md)
 
 ## Language requirements
 

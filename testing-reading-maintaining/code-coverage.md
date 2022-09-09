@@ -15,6 +15,7 @@
 - Generally refered to by unit tests
 - Some code cannot be covered by unit tests, but by integration or end to end tests
 - A report can also be generated (ie html), which shows what places in the code base was not covered by the test
+- https://journal.optivem.com/p/dont-chase-code-coverage-goals
 
 ## Types
 

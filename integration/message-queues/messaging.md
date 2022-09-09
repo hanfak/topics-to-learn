@@ -5,6 +5,27 @@
   - As a result, things become much more dynamic, but also more unpredictable
 - Helps to scale applications and increase fault tolerance
 
+## Uses
+
+- Decouple producers and consumers, asynchronous processing
+  - consumer does not need to be up for message to be processed
+- Improve reliable communication
+  - req resp via two message queues
+- Can increase scalability
+  - Add more replica consumers to a queue
+- Buffer in front of services
+  - Prevent overloading a service
+  - reduce timeouts
+- A means of retry an event
+  - if an event fails, it can send the message back to the same queue it retrieved the message and reprocess again later
+  - Based on a cron job, can consumer a messsage at a specificed time 
+- Can parallelise requests
+  - pub sub same messages can be handled by multiple (same or different consumers)
+  - queue - multiple different messages can be handled by different consumers
+- Can place errored messages on a dead letter queue which can handled separately
+- For long running processes, background jobs, batch jobs
+- when you dont need to cater for immediate responses or need to be part of a basic transaction
+
 ## Use cases
 
 - https://stackify.com/message-queues-12-reasons/

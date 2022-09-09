@@ -19,6 +19,7 @@ How to organise your classes
   - There is a trade off, and the need to find out when to apply these principles to get their benefits needs to be known before blindly following them.
   - This leads to overengineering, which is a big problem not only in terms of the code produced but the time spent on something that has no use instead of extra features
 - These are principles, and they are not well formed, thus there are different opinions to what they mean and how they are implemented
+  - These are seen as hard rules and should be followed, but instead they should be patterns and used depending on circumstances
 
 
 - https://www.yegor256.com/2017/03/28/solid.html
@@ -26,6 +27,7 @@ How to organise your classes
 - https://towardsdatascience.com/why-solid-principles-are-not-a-solid-solution-for-software-design-fa71b6017ed6
 - https://dannorth.net/2021/03/16/cupid-the-back-story/
 - https://youtu.be/tMW08JkFrBA Kevlin Henney - The SOLID Design Principles Deconstructed
+- https://jeremydmiller.com/2022/08/10/putting-solid-into-perspective/
 
 ## Alternatives
 

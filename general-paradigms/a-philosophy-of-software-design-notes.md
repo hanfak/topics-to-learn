@@ -16,7 +16,7 @@
 
 <!-- /TOC -->
 
-## From you tube talk
+## From youtube talk
 
 https://www.youtube.com/watch?v=bmSAYlu0NcY
 

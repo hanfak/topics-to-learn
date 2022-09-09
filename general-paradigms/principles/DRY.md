@@ -57,6 +57,9 @@ the acid test: when some single facet of the code has to change, do you find you
 
 - A little duplication is often better than a little dependency.
 - Prematurely optimize when the requirements aren't finalized (spoiler: they never are).
+  - Hence, the abstraction may need to change to cater for different cases for different consumer needs
+  - https://overreacted.io/goodbye-clean-code/
+  - https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
 - Duplication is a convenient but not the best source for discovering abstractions
 - wrong abstraction at a lower level creates an exponentially worse dependency hell at higher levels.
 - There is always a trade off
