@@ -78,3 +78,8 @@
     - if running E2E test and takes time to start up app, then keep the app for all the other tests
       - Will need to return the app to clean state before each test though
     - Use a docker container of the app, keep the container running until all the tests have finished
+  - Flakey tests
+    - This can slow down builds and reduce reliable feedback
+    - Fix the tests
+    - Place test in separate package, run them as part of build but do not let them fail the build, then work on them later on
+    - Place them at the start of the build, so they fail fast, and can restart a new build  

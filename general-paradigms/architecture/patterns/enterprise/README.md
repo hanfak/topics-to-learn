@@ -1,6 +1,6 @@
 # Enterprise Patterns
 
-Patterns from the Martin Fowler PAEE book
+Patterns from the Martin Fowler PEAA book
 
 - Areas
   - Layering/organisation of code

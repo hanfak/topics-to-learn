@@ -345,19 +345,117 @@ you're calling isn't used when the main object is used.**
 ### Reading Data
 
 - Its often better to pull out more rows and filter out the ones not needed then issuing one query for each row.
+  -  never do repeated queries on the same table to get multiple rows
+  - although you have to be wary of locking too many rows with pessimistic concurrency control
+- To avoid mulitple trips to db
+  -  use joins so that you can pull multiple tables back with a single query
+  - that databases are optimized to handle up to three or four joins per query.
+- clustering commonly referenced data togethe
+- careful use of indexes
+- the database's ability to cache in memory.
+- you should profile your application with your specific database and data.
+- When reading in data I like to think of the methods as finders that wrap SQL select statements with a method-structured interface
 
 ## Object-Relational Structural Patterns
 
+- used when mapping between in-memory objects and db tables
+  - Solves the difference in representation issue
+    -  Objects handle links by storing references that are held by the runtime of either memory-managed environments or memory addresses.
+    - Relational databases handle links by forming a key into another table.   
+  - objects can easily use collections to handle multiple references from a single field, while normalization forces all relation links to be single valued.
+    -  leads to reversals of the data structure between objects and tables.
+    - An order object naturally has a collection of line item objects that don't need any reference back to the order.
+    - the table structure is the other way around—the line item must include a foreign key reference to the order since the order can't have a multivalued field.
+- Mostly used for Data Mapper
+  - some for row gateway & active record
+  - not used with table gateway
+- Mapping 1-1, 1-N, N-N relationships are simple to do with ORM
+- If we need to query by the members of the value objects, we can explode the VO members into columns of the entity object to which it belongs to.
+- If we don’t need to query by the members of the value object, we can store it as a string in one column of the entity. This string can be any type of object serialization format.
+
 ### Identity Field
+
+- Saves a database ID field in an object to maintain identity between object in memory and database row.
+- Store the primary key in an object
+- One to One Relationship.
+
 ### Foreign Key Mapping
+- Maps an association between objects to a foreign key reference between tables
+- Lets say you want save an record object which is linked to an album object.
+- changes to album objects effects its records.
+  - Imagine I am deleting an album, all records linked to that album needs to be deleted as well.
+- One to Many Relationship.
+
 ### Association Table Mapping
+
+- Saves an association as a table with foreign keys to the tables that are linked by the association.
+- Many to Many Relationship.
+
 ### Dependent Mapping
+- Has one class perform the database mapping for a child class.
+- Some of the objects naturally appear in the context of another object and they are not referenced by any
+other table.
+  - So you can save that objects with their par rents mapper.
+
 ### Embedded Value
+
+- Many small objects make sense in OO system, may not make sense in as a table in database.
+- Embedded Value maps an object into several fields of another object's table.
+-  example employee salary
+  - you would not create a currency table which contains employee salaries amount and their currency types.
+  - Instead you would add them as 2 other columns as part of employee table.
+
 ### Serialized LOB
+- Saves a graph of objects by serializing them into a single large object (LOB), which it stores in a database field. (Check BLOB or CLOB).
+- That is used on network communication or to store an object with its state and use it in the future sometime.
+- In these days, usually XML/json format is used for that.
+- Good
+  - save a lot on round trips to db
+
 ### Single Table Inheritance
+
+- Relational database do not support inheritance, so when mapping your objects you need to find a way of saving them.
+- Single table inheritance, uses a single table which contains all fields for all sub types and sub types only uses the columns/fields those are related to them.
+- First choice, use other two when issues with irrelevant and wasted columns affect performance
+- good
+  - Minimise the joins, which can add up when processing inheritance structure in multiple tables
+  - easy to modify
+- Issue
+  - Only some columns are going to be used by a subset of the class hierarchy
+    - leads to non normalised table
+    - wasting space
+      -  many databases do a very good job of compressing wasted table space.
+    - its size, making it a bottleneck for accesses.
+
+
 ### Class Table Inheritance
+
+- Represents an inheritance hierarchy of classes with one table for each class.
+- Maps each class to a table and each table has the columns of the parent classes.
+- example
+  - Tennis player has a table for itself, basketball player has a table for itself and there is a table called player which contains common fields for both player types. So tennis player uses player table and tennis player table to store data.
+- Good
+  - hierachy changes have little impact on the schema
+- Issues
+  - You need to manage two tables to load one object data.
+  - Need to use joins which is not performant
+
 ### Concrete Table Inheritance
+
+- Represents an inheritance hierarchy of classes with one table for each concrete class.
+- Example
+  - Tennis player has a table for itself, basketball player has it has a table for itself. All data related to tennis player object are stored in tennis player table.
+- Issues
+  - each change to main class ( player class ) you need to make changes to each player table on database.
+  - brittle to chagnes
+  - the lack of a superclass table can make key management awkward and get in the way of referential integrity, although it does reduce lock contention on the superclass table
+- Good
+  - Avoids joins
+
 ### Inheritance Mappers
+
+- A structure to organize database mappers to handle inheritance hierarchies.
+- You need to minimize the amount of code to save and load the data to database. And you need to manage Super class - Sub class loading and saving. Those can be done by inheritance mapper.
 
 ## Object-Relational Metadata Mapping Patterns
 
