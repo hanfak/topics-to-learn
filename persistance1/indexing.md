@@ -1,5 +1,7 @@
 # Indexing
 
+- https://docs.oracle.com/cd/E11882_01/server.112/e40540/indexiot.htm#CNCPT1170
+- https://www.postgresql.org/docs/current/indexes.html
 ## What
 
 - problem
@@ -23,7 +25,7 @@
 
 # when not to index a column
 
-- heavy writes 
+- heavy writes
 - additional space usage is an issue
 - ou are selecting a large % (>10-20%) of the rows in the table
 

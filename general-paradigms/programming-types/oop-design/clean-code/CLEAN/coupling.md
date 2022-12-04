@@ -45,6 +45,11 @@
 - Code has fewer side effects among entities, easier to test, reuse and extend
 - If I have lots of unrelated dependencies, it is a coupling issue
 
+### Afferent and efferent coupling
+
+- Afferent coupling measures the number of incoming connections to a code artifact (component, class, function, and so on).
+- Efferent coupling measures the outgoing connections to other code artifacts.
+
 ### Accidental coupling
 
 - shows up when other code qualities are lacking

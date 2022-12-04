@@ -1,0 +1,31 @@
+# Backend Knowledge
+
+- Apart from being comfortable with the basics, which will allow to transition to similar stuff
+  - Language
+  - frameworks
+  - algorithms
+  - class design
+  - system design
+  - testing
+  - refactoring
+  - architecture
+- Most languages, have many similar ideas, but different syntax
+  - but to be an expert, you need to spend more time learning the details
+- Most applications/systems are written using a framework, and this leads to needs to be framework developer and need good knowledge of this framework
+  -
+- Main areas - dont need to be expert, but need a good understanding, and this includes hardware too. These are some areas that people will be more expert in one (t shaped developer)
+  - Databases
+    - Relational
+    - SQL
+  - Caches
+  - Communication & Networks
+    - rpc (http)
+    - messaging
+    - load balancers
+  - Security
+  - Devops
+    - CI/CD
+    - microservices (Containers, container management)
+    - Monoliths
+    - monitoring
+    - deploying

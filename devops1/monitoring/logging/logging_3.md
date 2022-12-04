@@ -1,10 +1,25 @@
 # Logging
 
+- https://www.marcobehler.com/guides/java-logging
 ## What
 
 - Logging is the process of recording application actions and state to a secondary interface.
 -  Loggers don't belong to any layers of our systems. Instead, we consider them to be application-wide and shared amongst different components.
   - It is a cross cutting concern
+### Analogy - medicine
+- Similar to medicine, have two parts prevention and cure
+- Prevention is like vaccine, lifestyle etc
+  - You stop the issue from happening, or stop it getting worse
+- Cure, is like drugs after finding out you are ill  
+  - logs are like this, they will inform you that something is wrong, help you find the issue (if they are implemented correctly) and allow us to fix it (ie code change, data fix, manual fix etc)
+
+## users
+
+- The people that will use it
+- These can be:
+  - The Devs
+  - tech ops
+  - business
 
 ## Why
 

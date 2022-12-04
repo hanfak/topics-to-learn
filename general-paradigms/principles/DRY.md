@@ -81,6 +81,8 @@ the acid test: when some single facet of the code has to change, do you find you
 
 - https://www.infoq.com/news/2012/05/DRY-code-duplication-coupling/
 - https://oncodedesign.com/dry-vs-coupling/
+- https://www.industriallogic.com/blog/spot-and-coincidental-duplication/
+
 ### Issues with many small methods
 
 - Implementing DRY can lead to creating many methods, and the use of the popular refactoring Extract Method.

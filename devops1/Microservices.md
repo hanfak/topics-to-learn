@@ -72,3 +72,5 @@
 
 - https://www.javacodegeeks.com/2018/03/introduction-to-microservices.html
 - https://microservices.io/
+- https://www.marcobehler.com/guides/java-microservices-a-practical-guide
+- https://youtu.be/z8qhToMtYRc Microservices • Martin Fowler • YOW! 2016

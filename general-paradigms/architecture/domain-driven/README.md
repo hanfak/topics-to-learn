@@ -5,6 +5,9 @@
 - https://github.com/ythirion/knowledge-base/blob/master/software-architecture/ddd-re-distilled.md
 - https://herbertograca.com/category/development/book-notes/domain-driven-design-by-eric-evans/page/2/
 - https://herbertograca.com/category/development/book-notes/patterns-principles-and-practices-of-domain-driven-design-by-scott-millett-and-nick-tune/
+- https://blog.avanscoperta.it/2020/08/04/domain-driven-design-in-2020/
+  - https://blog.codecentric.de/alberto-brandolini-domain-driven-design-eventstorming
+- https://youtu.be/3t0tZTOGk08 Writing cleaner code with Domain Driven Design by Paul van der Slot
 
 ## Issues
 

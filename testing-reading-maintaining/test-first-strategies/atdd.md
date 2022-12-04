@@ -53,3 +53,4 @@
 ## Links
 
 - https://leanpub.com/essential_acceptance_testing/read#leanpub-auto-reading-list
+- https://youtu.be/3lmClkPKQ0k The key concept in computer science and how it relates to ATDD (Peter Gfader)

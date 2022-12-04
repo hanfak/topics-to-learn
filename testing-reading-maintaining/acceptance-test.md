@@ -10,7 +10,7 @@
 - Run as another stage
   - modularised and run after unit tests
   - needs jar of app to run
-- Need to run in CI, create documentation in location that is accesible 
+- Need to run in CI, create documentation in location that is accesible
 
 ## Parts
 
@@ -47,3 +47,7 @@
 ## Thens
 
 ## Teardowns
+
+## Links
+
+- https://youtu.be/7CZitmD_R58Acceptance Testing Sounds Easy, But Is Hard To Get Right - Peter Gfader

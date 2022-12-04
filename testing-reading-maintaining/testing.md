@@ -66,6 +66,10 @@ to show their absence!
 
 ## Good unit tests
 
+- what is a unit?
+	- For some it is a class or method
+	- Others it is not touching out side tech (Infrastructure)
+	- It can be multiple objects under being invoked from a single object (ie testing use cases without db etc)
 - Tell the reader what you’re testing, not that you’re testing
 	- Dont need to have the "test" in name as it is in the annotation
 - tell the reader what behavior, property, capability, etc. is under test.
@@ -79,9 +83,10 @@ to show their absence!
 		- isolate & robust
 		- low overlap
 	- fast
-	- few
+	- few to cover all the cases
 		- small
 		- dry
+	- Can run them all in very quickly
 - Priorities
 	- code that you fear, hard to understand
 	- distant corner in the logic
@@ -94,18 +99,21 @@ to show their absence!
 - the purpose of your test
 	-  test that it works
 	-  and what it means to work
-- consider using underscores to improve readability of test names
+- Readable test names
+	- consider using underscores to improve readability of test names
 	-  @DisplayName("adfa") can be used in junit 5
 - the meaning of failure should be clear: it should mean the code doesn’t work.
+	- Add why it failed message, if default is not good enough
 - unit test shouldn’t depend on things that can’t be controlled within the test.
-	- ie Filesystem? Network? Database? Asynchronous ordering?
+	- ie Filesystem? Network? Database? Asynchronous ordering? edit config files?
 		- Theses should be mocked or stubbed
 	- unit under test shouldn’t depend on things that could cause failure when the code is correct
 - watch out for overfitting tests. You know the ones: brittle assertions on implementation details rather than required features. You update something—spelling, a magic value, a quality outcome—and tests fail.
 - Dont have underfitting tests too. They’re vague, passing at the drop of a hat, even with code that’s wildly and obviously wrong.
 	- Using prod code to use as expected
 	- never failing tests
-- Factor out the repetition. Use it to group tests into inner classes with @Nested.
+- Should be treated as prod code
+	- Factor out the repetition. Use it to group tests into inner classes with @Nested.
 
 ## Test harness and Test frameworks
 

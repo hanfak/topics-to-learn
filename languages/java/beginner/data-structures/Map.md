@@ -5,9 +5,12 @@
 - [Map](#map)
 	- [HashMap](#hashmap)
 	- [Full buckets](#full-buckets)
+		- [Load factor](#load-factor)
 	- [Treeifying](#treeifying)
+		- [Links](#links)
 	- [Links](#links)
 	- [Why hashcode is used is in hashmap](#why-hashcode-is-used-is-in-hashmap)
+	- [Iteration order](#iteration-order)
 	- [Complexity](#complexity)
 	- [Links](#links)
 
@@ -235,6 +238,10 @@ public String get(String key) {
 	- Due to hashcode and equuals being used in hashmap, they need to be implemented (esp if equals is overridden)
 	- Keys should be immutable, to maintain contract of equality. Others will break searchign for keys to get value
 		 - Enums are good for this
+
+## Iteration order
+
+- https://peterchng.com/blog/2022/06/17/what-iteration-order-can-you-expect-from-a-java-hashmap/
 
 ## Complexity
 

@@ -1,6 +1,6 @@
 # Correct By configuration
 
-an architecture paradigm where objects are always in a valid state, or the system doesn’t compile. Parameters used to construct the object are checked at compile type.
+an architecture paradigm where objects are always in a valid state, or the system doesn’t compile. Parameters used to construct the object are checked at compile time.
 
 In this architecture, programmers still code, but they can’t possibly mess it up (theoretically) ➔ Framework.
 

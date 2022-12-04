@@ -8,7 +8,7 @@
 - Patterns occurs not just object oriented code, but in other areas see Types of patterns
   - patterns can language specific, ie see effective java by Bloc
 - In essence, they are used to make code more changeable.
-- Depending on the language used, or libraries, or tech, these will either implement these patterns or make them redudent
+- Depending on the language used, or libraries, or tech, these will either implement these patterns (fill in the gaps) or make them redundant
 
 ## Types of patterns
 

@@ -81,6 +81,7 @@ Goes by many names
 - https://youtu.be/IZWLnn2fNko TDD and Clean Architecture - Use Case Driven Development by Valentina Cupać
 - https://youtu.be/gHSpj2zM9Nw Guilherme Ferreira - The Grand Unified Theory of Clean Architecture and Test Pyramid - NDC Porto
 - https://tpierrain.blogspot.com/2020/11/hexagonal-or-not-hexagonal.html
+- https://www.youtube.com/watch?v=KBxoQihhc-A Clean Architectures in Python
 
 ## Examples
 

@@ -56,6 +56,10 @@
 - Decorator lets you change the skin of an object.
   - Strategy lets you change the guts.
 
+### links
+
+- https://powerdream5.wordpress.com/2007/11/17/the-differences-between-decorator-pattern-and-proxy-pattern/#:~:text=Decorator%20Pattern%20focuses%20on%20dynamically,an%20object%20from%20its%20client.
+
 ## Link
 
 - https://www.yegor256.com/2015/02/26/composable-decorators.html

@@ -39,4 +39,9 @@ https://semaphoreci.com/blog/cicd-pipeline
 - https://xebialabs.com/glossary/
 - https://medium.com/@DZoneInc/48-devops-terms-you-should-know-a-devops-glossary-37e60fd23752
 - https://itsvit.com/blog/devops-glossary-78-basic-devops-terms-in-simple-words/
+
+## issues
+
+- https://www.youtube.com/watch?v=52ht63dMQ1g DevOps is dead. Embrace platform engineering.
+  - platform/sre team instead of one team creates looks after it
 -

@@ -1,0 +1,1 @@
+- https://youtu.be/WTz3clMTcXg Cloud Native Java, 2nd edition - Josh Long

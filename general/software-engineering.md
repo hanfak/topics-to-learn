@@ -10,6 +10,7 @@
 		- [Links](#links)
 	- [Deliver Better Software, Faster](#deliver-better-software-faster)
 	- [Software Engineering vs Coding](#software-engineering-vs-coding)
+	- [Software Engineering vs Craftsmanship](#software-engineering-vs-craftsmanship)
 	- [Difficulty of software engineering](#difficulty-of-software-engineering)
 	- [Design vs Architecture](#design-vs-architecture)
 		- [Links](#links)
@@ -183,6 +184,10 @@
     - it can have a real impact on your company and thereby the world
   - Greater understanding of everything, not just a fixed area
     - A lot to know and understand, can be overwhelming
+
+## Software Engineering vs Craftsmanship
+
+- https://youtu.be/12tDtvC55QM Software Craftsmanship vs Software Engineering Farley
 
 ## Difficulty of software engineering
 

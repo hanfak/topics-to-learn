@@ -34,6 +34,7 @@
 - Waterfall but in shorter time frame (or set of features) repeated
 	- a few features produced then all features
 	- To get early feedback
+- Agile is a set of technical practices, not a management practice
 
 ### The agile values
 
@@ -85,6 +86,9 @@ Instead of figuring everything upfront, we design, build and test little bits of
 	- This gives stakeholders, a better understanding of the work and how long it will take to complete, how much can be done etc
 - Was a reaction to old way of doing software development (ie waterfall), where major changes to requirements could put large strains on teams.
 	- Thus the smaller chunks of work help teams become more flexible, and dare I say agile. And in the process it helps them deliver features faster and respond to changes quicker.
+- Bring the pain forwards, does not necessarily makes thing faster
+	- find out if features are needed, whether the deadline can be made
+- All about fast feedback
 
 ## Issues
 
@@ -106,7 +110,7 @@ Instead of figuring everything upfront, we design, build and test little bits of
 	- this can be fine, as we use the feedback from the users which informs the process to create stories to fix this
 	- But due to the accidental nature, they can be hard to fix, be cross cutting, may need rewrite or takes long time
 - To integrate the software qualites, the definition of done includes this, but then there comes a point where different vairations of done are set so that software can be released (ie done but slow, done but no security etc)
-	- this leads to qualities being ignored, and never revisited, or partially implemented 
+	- this leads to qualities being ignored, and never revisited, or partially implemented
 
 ## Types
 
@@ -130,7 +134,7 @@ Instead of figuring everything upfront, we design, build and test little bits of
 
 ## Done
 
-## Cardwall
+## Cardwall/story board
 
 ### Links
 
@@ -138,7 +142,7 @@ Instead of figuring everything upfront, we design, build and test little bits of
 
 ## User Stories
 
-- A story is typically the smallest defined piece of work
+- A story is typica`lly the smallest defined piece of work
 	- defining a bite-sized piece of work,
 -  in the form of a new ticket that you create
 	- ie Jira, trello or Github Issues.
