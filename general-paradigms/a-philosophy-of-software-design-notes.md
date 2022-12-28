@@ -16,6 +16,8 @@
 
 <!-- /TOC -->
 
+- https://tigerabrodi.blog/a-philosophy-of-software-design
+
 ## From youtube talk
 
 https://www.youtube.com/watch?v=bmSAYlu0NcY

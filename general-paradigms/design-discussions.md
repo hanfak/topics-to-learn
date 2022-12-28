@@ -29,3 +29,4 @@
 ## System
 
 - https://github.com/michael-kehoe/sre-interview/blob/master/system-design.md
+- https://www.youtube.com/watch?v=4Iqjhi3kusY Designing Systems - What I wish I knew • Jakub Nabrdalik • Devoxx Poland 2021

@@ -16,3 +16,4 @@
 - https://github.com/donnemartin/system-design-primer
 - https://www.8bitmen.com/best-resources-to-learn-software-architecture-system-design/
 - https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles
+- https://www.youtube.com/watch?v=4Iqjhi3kusY Designing Systems - What I wish I knew • Jakub Nabrdalik • Devoxx Poland 2021

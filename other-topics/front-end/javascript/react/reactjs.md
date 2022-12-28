@@ -7,6 +7,10 @@
 - https://www.freecodecamp.org/news/react-js-for-beginners-props-state-explained/
 - https://lo-victoria.com/react-cheat-sheet-for-beginners
 
+## Internal workings
+
+- https://www.freecodecamp.org/news/react-under-the-hood/
+
 ## roadmpa
 
 https://github.com/adam-golab/react-developer-roadmap

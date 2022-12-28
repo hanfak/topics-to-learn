@@ -7,6 +7,7 @@
 - https://herbertograca.com/category/development/book-notes/patterns-principles-and-practices-of-domain-driven-design-by-scott-millett-and-nick-tune/
 - https://blog.avanscoperta.it/2020/08/04/domain-driven-design-in-2020/
   - https://blog.codecentric.de/alberto-brandolini-domain-driven-design-eventstorming
+- https://blog.avanscoperta.it/2020/08/04/domain-driven-design-in-2020/
 - https://youtu.be/3t0tZTOGk08 Writing cleaner code with Domain Driven Design by Paul van der Slot
 
 ## Issues

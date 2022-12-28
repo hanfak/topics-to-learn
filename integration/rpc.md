@@ -12,6 +12,10 @@
 - RPC functions upon an idea of contracts, in which the negotiation is defined and constricted by the client-server relationship rather than the architecture itself. RPC gives much of the power (and responsibility) to the client for execution, while offloading much of the handling and computation to the remote server hosting the resource.
 - gRPC is usually the end system driving and facilitating communication between disparate services and APIs.
 
+### Links
+- https://youtu.be/gnchfOojMk4 What is RPC? gRPC Introduction.
+
+
 ## Advantages
 
 - gRPC can use protocol buffer for data serialization. This makes payloads faster, smaller and simpler.
