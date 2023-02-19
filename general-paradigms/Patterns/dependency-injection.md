@@ -41,10 +41,10 @@
 - pass the dependencies of a class to its constructor.
 
 
-## Setter Injection
+## Setter/Method Injection
 - dependencies are instantiated after the class is created.
 
-## Field Injection
+## Field/Property Injection
 
 - having a public non final field, where you can inject the dependencies
 - dependencies are instantiated after the class is created

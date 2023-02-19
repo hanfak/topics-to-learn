@@ -4,6 +4,7 @@
 ## What
 - Mocking is used for protocol testing - it tests how you'll use an API, and how you'll react when the API reacts accordingly.
 - Ideally (in many cases at least), that API should be specified as an interface rather than a class - an interface defines a protocol, a class defines at least part of an implementation.
+- Test doubles turn integration tests into unit/isolation tests
 
 - https://8thlight.com/blog/uncle-bob/2014/05/14/TheLittleMocker.html
 - https://martinfowler.com/articles/mocksArentStubs.html
@@ -94,10 +95,14 @@
   - it allows you to replace an object with a mock, which is a test double whose behavior is specified inline in a test.
 - The use of mocking frameworks reduces boilerplate because you don’t need to define a new class each time you need a test double.
 
+## why
+- Essential for testing and not want to call anything which can have consequences (ie state change (internally or externally), production calls, charges for services)
+-  If you want to verify the behavior of the system under test (SUT), using mockito can be more effective as it allows you to verify interactions between the SUT and its collaborators.
+
 
 ## Problems with mocking
 
-- Essential for testing and not want to call anything which can have consequences (ie state change (internally or externally), production calls, charges for services)
+
 - When you mock something you’re removing all confidence in the integration between what you’re testing and what’s being mocked.
   - You will need to do separate tests for integration part, to see that it actually works
 - mocking is somewhat overused - often you're not really interested in the exact interaction, you really want a stub... but mocking framework can be used to create stubs, and you fall into the trap of creating brittle tests by mocking instead of stubbing. It's a hard balance to get right though.
@@ -107,14 +112,19 @@
 - Can lead to mocking everything except the SUT
   - This can make test brittle
   - SUT is not necessarily a class, but can be a bunch of objects to test the behaviour
+  - Over-reliance on mocks can lead to tests that are not representative of the real-world behavior of the system, resulting in tests that are less effective and less reliable.
 - SUT with lots of dependencies and interactions, and use of mocks can make tests more complex and unclear with lots of extra code
 - Leaks implementation details into your test
   - Ideally, a good test should need to change only if user-facing behavior of an API changes; it should remain unaffected by changes to the API’s implementation
 - Use of mocking frameworks can lead to false sense of security
   - MAke tests hard to maintain
+  - makes refactoring harder, as tests will break
   - bug finding hard
 - test doubles, does not have exact sameness as the real implementation, so always some form of security that it is give correct evaluations
 - https://engineering.talkdesk.com/double-trouble-why-we-decided-against-mocking-498c915bbe1c
+- https://youtu.be/7AGQ9dhWCX0 Test Doubles Are A Scam – Matt Diephouse
+- Mocking can add additional processing time during the build process, slowing down the overall build time.
+
 
 ### alternative - use real implementations
 

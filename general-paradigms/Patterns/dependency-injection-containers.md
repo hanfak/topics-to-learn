@@ -12,15 +12,54 @@
 
 ## What
 
+## Dependency Injection Containers
+
+- Instead of you being in control of creating instances of your objects and invoking methods, you become the creator of plugins or extensions to the framework
+ - The IOC framework will look at the web request and figure out which classes should be instantiated and which components should be delegated to
+
+- DIC provides:
+ - Creates objects that other objects need (i.e. their dependencies)
+	 - When DIP is applied, a graph of objects, each with their own dependencies, can have those dependencies supplied to them
+		 - via constructor params
+ - Controls the lifetime of the objects that it creates
+	 - supplying the same object instance (singleton) for all dependencies of a given kind.
+ - Creates objects for dependencies all the way down an object hierarchy
+
+
+
+- Can also do this, by newing up objects in another class (wiring//config) where the dependencies are inverted
 ## why use
+- Pro of DIC
+ - is that wiring of objects dont need to be changed
+ - Using an auto-wired DIC means that the architecture (dependencies) of the system are not hard- coded
+ - Dependencies can be added and removed (for example constructor parameters) and classes can be refactored and combined without having to spend time coding how those dependencies are provided.
+ - Stubbing out dependencies for testing becomes easier
+ - Reduce amount of code and complexity
+ - You can create plugins for your framework
+ - Each plugin is independent and can be added or removed at any point in time.
+ - Your framework can auto-detect these plugins, or there is a way of configuring which plugin should be used and how
+ - Your framework defines the interface for each plugin type and it is not coupled to plugins themselves
 
 ## Why bad
+
+
+- stuck in the way of doing it, must follow convention of framework
+- New learning if not popular framework
+- Doing something outside of what the framework want can be very hard
+- Lots of magic, reflection, cached proxy
+- Another thing to upgrade, which if framework not used properly can affect the whole code base
+-  get different bean instantiation order if you run from jar compared to running from classes.
+- SOLID principles become violated
+	- issues with injecting interfaces with multiple impl, need to state which impl is to use in the calling code (defeats the purpose of the interface) or annotate the impl
+	- Encapsulation is lost, if annotation requires the use non private fields (this might be fine for performance reasons ie quarkus needs this to allow for graalvm to optimise)
 
 - https://www.yegor256.com/2014/10/03/di-containers-are-evil.html
 - https://www.tonymarston.net/php-mysql/dependency-injection-is-evil.html
 - http://davidscode.com/blog/2015/04/17/when-does-dependency-injection-become-an-anti-pattern/
 - https://www.continuousimprover.com/2018/05/dont-blame-dependency-injection.html
 - https://www.pragmaticobjects.com/chapters/007_di_containers.html
+- https://www.youtube.com/watch?v=b8IOvFcBTvs Dependency Injection frameworks: reasons to avoid them Andy Balaam
+- https://www.jamesshore.com/v2/blog/2023/the-problem-with-dependency-injection-frameworks
 
 
 ### notes

@@ -3,6 +3,13 @@
 - https://www.journaldev.com/16928/java-string
 - https://www.java67.com/2018/01/10-important-points-about-string-in-java.html
 
+## format
+
+- New lines
+   - String.format("Hallo%n") inserts an operating system specific line break. The result differs depending on the operating system on which your program is running.
+   - String.format("Hallo\n") always inserts a Linux line break regardless of the operating system.
+   - Best to use \n instead 
+
 ## Splitting
 
 - https://www.java67.com/2019/12/difference-between-stringtokenizer-and.html

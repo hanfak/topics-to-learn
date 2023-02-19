@@ -205,7 +205,119 @@
 - write a class declared to implement the interface, with implementations of all of the remaining interface methods. The class may contain any non public fields ands methods appropriate to the task.
 
 ## Design interfaces for posterity
+
+- With Java 8, it's now possible to add new methods in interfaces without breaking old implementations thanks to default methods. Nonetheless, it needs to be done carefully since it can still break old implementations that will fail at runtime.
+-  The problem that default methods try to solve is, before Java 8, once an interface was released to the wild you could never change it safely.
+- Default methods  allow us to do is provide a default implementation for a particular method so we can evolve an interface without requiring the consumer of the service to implement that method right away.
+- Issues with Default
+	-  we don’t have a guarantee that our default implementation will work with all the implementations of the interface.
+	- Example removeIf from Collections, if impl does not override it will use the defult impl in interface and can cause issues
+	- In the presence of default methods, existing implementations of an interface may compile without error or warning but fail at runtime.
+
 ## Use interfaces only to define types
+
+- Do not use constant interface: an interface that has no methods, and consists solely of static final fields, each exporting a constant.
+- Use an enum or noninstantiable utility class instead.
+	- If the constants are best viewed as members of an enumerated type, you should export them with an enum type
+	- If the constants are NOT strongly tied to an existing class or interface, export the constants with a noninstantiable utility class
+
 ## Prefer class hierarchies to tagged classes
+
+- A tagged class is one that stores a "tag" variable indicating the "flavor" of the class, and many of the class methods will switch based on the tag.
+- Those kinds of classes are clutted with boilerplate code (Enum, switch, useless fields depending on the enum). Don't use them.
+- Tagged classes are verbose, error-prone and inefficient. They have lot of boilerplate code, bad readability, they increase the memory footprint and more shortcomings
+```Java
+// Tagged Class
+	class Figure{
+		enum Shape {RECTANGLE, CIRCLE};
+
+   //Tag field
+		final Shape shape;
+
+    //rectangle fields    
+		double length;
+		double width;
+
+		//circle field
+		double radius;
+
+		// Constructor for circle
+		Figure (double radius) {
+			shape = Shape.CIRCLE;
+			this.radius=radius;
+		}
+
+		// Constructor for rectangle
+		Figure (double length, double width) {
+			shape = Shape.RECTANGLE;
+			this.length=length;
+			this.width=width;
+		}
+
+		double area(){
+			switch(shape){
+				case RECTANGLE:
+					return length*width;
+				case CIRCLE
+					return Math.PI * (radius * radius);
+				default:
+					throw new AssertionError(shape);
+			}
+		}
+	}
+```
+
+use this:
+
+```Java
+abstract class Figure{
+		abstract double area();
+	}
+class Circle extends Figure{
+	final double radius;
+
+  Circle(double radius) { this.radius=radius;}
+  double area(){return Math.PI * (radius * radius);}
+}
+class Rectangle extends Figure{
+	final double length;
+	final double width;
+
+	Rectangle (double length, double width) {
+		this.length=length;
+		this.width=width;
+	}
+
+	double area(){return length*width;}
+}
+
+class Square extends Rectangle {
+	Square(double side){
+		super(side,side);
+	}
+}
+```
 ## Favour static member classes over non static
+
+- four kinds of nested classes:
+	- static member classes
+		- usage
+			- as a public helper class: e.g., an inner enum describing the operations supported by the outer calculator class.
+			- If a nested class needs to be visible outside of a single method or is too long to fit comfortably inside a method,
+			- If each instance of a member class needs a reference to its enclosing instance, make it nonstatic
+	- nonstatic member classes
+		- Each instance of a nonstatic member class is implicitly associated with an enclosing instance of its containing class.
+		- Within instance methods of a nonstatic member class, you can invoke methods on the enclosing instance or obtain a reference to the enclosing instance using the qualified this construct: i.e., EnclosingType.this.
+		- usage
+			-  to define an Adapter that allows an instance of the outer class to be viewed as an instance of some unrelated class.
+			- For example, an iterator might be a nonstatic member class implementing the Iterator inteface.
+	- anonymous classes
+	- local classes
+		- defined within a method or a scope block.
+- Assuming the class belongs inside a method, if you need to create instances from only one location and there is a preexisting type that characterizes the class, make it an anonymous class; otherwise, make it a local class.
+- If a member class does not need access to its enclosing instance, then declare it static. If the class is non static, each instance will have a reference to its enclosing instance. That can result in the enclosing instance not being garbage collected and memory leaks.
+
 ## Limit source files to a single top-level class
+
+- Having multiple top-level classes would mean that the file name cannot be made correspond to the class(es) defined within that file. Consequently, it would not be immediately obvious when multiple classes of the same name are defined in different files in a particular project. This would lead to hard-to-debug problems where a different class might be compiled into the .jar file depending on the argument passed to javac.
+- consider using static member classes. Because it enhances readability.

@@ -28,6 +28,10 @@
 - Each vertical slice can have different dependencies (similar to microservices)
   - ie one slice can use sql another can use orm
 - Liftability, can copy slices to other projects
+- Easy to split into microservices
+- improve cohesion
+- within slice, everything is coupled,
+  - but this can lead to either have a commons package or duplicating common infrastructure code
 
 ## Common patterns invovled
 
@@ -55,3 +59,4 @@
 -  https://blogs.cuttingedge.it/steven/posts/2011/meanwhile-on-the-command-side-of-my-architecture/
 -  https://blogs.cuttingedge.it/steven/posts/2011/meanwhile-on-the-query-side-of-my-architecture/
 -  https://jimmybogard.com/vertical-slice-architecture/
+- https://youtu.be/L2Wnq0ChAIA Vertical Slice Architecture, not Layers! - codeopinion

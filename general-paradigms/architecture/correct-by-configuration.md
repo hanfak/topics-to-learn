@@ -19,3 +19,10 @@ How to create a DSL?
 ## Links
 
 - https://youtu.be/lm4jEcnWeKI
+
+## DSL
+
+https://tomassetti.me/domain-specific-languages/
+- https://dzone.com/articles/building-a-dsl-in-java
+- https://dzone.com/articles/creating-internal-dsls-java
+- https://www.youtube.com/watch?v=1yIDSrFP2qQ  Scott Stanchfield

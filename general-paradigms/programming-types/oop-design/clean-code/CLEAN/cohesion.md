@@ -22,6 +22,7 @@
 
 ## What
 
+-  Cohesion means completeness with itself.
 - Software entities (classes & methods) should have a single responsibilty
   - No God object
 - Expression should be concise but it must also be complete
@@ -99,7 +100,8 @@
 
 - Easier to understand
 - Need to change less often
-- More easily usable, reusable, and composable • Easier to unit test
+- More easily usable, reusable, and composable
+- Easier to unit test
 - Easier to make well-named
 
 ## Measuring
@@ -119,7 +121,7 @@
   - Ideally, a cohesive module is one where all the parts should be packaged together,  
     - because breaking them into smaller pieces would require coupling the parts together via calls between modules to achieve useful results
   - Attempting to divide a cohesive module would only result in increased coupling and decreased readability
-- Can lead to lots of dependencies when there are lots of small modules needing gto communicate, hard to understand and follow flow
+- Can lead to lots of dependencies when there are lots of small modules needing to communicate, hard to understand and follow flow
 - Hard to measure
 - If module A has functionality which can be split off to another module B is this correct ?
   - Can lead to high coupling, as the Module B will be dependent on Module A to complete the work
@@ -130,3 +132,4 @@
 - https://pragprog.com/magazines/2010-12/cohesive-software-design
 - https://www.codurance.com/publications/software-creation/2016/03/03/cohesion-cornerstone-software-design
 - https://www.quora.com/What-are-the-pros-and-cons-of-cohesion-and-coupling
+- https://blog.ttulka.com/how-cohesion-and-coupling-correlate/

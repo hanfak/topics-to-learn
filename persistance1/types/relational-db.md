@@ -43,6 +43,11 @@
 - Your data structure is not changing. If you application design is solid and not expected to be changing with future requirements (at least not very often) then you may proceed to use this type of construct and be confident in your data.
 -  complex/dynamic queries/reporting are best served from an RDBMS.
 - Very mature and support
+-  Tools such as foreign keys, unique constraints, not null constraints, check constraints, etc. Combine these features with transactions, and you now have customizable logical guarantees about your data that your database will enforce.
+
+## why
+
+- https://www.simplethread.com/relational-databases-arent-dinosaurs-theyre-sharks/
 
 ## Not to use
 
@@ -60,3 +65,8 @@
   - The data is retrieved slowly from large tables because selection queries do table scans and, as the data grows, greater chunks of disk space need to be scanned.
   - This problem can be mitigated by adding indexes, so a much smaller collection of data is scanned before the right data is retrieved.
     - However, indexes have their own problem. Every time new data is inserted, index needs to be updated. This will make insertion operations slow, which may not be so good for multi-user interactivity scenario.
+- Relational databases have spent years optimizing the speed of writes, but their speed is limited by their durability and consistency guarantees.
+  - can only write as fast as their persistent memory will allow them to. Or as fast as they can process transactions, indexes, and foreign keys (especially if they have to block).
+- Sharding historically has been a huge pain point for relational databases.
+  - sharding data across a number of remote instances, you end up having to give up a lot of the consistency guarantees that relational databases provide
+- Most relational databases provide a lot of opportunities to degrade performance, usually by poorly performing queries

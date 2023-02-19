@@ -59,6 +59,10 @@
 
 - https://reflectoring.io/spring-boot-docker/
 
+## How it works
+
+- https://youtu.be/5gttHK04lQ4
+	- https://github.com/hanfak/Java-Own-Framework---step-by-step
 ## why bad
 
 - https://www.reddit.com/r/java/comments/2emu2s/whats_with_all_the_antispring_sentiment/

@@ -1,5 +1,7 @@
 # Unit testing
 
+- Probably best to be called Isolation Tests
+  - opposite of integration tests
 - There are many definitions, mainly due to the ambiguous nature of the word unit
   - https://martinfowler.com/bliki/UnitTest.html
   - https://srikanth.sastry.name/defining-unit-tests-two-schools-of-thought/

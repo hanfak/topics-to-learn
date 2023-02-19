@@ -21,6 +21,10 @@
 - Tools for in inspection, modification, testing are readily available
 - Loose coupling between client and server makes changes relatively easy.
 - Http status codes are well defined and helps in identifying cause of problems
+- Using content negotiation and media types to communicate the format of requests and responses
+- Using standard (DNS) naming and discovery network mechanisms
+- Is a stateless protocol (between requests) that specifically expects that the client and server will exchange their states as part of each individual request. Being stateless, it accommodates network errors and the definitions of idempotency and limits on the number and types of verbs and reasonably strict definitions of their use also provide standard mechanisms for recovery.
+- Specifically defines and accomodates naming, discovery, caching, chunking requests/replies, streaming, middleware cache and content distribution, network boundaries, security authentication and authorization etc.
 
 ## Disadvantages
 

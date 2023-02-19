@@ -45,6 +45,11 @@
   - &
   - Binary compatiblity
 
+## rules
+- Use the most generic types possible for arguments. Argument types provide the most utility when they are as generic as possible, because the method starts to apply to a wider range of input values.
+- Use the most specific types possible for return values. Return types provide the most utility when they are as specific as possible, because a specific return value provides more functionality than a generic one.
+
+
 ## covariance and contravariance
 - If type R derives from type T, and Foo<R> is a subtype of Foo<T>, Foo is covariant.
 - If type R derives from type T, and Foo<T> is a subtype of Foo<R>, Foo is contravariant.
@@ -71,6 +76,7 @@ This is as expected: a function that accepts any supertype of T can also handle 
 
 ## Links
 
+- https://enterprisecraftsmanship.com/posts/generic-types-arguments-specific-types-return-values/
 - https://docs.oracle.com/javase/tutorial/java/generics/
 - http://thegreyblog.blogspot.com/2011/03/java-generics-tutorial-part-i-basics.html
 - https://www.javacodegeeks.com/2015/09/how-and-when-to-use-generics.html

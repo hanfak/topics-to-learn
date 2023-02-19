@@ -14,38 +14,7 @@ Related to DIP
   - this means your classes do not have to know when their instances are created, who is using them, or howtheir dependencies are put together.
   - Your classes are plugins, and some external force will decide how and when they should be used
 
- ## Dependency Injection Containers
-
-- Instead of you being in control of creating instances of your objects and invoking methods, you become the creator of plugins or extensions to the framework
-  - The IOC framework will look at the web request and figure out which classes should be instantiated and which components should be delegated to
-
-- DIC provides:
-  - Creates objects that other objects need (i.e. their dependencies)
-    - When DIP is applied, a graph of objects, each with their own dependencies, can have those dependencies supplied to them
-      - via constructor params
-  - Controls the lifetime of the objects that it creates
-    - supplying the same object instance (singleton) for all dependencies of a given kind.
-  - Creates objects for dependencies all the way down an object hierarchy
-
-- Pro of DIC
-  - is that wiring of objects dont need to be changed
-  - Using an auto-wired DIC means that the architecture (dependencies) of the system are not hard- coded
-  - Dependencies can be added and removed (for example constructor parameters) and classes can be refactored and combined without having to spend time coding how those dependencies are provided.
-  - Stubbing out dependencies for testing becomes easier
-  - Reduce amount of code and complexity
-  - You can create plugins for your framework
-  - Each plugin is independent and can be added or removed at any point in time.
-  - Your framework can auto-detect these plugins, or there is a way of configuring which plugin should be used and how
-  - Your framework defines the interface for each plugin type and it is not coupled to plugins themselves
-
-- Negatives
-  - stuck in the way of doing it, must follow convention of framework
-  - New learning if not popular framework
-  - Doing something outside of what the framework want can be very hard
-  - Lots of magic, reflection, cached proxy
-  - Another thing to upgrade, which if framework not used properly can affect the whole code base
-
-- Can also do this, by newing up objects in another class (wiring//config) where the dependencies are inverted
+This is linked to use of IoC containers ie Spring
 
 ## Links
 

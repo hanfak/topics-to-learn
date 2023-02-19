@@ -3,6 +3,7 @@
 - https://howtodoinjava.com/java/multi-threading/when-and-how-to-use-thread-local-variables/
 - http://tutorials.jenkov.com/java-concurrency/threadlocal.html
 - https://www.baeldung.com/java-threadlocal
+- https://www.developer.com/java/java-threadlocal/
 
 
 ## Usage

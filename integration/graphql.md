@@ -6,6 +6,12 @@
 ## Advantages
 
 - it typically delivers the smallest possible request.
+- Avoids issues that REST have, where the client might need to make multiple requests
+- Standardised language to do the communication, like sql style
+
+## Disadvantages
+
+- As this turns multiple request into one request, the complexity is moved to the database (or cache), which can overload the db
 
 ## Uses
 
