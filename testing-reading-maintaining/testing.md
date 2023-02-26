@@ -3,29 +3,30 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Testing](#testing)
-	- [What are tests](#what-are-tests)
-	- [Why write tests](#why-write-tests)
-	- [Good unit tests](#good-unit-tests)
-	- [Test harness and Test frameworks](#test-harness-and-test-frameworks)
-	- [Methodologies](#methodologies)
-	- [Test Driven Development (TDD)](#test-driven-development-tdd)
-	- [Acceptance Test Driven Development (ATDD)](#acceptance-test-driven-development-atdd)
-	- [Testing pyramid](#testing-pyramid)
-		- [issues](#issues)
-	- [Trophy Pyramid](#trophy-pyramid)
-	- [Links](#links)
-	- [Types of Tests](#types-of-tests)
-		- [White Box Testing](#white-box-testing)
-	- [Builds](#builds)
-	- [Making code more testable](#making-code-more-testable)
-		- [Black Box Testing](#black-box-testing)
-	- [Stubs](#stubs)
-	- [mockito](#mockito)
-	- [Junit](#junit)
-		- [AssertJ](#assertj)
-	- [yatspec](#yatspec)
-	- [Writing Tests](#writing-tests)
-	- [links](#links)
+    - [What are tests](#what-are-tests)
+    - [Why write tests](#why-write-tests)
+    - [Good unit tests](#good-unit-tests)
+    - [Test harness and Test frameworks](#test-harness-and-test-frameworks)
+    - [Methodologies](#methodologies)
+    - [Test Driven Development (TDD)](#test-driven-development-tdd)
+    - [Acceptance Test Driven Development (ATDD)](#acceptance-test-driven-development-atdd)
+    - [Testing pyramid](#testing-pyramid)
+        - [issues](#issues)
+    - [Testing Hourglass](#testing-hourglass)
+    - [Trophy Pyramid](#trophy-pyramid)
+    - [Links](#links)
+    - [Types of Tests](#types-of-tests)
+        - [White Box Testing](#white-box-testing)
+    - [Builds](#builds)
+    - [Making code more testable](#making-code-more-testable)
+        - [Black Box Testing](#black-box-testing)
+    - [Stubs](#stubs)
+    - [mockito](#mockito)
+    - [Junit](#junit)
+        - [AssertJ](#assertj)
+    - [yatspec](#yatspec)
+    - [Writing Tests](#writing-tests)
+    - [links](#links)
 
 <!-- /TOC -->
 
@@ -202,12 +203,19 @@ to show their absence!
 * More unit tests, less expensive, mocked/stubbed, fast running tests at the bottom. Cover more of the code base.
 
 - https://blog.ncrunch.net/post/testing-pyramid-automated-testing.aspx
+- https://khushiy.com/2019/02/07/test-pyramid-antipatterns/
 
 ### issues
 
 - https://blog.devgenius.io/what-is-the-problem-of-testing-pyramid-model-7fe7612a02e8
 - https://johnfergusonsmart.com/test-pyramid-heresy/
 
+## Testing Hourglass 
+
+- As software projects grow, often the shape of our test pyramid distribution becomes undesirable, either top heavy (no unit or medium integration tests), or like an hourglass.
+- The hourglass test distribution has a large set of unit tests, a large set of end-to-end tests, and few or no medium integration tests.
+- To transform the hourglass back into a pyramid — so that you can test the integration of components in a reliable, sustainable way — you need to figure out how to architect the system under test and test infrastructure and make system testability improvements and test-code improvements.
+-
 ## Trophy Pyramid
 
 <img src="testing-trophy.png" alt="testing-trophy.png" width="700">
@@ -233,6 +241,11 @@ to show their absence!
   - Makes code more brittle, more places to change code
 - If test does something that your consumer of that code doesnt then it's testing implementation details
 - If refactor breaks your tests, then it's testing implementation details
+
+- https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications
+- https://agiledojo.de/2021-02-18-test-pyramid-vs-testing-trophy_en/
+- https://martinfowler.com/articles/2021-test-shapes.html
+- https://www.baytechconsulting.com/blog/test-pyramid-vs-testing-trophy-whats-the-difference
 
 ## Testing Quadrant
 

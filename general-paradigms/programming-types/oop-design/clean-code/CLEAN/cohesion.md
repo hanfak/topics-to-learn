@@ -22,7 +22,8 @@
 
 ## What
 
--  Cohesion means completeness with itself.
+- cohesion describes the relationships between the methods inside each one.
+- Cohesion means completeness with itself.
 - Software entities (classes & methods) should have a single responsibilty
   - No God object
 - Expression should be concise but it must also be complete
@@ -38,7 +39,13 @@
 - This allows us to name the entity when responsibilty is well defined
 - With a complex class, we need to abstract details to other classes, we do this via composition. And let the complex class delegate behaviour to the other classes it is composed of.
 - Code is easier to understand and find bugs , as each entity is dealing with just one thing
--
+- low cohesion
+  - Low cohesion describes code that has many different ideas all lumped together in it in a single place.
+  - HArder to understand 
+  - Need to understand many things/responsibilities/ideas at once 
+  - Changing one method forces changes in other methods 
+  - Difficult to construct the class with lots of dependencies
+  - limited reuse
 
 ## Classes
 
