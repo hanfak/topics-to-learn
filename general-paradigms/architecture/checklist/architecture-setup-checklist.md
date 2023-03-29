@@ -71,6 +71,7 @@
 
 ## Backend Concerns
 
+- Logic or domain concerns 
 - Logging
   - Use SLF4J with either Logback or Log4J2 underneath.
   - How to manage logs
@@ -192,6 +193,11 @@
   - in memory db or test db on container
   - stubbed out apis or brokers
     - wiremock, trafficparrot
+- Unit tests 
+  - social tests (start from use case)
+    - using fakes (which are tested)
+  - individual tests
+    - using mocks
 - Performance tests
   - SLAs
 - Stress tests
@@ -202,10 +208,17 @@
   - For deployments into new environments, different clusters
 - Production tests
 - Environments for testing
+  - What dependencies are stubbed by us
+  - What dependnecies have a test version that can be used
+    - how to setup data, get resources
+- Local manual testing 
+  - docker
 - Documentation from tests
   - Yatspec, cucumber
   - What tests to document
 - Test coverage
+  - static style - Pitesting
+  - line coverage - jacoco
 - app integration tests
 - Tools
   - Junit, mockito, assertj, hamcrest
@@ -214,12 +227,14 @@
   - dockerised app
   - Use of stub app to prime api calls
 - Manual testing in different environments
+  - provide ways to prime for different test cases (ie gui)
+  - code primings 
 
 [Top of Page](#checklist-for-new-project)
 
 ## Operations Concerns
 
-- Continuous Deployment
+- Continuous Delivery
   - Are there automatic tasks that deploy your application to a development, staging or production environment?
   - How will these tasks be executed?
   - Will scripts or configuration files be manually created or automated using minimum info the app needs to run
@@ -272,21 +287,31 @@
   - Are there any communication obstacles between different parts of the application or between the application and third party applications?
 - Secrets
   - Vault
+- Certificates 
+  - server
+  - client
 - Automating environments
   - Terraform
 - Expiry dates
   - certifactes, licenses, secrets
-  - When do they occur? Is there a reminder - alerting system, emails etc?
+  - When do they occur? Is there a reminder/monitor - alerting system, emails etc?
+- Gitops 
+  - state of deployments stored in git
+  - flux 
 
 [Top of Page](#checklist-for-new-project)
 
 ## Development Concerns
 
 - IDE
-  - What’s the policy on using IDE’s?
+  - What’s the policy on using IDE’s? licence costs
   - Is each developer allowed to use his/her IDE of choice?
   - Making a specific IDE mandatory may reduce costs for providing several parallel solutions while letting each developer use his favorite IDE may reduce training costs.
-  - Intellij, eclipse
+  - plugins 
+    - custom made, free, paid
+    - legal usage
+  - Mastery, shorcuts 
+  - e.g. Intellij, eclipse
 - Build Tool
   - Which tool will do the building?
   - Both Maven and Gradle are popular choices
@@ -323,27 +348,37 @@
 - Pairing or/and Code reviews
   - Will you perform code reviews during development?
   - How will thos code reviews be supported by software?
-    - github, reviewboard
+    - github, reviewboard, pairing
   - When will they be performed?
+  - How will they be done? 
+    - conventions set
   - Metrics used
+  - Is there a precheck before review is done 
+    - branch build - runs build, static analysis tests
 - Pair programming
   - When will this be done?
   - How long for?
     - Monitoring equal pairing
   - Switching up?
+  - Styles?
   - Equipment?
     - one box two computers Or laptops
     - Monitors
     - keyboards & mice
     - desks
     - chairs
+  - Remote pairing 
+    - software? licenses?
 - Trunk or feature/branch based development
   - use of feature toggles for trunk based
   - How/when to merge?
+  - CI setup, so master in good state
+    - build monitor to inform about issues with failng builds
   - Architecture so different stories in play wont affect all or minmal amount of same code being changed
 - Continuous Integration
   - How will the build process be executed on a regular basis?
-  - There are cloud providers like CircleCI or Travis or you may install a local Jenkins server or GoCD.
+  - There are cloud providers like CircleCI or Travis or you may install a local Jenkins server, teamcity or GoCD.
+  - Infrastructure as code for settings for builds
 - Build Monitors
   - A screen which displays any failing builds from CI (red builds)
   - Any metrics from Production
@@ -395,10 +430,20 @@
 ## Secruity/Infosec
 
 - OWASP
+- Code security
+  - who can access, who can change
+- Deployment security 
+  - who can deploy? who can access the pod?
+- Data security
+- network security 
 - Secrets
   - Authentication and authorisation
+  - vault
 - Sensitive data
--
+- certificates 
+- secure communications
+- monitoring access
+  - who? what did they do? when?
 
 [Top of Page](#checklist-for-new-project)
 

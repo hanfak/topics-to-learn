@@ -44,9 +44,10 @@
 ## Software design
 
 - https://blog.pragmaticengineer.com/preparing-for-the-systems-design-and-coding-interviews/
--  https://github.com/donnemartin/system-design-primer#how-to-approach-a-system-design-interview-question
+- https://github.com/donnemartin/system-design-primer#how-to-approach-a-system-design-interview-question
 - https://systeminterview.com/
 - https://www.quora.com/What-is-the-best-way-to-prepare-for-a-System-Design-interview-for-Amazon
+- https://lethain.com/acing-architecture-interview/
 
 ### Mistakes during this
 

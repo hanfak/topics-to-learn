@@ -267,11 +267,29 @@
   - just use it or pass it on
 
 ## Field/Property Injection
-- TBC
-- Allows clients to optionally override some class's default behaviour, where this default is implemented in a local default 
+- By exposing a writable property/field, that lets the caller supply a dep, if they want to override the default (one created in constructor)
 - having a public non final field, where you can inject the dependencies
 - dependencies are instantiated after the class is created
+
+### Good 
+
+- Allow for class to be extensible
+### Issues 
+- NPE
+  - object created may have null fields, as they dont need to be assigned when object is instantiated
+  - CURE: Have a default at constructor time
+- Causes temporal coupling
+  - lead to inconsistent behaviour
+- Hard to impl in robust manner
 - https://www.vojtechruzicka.com/field-dependency-injection-considered-harmful/
+
+### when 
+
+- when you have a good local default but want to extend by allowing users to provide diff impl
+- only applicable to resuable libraries
+  - allows components to define sensible defaults
+- Dont use for applications
+
 
 ## Issues with injecting too many dependencies
 

@@ -41,6 +41,14 @@ https://stackoverflow.com/questions/36363142/generified-implementation-of-visito
   - the Visitor pattern is a way to simulate the lack of support for double dispatch
 - To simulate multiple dispatch is a language feature known as pattern matching.
 
+## Issues 
+
+- https://blog.jooq.org/the-visitor-pattern-re-visited/
+
 ## Anti pattern
 
 - https://typeinference.com/oop/2015/08/17/anti_oop_design_patterns.html
+
+## Improved via Java pattern matching 
+
+- https://youtu.be/10dn_-TBzLE?t=1516 Revisiting Design Patterns after 20 by Edson Yanaga

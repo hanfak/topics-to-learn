@@ -17,6 +17,7 @@
 <!-- /TOC -->
 
 - https://tigerabrodi.blog/a-philosophy-of-software-design
+- https://lethain.com/notes-philosophy-software-design/
 
 ## From youtube talk
 

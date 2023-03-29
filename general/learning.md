@@ -14,7 +14,7 @@
 ## Asking quesitons
 
 ## Projects
-
+- https://lethain.com/how-to-practice-backend-engineering/
 ## Reading
 
 ## podcasts and videos

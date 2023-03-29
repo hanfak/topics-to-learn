@@ -84,6 +84,7 @@ Goes by many names
 - https://www.youtube.com/watch?v=KBxoQihhc-A Clean Architectures in Python
 - https://books.optivem.com/software-architecture/
 - https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture/
+- https://www.youtube.com/watch?v=bKxkIjfTAnQ Hexagonal Architecture - The Why
 
 ## Examples
 
