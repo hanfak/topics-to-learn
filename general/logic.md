@@ -1,0 +1,22 @@
+# Logic
+
+- the basic code you learn to write when you start programming
+- Consists of
+    - control statements, in this case REPEAT-UNTIL for a loop. Other statements are if-else, switch-case, while, for, foreach... or what your programming language is offering you in the same vein.
+    - I/O or more generally "API-calls", i.e. calls to libraries you choose to base your code on
+        - you don't have control over their source code. For all practical matters they are black boxes you're using as is.
+    - transformations which range from mathematical operators to string operations or URL helper functions.
+- what creates software behavior: functionality, performance, security, usability etc. It constitutes the gears in your software,
+- Software behavior is what users observe and want to be useful for their purposes:
+    - some input is transformed into some output, maybe by considering some state.
+    - Software always has been and will be about IPO: input-process-output.
+    - And logic is what accomplishes that feat.
+- users want is programmers to produce appropriate logic.
+- Logic alone is not enough. Writing just any logic in any way to deliver requested behavior is not enough
+    - very quickly the amount of logic needs to grow beyond what a single human, let alone a team can handle without help.
+    - might be sufficient in very small scenarios and when taking the first steps in programming.
+    - principles and concepts are needed on how to structure logic with functions and modules (e.g. classes, libraries).
+        - archtiecture and clean code etc
+- First and foremost task of software developers is to compose code from logic building blocks in a way that it performs as required
+    - shows useful behavior
+- too much focus on just logic will be detrimental to the longterm productivity of a software developer.

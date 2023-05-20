@@ -10,6 +10,7 @@
 - https://martinfowler.com/articles/mocksArentStubs.html
 - https://javacodehouse.com/blog/mockito-tutorial/
 - https://www.codurance.com/publications/2019/04/08/introduction-to-test-doubles
+- http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html
 
 ## mockito
 
@@ -139,3 +140,21 @@
 - Can be slow
 - Need to construct the object graph for the SUT, can be complex
   - Should use the same mechanism as test, and adjust (ie factories) to replace mocked dependencies
+
+### alternative - use fake implementations
+
+- Instead of a real implementation, use an inmemory version
+- This a fake or stub 
+- If there is a logic which mimics the actual impl in the fake, it needs to be tested to ensure it matches the real impl and be used with accuracy in the tests
+
+### Links 
+
+- https://medium.com/javascript-scene/mocking-is-a-code-smell-944a70c90a6a
+- https://chemaclass.medium.com/to-mock-or-not-to-mock-af995072b22e
+
+## Mocking third party
+
+- This should not be done, should avoid mocking third party code
+- https://youtu.be/v6hP2MXoVrI Don't Mock 3rd Party Code
+
+- 

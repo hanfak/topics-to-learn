@@ -14,6 +14,12 @@ A pattern that allows the use of a mapper to convert between code (ie java) to d
 - https://blog.oio.de/2016/05/12/orm-vs-sql-when-should-i-use-a-sql-centric-persistence-layer/
 - https://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html
 
+## Benefits 
+
+### Links 
+
+- https://dev.to/kirekov/junit-5-link-tests-with-task-tracker-issues-2fif
+
 ## Links
 
 - https://en.wikipedia.org/wiki/Object-relational_mapping
@@ -25,3 +31,12 @@ A pattern that allows the use of a mapper to convert between code (ie java) to d
 A popular ORM for java.
 
 - https://thoughts-on-java.org/hibernate-getting-started/
+
+## Object mapping 
+
+- https://thorben-janssen.com/object-mapper-dto/
+  - Using entities which is linked to ORM (JPA/hibernate) and mapping to a DTO which is independent 
+  - There are libraries that does this
+  - Entities have overheader, while DTO dont 
+  - DTO are better for separating concerns between business logic and database impl
+  - mapping libraries cause DTO to have downsides of entities

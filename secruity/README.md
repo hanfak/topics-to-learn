@@ -12,3 +12,4 @@ Information relating to security concerns
 - https://www.freecodecamp.org/news/the-beginners-guide-to-online-privacy-7149b33c4a3e/
 - https://www.javaworld.com/article/2075336/secure-your-java-apps-from-end-to-end--part-1.html
 - https://youtu.be/m438IXxaQJ4 Microservices Security (+ Cybersecurity basics)
+- https://www.javacodegeeks.com/2023/04/top-practices-for-secure-software-development.html?amp=1

@@ -3,6 +3,11 @@
 - The theory behind inheritance is that the world is best represented by a hierarchy
   - this hierarchy will help with code reuse
 
+## When to use
+
+- When not create wide or deep object hierachies 
+- Ideally, should have one level where subclasses are the leafs of the superclass
+
 ## Why bad?
 
 - leads to more brittle systems and defects

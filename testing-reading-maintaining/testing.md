@@ -204,6 +204,7 @@ to show their absence!
 
 - https://blog.ncrunch.net/post/testing-pyramid-automated-testing.aspx
 - https://khushiy.com/2019/02/07/test-pyramid-antipatterns/
+- https://github.com/mesmacosta/test-pyramid
 
 ### issues
 

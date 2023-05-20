@@ -86,14 +86,19 @@ Goes by many names
 - https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture/
 - https://www.youtube.com/watch?v=bKxkIjfTAnQ Hexagonal Architecture - The Why
 
+### Hexagonal architecture 
+
+- https://journal.optivem.com/p/hexagonal-architecture-ports-and-adapters
+
 ## Examples
 
 - https://gitlab.com/crafts-records/talkadvisor/talkadvisor-back
 - https://github.com/jmgarridopaz/bluezone
-	- https://jmgarridopaz.github.io/content/hexagonalarchitecture-ig/intro.html
+    - https://jmgarridopaz.github.io/content/hexagonalarchitecture-ig/intro.html
 - https://github.com/jmgarridopaz/task-management
 - https://github.com/mattia-battiston/clean-architecture-example
 - https://github.com/valentinacupac/banking-kata-java
+- https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/
 
 [Top of Page](#clean-architecture)
 

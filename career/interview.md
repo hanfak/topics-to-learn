@@ -1,5 +1,6 @@
 # Interview
 
+- Dan north & Trisha gill https://www.infoq.com/presentations/job-interview-tips/
 - https://dzone.com/articles/10-java-interview-questions-from-investment-banks
 - https://dzone.com/articles/top-20-system-design-interview-questions-for-java?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed:%20dzone%2Fjava
 - https://dzone.com/articles/top-10-java-interview-questions-that-i-recently-fa
@@ -13,6 +14,7 @@
 ## Java Questions
 
 - https://www.javatpoint.com/corejava-interview-questions
+- https://engineering.zalando.com/posts/2016/06/interview-preparation-tips-for-java-developers.html
 
 ## behaviour
 
@@ -48,6 +50,7 @@
 - https://systeminterview.com/
 - https://www.quora.com/What-is-the-best-way-to-prepare-for-a-System-Design-interview-for-Amazon
 - https://lethain.com/acing-architecture-interview/
+- https://www.youtube.com/watch?v=7TzcS6ycl_M
 
 ### Mistakes during this
 

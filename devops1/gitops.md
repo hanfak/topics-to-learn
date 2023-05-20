@@ -3,6 +3,8 @@
 ## What?
 
 - A process of doing Kubernetes cluster management and application delivery, by using Git as a single source of truth.
+  - for defining and managing infrastructure and application deployments
+  -  for implementing continuous delivery for cloud-native applications that emphasizes the use of version control and declarative definitions of infrastructure and application configurations.
 - entails using Git and pull requests to manage all stages of modern software development.
 - All instructions, ie deployments, K8s infrastructure is written in declarative manner.
 - you no longer tell your servers and clusters what to run, they instead ask what’s there for us to run

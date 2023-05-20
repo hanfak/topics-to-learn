@@ -35,3 +35,7 @@
 ## Best practices
 
 - https://phauer.com/2019/modern-best-practices-testing-java/
+
+## Extensions
+
+- https://dev.to/kirekov/junit-5-link-tests-with-task-tracker-issues-2fif

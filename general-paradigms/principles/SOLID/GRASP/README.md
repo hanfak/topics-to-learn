@@ -1,4 +1,4 @@
-GRASP (General Responsibility Assignment Software Principles)
+# GRASP (General Responsibility Assignment Software Principles)
 
 High Cohesion (GRASP)
 Low Coupling (GRASP)

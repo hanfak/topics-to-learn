@@ -10,6 +10,7 @@
 		- [Links](#links)
 	- [Links](#links)
 	- [Why hashcode is used is in hashmap](#why-hashcode-is-used-is-in-hashmap)
+	- [Implementation](#implementation-)
 	- [Iteration order](#iteration-order)
 	- [Complexity](#complexity)
 	- [Links](#links)
@@ -238,6 +239,10 @@ public String get(String key) {
 	- Due to hashcode and equuals being used in hashmap, they need to be implemented (esp if equals is overridden)
 	- Keys should be immutable, to maintain contract of equality. Others will break searchign for keys to get value
 		 - Enums are good for this
+      
+## Implementation 
+
+- https://www.youtube.com/watch?v=1Ovg3IC-p5A
 
 ## Iteration order
 

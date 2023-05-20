@@ -44,3 +44,7 @@
 - https://www.quora.com/Why-do-most-programmers-whose-primary-language-is-not-Java-seem-to-have-unfavorable-opinions-of-the-Spring-Framework-and-what-do-they-dislike-about-its-philosophy
 - https://samatkinson.com/why-i-hate-spring/
 - https://blog.jakubholy.net/2020/spring-nevermore/
+- https://youtu.be/CT8dbbe783s
+
+## Mistakes 
+

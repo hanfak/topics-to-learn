@@ -117,5 +117,6 @@
 - http://www.baeldung.com/java-comparator-comparable
 - https://www.youtube.com/watch?v=DXPjjVnUvgA
 - https://www.youtube.com/watch?v=oAp4GYprVHM
+- https://www.youtube.com/watch?v=lFbBI85oTnY Write Efficient Bug-free and Simple Comparators in Java - JEP Café episode 17
 - https://dzone.com/articles/sorting-java-arraylist
 - https://www.journaldev.com/780/comparable-and-comparator-in-java-example

@@ -35,11 +35,29 @@
   - Both composition and inheritance are your friends in battling repetitive code
   - the use of design patterns and shared libraries.
   - web services to combat duplication on higher levels of abstraction.
-    -  Instead of building the same functionality into each application you develop, it is often a good idea to create a service and reuse it across the company.
+    - Instead of building the same functionality into each application you develop, it is often a good idea to create a service and reuse it across the company.
+
+## Examples 
+
+- Libraries 
+  - but can lead to coupling
+
+## When to use
+
+- Better to do it after it is apparent 
+  - Not extract when no duplication occurs in the hopes of reusue
+  - Three occurrences and then dry 
+  - If it is known that the future requirements will be similar than dry
+- When it is regarding source of knowledge, not just patterns 
+- Benefits outweigh the negatives, especially the time investment
+- It follows the idea of ETC (easier to change), it makes it:
+  - easier to read
+  - faster to extend or change
 
 ## Acid Test
 
-the acid test: when some single facet of the code has to change, do you find yourself making that change in multiple places, and in multiple different formats? Do you have to change code and documentation, or a database schema and a structure that holds it, or…?
+- the acid test: when some single facet of the code has to change, do you find yourself making that change in multiple places, and in multiple different formats? Do you have to change code and documentation, or a database schema and a structure that holds it, or…?
+- Best to time box the drying up of code, and see if it improves the codebase (ie ETC), and revert if not
 
 ## Types
 
@@ -70,18 +88,34 @@ the acid test: when some single facet of the code has to change, do you find you
   - Such generalized abstractions are notoriously hard to test and understand because they must handle many more use-cases than the original (potentially duplicated) code.
   - Said another way, abstractions support more behaviors than might actually be needed for the system to function properly.
   - Thus, the removal of duplication can introduce new behaviors to the system that aren’t required.
+  - Duplicated code tends to also obscure the structure and intent of your code, making it harder to understand and modify
+  - If an abstraction exists, then future change will feel the need to use this abstraction ( and thus change it) which leads to pollution of ideas and complexity
 - This was first promoted in Pragmatic Programmer (Thomas)
   - In the second edition, they realised that it was not the correct message, as people took it too far
     - people believe that no copy and pasting was allowed
   - Instead Duplication of business logic should not be repeated, there should be a single source of truth
+    - 
   - DRY is about the duplication of knowledge, of intent. It’s about expressing the same thing in two different places, possibly in two totally different ways
-  -
+  - Dont dry coincidental duplication only essential duplication 
+    - essential duplication are parts that should change together 
+- When a duplication is abstracted, and changes are needed for only on consumer of this abstraction, this can lead to clauses (if statements) proliferating the code base
+  - instead duplicate the code 
+- Lead to tight coupling
+  - prefer some duplication instead
+- DRY can make it harder to debug 
+  - Should think very carefully to do this in test code otherwise can be hard to follow intent or debug
+- For small amount of duplication is not worth it
 
 ### Links
 
 - https://www.infoq.com/news/2012/05/DRY-code-duplication-coupling/
 - https://oncodedesign.com/dry-vs-coupling/
 - https://www.industriallogic.com/blog/spot-and-coincidental-duplication/
+- https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
+- https://www.entropywins.wtf/blog/2017/09/06/the-fallacy-of-dry/
+- https://rotemtam.com/2020/05/18/the-dry-principle-is-bad-advice/
+- https://gordonc.bearblog.dev/dry-most-over-rated-programming-principle/
+- https://salmonmode.github.io/2020/08/14/the-harmful-obsession-with-dry.html
 
 ### Issues with many small methods
 

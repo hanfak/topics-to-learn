@@ -46,3 +46,7 @@
 
 - https://java-design-patterns.com/patterns/
 - https://dzone.com/articles/design-patterns-in-the-age-of-microservices-and-frameworks
+
+## Updated for java 8
+
+- https://www.infoq.com/news/2022/10/modern-java-design-patterns/

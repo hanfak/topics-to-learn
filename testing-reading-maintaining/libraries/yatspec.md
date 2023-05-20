@@ -85,3 +85,17 @@
 - https://codeforfunandmoney.wordpress.com/
 - https://medium.com/ft-product-technology/behaviour-driven-development-at-the-ft-46dc2991471d
 - https://vimeo.com/17846934
+
+## Alternative 
+
+- https://gitlab.com/kensa/kensa
+
+
+
+Anything longer than two hours is taking people for granted. Our test, a simple custom oop kata with some boiler plate for them to finish, which we now only use with contractors (permies are giving a 30min tech screen, but all candidates do a pair test) are a max of 2 hours which is stated on the instructions. If they are good, and the amount we pay them they should be, they should crack it out in an hour with tests and well designed, for comparisons our mids can crack it out in less than 2 hours. 
+
+I think giving someone a whole range of requirements (which would be a story each) and start from scratch, and especially if you need to do a webserver, I would say no, cause this will take ages for possibly little reward.
+
+Bigger issue is the marking, the big the solution, the longer it takes to mark (or it becomes like code reviewers checking massive pull requests  compared to smaller ones). We get it down to around max 10-15 minutes each test, and two people have to do it. The majority failed tests, can be marked in 2 mins. Approx 60+% dont pass this first stage, so we dont waste time doing the pair test. So the cost is not worth it for the company, so why bother set such a convoluted test to waste your developers time?
+
+I think these places with long tests, dont know what they are looking for, and just try something and dont really evaluate it (Agile) 
