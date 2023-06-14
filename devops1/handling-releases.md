@@ -1,4 +1,4 @@
-# Releases
+# Handling Releases
 
 # On call/ 2nd line support
 

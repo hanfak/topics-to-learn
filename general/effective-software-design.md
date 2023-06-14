@@ -1,5 +1,15 @@
 # Effective Software design
 
+- [Effective Software design](#effective-software-design)
+  * [What do you need to be effective?](#what-do-you-need-to-be-effective-)
+  * [Context](#context)
+  * [Change](#change)
+  * [Complexity](#complexity)
+  * [Evolution](#evolution)
+  * [Guide](#guide)
+  * [Links](#links)
+
+
 - It’s not about principles, techniques or patterns.
 - Being effective means that you are successful in producing a desired or intended result.
   - It means doing something that brings you closer to an intended goal. 

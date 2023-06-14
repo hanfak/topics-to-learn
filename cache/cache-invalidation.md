@@ -1,6 +1,6 @@
 # Cache Invalidation and Eviction
 
-- DAta stored in cache is not there forever, it can become stale (not correct)
+r- Data stored in cache is not there forever, it can become stale (not correct)
   - The data needs to invalidated, evicted and replaced
 - Cache invalidation, is the process where the data is updated or removed from the cache
 

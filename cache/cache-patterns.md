@@ -1,7 +1,7 @@
 # Cache Patterns
 
 - https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/
-- https://www.youtube.com/watch?v=Ez1GK2imrsY&list=PLTCrU9sGyburBw9wNOHebv9SjlE4Elv5a&t=815s
+- https://www.youtube.com/watch?v=Ez1GK2imrsY
 
 ## Cache aside
 

@@ -1,3 +1,5 @@
+# Immutability
+
 ## Objects should be immutable
 
 - https://www.yegor256.com/2014/06/09/objects-should-be-immutable.html
@@ -42,6 +44,30 @@
 - Domain Objects
   - A domain object is most certainly not immutable, but we will benefit from making it as immutable as possible.
 
+## Disadvantages 
+
+- Performance impact: 
+  - Immutable data structures often require copying the entire data structure whenever a change is made. 
+  - This copying process can introduce additional memory and processing overhead, especially when dealing with large data sets or frequent updates.
+  - It can be inefficient compared to mutable data structures that can modify values in place.
+- Memory usage
+  - Immutable data structures tend to consume more memory because they store multiple versions of the data. 
+  - Each time a change is made, a new copy of the entire data structure is created, leading to increased memory consumption, which might be a concern in memory-constrained environments.
+- Complexity
+  - Immutable data structures can introduce complexity in certain scenarios.
+  - For example, updating nested immutable data structures requires creating new copies of each nested level, leading to more convoluted code and potentially reduced code readability.
+- Difficulty with some algorithms
+  - Certain algorithms or operations that rely on in-place modifications, such as some sorting algorithms or graph algorithms, might need to be redesigned or adapted to work with immutable data structures. 
+  - This adaptation can be challenging and may result in less efficient implementations.
+- Synchronization overhead
+  - In concurrent programming, immutability can alleviate certain synchronization issues by eliminating the need for locks or other synchronization mechanisms. 
+  - However, it may introduce additional overhead in terms of memory usage and copying when multiple threads or processes need to share or update the same data.
+- Limited flexibility
+  - Immutable data structures are designed to resist changes, which means they may not be suitable for scenarios where frequent updates or modifications are necessary.
+  - In such cases, using mutable data structures might be more appropriate and efficient.
+- Learning curve
+  - Adopting and working with immutable data structures and functional programming paradigms can require a shift in mindset and programming techniques for developers accustomed to mutable state
+  - The learning curve associated with immutability might be a disadvantage, especially for teams or projects where the concept is relatively unfamiliar.
 
 ### Links
 

@@ -8,6 +8,12 @@
 - Functional programming imposes discipline on mutating state.
 - A functional language makes all data immutable by default.
 - FP makes code understandable by minimizing moving parts (mutating state).
+- Prevents reassignment
+  - no garbage/temp variable -> less noise
+- Favours expressions and immutability
+- Less code, fewer moving parts, fewer bugs. Easier to trace what's going on.
+- Easier to parallelize. 
+  - Since the code is not performing any explicit mutation, there's nothing to protect for thread-safety.
 
 ## Types
 
@@ -23,10 +29,15 @@
 ## Properties
 
 - Pure functions
+  - The function does not change anything
+  - The function does not depend on anything that may change anything
+    - ie passing in a non final field 
+    - ie passing in a object that can change (mutable fields)
 - functional composition
 - lazy evaluation
 - High order functions
 - Immutability
+
 
 ## Pure functions
 
@@ -35,12 +46,15 @@
 - Only acts on the inputs
 - Always returns the same outputs regardless the number of times called
 - idempotent
+- Should be run immediately or lazily (later on)
+  - if relies on pure state cannot achieve this
 - do not depend on anything that could change or have side effects
 - the output value of a function depends only on the arguments that are passed to the function, so calling a function f twice with the same value for an argument x produces the same result f(x) each time.
   - impure functions
     - they depend on state that may change outside the function. This external state might be in the form of global variables, or objects, it might be in a file, or a database, or any number of other thing
     - These are side effects
   - Pure functions element side effects
+- the function leaves the state of the world unaffected when its run.
 
 ### side effects
 
@@ -50,6 +64,10 @@
 -  Functional programming takes this idea further, and asserts that it is better not even to modify local, private variables.
 
 ## Immutability
+- Allows of memoization 
+- explicit mutability is avoided by the user of FP
+  - The compiler will use mutability
+  - The aspects and problems of mutability is not our problem to deal with, it's the lower level problem
 
 ## When not to use
 

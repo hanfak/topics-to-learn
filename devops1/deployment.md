@@ -1,0 +1,55 @@
+# Deployments
+
+- stage of the software development lifecycle
+- involves the process of making a software application or system available and operational on a specific environment or infrastructure. 
+- It typically includes tasks such as installing, configuring, and running the software on servers, cloud platforms, or other computing environments. 
+- Deployment focuses on the technical aspects of getting the software up and running.
+- During deployment, developers and operations teams work together to ensure that the application is properly installed, the necessary dependencies are satisfied, and the system is ready to serve end users. 
+- Deployments can be performed multiple times during the development cycle, particularly during iterative development and continuous integration/continuous deployment (CI/CD) practices.
+
+## Stages 
+
+- Planning: 
+  - defining the deployment strategy, including determining the target environment, infrastructure requirements, and deployment timeline. 
+  - It may also involve coordinating with different teams, such as development, operations, and testing, to align on the deployment plan.
+- Building and Packaging: 
+  - the software application is built, compiled, and packaged into a distributable format. 
+  - tasks such as code compilation, asset generation, and creating executable files or containers.
+  - Can be done before deployment (ie as part of a CI)
+- Configuration and Environment Setup:
+  - The deployment environment, including servers, databases, networking, and other infrastructure components, is prepared and configured to support the software application. 
+  - includes setting up 
+    - appropriate configurations
+    - installing dependencies
+    - ensuring compatibility between the application and the environment
+- Testing: 
+  - Can be optional, if done before
+    - ie as part of CI, all parts are tested and an artifact is produced and versioned which will be the candidate to be deployed
+  - Before deploying the software to production, it is crucial to perform testing to verify its functionality, performance, and stability.
+  - This can involve various types of testing, such as unit testing, integration testing, regression testing, and user acceptance testing (UAT). 
+  - Testing helps identify and resolve any issues or bugs that may impact the deployment.
+- Deployment Execution
+  - involves actually deploying the software to the target environment.
+  - Depending on the deployment strategy, this can be a manual or automated process.
+    - Manual deployment may involve transferring files, running installation scripts, or configuring the software manually. 
+    - Automated deployment often utilizes tools and frameworks like CI/CD pipelines to streamline the process, ensuring consistency and reducing human error.
+- Verification and Validation: 
+  - Once the software is deployed, it is important to validate that the deployment was successful and the application is functioning as expected.
+  - This may involve performing 
+    - additional tests
+    - monitoring system behavior
+    - comparing the deployed version against predefined criteria or acceptance criteria.
+    - runnign a smoke test (automated or manaul)
+    - checking the status page is up and passing 
+    - checking logs are showing no errors
+- Rollback and Recovery
+  - In case any issues or unexpected problems arise during or after the deployment, having a rollback plan is important. 
+  - Rollback involves reverting to a previous version or configuration to mitigate the impact of a failed deployment. 
+  - Additionally, recovery plans should be in place to address any potential downtime, data loss, or service disruptions.
+- Post-Deployment Activities
+  - After the successful deployment, there are often additional tasks to perform,
+  - updating documentation
+  - notifying stakeholders about the new version
+  - monitoring system performance
+  - gathering feedback from end users
+- These activities help ensure that the deployed software is well-maintained and any necessary improvements or bug fixes are addressed in subsequent releases.

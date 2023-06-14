@@ -42,6 +42,7 @@
 - https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
   - https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0
 - MIT course https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY
+- https://levelup.gitconnected.com/dont-just-leetcode-follow-the-coding-patterns-instead-4beb6a197fdb
 
 ## Software design
 
@@ -51,6 +52,7 @@
 - https://www.quora.com/What-is-the-best-way-to-prepare-for-a-System-Design-interview-for-Amazon
 - https://lethain.com/acing-architecture-interview/
 - https://www.youtube.com/watch?v=7TzcS6ycl_M
+- https://stephenholiday.com/notes/
 
 ### Mistakes during this
 

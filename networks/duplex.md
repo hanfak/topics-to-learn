@@ -1,0 +1,26 @@
+# Duplex 
+
+- a mode of communication that allows data to be transmitted in both directions simultaneously.
+- enables two endpoints (such as client and server) to send and receive data concurrently, without the need to alternate between sender and receiver roles.
+- Two types 
+  - Half-Duplex: 
+    - data can be transmitted in both directions, but not at the same time.
+    - Each endpoint takes turns sending and receiving data. 
+    - Not as common as full duplex
+    - For example, walkie-talkies operate in half-duplex mode, where one person talks while the other listens, and then they switch roles.
+    - Ethernet Hubs: 
+      - Ethernet hubs operate in a half-duplex mode. 
+      - In a hub-based Ethernet network, all devices connected to the hub share the same collision domain, which means they cannot transmit and receive data simultaneously. 
+      - When a device sends data to the hub, the hub broadcasts the data to all connected devices, and collisions can occur if multiple devices transmit at the same time. 
+      - This collision detection mechanism is a characteristic of half-duplex communication in Ethernet hubs.
+  - Full Duplex
+    - data can be transmitted in both directions simultaneously.
+    - Both endpoints can send and receive data at the same time, allowing for real-time and interactive communication. 
+    - For example, a telephone conversation is full-duplex, as both parties can speak and listen simultaneously.
+    - Examples are 
+      - Websockets
+      - Video conferencing
+- It enables efficient and interactive data exchange between two endpoints, facilitating:
+  - real-time applications
+  - collaborative systems
+  - simultaneous data transfer
