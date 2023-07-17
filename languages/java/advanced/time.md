@@ -34,3 +34,4 @@ There are different ways of representing time in java, some are best practice, s
 ## Links
 
 - https://www.youtube.com/watch?v=0XgdX5hDL4U Java basics of the LocalDate, LocalTime, LocalDateTime, ZonedDateTime and the DateTimeFormatter
+- https://unix4lyfe.org/time/?v=1

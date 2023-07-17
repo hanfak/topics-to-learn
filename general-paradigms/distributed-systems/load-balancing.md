@@ -28,3 +28,4 @@
 ## links
 
 - Gurauv https://youtu.be/K0Ta65OqQkY
+- https://samwho.dev/load-balancing/

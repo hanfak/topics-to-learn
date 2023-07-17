@@ -2,6 +2,7 @@
 
 - https://www.journaldev.com/16928/java-string
 - https://www.java67.com/2018/01/10-important-points-about-string-in-java.html
+- https://javarevisited.blogspot.com/2013/07/java-string-tutorial-and-examples-beginners-programming.html
 
 ## format
 

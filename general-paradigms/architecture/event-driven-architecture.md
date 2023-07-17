@@ -6,7 +6,8 @@
 - https://moneystock.net/wp_e/2021/05/28/4-types-of-event-driven-architecture-by-martin-fowler/
 - https://youtu.be/DQ5Cbt8DQbM
 - https://www.datamachines.io/blog/asynchronous-thinking-for-microservice-system-design
-
+- https://www.alexdebrie.com/posts/event-driven-vs-event-based/
+- 
 ## Consistency 
 
 - When publishing events to a queue, we normally store that event in a db (to have replayability)

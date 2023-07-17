@@ -3,10 +3,10 @@
 ## Classes
 
 - This depends on design decisions
-- By using "final" in class signature, you can sub class it
+- By using "final" in class signature, you cannot sub class it
 - Make constructor private, use static factory methods
   - If constructor is non default, create a new default private constructor and throw an ```AssertionException("should not instantiate this class")```. This avoids reflection being used to create an instance
-
+- https://stackoverflow.com/questions/12306651/why-would-one-declare-an-immutable-class-final-in-java
 ## Fields
 
 - Use of private final fields

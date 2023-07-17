@@ -13,3 +13,5 @@ Information relating to security concerns
 - https://www.javaworld.com/article/2075336/secure-your-java-apps-from-end-to-end--part-1.html
 - https://youtu.be/m438IXxaQJ4 Microservices Security (+ Cybersecurity basics)
 - https://www.javacodegeeks.com/2023/04/top-practices-for-secure-software-development.html?amp=1
+- https://stackoverflow.com/questions/2794016/what-should-every-programmer-know-about-security
+- https://wiki.mozilla.org/WebAppSec/Secure_Coding_Guidelines

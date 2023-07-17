@@ -1,0 +1,34 @@
+# Optimising Api
+
+- first step was to identify the bottlenecks in the system.
+  - essential to identify the slowest piece of the code, as fixing this will usually give you the most significant improvement.
+- fixed the first bottleneck, it often reveals the next bottleneck.
+- Repeat the process until you reached desired state
+- requires constant monitoring and measurement.
+- Sometimes there are quick fixes, but may not last long
+  - increase number of replicas
+  - increase timeouts
+  - increase memory
+- In general, the network calls all the longest
+  - followed or similar to database queries 
+  - then data structure or the algorithm used
+- Common bottlenecks to look for
+  - calling the database from a loop 
+    - fix: Get all the data in one query, and do the looping on that retrieved data
+  - Calling an external service multiple times 
+    - fix: If you need to make multiple calls to another service, try to convert that into one call and have the service aggregate the required data and return everything at once
+  - Executing a complex calculation multiple times with identical parameters
+  - doing queries on Non indexed database or full table scans
+- Aim to reduce number of round trips (ie over network)
+  - Instead of round trip per each thing, can it be done once
+  - A round trip might be fast, but when dealing with lots of them it adds up (law of big numbers)
+- Better to do processing of logic in the database (stored procedure) then getting the data and doing it in code
+- Next step use parallelization 
+  - This should be considered later, as concurrency and parallel process can be complex and lead to complex failures (Race conditions etc)
+  - Having multiple asynchronous calls to different services with no dependencies between them.
+    - can send them all at once 
+  - Issues come when need to aggregate all the results
+- Lastly introduce a cache
+  - This adds a lot of complexity to get it right
+  - it can introduce unwanted behavior when the data is stale.
+  - When implementing caching, it's essential to consider the duration of the cache and the strategies to clear the cache when the underlying data changes.
