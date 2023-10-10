@@ -39,3 +39,4 @@
 ## Extensions
 
 - https://dev.to/kirekov/junit-5-link-tests-with-task-tracker-issues-2fif
+- https://www.lambdatest.com/blog/junit5-extensions/

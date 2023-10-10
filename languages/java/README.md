@@ -66,6 +66,9 @@
 
 - https://www.javacodegeeks.com/2020/03/new-features-between-java-8-and-java-14.html
 
+## Sonar rules
+
+- https://rules.sonarsource.com/java/type/Vulnerability/RSPEC-5145/
 
 ## Links
 

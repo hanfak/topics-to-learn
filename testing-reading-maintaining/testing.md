@@ -247,6 +247,7 @@ to show their absence!
 - https://agiledojo.de/2021-02-18-test-pyramid-vs-testing-trophy_en/
 - https://martinfowler.com/articles/2021-test-shapes.html
 - https://www.baytechconsulting.com/blog/test-pyramid-vs-testing-trophy-whats-the-difference
+- https://github.com/mesmacosta/test-pyramid/tree/master/pyramid-microservice/src/main/java/com/github/ricardocomar/testpyramid/microservice
 
 ## Testing Quadrant
 
@@ -409,6 +410,7 @@ Types of test
 - https://blog.sebastian-daschner.com/entries/thoughts-on-efficient-testing
 - Google testing blog: https://testing.googleblog.com/search/label/TotT
 - automation test (UI) https://ultimateqa.com/automation-patterns-antipatterns
+- https://www.slideshare.net/VictorRentea/the-tests-are-trying-to-tell-you-somethingvoxxedbucharestpptx
 
 * Wiremock
 * Yatspec

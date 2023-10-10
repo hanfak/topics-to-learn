@@ -12,6 +12,11 @@ We could use inheritance to do this, but it will mean that each object will need
 - https://www.codeproject.com/Articles/872151/Visitor-Pattern-ReExplained
 - https://www.journaldev.com/1769/visitor-design-pattern-java
 - https://stackoverflow.com/questions/9759141/overloading-in-java-and-multiple-dispatch
+- Designing functional and fluent API: example of the Visitor Pattern by José Paumard https://www.youtube.com/watch?v=gq23w9nycBs
+  - https://github.com/JosePaumard/devoxx-belgium-2019-visitor-lambda/tree/master/src/main/java/org/paumard/visitor
+- Understanding The Visitor Design Pattern https://www.youtube.com/watch?v=TeZqKnC2gvA
+- https://nipafx.dev/java-visitor-pattern-pointless/
+- 
 
 ## Generified visitor
 

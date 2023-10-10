@@ -16,4 +16,7 @@
   - will need to do an `ifPresent` check and pass in the optional
   - use two separate methods (overloading), one with no param and another with the param
 
--
+## Links
+
+- https://youtu.be/Ej0sss6cq14?si=89GPkgKS92zlXaMt Optional - The Mother of All Bikesheds by Stuart Marks
+

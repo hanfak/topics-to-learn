@@ -52,3 +52,4 @@
 - https://www.exoscale.com/syslog/java-serverless-micronaut-graalvm/
 - https://www.datadoghq.com/knowledge-center/serverless-architecture/
 - https://martinfowler.com/articles/serverless.html
+- https://www.redhat.com/en/topics/cloud-native-apps/what-is-serverless

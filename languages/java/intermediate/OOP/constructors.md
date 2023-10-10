@@ -21,6 +21,7 @@
 - It is a public method, with same name and case as the class. It is invoke when newing up an instance of the class.
 - Constructors should do one thing, just set the fields of the object to the arguments passed in via the constructor
 
+- https://www.bruceeckel.com/2017/01/13/constructors-are-not-thread-safe/
 
 ## Default/hidden constructor
 

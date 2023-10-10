@@ -24,6 +24,7 @@
 - https://completedeveloperpodcast.com/episode-185/
 - goolge talk https://www.youtube.com/watch?v=o-ins1nvbDg&feature=youtu.be
 - https://developer.android.com/training/dependency-injection#kotlin
+- https://benjiweber.co.uk/blog/2014/09/13/frameworkless-dependency-injection/
 
 ## Issues 
 - can be over reliant on frameworks or libraries to do this for you

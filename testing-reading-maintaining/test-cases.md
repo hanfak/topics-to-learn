@@ -34,3 +34,8 @@
 
 - dont blow up
 - optional fields
+
+
+## Thread safety
+
+- https://dzone.com/articles/how-to-test-if-a-class-is-thread-safe-in-java

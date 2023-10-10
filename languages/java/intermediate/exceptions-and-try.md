@@ -29,8 +29,9 @@
   - checked
   - errors
 
-- https://www.javacodegeeks.com/2017/12/handling-exceptions-java.html
-- https://dzone.com/articles/how-to-deal-with-exceptions
+  - https://www.javacodegeeks.com/2017/12/handling-exceptions-java.html
+  - https://dzone.com/articles/how-to-deal-with-exceptions
+  - https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
 
 ## List of Exceptions
 

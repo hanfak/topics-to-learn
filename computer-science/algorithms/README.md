@@ -9,7 +9,7 @@
 - https://www.freecodecamp.org/news/tree-traversals-explained-theyre-like-a-class-of-lazy-students-trying-to-cheat-on-their-exam-b46563211427/
 - https://github.com/makersacademy/course/tree/main/algorithmic_complexity
 - https://www.quora.com/Do-programmers-really-have-to-know-how-to-calculate-the-big-O-for-their-programs
-
+- https://www.piratekingdom.com/leetcode/templates
 ## courses
 
 - https://www.jomaclass.com/data-structures-and-algorithms

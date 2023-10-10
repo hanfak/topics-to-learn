@@ -6,3 +6,5 @@
 -  to ensure that clients can extend the framework to solve the remainder of their problems
   -  But too much flexibility leads to complexity, harder to learn to use
 -  goal to meet the common needs of my users but not all their unique needs
+- https://hackernoon.com/the-frameworkless-self-defence-manual-e9569b4924a6
+- https://dev.to/misomir/frameworkless-web-development-3n2h

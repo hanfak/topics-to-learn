@@ -1,0 +1,3 @@
+# Games
+
+- To fulfill its purpose, a game must provide an immersive and highly responsive experience. That requires hi-res graphics with high frame rates and instantaneous reaction to user inputs. That is computationally intensive processing and requires efficient use of the computer to achieve. The more efficient it is, the wider range of hardware a game can operate on. Game programmers are rightly concerned with raw performance.

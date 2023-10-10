@@ -7,6 +7,7 @@
 - Make constructor private, use static factory methods
   - If constructor is non default, create a new default private constructor and throw an ```AssertionException("should not instantiate this class")```. This avoids reflection being used to create an instance
 - https://stackoverflow.com/questions/12306651/why-would-one-declare-an-immutable-class-final-in-java
+- https://www.infoworld.com/article/2073003/is-a-java-immutable-class-always-final-.html#:~:text=By%20declaring%20immutable%20classes%20final,immutability%2C%20are%20not%20a%20concern.
 ## Fields
 
 - Use of private final fields

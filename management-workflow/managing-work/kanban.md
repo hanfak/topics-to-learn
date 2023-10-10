@@ -16,3 +16,4 @@
 - https://tcagley.wordpress.com/2013/09/12/kanban-process-improvement-and-bottlenecks/
 - https://zapier.com/learn/project-management/kanban-board/#basics
 - https://www.youtube.com/watch?v=R8dYLbJiTUE
+- https://betterprogramming.pub/improve-the-productivity-by-using-agile-development-778c7f069c6a

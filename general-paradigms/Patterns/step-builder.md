@@ -28,3 +28,7 @@
 ## When
 
 - Use the Step Builder pattern when the algorithm for creating a complex object should be independent of the parts that make up the object and how they're assembled the construction process must allow different representations for the object that's constructed when in the process of constructing the order is important.
+
+## Links 
+
+- https://saharsh.org/posts/builder-pattern-and-fluent-interfaces/

@@ -1,0 +1,3 @@
+- https://www.piratekingdom.com/leetcode/templates
+- https://www.linkedin.com/posts/hinaaroraa_systemdesign-microservices-hinaarora-activity-7094512550913970176-3PE3?utm_source=share&utm_medium=member_desktop
+- https://www.linkedin.com/posts/hinaaroraa_systemdesign-techtips-innovation-activity-7112269559331512320-Rdz9?utm_source=share&utm_medium=member_desktop

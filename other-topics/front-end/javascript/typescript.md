@@ -18,3 +18,7 @@
 ### Map
 
 - https://howtodoinjava.com/typescript/maps/
+
+## Library
+
+- https://www.tsmean.com/articles/how-to-write-a-typescript-library/

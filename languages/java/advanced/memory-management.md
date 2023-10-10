@@ -26,7 +26,10 @@
 - https://youtu.be/bspS-uTK0IM Understanding JVM Memory, Heap, Garbage Collection and Monitoring the JVM | Tech Primers
 - https://www.youtube.com/watch?v=JLFjY6Ixct8 A Visual Introduction to Inner-Workings of the JVM - Douglas Hawkins
 - https://opensource.com/article/22/4/jvm-parameters-java-developers
-
+- https://www.digitalocean.com/community/tutorials/java-jvm-memory-model-memory-management-in-java
+- https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/
+- https://stackoverflow.com/questions/36465192/guidelines-to-set-metaspacesize-java-8
+- https://www.baeldung.com/java-permgen-metaspace
 performance https://www.dynatrace.com/resources/ebooks/javabook/
 
 ## Debugging
@@ -57,7 +60,17 @@ performance https://www.dynatrace.com/resources/ebooks/javabook/
 - https://self-learning-java-tutorial.blogspot.co.uk/2014/07/garbage-collection.html
 - https://stackify.com/what-is-java-garbage-collection/
 - https://roytuts.com/what-is-the-purpose-of-garbage-collection-in-java/
-
+- https://www.perfmatrix.com/how-does-garbage-collector-work/
+- https://stackoverflow.com/questions/25885826/java-gcold-generation-becomes-larger-and-larger-and-cannot-be-reclaimed
+- https://stackoverflow.com/questions/34670751/why-gc-on-old-generation-takes-longer-than-gc-on-young-generation
+- https://backstage.forgerock.com/knowledge/kb/article/a75965340
+- https://www.papertrail.com/solution/tips/7-problems-to-look-out-for-when-analyzing-garbage-collection-logs/
+- https://backstage.forgerock.com/knowledge/kb/article/a35746010
+- https://dzone.com/articles/understanding-garbage-collection-log
+- https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/cms.html
+- https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html
+- https://devm.io/java/garbage-collection-g1-172816
+- 
 ## Memory leaks
 
 - https://self-learning-java-tutorial.blogspot.co.uk/2014/07/what-is-memory-leak-in-java.html

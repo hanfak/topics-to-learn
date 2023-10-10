@@ -35,6 +35,7 @@
 	- a few features produced then all features
 	- To get early feedback
 - Agile is a set of technical practices, not a management practice
+- https://medium.com/nerd-for-tech/leading-agile-development-19560bd37e8
 
 ### The agile values
 

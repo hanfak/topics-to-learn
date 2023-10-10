@@ -201,3 +201,4 @@
 
 - http://www.bizcoder.com/rpc-vs-rest-is-not-in-the-url
 - https://www.guru99.com/restful-web-services.html
+- https://medium.com/nerd-for-tech/designing-a-rest-api-3a070398750f

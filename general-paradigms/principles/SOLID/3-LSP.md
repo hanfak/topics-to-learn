@@ -1,6 +1,7 @@
 # 3. Liskov Substitution Principle
 
 - calling code should be able to use an instance of a base class or an instance of a derived class without knowing it, or having to do anything special.
+-  It says that if the X class inherits from the Y class, then Y's entire black-box test suit should also pass for X.
 - Example
   - A square is not a rectangle
 - As long as an interface doesn't change, the clients don't care if you change the implementation

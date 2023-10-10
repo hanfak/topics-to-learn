@@ -8,6 +8,8 @@ A pattern that allows the use of a mapper to convert between code (ie java) to d
 - Lack of control in how ORM implements SQL
 - https://completedeveloperpodcast.com/episode-38/
 - https://completedeveloperpodcast.com/episode-111/
+- https://wozniak.ca/blog/2014/08/03/1/index.html?utm_source=tuicool&amp%3Butm_medium=referral
+- 
 
 ### Links
 

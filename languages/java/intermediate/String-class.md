@@ -11,6 +11,10 @@
    - String.format("Hallo\n") always inserts a Linux line break regardless of the operating system.
    - Best to use \n instead 
 
+## Concatenation
+
+- https://pellegrino.link/2015/08/22/string-concatenation-with-java-8.html
+
 ## Splitting
 
 - https://www.java67.com/2019/12/difference-between-stringtokenizer-and.html

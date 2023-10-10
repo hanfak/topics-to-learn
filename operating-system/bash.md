@@ -155,3 +155,5 @@
 - https://github.com/Idnan/bash-guide
 - https://github.com/enkidevs/curriculum/wiki/Linux-Topic
 - https://www.freecodecamp.org/news/terminal-tips-tweets/
+- https://github.com/bertjan/mastering-the-linux-command-line
+  - presentation https://www.youtube.com/watch?v=qmh7Uppd3x0

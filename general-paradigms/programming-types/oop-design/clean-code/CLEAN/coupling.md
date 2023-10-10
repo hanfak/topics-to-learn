@@ -165,6 +165,7 @@
 
 - https://codurance.com/software-creation/2016/07/25/thoughts-on-coupling-in-software-design/
 - https://martinfowler.com/ieeeSoftware/coupling.pdf
+- https://mattjhayes.com/2020/04/18/it-architecture-a-discussion-on-coupling/
 
 ## Law of Demeter (LoD)
 
@@ -201,3 +202,58 @@
 	- This leads to increase number of ways of getting something, violation of DRY
 
 - https://naildrivin5.com/blog/2020/01/22/law-of-demeter-creates-more-problems-than-it-solves.html
+
+## Integration Strength Vlad Khononov
+
+Four key types most to least coupling
+- intrusive coupling
+  - more implicit interfaces
+- functional coupling
+- model coupling
+- contract coupling
+  - explicit interfaces
+
+- Define a way of measure coupling along 3 axes
+- Areas:
+  - Strength
+    - such as the level of knowledge sharing, the extent of communication between components, and the frequency of changes that affect both components.
+    - Four key types most to least coupling
+      - intrusive coupling
+        - more implicit interfaces
+        - have a strong reliance on each other's internal details and implementation. Changes to one component require simultaneous changes to the other to maintain proper functionality
+      - functional coupling
+        -  components rely on each other's functionality or services to accomplish specific tasks. However, they do not necessarily depend on each other's internal details and do not have detailed knowledge of each other's implementation.
+      - model coupling
+        - components share a common understanding and usage of the business domain or underlying data model. They interact based on a shared comprehension of the data's structure and meaning.
+        - Issues occurs when model is constantly changing, which can have a cascading affect
+      - contract coupling
+        - explicit interfaces
+        - components interact through explicitly defined interfaces or contracts. They communicate based on well-defined APIs, specifying the methods and data structures for interactions.
+    
+    - Distance
+      - the physical or logical separation between two components in a software system. It represents how far apart the connected components are, either in terms of their physical location within the codebase or their logical boundaries.
+      - Components that are located close to each other in the codebase or are tightly integrated are considered to have a short distance, while components that are far apart or loosely connected have a long distance.
+      - The idea of cohesion
+      - Components that work together to accomplish a specific task or are part of the same business domain are logically close, while those handling different functionalities are logically distant.
+      - Components that are physically or logically close may have higher coupling, as changes in one component could directly impact the other.
+      - components with a greater distance may have lower coupling, making them more independent and easier to maintain.
+      - The greater the distance, the more coordination it takes to make a change
+    - Volatility
+
+### Coupling pain metric 
+
+- High Strength + High volatility = high maintenance effort
+- High Strength + High Distance = high cost of evolving the system
+- High volatility +  High Distance = High coordination effort
+- pain = volatility x strenght x distance 
+  - Aim is to reduce one aspect to as low as possible
+  - To make one arg 0 (lowest coupling)
+
+### Links 
+- https://youtu.be/eQOM-UrNTS4 Balancing Coupling in Software Design - Vlad Khononov - NDC Oslo 2023
+
+## Links 
+
+- https://www.youtube.com/watch?v=nNFgOtN9Gts Balancing Coupling in Software Design (Vlad Khononov)
+
+- https://www.martinfowler.com/ieeeSoftware/coupling.pdf

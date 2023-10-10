@@ -277,6 +277,23 @@ We have to always be learning, new technologies, new patterns, languages, new do
 
 - https://www.copypasteisforword.com/2011-07-13-arch-vs-design/
 
+## Software engineering vs Patterns 
+
+- Patterns are just a common solution, to a common problem using a ubiquitous language
+- There are a multitude of patterns in different areas
+  - micro 
+    - code (language specific), design patterns, etc 
+  - Macro
+    - architecture, REST, security, big data etc
+- Some patterns are commonly seen as go to standards in different areas of problems to be solved (domains software is written for)
+- Patterns are created after being used several times and works to meet the solution
+  - A form of empiricism and experimentalism 
+- Not all patterns work for different problems
+  - Patterns have trade offs
+- Patterns are used, checked if they work, if not they are removed ore reworked
+  - iterative and scientific experiments 
+- Problem with patterns are they can be used without thinking about them first to see if they are a best fit, or evaluating them after using them
+  - seen as silver bullet, or only solution
 ## Links
 
 - https://www.computersciencedegreehub.com/faq/what-is-the-difference-between-software-engineering-and-software/

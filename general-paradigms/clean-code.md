@@ -43,3 +43,4 @@
 
 - https://www.youtube.com/watch?v=_Zqhs1IhGx4&t=1s
   - http://www.jeremybytes.com/Demos.aspx#CC
+- https://betterprogramming.pub/clean-code-is-slow-but-you-still-need-it-anyway-ffcac6973c93

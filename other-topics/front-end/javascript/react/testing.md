@@ -1,4 +1,5 @@
 - https://reactjs.org/docs/testing-recipes.html
+- https://www.valentinog.com/blog/testing-react/
 
 ## custom hooks
 

@@ -16,6 +16,12 @@
 
 - https://ecom.software/better-unit-tests-with-typescript/
 
+## Jest
+
+- https://til.hashrocket.com/posts/tnuaryjzfb-table-tests-with-jest
+- https://github.com/Hargne/jest-html-reporter
+- https://everyday.codes/javascript/create-custom-jest-matchers-to-test-like-a-pro/
+
 ## Mocking
 
 - https://instil.co/blog/typescript-testing-tips-mocking-functions-with-jest/

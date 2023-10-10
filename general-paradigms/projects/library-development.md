@@ -36,3 +36,11 @@
 - Allow users to create it locally
 - Create it and push it to a private/public repository (artifactory, maven, jitpack etc)
   - If paid, create and give it to them so they can add it
+
+## Links 
+
+- https://www.oracle.com/corporate/features/library-in-java-best-practices.html
+- https://www.youtube.com/watch?v=AX0e-Yi9f08 Writing a Java library with better experience -English version-
+- https://dzone.com/refcardz/java-api-best-practices
+- https://www.baeldung.com/design-a-user-friendly-java-library
+- https://jlbp.dev
