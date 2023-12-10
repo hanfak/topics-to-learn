@@ -1,0 +1,93 @@
+# Module 5 Storage and Databases
+
+## Instance Stores and Amazon Elastic Block Store (Amazon EBS)
+
+- Block Level Storage
+  - to store files (bytes stored on disk)
+  - When data change only change that section
+  - Hard drive
+  - File systems, databases use it
+- Instance STore Volumes
+  - storage that can be provided by EC2 instance
+  - Physical attached to host that EC2 is running on
+  - If EC2 is terminated, the data on the ISV is deleted
+    - As the EC2 might start up on another host
+  - Useful for temp data, scratch files, data that can be easily recreated without consequence
+  - Not good for persisting data outside of lifecycle of EC2
+- Amazon Elastic Block Store (EBS)
+  - Create virtual Hard drives (volumes) that are attached to the EC2 
+  - Not tied to the host
+  - persist data outside of lifecycle of EC2
+  - Can configure the type you want (size, type) and attach it the EC2
+  - Can take incremental back ups of data (snapshots)
+    - configurable
+    - only the blocks of data that have chagned are saved
+  - Up to 16TB
+  - SSD by default, but HDD options
+
+## Amazon Simple Storage Service (Amazon S3)
+
+- Data to be stored somewhere
+- Store and retrieve unlimited amount of data
+- Data stored as objects
+  - each object contains data, metadata and key
+    - metadate = info about data, how its used, object size
+    - key = unique id of object
+  - When object is updated, the whole object is modified
+  - Stored in buckets
+  - Max size of object =5Tb
+  - Used for write once read many
+  - Each object has a url
+  - Can version objects (keep history of object, can rollback if deleted)
+  - Create permissions (visibility, write access) for multiple buckets
+  - Different tiers/classes
+- Storage classes
+  - Standard
+    - 11 9s of durability (remain intact for one year)
+    - for frequent access
+    - Multiple copies are stored in 3 availability zones
+    - Content distributino
+    - data analytics
+    - Static web hosting 
+      - Load all static files (html etc) to S3 and check box to host it as site
+  - Standard Infrequent Access (STandard-IA)
+    - For data that is accessed less frequently, but requires rapid access when needed
+    - backups, disasted recovery files, or long term storage
+    - Audit data, stored for seveal years can be moved to other classes
+    - Lower storage price
+    - higher retrieval price
+    - Multiple copies are stored in 3 availability zones
+  - One Zone Infrequent Access
+    - 1 copy are stored in 1 availability zones
+    - Lower storage price than STandard IA
+    - Saving costs on storage
+    - Can easily reproduce data incase of failure of zone or loss of data
+  - Intelligent Tiering
+    - Data with unknown or changing access patterns
+    - Monthly monitroing and automation fee per object
+    - 
+  - Glacier Instant Retrieval
+    - For archived data that needs immediate access
+    - Access time of milliseconds (same perfromance as standard)
+  - Glacier Flexible Retrieval
+    - Low cost storage
+    - Takes 1 minutes to 12 hours to access data
+    - Audit data, stored for several years
+    - Use vaults
+  - Glacier Deep Archive
+    - Lowest cost
+    - Retrieve within 12 to 48 hours
+    - Long retention
+    - aim for 1/2 times a years access
+    - Multiple copies are stored in 3 availability zones
+  - Outposts
+    - Creates buckets on Outposts
+    - Easier to retrieve
+    - Puts it on your on premise site
+- Lifecycle polices
+  - Setup rules to move data between tiers
+  - ie after x days move to another class
+  - Default polics
+    - haven’t accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, S3 Standard.
+- EBS vs S3
+  - 
