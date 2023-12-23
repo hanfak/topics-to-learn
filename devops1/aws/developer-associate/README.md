@@ -1,0 +1,4 @@
+- https://aws.amazon.com/certification/certified-developer-associate/
+- https://explore.skillbuilder.aws/learn/course/14724/play/73781/introduction-to-aws-certification
+- https://www.youtube.com/watch?v=RrKRN9zRBWs
+- https://arkalim.notion.site/Notes-143374c83daa4d4991b07400056a2aa9
