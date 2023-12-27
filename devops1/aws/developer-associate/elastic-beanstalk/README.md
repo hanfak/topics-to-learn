@@ -1,0 +1,76 @@
+# AWS Elastic Beanstalk
+
+- PaaS
+  - platform as a services
+  - platform allowing customers to develop, run and manage applications without the complexity of building and maintaining the infrastructure typically associated with developing and launching an app
+- Heroku of AWS
+- Choose platform, upload your code, it runs 
+  - without knowledge of the underlying infrastructure 
+- Dont run enterprise apps on it
+  - but it is used in prod, esp for startups
+- Powerd by cloudFormation template setting up
+  - ELB
+  - autoscaling groups
+  - RDS database
+  - EC2 instance preconfigured/custom for platforms
+  - monitroing (cloudwatch)
+  - in place & blue/green deployment
+  - security (rotating passwords)
+  - run docker env
+- Support multiple languages
+- Choose env
+  - web app -> web env
+    - create one or more EC2 in autoscaling group (ASG) with ELB
+    - 2 types 
+      - load balanced env
+        - designed to scale depending on traffic -> variable cost
+      - single instance env
+        - ASG used and set to 1
+        - no elb, save costs
+        - public IP to route traffic to server
+  - background job -> worker env
+    - create one or more EC2 in autoscaling group
+    - SQS queue with sqs daemon on EC2 to communicate with SQS
+    - Create cloudwatch to dynamically scale instances based on health
+- Deployment policy
+  - Types
+    - All at once
+      - Process
+        - deploy the new app version to all EC2 at same time
+        - takes all instances out of service while deploying
+        - servers become available after deployment
+      - Fastest
+      - dangerous, as downtime
+        - might need to rollback all services
+    - rolling 
+      - Process
+        - deploy the new app version to a batch of instances at a time
+        - Takes the batch's instances out of service while the deployment processes
+        - reattaches the updated instances
+        - Repeats for the next batch of instances until finished
+      - Slower
+      - reduced capacity for short periods
+      - complicated rollbacks
+    - rolling with additional batch
+      - process
+        - Launch new EC2 that will replace the current batch
+        - deploy in new EC2
+        - attach new batch and terminate existing old batch
+      - Capacity is never reduced, service is always up
+      - complicated rolling updates
+      - slow
+    - immutable
+      - process
+        - create new ASG with EC2 instnaces
+        - deploy updated version to new EC2 
+        - point elb to new asg and delete old asg (thus terminate old ec2)
+      - Safest way to deploy critical apps
+      - rollbacks are easy
+      - Can wait till new asg is correct (smoke tests etc)
+      - automate rolbacks
+      - Preferable
+    - Blue/green
+  - All applies for LB env
+  - For single instance, only all at once and immutable
+    - Nee LB to do the other two 
+  - https://youtu.be/RrKRN9zRBWs?si=t8KdKqcYECbSYJUo&t=2311

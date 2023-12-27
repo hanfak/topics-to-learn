@@ -1,1 +1,2 @@
 - https://aws.amazon.com/certification/certified-cloud-practitioner/
+- https://github.com/kananinirav/AWS-Certified-Cloud-Practitioner-Notes/tree/master/practice-exam
