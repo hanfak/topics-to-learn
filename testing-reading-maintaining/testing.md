@@ -261,6 +261,8 @@ to show their absence!
 
 ## Types of Tests
 
+- unit testing is important for writing code, functional and integration tests are important for shipping code”. Prevent new bugs created
+
 ### White Box Testing
 
 Types of test

@@ -702,3 +702,4 @@
 - Sandi Metz https://www.youtube.com/watch?v=D4auWwMsEnY
 - https://github.com/Droogans/unmaintainable-code
 - https://gabrielfs7.github.io/design-principles/2019/09/24/code-smells/
+-  [VDBUH2024] - Victor Rentea - Code Smells - Hall of Fame https://youtu.be/lsW0-sEGr3w?si=bua7cAAOYxm77Vab

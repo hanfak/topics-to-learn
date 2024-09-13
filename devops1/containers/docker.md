@@ -25,6 +25,7 @@
   - https://www.docker.com/what-docker
   - https://www.youtube.com/watch?v=-NzfOhSAZpA
   - https://www.linkedin.com/pulse/beginner-friendly-intro-containers-vm-docker-preethi-kasireddy/
+  - https://www.marcobehler.com/guides/building-docker-images
 
 ## Containers
 

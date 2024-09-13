@@ -4,6 +4,7 @@
 
 - [a-philosophy-of-software-design-notes](#a-philosophy-of-software-design-notes)
 	- [From you tube talk](#from-you-tube-talk)
+	- [Summary](#summary)
 	- [Nature of complexity](#nature-of-complexity)
 	- [Working code is not enough](#working-code-is-not-enough)
 	- [Modules should be deep](#modules-should-be-deep)
@@ -18,6 +19,25 @@
 
 - https://tigerabrodi.blog/a-philosophy-of-software-design
 - https://lethain.com/notes-philosophy-software-design/
+
+## Summary
+
+- Red flags
+- 𝗦𝗵𝗮𝗹𝗹𝗼𝘄 𝗺𝗼𝗱𝘂𝗹𝗲: the interface for a class or method isn't much more straightforward than the implementation
+- 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗹𝗲𝗮𝗸𝗮𝗴𝗲: a design decision is reflected in multiple modules
+- 𝗧𝗲𝗺𝗽𝗼𝗿𝗮𝗹 𝗱𝗲𝗰𝗼𝗺𝗽𝗼𝘀𝗶𝘁𝗶𝗼𝗻: the code structure is based on the order in which operations are executed, not on information hiding
+- 𝗢𝘃𝗲𝗿𝗲𝘅𝗽𝗼𝘀𝘂𝗿𝗲: An API forces callers to be aware of rarely used features to use commonly used features
+- 𝗣𝗮𝘀𝘀-𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝗺𝗲𝘁𝗵𝗼𝗱: a method does almost nothing except pass its arguments to another method with a similar signature
+- 𝗥𝗲𝗽𝗲𝘁𝗶𝘁𝗶𝗼𝗻: a nontrivial piece of code is repeated over and over
+- 𝗦𝗽𝗲𝗰𝗶𝗮𝗹-𝗴𝗲𝗻𝗲𝗿𝗮𝗹 𝗺𝗶𝘅𝘁𝘂𝗿𝗲: special-purpose code is not cleanly separated from general-purpose code
+- 𝗖𝗼𝗻𝗷𝗼𝗶𝗻𝗲𝗱 𝗺𝗲𝘁𝗵𝗼𝗱𝘀: two methods have so many dependencies that it's hard to understand the implementation of one without understanding the implementation of the other
+- 𝗖𝗼𝗺𝗺𝗲𝗻𝘁 𝗿𝗲𝗽𝗲𝗮𝘁𝘀 𝗰𝗼𝗱𝗲: all of the information in a comment is immediately obvious from the code next to the comment
+- 𝗜𝗺𝗽𝗹𝗲𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻 𝗱𝗼𝗰𝘂𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻 𝗰𝗼𝗻𝘁𝗮𝗺𝗶𝗻𝗮𝘁𝗲𝘀 𝗶𝗻𝘁𝗲𝗿𝗳𝗮𝗰𝗲: an interface comment describes implementation details not needed by users of the thing being documented
+- 𝗩𝗮𝗴𝘂𝗲 𝗻𝗮𝗺𝗲: the name of a variable or method is so imprecise that it doesn't convey much useful information
+- 𝗛𝗮𝗿𝗱 𝘁𝗼 𝗽𝗶𝗰𝗸 𝗮 𝗻𝗮𝗺𝗲: it isn't easy to come up with a precise and intuitive name for an entity
+- 𝗛𝗮𝗿𝗱 𝘁𝗼 𝗱𝗲𝘀𝗰𝗿𝗶𝗯𝗲: to be complete, the documentation for a variable or method must be extended.
+
+𝗡𝗼𝗻𝗼𝗯𝘃𝗶𝗼𝘂𝘀 𝗰𝗼𝗱𝗲: the behavior or meaning of a piece of code cannot be understood
 
 ## From youtube talk
 

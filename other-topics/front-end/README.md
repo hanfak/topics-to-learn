@@ -11,3 +11,5 @@ Info about GUIs, user interfaces, webpages, web applications etc.
 
 - http://frontend.turing.io/
 - https://fullstackopen.com/en/
+- https://www.youtube.com/watch?v=-Tf5imJAsvM Everything You Should Know About Web Development in 2022 – Stefan Judis
+

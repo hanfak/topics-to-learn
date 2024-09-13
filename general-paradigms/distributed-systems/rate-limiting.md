@@ -5,6 +5,10 @@
 - a rate limiter is used to control the rate of traffic sent by a client or a service.
 - If the API request count exceeds the threshold defined by therate limiter, all the excess calls are blocked
   - Generally returning status code 429
+- Functionality: Sets a maximum limit on the requests a user or application can make within a specified period. 
+- Use Case: Protects APIs from abuse, manages server loads, and ensures a consistent level of service for all users. 
+- Example: Google Maps API implements rate limiting to control the number of requests from a single user, preventing denial-of-service attacks
+
 
 ### Examples of rate limiting
 
@@ -62,7 +66,26 @@ resources to high priority APIs.
 ## Algorithms
 
 ### Token bucket
+When requests come in, they use the stored tokens. The system continues processing requests until the Bucket is devoid of tokens. When no tokens are left in the Bucket, the system does not process any requests.
+
+
 ### Leaking bucket
+
+imagine you have a bucket, and this Bucket has a tiny hole at the bottom. This leaking Bucket is like a system that receives requests. Tokens are added to the Bucket constantly, representing the capacity or speed at which the system can handle requests.
+Now, when a request comes in, it needs a token to be processed. If a token is available in the Bucket, the request takes it, and the system processes it. If there's no token (meaning the Bucket is empty), the request has to wait until a token is added at the constant rate.
+
+
 ### Fixed window counter
+
+The Fixed Window Counter Algorithm is a method for counting and limiting the rate of events or requests within fixed time intervals
+
 ### Sliding window log
+The Sliding Window Log is a system that tracks incoming requests within a specific time frame. It maintains a log of requests and allows or denies new requests based on the limit set in the log and the timing of entries. The "sliding window" aspect refers to continuously updating this time frame as new requests occur.
+
 ### Sliding window counter
+
+The sliding window counter algorithm tracks and limits the number of events or requests occurring within a specific period. Instead of using fixed intervals, this algorithm employs a "sliding window" that moves continuously over time. The counter keeps track of events within the current window, and when the window slides past a certain point, old events are no longer considered in the count.
+
+
+
+## Linkd

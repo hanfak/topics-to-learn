@@ -10,6 +10,10 @@
   - The software components that constitute a whole system to provide certain functions at the system level.
   -  How the components communicate with each other to fulfill the system functions
 
+## Comparisons 
+
+- https://medium.com/oolooroo/navigating-the-maze-of-modern-architectures-comparing-and-contrasting-leading-software-dcec9b68fc87
+
 ## General
 
 - https://engineering.videoblocks.com/web-architecture-101-a3224e126947

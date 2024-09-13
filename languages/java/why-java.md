@@ -60,3 +60,7 @@
 - Lack of control of memory
   - This is still possible, but not advised
   - Best use C if you want this
+
+## Not in gaming industry
+
+- https://www.spiceworks.com/tech/devops/guest-article/why-is-javas-use-in-the-gaming-industry-limited/amp/

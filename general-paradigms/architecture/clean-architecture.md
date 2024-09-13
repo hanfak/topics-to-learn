@@ -89,6 +89,7 @@ Goes by many names
 ### Hexagonal architecture 
 
 - https://journal.optivem.com/p/hexagonal-architecture-ports-and-adapters
+- https://www.youtube.com/watch?v=Gsgisj1Ns40  Hexagonal Architecture from its Inventor -Alistair Cockburn, Humans & Technology, inc. | Craft, 2023
 
 ## Examples
 
@@ -99,6 +100,7 @@ Goes by many names
 - https://github.com/mattia-battiston/clean-architecture-example
 - https://github.com/valentinacupac/banking-kata-java
 - https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/
+- https://www.viewfromthecodeface.com/portfolio/clean-code-hexagonal-architecture/ Alan Mellor
 
 [Top of Page](#clean-architecture)
 
@@ -416,9 +418,25 @@ Goes by many names
   - Can use workflows if something goes wrong with an event, then the failed event is written and can be dealt with by support
   - Use aspect oriented programming
 
+### Database is a detail
+
+- The propagator of this type of architecture stated that the database was a detail, and by extension any outgoing adapter
+  - Thus all business logic should be in the core (use case and domain) rather than the database 
+- This is an issue, as there are cases where the trade offs of having business logic in a database (stored proc/ plsql) outweighs having in it all in code (ie for performance at the cost of maintainablitiy/radability/debugging etc)
+  - Even how you store your data, so that you can access it needs to be considered. Just cause you can change this store/access to data easily in code, may mean extensive work in DB so still high coupled
+- A case could exist that you business relies on a specific feature of the database, so changing this is not an option
+- There is business and cost context, to whether it is feasible to change
+- If there is a need to change or add DB, cause the decision has not beeen made, then this is perfect
+- If there is a need to allow for many different implementation, then having a plugin style architecture would be needed
+- Discussion 
+  - https://www.linkedin.com/posts/valentinacupac_cleanarchitecture-tdd-testdrivendevelopment-activity-6973532886721310720-Igks/
+
 [Top of Page](#clean-architecture)
 
 ## Testing Architecture Elements
+
+- https://www.linkedin.com/posts/ilias-el-mhamdi-72a013146_clean-architecture-principles-patterns-activity-6973362765566529536-eo_j/
+- https://www.youtube.com/watch?v=WAoqGzVDHc0  TDD in Hexagonal Architecture and Clean Architecture (Valentina Cupać)
 
 [Top of Page](#clean-architecture)
 

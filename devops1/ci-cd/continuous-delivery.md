@@ -9,3 +9,26 @@
     - Automating deployments greatly improves transparency, which naturally improves auditability
       - Automated deployments can also generate reports that can also help with auditing.
       - Scripts can be stored in version control, allowing for easy review
+
+## A whole ethos
+
+- CD generally encompases 
+  - CI
+  - Trunk based development
+  - pipelines
+  - Developer led testing ie tdd
+
+## For 
+
+- https://medium.com/defense-unicorns/5-minute-devops-continuous-delivery-faq-4aadc02c1b6e
+
+## Examples
+
+- https://minimumcd.org/minimumcd/
+
+## Agility and CD
+
+- The purpose of agility is to satisfy the customer, via continous delivery of valuable software
+- Both are linked
+  - https://journal.optivem.com/p/cant-be-agile-without-cicd-and-tdd?utm_source=substack&utm_medium=email
+- 

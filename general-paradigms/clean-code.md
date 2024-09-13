@@ -27,12 +27,13 @@
 ### Counter
 
 - https://qntm.org/clean
+- https://dev.to/remojansen/clean-code-is-considered-harmful-3lh0
 
 ## Issues 
 
 - In my work I don't care about nanoseconds. I almost never care about microseconds. I sometimes care about milliseconds. Therefore I make the software engineering tradeoff towards programmer convenience, and long term readability and maintainability. This means that I don't want to think about the hardware. I don't want to know about Ln caches, or pipelining, or SIMD, or even how many cores there are in my processor. I want all that abstracted away from me, and I am willing to spend billions of computer cycles to attain that abstraction and separation. My concern is programmer cycles not machine cycles.
-- I have, in the past, worn the other shoes. There was a time in my career when microseconds had to be conserved, when I had to meet submillisecond deadlines, and I counted and conserved cycles as carefully as Ebenzer Scrooge. So I think I understand your concern fairly well.
-- clean code will be trading computer cycles for programmer cycles. And that's a good thing in most of the software teams and organizations
+  - I have, in the past, worn the other shoes. There was a time in my career when microseconds had to be conserved, when I had to meet submillisecond deadlines, and I counted and conserved cycles as carefully as Ebenzer Scrooge. So I think I understand your concern fairly well.
+  - clean code will be trading computer cycles for programmer cycles. And that's a good thing in most of the software teams and organizations
 - https://youtu.be/DsAclZbP_Us  Abstraction Bad? | Clean Code : Horrible Performance : (Clip) Interview
   - Make code clean too fast or too early can be issue, this is predictive abstraction, and we cannot predict the future. 
     - unless we know the future requirements that will be worked in or soon or later
@@ -44,3 +45,4 @@
 - https://www.youtube.com/watch?v=_Zqhs1IhGx4&t=1s
   - http://www.jeremybytes.com/Demos.aspx#CC
 - https://betterprogramming.pub/clean-code-is-slow-but-you-still-need-it-anyway-ffcac6973c93
+- https://www.reddit.com/r/csharp/comments/1cwbv37/is_clean_code_dead/

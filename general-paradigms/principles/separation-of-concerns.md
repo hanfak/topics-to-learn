@@ -25,3 +25,7 @@ It will make more sense once you understand where ‘Separation of Concerns’ c
 It is easy to translate this into the context of software design. In the context of software design, ‘Separation of Concerns’ is seen as a design principle. And in essence, it tells us that different aspects of the problem we are solving should be separated in code so that we can focus on that aspect in isolation. Simply said: you need to isolate different aspects of your code from each other.
 
 In essence, it tells us to separate the code we need for different aspects of the problem we are solving so that we can focus on those aspects in isolation. And those aspects, that can be on any level. This can be on the level of domains and microservices, it can be on the level of process and business logic, it doesn’t really matter. The key thing to understand is the importance of isolation.
+
+## Links 
+
+- https://www.linkedin.com/posts/jasongorman_tailwindcss-htmx-activity-7183056247577792514-OyT-/?utm_source=share&utm_medium=member_android

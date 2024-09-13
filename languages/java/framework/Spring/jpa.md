@@ -9,6 +9,7 @@
   - The pojos will need a zero arg constructor to work
   - It will need an id, which is for the jpa to interact with the database
 - Handles all the JDBC and sql implementations
+- https://vladmihalcea.com/best-spring-data-jparepository/
 
 ## Advantages
 
@@ -29,3 +30,27 @@
 ## Mappings
 
 - Linking entity pojos, with each other in code which will be mimicd in the database ie parent child many to many
+
+## Patterns
+
+- https://vladmihalcea.com/spring-data-findall-anti-pattern/
+  -  you should not really offer your clients a way to fetch an entire database table
+  - define a new base interface by extending the Repository interface instead of the JpaRepository and declaring explicitly which methods are allowed to be inherited by your custom repositories
+  ```java
+  public interface BaseJpaRepository<T, ID> extends Repository<T, ID> {
+ 
+    Optional<T> findById(ID id);
+ 
+    T getReferenceById(ID id);
+     
+    boolean existsById(ID id);
+     
+    void deleteById(ID id);
+ 
+    void delete(T entity);
+     
+    long count(); 
+  } 
+  ```
+  -   the entities that have a large number of records can now define their specific Repository interface by extending the BaseJpaRepository
+  - the entities with a small number of records can extend the default Spring Data JpaRepository

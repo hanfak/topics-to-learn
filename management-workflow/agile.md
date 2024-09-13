@@ -44,6 +44,9 @@
 - Customer collaboration over contract negotiation
 - Responding to change over following a plan
 
+- https://www.youtube.com/watch?v=9K20e7jlQPA You're doing agile wrong
+
+
 ### The principles behind agile values:
 
 - Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
@@ -104,6 +107,8 @@ Instead of figuring everything upfront, we design, build and test little bits of
 	- Do not deviate from the rules ie a sprint has 10 stories to do, if all done dont do anything else
 - All about the process, rather than the engineering aspect
 	- It is not used as a feedback mechanism
+    - Need to have technical underpinnings not just scrum, need TDD, CD etc
+      - https://journal.optivem.com/p/cant-be-agile-without-cicd-and-tdd?utm_source=substack&utm_medium=email
 - Seen as silver bullet
 - Dont want to take the good parts and combine, or experiment with different processes
 - Focus on features, can lead to system having software qualities that emerge accidently

@@ -44,6 +44,7 @@
 - These tests are executed, and in most cases, they fail as they are developed before the development of an actual feature
 - The development team then refactors or changes the code for the test to pass successfully
 - With a set of passing tests, the developers refactor code to improve design without adding any behaviour
+- https://www.linkedin.com/posts/oliver-zihler_testdrivendevelopment-tdd-extremeprogramming-activity-6974718936256761856-EXqV/
 
 ## Issues
 
