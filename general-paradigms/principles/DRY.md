@@ -94,7 +94,6 @@
   - In the second edition, they realised that it was not the correct message, as people took it too far
     - people believe that no copy and pasting was allowed
   - Instead Duplication of business logic should not be repeated, there should be a single source of truth
-    - 
   - DRY is about the duplication of knowledge, of intent. It’s about expressing the same thing in two different places, possibly in two totally different ways
   - Dont dry coincidental duplication only essential duplication 
     - essential duplication are parts that should change together 
@@ -105,6 +104,7 @@
 - DRY can make it harder to debug 
   - Should think very carefully to do this in test code otherwise can be hard to follow intent or debug
 - For small amount of duplication is not worth it
+- DRY can be seen as premature optimisation 
 
 ### Links
 
@@ -116,6 +116,11 @@
 - https://rotemtam.com/2020/05/18/the-dry-principle-is-bad-advice/
 - https://gordonc.bearblog.dev/dry-most-over-rated-programming-principle/
 - https://salmonmode.github.io/2020/08/14/the-harmful-obsession-with-dry.html
+- https://www.gordoncassie.com/dry-most-over-rated-programming-principle/
+  - https://www.gordoncassie.com/more-dry-talk-responding-to/
+- https://lbrito.ca/blog/2017/03/dont-obsess-over-code-dry.html
+- https://swizec.com/blog/dry-the-common-source-of-bad-abstractions/
+- 
 
 ### Issues with many small methods
 
@@ -138,3 +143,13 @@
 ### Keeping long blocks of code managable
 
 - long blocks of code (within reason) are made much easier to consume when they are broken up and commented well. I approach it but looking at the logic flow, then separate lines and blocks of code that are discrete logical steps in that flow, comment each, and only THEN ask myself what would make it better as another functio
+
+## DRY vs Separation of Concerns 
+
+- Forget if the code looks similar. Is it describing the same business concept? If yes, DRY. If no, separate.
+
+- https://swizec.com/blog/dry-vs-soc-a-difficult-choice/
+
+## DRY vs YAGNI
+
+- https://swizec.com/blog/dry-is-a-footgun-remember-to-yagni/

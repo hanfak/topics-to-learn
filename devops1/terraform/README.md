@@ -1,7 +1,12 @@
 # Terraform
 
 - https://www.terraform.io/intro/index.html
+- https://developer.hashicorp.com/terraform/intro
 - https://www.thedevcoach.co.uk/what-is-terraform/
+
+## What 
+
+- infrastructure as code tool that lets you define both cloud and on-prem resources in human-readable configuration files
 
 ## vault
 

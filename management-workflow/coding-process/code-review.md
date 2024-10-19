@@ -23,3 +23,4 @@
 - https://simpleprogrammer.com/release-trunk-based-development/
 - https://www.michaelagreiler.com/code-review-best-practices/
 - https://sizovs.net/2020/07/19/the-code-review/
+- https://angiejones.tech/ten-commandments-code-reviews/
