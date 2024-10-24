@@ -1,18 +1,14 @@
 # IDE - Intellij
 
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [IDE - Intellij](#ide-intellij)
-	- [Shortcuts](#shortcuts)
-		- [Live templates](#live-templates)
-		- [Links](#links)
-	- [Setup/preferences](#setuppreferences)
-	- [Plugins](#plugins)
-	- [Scratch Files](#scratch-files)
-	- [Links](#links)
-	- [Other IDEs](#other-ides)
-
-<!-- /TOC -->
+- [Benefits](#benefits)
+- [Shortcuts](#shortcuts)
+	* [Links](#links)
+- [Live templates](#live-templates)
+	* [Links](#links-1)
+- [Setup/preferences](#setuppreferences)
+- [Plugins](#plugins)
+- [Scratch Files](#scratch-files)
+- [Links](#links-2)
 
 I exclusively use Intellij as an IDE for developing code with either java, javascript, bash, sql and scala. It has many plugins that help with development and lots of shortcuts to help develop and refactor code effectively.
 
@@ -50,9 +46,14 @@ Another way to practise is to turn off tabs.
 
 NOTE: There will be some specific shortcuts and ways of using IntelliJ in different sections of this repo.
 
+<a name="links"></a>
+### Links
+
+- https://www.youtube.com/watch?v=eimdQeNG-68  Intellij Coding Shortcuts You Need to Know
+- https://www.youtube.com/watch?v=bWivMas6Ilw IntelliJ Navigation Shortcuts You Need to Know
 - https://blog.jetbrains.com/idea/2020/05/debugger-basics-in-intellij-idea/
 
-### Live templates
+## Live templates
 
 Help reduce amount of typing for common code pieces
 
@@ -61,7 +62,10 @@ Help reduce amount of typing for common code pieces
 - psvm -> public static void main
 - ???
 
+<a name="links-1"></a>
 ### Links
+
+- https://www.youtube.com/watch?v=pw9DUdk6dIM  Intellij IDEA - Live & File Templates : Supercharge your Intellij IDEA
 
 - Code golf
 
@@ -86,19 +90,10 @@ Cool plugins which help with productivity
 
 Great for copying json or xml and then doing some formatting. Plus they dont go away
 
+<a name="links-2"></a>
 ## Links
 
 - http://hadihariri.com/2014/01/06/intellij-idea-minimal-survival-guide/
 - https://zeroturnaround.com/rebellabs/getting-started-with-intellij-idea-as-an-eclipse-user/
 - https://youtu.be/pX2jyeWs1qw IntelliJ Super Productivity in 45 Minutes
 - https://www.youtube.com/watch?v=cK19rE2V9UY Victor Rentea - The Secrets of the Fastest Java Developers on Earth
-
-
-
-## Other IDEs
-
-- Eclipse
-- Netbeans
-- vscode
-
-I would avoid using text editors such as atom/sublime as these will slow down work as compliation does not happen straight away and lots of other stuff is missing. But they are good for simple scripting ie ruby/python.

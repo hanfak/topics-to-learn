@@ -57,3 +57,4 @@
 
 - https://cloud.google.com/solutions/best-practices-for-building-containers#package_a_single_app_per_container
 - https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+- https://youtu.be/zm1RP912lnM  Crafting the Ultimate Docker Image for Spring Applications by Pasha Finkelshteyn 

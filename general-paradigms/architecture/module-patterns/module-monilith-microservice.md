@@ -27,6 +27,7 @@
     - With increasing complexity, microservices might be more susceptible to mistakes and defects as well.
     - Hard to get right
     - lot of complexity
+    
 ## Modular monolith
 - A monolithic architecture is a singular, large computing network with one code base that couples all of the business concerns together. To make a change to this sort of application requires updating the entire stack by accessing the code base and building and deploying an updated version of the service-side interface.
 - A Modular Monolith consists of dividing logic into modules, as each module is independent and isolated.
@@ -44,10 +45,39 @@
 - Simpler to create, deploy and manage
   - the modules are produced and delivered as a single unit, which makes the application significantly easier to design, deploy and manage
 - Cost effective
+- Owns it's persistance
+- smaller domain model, bounded context
+  - improved encapsulation
+  - use of exposed api
 
 ## disadvantage of monolith 
 - how slow the development velocity is. Adding new features is slow because there is a large cognitive load on the developer. 
 - Modules of monoliths are tightly coupled, which can significantly lengthen the release cycle of a monolith.
+  - Need to have mechanism to prevent this ie use of arch unit
+- when splitting a monolith
+  - Difficulties in finding boundaries 
+  - Decoupling data, splitting tables
+  - speed of tests
+- Shared transactions
+  - An exception in a module you call/notify can rollback your transaction
+- Resource starvation
+  - Modules shared thread/db connections pool 
+  - Need good monitoring
+- Deadlocks
+  - in process or out process
+- Single instance of DI container
+  - global settings, rogue aspects, bean name collisions
+- Unified Openapi
+  - single version
+  - type name collisons
+- End to end tests are slow
+  - multiple modules involved
+  - prefere module scoped tests
+- Always ready to ship
+  - need to use feature flags
+- Builds can be long
+  - parallalise
+
 ## Monolith to microservice 
 - trying to turn a poorly structured monolith into a distributed architecture will only get you a... poorly structured, yet distributed architecture.
 - Easier to go from modular monolith to microservice
@@ -57,3 +87,6 @@
 - Modules or Microservices? - Sander Mak https://youtu.be/siHAu5sIIko
 - https://blogs.newardassociates.com/blog/2023/you-want-modules-not-microservices.html
 - https://www.cmsdrupal.com/blog/modular-monolith-vs-microservices-how-do-you-make-choice
+- https://www.youtube.com/watch?v=nuHMlA3iLjY  The Modular Monolith - a Practical Alternative to Microservices by VICTOR RENTEA 
+  - https://github.com/victorrentea/spring-modulith
+  - https://www.slideshare.net/slideshow/modular-monolith-a-practical-alternative-to-microservices-devoxx-uk-2024/267975501

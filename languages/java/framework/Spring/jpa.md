@@ -54,3 +54,7 @@
   ```
   -   the entities that have a large number of records can now define their specific Repository interface by extending the BaseJpaRepository
   - the entities with a small number of records can extend the default Spring Data JpaRepository
+
+## Links 
+
+- https://www.youtube.com/watch?v=mcl_nibV39s  The ULTIMATE Guide for Spring Data JPA & Hibernate | 5 Hours Tutorial 

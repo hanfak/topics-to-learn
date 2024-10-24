@@ -1,4 +1,4 @@
-# Clean Architecture
+# Clean/Hexagonal Architecture
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
@@ -85,6 +85,8 @@ Goes by many names
 - https://books.optivem.com/software-architecture/
 - https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture/
 - https://www.youtube.com/watch?v=bKxkIjfTAnQ Hexagonal Architecture - The Why
+- https://beyondxscratch.com/category/hexagonal-architecture/
+  - https://beyondxscratch.com/2017/08/19/hexagonal-architecture-the-practical-guide-for-a-clean-architecture/
 
 ### Hexagonal architecture 
 
@@ -101,6 +103,7 @@ Goes by many names
 - https://github.com/valentinacupac/banking-kata-java
 - https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/
 - https://www.viewfromthecodeface.com/portfolio/clean-code-hexagonal-architecture/ Alan Mellor
+- https://www.youtube.com/watch?v=YPmKHm7G19Q  Hexagonal Architecture in Practice, Live Coding That Will Make Your Applications More Sustainable by
 
 [Top of Page](#clean-architecture)
 
@@ -437,6 +440,7 @@ Goes by many names
 
 - https://www.linkedin.com/posts/ilias-el-mhamdi-72a013146_clean-architecture-principles-patterns-activity-6973362765566529536-eo_j/
 - https://www.youtube.com/watch?v=WAoqGzVDHc0  TDD in Hexagonal Architecture and Clean Architecture (Valentina Cupać)
+- https://gitlab.com/crafts-records/talkadvisor/talkadvisor-back/blob/master/TestingStrategy.md
 
 [Top of Page](#clean-architecture)
 
@@ -703,7 +707,8 @@ Goes by many names
 - https://www.jamesmichaelhickey.com/clean-architecture/
 - https://jimmybogard.com/vertical-slice-architecture/
 - https://journal.optivem.com/p/a-critique-of-clean-architecture-and-tdd
-- https://stackoverflow.com/questions/29576344/drawbacks-of-hexagonal-architecture#:~:text=Since%20Hexagonal%20makes%20use%20of,the%20drawbacks%20of%20those%20patterns%3A&text=Adapters%20are%20traditionally%20polymorphic%20(in,are%20also%20a%20hidden%20indirection).
+- https://stackoverflow.com/questions/29576344/drawbacks-of-hexagonal-architecture#:~:text=Since%20Hexagonal%20makes%20use%20of,the%20drawbacks%20of%20those%20patterns%3A&text=Adapters%20are%20traditionally%20polymorphic%20(in,are%20also%20a%20hidden%20indirection)
+- https://victorrentea.ro/blog/overengineering-in-onion-hexagonal-architectures/
 
 ### Duplication of models
 
@@ -744,6 +749,12 @@ Goes by many names
 - Only useful for implementing business logic and need for adaptability
 - Most web apps are fixed in terms of frameworks or datasources
 - Some are just CRUD apps, and dont need any business logic
+
+### Too many interfaces
+
+### Middle men
+
+- Having strict layers, can result in layers not being able to talk to layers further away, which leads to layers delegating without doing anything
 
 [Top of Page](#clean-architecture)
 

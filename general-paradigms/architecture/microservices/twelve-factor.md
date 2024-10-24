@@ -56,3 +56,4 @@
 - https://www.bmc.com/blogs/twelve-factor-app/
 - https://cloudposse.com/12-factor-app/
 - https://reflectoring.io/spring-boot-12-factor-app/
+- https://youtu.be/94PxlbuizCU  The Twelve Factor app: Best Practices for Java Deployment by Joe Kutner 

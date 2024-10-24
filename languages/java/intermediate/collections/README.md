@@ -87,3 +87,5 @@ Basic collections see
 - https://www.javamex.com/tutorials/collections/index.shtml
 - https://www.geeksforgeeks.org/how-to-learn-java-collections-a-complete-guide/
 - https://www.logicbig.com/tutorials/core-java-tutorial/java-collections/java-collection-cheatsheet.html
+- https://youtu.be/hB6DoyX3eBo  Return to Planet Collections by Maurice Naftalin
+- https://youtu.be/aj6E0KF6sd4  Escape from the Planet of the Collections by Stuart Marks, Maurice Naftalin 

@@ -1,0 +1,57 @@
+# Googling 
+
+- Use specific terms:
+  - Use keywords instead of sentences to get more specific results. 
+  - For example, search for "headache" instead of "my head hurts".
+-  Use quotation marks:
+  - Use quotation marks to search for an exact phrase in the order you want.
+-  Use "OR" or "|":
+  - Use "OR" or "|" to search for multiple terms. 
+  - For example, "Jon OR Jonathan Tennant" or "Jon | Jonathan Tennant".
+- Add a tilde (~) in front of a word to find synonyms
+- Search result on time
+  - `love after:2020`
+  - `hate before 2019`
+- Insert two periods (..) between numbers to search for a range:
+-  Use an asterisk: 
+  - Use an asterisk to complete a phrase with an unknown word. 
+  - For example, "Winston * Churchill".
+-  Use "site:": 
+  - Use "site:" to search a specific website or to limit your search to a specific country. 
+  - For example, "site:eoswetenschap.eu" or "site:uk".
+-  Use "related:": 
+  - Use "related:" to find similar sites.
+-  Use the file search: 
+  - Use the file search to find a specific file or file type.
+  - filetype:pdf
+- Search Related Websites:
+  - related:amazon.com
+-  Use the exclude search:
+  - Use a dash (-) before a word to exclude it from your search results.
+  - For example, "gasoline -diesel".
+-  Use the Google Image Search: 
+  - Use the Search Tools button to restrict your search to a specific type of image.
+-  Use the reverse image search: 
+  - Use the reverse image search to find similar images, identify the source of an image, or find a larger version of an image.
+- Advanced search page
+  - click the gear icon or tools and choose Advanced search
+- Do Math in Your Search Box
+  - input a maths expressions
+- Convert Units With Google
+- Define Words in Google Search
+  - Prefix the word with `define/definition`
+- Track packages 
+  - prefix reference number with `track`
+- Time, sunset and sunrise, weather, flight numbers, stock prices
+  - Use these as prefix, and can add the city as suffix
+- List where film/show is being streamed
+  - `stream matrix`
+- Make decisions 
+  - `roll a die`
+  - `flip a coin`
+- Timer  or stopwatch
+  - `Timer 40 seconds`
+  - `timer`
+- Turn digits into number words
+  - `number=english`
+  - 
