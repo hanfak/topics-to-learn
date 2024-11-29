@@ -52,3 +52,17 @@ Or... wait until your competitors do.
 While providing exact estimations is very hard, developers do know which directions are most worthwhile exploring in order to solve a customer's problem. They should be able to tell you which directions are difficult, which are easier, and which need iterative exploration to determine the best approach. It is through these iterations that developers learn. As things progress one can then e.g. count the units of work to somewhat forecast the duration of the project. Certainty will go up as everyone learns more.
 
 https://www.linkedin.com/posts/davidwalschots_noestimates-activity-6966065177360269314-d0Q8/
+
+## Example 
+
+- Here is a way of giving an estimate:
+```text
+A very rough estimate for our teams effort:
+- ~55 days of pair work
+- ~ 1.2 uncerntaity factor
+- 4 work days a week (meetings etc taken out)
+- 1 developer
+- 55 * 1.2 /4 = ~4months = x date
+- This will be in stage for testing
+- disclaimer closer we get to date the more precise the estimate
+```

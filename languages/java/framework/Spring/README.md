@@ -21,6 +21,7 @@
 
 - https://www.marcobehler.com/guides/spring-framework
 - https://www.quora.com/Why-did-Rob-Johnson-create-Spring/answer/Alan-Mellor?ch=15&oid=338641434&share=bc8d82de&srid=3c80F&target_type=answer
+- https://www.youtube.com/watch?v=a9kBesDW3Bk What Is Spring? (SpringOne 2024)
 
 ## Why use
 
@@ -33,6 +34,10 @@
 - https://dzone.com/articles/spring-framework-tutorial-for-beginners-2
 - https://examples.javacodegeeks.com/enterprise-java/spring/java-spring-hibernate-tutorial-beginners/
 
+### Usages
+
+- https://www.youtube.com/watch?v=by-G0WX-LHA  Delving Into Spring Boot Netflix: Netflix's Application Framework (SpringOne 2024)
+- https://www.youtube.com/watch?v=j-rfPoXe5aE  Spring Tips: HTMX
 ## Tomcat and spring
 
 - https://developer.okta.com/blog/2019/04/16/spring-boot-tomcat
@@ -61,8 +66,9 @@
 
 ## How it works
 
-- https://youtu.be/5gttHK04lQ4
+- https://youtu.be/5gttHK04lQ4  The Magic of Spring • Patryk Piechaczek • Devoxx Poland 2021
 	- https://github.com/hanfak/Java-Own-Framework---step-by-step
+- 
 ## why bad
 
 - https://www.reddit.com/r/java/comments/2emu2s/whats_with_all_the_antispring_sentiment/

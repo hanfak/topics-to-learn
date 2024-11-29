@@ -71,8 +71,12 @@ Goes by many names
 
 - https://beyondxscratch.com/2017/08/19/hexagonal-architecture-the-practical-guide-for-a-clean-architecture/
 - https://jmgarridopaz.github.io/content/hexagonalarchitecture.html
+  - https://github.com/HexArchBook/bluezone_pro/tree/main
+  - https://jmgarridopaz.github.io/content/resources.html
 - https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749
 - https://alistair.cockburn.us/hexagonal-architecture/
+  - https://www.youtube.com/watch?v=th4AgBcrEHA&list=PLGl1Jc8ErU1w27y8-7Gdcloy1tHO7NriL
+  - https://www.youtube.com/watch?v=AOIWUPjal60
 - https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 - http://geekswithblogs.net/cyoung/archive/2014/12/20/hexagonal-architecturendashthe-great-reconciler.aspx
 - https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/

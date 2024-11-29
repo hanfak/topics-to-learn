@@ -58,3 +58,7 @@
 ## Links 
 
 - https://www.youtube.com/watch?v=mcl_nibV39s  The ULTIMATE Guide for Spring Data JPA & Hibernate | 5 Hours Tutorial 
+- https://www.youtube.com/watch?v=exqfB1WaqIw  Performance oriented Spring Data JPA & Hibernate by Maciej Walkowiak 
+  - https://github.com/Kehrlann/spring-security-the-good-parts
+- https://www.youtube.com/watch?v=iJ2muJniikY  Spring Security, demystified by Daniel Garnier Moiroux
+  - 

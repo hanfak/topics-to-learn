@@ -15,3 +15,6 @@
 - https://stackoverflow.com/questions/28907030/spring-security-authorize-request-for-certain-url-http-method-using-httpsecu
 - https://stackoverflow.com/questions/51026694/spring-security-blocks-post-requests-despite-securityconfig
 - https://reflectoring.io/spring-security/
+- https://www.youtube.com/watch?v=kwxRe-4dnVU  Spring Security: The Good Parts by DANIEL GARNIER-MOIROUX 
+- https://www.youtube.com/watch?v=xF4ZBhNEF0Y  Secure, Test, Repeat: A Guide to Spring Security Integration Testing by LAURENTIU SPILCA 
+- https://www.youtube.com/watch?v=HyoLl3VcRFY  Spring Security Architecture Principles by Daniel Garnier-Moiroux @ Spring I/O 2024 
